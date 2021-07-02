@@ -64,6 +64,7 @@ git push -u origin <your_branch_name>
 
 **Congratulations!** Sit and relax till we review your PR, you've made your contribution to [FAMista](https://github.com/mansi35/FAMista.git) project
 
+
 ### Points
 
 <table>
@@ -71,13 +72,15 @@ git push -u origin <your_branch_name>
     <th>Each pull request for adding your project</th>
     <th>40</th> 
   </tr>
-   
-   <br><br>
+</table>
+
+<br>
+ 
+ 
 
 ## 📌 Opensource Programs
 
 ### This project is a part of following Open Source Program
-<br>
 
 <table style="width:80%;background-color:white;border-radius:30px;">
     <tr>
