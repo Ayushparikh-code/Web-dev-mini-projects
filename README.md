@@ -35,10 +35,10 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects
 cd Web-dev-mini-projects
 ```
 
-**4.** Make a new folder with your project name inside web-dev-mini-projects
+**4.**  MAKE A NEW FOLDER WITH YOUR PROJECT NAME INSIDE web-dev-mini-projects or CHOOSE THE ALREADY CREATED PROJECT FOLDER ON WHICH U WANT TO ADD YOUR FILES   
 <br>
 
-**5.** Add your project files (eg: index.html ,style.css, script.js) inside the folder created in previous step .
+**5.** Add your project files (eg: index.html ,style.css, script.js) inside that folder of previous step .
 <br>
 
 **6.** Create a new branch.
