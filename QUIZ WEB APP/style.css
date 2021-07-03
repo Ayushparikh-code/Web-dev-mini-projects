@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100vw;
+    background-color: #fce8e8;
+    height: 100vh;
+}
+
+.inner-div {
+    background-color: #fff;
+    padding: 30px 60px 10px 60px;
+    max-width: 630px;
+    width: 630px;
+    box-shadow: 1rem 1rem 1rem -0.9rem rgba(0, 0, 0, 0.23);
+    border-radius: 5px;
+}
+
+li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.question {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.answer {
+    font-size: 15px;
+    color: rgb(54, 54, 54);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+#submit {
+    background-color: #fabfbf;
+    color: #fff;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #fdafaf;
+}
+
+.scoreBox {
+    display: none;
+}
+
+.showScore {
+
+    margin-top: -50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F3F4;
+    padding: 20px 30px;
+}
+
+.showScore h2 {
+    margin-bottom: 10px;
+}
+
+.showScore button {
+   background-color: #1f6068;
+   border: none;
+   padding: 8px 24px;
+   color: #fff;
+}
+
+.showScore button:hover {
+    background-color: #79BAC1;
+}
