@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 39px;
+    color: red;
+    padding: 20px 70px;
+}
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.heading{
+    font-size: 28px;
+    letter-spacing: 0.9px;
+    line-height: 54px;
+}
+
+.about{
+    font-size: 19px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.box{
+    padding: 100px 0;
+    background-image: url('./heart.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 60%;
+   opacity: 0.8;
+}
+
+.flex-box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 0.7px;
+    
+}
+
+input{
+    padding: 20px 70px;
+    border: none;
+    border-radius: 35px;
+    
+}
+
+button{
+    padding: 15px 28px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(210deg, red, orange);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+#lovePercentage{
+    font-size: 30px;
+}
