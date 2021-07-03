@@ -28,13 +28,15 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Add your tasks According to your wish
 
 <h3> ScreenShots </h3> 
- <img src="todo.png" alt="To-Do  Image"/>
+<img width="959" alt="todo" src="https://user-images.githubusercontent.com/64218887/124366708-43afb000-dc6f-11eb-8832-58d90f32ac38.png">
  <br>
  <ul>
   <li>To add the Task,Write the Task in the box and click on Add Button<br><br>
-    <img src="todo-add.png" alt="To-Do Add Image"/><br></li><br>
+    <img width="960" alt="todo-add" src="https://user-images.githubusercontent.com/64218887/124366723-5924da00-dc6f-11eb-9392-980abbe9635d.png">
+<br></li><br>
    <li>If you have completed the task,click on the task to strike-out<br><br>
-    <img src="todo-delete.png" alt="To-Do Strikeout Image"/><br></li><br>
+   <img width="960" alt="todo-delete" src="https://user-images.githubusercontent.com/64218887/124366734-6f329a80-dc6f-11eb-97f9-c6a50d37739b.png">
+<br></li><br>
      <li>To Remove the completed Task,First click on the task to strike-out and then Click on Cleanup<br><br>
-    <img src="todo remove.png" alt="To-Do Remove Image"/><br></li><br>
+    <img width="957" alt="todo remove" src="https://user-images.githubusercontent.com/64218887/124366741-7e194d00-dc6f-11eb-99a1-282dec228ea2.png"><br></li><br>
 </ul>
