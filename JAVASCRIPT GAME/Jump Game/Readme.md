@@ -7,7 +7,7 @@
 * Html
 * Css
 * JS
-## How to set-uo:
+## How to set-up:
 * Clone this repo
 * Open it in any Text Editor 
 * Enjoy it !!!
