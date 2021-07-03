@@ -28,5 +28,8 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Start Playing!!
 
 <h3> ScreenShots </h3> 
-<img width="959" alt="todo" src="https://user-images.githubusercontent.com/64218887/124366708-43afb000-dc6f-11eb-8832-58d90f32ac38.png">
- <br>
+![image](https://user-images.githubusercontent.com/64218887/124368548-b0cb4180-dc7f-11eb-8113-6dd489c661a9.png)
+<br>
+![image](https://user-images.githubusercontent.com/64218887/124368550-bcb70380-dc7f-11eb-83e2-966f2ed0b4c9.png)
+
+<br>
