@@ -31,10 +31,10 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
  <img src="todo.png" alt="To-Do  Image"/>
  <br>
  <ul>
-  <li>To add the Task,Write the Task in the box and click on Add Button<br>
-    <img src="todo-add.png" alt="To-Do Add Image"/><br></li>
-   <li>If you have completed the task,click on the task to strike-out<br>
-    <img src="todo-delete.png" alt="To-Do Strikeout Image"/><br></li>
+  <li>To add the Task,Write the Task in the box and click on Add Button<br><br>
+    <img src="todo-add.png" alt="To-Do Add Image"/><br></li><br>
+   <li>If you have completed the task,click on the task to strike-out<br><br>
+    <img src="todo-delete.png" alt="To-Do Strikeout Image"/><br></li><br>
      <li>To Remove the completed Task,First click on the task to strike-out and then Click on Cleanup<br>
-    <img src="todo remove.png" alt="To-Do Remove Image"/><br></li>
+    <img src="todo remove.png" alt="To-Do Remove Image"/><br></li><br>
 </ul>
