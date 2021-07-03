@@ -39,6 +39,9 @@ cd Web-dev-mini-projects
 <br>
 
 **5.** Add your project files (eg: index.html ,style.css, script.js) inside that folder of previous step .
+         Also add a README file to your project which consists the short description/screenshots about your project ! 
+ 
+ 
 <br>
 
 **6.** Create a new branch.
