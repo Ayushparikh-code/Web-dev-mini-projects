@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-image: url(./deepavali.jpg);
+    background-size: contain;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+     margin-top: 4rem;
+    color:  #ffae42;
+}
+.countdown-container{
+    display: flex;
+    
+}
+h1{
+    font-size: 4rem;
+    margin-top: 100 rem;
+     
+}
+.big-text{
+    font-weight: bold;
+    font-size: 8rem;
+    line-height: 0.5;
+    margin: 1rem 2rem;
+
+}
+.countdown-el{
+    text-align: center;
+    margin-left: 2rem;
+}
+.countdown-el span{
+    margin-left: -1 rem;
+    margin-top: 50 rem;
+    font-size: 2rem;
+}
