@@ -35,6 +35,6 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
     <img src="todo-add.png" alt="To-Do Add Image"/><br></li><br>
    <li>If you have completed the task,click on the task to strike-out<br><br>
     <img src="todo-delete.png" alt="To-Do Strikeout Image"/><br></li><br>
-     <li>To Remove the completed Task,First click on the task to strike-out and then Click on Cleanup<br>
+     <li>To Remove the completed Task,First click on the task to strike-out and then Click on Cleanup<br><br>
     <img src="todo remove.png" alt="To-Do Remove Image"/><br></li><br>
 </ul>
