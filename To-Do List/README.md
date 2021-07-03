@@ -28,6 +28,11 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Run the index.html file
 - Add your tasks According to your wish
 
-<h3> ScreenShots </h3>  
-<img src = "" alt="Sample Image">
+<h3> ScreenShots </h3> 
+ <ul>
+  <li>To add the</li>
+  <li>CSS3</li>
+  <li>JavaScript</li>
+</ul>
+
 <br>
