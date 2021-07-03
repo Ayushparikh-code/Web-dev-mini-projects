@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+
+    <!--Dark mode button-->
+    <div class="container">     
+            <div class="toggle-btn" id="icon"  onclick="this.classList.toggle('active')"> <!--note this-->
+                <div class="inner-circle"></div>
+            </div>  
+    </div>
+
+    <!--select-box section-->
+    <div class="select-box">
+        <header>Tic Tac Toe</header>
+        <div class="content">
+            <div class="title">Select which player you want to be?</div>
+            <div class="options">
+                <button class="playerX">Player (X)</button>
+                <button class="playerO">Player (O)</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Playboard section-->
+    <div class="play-board">
+        <div class="details">
+            <div class="players">
+                <span class="Xturn">X's turn</span>
+                <span class="Oturn">O's turn</span>
+                <div class="slider"></div>
+            </div>
+        </div>
+        <div class="play-area">
+            <section>
+                <span class="box1"></span>
+                <span class="box2"></span>
+                <span class="box3"></span>
+            </section>
+            <section>
+                <span class="box4"></span>
+                <span class="box5"></span>
+                <span class="box6"></span>
+            </section>
+            <section>
+                <span class="box7"></span>
+                <span class="box8"></span>
+                <span class="box9"></span>
+            </section>
+        </div>
+    </div>
+
+    <!--Result box-->
+    <div class="result-box">
+        <div class="won-text"></div>
+        <div class="btn">
+            <button>Replay</button>
+        </div>
+    </div>
+<div class="footer">
+            <h4 >Designed & Developed with &#10084;&#65039; by Atif</h4>
+        </div>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+            icon.classList.add("active");
+            }else{
+                icon.classList.remove("active");
+            }
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
