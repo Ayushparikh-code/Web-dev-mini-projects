@@ -27,7 +27,7 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - After that it will automatically display Weather, Humidity, Wind Speed of the city.
 
 
-<h3><ScreenShot  
+<h3> ScreenShots </h3>  
 <img src = "Weather-App.jpg" alt="Sample Image">
 <br>
 <video controls autoplay>
