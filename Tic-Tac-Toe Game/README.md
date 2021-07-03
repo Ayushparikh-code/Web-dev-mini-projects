@@ -28,8 +28,8 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Start Playing!!
 
 <h3> ScreenShots </h3> 
-![image](https://user-images.githubusercontent.com/64218887/124368548-b0cb4180-dc7f-11eb-8113-6dd489c661a9.png)
+<img width="889" alt="tictactoe-light" src="https://user-images.githubusercontent.com/64218887/124368601-4070f000-dc80-11eb-8d0d-4c7894491af6.png">
 <br>
-![image](https://user-images.githubusercontent.com/64218887/124368550-bcb70380-dc7f-11eb-83e2-966f2ed0b4c9.png)
+<img width="878" alt="tictactoe-dark" src="https://user-images.githubusercontent.com/64218887/124368600-3f3fc300-dc80-11eb-979c-a5e802dc344a.png">
+<br>
 
-<br>
