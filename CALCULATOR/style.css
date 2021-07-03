@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+  
+.App {
+    text-align: center;
+    background-color: black;
+    width: 256px;
+    border: black 2px solid;
+  }
+  
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(60px, auto);
+  }
+  
+.buttons button{
+    background-color: skyblue;
+    color: white;
+    margin: 2px;
+    border-radius: 3px;
+    border: none;
+  }
+
+.Clear{
+    grid-column: 1/span 2;
+}
+
+.Del{
+    grid-column: 3/span 2;
+}
+
+.highlight{
+    background-color: rgb(15, 80, 153) !important;
+}
+  
+.display{
+    border: none;
+    background-color: black;
+    color: white;
+    width: 250px;
+    height: 50px;
+    text-align: right;
+  }
