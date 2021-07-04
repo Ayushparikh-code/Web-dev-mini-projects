@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+{% block title %}Business{% endblock %}
+{% block styles %}
+<style>
+    a{
+        color: black
+    }
+    a:hover{
+        color: purple;
+    }
+    h4{
+        color: purple;
+        
+            }
+    .row{
+        margin:2%;
+        padding:2%;
+        font-size: 1em;
+
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+{% for i in parsed["articles"] %}
+
+<div class="row">
+    <div class="col-12 col-sm-3">
+    
+        <img src="{{i['urlToImage']}}" style="width:100%; height:100%">    
+    </div>
+    <div class="col-12 col-sm">
+        <a href="{{i['url']}}">
+        <h4>{{ i["title"] }}</h4>
+        <br>
+        <b>{{ i["description"] }}</b>
+        <p>{{ i["content"] }}</p>
+    
+    </a>
+    </div>
+</div>
+{% endfor %}
+</div>
+{% endblock %}
+    
