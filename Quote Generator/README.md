@@ -9,3 +9,6 @@ The Random Quote Generator randomly displays a quote when a button is clicked by
 
 ## API Used
 https://type.fit/api/quotes
+
+## ScreenShot
+<img src="" />
