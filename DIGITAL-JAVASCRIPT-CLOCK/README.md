@@ -26,10 +26,10 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 - Go to the directory
 - Run the index.html file
-- Start Calculating!!
+- Start Using The Clock!!
 
 <h3> ScreenShots </h3> 
-
+<img width="960" alt="Clock" src="https://user-images.githubusercontent.com/64218887/124380667-8d35e480-dcdb-11eb-9241-7e5a1bdd19a6.png">
 <br>
 
 
