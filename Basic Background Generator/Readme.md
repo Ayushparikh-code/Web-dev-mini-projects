@@ -21,4 +21,8 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Go to the directory
 - Run the index.html file
 - Start the stopwatch
+<br><br>
 
+![image](https://user-images.githubusercontent.com/67221487/124392353-ab6b0700-dd12-11eb-9093-b6309b08e2d5.png)
+<br>
+![image](https://user-images.githubusercontent.com/67221487/124392372-c2115e00-dd12-11eb-9743-9be785121fb4.png)
