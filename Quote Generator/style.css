@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("https://images.unsplash.com/photo-1490237251747-4557595144b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxMDcxMTcwfHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: #ffea00;
+    text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+  }
+
+.container{
+    width: 65%;
+    height: 450px;
+    border: 1px solid red;
+    /* background-color: #30373b; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    margin: 30px auto;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.6);
+}
+i{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #2d00f7;
+}
+
+#quotes{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lobster Two', cursive;
+    color: #f20089;
+}
+
+hr{
+    width: 60%;
+     /* border:  1px solid purple; */
+    margin: 10px 0; 
+}
+
+#author{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(7, 255, 7);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    color: #ffe6a7;
+    background: rgb(0, 179, 179);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.6);
+    bottom: 5px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:1180px) {
+    .container{
+        height: 600px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container{
+        height: 700px;
+        width: 90%;
+    }
+}
+
