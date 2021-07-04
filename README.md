@@ -35,12 +35,11 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects
 cd Web-dev-mini-projects
 ```
 
-**4.**  MAKE A NEW FOLDER WITH YOUR PROJECT NAME INSIDE web-dev-mini-projects or CHOOSE THE ALREADY CREATED PROJECT FOLDER ON WHICH U WANT TO ADD YOUR FILES   
+**4.**  MAKE A NEW FOLDER WITH YOUR PROJECT NAME INSIDE web-dev-mini-projects & Add your project files (eg: index.html ,style.css, script.js) inside that folder
 <br>
 
-**5.** Add your project files (eg: index.html ,style.css, script.js) inside that folder of previous step .
-         Also add a README file to your project which consists the short description/screenshots about your project ! 
- 
+**5.**  Also Add a README file in your project folder which consists of Description/screenshots about your project !
+          
  
 <br>
 
@@ -82,8 +81,9 @@ git push -u origin <your_branch_name>
  ## Our valuable Contributors👩‍💻👨‍💻 :
 
 <a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=Ayushparikh-code/Web-dev-mini-projects" />
+  <img src="https://contrib.rocks/image?repo=Ayushparikh-code/Web-dev-mini-projects" />
 </a>
+
 
  <br>
 
