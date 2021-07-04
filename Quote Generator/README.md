@@ -1,4 +1,4 @@
-# Project 1: Random Quote Generator
+# Random Quote Generator
 
 ## Description
 The Random Quote Generator randomly displays a quote when a button is clicked.
