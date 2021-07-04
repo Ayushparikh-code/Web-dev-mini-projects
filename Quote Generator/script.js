@@ -6,7 +6,7 @@ const author = document.getElementById('author');
 
  const randomNo = ()=>{
   let randNum = Math.floor(Math.random() *1680);
-    console.log(randNum);
+    // console.log(randNum);
   quoteData = jsonData[randNum];
   quotes.innerText = `${quoteData.text}`;
 //   author.innerText = `${quoteData.author}`;
