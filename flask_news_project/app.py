@@ -9,14 +9,13 @@ Created on Fri Mar 26 14:43:36 2021
 import hashlib
 
 from flask import Flask, render_template
-import base64
-from datetime import date
 import requests
 import json
 
 # enter your api key
 # I have used google-news-api
-api_key=""
+api_key="18a186f151b642f7900ece5d626029f4"
+api_key="18a186f151b642f7900ece5d626029f4"
 
 url="https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey="+ api_key
 response=response = requests.get(url)
