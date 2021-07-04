@@ -6,3 +6,6 @@ The Random Quote Generator randomly displays a quote when a button is clicked by
 ## Skills
 * JavaScript Async & Await
 * API  
+
+## API Used
+https://type.fit/api/quotes
