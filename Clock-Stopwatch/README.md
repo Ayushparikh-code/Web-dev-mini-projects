@@ -31,9 +31,10 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 <h3 align="center">DEFAULT VIEW</h3>
 
-![Default view](assests\stopwatch3.JPG)
+![stopwatch3](https://user-images.githubusercontent.com/56999749/124381007-da1aba80-dcdd-11eb-8b0a-630090aa9ac8.JPG)
+
 <br>
 
 <h3 align="center">PREVIEW OF THE STOP BUTTON</h3>
 
-![Stop button](assests\stopwatch.JPG)
+![stopwatch](https://user-images.githubusercontent.com/56999749/124381017-eb63c700-dcdd-11eb-9a40-182a13060c8e.JPG)
