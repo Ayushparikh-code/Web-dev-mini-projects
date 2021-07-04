@@ -1,3 +1,4 @@
+
 <h1>Calculator App</h1>
 
 <p>Simple Calculator App written in HTML, CSS, and JavaScript .</p>
@@ -28,8 +29,7 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Start Calculating!!
 
 <h3> ScreenShots </h3> 
-
+<img width="233" alt="Calc" src="https://user-images.githubusercontent.com/64218887/124379862-1d255f80-dcd7-11eb-9d61-585d873d92a0.png">
 <br>
 
-<br>
 
