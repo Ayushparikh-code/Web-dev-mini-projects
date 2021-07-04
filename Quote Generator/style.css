@@ -33,7 +33,7 @@ h1 {
 .container{
     width: 65%;
     height: 400px;
-  
+    border: 1px solid red;
     /* background-color: #30373b; */
     border-radius: 10px;
     display: flex;
