@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("https://img2.pngio.com/github-on-the-hunt-for-a-new-diversity-lead-developers-techworld-github-universe-png-800_450.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    width: 100%;
+   
+}
+
+.search-container{
+    position: relative;
+    width: 550px;
+    height: 50px;
+    background-color: #fff;
+    /* margin-bottom: 30px; */
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 50px;  
+    box-shadow: 0 3px 10px gray;
+}
+
+#input{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 5px 160px 5px 15px;
+    box-sizing: border-box;
+}
+
+#search{
+    width: 160px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color : white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.profile-card{
+  
+    width: 500px;
+    background-color: rgba(255,255,255,0.6);
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 10px gray;
+    font-family: 'Lobster Two', cursive;
+}
+
+
+.main-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+#prof-img{
+    height: 70px;
+    width: auto;
+    border-radius: 50%;
+    margin: 10px 0;
+    box-shadow: 0 3px 10px gray;
+}
+
+.name{
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+#username{
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bio{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 23px;
+}
+
+#bio{
+   font-weight: bold;
+   color: rgb(28, 99, 109);
+}
+
+p{
+    margin-top: 12px;
+}
+
+.follow{
+    width: 100%;
+    display: flex;
+    height: 60px;
+    border-top: 1px solid grey ;
+    font-size: 20px;
+}
+
+.follow div{
+    width: 50%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.followers{
+    border-right: 1px solid grey;
+}
+
+@media screen  and (max-width: 600px){      
+    .profile-card{
+        width: 450px;
+        margin: 0 45px;
+        margin-top: 30px;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        box-shadow: 0 3px 10px gray;
+        font-family: 'Lobster Two', cursive;
+    }
+}
