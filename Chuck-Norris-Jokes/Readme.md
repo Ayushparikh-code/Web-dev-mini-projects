@@ -1,7 +1,7 @@
 # Welcome 🖐 to the Chuck Norris Joke Generator
 It is a simple API integrated joke generator. We can generate jokes by selecting a category of jokes. Hope you people will enjoy reading the jokes.
 
-!(ChuckNorris.png)
+![Default View](ChuckNorris.png)
 
 
 ## 💻Tech Stack
