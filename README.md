@@ -66,16 +66,6 @@ git push -u origin <your_branch_name>
 
 **Congratulations!** Sit and relax till we review your PR, you've made your contribution to (https://github.com/Ayushparikh-code/Web-dev-mini-projects) project
 
-
-### Points
-
-<table>
-  <tr>
-    <th>Each pull request for adding your project</th>
-    <th>40</th> 
-  </tr>
-</table>
-
 <br>
 
  ## Our valuable Contributors👩‍💻👨‍💻 :
