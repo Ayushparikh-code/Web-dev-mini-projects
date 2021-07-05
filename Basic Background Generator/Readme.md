@@ -19,8 +19,13 @@
 git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 ```
 - Go to the directory
-- Run the index.html file
-- Start the stopwatch
+- Run the index.html file in your browser
+- Start creating your own gradient background
+<br>
+## Use of the Project
+
+This project aims to find the best looking background gradient for your project. You just have to select the colors you want from the color picker and then copy the code displayed and paste into your code as background color.
+It's That Simple!!
 <br><br>
 
 ![image](https://user-images.githubusercontent.com/67221487/124392353-ab6b0700-dd12-11eb-9093-b6309b08e2d5.png)
