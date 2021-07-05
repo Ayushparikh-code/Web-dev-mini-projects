@@ -1,0 +1,9 @@
+#root, body, html{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(rgba(14, 13, 13, 0.438), rgba(8, 8, 8, 0.425)), url(./assets/money.jpg);
+    background-size: cover;
+}
