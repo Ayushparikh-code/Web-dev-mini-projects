@@ -28,6 +28,7 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Start Playing!!
 
 <h3> ScreenShots </h3> 
+<img width="960" alt="Snake-Game" src="https://user-images.githubusercontent.com/64218887/124417994-0edb5000-dd78-11eb-9e4a-e0d651ee0f32.png">
 
 <br>
 
