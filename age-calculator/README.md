@@ -1,9 +1,11 @@
 ### Age Calculator
 
-Age  Calculator App written in HTML, CSS, and JavaScript.
+Age  Calculator website where you can input your birth date and get the Age
+in days,months and years.
 
 ### Use of the Project:
-You can easily calculate your age in years,months and days.
+A person's age can be calculated in days,months and years. It can be used 
+in offices,malls etc.
 
 ### Used Technologies
   * HTML5
