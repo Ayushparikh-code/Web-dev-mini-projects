@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Love Calculator</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">The Love Calculator</div>
+    </nav>
+
+    <section class="wrapper">
+        <h2 class="heading">Welcome to this great invention of Doctor Love!</h2>
+        <p class="about">We all know that a name can tell a lot about a person. Names are not randomly chosen: they all
+            have a meaning. Doctor Love knew this so he made another great invention just for the lonely you!
+
+            Sometimes you'd like to know if a relationship with someone could work out. Therefore Doctor Love himself
+            designed this great machine for you. With The Love Calculator you can calculate the probability of a
+            successful relationship between two people. The Love Calculator is an affective way to get an impression of
+            what the chances are on a relationship between two people.
+
+            To find out what the chances for you and your dream partner are, just fill in both full names (both first
+            and last name) in the two text boxes below, and press Calculate.</p>
+
+        <div class="box">
+            <div class="flex-box">
+                <div class="yourName">
+                    <label for="yourName" class="bold">Your Name</label> <br>
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="yourCrush">
+                    <label for="yourCrush" class="bold" >Your Crush</label> <br>
+                    <input type="text" placeholder="Full Name" required>
+                </div> 
+            </div>
+            <button onclick="calculateLove()">Calculate love</button>
+            <div id="lovePercentage">
+
+            </div>
+        </div>
+    </section>
+    
+<script src="script.js"></script>
+   
+</body>
+
+</html>

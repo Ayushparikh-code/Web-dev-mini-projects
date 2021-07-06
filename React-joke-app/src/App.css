@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+  overflow: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #fae6c2;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Title{
+color: rgb(158, 56, 16);
+font-family: 'Staatliches', cursive;
+}
+
+.generatorButton{
+  padding:20px;
+  border-radius: 7px;
+  font-weight: bold;
+  color: #4f1d70;
+  background-color: rgb(119, 214, 110);
+  outline: none;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  
+}
+
+.generatorButton:hover{
+  border-radius: 25px;
+  color: #8f223d;
+  background-color: rgb(248, 162, 140);
+  transition: 0.2s  ease-in-out;
+}
+
+
+.generatorButton:active {
+  transform: translateY(4px);
+ color: #8f223d;
+
+}
+
+.line2{
+  color: rgb(39, 13, 3);
+  
+
+}
+
+.linenew{
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.setup{
+  color: rgb(20, 51, 87);
+  font-family: 'Oswald', sans-serif;
+  /* font-family: 'Staatliches', cursive; */
+}
+
+.punchline{
+  /* color: #862abb; */
+  color: rgb(20, 51, 87);
+  font-family: 'Oswald', sans-serif;
+  /* font-family: 'Staatliches', cursive; */
+}
+
+.Footer{
+  /* font-family: 'Staatliches', cursive; */
+  font-family: 'Oswald', sans-serif;
+  background-color: #f0bfff;
+  /* padding-top:h; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #862abb;
+}

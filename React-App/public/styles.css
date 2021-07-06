@@ -1,0 +1,11 @@
+.addmargin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.centeralign {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}

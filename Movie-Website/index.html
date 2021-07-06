@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Icon.ico" type="image/x-icon" />.
+    <title>BingeNation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+      <img src="logo.png" class="poster" alt="logo">
+      <h1>BingeNation</h1>
+      </div>
+      <form>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Search a Movie.."
+          />
+        </div>
+        <button type="submit" class="btn" id="search">
+          Search
+        </button>
+      </form>
+
+      <div id="movies-searchable"></div>
+      <div id="movies-container"></div>
+    </div>
+
+    <script src="apiTransaction.js"></script>
+    <script src=" app.js"></script>
+  </body>
+</html>

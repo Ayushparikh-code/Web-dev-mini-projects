@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+		<link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  </head>
+
+
+<style>
+
+nav {
+  top: 0;
+  position: fixed;
+  z-index: 100;
+}
+img:hover{
+  width:110%;
+  height:110%;
+}
+
+h3 {
+  font-size: 2rem;
+  color: purple
+}
+</style>
+
+{% block styles %}
+{% endblock %}
+<body bgcolor="white">
+<nav class="navbar navbar-expand-lg navbar-light bg-light vw-100" style="background-color: #f9e0fa;">
+  <a class="navbar-brand" href="#">News 2four!</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('headlines')}}"
+          >Headlines <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('sports')}}"
+          >Sports </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('business')}}"
+          >Business </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('crypto')}}"
+          >Crpytocurrencies </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('science')}}"
+          >Science </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('tech')}}"
+          >Technology </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('ent')}}"
+          >Entertainment </a>
+      </li>
+      </ul>
+  </div>
+  </nav>
+
+  {% block content %}
+  {% endblock %}
+
+</body>
