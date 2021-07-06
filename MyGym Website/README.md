@@ -6,10 +6,10 @@ This website contains frontend for he gym website, and technologies used are
 
 * JS(BOOTSTRAP)
 
-## some output images
+## Output
 
-![output1](/images/output1.jpg)
+![output1](/images/output/output1.png)
 
-![output2](/images/output2.jpg)
+![output2](/images/output/output2.png)
 
-![output2](/images/output3.jpg)
+![output2](/images/output/output3.png)
