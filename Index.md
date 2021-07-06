@@ -45,4 +45,6 @@
 | [TO-DO List](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/To-Do%20List)                                   | Simple TO-DO List written in HTML, CSS, and JavaScript                                                                                                                                                                               |
 | [Weather-App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weather-App)                                   | Simple Weather app written in HTML, CSS, and JavaScript using the APIs for fetching weather and geolocation information                                                                                                              |
 | [News Webapp](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/flask_news_project)                            | A web app for searching news made using flask                                                                                                                                                                                        |
+| Score Keeper                                                                                                                  |A web Page where user can keep a count of their scores and will tell which player won.
+        |
 
