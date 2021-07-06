@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Recipe Finder - React Application   :peach: :ramen: :fork_and_knife: :cherries: :pizza: :green_apple:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### About the Project
+A single page web application that allows users to search recipes based on their query.
 
-## Available Scripts
+### Technologies
 
-In the project directory, you can run:
+- React
+  - Hooks
+  - Components
+- CSS
+  - CSS Flex
+- Javascript
+  - Fetch API
+  - ES6
+- API
+  - Edamam API
 
-### `npm start`
+### Libraries Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* `styled-components`
+* `axios`
+* `react-scripts`
+* `material-ui`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### API Used
+Edamam Recipe Search API
 
-### `npm test`
+Link : https://www.edamam.com/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### How It Works
 
-### `npm run build`
+- Search a recipe in the search input
+- Grabs the recipe information from Edamam API.
+- Information is returned has a JSON object
+- Using React components to structure data into presentational format
+- Using CSS to create visually appealing and user friendly application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img  src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/recipe-finder/screenshot/ss1.png" />
 
-### `npm run eject`
+Type your recipe in search bar
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/recipe-finder/screenshot/ss2.png" />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Click on the Ingredients list, you will see UI like below:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/recipe-finder/screenshot/ss3.png" />
