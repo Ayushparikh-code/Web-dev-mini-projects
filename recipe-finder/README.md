@@ -35,3 +35,10 @@ Link : https://www.edamam.com/
 - Information is returned has a JSON object
 - Using React components to structure data into presentational format
 - Using CSS to create visually appealing and user friendly application
+
+
+### Screenshots
+
+<img  src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/recipe-finder/screenshot/ss1.png" />
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/recipe-finder/screenshot/ss2.png" />
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/recipe-finder/screenshot/ss3.png" />
