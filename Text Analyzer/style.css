@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url("https://i.pinimg.com/originals/fb/2f/42/fb2f42619c64a29927ad64cd72dafe51.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 44px;
+    border: 2px solid #bfd200;
+    box-shadow: 0px 2px 8px rgba(10, 10, 10, 10);
+  }
+  
+  .container-content {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .text-entry {
+    border-right: 3px dotted blue;
+  }
+  h2 {
+    font-family: monospace;
+    padding: 1rem 0;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+  }
+  
+  textarea {
+    width: 100%;
+    border-radius: 20px;
+    line-height: 1.5;
+    resize: none;
+    outline: none;
+    padding: 1.5rem;
+    font-size: 1rem;
+    border: 3px solid #f72585;
+    background: none;
+    height: 220px;
+    margin-left: -10px;
+    color: white;
+    box-shadow: 0px 2px 8px rgba(10, 10, 10, 10);
+  }
+  
+  textarea::placeholder {
+    color: white;
+  }
+  
+  #process-btn {
+    display: block;
+    background: none;
+    border: none;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border: 2px solid #f72585;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: 0.5s ease-in-out;
+    color: white;
+    box-shadow: 0px 2px 8px rgba(10, 10, 10, 10);
+  }
+  
+  #process-btn:hover {
+    background-color: #ef476f;
+  }
+  
+  .text-info-list {
+    list-style: none;
+    border: 3px solid #f72585;
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 2px 8px rgba(10, 10, 10, 10);
+  }
+  
+  li {
+    display: flex;
+    margin: 0.2rem 0;
+    padding: 0.2rem 0;
+    align-items: center;
+  }
+  
+  li p {
+    padding-right: 0.5rem;
+    font-weight: 700;
+    color: white;
+  }
+  
+  li span {
+    font-weight: 700;
+    background: white;
+    border-radius: 25px;
+    margin-left: 1.4rem;
+    padding: 0.1rem 1rem;
+    color: #538d22;
+  }
+  
+  @media screen and (max-width: 760px) {
+    .container {
+      border: none;
+    }
+  
+    .container-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .text-entry {
+      border-right: none;
+      border-bottom: 3px dotted blue;
+    }
+  }
+  
+  
