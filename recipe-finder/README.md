@@ -51,4 +51,3 @@ Click on the Ingredients list, you will see UI like below:
 
 ### Live Demo
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/recipe-finder/screenshot/recipe-finder.gif" />
