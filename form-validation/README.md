@@ -1,5 +1,5 @@
 ### Form Validation
-Abasic login form with validations!
+A basic login form with validations!
 
 ### Use of the Project:
 We can add this login form at start of any website to verify deatils.
