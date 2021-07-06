@@ -34,6 +34,5 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 
 
-=======
-![clock](https://user-images.githubusercontent.com/72425181/124385977-a6e42580-dcf5-11eb-8f45-3efc073368a0.png)
+
 
