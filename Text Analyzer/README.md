@@ -23,8 +23,8 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 Starting Of UI
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/Text%20Analyzer/SS1.png" width="700px"/>
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/Text%20Analyzer/SS1.png"/>
 
 After Writing Text
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/Text%20Analyzer/SS2.png"  width="700px" />
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/Text%20Analyzer/SS2.png" />
