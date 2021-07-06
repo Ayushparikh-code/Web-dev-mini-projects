@@ -48,3 +48,6 @@ Type your recipe in search bar
 Click on the Ingredients list, you will see UI like below:
 
 <img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/recipe-finder/screenshot/ss3.png" />
+
+### Live Demo
+
