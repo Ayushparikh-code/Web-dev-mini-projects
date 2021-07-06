@@ -9,4 +9,11 @@ The Text Analyzer analyze the text entered by the user. After clicking on the pr
 * CSS
 
 ## ScreenShot
-<img src="" />
+
+Starting Of UI
+
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/Text%20Analyzer/SS1.png" width="700px"/>
+
+After Writing Text
+
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/Text%20Analyzer/SS2.png"  width="700px" />
