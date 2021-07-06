@@ -35,20 +35,13 @@ const StyledTableCell = withStyles((theme) => ({
   },
 }))(TableCell);
 
-const StyledTableRow = withStyles((theme) => ({
-  root: {
-    '&:nth-of-type(odd)': {
-      backgroundColor: theme.palette.action.hover,
-    },
-  },
-}))(TableRow);
 
 //  placeholder component
 
 const Placeholder = styled.img`
-width : 120px;
-height : 120px;
-margin: 200px;
+width : 350px;
+height : 350px;
+margin: 100px;
 opacity: 50%;
 `;
 
@@ -79,12 +72,12 @@ const RecipeComponent = (props) => {
             </TableHead>
             <TableBody>
               {recipeObj.ingredients.map((ingredientObj) =>
-                <StyledTableRow>
+                <TableRow>
                   <StyledTableCell><img src={ingredientObj.image} alt={ingredientObj.foodCategory} style={mystyle} /></StyledTableCell>
                   <StyledTableCell>{ingredientObj.foodCategory}</StyledTableCell>
                   <StyledTableCell>{ingredientObj.text}</StyledTableCell>
                   <StyledTableCell>{ingredientObj.weight}</StyledTableCell>
-                </StyledTableRow>
+                </TableRow>
               )}
 
             </TableBody>
@@ -133,7 +126,7 @@ function App() {
     <Container>
       <Header.HeaderComponent>
         <Header.AppNameComponent>
-          <Header.AppIcon src="/hamburger.svg" />
+          <Header.AppIcon src="/logo.svg" />
           Recipe Finder
         </Header.AppNameComponent>
         <Header.SearchComponent>
@@ -146,7 +139,7 @@ function App() {
         {recipeList.length ? recipeList.map((recipeObject) => (
           <RecipeComponent recipeObj={recipeObject.recipe} />
         )
-        ) : <Placeholder src="/hamburger.svg" />}
+        ) : <Placeholder src="/recipe.png" />}
 
 
 
