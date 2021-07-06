@@ -1,4 +1,4 @@
-h1> Ping Pong Ball Score-Keeper </h1>
+<h1> Ping Pong Ball Score-Keeper </h1>
 
 <h2> Project Overview</h2>
 In this project user can keep score of various 2 players games. 
