@@ -39,15 +39,16 @@ Link : https://www.edamam.com/
 
 ### Screenshots
 
-<img  src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/recipe-finder/screenshot/ss1.png" />
+<img  src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/d-khushi/recipe-finder/screenshot/ss1.png" />
 
 Type your recipe in search bar
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/recipe-finder/screenshot/ss2.png" />
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/d-khushi/recipe-finder/screenshot/ss2.png" />
 
 Click on the Ingredients list, you will see UI like below:
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/recipe-finder/screenshot/ss3.png" />
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/d-khushi/recipe-finder/screenshot/ss3.png" />
 
 ### Live Demo
 
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/d-khushi/recipe-finder/screenshot/recipe-finder.gif" />
