@@ -1,0 +1,31 @@
+.container{
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+}
+
+.container h2{
+    font-size: 40px;
+}
+
+.container p{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkgray;
+}
+
+.flex-box{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+img{
+    margin: 20px;
+    
+}
+
+img:hover{
+    box-shadow: 0px 10px 50px rgba(70, 32, 231, 1);
+}
