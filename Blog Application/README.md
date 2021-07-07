@@ -10,3 +10,13 @@ Blog Application is an application where user can add a new blog, edit it, delet
 
 
 ## ScreenShot
+
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/lgm21/Blog%20Application/Screenshots/ss1.png" />
+
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/lgm21/Blog%20Application/Screenshots/ss2.png" />
+
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/lgm21/Blog%20Application/Screenshots/ss3.png" />
+
+## Live Demo
+
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/lgm21/Blog%20Application/Screenshots/demo.gif" />
