@@ -1,4 +1,4 @@
-# Welcome 🖐 to the Chuck Norris Joke Generator
+# Welcome 🖐 to the DICE GAME
 It is a simple Dice Game. We can use this game to toss between two users and decide who is the winner.
 
 
