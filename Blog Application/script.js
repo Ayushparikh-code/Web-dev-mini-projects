@@ -246,3 +246,5 @@ const openBlog = (event) => {
 	blogModal.innerHTML = htmlModalContent(getBlog[0]);
 };
 
+
+
