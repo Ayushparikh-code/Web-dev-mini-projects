@@ -1,7 +1,10 @@
 # FAQ Accordion
 
 ## Description
-A  accordion is a useful way to squeeze lots of page content into a small space. Generally, Frequently Asked Questions (FAQs) section is made with the help of accordion.
+A  accordion is a useful way to squeeze lots of page content into a small space. 
+
+## Use of this Project
+Generally, Frequently Asked Questions (FAQs) section is made with the help of accordion.
 
 ## Stacks Used
 * JavaScript
