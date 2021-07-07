@@ -23,4 +23,5 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 ### Screenshot
 
-<!-- image -->
+![google](https://user-images.githubusercontent.com/72425181/124776049-c29d3500-df5c-11eb-9f66-a109e579a0c5.png)
+
