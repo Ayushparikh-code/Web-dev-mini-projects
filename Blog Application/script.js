@@ -150,8 +150,6 @@ const editCard = (event) => {
 	submitBtn.removeAttribute("data-bs-toggle");
 	submitBtn.removeAttribute("data-bs-target");
 
-
-
 }
 
 const saveEditChanges = (event) => {
@@ -208,8 +206,6 @@ const saveEditChanges = (event) => {
 
 	submitBtn.innerHTML = "Open Blog";
 
-
-
 }
 
 const htmlModalContent = ({
@@ -245,6 +241,4 @@ const openBlog = (event) => {
 	// console.log(getBlog[0]);
 	blogModal.innerHTML = htmlModalContent(getBlog[0]);
 };
-
-
 
