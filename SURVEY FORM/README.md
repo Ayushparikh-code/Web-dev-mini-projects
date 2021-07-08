@@ -2,7 +2,6 @@
 It is a simple Survey Form. We can use this form to take feedback from the customers and use it for the betterment.
 
 
-
 ## 💻Tech Stack
 <br>
 
@@ -38,7 +37,9 @@ If you are using node then you need to reload your server everytime you make cha
 
 <br>
 
+##Screenshots
 
-
+![Demo1](public/images/survey-demo1.png)
+<br>
 
 ## Happy Coding!
