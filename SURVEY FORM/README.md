@@ -42,4 +42,8 @@ If you are using node then you need to reload your server everytime you make cha
 ![Demo1](public/images/survey-demo1.png)
 <br>
 
+![Demo2](public/images/survey-demo2.png)
+<br>
+
+
 ## Happy Coding!
