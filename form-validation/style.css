@@ -1,0 +1,114 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #8e89cf;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+.container{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	width: 400px;
+	max-width: 100%;
+	overflow: hidden;
+}
+.header{
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #f0f0f0;
+	padding: 20px 40px;
+}
+.header h2{
+	margin: 0;
+}
+.form{
+	padding: 30px 40px;
+
+}
+.form-control{
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+.form-control label{
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input{
+	border:2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 14px;
+	width:100%;
+	padding:10px;
+
+}
+
+.form-control i{
+	position: absolute;
+	top: 40px;
+	right: 10px;
+	visibility: hidden;
+}
+
+.form-control small{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+.form button{
+	background-color: #8e44fd;
+	border:2px solid #8e44fd;
+	color: #fff;
+	display: block;
+	padding: 10px;
+	width:100%;
+	font-size: 16px;
+	border-radius: 4px;
+}
+
+.form-control.success input{
+      border-color: #2ecc71;
+}
+.form-control.error input{
+      border-color: #e74c3c;
+}
+.form-control.success i.fa-check-circle{
+	visibility: visible;
+	color: #2ecc71;
+
+}
+.form-control.error i.fa-exclamation-circle{
+	visibility: visible;
+	color: #e74c3c;
+
+}
+.form-control.error small{
+	visibility: visible;
+	color: #e74c3c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
