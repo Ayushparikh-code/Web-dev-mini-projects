@@ -1,23 +1,16 @@
 body{
     background-color: rgb(246, 167, 181);
 }
-h1{
-    text-align: center;
-}
+
 div{
     background-color: #fff;
     text-align: center;
     width: 600px;
-    /* height: 570px; */
     height: auto;
     position: absolute;
     left: 21%;
-    margin: 50px;
     padding: 50px;
-}
-
-header {
-    margin-bottom: 50px;
+    margin: 50px;
 }
 
 input, textarea{
