@@ -51,4 +51,4 @@
 | Score Keeper                                                                                                                  |A web Page where user can keep a count of their scores and will tell which player won.| 
 | [Image Filter App]()    
 | [Form Validation](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/form-validation)                         |A basic sign up page with all the validations in javascript. |                                                                              |An Awesome Image Filter App written in HTML, CSS, JavaScript and CamanJS.|
-  
+| [Age Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/age-calculator)                           | A website which can be used to calculate age of a person in days,months and years . |
