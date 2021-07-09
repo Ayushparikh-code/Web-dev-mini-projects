@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Please fill this Survey-Form.</h1>
+
+    <form method="POST">
+            <div>
+            <label for="name"><b>Name:</b></label>
+            <input type="text" placeholder="Enter your name" name="name" required>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="email" placeholder="Enter your Email" name="email" required>
+
+            <label for="tel"><b>Phone Number:</b></label>
+            <input type="number" placeholder="Enter your Phone Number" name="phoneNumber" required>
+
+            <label><b>How likely is that you would recommend Pizza Ghar to a family member or a friend?</b></label>
+            <label>Definately</label>
+            <input type="radio" name="same" name="recommendation">
+            <label>Maybe</label>
+            <input type="radio" name="same" name="recommendation">
+            <label>Not Sure</label>
+            <input type="radio" name="same" name="recommendation">
+
+            <label><b>What do you like most in our Pizzas?</b></label>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+
+            <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+
+</body>
+</html>
