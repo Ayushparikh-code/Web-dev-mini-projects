@@ -1,0 +1,52 @@
+.container{
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+}
+
+.container h2{
+    font-size: 40px;
+}
+
+.flex-box{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.btn{
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-blue{
+    background-color: rgba(54, 54, 238, 0.908);
+}
+.btn-blue:hover{
+    background-color: rgba(76, 76, 252, 0.918);
+}
+.btn-red{
+    background-color: rgba(214, 13, 13, 0.726);
+}
+.btn-red:hover{
+    background-color: rgba(189, 15, 15, 0.726);
+}
+.btn-green{
+    background-color: green;
+}
+.btn-green:hover{
+    background-color: rgb(8, 94, 8);
+}
+.btn-yellow{
+    background-color: rgb(240, 187, 41);
+    color: #000;
+}
+.btn-yellow:hover{
+    background-color: rgb(226, 168, 46);
+}
