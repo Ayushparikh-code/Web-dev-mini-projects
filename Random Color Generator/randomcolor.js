@@ -1,21 +1,57 @@
-const colour = document.querySelector('button');
-const  h1=document.querySelector('h1');
-const rndmcolor = () =>
-{
-   const r = Math.floor(Math.random()*255);
-   const g = Math.floor(Math.random()*255);
-   const b = Math.floor(Math.random()*255);
-//   let r=10, b =40 ,g=31;
-   return `rgb(${r},${g},${b})`;
+const colour = document.querySelector('#random');
+const h = document.querySelector('h1');
+const gradcolor = document.querySelector('#gradc');
+const buttoncolor = document.querySelector('.brndm')
+
+const rndmcolor = () => {
+
+    let rgb = [1, 1, 1];
+    rgb[0] = Math.floor(Math.random() * 255);
+    rgb[1] = Math.floor(Math.random() * 255);
+    rgb[2] = Math.floor(Math.random() * 255);
+
+    return rgb;
+}
+const checkContrast = (tcolor) => {
+    const textc = Math.floor(((parseInt(tcolor[0]) * 255) + (parseInt(tcolor[1]) * 255) + (parseInt(tcolor[2]) * 255)) / 765);
+    const textColour = (textc > 96) ? 'black' : 'white';
+    return textColour;
 }
 
 colour.addEventListener('click', function () {
-    const newcolor= rndmcolor();
-    document.body.style.backgroundColor = newcolor;
-    console.log("hey")
-    h1.innerText= `The Color is : ${newcolor}`;
-    // if(`newcolor<rgb(50,50,50)`)
-    // {
-    //   h1.innerText.style.colour = white;  
-    // }
+    const tempcolor = rndmcolor();
+    const newcolor = `rgb(${tempcolor[0]},${tempcolor[1]},${tempcolor[2]})`;
+    const textcolor = checkContrast(tempcolor);
+    document.body.style.background = newcolor;
+    h.style.color = textcolor;
+    h.innerText = `THE BACKGROUND COLOR IS: ${newcolor}`;
+    buttoncolor.style.background = "white";
+
+});
+
+gradcolor.addEventListener('click', function () {
+    const tempcolor = rndmcolor();
+    const tempcolor2 = rndmcolor();
+    const newcolor = `rgb(${tempcolor[0]},${tempcolor[1]},${tempcolor[2]})`;
+    const newcolorr2 = `rgb(${tempcolor2[0]},${tempcolor2[1]},${tempcolor2[2]})`;
+
+    document.body.style.background = "linear-gradient(to right, " +
+        newcolor +
+        ", " +
+        newcolorr2 +
+        ")";
+
+    h.innerText = `THE GRADIENT COLOR IS: ${newcolor},${newcolorr2}`;
+    h.style.color = "black";
+    buttoncolor.style.background = "white";
+});
+
+buttoncolor.addEventListener('click', function () {
+    const tempcolor = rndmcolor();
+    const newcolor = `rgb(${tempcolor[0]},${tempcolor[1]},${tempcolor[2]})`;
+    const contrast = checkContrast(tempcolor);
+    document.body.style.background = contrast;
+    buttoncolor.style.background = newcolor;
+    h.style.color = newcolor;
+    h.innerText = `THE BUTTON BACKGROUND COLOR IS: ${newcolor}`;
 });
