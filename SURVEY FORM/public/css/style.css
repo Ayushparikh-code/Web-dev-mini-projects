@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(246, 167, 181);
+}
+
+div{
+    background-color: #fff;
+    text-align: center;
+    width: 600px;
+    height: auto;
+    position: absolute;
+    left: 21%;
+    padding: 50px;
+    margin: 50px;
+}
+
+input, textarea{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: rgb(226, 224, 224);
+    padding: 8px 15px;
+    width: 40%;
+}
+
+textarea{
+    width: 60%;
+}
+
+.btn{
+    color: white;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 12px 23px;
+    cursor: pointer;
+    background-color: pink;
+    border: none;
+    opacity: 0.9;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-size: 56px;
+}
