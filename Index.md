@@ -1,4 +1,4 @@
-<h1 align="center">Web-dev-mini-projects</h1> 
+<h1 align="center">Web-dev-mini-projects</h1>
 <br>
 <div align="center">
 <a href="https://github.com/topics/html"><img alt="HTML" src="https://img.shields.io/badge/HTML%20-%23E34F26.svg?&style=for-the-badge"/></a>
@@ -48,10 +48,11 @@
 | [TO-DO List](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/To-Do%20List)                                   | Simple TO-DO List written in HTML, CSS, and JavaScript   |
 | [Weather-App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weather-App)                                   | Simple Weather app written in HTML, CSS, and JavaScript using the APIs for fetching weather and geolocation information                                                                                                              |
 | [News Webapp](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/flask_news_project)                            | A web app for searching news made using flask                                                                                                                                                                                        |
-| Score Keeper                                                                                                                  |A web Page where user can keep a count of their scores and will tell which player won.| 
+| Score Keeper                                                                                                                  |A web Page where user can keep a count of their scores and will tell which player won.|
 | [Image Filter App]()                                                                                                            |An Awesome Image Filter App written in Html,Css,Javascript and CamanJS.|
 | [Form Validation](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/form-validation)                         |A basic sign up page with all the validations in javascript.   |     
 | [Age Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/age-calculator)                           | A website which can be used to calculate age of a person in days,months and years . |
 | [BMI Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/bmi-calculator)                           | A basic website which can be used to calculate body mass index |
 | [Glassmorphism Animation Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Glassmorphism-Form)      |A basic login page with Glassmorphism Animations |       
-| [Battery Percentage Indicator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Battery%20Indicator)      |This is a battery indicator app which is used to know battery percentage of the system. | 
+| [Battery Percentage Indicator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Battery%20Indicator)      |This is a battery indicator app which is used to know battery percentage of the system. |
+| [ConnectFour](https://github.com/Shauryaditya/Web-dev-mini-projects/tree/main/ConnectFour)                                  |  This is a simple game which can be played between two players.The player who connects the four bubbles first wins the game . The bubbles could be connected horizontally , vertically or diagonally.The players have to be together since multiplayer feature is not available .|
