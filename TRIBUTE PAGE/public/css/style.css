@@ -1,8 +1,9 @@
 .massiveContainer{
     background-color: #eee;
-    height: 1000px;
+    height: auto;
     border-radius: 10px;
     margin: 40px 20px;
+    padding-bottom: 40px;
 }
 .heading{
     text-transform: capitalize;
@@ -36,6 +37,10 @@ img{
     border-radius: 50%;
 }
 
+.image img {
+    height: 400px;
+}
+
 .caption{
     margin-top: 15px;
     background-color: #ddd;
@@ -53,3 +58,30 @@ a{
     text-decoration: none;
 }
 
+@media (max-width: 1005px) {
+    .massiveContainer {
+       padding-bottom: 20px;
+    }
+}
+
+@media(max-width: 780px) {
+    .image img {
+        height: 280px;
+        object-fit: contain;
+    }
+    
+}
+
+@media(max-width: 600px) {
+    .image img {
+        height: 180px;
+        object-fit: contain;
+    }
+}
+
+@media(max-width: 410px) {
+    .image img {
+        height: 130px;
+        object-fit: contain;
+    }
+}
