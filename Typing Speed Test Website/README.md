@@ -1,7 +1,7 @@
 # Typing Speed Test Website
 
 ## Description
-This website is used to check the typing speed of the user. It will the give the information of how many seconds require for the particular sentence.
+This website is used to check the typing speed of the user. It will the give the information of how many seconds require for typing the particular sentence.
 
 ## Use of the Project
 User can improve his/her typing speed. 
@@ -11,9 +11,13 @@ User can improve his/her typing speed.
 * JavaScript
 
 
-
-
 ## ScreenShot
-<img src="" />
-<img src="" />
-<img src="" />
+
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushiP/Typing%20Speed%20Test%20Website/screenshots/ss1.png" />
+
+After Clicking on the Start button, UI looks like:
+
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushiP/Typing%20Speed%20Test%20Website/screenshots/ss2.png" />
+
+After clicking on the Done Button, it give the result:
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushiP/Typing%20Speed%20Test%20Website/screenshots/ss3.png" />
