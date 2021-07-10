@@ -10,11 +10,11 @@ User can improve his/her typing speed.
 
 1. Clone the Web-dev-min-projects, use this command `git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git `
 2. Move inside Typing Speed Test Webite folder, use this command, `cd Typing Speed Test Website`
-3. Open the index.html file with live server.
+3. Open the index.html file and run with live server.
 4. Click on the start button.
-5. A sentence appear in the screen, write that sentence in the empty space. 
+5. A sentence appear on the screen, write that sentence in the empty space. 
 6. After writing the complete sentence, click on Done.
-7. You will get your result, how many words are typed and how much time required to type these words.
+7. You will get your result, how many words are typed and how much time required to type those words.
 
 ## Stacks Used
 * HTML & CSS
@@ -31,3 +31,8 @@ After Clicking on the Start button, UI looks like:
 
 After clicking on the Done Button, it give the result:
 <img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushiP/Typing%20Speed%20Test%20Website/screenshots/ss3.png" />
+
+
+## Live Demo
+
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushiP/Typing%20Speed%20Test%20Website/screenshots/demo.gif" />
