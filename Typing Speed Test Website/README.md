@@ -6,6 +6,10 @@ This website is used to check the typing speed of the user. It will the give the
 ## Use of the Project
 User can improve his/her typing speed. 
 
+## How to use the project
+
+1. `Clone the Web-dev-min-projects`
+
 ## Stacks Used
 * HTML & CSS
 * JavaScript
