@@ -4,9 +4,11 @@ This a simple project where user can generate a random color for background, ran
 <h3>Use of the Project</h3> <br>
 User can have rgb value random color and can see how  a color would look on backgund of the page and button. User can also have  random gradient background color. <br>
 <h3> Languages Used:-</h3> <br>
-HTML<br>
-CSS<br>
-Javascript<br>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+</ul>
 <h3>How to run the project</h3><br>
 Running the project is easy.The user only have to press the button and a random color would be generated.<br>
 Here Are Some Pictures:-<br>
