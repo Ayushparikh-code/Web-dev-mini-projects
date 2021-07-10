@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Buttons</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="change-my-color">Challenge 4: Changing the colors of all buttons</h2>
+        <div class="flex-box">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonChangeColor(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-blue">Submit!</button>
+            <button class="btn btn-red">Click!</button>
+            <button class="btn btn-yellow">Tap!</button>
+            <button class="btn btn-green">Push!</button>
+        </div>
+
+    </div>
+
+    <script>
+        function buttonChangeColor(buttonThingy) {
+            console.log(buttonThingy.value);
+
+        if(buttonThingy.value === "red") {
+            buttonRed();
+        } else if(buttonThingy.value === "green") {
+            buttonGreen();
+        } else if(buttonThingy.value === "reset") {
+            buttonReset();
+        } else {
+            buttonRandom();
+        }
+    }
+
+    let all_buttons = document.getElementsByTagName("button");
+
+    var copy_all_buttons = [];
+    for (let i = 0; i< all_buttons.length; i++) {
+        copy_all_buttons.push(all_buttons[i].classList[1]);
+        console.log(copy_all_buttons);
+    }
+
+    function buttonRed() {
+        for (let i = 0; i< all_buttons.length; i++) {
+            all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+            all_buttons[i].classList.add("btn-red");
+        }
+    }
+
+    function buttonGreen() {
+        for (let i = 0; i< all_buttons.length; i++) {
+            all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+            all_buttons[i].classList.add("btn-green");
+        }
+    }
+
+    function buttonReset() {
+        for (let i = 0; i< all_buttons.length; i++) {
+            all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+            all_buttons[i].classList.add(copy_all_buttons[i]);
+        }
+    }
+
+    function buttonRandom() {
+        let choices = ["btn-red", "btn-green", "btn-yellow", "btn-blue"];
+        for (let i = 0; i< all_buttons.length; i++) {
+        let random = Math.floor(Math.random() * 4);
+        all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+        all_buttons[i].classList.add(choices[random]);
+        }
+    }
+    
+
+    </script>
+
+</body>
+
+</html>
