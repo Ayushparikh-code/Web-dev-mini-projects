@@ -23,3 +23,7 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Run the index.html file
 - Have a look at the webpage.
 
+
+<h3> ScreenShots </h3>  
+<img src = "public/images/tribute.png" alt="Tribute-webpage-demo">
+
