@@ -55,3 +55,4 @@
 | [BMI Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/bmi-calculator)                           | A basic website which can be used to calculate body mass index |
 | [Glassmorphism Animation Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Glassmorphism-Form)      |A basic login page with Glassmorphism Animations |       
 | [Battery Percentage Indicator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Battery%20Indicator)      |This is a battery indicator app which is used to know battery percentage of the system. | 
+| [Expand Button Animation ](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Expand-Button) |This is a basic expand button animation website in which by clicking on the button,the button gets expanded and shows text and shrinks after 5 seconds.|
