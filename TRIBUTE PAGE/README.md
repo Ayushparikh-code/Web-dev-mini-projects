@@ -26,4 +26,5 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 <h3> ScreenShots </h3>  
 <img src = "public/images/tribute.png" alt="Tribute-webpage-demo">
-
+<br>
+<img src = "public/images/tribute1.png" alt="Tribute-webpage-demo">
