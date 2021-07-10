@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.game-heading {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    text-shadow: 3px 2px green;
+    font-size: 5em;
+    margin: 40px 0;
+}
+
+.game {
+    width: 800px;
+    height: 300px;
+    margin: 60px auto;
+    display: flex;
+    border: 3px solid red;
+}
+
+.cactus {
+    height: 40px;
+    object-fit: contain;
+    position: relative;
+    top: 261px;
+    left: 670px;
+    animation: block 3s infinite linear;
+}
+
+.block {
+    height: 40px;
+}
+
+.character {
+    height: 100px;
+}
+
+.dino {
+    height: 100px;
+    object-fit: contain;
+    position: relative;
+    top: 203px;
+}
+
+.animate {
+    animation: character 500ms;
+}
+
+@keyframes block {
+    0% {
+        left: 670px;
+    }
+    100% {
+        left: -60px;
+    }
+}
+
+@keyframes character {
+    0% {
+        top: 203px;
+    }
+    30% {
+        top: 140px;
+    }
+    70% {
+        top: 140px;
+    }
+    100% {
+        top: 203px;
+    }
+}

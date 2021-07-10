@@ -1,0 +1,107 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  color: #266150;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-family: "Rubik", sans-serif;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  color: darkcyan;
+  position: relative;
+}
+.label {
+  display: flex;
+  justify-content: center;
+  color: #e03131;
+  font-weight: bolder;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.8;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  color: #4f4846;
+  text-indent: 25px;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.p1button {
+  background-color: #adb5bd;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 15px;
+  border-radius: 12px;
+  font-size: 16px;
+
+  border: none;
+  padding: 15px 32px;
+  font-weight: bolder;
+}
+.p1button:active {
+  transform: translateY(4px);
+}
+
+.p2button {
+  background-color: #adb5bd;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 15px;
+  border-radius: 12px;
+  font-size: 16px;
+
+  border: none;
+  font-weight: bolder;
+  padding: 15px 32px;
+}
+.p2button:active {
+  transform: translateY(4px);
+}
+.reset {
+  background-color: #ddaf94;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 15px;
+  border-radius: 12px;
+  font-size: 16px;
+
+  border: none;
+  font-weight: bolder;
+  padding: 15px 32px;
+}
+.reset:active {
+  transform: translateY(4px);
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc078;
+}
+
+html {
+  height: 100%;
+}
+
+.winner {
+  color: green;
+}
+
+.loser {
+  color: red;
+}
+
+

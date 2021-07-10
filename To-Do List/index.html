@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.js"></script>
+
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <h1 align="center">Todo List</h1>
+
+    <div class="row">
+      <!-- Input box -->
+      <div class="col-md-7">
+
+        <div class="form-group">
+          <label for="inpNewTask">New Task</label>
+          <input type="text" class="form-control" id="inpNewTask"
+                 aria-describedby="newTaskHelp"
+                 placeholder="Enter the name of the task">
+          <small id="newTaskHelp" class="form-text text-muted">A short one line description of your task</small>
+        </div>
+      </div>
+
+      <!--  Buttons -->
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-6 col-sm-3 col-md-6 p-1">
+            <button class="btn btn-success col" disabled id="btnAdd">
+              <i class="fas fa-plus-square"></i> Add
+            </button>
+          </div>
+          <div class="col-6 col-sm-3 col-md-6  p-1">
+            <button class="btn btn-danger col" disabled id="btnReset">
+              <i class="fas fa-backspace"></i> Reset
+            </button>
+          </div>
+          <div class="col-6 col-sm-3 col-md-6  p-1">
+            <button class="btn btn-info col" disabled id="btnSort">
+              <i class="fas fa-sort-amount-down"></i> Sort
+            </button>
+          </div>
+          <div class="col-6 col-sm-3 col-md-6  p-1">
+            <button class="btn btn-warning col" disabled id="btnCleanup">
+              <i class="fas fa-trash-alt"></i> Cleanup
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Task List -->
+
+    <ul class="row list-group m-2" id="ulTasks">
+    </ul>
+  </div>
+
+</body>
+</html>

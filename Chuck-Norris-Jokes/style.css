@@ -1,0 +1,53 @@
+*{
+    margin-bottom:1rem;;
+    padding:0;
+    text-align:center;
+}
+
+div{
+    width:22rem;
+    height:15rem;
+    text-align:center;
+    margin:auto;
+    margin-bottom:1.5rem;
+    padding:10px;
+}
+#box1{
+    background-color:lightslategrey;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+#box2{
+    background-color:blue;
+}
+
+h3{
+    font-size:30px
+}
+button{
+    width:5rem;
+    height:2rem;
+    margin:0.2rem;
+    border:none;
+    border-radius:5px;
+    box-shadow:1px 1px rgb(95, 92, 92);
+    font-size:1rem;
+}
+
+p{
+    display:inline-block;
+    font-size:20px;
+}
+p#joke{
+    color:white;
+    font-size:1.5rem;
+    margin:30px;
+}
+#footer{
+    color:blue;
+    font-size:1rem;
+}
+hr{
+    width:10rem;
+}

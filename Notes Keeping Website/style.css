@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    float: left;
+    margin: 14px 25px;
+    font-size: 26px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li {
+    list-style: none;
+    margin: 21px 30px;
+    font-size: 15px;
+}
+a:hover{
+    color: #eee;
+}
+
+ul {
+    display: inline-block;
+}
+
+form {
+    display: inline-block;
+    float: right;
+}
+
+.navbar {
+    background-color: rgb(83, 81, 81);
+    height: 60px;
+    color: #fff;
+}
+
+.form-group {
+    margin: 10px 5px;
+    
+}
+
+#search, #btn {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+#btn {
+    color: green;
+    border: 1px solid green;
+    font-size: 15px;
+}
+
+#btn:hover{
+    background-color: green;
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    width: 50%;
+    text-align: left;
+}
+
+h1{
+    font-weight: normal;
+    margin: 10px 10px 10px 0;
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 2px solid #8ba9c4;
+    margin: 5px 5px 5px 0;
+}
+
+#myBtn, .buttonHeading {
+    background-color: #227ece;
+    color: #fff;
+    padding: 6px 11px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.buttonHeading:hover {
+    background-color: #3c8bd1;
+}
+
+#myBtn:hover {
+    background-color: #3686cc;
+}
+
+.border {
+    border: 2px solid rgb(231, 230, 230);
+    border-radius: 5px;
+    padding: 15px 13px;
+}
+
+.hrStyle {
+    margin-top: 10px;
+    border: 1px solid rgb(231, 230, 230);
+}
+
+#notes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.noteBox {
+    border: 1px solid rgb(231, 230, 230);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.notesBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.noteHeading {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.paraHeading {
+    font-size: 16px;
+    margin: 7px 7px 7px 0;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
