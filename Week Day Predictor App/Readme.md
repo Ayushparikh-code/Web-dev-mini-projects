@@ -1,33 +1,36 @@
-# Week Day Predictor App
+<h1>Week Day Predictor App</h1>
 
-This is a week day predictor app which displays the current day of the week with a quote message.
+<p>A Simple Week Day Predicyor App written in HTML, CSS and JavaScript .</p>
 
-## Technologies Used:
+### Use of the Project:
 
-  - HTML
-  - CSS
-  - JAVASCRIPT
+<p>This app displays the current day of the week with quotes .  </p>
 
-## Steps To Use:
+<h3>Used Technologies</h3>
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>JavaScript</li>
+</ul>
 
-  - Download or clone the repository.
+#### Steps to Use:
 
-    '''
-    git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects 
-    
-   '''
-  - Go to the directory
-  - Run the index.html file
-  - See the result!!
+---
 
-##Output/Sceenshot:
+- Download or clone the repository
 
-![Screenshot (18)](https://user-images.githubusercontent.com/66966120/125164187-d22ba200-e145-11eb-9cae-ed0b9459ef79.png)
+```
+git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
+```
 
+- Go to the directory
+- Run the index.html file
+- Result is here!!!
 
+<h3> Demo </h3> 
 
+<a href= "https://sonamgupta136.github.io/sonamgupta136.io/">Demo</a>
 
+<br>
 
-   
-
-  
+ 
