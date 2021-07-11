@@ -42,3 +42,4 @@ weekdayDiv.innerHTML = `${nameOfDay}`;
 //Display quote
 let quoteDiv = document.getElementById('phrase');
 quoteDiv.innerHTML = `${quote}`
+
