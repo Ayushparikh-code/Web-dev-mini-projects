@@ -22,3 +22,4 @@ $(".msg-close").click(function (e) {
   $(".send-clicked").removeClass("send-clicked");
   e.stopPropagation();
 });
+
