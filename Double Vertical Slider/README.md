@@ -29,6 +29,7 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 <h3> ScreenShots </h3> 
 
+<img width="960" alt="Double-Vertical-Slider" src="https://user-images.githubusercontent.com/64218887/124983592-c660b280-e055-11eb-8569-21918d77552e.png">
 
 <br>
 

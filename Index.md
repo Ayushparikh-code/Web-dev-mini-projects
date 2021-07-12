@@ -59,3 +59,5 @@
 | [Expand Button](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Expand-Button) |It is a basic website with an expanding button on it. As we click on the button it expands and shrinks after 5 seconds. |
 | [Color Guessing Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/color-guessor) |It is a basic color guessing game where the player is given a rgb value and he has to guess the color from that.|
 | [Double Vertical Slider](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Double-Vertical-Slider)                           | This App helps to Slide the two different parts of the webpage content at the same time . |
+
+
