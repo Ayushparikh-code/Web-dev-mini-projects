@@ -53,4 +53,4 @@
 | [Form Validation](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/form-validation)                         |A basic sign up page with all the validations in javascript.   |     
 | [Age Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/age-calculator)                           | A website which can be used to calculate age of a person in days,months and years . |
 | [BMI Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/bmi-calculator)                           | A basic website which can be used to calculate body mass index |
-| [Week Day Predictor App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Day-Of-The-Week-App)                      | A web app that displays current day of the week with quotes. |
+| [Week Day Predictor App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Day-Of-The-Week-App)                      | A web app that displays current day of the week with quotes.  |
