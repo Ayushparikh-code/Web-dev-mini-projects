@@ -30,4 +30,4 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 <h3>ScreenShots</h3>
 <br>
 
-![drum](DRUM/images/drumkit.PNG)
+![drum](images/drumkit.PNG)
