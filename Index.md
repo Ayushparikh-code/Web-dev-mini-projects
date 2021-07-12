@@ -49,7 +49,7 @@
 | [Weather-App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weather-App)                                   | Simple Weather app written in HTML, CSS, and JavaScript using the APIs for fetching weather and geolocation information                                                                                                              |
 | [News Webapp](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/flask_news_project)                            | A web app for searching news made using flask                                                                                                                                                                                        |
 | [Score Keeper](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Score-Keeper)                                  |A web Page where user can keep a count of their scores and will tell which player won.|
-| [Image Filter App]()                                                                                                            |An Awesome Image Filter App written in Html,Css,Javascript and CamanJS.|
+| [Image Filter App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Image-Filter-App)                                                                                                            |An Awesome Image Filter App written in Html,Css,Javascript and CamanJS.|
 | [Form Validation](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/form-validation)                         |A basic sign up page with all the validations in javascript.   |     
 | [Age Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/age-calculator)                           | A website which can be used to calculate age of a person in days,months and years . |
 | [BMI Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/bmi-calculator)                           | A basic website which can be used to calculate body mass index |
@@ -58,3 +58,6 @@
 | [ConnectFour](https://github.com/Shauryaditya/Web-dev-mini-projects/tree/main/ConnectFour)                                  |  This is a simple game which can be played between two players.The player who connects the four bubbles first wins the game . The bubbles could be connected horizontally , vertically or diagonally.The players have to be together since multiplayer feature is not available .|
 | [Expand Button](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Expand-Button) |It is a basic website with an expanding button on it. As we click on the button it expands and shrinks after 5 seconds. |
 | [Color Guessing Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/color-guessor) |It is a basic color guessing game where the player is given a rgb value and he has to guess the color from that.|
+| [Double Vertical Slider](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Double-Vertical-Slider)                           | This App helps to Slide the two different parts of the webpage content at the same time . |
+
+
