@@ -17,4 +17,7 @@ Stackes Used:
   <li>Run the index.html file</li>
   <li>Checkout the amazing project</li>
  </ul>
-   
+ 
+![Screenshot 1](https://user-images.githubusercontent.com/72568715/125338224-91ae6d00-e36d-11eb-9493-19b85f2c29b9.PNG)
+![Screenshot 2](https://user-images.githubusercontent.com/72568715/125338260-9a9f3e80-e36d-11eb-9104-622f39829b5e.PNG)
+
