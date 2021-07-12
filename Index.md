@@ -58,4 +58,4 @@
 | [Glassmorphism Animation Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Glassmorphism-Form)      |A basic login page with Glassmorphism Animations |       
 | [Battery Percentage Indicator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Battery%20Indicator)      |This is a battery indicator app which is used to know battery percentage of the system. | 
 | [ConnectFour](https://github.com/Shauryaditya/Web-dev-mini-projects/tree/main/ConnectFour)                                  |  This is a simple game which can be played between two players.The player who connects the four bubbles first wins the game . The bubbles could be connected horizontally , vertically or diagonally.The players have to be together since multiplayer feature is not available .|
-| [Breaking Bad Characters]()                                  |  It is a simple React Application that uses the breaking bad API to display and filter characters from the show |
+| [Breaking Bad Characters]()                                  |  It is a simple React Application that uses the breaking bad API to display and filter characters from the show
