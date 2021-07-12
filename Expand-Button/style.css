@@ -1,0 +1,215 @@
+/* Main vars */
+:root {
+  --pen-bg: #25fee0;
+
+  /* Contact Button vars */
+  --btn-bg: #fff;
+  --btn-color: #3b5998;
+  --btn-active-color: #c0d0d9;
+  --btn-border-radius: 100px;
+  --btn-height: 72px;
+  --btn-width: 200px;
+  --btn-active-height: 470px;
+  --btn-active-width: 460px;
+  --btn-active-border-radius: 60px;
+
+  /* Send Button vars*/
+  --send-btn-bg: #00e6ac;
+  --send-btn-color: #fff;
+  --send-btn-active-color: #004d39;
+  --send-btn-border-radius: 100px;
+  --send-btn-height: 48px;
+  --send-btn-width: 120px;
+  --send-btn-active-height: 48px;
+  --send-btn-active-width: 120px;
+  --send-btn-active-border-radius: 50px;
+
+  /* Close icon */
+  --close-color: #cfd2d9;
+  /* Close msg icon */
+  --msg-close-color: #004d39;
+
+  /* Transition vars */
+  --transition: all 0.25s ease-in-out;
+
+  /* Input */
+  --input-color: #b2b5bc;
+  --input-bg: #f3f6fb;
+
+  /* Message */
+  --msg-color: #00a060;
+  --msg-bg: #ffe6ac;
+}
+
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  background-color: var(--pen-bg);
+  font-family: "Montserrat";
+}
+/* Contact Button Start*/
+.contact-btn {
+  position: absolute;
+  background-color: var(--btn-bg);
+  border-radius: var(--btn-border-radius);
+  width: var(--btn-width);
+  height: var(--btn-height);
+  box-shadow: 0 5px 10px rgba(0, 0, 40, 0.03);
+  transition: all 0.4s cubic-bezier(0.3, 0, 0, 1.3);
+  overflow: hidden;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.contact-btn .cta {
+  position: absolute;
+  color: var(--btn-color);
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: var(--transition);
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.contact-btn .close {
+  position: absolute;
+  right: 38px;
+  top: 31px;
+  cursor: pointer;
+  color: var(--close-color);
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.3, 0, 0, 1.3);
+  transform: rotate(-45deg);
+  transform-origin: center center;
+}
+
+.contact-btn .fake-input {
+  width: 80%;
+  padding-top: 15px;
+  transform: scale(0.7) translateX(10px) translateY(-10px);
+  transition: var(--transition);
+  transform-origin: 0% 0%;
+  opacity: 0;
+  margin: 10px auto 0 auto;
+  background-color: var(--input-bg);
+  color: var(--input-color);
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 15px;
+  overflow: hidden;
+}
+
+.clicked {
+  width: var(--btn-active-width);
+  height: var(--btn-active-height);
+  border-radius: var(--btn-active-border-radius);
+  cursor: auto;
+  overflow: visible;
+}
+
+.contact-btn.clicked .cta {
+  left: 40px;
+  top: 30px;
+  transform: translateX(0) translateY(0);
+  color: #cfd2d9;
+}
+
+.contact-btn.clicked .close {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.contact-btn.clicked .fake-input {
+  transform: scale(1) translateX(0) translateY(0);
+  opacity: 1;
+  position: relative;
+  top: 50px;
+}
+/* Contact Button End */
+/* Send Button Start */
+.send-btn {
+  position: absolute;
+  background-color: var(--send-btn-bg);
+  border-radius: var(--send-btn-border-radius);
+  width: var(--send-btn-width);
+  height: var(--send-btn-height);
+  box-shadow: 0 5px 10px rgba(0, 0, 40, 0.03);
+  transition: all 0.4s cubic-bezier(0.3, 0, 0, 1.3);
+  overflow: hidden;
+  cursor: pointer;
+  top: 400px;
+  left: 300px;
+}
+
+.send-btn .snd {
+  position: absolute;
+  color: var(--send-btn-color);
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: var(--transition);
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.send-btn .msg-close {
+  position: absolute;
+  right: 18px;
+  top: 15px;
+  cursor: pointer;
+  color: var(--msg-close-color);
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.3, 0, 0, 1.3);
+  transform: rotate(-45deg);
+  transform-origin: center center;
+}
+
+.send-btn .msg {
+  width: 180%;
+  padding-top: 15px;
+  transform: scale(0.7) translateX(10px) translateY(-10px);
+  transition: var(--transition);
+  transform-origin: 0% 0%;
+  opacity: 0;
+  margin: 10px auto 0 auto;
+  background-color: var(--msg-bg);
+  color: var(--msg-color);
+  border-radius: 25px 25px 25px 1px;
+  padding: 15px;
+  font-size: 15px;
+  /*overflow: hidden;*/
+}
+
+.send-clicked {
+  width: var(--send-btn-active-width);
+  height: var(--send-btn-active-height);
+  border-radius: var(--send-btn-active-border-radius);
+  cursor: auto;
+  overflow: visible;
+}
+
+.send-btn.send-clicked .snd {
+  color: var(--send-btn-active-color);
+}
+
+.send-btn.send-clicked .msg-close {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.send-btn.send-clicked .msg {
+  transform: scale(1) translateX(0) translateY(0);
+  opacity: 1;
+  position: relative;
+  top: -127px;
+  left: 180px;
+  z-index: 999;
+}
+/* Send Button end*/
+

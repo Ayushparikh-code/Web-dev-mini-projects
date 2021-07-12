@@ -1,0 +1,70 @@
+body{
+	background-color: aquamarine;
+	color: #fff; 
+	margin: 0;
+
+}
+h1{
+	text-align: center;
+	font-size: 300%;
+	margin: 0;
+	background-color: rgb(233,119,119);
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.rgbspan{
+	font-size: 200%;
+}
+
+.mainbox{
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+button{
+	border:none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: #fff;
+	font-size: inherit;
+	letter-spacing: 1px;
+	transition: all 0.3s;
+}
+#playAgain{
+	border-radius: 20px;
+	color: #f88989;
+}
+#hardBtn{
+	color: #f88989;
+
+}
+#easyBtn{
+	color: #f88989;
+}
+
+.status{
+	display: inline-block;
+	width: 20%;
+	color: #f88989;
+	font-weight: 900;
+}
+.box{
+	width: 30%;
+	background: rgb(255,255,255);
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 20px;
+	transition: all 05s;
+
+}
+.line{
+	width: 100%;
+	height: 40px;
+	text-align: center;background-color: white;
+	padding: 0;
+}
+
