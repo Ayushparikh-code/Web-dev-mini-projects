@@ -1,0 +1,23 @@
+#canvas{
+    margin: auto;
+    background: #ececec;
+    width: 100%;
+}
+.navbar-brand{
+    margin: 0 auto;
+}
+
+
+
+.footer {
+    margin: 15px 0 5px;
+    padding: 0.1rem !important;
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    background-color: #212529 !important;
+  }
+  .footer h4 {
+    color: white;
+    text-align: center;
+  }

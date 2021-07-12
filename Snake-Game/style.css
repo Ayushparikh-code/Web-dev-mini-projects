@@ -1,0 +1,29 @@
+body {
+	font - family: Arial, Helvetica, sans - serif;
+	margin: 20 px auto;
+	text - align: center;
+	font - size: 150 % ;
+	background - image: url(. / images / wp2409705.jpg);
+	background - color: green;
+	height: 800 px;
+	background - position: center;
+	background - repeat: no - repeat;
+	background - size: cover;
+	height: 60 vh;
+	width: 100 vw;
+	overflow: hidden;
+}
+
+input {
+	font - size: 100 % ;
+	text - align: center;
+	padding: 5 px 7 px;
+}
+
+canvas {
+	background - color: white;
+	border - radius: 20 px;
+	box - shadow: 3 px 5 px 6 px black;
+	margin - right: 40 px;
+}
+
