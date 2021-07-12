@@ -1,6 +1,6 @@
 <h1>Week Day Predictor App</h1>
 
-<p>A Simple Week Day Predicyor App written in HTML, CSS and JavaScript .</p>
+<p>A Simple Week Day Predictor App written in HTML, CSS and JavaScript .</p>
 
 ### Use of the Project:
 
@@ -26,6 +26,11 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Go to the directory
 - Run the index.html file
 - Result is here!!!
+
+<h3> Screenshot </h3>
+
+<img src="https://user-images.githubusercontent.com/66966120/125198145-93651d00-e215-11eb-9604-28e2e416228e.png" alt="Week-Day-Predictor-App" style="max-width:100%;">
+
 
 <h3> Demo </h3>
 
