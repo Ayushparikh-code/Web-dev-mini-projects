@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+section.dark {
+  background: #161623;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  background: linear-gradient(#6cff47, #3d1046);
+  border-radius: 50%;
+  transform: translate(-150px, -100px);
+}
+
+section.dark::before {
+  background: linear-gradient(#ffc107, #e91e63);
+}
+
+
+section::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(#f10050, rgb(8, 216, 253));
+  border-radius: 50%;
+  transform: translate(150px, 100px);
+}
+
+section.dark::after {
+  background: linear-gradient(#2196f3, #31ff38);
+}
+
+.box {
+  position: relative;
+  width: 240px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box h3 {
+  color: #000000;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+section.dark .box h3 {
+  color: #fff;
+}
+
+.batteryShape {
+  position: relative;
+  width: 140px;
+  height: 65px;
+  margin: 20px 0;
+  border: 3px solid #333;
+  border-radius: 10px;
+}
+
+section.dark .batteryShape {
+  border: 3px solid #fff;
+}
+
+.batteryShape::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 16px;
+  background: #333;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+section.dark .batteryShape::before {
+  background: #fff;
+}
+
+.batteryShape::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.level {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  /* background: #333; */
+  overflow: hidden;
+}
+
+.percentage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(90deg, #ffeb3b, #27ff00);
+  border-radius: 4px;
+}
+
+section.dark .percentage {
+  background: linear-gradient(90deg, #ffeb3b, #27ff00);
+}
+
+.percent {
+  color: #000000;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+section.dark .percent {
+  color: #fff;
+}
+
+.toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #070716;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark .toggle {
+  background: #fff;
+}
+
+.toggle::before {
+  content: "\f186";
+  font-family: fontAwesome;
+  color: #fff;
+}
+
+.dark .toggle::before {
+  content: "\f185";
+  color: #161623;
+}
