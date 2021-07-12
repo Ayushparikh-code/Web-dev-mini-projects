@@ -3,7 +3,7 @@
 ## About the Project
 A single page web application that uses the breaking bad API to display and filter characters from the show
 
-## Technologies
+## Technologies Used
 
 - React
   - Hooks
@@ -28,12 +28,6 @@ Link : https://www.breakingbadapi.com/api/characters
 2. Go to the directory
 3. Open the terminal, and type `npm start`
 
-
-## Use of the Project
-
-<p>
-
-</p>
 
 ## Screenshots
 
