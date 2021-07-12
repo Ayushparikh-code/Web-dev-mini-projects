@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Otomanopee One', sans-serif;
+  padding-top: 50px;
+  background-color: black;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.pressed {
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
+  transform: scale(1.02);
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 0.25rem;
+  font-weight: 900;
+  color: white;
+  font-family: 'Otomanopee One', sans-serif;
+}
+
+.band-tagline {
+  text-align: center;
+  font-size: 25px;
+  color: grey;
+  margin-top: 10px;
+  font-family: 'Otomanopee One', sans-serif;
+}
+
+.keyboard-keys {
+  font-size: 3rem;
+  position: relative;
+  top: -25px;
+  font-family: cursive;
+  color: white;
+  text-shadow: 2px 2px 2px grey;
+}
+
+.pads {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.pads>div {
+  height: 170px;
+  width: 170px;
+  border-radius: 30px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  border-radius: 20px;
+}
+
+.pads>div img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+
+.pad-1 {
+  background-color: green;
+}
+
+.pad-2 {
+  background-color: blue;
+}
+
+.pad-3 {
+  background-color: red;
+}
+
+.pad-4 {
+  background-color: orange;
+}
+
+.pad-5 {
+  background-color: purple;
+}
+
+.pad-6 {
+  background-color: pink;
+}
+
+.pads>div:hover {
+  cursor: pointer;
+  box-shadow: white 0px 1px 4px, white 0px 0px 0px 3px;
+  transform: scale(1.02);
+}
+
+.kit>div {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 0%;
+  left: 20%;
+  z-index: -1;
+}
+
+@keyframes jump {
+  0% {
+    left: 20%;
+    bottom: 0px;
+  }
+
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+
+  100% {
+    left: 80%;
+    bottom: 0%;
+  }
+}
+
+@media (min-width: 1020px) and (max-width:1190px) {
+  .pads>div {
+    margin: 0.5rem;
+  }
+
+  @keyframes jump {
+    0% {
+      left: 20%;
+      bottom: 0px;
+    }
+
+    50% {
+      bottom: 60%;
+      left: 50%;
+    }
+
+    100% {
+      left: 80%;
+      bottom: 0%;
+    }
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .pads>div {
+    width: 150px;
+    height: 150px;
+    margin: 0.8rem;
+  }
+
+  .pads>div img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .keyboard-keys {
+    font-size: 2rem;
+    top: -20px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width:440px) {
+  .pads>div {
+    width: 100px;
+    ;
+    height: 100px;
+    margin: 0.7rem;
+  }
+
+  .pads>div img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .keyboard-keys {
+    font-size: 1.5rem;
+    top: -20px;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+}
