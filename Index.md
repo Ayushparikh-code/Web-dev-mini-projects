@@ -53,5 +53,11 @@
 | [Form Validation](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/form-validation)                         |A basic sign up page with all the validations in javascript.   |     
 | [Age Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/age-calculator)                           | A website which can be used to calculate age of a person in days,months and years . |
 | [BMI Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/bmi-calculator)                           | A basic website which can be used to calculate body mass index |
-| [Week Day Predictor App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Day-Of-The-Week-App)                      | A web app that displays current day of the week with quotes.  |
-| [Basic Contact Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Basic-Contact-Form)                       | A basic contact form that displays send and reset button.  |
+| [Glassmorphism Animation Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Glassmorphism-Form)      |A basic login page with Glassmorphism Animations |       
+| [Battery Percentage Indicator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Battery%20Indicator)      |This is a battery indicator app which is used to know battery percentage of the system. |
+| [ConnectFour](https://github.com/Shauryaditya/Web-dev-mini-projects/tree/main/ConnectFour)                                  |  This is a simple game which can be played between two players.The player who connects the four bubbles first wins the game . The bubbles could be connected horizontally , vertically or diagonally.The players have to be together since multiplayer feature is not available .|
+| [Expand Button](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Expand-Button) |It is a basic website with an expanding button on it. As we click on the button it expands and shrinks after 5 seconds. |
+| [Color Guessing Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/color-guessor) |It is a basic color guessing game where the player is given a rgb value and he has to guess the color from that.|
+| [Double Vertical Slider](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Double-Vertical-Slider)                           | This App helps to Slide the two different parts of the webpage content at the same time . |
+
+
