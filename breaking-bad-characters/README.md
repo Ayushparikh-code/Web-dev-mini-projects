@@ -1,9 +1,9 @@
 # Breaking Bad Characters - React Application   
 
-### About the Project
-A single page web application that uses the breaking bad API to show and filter characters from the show
+## About the Project
+A single page web application that uses the breaking bad API to display and filter characters from the show
 
-### Technologies
+## Technologies
 
 - React
   - Hooks
@@ -17,18 +17,11 @@ A single page web application that uses the breaking bad API to show and filter 
   - Breaking Bad API
 
 
-### API Used
+## API Used
 Breaking Bad Character API
 
 Link : https://www.breakingbadapi.com/api/characters
 
-### How It Works
-
-- Search a recipe in the search input
-- Grabs the recipe information from Edamam API.
-- Information is returned has a JSON object
-- Using React components to structure data into presentational format
-- Using CSS to create visually appealing and user friendly application
 
 ## Screenshots
 
