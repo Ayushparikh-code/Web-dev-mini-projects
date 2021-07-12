@@ -61,4 +61,4 @@
 | [Color Guessing Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/color-guessor) |It is a basic color guessing game where the player is given a rgb value and he has to guess the color from that.|
 | [Double Vertical Slider](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Double-Vertical-Slider)                           | This App helps to Slide the two different parts of the webpage content at the same time . |
 | [Basic Contact Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Basic-Contact-Form)                                |  A basic contact form having send and reset button.   |       
-
+| [Compound Interest Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Compound%20Interest%20Calculator)                 |  A basic gradient Background Generator which allows you to create a background by selecting your required colors. This will make up a gradient mix and provide you the code line so that you can use it in your Website  | 
