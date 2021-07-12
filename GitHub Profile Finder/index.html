@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GithHub profile Finder</title>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+   rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+  <div class="container">
+   <div class="search-container">
+    <input
+     type="text"
+     name=""
+     id="input"
+     placeholder="Enter Github UserName"
+     class=""
+    />
+    <div id="search" onclick="getUser()">Search User</div>
+   </div>
+
+   <div class="profile-card">
+    <div class="main-info">
+     <img src="github-logo.png" alt="avatar" id="prof-img" />
+     <span class="name" id="name">Khushi Purwar</span>
+     <a href="" id="username">@khushi-purwar</a>
+    </div>
+    <div class="bio">
+     <p id="bio">A full stack developer</p>
+     <p><span id="repo">23</span> Repositories</p>
+    </div>
+    <div class="follow">
+     <div class="followers">
+      <span class="no" id="followers">1</span>
+      Followers
+     </div>
+     <div class="following">
+      <span class="no" id="following">23</span>
+      Following
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <script src="script.js"></script>
+ </body>
+</html>
+
+
