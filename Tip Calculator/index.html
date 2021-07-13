@@ -1,0 +1,41 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+
+  <title>Tip Calculator</title>
+  <meta name="description" content="Javascript Tip Calulator" />
+  <meta name="author" content="Supritha" />
+
+  <link rel="stylesheet" href="styles.css" />
+ </head>
+
+ <body>
+  <div class="container">
+   <div class="inputBox">
+    <h1>Tip Calculator</h1>
+    <label>Bill Amount :</label>
+    <input
+     type="text"
+     placeholder="Enter bill amount"
+     name=""
+     id="bill_amount"
+    />
+    <br />
+    <label>Tip Percent :</label>
+    <input type="text" placeholder="Enter tip percent" name="" id="tip_perc" />
+    <br />
+    <label>Tip Amount :</label>
+    <input type="text" name="" id="tip_amount" disabled />
+    <br />
+    <label>Bill Total :</label>
+    <input type="text" name="" id="bill_total" disabled />
+    <br />
+
+    <button onclick="tipcalc()" id="btn">Calculate</button>
+   </div>
+   <!--inputBox-->
+  </div>
+  <!--container-->
+  <script src="script.js"></script>
+ </body>
+</html>
