@@ -1,0 +1,47 @@
+[
+  {
+    "name": "good first issue",
+    "description": "This issue is good for first timers",
+    "color": "a9e3ff"
+  },
+  {
+    "name": "🆘 help wanted",
+    "description": "This issue needs help ! Please help if possible !",
+    "color": "ff00ff"
+  },
+  {
+    "name": "🟥 Level4 ",
+    "description": "This issue will be considered as level 4 issue for LGM-SOC 21.Points will be 45.",
+    "color": "b60205"
+  },
+  {
+    "name": "🟧 Level3 ",
+    "description": "This issue will be considered as level 3 issue for LGM-SOC 21.Points will be 30.",
+    "color": "ff9f1c"
+  },
+  {
+    "name": "🟨 Level2 ",
+    "description": "This issue will be considered as level 2 issue for LGM-SOC 21.Points will be 15",
+    "color": "ffcc00"
+  },
+  {
+    "name": "🟩 Level1 ",
+    "description": "This issue will be considered as level 1 issue for LGM-SOC 21.Points will be 10",
+    "color": "cfda2c"
+  },
+  {
+    "name": "🟪 Level0 ",
+    "description": "This issue will be considered as level 0 issue for LGM-SOC 21.Points will be 5",
+    "color": "aa00de"
+  },
+  {
+    "name": " LGMSOC21 ",
+    "description": "This issue will be considered for LGM-SOC 21",
+    "color": "d93f0b"
+  },
+  {
+    "name": " 🤩 Up for Grab ",
+    "description": "This issue will is not assigned ! Grab It !",
+    "color": "bf00ff"
+  }
+]
