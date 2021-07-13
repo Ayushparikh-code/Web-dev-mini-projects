@@ -24,7 +24,7 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 ```
 
 <h3> ScreenShots </h3> 
-<img width="233" alt="Calc" src="">
+<img width="233" alt="Calc" src="capture.jpg">
 <br>
 
 
