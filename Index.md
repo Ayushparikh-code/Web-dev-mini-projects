@@ -66,7 +66,5 @@
 | [Blog Application](https://github.com/khushi-purwar/Web-dev-mini-projects/tree/main/Blog%20Application)                 |  Blog Application is an application where user can add a new blog, edit it, delete it as well as view other blogs and make changes in them.  | 
 | [Typing Speed Test Website](https://github.com/khushi-purwar/Web-dev-mini-projects/tree/main/Typing%20Speed%20Test%20Website)                 |  This website is used to check the typing speed of the user. It will the give the information of how many seconds require for typing the particular sentence.  | 
 | [Breaking Bad Characters](https://github.com/khushi-purwar/Web-dev-mini-projects/tree/main/breaking-bad-characters)                 |  A single page web application that uses the breaking bad API to display and filter characters from the show | 
+| [Simon Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Simon_Game)                            |A basic memory game in which there are 4 boxes of different colors and one box is blinked. The user has to click the boxes blinked and also has to click the previous blinked boxes as well.|
 | [Javascript Color Change App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/JAVASCRIPT%20BUTTON%20APP) | It is a basic web app where the user can select a color from the options that are given on the web app and as he clicks on that option, all the buttons background color changes to that color. |
-
-
-
