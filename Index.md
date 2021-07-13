@@ -73,3 +73,4 @@
 | [BMI Calculator (Flask)](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/BMI%20Calculator%20(Flask))|This is a simple BMI calculator built using HTML, CSS, Python and Flask framework.|
 | [Basic Contact Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Basic-Contact-Form)    | A basic contact form having reset and send button.   |
 | [Online quiz portal](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/online%20quiz%20portal)                           | An online portal in which an individual can attend the quiz and view the result automatically |
+| [Tindog](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Tindog)                           | Tinder customized for dogs to find their mate online |
