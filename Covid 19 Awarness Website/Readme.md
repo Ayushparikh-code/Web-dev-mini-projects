@@ -11,4 +11,7 @@
 
 <p>This is a covid 19 website which has diffrenet sections.This is made using only html,css,javascript.
 You can find various Informations and news.
-</p>
+</p>![Screenshot 1](https://user-images.githubusercontent.com/72568715/125442761-b7ce08d2-975b-4d0b-92a1-c33a58d3d99f.PNG)
+![Screenshot 2](https://user-images.githubusercontent.com/72568715/125442795-881879e8-3836-408d-a2b3-0b677ad8fef0.PNG)
+
+
