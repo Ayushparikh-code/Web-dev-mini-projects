@@ -53,4 +53,4 @@
 | [Form Validation](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/form-validation)                         |A basic sign up page with all the validations in javascript.   |     
 | [Age Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/age-calculator)                           | A website which can be used to calculate age of a person in days,months and years . |
 | [BMI Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/bmi-calculator)                           | A basic website which can be used to calculate body mass index |
-| [Online quiz portal]                           | An online portal in which an individual can attend the quiz and view the result automatically |
+| [Online quiz portal](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/online%20quiz%20portal)                           | An online portal in which an individual can attend the quiz and view the result automatically |
