@@ -1,4 +1,3 @@
-
 <h1 align="center">Web-dev-mini-projects</h1>
 <br>
 <div align="center">
