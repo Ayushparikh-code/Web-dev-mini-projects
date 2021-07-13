@@ -11,7 +11,7 @@ Using this portal one can attend the quiz virtually and view the scores in real 
 * HTML  
 * CSS
 
-## Setting up the project
+## How to set up the project
 Download the zip file and copy all the files in the single folder. Open the folder in visual studio code and copy the path of the index file and paste it in the search box of  google chrome to view the output.
 
 ## ScreenShot
