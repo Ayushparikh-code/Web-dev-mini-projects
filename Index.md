@@ -62,6 +62,10 @@
 | [Double Vertical Slider](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Double-Vertical-Slider)                           | This App helps to Slide the two different parts of the webpage content at the same time . |
 | [Basic Contact Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Basic-Contact-Form)                                |  A basic contact form having send and reset button.   |       
 | [Compound Interest Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Compound%20Interest%20Calculator)                 |  A basic gradient Background Generator which allows you to create a background by selecting your required colors. This will make up a gradient mix and provide you the code line so that you can use it in your Website  | 
+
+| [Youtube UI Clone](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Youtube-Clone)                 |  A project which aims to clone YouTube UI with responsiveness by using HTML & CSS.  | 
+
 | [Blog Application](https://github.com/khushi-purwar/Web-dev-mini-projects/tree/main/Blog%20Application)                 |  Blog Application is an application where user can add a new blog, edit it, delete it as well as view other blogs and make changes in them.  | 
 | [Typing Speed Test Website](https://github.com/khushi-purwar/Web-dev-mini-projects/tree/main/Typing%20Speed%20Test%20Website)                 |  This website is used to check the typing speed of the user. It will the give the information of how many seconds require for typing the particular sentence.  | 
 | [Breaking Bad Characters](https://github.com/khushi-purwar/Web-dev-mini-projects/tree/main/breaking-bad-characters)                 |  A single page web application that uses the breaking bad API to display and filter characters from the show | 
+
