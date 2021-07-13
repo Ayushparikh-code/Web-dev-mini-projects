@@ -70,3 +70,5 @@
 | [Javascript Color Change App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/JAVASCRIPT%20BUTTON%20APP) | It is a basic web app where the user can select a color from the options that are given on the web app and as he clicks on that option, all the buttons background color changes to that color. |
 | [JavaScript tip calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Tip Calculator)                           | This script consists of user input--> total bill amount and bill percent and it calculates the tip amount and the total bill. |
 | [Blackjack Game](https://github.com/TheArushiSingh/Web-dev-mini-projects/tree/main/Blackjack%20Game)                           | The player has to get a hand with a value as close to 21 as possible without going over. A hand that goes over 21 is a bust. Each player has to beat the dealer's hand in order to win. |
+| [Tribute Page](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/TRIBUTE%20PAGE) | This is a tribute web page for covid warriors. Have built it using HTML, CSS, JAVASCRIPT. |
+
