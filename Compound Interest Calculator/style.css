@@ -1,0 +1,31 @@
+.body{
+    background-color: rgb(6, 177, 207);
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+}
+
+.card{
+    padding-top: 30px;
+    margin-top: 50px;
+    padding-bottom: 35px;
+    margin-bottom: 90px;
+}
+
+#res{
+    color: rgb(85, 82, 82);
+}
+
+.name{
+    color: white;
+}
+
+#title{
+    color: teal;
+}
