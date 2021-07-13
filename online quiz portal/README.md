@@ -11,6 +11,9 @@ Using this portal one can attend the quiz virtually and view the scores in real 
 * HTML  
 * CSS
 
+## Setting up the project
+Download the zip file and copy all the files in the single folder. Open the folder in visual studio code and copy the path of the index file and paste it in the search box of  google chrome to view the output.
+
 ## ScreenShot
 
 <img src="https://github.com/jyothi-k-g/online-quiz-poral/blob/main/images/s1.png" /> 
