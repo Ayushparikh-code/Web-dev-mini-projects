@@ -31,8 +31,7 @@ node app.js
 ```
 - Have a look at the webapp.
 
-
-##Screenshots
+## Screenshots
 
 ![Demo1](public/images/challenge1.png)
 
