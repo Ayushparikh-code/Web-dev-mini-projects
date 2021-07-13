@@ -8,7 +8,8 @@ Using this portal one can attend the quiz virtually and view the scores in real 
 
 ## Stacks Used
 * JavaScript
-* HTML & CSS  
+* HTML  
+* CSS
 
 ## ScreenShot
 
