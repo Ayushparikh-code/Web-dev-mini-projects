@@ -72,3 +72,4 @@
 | [Blackjack Game](https://github.com/TheArushiSingh/Web-dev-mini-projects/tree/main/Blackjack%20Game)                           | The player has to get a hand with a value as close to 21 as possible without going over. A hand that goes over 21 is a bust. Each player has to beat the dealer's hand in order to win. |
 | [Tribute Page](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/TRIBUTE%20PAGE) | This is a tribute web page for covid warriors. Have built it using HTML, CSS, JAVASCRIPT. |
 | [BMI Calculator (Flask)](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/BMI%20Calculator%20(Flask))|This is a simple BMI calculator built using HTML, CSS, Python and Flask framework.|
+| [Virtual Keyboard](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Virtual%20Keyboard) | This is a keyboard on the screen with all the components and a display. |
