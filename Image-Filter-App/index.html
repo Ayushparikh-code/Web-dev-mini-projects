@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filter App</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-info mb-5">
+        <div class="container">
+            <a href="#" class="navbar-brand">Image Filter App</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <div class="custom-file mb-3">
+                    <input type="file" class="custom-file-input" id="upload-file">
+                    <label for="upload-file" class="custom-file-label">Choose Image</label>
+                    </div>
+                    <canvas id="canvas"></canvas>
+
+                    <h4 class="text-center my-3">
+                        Filters
+                    </h4>
+                    <div class="row text-center mx-0 my-4" id="row-1">
+                        <div class="col-md-3 col-sm-12 my-3">
+                            <div class="btn-group btn-group-sm">
+                                <button class="fliter-btn brightness-remove btn btn-info">-</button>
+                                <button class="btn btn-secondarty btn-disabled" disabled >Brightness</button>
+                                <button class="filter-btn brightness-add btn btn-info">+</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 my-3">
+                            <div class="btn-group btn-group-sm">
+                                <button class="fliter-btn contrast-remove btn btn-info">-</button>
+                                <button class="btn btn-secondarty btn-disabled" disabled >Contrast</button>
+                                <button class="filter-btn contrast-add btn btn-info">+</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 my-3">
+                            <div class="btn-group btn-group-sm">
+                                <button class="fliter-btn saturation-remove btn btn-info">-</button>
+                                <button class="btn btn-secondarty btn-disabled" disabled >Saturation</button>
+                                <button class="filter-btn saturation-add btn btn-info">+</button>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3 col-sm-12 my-3">
+                            <div class="btn-group btn-group-sm">
+                                <button class="fliter-btn vibrance-remove btn btn-info">-</button>
+                                <button class="btn btn-secondarty btn-disabled" disabled >Vibrance</button>
+                                <button class="filter-btn vibrance-add btn btn-info">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row Ends -->
+
+                    <h4 class="text-center my-3">
+                        Effects
+                    </h4>
+                    <div class="row mb-3" id="row-2">
+                        <div class="col-md-3 my-2">
+                            <button class="filter-btn vintage-add btn btn-dark btn-block">Vintage</button>
+                        </div>
+
+                        <div class="col-md-3 my-2">
+                            <button class="filter-btn lomo-add btn btn-dark btn-block">Lomo</button>
+                        </div>
+
+                        <div class="col-md-3 my-2">
+                            <button class="filter-btn clarity-add btn btn-dark btn-block">Clarity</button>
+                        </div>
+
+                        <div class="col-md-3 my-2">
+                            <button class="filter-btn sincity-add btn btn-dark btn-block">Sin city</button>
+                        </div>
+                    </div>
+                    <!-- Row Ends -->
+                    
+                    <div class="row" id="row-3">
+                        <div class="col-md-3 my-2">
+                          <button class="filter-btn crossprocess-add btn btn-dark btn-block">
+                              Cross Process
+                            </button>
+                        </div>
+                        <div class="col-md-3 my-2">
+                          <button class="filter-btn pinhole-add btn btn-dark btn-block">
+                              Pinhole
+                            </button>
+                        </div>
+                        <div class="col-md-3 my-2">
+                          <button class="filter-btn nostalgia-add btn btn-dark btn-block">
+                              Nostalgia
+                            </button>
+                        </div>
+                        <div class="col-md-3 my-2">
+                          <button class="filter-btn hermajesty-add btn btn-dark btn-block">
+                              Majesty
+                            </button>
+                        </div>
+                      </div>
+                      <div class="row mt-5" id="row-4">
+                        <div class="col-md-6 my-3 ">
+                          <button id="download-btn" class="btn btn-primary btn-block">Download Image</button>
+                        </div>
+                        <div class="col-md-6 my-3">
+                          <button id="revert-btn" class="btn btn-danger btn-block">Remove Filters</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h4 >Designed & Developed with &#10084;&#65039; by Atif</h4>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js" integrity="sha512-JjFeUD2H//RHt+DjVf1BTuy1X5ZPtMl0svQ3RopX641DWoSilJ89LsFGq4Sw/6BSBfULqUW/CfnVopV5CfvRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+ </body>
+</html>

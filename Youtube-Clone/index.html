@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YouTube</title>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link rel="icon" type="image/icon" href="Resources/favicon_32x32.png" sizes="32x32">
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"  />
+</head>
+<body>
+
+	<!--***********START OF HEADER **********-->
+	<header class = "header-container stick">
+		<div class = "container">
+			<div class = "guide-button-box">
+				<span class="iconify hamburger" data-icon="ci:hamburger" data-inline="false"></span>
+			</div>
+			<div class = "logo">	
+				<img class = "logo-img" src = "Resources/youtube_logo.webp">
+				<span class = "country-code">IN</span>
+			</div>
+		</div>
+		<div class = "search-container">
+			<input type="text" placeholder="Search" name="search">
+      		<button type="submit">
+      			<span class="iconify search-btn" data-icon="ant-design:search-outlined" data-inline="false"></span>
+      		</button>
+		</div>
+		<div class = "user-d">
+			<button class = "user-btn">
+				<span class="iconify" data-icon="bx:bxs-video-plus" data-inline="false"></span>
+			</button>
+			<button class = "user-btn">
+				<span class="iconify" data-icon="gg:menu-grid-r" data-inline="false"></span>
+			</button>
+			<button class = "user-btn">
+				<span class="iconify" data-icon="fa-solid:bell" data-inline="false"></span>
+			</button>
+			<button>
+				<span class="iconify user" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+			</button>
+		</div>
+	</header>
+
+	<!--**********END OF HEADER**********-->
+
+	<!--**********START OF SIDEBAR**********-->
+
+		<div class = "sidebar">
+			<div class = "sidebar-categories">
+				<div class = "sidebar-category selected">
+					<span class="iconify user-icon selected-img" data-icon="ci:home-alt-fill" data-inline="false"></span>
+					<span>Home</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="ic:baseline-explore" data-inline="false"></span>
+					<span>Explore</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="ic:baseline-subscriptions" data-inline="false"></span>
+					<span>Subscriptions</span>
+				</div>
+			</div>
+			
+			<hr/>
+
+			<div class = "sidebar-categories">
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="ic:baseline-video-library" data-inline="false"></span>
+					<span>Library</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="ic:baseline-history" data-inline="false"></span>
+					<span>History</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="ant-design:play-square-outlined" data-inline="false"></span>
+					<span>Your videos</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="ic:baseline-watch-later" data-inline="false"></span>
+					<span>Watch later</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="bx:bxs-like" data-inline="false"></span>
+					<span>Liked videos</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="ic:outline-expand-more" data-inline="false"></span>
+					<span>Show more</span>
+				</div>
+			</div>
+
+			<hr/>
+
+			<div class = "subscription-categories">
+				<span class = "head-text">
+					SUBSCRIPTIONS
+				</span>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+					<span>Channel 1</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+					<span>Channel 2</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+					<span>Channel 3</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+					<span>Channel 4</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+					<span>Channel 5</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+					<span>Channel 6</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+					<span>Channel 7</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify" data-icon="ic:outline-expand-more" data-inline="false"></span>
+					<span>Show 40 more</span>
+				</div>
+			</div>
+
+			<hr/>
+
+			<div class = "subscription-categories">
+				<span class = "head-text">
+					MORE FROM YOUTUBE
+				</span>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="ant-design:youtube-filled" data-inline="false"></span>
+					<span>YouTube Premium</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="ic:sharp-local-movies" data-inline="false"></span>
+					<span>Movies</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="simple-icons:youtubegaming" data-inline="false"></span>
+					<span>Gaming</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="fluent:live-24-filled" data-inline="false"></span>
+					<span>Live</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="icon-park-outline:hanger-two" data-inline="false"></span>
+					<span>Fashion & Beauty</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="ant-design:bulb-filled" data-inline="false"></span>
+					<span>Learing</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="icomoon-free:trophy" data-inline="false"></span>
+					<span>Sports</span>
+				</div>
+			</div>
+
+			<hr/>
+
+			<div class = "sidebar-categories">
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="fluent:settings-28-filled" data-inline="false"></span>
+					<span>Settings</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="ci:flag-fill" data-inline="false"></span>
+					<span>Report history</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="ci:help-circle" data-inline="false"></span>				
+					<span>Help</span>
+				</div>
+				<div class = "sidebar-category">
+					<span class="iconify user-icon" data-icon="ic:baseline-feedback" data-inline="false"></span>
+					<span>Send Feedback</span>
+				</div>
+			</div>
+
+			<hr/>
+
+			<div class = "sidebar-bottom-info">
+				<a href="/">About</a>
+				<a href="/">Press</a>
+				<a href="/">Copyright</a><br>
+				<a href="/">Contact us</a>
+				<a href="/">Creators</a><br>
+				<a href="/">Advertise</a>
+				<a href="/">Developers</a><br><br>
+				<a href="/">Terms</a>
+				<a href="/">Privacy</a>
+				<a href="/">Policy & Safety</a><br>
+				<a href="/">How YouTube works</a><br>
+				<a href="/">Test new features</a><br><br>
+				<span>© 2021 Google LLC</span>
+			</div>
+
+			<div class = "sidebar-category-sml">
+				<span class="iconify user-icon selected-img" data-icon="ci:home-alt-fill" data-inline="false"></span>
+				<span>Home</span>
+			</div>
+			<div class = "sidebar-category-sml">
+				<span class="iconify user-icon" data-icon="ic:baseline-explore" data-inline="false"></span>
+				<span>Explore</span>
+			</div>
+			<div class = "sidebar-category-sml">
+				<span class="iconify user-icon" data-icon="ic:baseline-subscriptions" data-inline="false"></span>
+				<span>Subscriptions</span>
+			</div>
+			<div class = "sidebar-category-sml">
+				<span class="iconify user-icon" data-icon="ic:baseline-video-library" data-inline="false"></span>
+				<span>Library</span>
+			</div>
+		</div>
+
+	<!--**********END OF SIDEBAR**********-->
+
+	<!--**********START OF HEADER NAVBAR**********-->
+
+	<div class = "header-navbar">
+		<button class = "navbar-element first active">
+			All
+		</button>
+		<button class = "navbar-element">
+			Music
+		</button>
+		<button class = "navbar-element">
+			Wildlife
+		</button>
+		<button class = "navbar-element">
+			Education
+		</button>
+		<button class = "navbar-element">
+			Recently Uploaded
+		</button>
+		<button class = "navbar-element">
+			Live
+		</button>
+		<button class = "navbar-element">
+			Tamil
+		</button>
+		<button class = "navbar-element">
+			T-Series
+		</button>
+		<button class = "navbar-element">
+			Cricket
+		</button>
+		<button class = "navbar-element">
+			Sports
+		</button>
+		<button class = "navbar-element">
+			Eating
+		</button>
+		<button class = "navbar-element">
+			Laughter
+		</button>
+		<button class = "navbar-element">
+			Music
+		</button>
+		<button class = "navbar-element">
+			Wildlife
+		</button>
+		<button class = "navbar-element">
+			Education
+		</button>
+		<button class = "navbar-element">
+			Recently Uploaded
+		</button>
+		<button class = "navbar-element">
+			Live
+		</button>
+		<button class = "navbar-element">
+			Tamil
+		</button>
+	</div>
+
+	<!--**********END OF HEADER NAVBAR**********-->
+
+	<!--**********START OF BOTTOM NAVBAR**********-->
+
+	<div class = "btm-nav">
+		<div>
+			<button class = "btm-btn">
+				<span class="iconify user-icon selected-img" data-icon="ci:home-alt-fill" data-inline="false"></span>
+			</button>
+			<span>Home</span>
+		</div>	
+		<div>
+			<button class = "btm-btn">
+				<span class="iconify user-icon" data-icon="ic:round-local-fire-department" data-inline="false"></span>
+			</button>
+			<span>Trending</span>
+		</div>		
+		<div>
+			<button class = "btm-btn">
+				<span class="iconify user-icon" data-icon="ic:baseline-subscriptions" data-inline="false"></span>
+			</button>
+			<span>Subscriptions</span>
+		</div>		
+		<div>
+			<button class = "btm-btn">
+				<span class="iconify user-icon" data-icon="ic:baseline-video-library" data-inline="false"></span>
+			</button>
+			<span>Library</span>
+		</div>			
+	</div>
+
+	<!--**********END OF BOTTOM NAVBAR**********-->
+
+	<!--**********START OF MAIN CONTENT**********-->
+
+	<div class = "main-content">
+		<div class = "videos">
+			<div class = "videos-container">
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>
+
+				<div class = "video">
+					<div class = "video-thumbnail">
+						<img src="https://img.youtube.com/vi/PpXUTUXU7Qc/maxresdefault.jpg" alt = "" />
+					</div>					
+
+					<div class = "video-details">
+						<div class = "author">
+							<span class="iconify video-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+						</div>
+
+						<div class = "title">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+							<a href="">Channel 1</a>
+							<span>10M views • 3 Months Ago</span>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+
+	<!--**********END OF MAIN CONTENT**********-->
+	<script type="text/javascript" src = "script.js"></script>
+</body>
+</html>
