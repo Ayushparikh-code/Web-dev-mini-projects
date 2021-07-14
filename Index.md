@@ -74,3 +74,4 @@
 | [Basic Contact Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Basic-Contact-Form)    | A basic contact form having reset and send button.   |
 | [Online quiz portal](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/online%20quiz%20portal)                           | An online portal in which an individual can attend the quiz and view the result automatically |
 | [Virtual Keyboard](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Virtual%20Keyboard) | This is a keyboard on the screen with all the components and a display. |
+| [Tindog](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Tindog)                           | Tinder customized for dogs to find their mate online |
