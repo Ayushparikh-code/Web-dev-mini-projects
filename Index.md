@@ -75,3 +75,4 @@
 | [Online quiz portal](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/online%20quiz%20portal)                           | An online portal in which an individual can attend the quiz and view the result automatically |
 | [Virtual Keyboard](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Virtual%20Keyboard) | This is a keyboard on the screen with all the components and a display. |
 | [Tindog](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Tindog)                           | Tinder customized for dogs to find their mate online |
+| [Chess Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic chess game for entertainment purpose. |
