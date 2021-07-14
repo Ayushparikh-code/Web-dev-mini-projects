@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Stylesheets-->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}" />
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <title>BMI Calculator</title>
+    </head>
+    <body>
+        <h1>
+            <u>BMI Calculator using Flask</u>
+        </h1>
+        <br>
+        <!--Calculator starts-->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm">
+                    <form action="/bmi" method="POST">
+                        <label for="height" id="ht">Height</label>
+                        <input type="text" name="height" class="u-full-width" placeholder="Height (in cm)" id="ht" />
+                        <br>
+                        <label for="weight" id="wt">Weight</label>
+                        <input type="text" name="weight" class="u-full-width" placeholder="Weight (in kg)" id="wt" />
+                        <br>
+                        <br>
+                        <input type="submit" value="Calculate" id="calc_btn" /> {% if bmi %} <div class="alert">
+                            <p>Your BMI is {{bmi}}</p>
+                        </div> {% else %} <div class="alert">
+                            <p>{{error}}</p>
+                        </div> {% endif %}
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--Calculator ends-->
+        <hr>
+        <!--BMI values chart-->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm">
+                    <h2>
+                        <u>BMI Chart</u>
+                    </h2>
+                    <br>
+                    <table>
+                        <tr>
+                            <th>BMI Value</th>
+                            <th>Category</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <18.5 </td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Normal weight</td>
+                        </tr>
+                        <tr>
+                            <td>25 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>>=30</td>
+                            <td>Obesity</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
