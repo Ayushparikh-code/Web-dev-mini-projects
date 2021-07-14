@@ -1,4 +1,5 @@
 
+
 <h1>Word counter App</h1>
 
 <p>Word counter App written in HTML, CSS, and JavaScript .</p>
@@ -26,4 +27,4 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Go to the directory
 - Run the index.html file
 - Start counting Words!!
-
+![Capture](https://user-images.githubusercontent.com/60540365/125561215-d86dbe87-3de0-4cab-afa4-1a1a89c1aa58.JPG)
