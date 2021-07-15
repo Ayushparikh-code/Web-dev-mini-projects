@@ -77,3 +77,4 @@
 | [Tindog](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Tindog)                           | Tinder customized for dogs to find their mate online |
 | [Word counter App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/word%20counter)           | Simple Word counter App written in HTML, CSS, and JavaScript                                                                 
 | [Chess Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic chess game for entertainment purpose. |
+| [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic website using HTML, CSS, JAVASCRIPT with modern look. |
