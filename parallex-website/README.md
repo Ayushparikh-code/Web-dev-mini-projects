@@ -10,3 +10,23 @@ This is a basic HTML, CSS, JAVASCRIPT website where images of this website has t
 ![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 <br>
+
+
+### How to get the project on your local machine:
+
+---
+
+- Download or clone the repository
+
+```
+git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
+```
+
+- Go to the directory
+- Open parallex-website folder
+- Open the terminal and run 
+```
+node app.js
+```
+- Open *localhost:3000* in your browser.
+
