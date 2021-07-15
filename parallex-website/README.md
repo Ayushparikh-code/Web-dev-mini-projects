@@ -34,3 +34,17 @@ node app.js
 ###Remember: 
 If you are using node then you need to reload your server everytime you make changes in your file. Otherwise if you have nodemon installed, you can use nodemon. 
 ***
+
+
+<br>
+
+##Screenshots
+
+![Demo1](public/images/survey-demo1.png)
+<br>
+
+![Demo2](public/images/survey-demo2.png)
+<br>
+
+
+## Happy Coding!
