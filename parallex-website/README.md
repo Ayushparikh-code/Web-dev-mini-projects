@@ -1,0 +1,2 @@
+# Welcome 🖐 to the Parallex Website
+This is a basic HTML, CSS, JAVASCRIPT website where images of this website has their position fixed that results in giving the parallex look and that is why it is called Parallex Website. This gives the look of modern website.
