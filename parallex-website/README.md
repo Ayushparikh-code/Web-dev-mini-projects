@@ -38,12 +38,9 @@ If you are using node then you need to reload your server everytime you make cha
 
 <br>
 
-##Screenshots
+##Screenshot
 
-![Demo1](public/images/survey-demo1.png)
-<br>
-
-![Demo2](public/images/survey-demo2.png)
+![Demo1](public/images/demo.png)
 <br>
 
 
