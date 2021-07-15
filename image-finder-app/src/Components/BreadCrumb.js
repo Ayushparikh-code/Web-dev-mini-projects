@@ -36,10 +36,9 @@ const BreadCrumb = ({
 		onChange = {
 			(e) => onCountChange(e.target.value)
 		}
-		/>             <
-		/Box>
+		/>             
+		</Box>
 	)
 }
 
 export default BreadCrumb
-
