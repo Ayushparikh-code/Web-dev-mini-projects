@@ -1,0 +1,33 @@
+body {
+    font-size: 20px;
+    text-align: center;
+    background: #ace1af;
+    font-family: "Quicksand", sans-serif;
+}
+
+h1,
+h2 {
+    text-align: center;
+    padding-top: 25px;
+    font-style: bold;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    height: 45px;
+}
+
+#calc_btn,
+#ht,
+#wt {
+    padding: 7px;
+}

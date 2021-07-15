@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Word Counter</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="word.css">
+  <meta name="description" content="A word counter built in HTML/CSS/JS. Shows number of characters, words, reading time and readability score. Also generates a list of top keywords.">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Word Counter</h1>
+    <textarea placeholder="Enter your text here..."></textarea>
+    <div class="output row">
+      <div>Characters: <span id="characterCount">0</span></div>
+      <div>Words: <span id="wordCount">0</span></div>
+    </div>
+    <div class="output row">
+      <div>Sentences: <span id="sentenceCount">0</span></div>
+      <div>Paragraphs: <span id="paragraphCount">0</span></div>
+    </div>
+    <div class="output row">
+      <div>Reading Time: <span id="readingTime">0</span></div>
+      <div id="readability">Show readability score.</div>
+    </div>
+    <div class="keywords">
+      Top keywords:
+      <ul id="topKeywords">
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript" src="word.js"></script>
+</body>
+
+</html>
