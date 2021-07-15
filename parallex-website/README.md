@@ -30,3 +30,7 @@ node app.js
 ```
 - Open *localhost:3000* in your browser.
 
+*** 
+###Remember: 
+If you are using node then you need to reload your server everytime you make changes in your file. Otherwise if you have nodemon installed, you can use nodemon. 
+***
