@@ -77,3 +77,4 @@
 | [Tindog](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Tindog)                           | Tinder customized for dogs to find their mate online |
 | [Word counter App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/word%20counter)           | Simple Word counter App written in HTML, CSS, and JavaScript                                                                 
 | [Chess Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic chess game for entertainment purpose. |
+| [Password Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Password%20Generator)   | A password generator app to generate strong passwords which can be easily used for authentication. |
