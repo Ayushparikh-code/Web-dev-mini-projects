@@ -21,3 +21,7 @@ This webpage converts temperatures from and to Celcius, Fahrenheit and Kelvin.
 - run `index.html` file
 
 ### Screenshots
+
+![Home Page](https://github.com/joshi-kaushal/Web-dev-mini-projects/blob/temp-convertor/Temperature%20Convertor/home.png)
+![Successful conversion](https://github.com/joshi-kaushal/Web-dev-mini-projects/blob/temp-convertor/Temperature%20Convertor/cel-far.png)
+![Same Units](https://github.com/joshi-kaushal/Web-dev-mini-projects/blob/temp-convertor/Temperature%20Convertor/same-units.jpg)
