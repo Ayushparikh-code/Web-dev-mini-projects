@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.container{
+    height:100vh;
+    padding-top:5%;
+    text-align:center;
+}
+
+
+h1{
+    font-size:50px;
+    margin-bottom:20px;
+    font-family:cursive;
+    animation-name:multipleColors;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes multipleColors {
+    0%{
+        color:yellow;
+    }
+    25%{
+        color:red;
+    }
+    50%{
+        color:white;
+    }
+    75%{
+        color:lightgreen;
+    }
+    100%{
+        color:yellow;
+    }
+}
+p{
+    font-size:20px;
+    width:900px;
+    margin:auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.formula{
+    border:2px solid yellow;
+     width:250px;
+     padding:50px 0px;
+     margin:30px auto;
+}
+
+input{
+    font-size:16px;
+    width:500px;
+    padding:10px;
+    margin:10px;
+}
+input[type="button"]{
+    font-size:20px;
+    background-color:yellow !important;
+    width:100px !important;
+    color:black;
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+}
+input[type="button"]:hover{
+    font-size:30px;
+    width:200px !important;
+    border-radius:30px;
+}
+
+/*******Time Calculator*******/
+#timeContainer{
+    background-color:darkslateblue;
+    color:white;
+    }
+
+    
+    /*******speed Calculator*******/
+#speedContainer{
+    background-color:green;
+    color:white;
+    }
+    
+        /*******speed Calculator*******/
+#distanceContainer{
+    background-color:lightpink;
+    color:white;
+    }
+    
