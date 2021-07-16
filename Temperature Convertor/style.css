@@ -1,0 +1,7 @@
+#input-container {
+    display: flex;
+}
+
+.input-childs {
+    margin: 10px;
+}
