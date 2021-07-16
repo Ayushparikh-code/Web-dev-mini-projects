@@ -1,0 +1,17 @@
+name: Default
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Label Syncer
+      uses: micnncim/action-label-syncer@v1.3.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ github.repository }}
+      with:
+        manifest: .github/labels.json
+        prune: false

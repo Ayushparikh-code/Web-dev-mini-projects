@@ -1,0 +1,87 @@
+.massiveContainer{
+    background-color: #eee;
+    height: auto;
+    border-radius: 10px;
+    margin: 40px 20px;
+    padding-bottom: 40px;
+}
+.heading{
+    text-transform: capitalize;
+    text-align: center;
+    padding: 50px 15px 0;
+    font-size: 30px;
+}
+
+.date{
+    text-align: center;
+    font-size: 30px;
+}
+
+.aboutPara{
+    border: 1px solid rgb(230, 224, 224);
+    text-align: center;
+    margin: 0 30px;
+    border-radius: 10px;
+    padding: 17px 23px;
+}
+
+.image{
+    text-align: center;
+    border: 1px solid rgb(230, 224, 224);
+    margin: 15px 30px;
+    border-radius: 10px;
+    padding: 17px 23px;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.image img {
+    height: 400px;
+}
+
+.caption{
+    margin-top: 15px;
+    background-color: #ddd;
+    font-size: 18px;
+    padding: 0.5px;
+    border-radius: 7px;
+}
+
+.more{
+    
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 1005px) {
+    .massiveContainer {
+       padding-bottom: 20px;
+    }
+}
+
+@media(max-width: 780px) {
+    .image img {
+        height: 280px;
+        object-fit: contain;
+    }
+    
+}
+
+@media(max-width: 600px) {
+    .image img {
+        height: 180px;
+        object-fit: contain;
+    }
+}
+
+@media(max-width: 410px) {
+    .image img {
+        height: 130px;
+        object-fit: contain;
+    }
+}
