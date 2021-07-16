@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width-device=width,initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Covid Tracker Website</title>
+        <link rel= "stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+<body>
+    <header>
+        <a href="#" class="logo">C<span class="fas fa-virus"></span>vid-19</a>
+        
+        <div id="menu" class="fas fa-bars">
+        
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="protect.html">Protection</a></li>
+                <li><a href="#symtoms">Symtoms</a></li>
+                <li><a href="#precautions">Precautions</a></li>  
+                <li><a href="#spread">Spread</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!---------------------------------------------------->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Covid-Website</h3>
+            <a href="protect.html" class="btn">Details</a>
+            <span><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HY0Be66cRO00vH" async> </script> </form>
+            </div></span>
+        <div class="image">
+            <img src="background.png" alt="">
+        </div>
+    </section>
+    <!------------------------------------------------------>
+    <section class="protect" id="protect">
+        <h1 class="heading">Take steps to <span> Protect </span> yourself</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="hands.png" alt="">
+                <h3>Wash Hands</h3>
+                <p>Wash your hands properly.Continue minimum 20mins.Use sanitizer in public places.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+              <div class="box">
+                <img src="mask.png" alt="">
+                <h3>Wear Mask</h3>
+                <p>Wash your hands properly.Continue minimum 20mins.Use sanitizer in public places.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+              <div class="box">
+                <img src="vaccination.png" alt="">
+                <h3>Get Vaccinate</h3>
+                <p>Wash your hands properly.Continue minimum 20mins.Use sanitizer in public places.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+<!---------------------------------------------------------------------------->
+    <section class="symtoms" id="symtoms">
+        <div class="content">
+            <h1 class="heading"><span>What are the main</span> Causes </h1>
+            <ul>
+                <div class="symtoms1">
+                    <li>High Fever</li>
+                    <li>Dry Cough</li>
+                    <li>Headache</li>
+                </div>
+                 <div class="symtoms2">
+                    <li>Sore Throat</li>
+                    <li>Joint Pains</li>
+                    <li>Breathing Issues</li>
+                </div>
+            </ul>
+            <a href="#" class="btn">Know More</a>
+        </div>
+        <div class="image">
+            <img src="symtoms.png" alt="">
+        </div>
+    </section>
+    <!------------------------------------------------------------------------->
+    <section class="precautions" id="precautions">
+        <div class="row">
+            <div class="image">
+                <img src="precuations.png" alt="">
+            </div>
+            <div class="content">
+                <h1 class="heading">Things <span>not to do </span> during covid</h1>
+                <p>You need to avoid public places and handshaking with each other.</p>
+                <ul>
+                    <li>Do not share your food</li>
+                    <li>Avoid Public Places</li>
+                    <li>Take 30 secs and wash your hands</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="content">
+                <h1 class="heading"><span>Things not to do </span> during covid</h1>
+                <p>You need to avoid public places and handshaking with each other.</p>
+                <ul>
+                    <li>6feet distance</li>
+                    <li>Use sanitizer</li>
+                    <li>Wear Mask Properly</li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="precuations1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------------------------------------>
+    <section class="spread" id="spread">
+        <h1 class="heading">How Covid-19<span> spreads </span> over the world</h1>
+        <div class="image">
+        </div>    
+    </section>
+    <!----------------------------------------------------------------------------->
+    <section class="graph" id="graph">
+        <h1>Cases In India</h1>
+        <div class="graphcases">
+            <canvas id="myChart" width="700" height="400"></canvas>
+            <script>
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                       labels: ['USA', 'India', 'Briten', 'Canada', 'Russia', 'Europe'],
+                       datasets: [{
+                        label: '# of Votes',
+                        data: [5, 19, 3, 2, 2, 0],
+                          backgroundColor: [
+                             'rgba(255, 99, 132, 0.2)',
+                             'rgba(54, 162, 235, 0.2)',
+                             'rgba(255, 206, 86, 0.2)',
+                             'rgba(75, 192, 192, 0.2)',
+                             'rgba(153, 102, 255, 0.2)',
+                             'rgba(255, 159, 64, 0.2)'
+            ],
+                          borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+        ],
+         borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});              
+       </script>
+        </div>
+    </section>
+    <!------------------------------------------------------------------------------>
+    <section class="grid" id="grid">
+        <div class="image">
+            <img src="understand1.png">
+        </div>    
+    </section>
+    <!------------------------------------------------------------------------------>
+     <section class="news" id="news">
+        <h1 class="heading">Latest News For Today</h1>
+        <div class="livenews">
+            <a href="https://www.worldometers.info/coronavirus/country/india/">Get News</a>
+            <div class="livenews1">
+            <a href="https://www.who.int/">Visit This Page </a>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------------------------------->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About Us</h3>
+                <p>Contact Us and stay connected</p>
+            </div>
+            <div class="box">
+                <h3>Locations</h3>
+                <a href="#">India</a>
+                <a href="#">Usa</a>
+                <a href="#">Russia</a>
+                <a href="#">Spain</a>
+                <a href="#">Etc</a>
+            </div>
+            <div class="box">
+                <h3>Navbars</h3>
+                <a href="#">Home</a>
+                <a href="#">Protect</a>
+                <a href="#">Symtoms</a>
+                <a href="#">Precautions</a>
+                <a href="#">Spread</a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <p>mumbai, 12345</p>
+                <p>mumbai,India-12345</p>
+                <p>abc@gmail.com</p>
+                <div class="share">
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+        <h1 class="credit"><a href="#">Developed By Sulagna</a></h1>
+    </section>
+    <!------------------------------------------------------------------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
