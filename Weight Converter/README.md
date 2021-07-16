@@ -9,11 +9,11 @@ grams, pounds and ounces.
 # screenshots
 a. When we don't enter any value or the value is less than or equal to zero then an alert appears.
 
-![](https://github.com/palaksinghania05/Web-dev-mini-projects/blob/weight_converter/Weight%20Converter/screenshots/when_no_value_passed.png)
+![](https://raw.githubusercontent.com/Ayushparikh-code/Web-dev-mini-projects/main/Weight%20Converter/screenshots/when_no_value_passed.png)
 
 b. When we enter a valid value then it gets converted on clicking convert button.
 
-![](https://github.com/palaksinghania05/Web-dev-mini-projects/blob/weight_converter/Weight%20Converter/screenshots/smooth_functioning.png)
+![](https://github.com/Ayushparikh-code/Web-dev-mini-projects/blob/main/Weight%20Converter/screenshots/smooth_functioning.png?raw=true)
 
 
 c. On clicking Reset button, the fields will get cleared.
