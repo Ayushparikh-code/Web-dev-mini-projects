@@ -23,8 +23,8 @@ This webpage converts temperatures from and to Celcius, Fahrenheit and Kelvin.
 ### Screenshots:
 
 Home Page -
-![Home Page](https://github.com/joshi-kaushal/Web-dev-mini-projects/blob/temp-convertor/Temperature%20Convertor/home.png)
+![Home Page](https://github.com/joshi-kaushal/Web-dev-mini-projects/blob/temp-convertor/Temperature%20Convertor/assets/home.png)
 Successful conversion -
-![Successful conversion](https://github.com/joshi-kaushal/Web-dev-mini-projects/blob/temp-convertor/Temperature%20Convertor/assets/home.png)
+![Successful conversion](https://github.com/joshi-kaushal/Web-dev-mini-projects/blob/temp-convertor/Temperature%20Convertor/assets/cel-far.png)
 Same Units -
 ![Same Units](https://github.com/joshi-kaushal/Web-dev-mini-projects/blob/temp-convertor/Temperature%20Convertor/assets/same-units.jpg)
