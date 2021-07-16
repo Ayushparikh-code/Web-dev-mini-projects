@@ -8,8 +8,28 @@
 ✔ JavaScript <br>
 ✔ NodeJs <br>
 ✔ ExpressJs <br>
-
 </p>
+<h1 align="center"> 🌎 Use</h1>
+- Download or clone the repository
+
+```
+git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
+```
+
+- Go to the directory
+```
+cd Corona-tracker
+```
+
+- Run the command
+```
+npm start
+```
+- Start Local sever at 1338
+```
+http://localhost:1338
+```
+<hr>
 <h1 align="center">🖼 Screenshot</h1>
 <img align="center" src="https://user-images.githubusercontent.com/77394228/125890843-a430b246-67bc-4ec2-9fee-f7513f8df3ee.png"/>
 
