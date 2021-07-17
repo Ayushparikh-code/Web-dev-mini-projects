@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Speed-Calculator</title>
+</head>
+
+<body>
+
+    <div id="speedContainer" class="container">
+
+        <div class="speedCalculator">
+            <h1>Speed Calculator</h1>
+            <p>Speed can be thought of as the rate at which an object covers distance. A fast-moving object has
+                a high speed and covers a relatively large distance in a given amount of time, while a
+                slow-moving object covers a relatively small amount of distance in the same amount of time.</p>
+            <br>
+            <p>Speed is the ratio of Distance travelled by any object to the time taken to travel the distance.
+            </p>
+            <h3 class="formula">Speed= Distance/Time
+            </h3>
+            <h4>SI unit of speed is m/s.</h4>
+            <br>
+            <h3><em>Fill in the distance(in metres) and time(in seconds) and calculate the speed. </em></h3>
+
+            <input type="number" id="distance" placeholder="Enter the Distance(in metres)"><br><br>
+            <input type="number" id="time" placeholder="Enter the time(in seconds)"><br><br>
+            <input type="button" value="Speed" id="speed" onclick="calcSpeed()">
+            <h3 id="calculatedSpeedDisplay"></h3>
+        </div>
+        <button class="backButton"><a href="index.html">Back</a></button>
+    </div>
+    <script>
+
+        function calcSpeed() {
+            let distance = document.getElementById("distance").value;
+            let time = document.getElementById("time").value;
+            let calculatedSpeedDisplay = document.getElementById("calculatedSpeedDisplay");
+            let speed = distance / time;
+            calculatedSpeedDisplay.innerText = `The calculated speed is ${speed} m/s`;
+        }
+
+
+    </script>
+</body>
+
+</html>
