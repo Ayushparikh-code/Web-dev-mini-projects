@@ -44,7 +44,15 @@
 | [Tic-Tac-Toe Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Tic-Tac-Toe%20Game)                       | Simple Tic-Tac-Toe Game written in HTML, CSS, and JavaScript                                                                                                                                                                         |
 | [TO-DO List](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/To-Do%20List)                                   | Simple TO-DO List written in HTML, CSS, and JavaScript                                                                                                                                                                               |
 | [Weather-App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weather-App)                                   | Simple Weather app written in HTML, CSS, and JavaScript using the APIs for fetching weather and geolocation information                                                                                                              |
+
 | [News Webapp](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/flask_news_project)                            | A web app for searching news made using flask                                                                                                                                                                                        |
 | Score Keeper                                                                                                                  |A web Page where user can keep a count of their scores and will tell which player won.
         |
+| [Weight Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weight%20Converter)
+           | A web page where user can convert weight from kilograms to grams, ounces and pounds.
+|
+
+| [Live Clock](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Live-Clock)
+           | A project which shows live clock with proper abbreviation AM or PM.
+|
 
