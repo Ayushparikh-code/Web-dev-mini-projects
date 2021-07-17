@@ -7,7 +7,7 @@
 
 .container{
     height:100vh;
-    padding-top:5%;
+    padding-top:2%;
     text-align:center;
 }
 
@@ -29,10 +29,10 @@ h1{
         color:red;
     }
     50%{
-        color:white;
+        color:blue;
     }
     75%{
-        color:lightgreen;
+        color:green;
     }
     100%{
         color:yellow;
@@ -67,27 +67,70 @@ input[type="button"]{
     border-radius:20px;
 }
 input[type="button"]:hover{
-    font-size:30px;
-    width:200px !important;
-    border-radius:30px;
+   background-color:purple !important;
+   color:white;
 }
 
+.backButton{
+    position:absolute;
+    top:5px;
+    left:5px;
+    font-size:15px;
+    background-color:yellow !important;
+    width:100px !important;
+    color:black;
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+}
+
+.backButton a{
+   text-decoration:none;
+}
 /*******Time Calculator*******/
 #timeContainer{
-    background-color:darkslateblue;
+    background: linear-gradient(#e6ca70, #9198e5);
     color:white;
     }
 
     
-    /*******speed Calculator*******/
+/*******speed Calculator*******/
 #speedContainer{
-    background-color:green;
+    background: linear-gradient(#af6666, #1c361c);
     color:white;
     }
     
-        /*******speed Calculator*******/
+/*******speed Calculator*******/
 #distanceContainer{
-    background-color:lightpink;
+    background: linear-gradient(#e66465, #9198e5);
     color:white;
     }
-    
+/****homepage***/
+#mainContainer{
+    background: linear-gradient(#f8f4f4, #9198e5);
+    color:white;
+    } 
+
+.box{
+    display:inline-block;
+    padding:10% 0%;
+    text-align:center;
+    }
+.box img{
+ border-radius:50%;
+ background-color:rgb(211, 133, 172);
+    }
+.box a{
+    text-decoration:none;
+    font-size:20px;
+    background-color:darkviolet;
+    color:white;
+    border:none;
+    border-radius:10px;
+     padding:10px 5%;
+    margin:10px 0px 0px 0px;
+} 
+.box a:hover{
+    background-color:yellow;
+    color:black;
+}       
