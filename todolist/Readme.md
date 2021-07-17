@@ -31,8 +31,8 @@ in your git bash.
 <br/>
 
 * Run this command to install all dependencies for the project.
-```
-npm install
+```npm install
+
 ```
 *Run this command to run the file.
 ```
