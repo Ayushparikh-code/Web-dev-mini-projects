@@ -18,7 +18,7 @@ h1 {
 }
 
 #heading {
-  background-color:rgb(72,156,193);
+  background-color: rgb(72, 156, 193);
   text-align: center;
 }
 
@@ -35,7 +35,7 @@ h1 {
 
 input:checked+p {
   text-decoration: line-through;
-  text-decoration-color: rgb(72,156,193);
+  text-decoration-color: rgb(72, 156, 193);
 }
 
 input[type="checkbox"] {
@@ -60,7 +60,7 @@ button {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: rgb(72,156,193);
+  background-color: rgb(72, 156, 193);
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
@@ -80,7 +80,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   outline: none;
-  box-shadow: inset 0 -3px 0 0 rgb(72,156,193);
+  box-shadow: inset 0 -3px 0 0 rgb(72, 156, 193);
 }
 
 ::placeholder {
