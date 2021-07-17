@@ -33,21 +33,20 @@ Link : https://www.breakingbadapi.com/api/characters
 
 <p>Initially, it will show a loader</p>
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-kp/breaking-bad-characters/Screenshots/ss3.png" />
+![demo1](./Screenshots/ss3.png)
 
 <p>After 3-4 seconds, it will load all the characters of the show</p>
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-kp/breaking-bad-characters/Screenshots/ss1.png" />
+![demo2](./Screenshots/ss1.png)
 
 <p>Clicking on any image, it will show other information like Name, Nickname, Birthday, Occupation, Status...</p>
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-kp/breaking-bad-characters/Screenshots/ss2.png" />
+![demo3](./Screenshots/ss2.png)
 
 <p>User can search a particular character by typing his/her name in the search box</p>
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-kp/breaking-bad-characters/Screenshots/ss4.png" />
-
+![demo4](./Screenshots/ss4.png)
 
 ## Live Demo
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-kp/breaking-bad-characters/Screenshots/demo.gif" />
+![live demo](./Screenshots/demo.gif)
