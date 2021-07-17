@@ -1,5 +1,5 @@
 # Welcome 🖐 to the Speed-Distance-Time Calculator Website
-It is a multi pager Speed Distnace Time Calculator with simple but userfriendly design.
+It is a multi pager Speed Distance Time Calculator with simple but user-friendly design.
 
 ## Default view of the website
 HOMEPAGE
