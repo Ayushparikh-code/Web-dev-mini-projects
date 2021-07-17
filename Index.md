@@ -84,3 +84,5 @@
 | [Weight Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weight%20Converter)              |A web page where used can convert weight from kilograms to grams, ounces and pounds.
 
 | [Restaurant website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Restaurant-website)              |A Restuarant website with a simple and user friendly design ad a database linked to it.
+
+| [Band website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Band Website)              |A Band website with a simple and user friendly design and multiple pages with some extra features.
