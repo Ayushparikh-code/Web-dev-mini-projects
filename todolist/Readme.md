@@ -43,5 +43,5 @@ node app.js
 
 <h3>ScreenShots</h3>
 <br>
-<img src="images\main.PNG"/>
+<img src="images/main.PNG"/>
 <img src="images/work.PNG"/>
