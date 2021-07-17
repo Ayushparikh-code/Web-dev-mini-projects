@@ -1,4 +1,4 @@
-# Welcome 🖐 to the Restaurant Website
+# Welcome 🖐 to the Band Website
 It is a multi pager Band Website with simple but userfriendly design.
 
 ## Default view of the website
