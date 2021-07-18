@@ -90,4 +90,5 @@
 | [Photo Editor](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/photo%20--%20editor) |It is a photo Editor which allows to rescale,flip and grey scale images.
 | [Temperature Convertor](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Temperature%20Convertor)          | This webpage converts temperatures from and to Celsius, Fahrenheit and Kelvin.      
 | [Band website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Band%20Website)              |A Band website with a simple and user friendly design and multiple pages with some extra features.
-
+| [Weight Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weight%20Converter)                       | A simple web page where user can convert weight from kilograms to grams, ounces or pounds.
+| [Live Clock](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Live%20Clock)                                   | A simple web page made in react native which shows live time.
