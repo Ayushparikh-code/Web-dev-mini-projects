@@ -36,7 +36,7 @@ If you are using node then you need to reload your server everytime you make cha
 
 <br>
 
-##Screenshot
+## Screenshots
 
 ![Demo1](screenshots/quiz1.png)
 ![Demo2](screenshots/quiz2.png)
