@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{>links}}
+</head>
+<body>
+    {{>header}}
+    <div class="title ">
+        HOSPITALS
+    </div>
+
+    <div class = 'search-box '>
+          <input class = "search-text" type="text" placeholder = "Search Beds in your state...">
+        <a href="#" class = "search-btn">
+          <i class="fas fa-search"></i>
+        </a>
+    </div>
+
+    <div class="kidding">
+        
+    </div>
+
+    <div class="info">
+        <div class="country-info">
+            <div class="container" id="state-info">        
+            </div>
+        </div>
+
+        <div class="container-test">
+            <img src="images/hosp.png" alt="">
+            <div class="card text-white mb-3">
+              <div class="card-header"><i class="far fa-grin-alt"></i></div>
+                <div class="card-body">
+                <h5 class="card-title">Total Hospitals</h5>
+                <p class="card-text" id="tot-hosp"></p>
+              </div>
+            </div>   
+        </div>
+        <div class="container-test">
+            <div class="card text-white mb-3">
+              <div class="card-header"><i class="far fa-grin-alt"></i></div>
+                <div class="card-body">
+                <h5 class="card-title">Total Beds</h5>
+                <p class="card-text" id="tot-beds"></p>
+              </div>
+            </div>   
+            <img src="images/bed1.jpg" alt="">
+      </div>
+        <div class="container-test">
+            <img src="images/doctor.png" alt="">
+            <div class="card text-white mb-3">
+              <div class="card-header"><i class="far fa-grin-alt"></i></div>
+                <div class="card-body">
+                <h5 class="card-title">Urban Hospitals</h5>
+                <p class="card-text" id="urb-hosp"></p>
+              </div>
+            </div>   
+        </div>
+        <div class="container-test">
+            <div class="card text-white mb-3">
+              <div class="card-header"><i class="far fa-grin-alt"></i></div>
+                <div class="card-body">
+                <h5 class="card-title">Urban Beds</h5>
+                <p class="card-text" id="urb-beds"></p>
+              </div>
+            </div>   
+            <img src="images/nurse2.jpg" alt="">
+        </div>
+
+        <div class="container-test">
+            <img src="images/test2.png" alt="">
+            <div class="card text-white mb-3">
+              <div class="card-header"><i class="far fa-grin-alt"></i></div>
+                <div class="card-body">
+                <h5 class="card-title">Rural Hospitals</h5>
+                <p class="card-text" id="rur-hosp"></p>
+              </div>
+            </div>   
+        </div>
+        <div class="container-test">
+            <div class="card text-white mb-3">
+              <div class="card-header"><i class="far fa-grin-alt"></i></div>
+                <div class="card-body">
+                <h5 class="card-title">Rural Beds</h5>
+                <p class="card-text" id="rur-beds"></p>
+              </div>
+            </div>   
+            <img src="images/test4.jfif" alt="">
+        </div>
+
+    {{>footer}}
+    <script src="js/hosp.js"></script>
+    {{>js_links}}
+</body>
+</html>

@@ -23,16 +23,17 @@ User can improve his/her typing speed.
 
 ## ScreenShot
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushiP/Typing%20Speed%20Test%20Website/screenshots/ss1.png" />
+
+![demo1](./screenshots/ss1.png)
 
 After Clicking on the Start button, UI looks like:
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushiP/Typing%20Speed%20Test%20Website/screenshots/ss2.png" />
+![demo2](./screenshots/ss2.png)
 
 After clicking on the Done Button, it give the result:
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushiP/Typing%20Speed%20Test%20Website/screenshots/ss3.png" />
+![demo3](./screenshots/ss3.png)
 
 
 ## Live Demo
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushiP/Typing%20Speed%20Test%20Website/screenshots/demo.gif" />
+![demo4](./screenshots/demo.gif)

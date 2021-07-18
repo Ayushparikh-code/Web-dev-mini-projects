@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Arial Black", sans-serif;
+    font-size: 4.5em;
+    letter-spacing: -1px;
+    background-color: black;
+    color: white;
+}
+
+/* nav */
+#name{
+  color: #E19847;
+  position: absolute;
+  right: 1rem;
+}
+.navbar-dark .navbar-brand{
+  color: aqua;
+}
+.navbar-dark .navbar-brand:hover{
+  color: #FF851B;
+}
+
+.data-hide{
+  visibility: hidden;
+  transition: all 0.3s linear;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* background: #7C3238; */
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Roboto', sans-serif;
+  }
+
+/* search css */
+.search-box {
+    position: absolute;
+    top : 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+  }
+  .search-box:hover > .search-text{
+    width: 240px;
+    padding: 0 6px;
+  }
+  .search-box:hover > .search-btn{
+    background: white;
+    text-decoration: none;
+    color: black;
+  }
+  .search-btn {
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .search-btn > i {
+    font-size: 20px;
+  }
+  .search-text {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+  }
+
+
+
+
+  /* img on first page */
+  .img-corona img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+.info{
+  /* height: 100vh;
+    width: 100%; */
+}
+.kidding .title{
+  font-size: 2rem;
+  height: 100vh;
+}
+
+
+
+
+/* info css */
+.country-info .container{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #17c5c2;
+  border-radius: 1rem;
+  margin-top: 12rem;
+  width: 20rem;
+  font-weight: 900;
+  /* font-family: cursive; */
+}
+.country-info .container:hover{
+  box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.45);
+  cursor: pointer;
+}
+.container-1{
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+}
+.container-2{
+  display: flex;
+  margin-bottom: 4rem;
+  justify-content: center;
+}
+.card{
+  margin: 2rem;
+  width: 18em;
+  height: 15rem;
+  background-color:#BFFCFB;
+}
+  .card:hover{
+    /* opacity: 0.9; */
+    box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.45);
+    cursor: pointer;
+  }
+  .card-vaccine:hover{
+    box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.45);
+    cursor: pointer;
+  }
+  .card-title{
+    text-align: center;
+    color: #025c5c;
+  }
+  .card-text{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    /* font-family: cursive; */
+    color: black;
+  }
+  .card-header{
+    text-align: center;
+    font-size: 3rem;
+    color: #039e9e;
+  }
+
+
+  /* vaccination */
+  .card-vaccine{
+    background-color:#BFFCFB;
+    width: 50rem;
+    height: 30rem;
+  }
+  .card-text-vaccine{
+    font-family: 'Acme', sans-serif;
+    font-weight: 600;
+    margin-left: 3rem;
+    
+  }
+  .country-info-note{
+    text-align: center;
+  }
+
+
+
+
+  /* testing page */
+.container-test{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 6rem;
+}
+.container-test img{
+  width: 25rem;
+  object-fit: cover;
+}
+.container-test .card{
+  width: 30rem;
+}
+
+
+
+
+  @media screen and (max-width:550px){
+    .title{
+        font-size: 2rem;
+    }
+    .kidding .title{
+      font-size: 1rem;
+      height: 100vh;
+    }
+    .search-box {
+      position: absolute;
+      top : 20%;
+    }
+    .search-box:hover > .search-text{
+        width: 150px;
+        padding: 0 6px;
+    }
+    .container-1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container-2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .country-info .container{
+      width: 16rem;    
+      font-size: 2rem;  
+    }
+    .card{
+      /* margin: 1rem; */
+      width: 18rem;
+      height: 15rem;
+     }
+
+    .container-test{
+      flex-direction: column;
+   }
+   .container-test img{
+    width: 20rem;
+    margin: 2rem;
+  }
+   .container-test .card{
+      width: 20rem;
+      margin: 2rem;
+   }
+
+
+   /* vaccination  */
+   .card-vaccine{
+     width: 19rem;
+     height: auto;
+     margin: 1rem;
+   }
+   .card-text-vaccine{
+     margin-left: 1rem;
+   }
+   .country-info-note{
+     text-align: center;
+   }
+   
+
+}
+  @media screen and (max-width:420px){
+    .title{
+        font-size: 2rem;
+    }
+    .search-box:hover > .search-text{
+        width: 100px;
+        padding: 0 3px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Fotter */
+.footer{
+  background-color: rgb(65, 64, 64);
+  color: aliceblue;
+  width: 100%;
+}
+.footer .foot-container{
+  padding: 1rem;
+}
+.foot-container .services{
+  display: flex;
+  flex-direction: column;
+}
+.foot-container .services h5,.about h5{
+  color: #FF851B;
+}
+
+.foot-container .about{
+  display: flex;
+  flex-direction: column;
+}
+.foot-container a{
+  text-decoration: none;
+  color: rgba(255,255,255,.5);
+}
+.foot-container a:hover{
+  color: white;
+}
+.foot-container{
+   display: flex;
+   justify-content: space-evenly;
+}
+.footer .company{
+   text-align: center; 
+}
+.footer .company h4{
+  color: aqua;
+}
+.footer .links{
+  text-align: center; 
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
+}
+.footer .links a{
+  margin: 0.8rem;
+  color: white;
+}
+.footer .links a:nth-child(1):hover{
+  color:#4267B2;
+}
+.footer .links a:nth-child(2):hover{
+  color:#bc2a8d;
+}
+.footer .links a:nth-child(3):hover{
+  color:#0077b5;
+}
+.footer .links a:nth-child(4):hover{
+  color:#1DA1F2;
+}
+.footer .links a:nth-child(5):hover{
+  color: #4078c0 ;
+}
+
+
+
+/* 404 error page */
+.error-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+

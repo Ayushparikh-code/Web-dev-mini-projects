@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!--Required meta tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"/>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}" />
+
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+
+        <!--Icons-->
+	    <script src="https://kit.fontawesome.com/7e8697690d.js" crossorigin="anonymous"></script>
+
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1><u>Calculator App using Flask</u></h1>
+        </div>
+
+        <hr><br>
+
+        <div class="container">
+            <!-- Form -->
+            <div class="container">
+              <form action="/send" method="POST">
+                <label for="Number One" id="no1">First Number</label>
+                <input
+                  type="text"
+                  placeholder="First Number"
+                  class="u-full-width"
+                  name="var1"
+                />
+
+                <label for="Number Two" id="no2">Second Number</label>
+                <input
+                  type="text"
+                  placeholder="Second Number"
+                  class="u-full-width"
+                  name="var2"
+                />
+
+                <label for="Operation" id="op">Operation</label>
+                <select required class="u-full-width" name="operation">
+                     <option value="" disabled selected hidden>Select operation</option>
+                     <option value="add">Add</option>
+                     <option value="subtract">Subtract</option>
+                     <option value="multiply">Multiply</option>
+                     <option value="divide">Divide</option>
+                </select>
+
+                <input type="submit" value="Calculate" id="calc_btn" />
+            </form>
+            <!--Form ends-->
+
+            <div class="result">
+                <label for="Result">Result: {{ result }}</label>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="container">
+            <h5>Made by Tanvi</h5>
+            <a href="https://github.com/tanvi355"><i class="fab fa-github fa-2x" style="color:black"></i></a>
+        </div>
+
+    </body>
+</html>

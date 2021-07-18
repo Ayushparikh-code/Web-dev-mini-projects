@@ -23,9 +23,9 @@ python app.py
 ```
 
 Go to port 5000 and .....
+  
+  ![demo1](./templates/images/a.png)
+  ![demo2](./templates/images/b.png)
+  ![demo2](./templates/images/c.png)
 
-<img src="/templates/images/a.png" style="width:70%; height:1rem; margin:2%">
-
-<img src="/templates/images/b.png" style="width:70%; height:1rem; margin:2%">
-<img src="/templates/images/c.png" style="width:70%; height:1rem; margin:2%">
 </p>
