@@ -47,4 +47,7 @@
 | [News Webapp](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/flask_news_project)                            | A web app for searching news made using flask                                                                                                                                                                                        |
 | Score Keeper                                                                                                                  |A web Page where user can keep a count of their scores and will tell which player won.
         |
-
+| [Weight Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weight%20Converter)                       | A simple web page where user can convert weight from kilograms to grams, ounces or pounds.
+        |
+| [Live Clock](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Live%20Clock)                                   | A simple web page made in react native which shows live time.
+        |
