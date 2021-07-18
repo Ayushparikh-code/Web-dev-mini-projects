@@ -88,3 +88,4 @@
 | [Simple Calculator (Flask)](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Simple%20Calculator%20(Flask))| A simple calculator with 2 input fields and some options to perform different operations on them.|
 | [Photo Editor](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/photo%20--%20editor) |It is a photo Editor which allows to rescale,flip and grey scale images.
 | [Temperature Convertor](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Temperature%20Convertor)          | This webpage converts temperatures from and to Celsius, Fahrenheit and Kelvin.      
+| [Band website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Band%20Website)              |A Band website with a simple and user friendly design and multiple pages with some extra features.

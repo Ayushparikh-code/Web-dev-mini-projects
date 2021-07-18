@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/60f0166554.js" crossorigin="anonymous"></script>
+    <title>MyBand | JugeshRagahv</title>
+</head>
+
+<body>
+    <!--------------------------------HOMEPAGE---------------------------------------------->
+    <section class="homepage section" id="home">
+        <nav class="navbar">
+            <ul>
+                <a href="#home">HOME</a>
+                <a href="#band">BAND</a>
+                <a href="#tour">TOUR</a>
+                <a href="#contact">CONTACT</a>
+                <div class="dropdown">
+                    <a href="">MORE <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li class="dropdown-content-item">Merchandise</li>
+                            <li class="dropdown-content-item">Media</li>
+                            <li class="dropdown-content-item">Extras</li>
+                        </ul>
+                    </div>
+            </ul>
+            <i class="fas fa-search search"></i>
+        </nav>
+        <div class="homepage-description">
+            <span class="homepage-desc-heading">Chicago</span>
+            <p class="homepage-desc-para">Thank You Chigago- A night we won't forget.</p>
+        </div>
+    </section>
+
+    <!---------------------------------------BAND---------------------------------------------------------------------------------->
+    <section class="band" id="band">
+        <div class="container">
+            <p class="heading">THE BAND</p>
+            <i class="band-heading-desc"> We love music</i>
+            <p class="band-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, optio? Aperiam
+                doloremque fugit dolores harum nisi exercitationem eaque id, assumenda aspernatur maxime molestiae
+                repellendus laudantium pariatur temporibus non odio natus debitis error atque at quam, voluptatum cumque
+                impedit! illum exercitationem, labore autem necessitatibus
+                praesentium possimus enim eius distinctio sit tempore dolorum obcaecati beatae! Doloribus, velit a
+                cupiditate laboriosam totam ratione maxime magnam dolorum? Rerum beatae omnis at libero dolore corrupti,
+                fugit inventore aspernatur suscipit ea est unde aliquam facilis.
+            </p>
+            <div class="band-image-collection">
+                <div class="band-image">
+                    <span class="member-name">Name</span>
+                    <img src="images/member.jpg" alt="member1" height="150" width="150">
+                </div>
+                <div class="band-image">
+                    <span class="member-name">Name</span>
+                    <img src="images/member.jpg" alt="member1" height="150" width="150">
+                </div>
+                <div class="band-image">
+                    <span class="member-name">Name</span>
+                    <img src="images/member.jpg" alt="member1" height="150" width="150">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----------------------------TOUR--------------------------------------------------------------------------------------------------->
+    <section class="tour section" id="tour">
+        <div class="container">
+            <p class="heading tour-heading">TOUR DATES</p>
+            <i class="tour-block-desc">Remember to book your tickets!</i>
+            <div class="tour-block-white-div">
+                <p class="month">September</p>
+                <button class="red-button">Sold Out</button>
+            </div>
+            <hr class="hr">
+            <div class="tour-block-white-div">
+                <p class="month">October</p>
+                <button class="red-button">Sold Out</button>
+            </div>
+            <hr class="hr">
+            <div class="tour-block-white-div">
+                <p class="month">November</p>
+            </div>
+    <!----------------IMAGE CARDS---------------------->
+            <div class="tour-img-container">
+                <div class="tour-img-card">
+                    <img src="images/newYork.jpg" alt="new york" height="200" width="240">
+                    <p class="tour-image-card-heading">New york</p>
+                    <p class="tour-image-card-date">Fri 27 Nov 2016</p>
+                    <p class="tour-image-card-desc">Praesent tincidunt sedtellus vitaejusto.</p>
+                    <button class="tour-button button">Buy Tickets</button>
+                </div>
+
+                <div class="tour-img-card">
+                    <img src="images/Paris.jpg" alt="new york" height="200" width="240">
+                    <p class="tour-image-card-heading">Paris</p>
+                    <p class="tour-image-card-date">Fri 27 Nov 2016</p>
+                    <p class="tour-image-card-desc">Praesent tincidunt se jd vitaejusto.</p>
+                    <button class="tour-button button">Buy Tickets</button>
+                </div>
+
+                <div class="tour-img-card">
+                    <img src="images/sanFransisco.jpg" alt="new york" height="200" width="240">
+                    <p class="tour-image-card-heading">San Fransisco</p>
+                    <p class="tour-image-card-date">Fri 27 Nov 2016</p>
+                    <p class="tour-image-card-desc">Praesent tincidu sed vitaejusto.</p>
+                    <button class="tour-button button">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------MODAL--------------------------------------------------->
+    <div id="modal">
+        <div class="modal-heading-container">
+            <p class="modal-heading heading"><i class="fas fa-suitcase"></i>Tickets</p>
+        </div>
+        <div class="modal-input">
+            <label for="modal-input-people"><i class="fas fa-shopping-cart"></i>Tickets,$15 per person</label>
+            <input type="text" id="modal-input-people" placeholder="How many?">
+        </div>
+        <div class="modal-input">
+            <label for="modal-input-email"><i class="fas fa-user"></i>Send To</label>
+            <input type="email" id="modal-input-email" placeholder="Enter Email">
+        </div>
+        <div class="modal-input">
+            <button class="modal-pay-button"><i class="fas fa-check"></i>PAY</button>
+        </div>
+       <div class="modal-footer">
+           <button class="modal-close-button">Close<i class="fas fa-times"></i></button>
+           <p class="modal-footer-p" style="margin-right:20px;">Need help?</p>
+       </div>
+    </div>
+<!------------------------------------------CONTACT-------------------------------------------------------------------------------------->
+    <section class="contact" id="contact">
+        <div class="container">
+            <p class="heading">CONTACT</p>
+            <i class="contact-desc">Fan? Drop a note!</i>
+            <div class="contact-flex">
+                <div class="contact-address">
+                    <p>Chicago,US</p>
+                    <p>Phone:+00 151515</p>
+                    <p>Email: mail@mail.com</p>
+                </div>
+                <div class="contact-input">
+                    <div class="contact-name-email">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="contact-message">
+                        <input type="text" placeholder="Message">
+                    </div>
+                    <div class="contact-button-class">
+                        <button class="button">
+                            SEND
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-----------------------------------------------------MAP-------------------------------------------------------------------------------> 
+    <section class="section" id="map">
+        
+    </section>
+    
+<!--------------------------------------------FOOTER------------------------------------------------------------------------------------->
+    <section class="footer">
+        <div class="icon">
+
+        </div>
+        <p class="footer-desc">
+            Made by ❤Jugesh Raghav
+        </p>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
