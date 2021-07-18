@@ -1,0 +1,24 @@
+html,
+body {
+    height: 100%;
+}
+
+.text_box {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#container {
+    width: 100%;
+    background-color: rgb(140, 145, 118);
+    display: flex;
+    margin: 0 auto;
+}
+
+.center_buttons {
+    margin: auto;
+    display: block;
+}

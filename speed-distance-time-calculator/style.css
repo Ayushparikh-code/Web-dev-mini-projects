@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.container{
+    height:100vh;
+    padding-top:2%;
+    text-align:center;
+}
+
+
+h1{
+    font-size:50px;
+    margin-bottom:20px;
+    font-family:cursive;
+    animation-name:multipleColors;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes multipleColors {
+    0%{
+        color:yellow;
+    }
+    25%{
+        color:red;
+    }
+    50%{
+        color:blue;
+    }
+    75%{
+        color:green;
+    }
+    100%{
+        color:yellow;
+    }
+}
+p{
+    font-size:20px;
+    width:900px;
+    margin:auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.formula{
+    border:2px solid yellow;
+     width:250px;
+     padding:50px 0px;
+     margin:30px auto;
+}
+
+input{
+    font-size:16px;
+    width:500px;
+    padding:10px;
+    margin:10px;
+}
+input[type="button"]{
+    font-size:20px;
+    background-color:yellow !important;
+    width:100px !important;
+    color:black;
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+}
+input[type="button"]:hover{
+   background-color:purple !important;
+   color:white;
+}
+
+.backButton{
+    position:absolute;
+    top:5px;
+    left:5px;
+    font-size:15px;
+    background-color:yellow !important;
+    width:100px !important;
+    color:black;
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+}
+
+.backButton a{
+   text-decoration:none;
+}
+/*******Time Calculator*******/
+#timeContainer{
+    background: linear-gradient(#e6ca70, #9198e5);
+    color:white;
+    }
+
+    
+/*******speed Calculator*******/
+#speedContainer{
+    background: linear-gradient(#af6666, #1c361c);
+    color:white;
+    }
+    
+/*******speed Calculator*******/
+#distanceContainer{
+    background: linear-gradient(#e66465, #9198e5);
+    color:white;
+    }
+/****homepage***/
+#mainContainer{
+    background: linear-gradient(#f8f4f4, #9198e5);
+    color:white;
+    } 
+
+.box{
+    display:inline-block;
+    padding:10% 0%;
+    text-align:center;
+    }
+.box img{
+ border-radius:50%;
+ background-color:rgb(211, 133, 172);
+    }
+.box a{
+    text-decoration:none;
+    font-size:20px;
+    background-color:darkviolet;
+    color:white;
+    border:none;
+    border-radius:10px;
+     padding:10px 5%;
+    margin:10px 0px 0px 0px;
+} 
+.box a:hover{
+    background-color:yellow;
+    color:black;
+}       
