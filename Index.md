@@ -85,4 +85,4 @@
 
 | [Restaurant website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Restaurant-website)              |A Restuarant website with a simple and user friendly design ad a database linked to it.
 
-| [Band website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Band Website)              |A Band website with a simple and user friendly design and multiple pages with some extra features.
+| [Band website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Band%20Website)              |A Band website with a simple and user friendly design and multiple pages with some extra features.
