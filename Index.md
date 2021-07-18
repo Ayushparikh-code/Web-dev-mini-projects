@@ -86,3 +86,4 @@
 | [Restaurant website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Restaurant-website)              |A Restuarant website with a simple and user friendly design ad a database linked to it.|
 | [Speed-Distance-Time-Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/speed-distance-time-calculator)              |It is a multi pager Speed Distnace Time Calculator with simple but userfriendly design.|
 | [Simple Calculator (Flask)](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Simple%20Calculator%20(Flask))| A simple calculator with 2 input fields and some options to perform different operations on them.|
+| [Photo Editor](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/bulaw/photo%20--%20editor) |It is a photo Editor which allows to rescale,flip and grey scale images.
