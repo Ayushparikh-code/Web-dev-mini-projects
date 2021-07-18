@@ -80,4 +80,7 @@
 | [Chess Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic chess game for entertainment purpose. |
 | [Password Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Password%20Generator)   | A password generator app to generate strong passwords which can be easily used for authentication. |
 | [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic website using HTML, CSS, JAVASCRIPT with modern look. |
+| [Random Meal Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Random%20Meal-generator)   | A random meals generator app using HTML, CSS, JAVASCRIPT and an external API. It shows a picture of meal with name, category, ingredients and instructions |
+
+
 
