@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    font: 800 15px Lato, sans-serif;
+    background: #B993D6;
+    background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);
+    background: linear-gradient(to right, #8CA6DB, #B993D6);
+}
+
+select:invalid {
+     color: gray;
+}
+
+.result{
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#no1,
+#no2,
+#op{
+    text-align: left;
+}
+
+#calc_btn{
+    color: black;
+    border-color: black;
+}
