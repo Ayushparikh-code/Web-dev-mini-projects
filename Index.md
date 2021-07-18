@@ -81,6 +81,7 @@
 | [Chess Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic chess game for entertainment purpose. |
 | [Password Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Password%20Generator)   | A password generator app to generate strong passwords which can be easily used for authentication. |
 | [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic website using HTML, CSS, JAVASCRIPT with modern look. |
+| [Random Meal Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Random%20Meal-generator)   | A random meals generator app using HTML, CSS, JAVASCRIPT and an external API. It shows a picture of meal with name, category, ingredients and instructions |
 | [To Do List](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/todolist)              |This app allows you to make a list of events you want to do and you can strikeout the events completed.|
 | [Weight Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weight%20Converter)              |A web page where used can convert weight from kilograms to grams, ounces and pounds.|
 | [Restaurant website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Restaurant-website)              |A Restuarant website with a simple and user friendly design ad a database linked to it.|
@@ -89,3 +90,4 @@
 | [Photo Editor](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/photo%20--%20editor) |It is a photo Editor which allows to rescale,flip and grey scale images.
 | [Temperature Convertor](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Temperature%20Convertor)          | This webpage converts temperatures from and to Celsius, Fahrenheit and Kelvin.      
 | [Band website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Band%20Website)              |A Band website with a simple and user friendly design and multiple pages with some extra features.
+
