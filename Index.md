@@ -82,6 +82,7 @@
 | [Password Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Password%20Generator)   | A password generator app to generate strong passwords which can be easily used for authentication. |
 | [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic website using HTML, CSS, JAVASCRIPT with modern look. |
 | [Random Meal Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Random%20Meal-generator)   | A random meals generator app using HTML, CSS, JAVASCRIPT and an external API. It shows a picture of meal with name, category, ingredients and instructions |
+| [Relaxer App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Relaxer%20App)   | A relaxer app using HTML, CSS, JAVASCRIPT. A relaxing breathing app with a visual director to tell you when to breathe in, hold and breathe out |
 | [To Do List](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/todolist)              |This app allows you to make a list of events you want to do and you can strikeout the events completed.|
 | [Weight Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weight%20Converter)              |A web page where used can convert weight from kilograms to grams, ounces and pounds.|
 | [Restaurant website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Restaurant-website)              |A Restuarant website with a simple and user friendly design ad a database linked to it.|
@@ -104,3 +105,4 @@
 | [Typing Speed Test](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Typing%20Speed%20Test%20Website)| User can improve his/her typing speed.|
 | [Week Day Predictor](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Week%20Day%20Predictor%20App)| This app displays the current day of the week with quotes.|
 | [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/parallex-website)| This is a basic HTML, CSS, JAVASCRIPT website where images of this website has their position fixed that results in giving the parallex look and that is why it is called Parallex Website.|
+
