@@ -81,6 +81,6 @@
 | [Password Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Password%20Generator)   | A password generator app to generate strong passwords which can be easily used for authentication. |
 | [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic website using HTML, CSS, JAVASCRIPT with modern look. |
 | [Random Meal Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Random%20Meal-generator)   | A random meals generator app using HTML, CSS, JAVASCRIPT and an external API. It shows a picture of meal with name, category, ingredients and instructions |
-
+| [Relaxer App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Relaxer%20App)   | A relaxer app using HTML, CSS, JAVASCRIPT. A relaxing breathing app with a visual director to tell you when to breathe in, hold and breathe out |
 
 
