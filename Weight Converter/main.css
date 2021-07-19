@@ -1,0 +1,64 @@
+body{
+    background: linear-gradient(to left, aqua, orange);
+    line-height: 0.5;
+    text-align: center;
+  }
+
+.main{
+    width: 500px;
+    padding-bottom: 100;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transition:0.25px;
+    transform: translate(-50%,-50%);
+    justify-items: center;
+    text-align: center;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0;
+  transition: 0.4s;
+  width: 300px;
+  text-align: center;
+  font-size: 16px;
+  float: left;
+  margin: 10px;
+}
+
+h1{
+  font-size: 30px;
+  margin-top: 40px;
+  color: antiquewhite;
+  text-align: center;
+}
+
+.values{
+  width: 240px;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-size: 20;
+  padding: 10px 0px;
+  transition: border 0.5px;
+}
+
+#buttons{
+  border:3px solid;
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  margin-left: 40px;
+}
+
+
+label{
+  font-size: 20px;
+}
+
+

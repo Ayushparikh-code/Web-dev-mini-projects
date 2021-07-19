@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="image-editor.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light " style="font-size: 25px; font-family: sans-serif; background-color: whitesmoke;">
+
+
+        Photo Editor
+    </nav>
+    <div id="container">
+        <div class="text_box">
+            <div id="imageEditor">
+                <section id="editorContainer">
+                    <canvas id="editor"></canvas>
+                </section>
+            </div>
+            <section id="toolbar">
+                <button id="upload" class="btn btn-success" title="Upload">Upload</button>
+                <button id="save" class="btn btn-danger" title="Save">Save</button>
+                <br>
+                <br>
+                <button id="flipHor" class="btn btn-info" title="Flip Horizontally">Flip Horizontally</button>
+                <button id="flipVert" class="btn btn-info" title="Flip vertically">Flip vertically</button>
+                <br>
+                <br>
+                <button id="rotateL" class="btn btn-info" title="Rotate left">Rotate Left</button>
+                <button id="rotateR" class="btn btn-info" title="Rotate right">Rotate Right</button>
+                <br>
+                <br>
+                <button id="resize" class="btn btn-info" title="Resize">Resize</button>
+                <button id="greyscale" class="btn btn-info" title="Convert to grayscale">Grayscale</button>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

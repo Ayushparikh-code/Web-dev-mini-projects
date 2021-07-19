@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temperature Convertor</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">3                  
+    <link rel="stylesheet" href="./style.css"
+  </head>
+  <body>
+  <section class="section ">
+      <h1 class="title is-2 level-item has-text-centered">Temperature Convertor using Vanilla JS</h1>
+      <h4 class="title is-4 level-item has-text-centered">
+          CELSIUS
+          <ion-icon name="repeat-outline"></ion-icon>
+          FAHRENHEIT 
+          <ion-icon name="repeat-outline"></ion-icon>
+          KELVIN
+      </h4>
+
+    <hr />
+
+    <div class="container">
+      <div id='input-container'>
+          <input type="number" class="input is-medium input-childs" id='input' name='input' placeholder="Enter Temperature">
+          <select name='from' class="input is-medium input-childs" id='from' form="conversion">
+              <option value="celsius">Celsius</option>
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="kelvin">Kelvin</option>
+          </select>
+          <div id='convert-to' class="button is-medium input-childs" disabled>
+              <ion-icon name="play-forward-outline"></ion-icon>
+          </div>
+          <select name='to' class="input is-medium input-childs" id='to' form="conversion">
+              <option value=""></option>
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="kelvin">Kelvin</option>
+              <option value="celsius">Celsius</option>
+          </select>
+      </div>
+        <div id='converted-value' class="title is-3 level-item has-text-centered"></div>
+    </div>
+  </section>
+
+      <script src="./script.js"></script>
+  </body>
+</html>

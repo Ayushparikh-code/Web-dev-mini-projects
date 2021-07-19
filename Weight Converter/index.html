@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weight Convertor</title>
+  <link rel="stylesheet" href="main.css">
+  <script>
+    function convert(){
+var kilograms;
+kilograms = document.getElementById('kgs').value;
+
+if(isNaN(kilograms) || kilograms<=0){
+  window.alert("Weight must be greater than zero!!");
+}
+else{
+  var result;
+  result = kilograms*1000;
+  document.getElementById('grams').value = result.toFixed(2);
+  result = kilograms*2.20462;
+  document.getElementById('pounds').value = result.toFixed(3);
+  result = kilograms*35.274;
+  document.getElementById('ounces').value = result.toFixed(2);
+}
+}
+</script>
+</head>
+<body>
+  <br></br>
+  <h1> Weight Converter</h1>
+  <br></br>
+    <div class="card">
+      <form name="converter" class="main" action="index.html" method="POST">
+        <label>Weight (in kgs) : </label>
+        <input class="values" type="text" name="inkilograms" id="kgs" placeholder="Enter Weight..">
+        <br></br>
+        <br></br>
+        <input id="buttons" value="Convert" type="button" onclick="convert()"/>
+        <input id="buttons" value="Reset" type="reset"/>
+        <br></br>
+        <br></br>
+        <br></br>
+        <label>Weight (in grams) : </label>
+        <input class="values" type="text" name="ingrams" id="grams">
+        <br></br>
+        <label>Weight (in pounds) : </label>
+        <input class="values" type="text" name="inpounds" id="pounds">
+        <br></br>
+        <label>Weight (in ounces) : </label></td>
+        <input class="values" type="text" name="inounces" id="ounces">
+      </form>
+  </div>
+  
+</body>
+</html>
