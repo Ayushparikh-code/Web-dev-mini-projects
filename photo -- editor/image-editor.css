@@ -1,0 +1,34 @@
+#imageEditor {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #4b4b4b;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-color: hsl(133, 60%, 27%);
+}
+
+#editorContainer {
+    display: block;
+    overflow: auto;
+    width: 800px;
+    height: 500px;
+}
+
+#editor {
+    display: block;
+    margin: auto;
+}
+
+#toolbar {
+    display: block;
+    margin-right: 50px;
+}
+
+#resizer {
+    border: 2px dashed #000
+}
+
+#toolbar button {
+    padding: 10px 20px 10px 20px;
+}

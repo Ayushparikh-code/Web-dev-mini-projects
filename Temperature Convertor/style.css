@@ -1,0 +1,34 @@
+#input-container {
+    display: flex;
+}
+
+.input-childs {
+    margin: 10px;
+}
+
+#convert-to:hover{
+    cursor: default;
+}
+
+#converted-value {
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+/* Disabling arrows for number input */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html {
+    background-color: peachpuff;
+}

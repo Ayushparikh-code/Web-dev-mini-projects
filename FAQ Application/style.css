@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Times New Roman", Times, serif;
+    background: url("https://cdn.searchenginejournal.com/wp-content/uploads/2018/09/25-of-the-Best-Examples-of-Effective-FAQ-Pages-1520x800.png");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  section {
+    width: 80%;
+    margin: 0 -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 40px;
+    margin: 40px 0;
+    color: rgb(255, 103, 235);
+  }
+  
+  .faq {
+    max-width: 700px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid greenyellow;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h3 {
+    font-size: 25px;
+    color: rgb(255, 191, 191);
+  }
+  
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+    color: rgb(191, 253, 233);
+  }
+  
+  .answer p {
+    padding-top: 20px;
+    line-height: 1.6;
+    font-size: 20px;
+  }
+  
+  .faq.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+  }
+  
+  .faq.active i {
+    transform: rotate(180deg);
+  }
+  
+  i {
+    transition: transform 0.5s ease-in;
+    color: yellow;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    section {
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    section {
+      margin: 0 auto;
+    }
+  }

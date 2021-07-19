@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Speed-Distance-Time-Calculator</title>
+</head>
+
+<body>
+
+    <div id="timeContainer" class="container">
+
+
+        <div class="timeCalculator">
+            <h1>Time Calculator</h1>
+            <p>Time taken by any object to cover a specific distance.</p>
+            <br>
+            <p>Time is the ratio of distance of an object to the speed.
+            </p>
+            <h3 class="formula">Time=
+                Distance/Speed</h3>
+            <h4>SI unit of time is s(seconds).</h4>
+            <br>
+            <h3><em>Fill in the distance(in metres) and speed(in m/s) and calculate the
+                    time. </em></h3>
+
+            <input type="text" id="distance" placeholder="Enter the Distance(in metres)"><br><br>
+            <input type="text" id="speed" placeholder="Enter the speed(in m/s)"><br><br>
+            <input type="button" value="Time" id="time" onclick="calcTime()">
+            <h3 id="calculatedTimeDisplay"></h3>
+        </div>
+
+        <button class="backButton"><a href="index.html">Back</a></button>
+    </div>
+    <script>
+
+        function calcTime() {
+            let distance = document.getElementById("distance").value;
+            let speed = document.getElementById("speed").value;
+            let calculatedTimeDisplay = document.getElementById("calculatedTimeDisplay");
+            let time = distance / speed;
+            calculatedTimeDisplay.innerText = `The calculated time is ${time} seconds.`;
+        }
+
+
+
+    </script>
+</body>
+
+</html>
