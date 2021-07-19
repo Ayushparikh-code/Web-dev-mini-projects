@@ -22,9 +22,6 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 4. Pass your value in kilograms and get the desired converted weight.
 
-# Output (Screenshots)
-- When we don't enter any value or the value is less than or equal to zero then an alert appears.
-
 # screenshots
 a. When we don't enter any value or the value is less than or equal to zero then an alert appears.
 
