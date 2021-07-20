@@ -29,8 +29,12 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 ### How to use 
 1. Write the text which you want to listen in audio.
-
 2. Click submit.
+
+The web app looks some how like this:
+![txt to speech](https://user-images.githubusercontent.com/76838660/126274006-189a20c0-9176-4d71-9224-5f6e6a82e11e.PNG)
+
+
 
 
 ## Happy Coding!
