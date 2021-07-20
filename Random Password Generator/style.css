@@ -17,7 +17,6 @@
   
   .inputBox {
     position: relative;
-  
     background: #fdd5d5;
     width: 450px;
     padding: 20px 30px;
@@ -34,11 +33,8 @@
     position: relative;
     width: 100%;
     height: 45px;
-    border: none;
     margin: 15px 0 20px;
-  
     background: #fff;
-  
     border: 2px solid lightgrey;
     padding-left: 15px;
     border-radius: 5px;

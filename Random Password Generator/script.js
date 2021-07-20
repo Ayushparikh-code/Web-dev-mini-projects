@@ -1,5 +1,5 @@
 //generate random password using for loop
-function generatePassword() {
+document.getElementById("btn").addEventListener("click", function() {
 	var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+?<>{}[]:";
 	var passwordLength = 10;
 	var password = "";
@@ -8,7 +8,7 @@ function generatePassword() {
 		password += chars.charAt(randomChar);
 	}
 	document.getElementById("password").value = password;
-}
+  });
 
 //copy to clipboard
 clipboard.onclick = function() {
