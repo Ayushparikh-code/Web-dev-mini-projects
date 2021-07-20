@@ -81,6 +81,10 @@
 | [Chess Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic chess game for entertainment purpose. |
 | [Password Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Password%20Generator)   | A password generator app to generate strong passwords which can be easily used for authentication. |
 | [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic website using HTML, CSS, JAVASCRIPT with modern look. |
+| [Weight Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weight%20Converter)              |A web page where used can convert weight from kilograms to grams, ounces and pounds.
+| [Restaurant website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Restaurant-website)              |A Restuarant website with a simple and user friendly design ad a database linked to it.
+| [Speed-Distance-Time-Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/speed-distance-time-calculator)              |It is a multi pager Speed Distnace Time Calculator with simple but userfriendly design.
+| [Photo Editor](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/main/photo%20--%20editor) |It is a photo Editor which allows to rescale,flip and grey scale images.
 | [Random Meal Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Random%20Meal-generator)   | A random meals generator app using HTML, CSS, JAVASCRIPT and an external API. It shows a picture of meal with name, category, ingredients and instructions |
 | [Relaxer App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Relaxer%20App)   | A relaxer app using HTML, CSS, JAVASCRIPT. A relaxing breathing app with a visual director to tell you when to breathe in, hold and breathe out |
 | [To Do List](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/todolist)              |This app allows you to make a list of events you want to do and you can strikeout the events completed.|
@@ -108,4 +112,5 @@
 | [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/parallex-website)| This is a basic HTML, CSS, JAVASCRIPT website where images of this website has their position fixed that results in giving the parallex look and that is why it is called Parallex Website.|
 | [Payment Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/payment_integration)| This is a donation website in which we have integrated payment gateway.|
 | [Random Password Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Random%20Password%20Generator)| Generates a strong random password and has a copy functionality.|
+| [File Zipper](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/main/File%20Zipper) |It is a encoding and decoding file
 
