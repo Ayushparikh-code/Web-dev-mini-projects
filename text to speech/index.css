@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(212, 247, 235);
+}
+h1{
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 7% 36% 3%;
+}
+#txt{
+    margin: 0% 27%;
+    width: 600px;
+    height: 350px;
+    border: black;
+    border-width: 6px;
+    border-radius: 4px;
+}
+p{
+    color: red;
+    font-size: x-small;
+    margin-left: 40%;
+    margin-top: 1%;
+}
+.btn{
+        background-color: #4CAF50; /* Green */
+        border: none;
+        border-radius: 10px;
+        color: white;
+        padding: 15px 32px;
+        margin-top: 1%;
+        margin-left: 43%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      
+}
