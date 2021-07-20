@@ -106,4 +106,5 @@
 | [Typing Speed Test](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Typing%20Speed%20Test%20Website)| User can improve his/her typing speed.|
 | [Week Day Predictor](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Week%20Day%20Predictor%20App)| This app displays the current day of the week with quotes.|
 | [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/parallex-website)| This is a basic HTML, CSS, JAVASCRIPT website where images of this website has their position fixed that results in giving the parallex look and that is why it is called Parallex Website.|
+| [Payment Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/payment_integration)| This is a donation website in which we have integrated payment gateway.|
 
