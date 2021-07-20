@@ -111,4 +111,6 @@
 | [Week Day Predictor](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Week%20Day%20Predictor%20App)| This app displays the current day of the week with quotes.|
 | [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/parallex-website)| This is a basic HTML, CSS, JAVASCRIPT website where images of this website has their position fixed that results in giving the parallex look and that is why it is called Parallex Website.|
 | [Payment Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/payment_integration)| This is a donation website in which we have integrated payment gateway.|
+| [Random Password Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Random%20Password%20Generator)| Generates a strong random password and has a copy functionality.|
 | [File Zipper](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/main/File%20Zipper) |It is a encoding and decoding file
+
