@@ -84,5 +84,5 @@
 | [Weight Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weight%20Converter)              |A web page where used can convert weight from kilograms to grams, ounces and pounds.
 | [Restaurant website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Restaurant-website)              |A Restuarant website with a simple and user friendly design ad a database linked to it.
 | [Speed-Distance-Time-Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/speed-distance-time-calculator)              |It is a multi pager Speed Distnace Time Calculator with simple but userfriendly design.
-| [Photo Editor](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/bulaw/photo%20--%20editor) |It is a photo Editor which allows to rescale,flip and grey scale images.
-| [File Zipper](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/File%20Zipper) |It is a encoding and decoding file
+| [Photo Editor](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/main/photo%20--%20editor) |It is a photo Editor which allows to rescale,flip and grey scale images.
+| [File Zipper](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/main/File%20Zipper) |It is a encoding and decoding file
