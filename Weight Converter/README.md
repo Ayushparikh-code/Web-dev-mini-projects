@@ -1,10 +1,26 @@
 # Weight Converter
-# Made by: Palak Singhania 
 
-# Description
-1. This is a simple weight converter project in which the user enters the weight in kilograms and it gets converted to 
+A basic Weight Converter project in which the user enters the weight in kilograms and can convert it to 
 grams, pounds and ounces.
-2. It contains two files : index.html and main.css
+
+# Use of Project
+1. For users: Resolves tedious task of multiplication of large numbers for weight conversion.
+2. For developers: A beginner-friendly project to get started with web development. 
+
+# Stack Used
+> HTML
+> CSS
+> JavaScript
+# Set up required to run
+1. Clone the repository.
+```
+git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
+```
+2. Move to project directory.
+
+3. Open index.html with Chrome or any browser.
+
+4. Pass your value in kilograms and get the desired converted weight.
 
 # screenshots
 a. When we don't enter any value or the value is less than or equal to zero then an alert appears.

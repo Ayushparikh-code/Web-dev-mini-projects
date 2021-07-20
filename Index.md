@@ -82,6 +82,7 @@
 | [Password Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Password%20Generator)   | A password generator app to generate strong passwords which can be easily used for authentication. |
 | [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic website using HTML, CSS, JAVASCRIPT with modern look. |
 | [Random Meal Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Random%20Meal-generator)   | A random meals generator app using HTML, CSS, JAVASCRIPT and an external API. It shows a picture of meal with name, category, ingredients and instructions |
+| [Relaxer App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Relaxer%20App)   | A relaxer app using HTML, CSS, JAVASCRIPT. A relaxing breathing app with a visual director to tell you when to breathe in, hold and breathe out |
 | [To Do List](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/todolist)              |This app allows you to make a list of events you want to do and you can strikeout the events completed.|
 | [Weight Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weight%20Converter)              |A web page where used can convert weight from kilograms to grams, ounces and pounds.|
 | [Restaurant website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Restaurant-website)              |A Restuarant website with a simple and user friendly design ad a database linked to it.|
@@ -94,3 +95,15 @@
 | [Live Clock](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Live%20Clock)                                   | A simple web page made in react native which shows live time.
 | [DRUM(darkmode)](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/DRUM(darkmode)              |This web app allows you to make your own music with all the beats that are present in the app. You can click on the alphabets or the images that are present on the screen and enjoy the beats. You can also use your keyboard keys to make the music.|
 | [Text to speech converter](https://github.com/nisha331/Web-dev-mini-projects/tree/main/text%20to%20speech)                                   | A simple webapp that converts text to speech 
+| [Basic portfolio website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Basic%20Portfolio%20Website)| This is a basic Portfolio website which you can use to showcase your own projects and experience.|
+| [Classroom Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/CLASSROOM%20SCHEDULER%20WEBSITE)| This project is helpful to students managing their classes, the student can schedule their batch and its timing here.|
+| [Covid 19 Awareness](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Covid%2019%20Awarness%20Website)| This is a covid 19 website which has diffrenet sections.This is made using only html,css,javascript. You can find various Informations and news.|
+| [Dice Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/DiceGame)| It is a simple Dice Game. We can use this game to toss between two users and decide who is the winner.|
+| [Double vertical slider](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Double%20Vertical%20Slider)| This App helps to Slide the two different parts of the webpage content at the same time.|
+| [FAQ](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/FAQ%20Application)| Generally, Frequently Asked Questions (FAQs) section is made with the help of accordion.|
+| [MyGym](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/MyGym%20Website)| This website contains frontend for Mygym website.|
+| [Survey form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/SURVEY%20FORM)| It is a simple Survey Form. We can use this form to take feedback from the customers and use it for the betterment.|
+| [Typing Speed Test](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Typing%20Speed%20Test%20Website)| User can improve his/her typing speed.|
+| [Week Day Predictor](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Week%20Day%20Predictor%20App)| This app displays the current day of the week with quotes.|
+| [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/parallex-website)| This is a basic HTML, CSS, JAVASCRIPT website where images of this website has their position fixed that results in giving the parallex look and that is why it is called Parallex Website.|
+
