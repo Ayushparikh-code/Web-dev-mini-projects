@@ -86,3 +86,4 @@
 | [Speed-Distance-Time-Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/speed-distance-time-calculator)              |It is a multi pager Speed Distnace Time Calculator with simple but userfriendly design.
 | [Photo Editor](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/bulaw/photo%20--%20editor) |It is a photo Editor which allows to rescale,flip and grey scale images.
 | [File Zipper](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/File%20Zipper) |It is a encoding and decoding file
+| [Sudoku Solver](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Sudoku%20Solver) |It solves Sudoku using backtracking
