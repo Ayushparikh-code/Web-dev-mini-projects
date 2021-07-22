@@ -36,4 +36,4 @@ The Application Runs on **localhost:3000**
 
 
 ### output 
- [Counter App](!counterApp.png)
+ ![Counter App](counterApp.png)
