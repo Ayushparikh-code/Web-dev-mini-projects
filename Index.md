@@ -113,4 +113,5 @@
 | [Payment Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/payment_integration)| This is a donation website in which we have integrated payment gateway.|
 | [Random Password Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Random%20Password%20Generator)| Generates a strong random password and has a copy functionality.|
 | [File Zipper](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/main/File%20Zipper) |It is a encoding and decoding file
+| [Memory Card Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Memory%20Card%20Game)                                   | A basic memory game where the main trick is to remember where the cards are. |
 | [Sudoku Solver](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Sudoku%20Solver) |It solves Sudoku using backtracking
