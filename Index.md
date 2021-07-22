@@ -81,7 +81,12 @@
 | [Chess Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic chess game for entertainment purpose. |
 | [Password Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Password%20Generator)   | A password generator app to generate strong passwords which can be easily used for authentication. |
 | [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Chess-Game)            | A basic website using HTML, CSS, JAVASCRIPT with modern look. |
+| [Weight Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weight%20Converter)              |A web page where used can convert weight from kilograms to grams, ounces and pounds.
+| [Restaurant website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Restaurant-website)              |A Restuarant website with a simple and user friendly design ad a database linked to it.
+| [Speed-Distance-Time-Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/speed-distance-time-calculator)              |It is a multi pager Speed Distnace Time Calculator with simple but userfriendly design.
+| [Photo Editor](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/main/photo%20--%20editor) |It is a photo Editor which allows to rescale,flip and grey scale images.
 | [Random Meal Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Random%20Meal-generator)   | A random meals generator app using HTML, CSS, JAVASCRIPT and an external API. It shows a picture of meal with name, category, ingredients and instructions |
+| [Relaxer App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Relaxer%20App)   | A relaxer app using HTML, CSS, JAVASCRIPT. A relaxing breathing app with a visual director to tell you when to breathe in, hold and breathe out |
 | [To Do List](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/todolist)              |This app allows you to make a list of events you want to do and you can strikeout the events completed.|
 | [Weight Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weight%20Converter)              |A web page where used can convert weight from kilograms to grams, ounces and pounds.|
 | [Restaurant website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Restaurant-website)              |A Restuarant website with a simple and user friendly design ad a database linked to it.|
@@ -93,5 +98,21 @@
 | [Weight Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weight%20Converter)                       | A simple web page where user can convert weight from kilograms to grams, ounces or pounds.
 | [Live Clock](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Live%20Clock)                                   | A simple web page made in react native which shows live time.
 | [DRUM(darkmode)](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/DRUM(darkmode)              |This web app allows you to make your own music with all the beats that are present in the app. You can click on the alphabets or the images that are present on the screen and enjoy the beats. You can also use your keyboard keys to make the music.|
-| [Counter App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/counter%20App              |This is a simple react js project 
-, we can increase, decreaase or reset the value of the counter value by clivking on the buttons.
+| [Text to speech converter](https://github.com/nisha331/Web-dev-mini-projects/tree/main/text%20to%20speech)                                   | A simple webapp that converts text to speech 
+| [Basic portfolio website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Basic%20Portfolio%20Website)| This is a basic Portfolio website which you can use to showcase your own projects and experience.|
+| [Classroom Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/CLASSROOM%20SCHEDULER%20WEBSITE)| This project is helpful to students managing their classes, the student can schedule their batch and its timing here.|
+| [Covid 19 Awareness](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Covid%2019%20Awarness%20Website)| This is a covid 19 website which has diffrenet sections.This is made using only html,css,javascript. You can find various Informations and news.|
+| [Dice Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/DiceGame)| It is a simple Dice Game. We can use this game to toss between two users and decide who is the winner.|
+| [Double vertical slider](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Double%20Vertical%20Slider)| This App helps to Slide the two different parts of the webpage content at the same time.|
+| [FAQ](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/FAQ%20Application)| Generally, Frequently Asked Questions (FAQs) section is made with the help of accordion.|
+| [MyGym](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/MyGym%20Website)| This website contains frontend for Mygym website.|
+| [Survey form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/SURVEY%20FORM)| It is a simple Survey Form. We can use this form to take feedback from the customers and use it for the betterment.|
+| [Typing Speed Test](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Typing%20Speed%20Test%20Website)| User can improve his/her typing speed.|
+| [Week Day Predictor](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Week%20Day%20Predictor%20App)| This app displays the current day of the week with quotes.|
+| [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/parallex-website)| This is a basic HTML, CSS, JAVASCRIPT website where images of this website has their position fixed that results in giving the parallex look and that is why it is called Parallex Website.|
+| [Payment Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/payment_integration)| This is a donation website in which we have integrated payment gateway.|
+| [Random Password Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Random%20Password%20Generator)| Generates a strong random password and has a copy functionality.|
+| [File Zipper](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/main/File%20Zipper) |It is a encoding and decoding file
+| [Memory Card Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Memory%20Card%20Game)                                   | A basic memory game where the main trick is to remember where the cards are. |
+| [Sudoku Solver](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Sudoku%20Solver) |It solves Sudoku using backtracking
+| [Counter APP](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/counter%20App) |It is a simple react app which is used to incere or decrease the value of counter.
