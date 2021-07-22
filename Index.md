@@ -115,4 +115,4 @@
 | [File Zipper](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/main/File%20Zipper) |It is a encoding and decoding file
 | [Memory Card Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Memory%20Card%20Game)                                   | A basic memory game where the main trick is to remember where the cards are. |
 | [Sudoku Solver](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Sudoku%20Solver) |It solves Sudoku using backtracking
-| [Counter APP](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/counter%20App) |It is a simple react app which is used to incere or decrease the value of counter.
+| [Counter APP](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/counter_App) |It is a simple react app which is used to incere or decrease the value of counter.
