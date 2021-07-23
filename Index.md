@@ -107,3 +107,4 @@
 | [Memory Card Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Memory%20Card%20Game)                                   | A basic memory game where the main trick is to remember where the cards are. |
 | [Sudoku Solver](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Sudoku%20Solver) |It solves Sudoku using backtracking|
 | [Counter APP](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/counter_App) |It is a simple react app which is used to incere or decrease the value of counter.
+| [BMI Calculator (JS)](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/BMI%20Calculator%20(JS)) |Calculates the Body Mass Index of a person, provided with a BMI chart.
