@@ -29,8 +29,8 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 <h3> Video Demo </h3>
 
-<video controls width="960" alt=""> 
-<source src="">
+<video controls width="960" alt="bmicalc"> 
+<source src="https://user-images.githubusercontent.com/78655439/126800926-9544c5b5-5167-4419-a921-512225191a67.mp4">
 </video>
 
 <br>
