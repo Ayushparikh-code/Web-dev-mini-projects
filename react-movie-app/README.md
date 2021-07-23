@@ -40,3 +40,23 @@ Generate API key from : http://www.omdbapi.com/apikey.aspx
 - Information is returned has a JSON object
 - Using React components to structure data into presentational format
 - Using CSS to create visually appealing and user friendly application
+
+### Screenshots
+
+Initially, the UI looks like:
+
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-kp/react-movie-app/Screenshots/ss1.png?raw=true" />
+
+Type your movie in the search bar
+
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-kp/react-movie-app/Screenshots/ss2.png?raw=true" />
+
+After clicking on any movie, first it will show the loader and then the movie detailed information
+
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-kp/react-movie-app/Screenshots/ss3.png?raw=true" />
+
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-kp/react-movie-app/Screenshots/ss4.png?raw=true" />
+
+### Live Demo
+
+<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-kp/react-movie-app/Screenshots/demo.gif?raw=true" />
