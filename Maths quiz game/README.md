@@ -25,8 +25,6 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Run the index.html file
 - Check your addition solving capacity.
 
-the a
-
 <br>
 
 ### How to use 
