@@ -43,20 +43,38 @@ const MovieInfo = styled.span`
 
 const MovieComponent = (props) => {
 
-    const { Title, Year, imdbID, Type, Poster } = props.movie;
+	const {
+		Title,
+		Year,
+		imdbID,
+		Type,
+		Poster
+	} = props.movie;
 
-    return (
-        <MovieContainer onClick={()=>props.onMovieSelect(imdbID)}>
-            <CoverImage src={Poster} />
-             <MovieName>
-                 {Title}
-             </MovieName>
-             <InfoColumn>
-                 <MovieInfo>Year:{Year}</MovieInfo>
-                 <MovieInfo>Type:{Type}</MovieInfo>
-             </InfoColumn>
-        </MovieContainer>
-    )
+	return ( <
+		MovieContainer onClick = {
+			() => props.onMovieSelect(imdbID)
+		} >
+		<
+		CoverImage src = {
+			Poster
+		}
+		/> <
+		MovieName > {
+			Title
+		} <
+		/MovieName> <
+		InfoColumn >
+		<
+		MovieInfo > Year: {
+			Year
+		} < /MovieInfo> <
+		MovieInfo > Type: {
+			Type
+		} < /MovieInfo> <
+		/InfoColumn> <
+		/MovieContainer>
+	)
 }
 
 export default MovieComponent
