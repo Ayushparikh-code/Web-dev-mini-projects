@@ -1,4 +1,6 @@
-import React, {useState} from 'react';
+import React, {
+	useState
+} from 'react';
 import styled from 'styled-components';
 import Axios from 'axios';
 
@@ -7,7 +9,7 @@ import MovieComponent from './Components/MovieComponent';
 import MovieInfoComponent from './Components/MovieInfoComponent';
 
 
-export const API_KEY  = "50659391"
+export const API_KEY = "50659391"
 
 const Container = styled.div`
   display: flex;
@@ -81,63 +83,84 @@ const Placeholder = styled.img`
 
 function App() {
 
-  const [searchQuery, updateSearchQuery] = useState("");
-  const [timeoutId, updateTimeoutId] = useState();
-  const [movieList, updateMovieList] = useState([]);
-  const [selectedMovie, onMovieSelect] = useState();
+	const [searchQuery, updateSearchQuery] = useState("");
+	const [timeoutId, updateTimeoutId] = useState();
+	const [movieList, updateMovieList] = useState([]);
+	const [selectedMovie, onMovieSelect] = useState();
 
-  const fetchData = async (searchString) => {
-    const response = await Axios.get(
-      `https://www.omdbapi.com/?s=${searchString}&apikey=${API_KEY}`,
-    );
-    // console.log(response.data);
-    updateMovieList(response.data.Search);
-  };
+	const fetchData = async (searchString) => {
+		const response = await Axios.get(
+			`https://www.omdbapi.com/?s=${searchString}&apikey=${API_KEY}`,
+		);
+		// console.log(response.data);
+		updateMovieList(response.data.Search);
+	};
 
-  const onTextChange = (e) => {
-    // onMovieSelect("")
-    clearTimeout(timeoutId);
-    updateSearchQuery(e.target.value);
-    const timeout = setTimeout(() => fetchData(e.target.value), 500);
-    updateTimeoutId(timeout);
-  };
+	const onTextChange = (e) => {
+		// onMovieSelect("")
+		clearTimeout(timeoutId);
+		updateSearchQuery(e.target.value);
+		const timeout = setTimeout(() => fetchData(e.target.value), 500);
+		updateTimeoutId(timeout);
+	};
 
-  return (
-    <Container>
-      <Header>
-        <AppName>
-          <MovieImage src="/movie-icon.svg" />
-          React Movie App
-        </AppName>
-        <SearchBox>
-          <SearchIcon src="/search-icon.svg" />
-          <SearchInput 
-            placeholder="Search Movie"
-            value={searchQuery}
-            onChange={onTextChange}
-          />
-        </SearchBox>
-      </Header>
+	return ( <
+			Container >
+			<
+			Header >
+			<
+			AppName >
+			<
+			MovieImage src = "/movie-icon.svg" / >
+			React Movie App <
+			/AppName> <
+			SearchBox >
+			<
+			SearchIcon src = "/search-icon.svg" / >
+			<
+			SearchInput placeholder = "Search Movie"
+			value = {
+				searchQuery
+			}
+			onChange = {
+				onTextChange
+			}
+			/> <
+			/SearchBox> <
+			/Header>
 
-      {selectedMovie && <MovieInfoComponent 
-                            selectedMovie={selectedMovie} 
-                            onMovieSelect={onMovieSelect}/>}
+			{
+				selectedMovie && < MovieInfoComponent
+				selectedMovie = {
+					selectedMovie
+				}
+				onMovieSelect = {
+					onMovieSelect
+				}
+				/>}
 
-      <MovieListContainer>
-        {
-          movieList.length 
-            ? movieList.map( (movie, index)=>   
-              <MovieComponent 
-                key={index} 
-                movie={movie} 
-                onMovieSelect = {onMovieSelect}
-              />) 
-            :  <Placeholder src="/movie-icon.svg" alt="placeholder" />
-        }
-      
-      </MovieListContainer>
-    </Container>
-  );
-}
+				<
+				MovieListContainer > {
+					movieList.length ?
+					movieList.map((movie, index) =>
+						<
+						MovieComponent key = {
+							index
+						}
+						movie = {
+							movie
+						}
+						onMovieSelect = {
+							onMovieSelect
+						}
+						/>) : < Placeholder src = "/movie-icon.svg"
+						alt = "placeholder" / >
+					}
 
-export default App;
+					<
+					/MovieListContainer> <
+					/Container>
+				);
+			}
+
+			export default App;
