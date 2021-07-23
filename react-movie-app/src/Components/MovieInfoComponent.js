@@ -82,77 +82,80 @@ const MovieInfoComponent = (props) => {
 		).then((response) => setMovieInfo(response.data));
 	}, [selectedMovie]);
 
-	return ( <Container > {
-			movieInfo ? ( 
-      <>
-				<CoverImage src = {
+	return ( < Container > {
+			movieInfo ? ( <
+				>
+				<
+				CoverImage src = {
 					movieInfo?.Poster
 				}
 				alt = "poster" / >
-				<InfoColumn >
-				<MovieName > {
+				<
+				InfoColumn >
+				<
+				MovieName > {
 					movieInfo?.Type
 				}: < span > {
 					movieInfo?.Title
-				} < /span> 
-        </MovieName> <
+				} < /span>  <
+				/MovieName> <
 				MovieInfo >
 				IMDB Rating: < span > {
 					movieInfo?.imdbRating
-				} < /span> 
-        </MovieInfo> 
-        <MovieInfo >
+				} < /span>  <
+				/MovieInfo>  <
+				MovieInfo >
 				Year: < span > {
 					movieInfo?.Year
-				} < /span> 
-        </MovieInfo> 
-        <MovieInfo >
+				} < /span>  <
+				/MovieInfo>  <
+				MovieInfo >
 				Language: < span > {
 					movieInfo?.Language
-				} < /span> 
-        </MovieInfo> 
-        <MovieInfo >
+				} < /span>  <
+				/MovieInfo>  <
+				MovieInfo >
 				Rated: < span > {
 					movieInfo?.Rated
-				} < /span> <
-				/MovieInfo> <
+				} < /span> < /
+				MovieInfo > <
 				MovieInfo >
 				Released: < span > {
 					movieInfo?.Released
-				} < /span> <
-				/MovieInfo> <
+				} < /span> < /
+				MovieInfo > <
 				MovieInfo >
 				Runtime: < span > {
 					movieInfo?.Runtime
-				} < /span> <
-				/MovieInfo> <
+				} < /span> < /
+				MovieInfo > <
 				MovieInfo >
 				Genre: < span > {
 					movieInfo?.Genre
-				} < /span> <
-				/MovieInfo> <
+				} < /span> < /
+				MovieInfo > <
 				MovieInfo >
 				Director: < span > {
 					movieInfo?.Director
-				} < /span> <
-				/MovieInfo> <
+				} < /span> < /
+				MovieInfo > <
 				MovieInfo >
 				Actors: < span > {
 					movieInfo?.Actors
-				} < /span> <
-				/MovieInfo> <
+				} < /span> < /
+				MovieInfo > <
 				MovieInfo >
 				Plot: < span > {
 					movieInfo?.Plot
-				} < /span> <
-				/MovieInfo> <
+				} < /span> < /
+				MovieInfo > <
 				/InfoColumn> <
 				Close onClick = {
 					() => props.onMovieSelect()
-				} > X < /Close> <
-				/>
-			) : (
-				<img src = "http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif"
+				} > X < /Close> < /
+				>
+			) : ( <
+				img src = "http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif"
 				atl = "loading"
 				height = "200" / >
 			)
