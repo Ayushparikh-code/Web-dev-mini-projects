@@ -108,3 +108,4 @@
 | [Sudoku Solver](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Sudoku%20Solver) |It solves Sudoku using backtracking|
 | [Counter APP](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/counter_App) |It is a simple react app which is used to incere or decrease the value of counter.
 | [BMI Calculator (JS)](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/BMI%20Calculator%20(JS)) |Calculates the Body Mass Index of a person, provided with a BMI chart.
+| [Maths Quiz Game](https://github.com/nisha331/Web-dev-mini-projects/tree/main/Maths%20quiz%20game) | A maths quiz game for kids to practice addition.
