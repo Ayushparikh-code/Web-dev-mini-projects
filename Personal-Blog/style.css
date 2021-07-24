@@ -11,8 +11,8 @@ body {
     gap: 3rem;
     height: 100%;
     box-sizing: border-box;
-    padding: 2rem 5rem 4rem 5rem;
-    margin: 2rem 0rem 0rem 0rem;
+    padding: 2rem 5rem 4rem;
+    margin-top: 2rem;
 }
 
 .half {
@@ -30,7 +30,9 @@ body {
     background-color:grey;
     color: white;
     text-align: left;
-    padding:2rem 0rem 2rem 2rem;
+   padding-top:2rem;
+   padding-bottom:2rem;
+   padding-left:2rem;
 }
 
 
@@ -57,7 +59,8 @@ body {
 }
 
 .image-card-content {
-    padding: 0rem 1rem;
+    padding-left:1rem;
+    padding-right:1rem;
 }
 
 .image-card-heading {
@@ -78,11 +81,14 @@ button {
 
 .description {
     font-size: 15px;
-    margin: 0.5rem 0rem;
+    margin-top: 0.5rem;
+    margin-bottom:0.5rem;
 }
+
 /**box 4 recents posts box***/
 .Recent-post-item{
-    padding:0px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .recent-posts-heading{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
