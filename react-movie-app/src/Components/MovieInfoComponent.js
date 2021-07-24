@@ -155,11 +155,7 @@ const MovieInfoComponent = (props) => {
 				} > X < /Close> < /
 				>
 			)
-				: ( <
-				img src = "http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif"
-				atl = "loading"
-				height = "200" / >
-			)
+				
 		} <
 		/Container>
 	)
