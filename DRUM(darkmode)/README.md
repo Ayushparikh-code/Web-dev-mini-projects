@@ -32,4 +32,4 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 ![demo-dark](./images/drumkit(dark).PNG)
 
-<img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/todolist/images/drumkit(light).PNG"/>
+![demo-light](./images/drumkit(light).PNG)
