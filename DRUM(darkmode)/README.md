@@ -29,5 +29,7 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 <h3>ScreenShots</h3>
 <br>
-<img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/todolist/images/drumkit(dark).PNG"/>
+
+![demo-dark](./images/drumkit(dark).PNG)
+
 <img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/todolist/images/drumkit(light).PNG"/>
