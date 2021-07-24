@@ -1,5 +1,5 @@
-# Welcome 🖐 to the Chuck Norris Joke Generator
-It is a simple API integrated joke generator. We can generate jokes by selecting a category of jokes. Hope you people will enjoy reading the jokes.
+# Welcome 🖐 to the Personal Blog Wbsite Template.
+It is a simple and resonsive Personal Blog Website.
 
 ## Desktop View
 ![Default View](images/page1.png)
