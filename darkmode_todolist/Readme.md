@@ -43,5 +43,5 @@ node app.js
 
 <h3>ScreenShots</h3>
 <br>
-<img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/todolist/images/main.PNG"/>
-<img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/todolist/images/work.PNG"/>
+<img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/darkmode_todolist/images/main.PNG"/>
+<img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/darkmode_todolist/images/work.PNG"/>
