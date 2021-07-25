@@ -3,11 +3,9 @@
     padding:0;
     
 }
-body{
 
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
 body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     display:grid;
     grid-template-areas: 
     'navbar'
@@ -27,7 +25,7 @@ body{
     top:0;
     z-index:1;
     background-color:white;
-    box-shadow:0px 2px 5px grey;
+    box-shadow: 2px 5px grey;
     /* border:1px solid black; */
 }
 .container1{
@@ -105,13 +103,15 @@ span{
 /***********************************************************************about**************************************************/
 .about-image-card-designation{
     color:grey;
-    margin:10px 0px;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
 .about-image-card-button{
     width:350px;
     height:5vh;
-    margin:10px 0px;
+    margin-top:10px;
+    margin-bottom:10px;
     background-color:rgb(156, 151, 151);
     border:none;
     font-size:18px;
@@ -120,7 +120,8 @@ span{
 .image-card-collection{
     display:grid;
     grid-template-columns: repeat( auto-fit, minmax(300px,1fr) );
-    margin:30px 0px;
+    margin-top:30px;
+    margin-bottom:30px;
 }
 .about-img-card{
 width:350px;
@@ -132,7 +133,8 @@ input{
     width:95%;
     height:6%;
     margin:10px;
-    padding:0px 10px;
+    padding-left:10px;
+    padding-right:10px;
     color:grey;
     font-size:16px;
 }
@@ -158,8 +160,6 @@ input{
             'container5'
             'footer';
             grid-gap:0.5rem;
-            margin:0px;
-            padding:0px;
         }
         .navbar{
             height:8vh;
@@ -171,7 +171,8 @@ input{
         }
         .container1{
             height:100vh;
-            padding:200px 0px;
+            padding-top:200px;
+            padding-bottom:200px;
         }
         .container2{
             height:100%;
@@ -184,7 +185,8 @@ input{
                     }
         .container5{
          height:100vh;
-         padding:200px 0px;
+         padding-top:200px;
+         padding-bottom:200px;
         }
         .container{
             width:97vw;
