@@ -113,4 +113,4 @@
 | [Maths Quiz Game](https://github.com/nisha331/Web-dev-mini-projects/tree/main/Maths%20quiz%20game) | A maths quiz game for kids to practice addition.
 | [Personal Blog Template](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Personal-blog) |A simple and responsive personal blog template.
 | [Architecture Website Template](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Architecture-Website) |A simple and responsive Architecture Website template.
-
+| [Art Gallery Template](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Art-Gallery) |It is a simple and resonsive Art Gallery Website where you can add multiple pictures and navigate through them.
