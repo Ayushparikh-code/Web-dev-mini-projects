@@ -107,8 +107,10 @@
 | [Memory Card Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Memory%20Card%20Game)                                   | A basic memory game where the main trick is to remember where the cards are. |
 | [Sudoku Solver](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Sudoku%20Solver) |It solves Sudoku using backtracking|
 | [Counter APP](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/counter_App) |It is a simple react app which is used to incere or decrease the value of counter.
+| [Architecture Website Template](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Architecture-Website) |It is a simple and responsive Architecture Website template.
 | [BMI Calculator (JS)](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/BMI%20Calculator%20(JS)) |Calculates the Body Mass Index of a person, provided with a BMI chart.
 | [React Movie Finder Application](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/react-movie-app) |A single page web application that allows users to search movies based on their query.
 | [Maths Quiz Game](https://github.com/nisha331/Web-dev-mini-projects/tree/main/Maths%20quiz%20game) | A maths quiz game for kids to practice addition.
 | [Personal Blog Template](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Personal-blog) |A simple and responsive personal blog template.
+| [Architecture Website Template](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Architecture-Website) |A simple and responsive Architecture Website template.
 
