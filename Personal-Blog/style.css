@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 3rem;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2rem 5rem 4rem;
+    margin-top: 2rem;
+}
+
+.half {
+    display: grid;
+    gap: 2rem;
+}
+
+.grid-item {
+    height: 100%;
+    width: 100%;
+}
+
+.footer {
+    height:100%;
+    background-color:grey;
+    color: white;
+    text-align: left;
+   padding-top:2rem;
+   padding-bottom:2rem;
+   padding-left:2rem;
+}
+
+
+
+.heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.author {
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+
+/****card***/
+.image-card {
+    border: none;
+    box-shadow: 2px 2px 5px grey;
+    background-color: white;
+    text-align: left;
+    letter-spacing: 1px;
+    padding-bottom: 10px
+}
+
+.image-card-content {
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+.image-card-heading {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+button {
+    padding: 0.8rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.date {
+    color: grey
+}
+
+.description {
+    font-size: 15px;
+    margin-top: 0.5rem;
+    margin-bottom:0.5rem;
+}
+
+/**box 4 recents posts box***/
+.Recent-post-item{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.recent-posts-heading{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+}
+
+/**box-5 tag box***/
+.tag{
+    color:white;
+    height:1rem;
+    font-size:30px;
+    background-color:grey;
+    padding:2rem 1rem ;
+    font-weight:bold;
+}
+.tag-items{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto ;
+    padding-top:1.5rem;
+}
+.tag-button{
+    color:white;
+    font-size:12px;
+    background-color:grey;
+    border:none;
+    padding:0.3rem;
+    margin:5px;
+}
+
+/**footer*/
+.previous-button{
+color:lightgrey;
+background-color:rgb(46, 42, 42);
+font-weight:normal;
+padding:1rem 2rem;
+}
+.next-button{
+color:white;
+background-color:black;
+font-weight:normal;
+padding:1rem 2rem;
+}
+.footer-desc{
+color:lightgrey;
+}
