@@ -50,3 +50,5 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 
 ## Live Demo
+
+<img src="./demo.gif" />
