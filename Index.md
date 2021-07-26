@@ -116,4 +116,5 @@
 | [Art Gallery Template](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Art-Gallery) |It is a simple and resonsive Art Gallery Website where you can add multiple pictures and navigate through them.
 | [Food Website Template](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Food-Web) |It is a simple and resonsive Food Website Website, you can navigate through them.
 | [iCoder](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/iCoder) |It is a simple and resonsive website made using bootstrap.
+| [Classifiers using JS](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Classifier-Using-JS) | It is a website which contains three different classifiers, built with the help of API
 
