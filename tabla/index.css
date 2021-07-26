@@ -1,0 +1,88 @@
+* {
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
+    background-color: #1d1c1c;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1d1c1c;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #fff;
+    background-image: -webkit-gradient( linear, 40% 0%, 75% 84%, from(#96a9b4), to(#6c6c70), color-stop(0.6,#898b8f ));
+  }
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: black;
+}
+
+#title {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: 0.25rem;
+    font-weight: 900;
+    color: white;
+}
+p{
+    margin-top: 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #67db39
+}
+
+.set {
+    margin-top: 0%;
+    margin-left: 30%;
+}
+
+.t {
+    background-image: url("img/tap1.png");
+}
+
+.d {
+    background-image: url("img/tap2.png");
+}
+
+.u {
+    background-image: url("img/tap3.jpg");
+}
+
+.w {
+    background-image: url("img/tap4.jpg");
+}
+
+.y {
+    background-image: url("img/tap5.jpg");
+}
+
+.tabla {
+    display: inline-block;
+    width: 270px;
+    height: 250px;
+    align-self: center;
+    box-shadow: none;
+    background-color: black;
+    background-repeat: no-repeat;
+    border: black;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
