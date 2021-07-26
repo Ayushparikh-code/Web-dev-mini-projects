@@ -115,3 +115,4 @@
 | [Architecture Website Template](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Architecture-Website) |A simple and responsive Architecture Website template.
 | [Art Gallery Template](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Art-Gallery) |It is a simple and resonsive Art Gallery Website where you can add multiple pictures and navigate through them.
 | [iCoder](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/iCoder) |It is a simple and resonsive website made using bootstrap.
+| [Tabla](https://github.com/nisha331/Web-dev-mini-projects/tree/main/tabla) | It is a webapp that plays tabla beat on clicked on the tabla or clicked d or t.
