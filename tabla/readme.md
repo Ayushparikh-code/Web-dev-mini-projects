@@ -14,9 +14,10 @@ It is a webapp that plays tabla beats when clicked on tabla or pressed d or t.
 
 ---
 
-- Download or clone the repository https://github.com/Ayushparikh-code/Web-dev-mini-projects
+- Download or clone the repository
 
-
+```
+git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 ```
 
 - Go to the directory
@@ -27,5 +28,8 @@ It is a webapp that plays tabla beats when clicked on tabla or pressed d or t.
 
 ### How to use 
 -  Click on the tabla or press t or d and enjoy the beats.
+
+![1](https://user-images.githubusercontent.com/76838660/126932374-dc59481e-c9ba-4725-bac1-ada84550ce22.PNG)
+
 
 ## Happy Coding!
