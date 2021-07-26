@@ -21,4 +21,7 @@ Built with Vanilla JavaScript. Below is a list of the methods and properties use
 * target
 
 
-### Video coming soon!!!
+
+
+https://user-images.githubusercontent.com/72425181/126938947-7b21a74b-6db3-4835-b1f3-6ee6eb70149c.mp4
+
