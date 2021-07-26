@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+}
+@media (max-width:595px){
+    #container{
+        display:grid;
+        grid-template-columns:auto;
+    }
+    .header{
+        padding-top:30px;
+        padding-bottom:30px;
+        padding-right: 10px;
+        padding-left:10px;
+    }
+    img{
+        width:250px;
+        height:300px;
+    }
+    .footer{
+        padding:10px
+    }
+}
