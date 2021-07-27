@@ -105,15 +105,15 @@
 | [Random Password Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Random%20Password%20Generator)| Generates a strong random password and has a copy functionality.|
 | [File Zipper](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/File%20Zipper) |It is a encoding and decoding file
 | [Memory Card Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Memory%20Card%20Game)                                   | A basic memory game where the main trick is to remember where the cards are. |
-| [Sudoku Solver](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/iron/Sudoku%20Solver) |It solves Sudoku using backtracking|
-| [Counter APP](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/iron/counter_App) |It is a simple react app which is used to incere or decrease the value of counter.
-| [Architecture Website Template](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/iron/Architecture-Website) |It is a simple and responsive Architecture Website template.
-| [BMI Calculator (JS)](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/iron/BMI%20Calculator%20(JS)) |Calculates the Body Mass Index of a person, provided with a BMI chart.
+| [Sudoku Solver](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Sudoku%20Solver) |It solves Sudoku using backtracking|
+| [Counter APP](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/counter_App) |It is a simple react app which is used to incere or decrease the value of counter.
+| [Architecture Website Template](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Architecture-Website) |It is a simple and responsive Architecture Website template.
+| [BMI Calculator (JS)](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/BMI%20Calculator%20(JS)) |Calculates the Body Mass Index of a person, provided with a BMI chart.
 | [React Movie Finder Application](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/react-movie-app) |A single page web application that allows users to search movies based on their query.
 | [Maths Quiz Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Maths%20quiz%20game) | A maths quiz game for kids to practice addition.
-| [Personal Blog Template](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/iron/Personal-blog) |A simple and responsive personal blog template.
-| [Architecture Website Template](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/iron/Architecture-Website) |A simple and responsive Architecture Website template.
-| [Art Gallery Template](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/iron/Art-Gallery) |It is a simple and resonsive Art Gallery Website where you can add multiple pictures and navigate through them.
-| [Food Website Template](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/iron/Food-Web) |It is a simple and resonsive Food Website Website, you can navigate through them.
-| [iCoder](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/iron/iCoder) |It is a simple and resonsive website made using bootstrap.
+| [Personal Blog Template](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Personal-blog) |A simple and responsive personal blog template.
+| [Architecture Website Template](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Architecture-Website) |A simple and responsive Architecture Website template.
+| [Art Gallery Template](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/maon/Art-Gallery) |It is a simple and resonsive Art Gallery Website where you can add multiple pictures and navigate through them.
+| [Food Website Template](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Food-Web) |It is a simple and resonsive Food Website Website, you can navigate through them.
+| [iCoder](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/iCoder) |It is a simple and resonsive website made using bootstrap.
 | [Tabla](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/tabla) | It is a webapp that plays tabla beat on clicked on the tabla or clicked d or t.
