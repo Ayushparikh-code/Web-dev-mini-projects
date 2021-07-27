@@ -118,3 +118,4 @@
 | [iCoder](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/iCoder) |It is a simple and resonsive website made using bootstrap.
 | [Darkmode To Do List](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/darkmode_todolist)              |This app allows you to make a list of events you want to do and you can strikeout the events completed.|
 | [Tabla](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/tabla) | It is a webapp that plays tabla beat on clicked on the tabla or clicked d or t.
+| [Classifiers using JS](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Classifier-Using-JS) | It is a website which contains three different classifiers, built with the help of API.
