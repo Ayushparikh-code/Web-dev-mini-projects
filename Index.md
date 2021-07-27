@@ -117,3 +117,4 @@
 | [Food Website Template](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/Food-Web) |It is a simple and resonsive Food Website Website, you can navigate through them.
 | [iCoder](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/iCoder) |It is a simple and resonsive website made using bootstrap.
 | [Tabla](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/tabla) | It is a webapp that plays tabla beat on clicked on the tabla or clicked d or t.
+| [QR Code Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/QR-CODE-Generator) | A simple web application which will generate a QR Code.
