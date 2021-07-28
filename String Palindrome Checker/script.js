@@ -6,9 +6,9 @@ document.getElementById("btn").addEventListener("click", function() {
 	let new_revstring = string_rev.toUpperCase();
 
 	if (new_string == new_revstring) {
-		let string_pal = document.getElementById('stringPal').value = "Yes";
+		document.getElementById('stringPal').value = "Yes";
 	} else {
-		let string_pal = document.getElementById('stringPal').value = "No";
+		document.getElementById('stringPal').value = "No";
 	}
 
 	document.getElementById('stringLength').value = string_length;
