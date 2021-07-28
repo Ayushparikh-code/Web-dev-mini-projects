@@ -45,3 +45,5 @@ npm start
 ![Demo2](public/news1.png)
 
 <br>
+
+## Happy Coding!
