@@ -27,7 +27,7 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 ```
 
 - Go to the directory
-- Open NEWS-APP folder
+- Open news-app folder
 - Open the terminal and run 
 ```
 npm start
