@@ -40,6 +40,8 @@ npm start
 
 ##Screenshots
 
-![Demo1](public/logo192.png)
+![Demo1](public/news.png)
+
+![Demo2](public/news1.png)
 
 <br>
