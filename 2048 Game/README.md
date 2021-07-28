@@ -11,9 +11,9 @@ An easy 2048 Game on website where you can have fun!!
 5. Have fun!
 
 # Stack used
--HTML
--Javascript
--CSS
+- HTML
+- Javascript
+- CSS
 
 # Credits
 I coded this game by following the tutorial from [Code with Ania Kubów](https://www.youtube.com/watch?v=aDn2g8XfSMc). Check it out!
