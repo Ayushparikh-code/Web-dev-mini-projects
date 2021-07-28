@@ -1,6 +1,6 @@
 # 2048 Game
 
-An easy 2048 Game on website where you can have fun!!
+An easy 2048 Game on website where you can have fun!! 
 
 # Instructions of the game
 
@@ -10,6 +10,9 @@ An easy 2048 Game on website where you can have fun!!
 4. Use arrow keys to play.
 5. Have fun!
 
+# Credits
+I coded this game by following the tutorial from [Code with Ania Kubów](https://www.youtube.com/watch?v=aDn2g8XfSMc). Check it out!
+
 # Screenshot
 
-![screenshot](./screenshot.png)
+![screenshot](https://github.com/Gyynnn/Web-dev-mini-projects/blob/2048game/2048%20Game/screenshot.PNG)
