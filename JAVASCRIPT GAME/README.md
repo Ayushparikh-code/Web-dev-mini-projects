@@ -2,7 +2,6 @@
 
 *This web app allows you to play the dinosaur game where you have to make the dinosaur jump and safe himself from the cactus. If the dinosaur touches the cactus, the player lose. This is a fun game to play. Also, a good game to get started with Javascript*.
 
-![dinosaurgame](https://user-images.githubusercontent.com/72425181/124359775-0b46ac80-dc44-11eb-9984-baa31075ebc7.png)
 
 ## 💻Tech Stack
 <br>
@@ -27,3 +26,8 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Go to the directory
 - Open Javascript Game folder
 - Open index.html with live server by right clicking on the mouse cursor
+
+### Screenshots
+
+
+![dinosaurgame](https://user-images.githubusercontent.com/72425181/124359775-0b46ac80-dc44-11eb-9984-baa31075ebc7.png)
