@@ -120,3 +120,4 @@
 | [Tabla](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/tabla) | It is a webapp that plays tabla beat on clicked on the tabla or clicked d or t.
 | [QR Code Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/QR-CODE-Generator) | A simple web application which will generate a QR Code.
 | [Classifiers using JS](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Classifier-Using-JS) | It is a website which contains three different classifiers, built with the help of API.
+| [2048 Game](https://github.com/Gyynnn/Web-dev-mini-projects/tree/2048game/2048%20Game) | A simple 2048 game on website.
