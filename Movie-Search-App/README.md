@@ -13,7 +13,8 @@
 <ul>
   <li>TMDB API</li>
 </ul>
-#### Steps to Use:
+
+### Steps to Use:
 ---
 
 - Download or clone the repository
