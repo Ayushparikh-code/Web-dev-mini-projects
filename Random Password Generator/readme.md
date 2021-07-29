@@ -29,9 +29,5 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 <h3> Video Demo </h3>
 
-<video controls width="960" alt="pw"> 
-<source src="https://user-images.githubusercontent.com/78655439/126331921-05967108-6108-492f-b018-63dd4d355da1.mp4">
-</video>
-
+<img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/Random%20Password%20Generator/snap.PNG">
 <br>
-

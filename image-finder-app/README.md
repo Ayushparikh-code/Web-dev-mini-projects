@@ -14,7 +14,7 @@ A single page web application that uses the PixaBay API to display the images ac
   - ES6
 - API
 - MaterialUI
- 
+
 
 ## API Used
 PixaBay API
@@ -34,13 +34,12 @@ Link : https://pixabay.com/api/
 
 Initial UI looks like:
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/image-finder-app/Screenshots/ss1.png" />
+<img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/image-finder-app/Screenshots/ss1.png" />
 
 After user search for a image:
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/image-finder-app/Screenshots/ss2.png" />
+<img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/image-finder-app/Screenshots/ss2.png" />
 
 A message will be shown if user search for a image and number of images are less than 3 or more than 200:
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/image-finder-app/Screenshots/ss3.png" />
-
+<img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/image-finder-app/Screenshots/ss3.png" />
