@@ -117,4 +117,6 @@
 | [Weather-App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weather-App)                                   | Simple Weather app written in HTML, CSS, and JavaScript using the APIs for fetching weather and geolocation information                                                                                                              |
 | [Week Day Predictor](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Week%20Day%20Predictor%20App)| This app displays the current day of the week with quotes.|
 | [Youtube UI Clone](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Youtube-Clone)                 |  A project which aims to clone YouTube UI with responsiveness by using HTML & CSS.  |
+| [2048 Game](https://github.com/Gyynnn/Web-dev-mini-projects/tree/2048game/2048%20Game) | A simple 2048 game on website.
+| [Classifiers using JS](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Classifier-Using-JS) | It is a website which contains three different classifiers, built with the help of API.
 
