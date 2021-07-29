@@ -118,3 +118,8 @@
 | [iCoder](https://github.com/soma2000-lang/Web-dev-mini-projects/tree/iron/iCoder) |It is a simple and resonsive website made using bootstrap.
 | [Darkmode To Do List](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/darkmode_todolist)              |This app allows you to make a list of events you want to do and you can strikeout the events completed.|
 | [Tabla](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/tabla) | It is a webapp that plays tabla beat on clicked on the tabla or clicked d or t.
+| [QR Code Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/QR-CODE-Generator) | A simple web application which will generate a QR Code.
+| [Classifiers using JS](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Classifier-Using-JS) | It is a website which contains three different classifiers, built with the help of API.
+| [String Palindrome Checker](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/String%20Palindrome%20Checker) | Checks if the entered word is a palindrome or not, and also checks the string length.
+| [2048 Game](https://github.com/Gyynnn/Web-dev-mini-projects/tree/2048game/2048%20Game) | A simple 2048 game on website.
+| [Movie Search App](https://github.com/Gyynnn/Web-dev-mini-projects/tree/main/Movie-Search-App) | Simple Movie Search App in HTML, CSS, and JavaScript using the APIs for fetching movies information.
