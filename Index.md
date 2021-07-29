@@ -122,3 +122,4 @@
 | [Classifiers using JS](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Classifier-Using-JS) | It is a website which contains three different classifiers, built with the help of API.
 | [String Palindrome Checker](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/String%20Palindrome%20Checker) | Checks if the entered word is a palindrome or not, and also checks the string length.
 | [2048 Game](https://github.com/Gyynnn/Web-dev-mini-projects/tree/2048game/2048%20Game) | A simple 2048 game on website.
+| [Movie Search App](https://github.com/Gyynnn/Web-dev-mini-projects/tree/main/Movie-Search-App) | Simple Movie Search App in HTML, CSS, and JavaScript using the APIs for fetching movies information.
