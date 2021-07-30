@@ -125,4 +125,5 @@
 | [Movie Search App](https://github.com/Gyynnn/Web-dev-mini-projects/tree/main/Movie-Search-App) | Simple Movie Search App in HTML, CSS, and JavaScript using the APIs for fetching movies information.
 | [News App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/news-app)| This is a React app which fetches the recent news from an api and renders it on the DOM without reloading the page.
 I've used the concept of *Async functions* and *react hook usestate* also worked with *APIs*.
+| [Magic-Color-Changer](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Magic-Color-Changer)| This is a pure javascript project.
 |
