@@ -1,0 +1,146 @@
+.main {
+    background-color: rgb(252, 252, 252);
+}
+
+.tesla-main {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.main-heading {
+    padding: 30px 0;
+    font-size: 26px;
+    color: #111;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.tesla-container {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.tesla-heading {
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding-bottom: 30px;
+}
+
+.tesla-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    width: 370px;
+    height: 420px;
+    background-color: #fff;
+    box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.8);
+    margin-bottom: 70px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    transform: scale(0.9);
+}
+
+.card1 {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.card1 .image {
+    width: 140px;
+    height: 100px;
+    transition: all 0.5s;
+}
+
+.card1 .image:hover {
+    transform: scale(1.15);
+}
+
+.info {
+    width:360px;
+    height: 90px;
+    overflow: hidden;
+    padding-left: 20px;
+    text-align: left;
+    padding-right: 30px;
+}
+
+.info h3 {
+    font-size: 19px;
+    font-weight: 300;
+    height: 50px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.info p {
+    font-size: 13px;
+    height: 50px;
+    overflow: hidden;
+    color: gray;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.card .img {
+    width: 370px; 
+    height: 180px;
+}
+
+.card .img img {
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    padding: 13px 9px;
+}
+
+.text h3 {
+    font-weight: 300;
+    color: black;
+    font-size: 22px;
+}
+
+.text p {
+    color: rgb(138, 138, 138);
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 10px 9px;
+}
+
+@media (max-width: 1290px) {
+    .main,
+    .tesla-main {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 830px) {
+    .card-container {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 410px) {
+    .tesla-main {
+        padding: 0 10px;
+    }
+}

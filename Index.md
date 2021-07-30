@@ -123,3 +123,6 @@
 | [String Palindrome Checker](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/String%20Palindrome%20Checker) | Checks if the entered word is a palindrome or not, and also checks the string length.
 | [2048 Game](https://github.com/Gyynnn/Web-dev-mini-projects/tree/2048game/2048%20Game) | A simple 2048 game on website.
 | [Movie Search App](https://github.com/Gyynnn/Web-dev-mini-projects/tree/main/Movie-Search-App) | Simple Movie Search App in HTML, CSS, and JavaScript using the APIs for fetching movies information.
+| [News App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/news-app)| This is a React app which fetches the recent news from an api and renders it on the DOM without reloading the page.
+I've used the concept of *Async functions* and *react hook usestate* also worked with *APIs*.
+|
