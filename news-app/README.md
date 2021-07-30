@@ -38,7 +38,7 @@ npm start
 
 <br>
 
-##Screenshots
+## Screenshots
 
 ![Demo1](public/news.png)
 
