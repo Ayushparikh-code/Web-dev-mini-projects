@@ -75,6 +75,7 @@
 | [Live Clock](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Live%20Clock)                                   | A simple web page made in react native which shows live time.
 | [Maths Quiz Game](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Maths%20quiz%20game) | A maths quiz game for kids to practice addition.
 | [Movie Search App](https://github.com/Gyynnn/Web-dev-mini-projects/tree/main/Movie-Search-App) | Simple Movie Search App in HTML, CSS, and JavaScript using the APIs for fetching movies information.
+| [Magic-Color-Changer](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Magic-Color-Changer)| This is a pure javascript project |
 | [Movie App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Movie-Website)                                   | A web app to search movies                                                                                                                                                                                                           |
 | [News App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/news-app)| This is a React app which fetches the recent news from an api and renders it on the DOM without reloading the page.
 I've used the concept of *Async functions* and *react hook usestate* also worked with *APIs*.
