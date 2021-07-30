@@ -40,9 +40,9 @@ npm start
 
 ## Screenshots
 
-![Demo1](public/news.png)
+![Demo1](/news-app/public/news.png)
 
-![Demo2](public/news1.png)
+![Demo2](/news-app/public/news1.png)
 
 <br>
 
