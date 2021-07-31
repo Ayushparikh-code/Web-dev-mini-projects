@@ -195,7 +195,7 @@ input[type="email"] {
   justify-content: center;
 }
 .footer-list {
-  padding: 20px 20px;
+  padding: 20px;
   color: #e4fbff;
   font-size: 0.8rem;
 }
@@ -272,7 +272,7 @@ input[type="email"] {
     margin-top: 20px;
   }
   .big-text {
-    top: 0px;
+    top: 0;
     font-size: 1.2rem;
   }
   .small-text {
