@@ -1,0 +1,56 @@
+html{
+    background-image:url("https://img.freepik.com/free-photo/amazing-beautiful-art-sky-with-colorful-clouds_58702-1866.jpg?size=626&ext=jpg&ga=GA1.2.95654955.1616259721");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+}
+.heading{
+    font-family:'Segoe UI', Tahoma,  Verdana, sans-serif, cursive;
+    text-align:center;
+    font-size:30px;
+}
+.heading h2{
+    margin-top:5%;
+    margin-top:10px;
+    text-align: center;
+}
+.mssg{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
+    text-align:center;
+    margin-bottom:30px;
+    font-size: 20px;    
+}
+button:hover{
+    background-color:rgb(212, 171, 202);
+}
+button{
+    border-radius: 50px;
+    padding:8px;
+    border:3px solid black;
+   
+
+}
+.contact{
+    font-size: cursive;
+}
+.btn{
+    margin:0;
+    position:relative;
+    top:100%;
+    margin-bottom:20px;
+    text-align: center;
+}
+.whole{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    position:absolute;
+    left:40%;
+    padding: 70px 70px;
+}
+body{
+    position: absolute;
+    padding: 160px 0;
+    left:17%;
+    width:50%;
+}
+

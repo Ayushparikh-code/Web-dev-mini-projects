@@ -1,0 +1,38 @@
+.app{
+    margin-left: 34%;
+    margin-top: 5%;
+  }
+  
+  .copy{
+    position: fixed;
+    width: 100%;
+    padding: 5px ;
+    bottom: 0;
+    text-align: center;
+    color:white;
+    background-color: black;
+    font-size: 20px;
+  }
+  .copyapp{
+      position: absolute;
+      width: 100%;
+      padding: 5px ;
+      bottom: 0;
+      text-align: center;
+      color:rgb(0, 0, 0);
+      background-color: black;
+      font-size: 20px;
+  }
+  .h{
+    position: absolute;
+    top: 45%;
+    left: 22%;
+    color: rgb(247, 247, 247);
+  }
+  .a{
+    color: rgb(0, 0, 0);
+  }
+  .b{
+    margin-top: 5%;
+    color: rgb(0, 0, 0);
+  }

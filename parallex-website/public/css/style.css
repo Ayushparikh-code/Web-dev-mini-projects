@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.pImg1{
+    background: url('../images/pImg1.jpeg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover; 
+    opacity: 0.70;
+    background-attachment: fixed;
+}
+
+
+.pImg2{
+    background: url('../images/pImg2.jpeg');
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;  
+    opacity: 0.70; 
+    background-attachment: fixed;
+}
+
+
+.pImg3{
+    background: url('../images/pImg3.jpeg');
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.70; 
+    background-attachment: fixed;  
+}
+
+.section{
+    text-align: center;
+    font-size: 16px;
+    word-spacing: 5px;
+    padding: 37px 53px;
+}
+
+h2{
+    margin: 0;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.section-light{ 
+    background-color: #fff;
+    color: #424949;
+}
+
+.section-dark{
+    background-color: rgb(79, 80, 80);
+    color: #F0F3F4;
+}
+
+.pText{
+    letter-spacing: 8px;
+    font-size: 22px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.pText .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
