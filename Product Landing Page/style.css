@@ -1,0 +1,300 @@
+body {
+  margin: auto;
+  background-color: #7868e6;
+  font-family: "Red Hat Display", sans-serif;
+  color: #e4fbff;
+}
+ul {
+  padding: 0;
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 1%;
+}
+a {
+  text-decoration: none;
+  color: #7868e6;
+}
+a:hover {
+  color: #b8b5ff;
+}
+input[type="email"],
+.top-button {
+  display: block;
+  margin: auto;
+  font-family: "Red Hat Display", sans-serif;
+}
+input[type="email"] {
+  padding: 0.5% 2%;
+  width: 25%;
+  border: none;
+  margin-bottom: 2%;
+  font-size: 1rem;
+}
+#video {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 40%;
+}
+#price-box {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "price1 price2 price3";
+  color: #e4fbff;
+}
+#heading {
+  text-align: center;
+  font-size: 2rem;
+}
+#header {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /*Full width */
+  background: #e4fbff;
+  margin: auto;
+  z-index: 1;
+}
+#brand-name {
+  display: flex;
+  align-items: center;
+}
+#header-img {
+  height: 4rem;
+  margin-left: 3%;
+  padding-left: 15px;
+  color: white;
+}
+#header-text {
+  font-family: "Berkshire Swash", cursive;
+  color: black;
+  margin-left: 1%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+#nav-bar {
+  justify-self: end;
+  padding: 2% 4%;
+}
+#container {
+  overflow: hidden;
+  height: auto;
+  width: 80%;
+  /* background-color: yellow; */
+  margin: auto;
+  margin-top: 8%;
+}
+.video-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e4fbff;
+}
+.top-button {
+  width: 100px;
+  padding: 0.5%;
+  border-radius: 10px;
+  border: 2px solid #e4fbff;
+  background-color: #7868e6;
+  color: #e4fbff;
+  font-size: 1rem;
+  margin-top: 2%;
+}
+.top-button:hover {
+  background-color: #e4fbff;
+  color: #7868e6;
+}
+.feature-box {
+  margin-top: 5%;
+}
+.feature-item {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "photo big-text"
+    "photo small-text";
+}
+.item1 {
+  grid-area: photo;
+  justify-self: center;
+  align-self: center;
+}
+.item2 {
+  grid-area: big-text;
+}
+.item3 {
+  grid-area: small-text;
+}
+.feature-img {
+  margin: auto;
+  height: 72px;
+  width: 72px;
+  padding: 20px 0 20 px 60px;
+}
+.big-text {
+  position: relative;
+  top: 15px;
+  font-size: 1.8rem;
+  margin-left: 5%;
+}
+.small-text {
+  position: relative;
+  margin-left: 5%;
+  bottom: 20px;
+  font-size: 1rem;
+}
+.price-1 {
+  grid-area: price1;
+}
+.price-2 {
+  grid-area: price2;
+}
+.price-3 {
+  grid-area: price3;
+}
+.price-box-style {
+  text-align: center;
+  border: 1px solid black;
+  width: 80%;
+  background-color: #b8b5ff;
+  margin: 10px 1px;
+  justify-self: center;
+  border-radius: 5px;
+}
+.price-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #7868e6;
+  margin: auto;
+  padding: 10px;
+}
+.price-button {
+  font-size: 1rem;
+  padding: 2% 8%;
+  margin-bottom: 10px;
+  background-color: #e4fbff;
+  border: none;
+  color: #7868e6;
+}
+.price-button:hover {
+  background-color: #7868e6;
+  color: #e4fbff;
+  padding: 1% 6%;
+}
+.footer {
+  margin-top: 80px;
+  width: 100%;
+  height: 90px;
+  background-color: #7868e6;
+  display: flex;
+  justify-content: center;
+}
+.footer-list {
+  padding: 20px;
+  color: #e4fbff;
+  font-size: 0.8rem;
+}
+.nav-link {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  padding: 0 15px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.2rem;
+}
+@media (max-width: 767px) {
+  input[type="email"] {
+    padding: 0.5% 2%;
+    width: 50%;
+    border: none;
+    font-size: 0.8rem;
+  }
+
+  #heading {
+    font-size: 1.4rem;
+  }
+  #header {
+    display: block;
+    text-align: center;
+  }
+  #brand-name {
+    display: block;
+    margin: auto;
+  }
+  #header-img {
+    height: 3.5rem;
+    margin-left: 0%;
+    padding-left: 0;
+  }
+  #header-text {
+    font-family: "Berkshire Swash", cursive;
+    margin-left: 0;
+    padding-right: 0;
+    margin-top: -1%;
+  }
+  #container {
+    width: 100%;
+    margin-top: 30%;
+  }
+  .top-button {
+    width: 80px;
+    padding: 0.7%;
+    font-size: 0.7rem;
+    margin-top: 3%;
+  }
+  .nav-link {
+    font-size: 1rem;
+    padding: 5px;
+    justify-self: center;
+  }
+}
+@media (max-width: 506px) {
+  #container {
+    width: 100%;
+    margin-top: 42%;
+  }
+
+  .feature-item {
+    text-align: center;
+    grid-template-areas:
+      "photo photo"
+      "big-text big-text"
+      "small-text small-text";
+  }
+  .feature-img {
+    height: 64px;
+    width: 64px;
+    margin-top: 20px;
+  }
+  .big-text {
+    top: 0;
+    font-size: 1.2rem;
+  }
+  .small-text {
+    bottom: 10px;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 820px) {
+  #price-box {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+      "price1"
+      "price2"
+      "price3";
+    color: #e4fbff;
+  }
+  #video {
+    width: 100%;
+  }
+  .price-box-style {
+    width: 50%;
+  }
+}
