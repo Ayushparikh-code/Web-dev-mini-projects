@@ -23,7 +23,10 @@ padding:0;
    opacity:0.4;
 }
 #logo{
-    margin:0px 15px;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left:15px;
+    margin-right:15px;
 }
 #logo img{
     margin:5px 10px;
@@ -66,7 +69,6 @@ background-color:white;
    width:100%;
    z-index:-1;
    opacity:0.8;
-   height:480px;
 
  }
  #home h1{
@@ -82,7 +84,7 @@ font-size:50px;
     padding:4px 16px;
     border:1px solid white;
     color:white;
-    margin:17px 17px;
+    margin:17px;
     border-radius:8px;
     font-size:1.5rem;
     background-color:rgb(146, 50, 50);
