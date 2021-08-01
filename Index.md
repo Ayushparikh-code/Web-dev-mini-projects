@@ -58,6 +58,7 @@
 | [Expand Button](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Expand-Button) |It is a basic website with an expanding button on it. As we click on the button it expands and shrinks after 5 seconds. |
 | [Expense Tracker](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Expense%20Tracker)                         | Keep a track of your own income and expenses and have a clear picture of where your money is going                                                                                                                                   |
 | [Food Website Template](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Food-Website) |It is a simple and resonsive Food Website Website, you can navigate through them.
+|[Fetch API using react app](https://github.com/abhishektyagi2912/Web-dev-mini-projects/tree/main/Fetch%20API%20%20using%20react%20app)| That we add get user button to API calls to get user data and have a loader while API fetch the data .
 | [Form Validation](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/form-validation)                         |A basic sign up page with all the validations in javascript.   |     
 | [File Zipper](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/File%20Zipper) |It is a encoding and decoding file
 | [FAQ](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/FAQ%20Application)| Generally, Frequently Asked Questions (FAQs) section is made with the help of accordion.|
@@ -83,6 +84,7 @@ I've used the concept of *Async functions* and *react hook usestate* also worked
 | [Online quiz portal](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/online%20quiz%20portal)                           | An online portal in which an individual can attend the quiz and view the result automatically |
 | [Parallex Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/parallex-website)| This is a basic HTML, CSS, JAVASCRIPT website where images of this website has their position fixed that results in giving the parallex look and that is why it is called Parallex Website.|
 | [Photo Editor](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/photo%20--%20editor) |It is a photo Editor which allows to rescale,flip and grey scale images.
+|[Product Landing Page](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/saloni-15-project-1/Product%20Landing%20Page)| A beginner-friendly single-page product landing website built with HTML and CSS for understanding the concept of responsive websites using CSS Grids.
 | [Payment Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/payment_integration)| This is a donation website in which we have integrated payment gateway.|
 | [Personal Blog Template](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Personal-blog) |A simple and responsive personal blog template.
 | [Password Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Password%20Generator)   | A password generator app to generate strong passwords which can be easily used for authentication. |
@@ -125,3 +127,4 @@ I've used the concept of *Async functions* and *react hook usestate* also worked
 | [Week Day Predictor](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Week%20Day%20Predictor%20App)| This app displays the current day of the week with quotes.|
 | [2048 Game](https://github.com/Gyynnn/Web-dev-mini-projects/tree/2048game/2048%20Game) | A simple 2048 game on website.
 | [Youtube UI Clone](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Youtube-Clone)                 |  A project which aims to clone YouTube UI with responsiveness by using HTML & CSS.  |
+
