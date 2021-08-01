@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(250, 242, 242);
+}
+
+.grid {
+    display:flex;
+    flex-wrap: wrap;
+    height: 420px;
+    width: 420px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid div{
+    border: solid rgb(68, 65, 65) 2px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(167, 154, 154);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 52px;
+}
+
+.scoreContainer {
+    margin-top: 60px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.header {
+    font-size: 60px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.instructions{
+    text-align: center;
+    margin: auto;
+}
+
+#result{
+    text-align: center;
+    margin: auto;
+}
