@@ -1,8 +1,8 @@
-body{
+body {
     background-color: pink;
-}
-
-.container{
+  }
+  
+  .container {
     width: 400px;
     height: 450px;
     background-color: #ff4a7a;
@@ -13,30 +13,32 @@ body{
     color: white;
     padding: 20px 0 0 100px;
     border-radius: 50px;
-}
-
-h3{
+  }
+  
+  h3 {
     font-size: 35px;
-}
-
-input{
+  }
+  
+  input {
     width: 80%;
     padding: 8px;
     border: none;
     margin-top: 10px;
-}
-
-input:focus{
+  }
+  
+  input:focus {
     outline: none;
-}
-
-h2{
+  }
+  
+  h2 {
     margin-top: 30px;
-}
+  }
+  
+  @media screen and (max-width: 360px) {
+    .container {
+      border-radius: 0;
+      top: 37%;
+    }
+  }
 
-@media screen  and (max-width:360px){
-    .container{
-       border-radius: 0;
-       top: 37%;
-    }    
-}
+  
