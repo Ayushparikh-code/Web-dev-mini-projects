@@ -130,5 +130,3 @@ I've used the concept of *Async functions* and *react hook usestate* also worked
 |[Product Landing Page](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/saloni-15-project-1/Product%20Landing%20Page)| A beginner-friendly single-page product landing website built with HTML and CSS for understanding the concept of responsive websites using CSS Grids.
 | [Loan Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Loan%20Calculator)| This is a simple loan calculator which calculates the Loan EMI (Equated Monthly Installment).
 |[My Online Meal](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/My-Online-Meal)| It is a simple and responsive website.
-
- 
