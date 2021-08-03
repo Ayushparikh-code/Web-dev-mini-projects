@@ -132,4 +132,4 @@ I've used the concept of *Async functions* and *react hook usestate* also worked
 |[My Online Meal](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/My-Online-Meal)| It is a simple and responsive website.
 |[Good Vibes Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Good-Vibes-Form)| It is a simple and responsive form which can be used in any project.
 |[Survey Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Survey-Form)| It is a simple and responsive urvey-Form.
-|[VAT Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/VAT%20Calculator)| It is a simpe calculator which calculates the Value Added Tax (VAT) on products or services 
+
