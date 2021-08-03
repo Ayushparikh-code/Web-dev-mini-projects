@@ -1,0 +1,44 @@
+body {
+    background-color: pink;
+  }
+  
+  .container {
+    width: 400px;
+    height: 450px;
+    background-color: #ff4a7a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    padding: 20px 0 0 100px;
+    border-radius: 50px;
+  }
+  
+  h3 {
+    font-size: 35px;
+  }
+  
+  input {
+    width: 80%;
+    padding: 8px;
+    border: none;
+    margin-top: 10px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  h2 {
+    margin-top: 30px;
+  }
+  
+  @media screen and (max-width: 360px) {
+    .container {
+      border-radius: 0;
+      top: 37%;
+    }
+  }
+
+  

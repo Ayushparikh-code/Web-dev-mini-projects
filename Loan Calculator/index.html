@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Loan Calculator</title>
+</head>
+
+<body>
+	<div class="container">
+		<h3>Loan Calculator</h3>
+		<p>Loan Amount:
+			<input type="number" value="1" id="amount" min="0" onchange="calculateLoan()"> ₹</p>
+		<p>Interest Rate:
+			<input type="number" value="0.1" id="interest" min="0" onchange="calculateLoan()"> % </p>
+		<p>Months to Pay:
+			<input type="number" value="1" id="months" min="0" onchange="calculateLoan()"> </p>
+		<h2 id="payment"></h2> </div>
+	<script src="script.js">
+	function calculateLoan() {
+		const amount = document.querySelector("#amount").value;
+		const interestRate = document.querySelector("#interest").value;
+		const months = document.querySelector("#months").value;
+		const monthlyRate = (interestRate) / (12 * 100);
+		const onePlusR = Math.pow(1 + monthlyRate, months);
+		const den = onePlusR - 1;
+		const emi = (amount * monthlyRate * (onePlusR / den)).toFixed(2);
+		const totalPay = (emi * months).toFixed(2);
+		document.querySelector("#payment").innerHTML = `EMI: ₹ ${emi} <br><br> Total Payment: ₹${totalPay}`
+	}
+	</script>
+</body>
+
+</html>
