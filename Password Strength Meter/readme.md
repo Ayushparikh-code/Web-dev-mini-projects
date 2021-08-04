@@ -29,8 +29,8 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 <h3> Video Demo </h3>
 
-<video controls width="960" alt=""> 
-<source src="">
+<video controls width="960" alt="passwordstrength"> 
+<source src="https://user-images.githubusercontent.com/78655439/128182046-f7baacc3-14f4-41b7-a050-3102a5964a84.mp4">
 </video>
 
 <br>

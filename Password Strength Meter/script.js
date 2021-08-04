@@ -14,7 +14,6 @@ let regExpStrong = /.[!,@,#,$,%,^,&,*,(,)]/;
 
 document.getElementById("trigger").addEventListener("keyup", function() {
 	if (input.value != "") {
-		indicator.style.display = "block";
 		indicator.style.display = "flex";
 
 		if (input.value.length <= 3 && (input.value.match(regExpWeak) || input.value.match(regExpMedium) || input.value.match(regExpStrong))) no = 1;

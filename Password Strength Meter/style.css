@@ -31,7 +31,7 @@
   }
   
   .container form {
-    margin: 20px 5px 10px 5px;
+    margin: 20px 5px 10px;
   }
   
   form .field {
@@ -70,7 +70,6 @@
   
   form .indicator {
     height: 10px;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 10px 0;
