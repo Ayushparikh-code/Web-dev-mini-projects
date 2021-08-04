@@ -13,16 +13,7 @@ let regExpStrong = /.[!,@,#,$,%,^,&,*,(,)]/;
 
 
 document.getElementById("trigger").addEventListener("keyup", function() {
-	if (input.value != "") {
-		indicator.style.display = "flex";
-
-
-	} else {
-		indicator.style.display = "none";
-		text.style.display = "none";
-		showBtn.style.display = "none";
-	}
-
+	
 	if (input.value.length <= 3 && (input.value.match(regExpWeak) || input.value.match(regExpMedium) || input.value.match(regExpStrong))) no = 1;
 
 	if (input.value.length >= 6 && ((input.value.match(regExpWeak) && input.value.match(regExpMedium)) || (input.value.match(regExpMedium) && input.value.match(regExpStrong)) || (input.value.match(regExpWeak) && input.value.match(regExpStrong)))) no = 2;
