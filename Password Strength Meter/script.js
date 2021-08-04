@@ -12,7 +12,7 @@ let regExpStrong = /.[!,@,#,$,%,^,&,*,(,)]/;
 
 
 
-document.getElementById("trigger").addEventListener("keyup", function() {
+function trigger() {
 	if (input.value != "") {
 		indicator.style.display = "flex";
 
@@ -66,5 +66,5 @@ document.getElementById("trigger").addEventListener("keyup", function() {
 		text.style.display = "none";
 		showBtn.style.display = "none";
 	}
-});
+}
 
