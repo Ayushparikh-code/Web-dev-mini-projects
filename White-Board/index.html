@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>White Board</title>
+	<link rel="stylesheet" href="style.css" /> </head>
+
+<body>
+	<div class="tools-container">
+		<div class="tools-content">
+			<div class="tool active-tool" id="pen"> <img src="./icons/pen.svg" alt="" />
+				<div class="tool-options hide">
+					<div class="pen-size">
+						<input type="range" id="pensize" value="1" min="1" max="40" /> </div>
+					<div class="pen-colors">
+						<div class="black"></div>
+						<div class="yellow"></div>
+						<div class="blue"></div>
+						<div class="green"></div>
+						<div class="red"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tool fade" id="eraser"> <img src="./icons/eraser.svg" alt="" />
+				<div class="tool-options hide">
+					<div class="eraser-size">
+						<input type="range" id="erasersize" value="1" min="1" max="40" /> </div>
+				</div>
+			</div>
+			<div class="tool" id="undo"> <img src="./icons/undo.svg" alt="" /> </div>
+			<div class="tool" id="redo"> <img src="./icons/redo.svg" alt="" /> </div>
+			<div class="tool" id="sticky"> <img src="./icons/sticky.svg" alt="" /> </div>
+			<div class="tool" id="photo"> <img src="./icons/pic.svg" alt="" />
+				<input type="file" class="hide" name="" id="photo-upload" /> </div>
+			<div class="tool" id="download"> <img src="./icons/download.svg" alt="" /> </div>
+		</div>
+	</div>
+	<div class="drawing-container">
+		<canvas id="canvas"></canvas>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
