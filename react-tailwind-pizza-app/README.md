@@ -37,7 +37,7 @@ npm / yarn start
 
 <br>
 
-##Screenshots
+## Screenshots
 
 ![Demo1](src/images/pizza.png)
 <br>
