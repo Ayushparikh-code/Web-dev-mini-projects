@@ -1,0 +1,41 @@
+/*navbar*/
+
+#navbar{
+    flex-direction:column;
+}
+
+
+
+/*home*/
+
+#home{
+    height:200px;
+}
+#home::before{
+    height:370px;}
+    #home p{
+        font-size:8px;}
+
+/*services*/
+
+#services{
+    flex-direction:column;
+
+}
+
+
+
+/*client section*/
+#clients{
+    overflow:hidden;
+}
+
+
+
+
+/*contact*/
+
+
+
+
+/*foote*/
