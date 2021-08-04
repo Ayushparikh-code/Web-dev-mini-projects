@@ -131,5 +131,5 @@ I've used the concept of *Async functions* and *react hook usestate* also worked
 | [Loan Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Loan%20Calculator)| This is a simple loan calculator which calculates the Loan EMI (Equated Monthly Installment).
 |[My Online Meal](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/My-Online-Meal)| It is a simple and responsive website.
 |[Good Vibes Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Good-Vibes-Form)| It is a simple and responsive form which can be used in any project.
-|[React Pizza App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/react-tailwind-app)| It is a simple pizza react app using TailwindCSS.
 |[Survey Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Survey-Form)| It is a simple and responsive urvey-Form.
+|[React Pizza App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/react-tailwind-app)| It is a simple pizza react app using TailwindCSS.
