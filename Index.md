@@ -134,3 +134,4 @@ I've used the concept of *Async functions* and *react hook usestate* also worked
 |[Good Vibes Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Good-Vibes-Form)| It is a simple and responsive form which can be used in any project.
 |[Survey Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Survey-Form)| It is a simple and responsive urvey-Form.
 |[React Pizza App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/react-tailwind-app)| It is a simple pizza react app using TailwindCSS.
+|[Password Strength Meter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Password%20Strength%20Meter)| Checks the strength of a password if it is strong, average or weak.
