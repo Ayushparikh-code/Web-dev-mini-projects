@@ -1,5 +1,5 @@
 const indicator = document.querySelector(".indicator");
-const input = document.querySelector("input");
+const input = document.querySelector(".input");
 const showBtn = document.querySelector(".showBtn")
 const weak = document.querySelector(".weak");
 const medium = document.querySelector(".medium");
