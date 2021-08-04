@@ -132,3 +132,4 @@ I've used the concept of *Async functions* and *react hook usestate* also worked
 |[My Online Meal](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/My-Online-Meal)| It is a simple and responsive website.
 |[Good Vibes Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Good-Vibes-Form)| It is a simple and responsive form which can be used in any project.
 |[React Pizza App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/react-tailwind-app)| It is a simple pizza react app using TailwindCSS.
+|[Survey Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Survey-Form)| It is a simple and responsive urvey-Form.
