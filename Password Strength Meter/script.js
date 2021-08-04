@@ -1,4 +1,4 @@
-const indicator = document.querySelector(".indicator");
+// const indicator = document.querySelector(".indicator");
 const input = document.querySelector(".input");
 const showBtn = document.querySelector(".showBtn")
 const weak = document.querySelector(".weak");
