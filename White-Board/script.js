@@ -55,7 +55,7 @@ canvas.addEventListener("mousemove", function(e) {
 	}
 });
 
-canvas.addEventListener("mouseup", function(e) {
+canvas.addEventListener("mouseup", function() {
 	console.log("mouseup");
 	isPenDown = false;
 
@@ -160,7 +160,7 @@ eraser.addEventListener("click", function() {
 
 let sticky = document.querySelector("#sticky");
 
-sticky.addEventListener("click", function(e) {
+sticky.addEventListener("click", function() {
 	addSticky();
 });
 
@@ -231,7 +231,7 @@ function addSticky(imageElement) {
 		}
 	});
 
-	stickyHeader.addEventListener("mouseup", function(e) {
+	stickyHeader.addEventListener("mouseup", function() {
 		stickyHold = false;
 	});
 
