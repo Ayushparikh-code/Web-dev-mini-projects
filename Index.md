@@ -128,8 +128,10 @@ I've used the concept of *Async functions* and *react hook usestate* also worked
 | [Magic-Color-Changer](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Magic-Color-Changer)| This is a pure javascript project.
 |[Fetch API using react app](https://github.com/abhishektyagi2912/Web-dev-mini-projects/tree/main/Fetch%20API%20%20using%20react%20app)| That we add get user button to API calls to get user data and have a loader while API fetch the data .
 |[Product Landing Page](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/saloni-15-project-1/Product%20Landing%20Page)| A beginner-friendly single-page product landing website built with HTML and CSS for understanding the concept of responsive websites using CSS Grids.
+|[VAT Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/VAT%20Calculator)| It is a simpe calculator which calculates the Value Added Tax (VAT) on products or services 
 | [Loan Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Loan%20Calculator)| This is a simple loan calculator which calculates the Loan EMI (Equated Monthly Installment).
 |[My Online Meal](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/My-Online-Meal)| It is a simple and responsive website.
 |[Good Vibes Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Good-Vibes-Form)| It is a simple and responsive form which can be used in any project.
 |[Survey Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Survey-Form)| It is a simple and responsive urvey-Form.
+|[React Pizza App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/react-tailwind-app)| It is a simple pizza react app using TailwindCSS.
 
