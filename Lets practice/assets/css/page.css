@@ -37,7 +37,7 @@ section h1{
     padding: 20px 30px;
     width: 35px;
     font-size: 30px;
-    box-shadow: 1px 1px 0px #999,
+    box-shadow: 1px 1px 0px #999;
  }
 .box1 p{
         font-size: 60px;
