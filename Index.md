@@ -135,4 +135,4 @@ I've used the concept of *Async functions* and *react hook usestate* also worked
 |[Survey Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Survey-Form)| It is a simple and responsive urvey-Form.
 |[React Pizza App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/react-tailwind-app)| It is a simple pizza react app using TailwindCSS.
 |[Digital White Board](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/White-Board)| It is a simple white board where user can write, draw, erase, undo, redo, insert image, open sticky notes and also download it.
-
+|[Lets Practice](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Lets-practice)| This webapp is basically for kids to practice addition, substraction, multiplication and division.
