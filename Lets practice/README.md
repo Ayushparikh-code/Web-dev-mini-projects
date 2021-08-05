@@ -37,6 +37,11 @@ the a
 
 It somehow look like this.
 
+![pr](https://user-images.githubusercontent.com/76838660/128411668-611f2f67-f8c6-4330-8d8a-73d66774cbfd.PNG)
+![a](https://user-images.githubusercontent.com/76838660/128411885-f4c7113e-a6ad-45ab-bd0a-34537f2e0186.PNG)
+![s](https://user-images.githubusercontent.com/76838660/128411902-5d6bba31-4f29-4cd2-9f6e-6845aefca352.PNG)
+![d](https://user-images.githubusercontent.com/76838660/128411914-13fd0eb9-0a0a-4d21-a30b-ad19f5cee1c5.PNG)
+
 
 
 ## Happy Coding!
