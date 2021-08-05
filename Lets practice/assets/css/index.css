@@ -9,7 +9,6 @@ body{
     padding:24px;
     margin-top: 40px;
     border-radius: 17px;
-    padding:24px;
     height: auto;
     text-align: center;
 }
@@ -30,7 +29,6 @@ body{
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 6.0px );
   -webkit-backdrop-filter: blur( 6.0px );
-  border-radius: 10px;
   margin-bottom: 60px;
   color: white;
   padding: 20px;
