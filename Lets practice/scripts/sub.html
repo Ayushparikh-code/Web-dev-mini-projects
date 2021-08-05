@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\assets\css\page.css">
+    <title>Lets practice</title>
+</head>
+<body>
+    <section>
+      <h1>Substraction</h1>
+      <div class="centerdiv">
+          <div class="insertBox">
+              <div class="box1">
+                  <input type="text" id="v1">
+              </div>
+              <div class="box1">
+               <p>-</p>
+            </div>
+            <div class="box1">
+                <input type="text" id="v2">
+            </div>
+          </div>
+        <div class="middleBox">
+            <input type="text" id="answer">
+        </div>  
+        <div class="sentBox">
+            <button onclick={jsGame()}>Check answer</button>
+        </div>
+      </div>
+    </section>
+
+
+<script>
+    var n1,n2,min,max;
+    min = Math.ceil(50);
+    max = Math.floor(100);
+    n1 = Math.floor(Math.random() * (max - min) + min); 
+    n2 = Math.floor(Math.random()*50+1);
+
+    console.log(n1,n2);
+
+    document.getElementById('v1').value = n1;
+    document.getElementById('v2').value = n2;
+
+    var ans = n1-n2;
+    async function jsGame() {
+        var userans = document.getElementById("answer").value;
+        console.log(userans);
+        
+        if(userans == ans){
+            alert('Well Done! Your answer is correct. ');
+        }
+        else{
+            alert("Correct answer is " + ans + ". Try again. " );
+        }
+        history.go(0);
+    }
+</script>
+</body>
+</html>
