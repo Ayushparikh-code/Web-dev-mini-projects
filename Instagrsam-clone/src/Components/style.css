@@ -6,7 +6,8 @@ body{
     background-color: rgba(var(--b3f,250,250,250),1);
 }
 .main_container{
-    padding:0px 18%;
+    padding-left: 18%;
+    padding-right:18%;
 }
 nav{
     display:flex;
@@ -160,7 +161,6 @@ height:600px;
     height:8%;
     position:relative;
     top:4%;
-    bottom:0%;
 }
 
 /****sideBox***/
