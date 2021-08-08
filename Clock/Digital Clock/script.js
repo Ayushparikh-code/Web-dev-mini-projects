@@ -40,4 +40,4 @@ function updateClock() {
 function intiClock() {
 	updateClock();
 	window.setInterval("updateClock()", 1);
-};
+}
