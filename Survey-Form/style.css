@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:lightyellow;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    font-family: 'Anaheim', sans-serif;
+}
+/*form*/
+#main{
+    border:1px solid lightgrey;
+border-radius:1rem;
+    width:70%;
+    padding:12px;
+    margin-top:12px;
+    margin-left:14px;
+    background-color:white;
+    text-align:left;
+}
+h1{
+    font-size:20px;
+    margin-bottom:12px;
+    text-align:center;
+}
+
+/*personal section*/
+fieldset{
+    border:1px soliD lightgrey;
+    margin:10px;
+    text-align: left;
+    padding-left: 10px
+}
+div{
+    margin-right:50px;
+}
+legend{
+font-size:15px;
+}
+
+p{
+    display:inline;
+    font-size:14px;
+    color:black;
+    opacity:0.6;
+}
+/*section 3*/
+#dropdown{
+    font-size:12px;
+    color:black;
+    opacity:0.6;
+}
+#dropdown2{
+    font-size:12px;
+    color:black;
+    opacity:0.6;
+}
+
+/* section 4 */
+textarea{
+    font-size:10px;
+}
+/*button styling*/
+#button{
+    color:white;
+    background-color:red;
+    border:1px solid red;
+    padding:2px;
+    display:block;
+    margin:auto;
+}
+#submit{
+    color:white;
+    background-color:red;
+    border:1px solid red;
+    padding:2px;
+    display:block;
+    margin:auto;
+}
+/*utility classes*/
+.form-rows{
+    margin:12px;
+}
+.form-rows input{
+    font-size:10px;
+    color:lightgrey;
+}
+.form-rows label{
+    font-size:14px;
+    color:black;
+    opacity:0.6;
+} 

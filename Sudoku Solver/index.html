@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light " style="font-size: 20px; font-family: sans-serif; background-color: whitesmoke;">
+
+
+    </nav>
+    <br><br>
+    <div id="container">
+
+        <div class="lsb tsb" id="0">
+
+        </div>
+
+        <div class="tsb ldb" id="1">
+
+        </div>
+
+        <div class="tsb ldb" id="2">
+
+        </div>
+
+        <div class="tsb lsb" id="3">
+
+        </div>
+        <div class="tsb ldb" id="4">
+
+        </div>
+
+        <div class="tsb ldb" id="5">
+
+        </div>
+        <div class="tsb lsb" id="6">
+
+        </div>
+
+        <div class="tsb ldb" id="7">
+
+        </div>
+        <div class="tsb rsb ldb" id="8">
+
+        </div>
+
+        <div class="lsb tdb" id="9">
+
+        </div>
+
+        <div class="ldb tdb" id="10">
+
+        </div>
+
+        <div class="ldb tdb" id="11">
+
+        </div>
+
+        <div class="lsb tdb" id="12">
+
+        </div>
+        <div class="ldb tdb" id="13">
+
+        </div>
+
+        <div class="ldb tdb" id="14">
+
+        </div>
+        <div class="lsb tdb" id="15">
+
+        </div>
+
+        <div class="ldb tdb" id="16">
+
+        </div>
+        <div class="rsb ldb tdb" id="17">
+
+        </div>
+
+        <div class="lsb bsb tdb" id="18">
+
+        </div>
+
+        <div class="bsb ldb tdb" id="19">
+
+        </div>
+
+        <div class="bsb ldb tdb" id="20">
+
+        </div>
+
+        <div class="bsb lsb tdb" id="21">
+
+        </div>
+        <div class="bsb ldb tdb" id="22">
+
+        </div>
+
+        <div class="bsb ldb tdb" id="23">
+
+        </div>
+        <div class="bsb lsb tdb" id="24">
+
+        </div>
+
+        <div class="bsb ldb tdb" id="25">
+
+        </div>
+        <div class="bsb rsb ldb tdb" id="26">
+
+        </div>
+
+        <div class="lsb" id="27">
+
+        </div>
+
+        <div class="ldb" id="28">
+
+        </div>
+
+        <div class="ldb" id="29">
+
+        </div>
+
+        <div class="lsb" id="30">
+
+        </div>
+        <div class="ldb" id="31">
+
+        </div>
+
+        <div class="ldb" id="32">
+
+        </div>
+        <div class="lsb" id="33">
+
+        </div>
+
+        <div class="ldb" id="34">
+
+        </div>
+        <div class="rsb ldb" id="35">
+
+        </div>
+
+        <div class="lsb tdb" id="36">
+
+        </div>
+
+        <div class="ldb tdb" id="37">
+
+        </div>
+
+        <div class="ldb tdb" id="38">
+        </div>
+
+        <div class="lsb tdb" id="39">
+
+        </div>
+        <div class="ldb tdb" id="40">
+
+        </div>
+
+        <div class="ldb tdb" id="41">
+
+        </div>
+        <div class="lsb tdb" id="42">
+
+        </div>
+
+        <div class="ldb tdb" id="43">
+
+        </div>
+        <div class="rsb ldb tdb" id="44">
+
+        </div>
+
+        <div class="lsb bsb tdb" id="45">
+
+        </div>
+
+        <div class="bsb ldb tdb" id="46">
+
+        </div>
+
+        <div class="bsb ldb tdb" id="47">
+
+        </div>
+
+        <div class="bsb lsb tdb" id="48">
+
+        </div>
+        <div class="bsb ldb tdb" id="49">
+
+        </div>
+
+        <div class="bsb ldb tdb" id="50">
+
+        </div>
+        <div class="bsb lsb tdb" id="51">
+
+        </div>
+
+        <div class="bsb ldb tdb" id="52">
+
+        </div>
+        <div class="bsb rsb ldb tdb" id="53">
+
+        </div>
+
+        <div class="lsb" id="54">
+
+        </div>
+
+        <div class="ldb" id="55">
+
+        </div>
+
+        <div class="ldb" id="56">
+
+        </div>
+
+        <div class="lsb" id="57">
+
+        </div>
+        <div class="ldb" id="58">
+
+        </div class="ldb">
+
+        <div class="ldb" id="59">
+
+        </div>
+        <div class="lsb" id="60">
+
+        </div>
+
+        <div class="ldb" id="61">
+
+        </div>
+        <div class="rsb ldb" id="62">
+
+        </div>
+
+        <div class="lsb tdb" id="63">
+
+        </div>
+
+        <div class="ldb tdb" id="64">
+
+        </div>
+
+        <div class="ldb tdb" id="65">
+
+        </div>
+
+        <div class="lsb tdb" id="66">
+
+        </div>
+        <div class="ldb tdb" id="67">
+
+        </div>
+
+        <div class="ldb tdb" id="68">
+
+        </div>
+        <div class="lsb tdb" id="69">
+
+        </div>
+
+        <div class="ldb tdb" id="70">
+
+        </div>
+        <div class="rsb ldb tdb" id="71">
+
+        </div>
+
+        <div class="lsb bsb tdb" id="72">
+
+        </div>
+
+        <div class="bsb ldb tdb" id="73">
+
+        </div>
+
+        <div class="bsb ldb tdb" id="74">
+
+        </div>
+
+        <div class="bsb lsb tdb" id="75">
+
+        </div>
+        <div class="bsb ldb tdb" id="76">
+
+        </div>
+
+        <div class="bsb tdb ldb" id="77">
+
+        </div>
+        <div class="bsb lsb tdb" id="78">
+
+        </div>
+
+        <div class="bsb ldb tdb" id="79">
+
+        </div>
+        <div class="bsb rsb ldb tdb" id="80">
+
+        </div>
+
+
+    </div>
+    <br>
+    <div id="buttons">
+        <button type="button" class="btn btn-danger" id="generate-sudoku">Get New
+            Puzzle</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-success" id="solve">Solve</button>
+    </div>
+</body>
+
+</html>

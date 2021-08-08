@@ -1,0 +1,29 @@
+@media only screen and (max-width:900px) {
+    .container {
+        display: block;
+    }
+
+    .half {
+        display: block;
+    }
+
+    #box4 {
+        display: none;
+    }
+
+    .grid-item {
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    .container {
+        padding: 2rem 1rem 4rem;
+    }
+    #box5{
+        display:none
+    }
+
+}
