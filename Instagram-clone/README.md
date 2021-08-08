@@ -2,7 +2,7 @@
 It is a simple clone of instagram front page using react.
 
 ## Desktop view
-![Desktop view](/images/instaclone.png)
+![Desktop view](/src/images/instaclone.png)
 
 ## 💻Tech Stack
 <br>
