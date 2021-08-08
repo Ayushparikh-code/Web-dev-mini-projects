@@ -1,0 +1,74 @@
+*{
+    font-family: 'Philosopher', sans-serif;
+}
+body{
+    background-image: radial-gradient(#104069,#000000);
+}
+
+.main{
+    padding:24px;
+    margin-top: 40px;
+    border-radius: 17px;
+    height: auto;
+    text-align: center;
+}
+.container{
+  display:flex;
+  padding:24px;
+  justify-content:space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.content{
+  height:auto;
+  width:40%;
+  transition: 0.3s;
+  border-radius: 17px;
+  background: rgba( 141, 198, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.0px );
+  -webkit-backdrop-filter: blur( 6.0px );
+  margin-bottom: 60px;
+  color: white;
+  padding: 20px;
+  margin-right: 35px;
+}
+.content>h1{
+    margin-top: 20px;
+}
+.content >h3{
+    font-size: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 10px;
+}
+.heading{
+  margin:auto;
+  font-size: 4rem;
+  color: #8DC6FF;
+}
+.content:hover{
+  box-shadow: 3px 3px 10px 0 rgba(119, 216, 243, 0.603);
+  transition: 0.5s;
+}
+.btn{
+ font-weight: bold;
+ border: 2px solid#031e36;
+ color: white;
+ padding: 10px 20px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 20px;
+ margin: 4px 2px;
+ transition-duration: 0.5s;
+ cursor: pointer;
+ border-radius:15px;
+}
+.btn:hover{
+    background-color: white;
+    color: #031e36;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
