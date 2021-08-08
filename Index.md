@@ -93,3 +93,4 @@
 | [Weight Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Weight%20Converter)                       | A simple web page where user can convert weight from kilograms to grams, ounces or pounds.
 | [Live Clock](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Live%20Clock)                                   | A simple web page made in react native which shows live time.
 | [DRUM(darkmode)](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/DRUM(darkmode)              |This web app allows you to make your own music with all the beats that are present in the app. You can click on the alphabets or the images that are present on the screen and enjoy the beats. You can also use your keyboard keys to make the music.|
+| [Insta Clone](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Instagram-clone)                                   |It is a simple clone of instagram front page using react.
