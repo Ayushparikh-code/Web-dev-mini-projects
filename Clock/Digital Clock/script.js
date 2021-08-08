@@ -41,3 +41,5 @@ function intiClock() {
 	updateClock();
 	window.setInterval("updateClock()", 1);
 }
+
+intiClock();
