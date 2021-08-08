@@ -11,13 +11,13 @@ body{
 nav{
     display:flex;
     justify-content:space-between;
-    margin:20px 0px;
+    margin:20px;
     padding:0px 18%;
     padding-bottom:10px;
 }
 
 hr{
-    margin:-20px 0px 20px 0px;
+    margin:-20px 0px 20px;
     color:lightgrey;
 }
 li{
@@ -37,7 +37,7 @@ li{
 }
 .midNav input{
 font-size:15px;
-text-transform: capitalize;;
+text-transform: capitalize;
 text-align:center;
 color:#f3ebeb;
 background-color:#f3efef;
@@ -70,7 +70,7 @@ display:flex;
     width:100%;
     height:100px;
     display:flex;
-    padding:10px 0px 5px 0px;;
+    padding:10px 0px 5px;
     justify-content:space-evenly;
 }
 
@@ -92,7 +92,7 @@ display:flex;
 .post_container{
     width:100%;
     background-color:white;
-    margin:20px 0px;
+    margin:20px;
     border:1px solid rgb(245, 238, 238);
     border-radius:5px;
 }
@@ -115,7 +115,8 @@ height:600px;
     margin-top:5px;
 }
 .name{
-    margin:20px 0px 0px 20px;
+    margin-top:20px;
+    margin-left: 20px;
 }
 .bottom_part{
     /* background-color:yellow; */
@@ -126,7 +127,9 @@ height:600px;
     display:flex;
 }
 .bottom_part :nth-child(1) i{
-    margin:10px 15px 10px 0px;
+    margin-top:10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
     font-size:30px;
     font-weight:none;
 }
@@ -175,18 +178,19 @@ border-radius:50%;
     margin:10px 0px;
 }
 .sideBox :nth-child(1) div{
-  margin:15px 0px 0px 20px;;
+  margin:15px 0px 0px 20px;
   line-height:10px;
 }
 
 /****sidebox image***/
 .SideBoxImageContainer {
 display:flex;
-margin:5px 0px 0px 0px;
+margin-top:5px;
 }
 .SideBoxImageContainer div {
  line-height:8px;
- margin:5px 0px 0px 5px;
+ margin-top:5px;
+ margin-left: 5px;
     }
 .sideBox_image{
     width:40px;
