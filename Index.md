@@ -137,3 +137,4 @@ I've used the concept of *Async functions* and *react hook usestate* also worked
 |[Digital White Board](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/White-Board)| It is a simple white board where user can write, draw, erase, undo, redo, insert image, open sticky notes and also download it.
 |[Lets Practice](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Lets-practice)| This webapp is basically for kids to practice addition, substraction, multiplication and division.
 | [Age Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Live%20Clock) |It is a simple Javascript project which calculates our age in years.
+|[Digital & Analog Clock](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Clock)| It is a simple project built using Javascript which has two clocks, one is Digital Clock and another one is Analog Clock.
