@@ -12,12 +12,14 @@ nav{
     display:flex;
     justify-content:space-between;
     margin:20px;
-    padding:0px 18%;
+    padding-left:18%;
+    padding-right:18%;
     padding-bottom:10px;
 }
 
 hr{
-    margin:-20px 0px 20px;
+    margin-top:-20px ;
+    margin-left:20px;
     color:lightgrey;
 }
 li{
@@ -52,7 +54,8 @@ display:flex;
 
 .rightNav li{
     font-size:25px;
-    margin:0px 10px;
+    margin-left: 10px;
+    margin-right:10px;
 }
 
 /******Body content***/
@@ -70,7 +73,8 @@ display:flex;
     width:100%;
     height:100px;
     display:flex;
-    padding:10px 0px 5px;
+    padding-top:10px;
+    padding-left: 5px;
     justify-content:space-evenly;
 }
 
@@ -145,7 +149,8 @@ height:600px;
     border-radius:50%;
 }
 .liked_by{
-    margin:8px 0px 0px 8px;
+    margin-top:8px;
+    margin-left:8px;
 }
 .bottom_part :nth-child(3){
     display:flex;
@@ -164,7 +169,7 @@ height:600px;
     /* border:1px solid grey; */
     height:500px;
     margin:0px 5px;
-    padding:0 0 0 5%;
+    padding-left:5%;
 }
 
 .sideBox_main_image{
@@ -175,10 +180,12 @@ border-radius:50%;
 
 .sideBox :nth-child(1){
     display:flex;
-    margin:10px 0px;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 .sideBox :nth-child(1) div{
-  margin:15px 0px 0px 20px;
+  margin-top:15px;
+  margin-left: 20px;
   line-height:10px;
 }
 
