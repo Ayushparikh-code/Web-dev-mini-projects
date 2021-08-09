@@ -134,9 +134,11 @@ I've used the concept of *Async functions* and *react hook usestate* also worked
 |[Good Vibes Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Good-Vibes-Form)| It is a simple and responsive form which can be used in any project.
 |[Survey Form](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Survey-Form)| It is a simple and responsive urvey-Form.
 |[React Pizza App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/react-tailwind-app)| It is a simple pizza react app using TailwindCSS.
-|[Digital White Board](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/White-Board)| It is a simple white board where user can write, draw, erase, undo, redo, insert image, open sticky notes and also download it.
-|[Lets Practice](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Lets-practice)| This webapp is basically for kids to practice addition, substraction, multiplication and division.
+|[Digital White Board]()| It is a simple white board where user can write, draw, erase, undo, redo, insert image, open sticky notes and also download it.
+|[Lets Practice](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Lets%20practice)| This webapp is basically for kids to practice addition, substraction, multiplication and division.
 | [Age Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Live%20Clock) |It is a simple Javascript project which calculates our age in years.
 |[Digital & Analog Clock](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Clock)| It is a simple project built using Javascript which has two clocks, one is Digital Clock and another one is Analog Clock.
 | [Insta Clone](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Instagram-clone)                                   |It is a simple clone of instagram front page using react.
 |[Password Strength Meter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Password%20Strength%20Meter)| Checks the strength of a password if it is strong, average or weak.
+
+|[Guitar](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Guitar)| A webapp that plays basic sounds of guitar
