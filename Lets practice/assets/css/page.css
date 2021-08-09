@@ -1,0 +1,79 @@
+*{
+    margin: 0; 
+    padding: 0;
+
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(#104069,#000000);
+}
+section h1{
+    padding-bottom: 30px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px white;
+}
+.centerdiv{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+.insertBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+#v1, #v2{
+    text-align: center;
+    padding: 20px 30px;
+    width: 35px;
+    font-size: 30px;
+ }
+.box1 p{
+        font-size: 60px;
+        margin: 1px 5px;
+}
+.middleBox #answer{
+    margin: 30px 0;
+    padding: 5px 0;
+    font-size: 30px;
+    text-align: center;
+    width: 80px;
+}
+.middleBox #q{
+    margin: 30px 0;
+    padding: 5px 0;
+    font-size: 30px;
+    text-align: center;
+    width: 100px;
+}
+.middleBox #r{
+    margin: 30px 0;
+    padding: 5px 0;
+    font-size: 30px;
+    text-align: center;
+    width: 100px;
+}
+.middleBox .bu{
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: #104069;
+    width: 20px;
+}
+.sentBox button{
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    color: white;
+    border: none;
+    background-color: rgb(1, 121, 81);
+    border-radius: 2px;
+} 
