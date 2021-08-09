@@ -31,6 +31,8 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 
 It somehow look like this.
+![gui](https://user-images.githubusercontent.com/76838660/128736725-a843641e-defe-4534-ab63-9de09c629c53.PNG)
+
 
 
 ## Happy Coding!
