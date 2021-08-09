@@ -138,3 +138,4 @@ I've used the concept of *Async functions* and *react hook usestate* also worked
 |[Lets Practice](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Lets-practice)| This webapp is basically for kids to practice addition, substraction, multiplication and division.
 | [Age Calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Live%20Clock) |It is a simple Javascript project which calculates our age in years.
 |[Digital & Analog Clock](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Clock)| It is a simple project built using Javascript which has two clocks, one is Digital Clock and another one is Analog Clock.
+| [Insta Clone](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Instagram-clone)                                   |It is a simple clone of instagram front page using react.
