@@ -41,7 +41,7 @@ const findLcm = () => {
             const num2 = numLcm2.value;
 
             let min = (num1 < num2) ? num1 : num2;
-            while(1){
+            while(true){
                 if(min % num1 == 0 && min % num2 == 0){
                     resultLcm.innerHTML = `LCM of ${num1} and ${num2} is ${min}`;
                     if(min % 2 == 0){
@@ -55,8 +55,8 @@ const findLcm = () => {
                 }
                 min++;
             }
-        });
-};
+        })
+}
 
 const findHcf = () => {
     $(".resultboxHcf").slideToggle("slow");
