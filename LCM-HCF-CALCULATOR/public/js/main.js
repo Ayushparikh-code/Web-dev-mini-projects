@@ -50,7 +50,7 @@ const findLcm = () => {
                     }else{
                         oddLcm.style.opacity = 1;
                         evenLcm.style.opacity = 0.5;
-                    };
+                    }
                     break;
                 }
                 min++;
