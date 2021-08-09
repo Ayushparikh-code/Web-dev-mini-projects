@@ -73,7 +73,8 @@ input[type="number"]{
 
 input[type="submit"]{
     background-color:#7C40FF;
-    padding: 0vh 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     margin-top: 1vh;
     width: 40vw;
 }

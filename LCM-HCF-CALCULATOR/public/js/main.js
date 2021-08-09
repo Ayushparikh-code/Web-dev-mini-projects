@@ -1,9 +1,6 @@
 const body = document.querySelector("body");
 const lcmBtn = document.querySelector("#lcmBtn");
 const hcfBtn = document.querySelector("#hcfBtn");
-const box = document.querySelector(".box");
-const resultboxLcm = document.querySelector(".resultboxLcm");
-const resultboxHcf  = document.querySelector(".resultboxHcf ");
 const numLcm1 = document.querySelector("#numLcm1");
 const numLcm2 = document.querySelector("#numLcm2")
 const lcm = document.querySelector("#lcm");
@@ -44,7 +41,7 @@ const findLcm = () => {
             const num2 = numLcm2.value;
 
             let min = (num1 < num2) ? num1 : num2;
-            while(true){
+            while(1){
                 if(min % num1 == 0 && min % num2 == 0){
                     resultLcm.innerHTML = `LCM of ${num1} and ${num2} is ${min}`;
                     if(min % 2 == 0){
@@ -55,9 +52,9 @@ const findLcm = () => {
                         evenLcm.style.opacity = 0.5;
                     };
                     break;
-                };
+                }
                 min++;
-            };
+            }
         });
 };
 
@@ -78,12 +75,12 @@ const findHcf = () => {
                 }else{
                     oddHcf.style.opacity = 1;
                     evenHcf.style.opacity = 0.5;
-                };
+                }
                 resultHcf.innerHTML = `HCF of ${num1} and  ${num2} is ${i}`
-            };
-        };
-    });
-};
+            }
+        }
+    })
+}
 
 
 lcmBtn.addEventListener("click", findLcm)

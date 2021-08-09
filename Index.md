@@ -140,3 +140,4 @@ I've used the concept of *Async functions* and *react hook usestate* also worked
 |[Digital & Analog Clock](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Clock)| It is a simple project built using Javascript which has two clocks, one is Digital Clock and another one is Analog Clock.
 | [Insta Clone](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Instagram-clone)                                   |It is a simple clone of instagram front page using react.
 |[Password Strength Meter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Password%20Strength%20Meter)| Checks the strength of a password if it is strong, average or weak.
+|[lcm-hcf-calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/lcm-hcf-calculator)                                   |HCF and LCM calculator finds the highest common factor and lowest common multiple for the given numbers.
