@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Courier New";
+  }
+  
+  html,
+  body {
+    display: grid;
+    height: 100%;
+    text-align: center;
+    place-items: center;
+    background: #f2f2f2;
+  }
+  
+  .container {
+    background: #000;
+    width: 420px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.3);
+  }
+  
+  .container header {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #97e5d7;
+  }
+  
+  .container form {
+    margin: 20px 5px 10px;
+  }
+  
+  form .field {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  
+  form .field input {
+    height: 100%;
+    width: 100%;
+    border: 2px solid lightgrey;
+    padding-left: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.2s;
+  }
+  
+  form .field input:focus {
+    border-color: #97e5d7;
+    box-shadow: inset 0 0 3px #2fd072;
+  }
+  
+  form .field .showBtn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  form .indicator {
+    height: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    display: none;
+  }
+  
+  form .indicator span {
+    width: 100%;
+    height: 100%;
+    background: lightgrey;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  form .indicator span.medium {
+    margin: 0 3px;
+  }
+  
+  form .indicator span:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  form .indicator span.active.weak:before {
+    background-color: #dbc4df;
+  }
+  
+  form .indicator span.active.medium:before {
+    background-color: #ce9dd9;
+  }
+  
+  form .indicator span.active.strong:before {
+    background-color: #ba55d3;
+  }
+  
+  form .text {
+    font-size: 20px;
+    font-weight: 550;
+    margin-bottom: -10px;
+    display: none;
+  }
+  
+  form .text.weak {
+    color: #dbc4df;
+  }
+  
+  form .text.medium {
+    color: #ce9dd9;
+  }
+  
+  form .text.strong {
+    color: #ba55d3;
+  }
+  
+  
