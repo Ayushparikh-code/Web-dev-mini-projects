@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'KoHo', sans-serif;
+    text-align: center;
+}
+
+body, .container, .box, .property, form{
+    display: flex;
+    align-items: center;
+}
+
+.box, form, body{
+    justify-content: center;
+    flex-direction: column;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.container{
+    width: 100vw;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+button, input[type="submit"]{
+    cursor: pointer;
+}
+
+button{
+    width: 60vw;
+    height: 10vh;
+    margin-top: 2vh;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.box{
+    border-radius: 10px;
+    width: 60vw;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin-top: 1px;
+}
+form{
+    margin-top: 2vh;
+
+}
+
+input{
+    height: 5vh;
+    outline: none;
+    border: none;
+}
+
+input[type="number"]{
+    width: 20vw;
+    margin-left: 1px;
+}
+
+input[type="submit"]{
+    background-color:#7C40FF;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: 1vh;
+    width: 40vw;
+}
+
+.property{
+    width: 60vw;
+    justify-content: space-evenly;
+    margin: 3vh;
+    
+}
+
+.property > div{
+    width: 16vw;
+    background: #1e1e1e;
+    box-shadow: inset 5px 5px 10px #0c0c0c,
+                          inset -5px -5px 10px #303030;
+    padding: 1vh 1vw;
+    opacity: 0.5;
+}
+
+.result{
+    margin-bottom: 2vh;
+}
+
+@media all and (max-width:500px){
+    button, .box{
+        width: 90vw;
+    }
+
+    input[type="number"]{
+        width: 40vw;
+    }
+
+    input[type="submit"]{
+        width: 80vw;
+    }
+
+    .property > div{
+        width: 32vw;
+    }
+}
