@@ -93,7 +93,7 @@ a {
     "file-feature security-feature"
     "time-feature store-feature";
     background-color: hsl(218, 28%, 13%);
-    padding: 0 5rem 0 5rem;
+    padding: 0 5rem;
     gap: 2rem;
     text-align: center;
 }
@@ -212,7 +212,7 @@ a {
     grid-template-areas: 
     "user-1 user-2 user-3";
     background-color: hsl(218, 28%, 13%);
-    padding: 6rem 4rem 1rem 4rem;
+    padding: 6rem 4rem 1rem;
     gap: 1rem;
     background-image: url('../images/bg-quotes.png');
     background-position: top 50px left 40px;
@@ -234,7 +234,7 @@ a {
     font-weight: 400;
     color: white;
     font-size: 13px;
-    padding: 0rem 50% 0 0;
+    padding: 0 50% 0 0;
 }
 
 .user-1 {
@@ -276,10 +276,10 @@ a {
     background-color: hsl(217, 28%, 15%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-position: 0 0;
-    padding: 3% 0 10% 0;
+    padding: 3% 0 10%;
     border-radius: 8px;
     text-align: center;
-    margin: -11% 15% 0 15%;
+    margin: -11% 15% 0;
     width: 65%;
 }
 
@@ -334,24 +334,24 @@ a {
 
 /* Footer */
 .footer-container {
-	max-width: 1300px;
-	margin:auto;
+    max-width: 1300px;
+    margin:auto;
 
 }
 
 .footer-row {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
 }
 
 .footer-container ul {
-	list-style: none;
+    list-style: none;
 }
 
 .footer {
-	background-color: hsl(216, 53%, 9%);
-    padding: 25% 0 10% 0;
+    background-color: hsl(216, 53%, 9%);
+    padding: 25% 0 10%;
 }
 
 .footer-col {
@@ -365,12 +365,12 @@ a {
     color: white;
     line-height: 1.5;
     font-size: 16px; 
-	margin-bottom: 35px;
-	position: relative;
+    margin-bottom: 35px;
+    position: relative;
 }
 
 .footer-col ul li:not(:last-child) {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .footer-col ul li a { 
@@ -379,32 +379,32 @@ a {
     color: white;
     line-height: 1.5;
     font-size: 17px; 
-	text-decoration: none;
-	display: block;
-	transition: all 0.3s ease;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-	color: #ffffff;
-	padding-left: 8px;
+    color: #ffffff;
+    padding-left: 8px;
 }
 
 .footer-col .social-links a {
-	display: inline-block;
-	height: 50px;
-	width: 50px;
-	background-color:  hsl(216, 53%, 9%);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color:  hsl(216, 53%, 9%);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
 }
 
 .footer-col .social-links a:hover {
-	color: #24262b;
-	background-color: #ffffff;
+    color: #24262b;
+    background-color: #ffffff;
 }
 
 .footer-logo {
@@ -480,7 +480,7 @@ ion-icon:hover {
     }
 
     .user-testimonial h2{
-        padding: 0rem 15rem 0 0;
+        padding: 0 15rem 0 0;
     }
 
     .btn-secondary {
@@ -498,7 +498,7 @@ ion-icon:hover {
     }
 
     .footer{
-        padding: 50% 0 10% 0;
+        padding: 50% 0 10%;
     }
 }
 
@@ -545,7 +545,7 @@ ion-icon:hover {
     }
 
     .footer{
-        padding: 70% 0 10% 0;
+        padding: 70% 0 10%;
     }
 }
 
@@ -568,7 +568,7 @@ ion-icon:hover {
     }
 
     .footer{
-        padding: 140% 0 10% 0;
+        padding: 140% 0 10%;
     }
 }
 
