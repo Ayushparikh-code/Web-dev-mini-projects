@@ -27,11 +27,6 @@ git clone https://github.com/supzi-del/Web-dev-mini-projects.git
 - Run the index.html file
 - Calculate tip.
 
-<h3> Video </h3> 
-<video controls width="960" alt="tipcalc"> 
-<source src="https://user-images.githubusercontent.com/78655439/121698473-aa680080-caeb-11eb-853f-0ca8177e3b4b.mp4">
-
-</video>
-
+<h3> ScreenShot </h3>
+<img src = "https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/Tip%20Calculator/snap.PNG" />
 <br>
-

@@ -1,7 +1,7 @@
 # FAQ Accordion
 
 ## Description
-A  accordion is a useful way to squeeze lots of page content into a small space. 
+A  accordion is a useful way to squeeze lots of page content into a small space.
 
 ## Use of this Project
 Generally, Frequently Asked Questions (FAQs) section is made with the help of accordion.
@@ -12,6 +12,6 @@ Generally, Frequently Asked Questions (FAQs) section is made with the help of ac
 
 ## ScreenShot
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/khushiP/FAQ%20Application/ScreenShots/ss1.png" /> 
+<img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/FAQ%20Application/ScreenShots/ss1.png" />
 
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/khushiP/FAQ%20Application/ScreenShots/ss2.png" />
+<img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/FAQ%20Application/ScreenShots/ss2.png" />

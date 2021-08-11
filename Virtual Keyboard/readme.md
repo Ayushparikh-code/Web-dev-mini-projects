@@ -27,11 +27,6 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Run the index.html file
 - Start Typing!
 
-<h3> Video Demo </h3>
-
-<video controls width="960" alt="tipcalc"> 
-<source src="https://user-images.githubusercontent.com/78655439/123580889-5736c300-d7f8-11eb-9c45-4642470c6f98.mp4">
-</video>
-
+<h3> Screenshots </h3>
+<img src = "https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/Virtual%20Keyboard/snap.PNG" />
 <br>
-

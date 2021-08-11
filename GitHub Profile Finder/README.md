@@ -13,4 +13,4 @@ By clicking on the username, it will redirect to user github profile.
 https://api.github.com/user/user_name
 
 ## ScreenShot
-<img src="https://github.com/khushi-purwar/Web-dev-mini-projects/blob/dev-khushi/GitHub%20Profile%20Finder/ss.png" />
+<img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/GitHub%20Profile%20Finder/ss.png" />
