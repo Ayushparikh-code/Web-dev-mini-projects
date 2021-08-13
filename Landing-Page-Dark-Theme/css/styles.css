@@ -1,0 +1,585 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* The showcase div consists of the nav bar, the large file picture, the body (.showcase-content),
+ and the blue button (.btn-primary). */
+.showcase {
+    height: 83.75rem;
+    background-color: hsl(217, 28%, 15%);
+    background-image: url('../images/bg-curvy-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.125rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar nav li {
+    font-family: 'Raleway', sans-serif;
+    color: hsl(0, 0%, 100%);
+    padding: 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.navbar nav li:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.showcase-content {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.showcase-content h1{
+    font-weight: 700;
+    padding-top: 1.5625rem;
+    line-height: 1.5;
+}
+
+.showcase-content h2{
+    padding-top: 1.875rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+/* Blue "Get Started" button */
+.btn-primary {
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    background-image: linear-gradient(150deg, #65e2d9, 40%, #339ecc);
+    display: inline-block;
+    border-radius: 3.125rem;
+    padding: 1rem 4.375rem;
+    margin: 1.875rem;
+    border-color: transparent;
+}
+
+.btn-primary:hover {
+    background:  hsl(176, 68%, 64%);
+}
+
+/* The features div consists of the four features offered: file, security, time, and store.*/
+.features-section {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-areas: 
+    "file-feature security-feature"
+    "time-feature store-feature";
+    background-color: hsl(218, 28%, 13%);
+    padding: 0 5rem;
+    gap: 2rem;
+    text-align: center;
+}
+
+.feature-typography h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.feature-typography p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    margin-top: 1rem;
+    line-height: 1.75;
+    font-size: 15px;
+}
+
+.feature-typography img{
+    margin-bottom: 2rem;
+}
+
+.file-feature {
+    grid-area: file-feature;
+}
+
+.security-feature {
+    grid-area: security-feature;
+}
+
+.time-feature {
+    grid-area: time-feature;
+    padding-top: 4rem;
+}
+
+.store-feature {
+    grid-area: store-feature;
+    padding-top: 4rem;
+}
+
+/* The testimonial div consists of where to get more info and user reviews.*/
+.testimonial-section {
+    background-color: hsl(218, 28%, 13%);
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (1, 1fr);
+    grid-template-areas: 
+    "banner testimonial-info";
+    padding: 8rem 0 0 3rem;
+    gap: 1rem;
+    padding-bottom: 3rem;
+}
+
+.testimonial-info h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-top: 3.5em;
+    line-height: 1.5;
+}
+
+.testimonial-info p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 2;
+}
+
+.banner-image {
+    grid-area: banner;
+}
+
+.testimonial-info {
+    grid-area: testimonial-info;
+    text-align: left;
+}
+
+.info-link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(198, 60%, 50%);
+    padding-right: 1rem;
+}
+
+.info-link span {
+    padding-bottom: 7px;
+    border-bottom: 1px solid hsl(198, 60%, 50%);
+    line-height: 48px;
+}
+
+.info-link span:hover {
+    color: hsl(176, 68%, 64%);
+    padding-bottom: 13px;
+    border-bottom: 2px solid hsl(176, 68%, 64%);
+    line-height: 48px;
+    font-weight: 700;
+}
+
+/* Three box grid containing user reviews */
+.user-container {
+    background-color: hsl(218, 28%, 13%);
+    padding-bottom: 20rem;
+    position: relative;
+}
+
+.user-testimonial {
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (1, 1fr);
+    grid-template-areas: 
+    "user-1 user-2 user-3";
+    background-color: hsl(218, 28%, 13%);
+    padding: 6rem 4rem 1rem;
+    gap: 1rem;
+    background-image: url('../images/bg-quotes.png');
+    background-position: top 50px left 40px;
+    background-repeat: no-repeat;
+}
+
+.user-testimonial p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+    font-size: 15px;
+}
+
+.user-testimonial h2 {
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 13px;
+    padding: 0 50% 0 0;
+}
+
+.user-1 {
+    grid-area: user-1;
+    background-color: hsl(219, 30%, 18%);
+    padding: 2rem 1rem;
+    border-radius: 8px;
+
+}
+
+.user-2 {
+    grid-area: user-2;
+    background-color: hsl(219, 30%, 18%);
+    padding: 2rem 1rem;
+    border-radius: 8px;
+
+}
+
+.user-3 {
+    grid-area: user-3;
+    background-color: hsl(219, 30%, 18%);
+    padding: 2rem 1rem;
+    border-radius: 8px;
+}
+
+/* Get started here input box and button*/
+.input-container {
+    background-color: hsl(218, 28%, 13%);
+    background-position-y: 50%;
+    position: relative;
+}
+.early-access {
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-areas: 
+    "input-1";
+    background-color: hsl(217, 28%, 15%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-position: 0 0;
+    padding: 3% 0 10%;
+    border-radius: 8px;
+    text-align: center;
+    margin: -11% 15% 0;
+    width: 65%;
+}
+
+.early-access h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 30px;
+}
+
+.early-access p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    line-height: 1.5;
+    font-size: 15px;  
+    padding-top: 2%; 
+    padding-bottom: 5%;
+}
+
+.btn-secondary {
+    grid-area: input-1;
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    background-image: linear-gradient(150deg, #65e2d9, 40%, #339ecc);
+    display: inline-block;
+    border-radius: 3.125rem;
+    padding: 1rem;
+    width: 23%;
+    margin: 16% 0 30% 65%;
+    border-color: transparent;
+}
+
+.btn-secondary:hover {
+    background:  hsl(176, 68%, 64%);
+}
+
+#input-1 {
+    grid-area: input-1;
+    position: absolute;
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 1rem; 
+    width: 50%;
+    margin: 16% 0 0 5%;  
+    outline: none;
+}
+
+/* Footer */
+.footer-container {
+    max-width: 1300px;
+    margin:auto;
+
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.footer-container ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: hsl(216, 53%, 9%);
+    padding: 25% 0 10%;
+}
+
+.footer-col {
+   width: 17%;
+   padding: 0 10px;
+}
+
+.footer-col h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    line-height: 1.5;
+    font-size: 16px; 
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a { 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    line-height: 1.5;
+    font-size: 17px; 
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color:  hsl(216, 53%, 9%);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.footer-logo {
+    padding-bottom: 4rem;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+ion-icon {
+    font-size: 40px;
+    padding-right: 1rem;
+    color: white;
+}
+
+ion-icon:hover {
+    font-size: 45px;
+}
+
+/* Media queries for responsive components */
+@media (max-width: 750px) {
+    .showcase{
+        width: 100%;
+        height: 50%;
+    }
+
+    .navbar nav {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    .showcase-content img {
+        width: 70%;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .features-section {
+        padding-top: 2rem;
+        grid-template-areas: 
+        "file-feature" 
+        "security-feature"
+        "time-feature" 
+        "store-feature";
+    }
+
+    .feature-typography {
+        padding-top: 2rem;
+    }
+
+    .banner {
+        grid-template-areas: 
+        "banner"
+        "testimonial-info";
+        gap: 0.5rem;
+    }
+
+    .banner-image {
+        width: 80%;
+    }
+
+    .user-testimonial {
+        grid-template-areas: 
+        "user-1"
+        "user-2"
+        "user-3";
+        padding-top: 6rem;
+        background-position: top 50px left 40px;
+    }
+
+    .user-testimonial h2{
+        padding: 0 15rem 0 0;
+    }
+
+    .btn-secondary {
+        margin-top: 50%;
+        margin-left: 65%;
+        width: 25%;
+        font-size: 12px;
+    }
+
+    #input-1 {
+        margin-top: 50%;
+    }
+    .early-access {
+        height: 350px;
+    }
+
+    .footer{
+        padding: 50% 0 10%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .banner {
+        grid-template-areas: 
+        "banner"
+        "testimonial-info";
+        gap: 0.5rem;
+    }
+
+    .user-testimonial {
+        grid-template-areas: 
+        "user-1"
+        "user-2"
+        "user-3";
+        padding-top: 6rem;
+        background-position: top 50px left 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .user-testimonial {
+        grid-template-areas: 
+        "user-1"
+        "user-2"
+        "user-3";
+        padding-left: 1rem;
+        background-position: top 50px left 35px;
+    }
+
+    .btn-secondary {
+        margin-top: 90%;
+        margin-left: 65%;
+        width: 30%;
+        font-size: 10px;
+    }
+
+    #input-1 {
+        margin-top: 90%;
+    }
+    .early-access {
+        height: 400px;
+    }
+
+    .footer{
+        padding: 70% 0 10%;
+    }
+}
+
+@media (max-width: 376px) {
+    .btn-secondary {
+        margin-top: 155%;
+        margin-left: 25%;
+        width: 55%;
+        font-size: 10px;
+    }
+
+    #input-1 {
+        margin-top: 130%;
+        margin-left: 20%;
+        width: 65%;
+    }
+
+    .early-access {
+        height: 450px;
+    }
+
+    .footer{
+        padding: 140% 0 10%;
+    }
+}
+
+@media(max-width: 767px){
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col {
+        width: 100%;
+    }
+}
