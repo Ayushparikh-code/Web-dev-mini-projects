@@ -80,18 +80,6 @@ git push -u origin <your_branch_name>
 
 <br>
 
-
-### Point distribution of LetsGrowMore for this Project
-
-|Level       | Points | Description |
-|------------|--------|-------------|
-| Level 0    | 05      | Fixes |
-| Level 1    | 10     | Fixes         |
-| Level 2    | 15     | Adding Section to already existing file (A section of Readme , HTML, CSS or JS)  |
-| Level 3    | 30     | Adding a major Section to already existing a file (A complete Readme, HTML, CSS or JS) |
-| Level 4    | 45     | Adding complete new project |
-
-
  ## Our valuable Contributors👩‍💻👨‍💻 :
 
 <a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects/graphs/contributors">
