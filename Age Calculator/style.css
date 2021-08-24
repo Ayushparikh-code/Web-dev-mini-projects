@@ -1,9 +1,10 @@
 *{
     margin:0;
     padding:0;
-   box-sizing:border-box;
-   font-family:cursive;
+    box-sizing:border-box;
+    font-family:cursive;
 }
+
 .container{
     display:flex;
     width:600px;
@@ -16,37 +17,41 @@
     background-color:darkslateblue;
     box-shadow:8px 8px black;
     color:white;
-   padding:5% 0%;
+    padding:5% 0%;
 }
+
 #currDate{
     font-size:40px;
     margin:20px;
     font-weight:bold;
 }
+
 input{
     font-size:20px;
     padding:15px;
     margin:20px;
-   text-align:center;
+    text-align:center;
     border-radius:20px;
     border:1px solid yellow;
     cursor:pointer;
 }
+
 button{
     font-size:20px;
     padding:10px 20px;
     border-radius:10px;
     border:none;
     background-color:yellow;
-color:black;
-margin:20px;
-text-transform: uppercase;
-font-weight:bold;
-cursor:pointer;
+    color:black;
+    margin:20px;
+    text-transform: uppercase;
+    font-weight:bold;
+    cursor:pointer;
 }
+
 button:hover{
     background-color:white;
-color:blue;
+    color:blue;
 }
 
 #displayAge{
@@ -60,8 +65,9 @@ color:blue;
     position:absolute;
     top:19%;
     left:30%;
-  visibility: hidden;
+    visibility: hidden;
 }
+
 #age{
     color:white;
     font-size:50px;
