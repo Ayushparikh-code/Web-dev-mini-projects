@@ -15,7 +15,7 @@
   .fab {
     cursor: pointer;
     margin: 20px 70px;
-    border-radius: 40% 40% 40% 40%;
+    border-radius: 40%;
     padding: 10px 20px;
     /* border: 2px solid saddlebrown; */
     font-size: 100px;
