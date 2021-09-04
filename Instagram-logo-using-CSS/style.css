@@ -20,7 +20,7 @@ body{
     border-radius: 35px;
     display: grid;
     place-items: center;
-    filter: drop-shadow(0 0mm 2em rgb(160, 144, 144));
+    filter: drop-shadow(0 0 2em rgb(160, 144, 144));
     animation: updown 1s infinite alternate;
 }
 @keyframes updown {
