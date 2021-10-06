@@ -69,13 +69,7 @@ div * {
     z-index: 1;
 }
 
-.gamecell:hover {
-    color: #fff;
-    background: rgba(37, 88, 228, 0.712);
-    z-index: 2;
-    transform: translate(10px, -10px);
-    animation: neonBlueText 1.5s ease-in-out infinite alternate;
-}
+
 
 .grey {
     background: rgba(128, 128, 128, 0.801);
