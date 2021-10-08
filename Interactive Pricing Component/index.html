@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/AE-web-logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
+  <link href="style.css" rel="stylesheet">
+
+  <title>AE | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container head-container">
+    <h1 id="head">Simple, traffic-based pricing</h1>
+    <p class="lead head-text">Sign-up for our 30-day trial. No credit card required.</p>
+  </div>
+  <div class="container">
+    <div class="card">
+      <div class="row mb-4">
+        <div class="col pageview text-uppercase">
+          <p class="font-weight-bold">100K Pageviews</p>
+        </div>
+        <div class="col month">
+          <p>$ <span id="op"></span> /month</p>
+        </div>
+      </div>
+      <div class="rangecontainer mb-4">
+        <input type="range" min="1" max="100" value="1" class="range rounded-circle" id="myRange">
+      </div>
+      <div class="switch-inline">
+        <span class="text-a mr-2">Monthly Billing</span>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <span class="text-b ml-2">Yearly Billing <span class="discount ml-2">25% discount</span></span>
+      </div>
+      <div class="section mt-4">
+        <div class="row">
+          <div class="col sectiona">
+            <ul class="list-group">
+              <li class="list-group-item borderless"><span class="icon"></span> Unlimited websites</li>
+              <li class="list-group-item borderless"><span class="icon"></span> 100% data ownership</li>
+              <li class="list-group-item borderless"><span class="icon"></span> Email reports</li>
+            </ul>
+          </div>
+          <div class="col sectionb">
+            <a class="btn" href="#" role="button">Start my trial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 
+
+  Unlimited websites
+  100% data ownership
+  Email reports
+
+  Start my trial -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ahsan Ehtesham</a>.
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
+<script>
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("op");
+  output.innerHTML = slider.value; // Display the default slider value
+
+  // Update the current slider value (each time you drag the slider handle)
+  slider.oninput = function () {
+    output.innerHTML = this.value;
+  }
+  slider.addEventListener("mousemove", function () {
+    var x = slider.value;
+    var color = 'linear-gradient(90deg, hsl(174, 77%, 80%)' + x + '%, hsl(224, 65%, 95%)' + x + '%)';
+    slider.style.background = color;
+  })
+</script>
+
+</html>
