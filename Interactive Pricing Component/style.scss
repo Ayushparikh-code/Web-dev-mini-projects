@@ -53,15 +53,16 @@ body {
   }
 }
 
-.pageview,.month{
-    color: $GrayishBlue;
+.pageview,
+.month {
+  color: $GrayishBlue;
 }
 
-#op{
-    color: $DarkDesaturatedBlue;
-    font-weight: bold;
-    font-size: x-large;
-    overflow: auto;
+#op {
+  color: $DarkDesaturatedBlue;
+  font-weight: bold;
+  font-size: x-large;
+  overflow: auto;
 }
 
 .card {
@@ -98,7 +99,7 @@ body {
     height: 40px;
     border-radius: 50%;
     background: $StrongCyan url("./images/icon-slider.svg") no-repeat center;
-    box-shadow: 0px 4px 5px $StrongCyan;
+    box-shadow: 0 4px 5px $StrongCyan;
     cursor: pointer; /* Cursor on hover */
   }
   .range::-moz-range-thumb {
@@ -106,7 +107,7 @@ body {
     height: 40px;
     border-radius: 50%;
     background: $StrongCyan url("./images/icon-slider.svg") no-repeat center;
-    box-shadow: 0px 4px 5px $StrongCyan;
+    box-shadow: 0 4px 5px $StrongCyan;
     cursor: pointer; /* Cursor on hover */
   }
 }
@@ -189,7 +190,7 @@ input:checked + .slider:before {
 .sectiona {
   margin-left: 50px;
   margin-right: auto;
-  text-align:left;
+  text-align: left;
   color: $GrayishBlue;
 }
 .sectionb {
@@ -199,8 +200,8 @@ input:checked + .slider:before {
   margin-right: 50px;
 }
 li.borderless {
-    border: 0 none;
-  }
+  border: 0 none;
+}
 .icon {
   background: url("./images/icon-check.svg") no-repeat;
   height: 9px;
@@ -210,10 +211,10 @@ li.borderless {
   align-self: center;
 }
 
-.btn{
-    background: $DarkDesaturatedBlue;
-    color: $LightGrayishBlue2;
-    border-radius: 50px;
-    width: 175px;
-    height: 40px;
+.btn {
+  background: $DarkDesaturatedBlue;
+  color: $LightGrayishBlue2;
+  border-radius: 50px;
+  width: 175px;
+  height: 40px;
 }
