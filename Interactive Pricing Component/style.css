@@ -94,8 +94,8 @@ body {
   height: 40px;
   border-radius: 50%;
   background: #10d5c2 url("./images/icon-slider.svg") no-repeat center;
-  -webkit-box-shadow: 0px 4px 5px #10d5c2;
-          box-shadow: 0px 4px 5px #10d5c2;
+  -webkit-box-shadow: 0 4px 5px #10d5c2;
+          box-shadow: 0 4px 5px #10d5c2;
   cursor: pointer;
   /* Cursor on hover */
 }
@@ -105,7 +105,7 @@ body {
   height: 40px;
   border-radius: 50%;
   background: #10d5c2 url("./images/icon-slider.svg") no-repeat center;
-  box-shadow: 0px 4px 5px #10d5c2;
+  box-shadow: 0 4px 5px #10d5c2;
   cursor: pointer;
   /* Cursor on hover */
 }
