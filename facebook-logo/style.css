@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:black;
+
+}
+.container{
+    height: 430px;
+    width: 430px;
+    background: #3358a1;
+    border-radius: 10%;
+    filter: drop-shadow(0 0 2em #4f5155);
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 515px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    left: 44%;
+    top: -90.5%;
+
+}
