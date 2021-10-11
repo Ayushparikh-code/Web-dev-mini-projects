@@ -14,4 +14,5 @@ Run the index.html file
 
 Output
 <img src="https://github.com/PaarthAgarwal/Web-dev-mini-projects/blob/main/Museum%20of%20Candies/first.png" >
-<img src="https://github.com/PaarthAgarwal/Web-dev-mini-projects/blob/main/Museum%20of%20Candies/second.png >
+
+<img src="https://github.com/PaarthAgarwal/Web-dev-mini-projects/blob/main/Museum%20of%20Candies/second.png" >
