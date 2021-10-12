@@ -142,3 +142,4 @@
 |[lcm-hcf-calculator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/lcm-hcf-calculator)                                   |HCF and LCM calculator finds the highest common factor and lowest common multiple for the given numbers.
 |[Guitar](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Guitar)| A webapp that plays basic sounds of guitar
 |[Interactive Pricing Component](https://github.com/Ahsan-Ehtesham/Web-dev-mini-projects/tree/ahsan/Interactive%20Pricing%20Component)| Interactive Pricing Component using HTML, CSS and JS
+|[Typing champ](https://github.com/FaizaAbdullah-code/Web-dev-mini-projects/tree/faiza/Typing-champ)| One page website for speed checking using HTML, CSS and JS.
