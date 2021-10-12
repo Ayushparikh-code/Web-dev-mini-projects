@@ -1,0 +1,71 @@
+body{
+   background-color: black;
+}    
+
+#head{
+    text-align: center;
+    background-color:crimson;
+    color:black;
+}
+#label{
+    height: 35px;
+    width: 500px;
+}
+
+
+
+#para{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+#number{
+    font-size: 30px;
+    color: crimson;
+}
+#currentword{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+#label{
+    margin: o auto;
+}
+#timer{
+
+    font-size: 30px;
+    color:white;   
+    text-align: center;
+}
+#sc{
+
+    font-size: 30px;
+    color: white;
+    
+    text-align: center;
+}
+#ins{
+    color:black;
+    text-align: center;
+    font-size: large;
+}
+#p{
+    color:black;
+    text-align: center;
+}
+.instruction{
+    margin: auto;
+    text-align: center;
+    width: 420px;
+    height: 100px;
+    background-color: gray;
+}
+#message{
+    color: red;
+}
+#time{
+    color: crimson;
+}
+#score{
+    color: crimson;
+}
