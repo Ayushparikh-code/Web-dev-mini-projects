@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Questrial|
+    Ephesis|Architects Daughter&effect=fire">
+    <link rel=stylesheet href="style.css">
+</head>
+
+<body>
+    <main>
+        <!--Loading animation-->
+        <section id="loading_animation">
+            <div class="book">
+                <span class="page turn"></span>
+                <span class="page turn">Please</span>
+                <span class="page turn">Wait</span>
+                <span class="page turn">While</span>
+                <span class="page turn"></span>
+                <span class="page turn">We Load...</span>
+                <span class="cover"></span>
+                <span class="page"></span>
+                <span class="cover turn"></span>
+            </div>
+        </section>
+        <!--NAV BAR SECTION -->
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><i class="bi bi-file-earmark-word-fill"></i>&nbsp WORDICTIONARY</a>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-outline-warning" id="bookmark_btn"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight">
+                                    Bookmarks</button>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--OFFCANVAS style to show bookmarked word list-->
+            <div class=" mobile-offcanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <br><br>
+                    <h4 id="offcanvasRightLabel">BOOKMARKED WORDS</h4>
+                    <br><br>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul id="bookmarked_words_element">
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section>
+            <h1 id="site_name"><i class="bi bi-file-earmark-word-fill"></i>&nbsp WORDICTIONARY</h1>
+        </section>
+        <br><br>
+        <!---QUOTE -->
+        <section>
+
+            <div class=" card quote_box ">
+                <div class=" card_body">
+
+                    <blockquote class="blockquote mb-0">
+                        <p id="quote">Loading quote.</p>
+                        <cite id="author" title="Source Title">Server</cite>
+                    </blockquote>
+                </div>
+            </div>
+
+        </section>
+        <br><br>
+        <!---WORD SEARCH-->
+        <section>
+            <div class="hstack gap-3">
+                <input class="form-control me-auto" id="search_word" type="text" placeholder="Search your word here..."
+                    aria-label="Add your item here...">
+                <button type="button" class="btn btn-outline-success" id="search_btn">Search</button>
+
+                <button type="button" class="btn btn-outline-danger" id="reset_btn">Reset</button>
+            </div> <br><br>
+            <div id="word_result_div">
+                <!--if no word searched-->
+                <div aria-live="polite" aria-atomic="true" class="bg-dark position-relative bd-example-toasts">
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3 " id="toastPlacement">
+                        <div class="toast" id="liveToast">
+                            <div class="toast-header">
+                                <i class="bi bi-file-earmark-word-fill"></i>&nbsp&nbsp
+                                <strong class="me-auto">WORDICTIONARY</strong>
+
+                            </div>
+                            <div class="toast-body">
+                                <b>ERROR:</b> <i>Please type the word to be searched...</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--card to be displayed if  a word is given in input-->
+                <div class="card" id="show_result" style="width: 25rem;">
+                    <div class="card-body">
+                        <button type="button" id="bookmark_icon"><i class="bi bi-bookmark " style=" font-size:
+                                02rem;"></i></button>
+                        <h5 class="card-title" id="card_title">Word searched</h5><br>
+
+
+                        <span class="card-text" id="word_pronounciation" title="phonetics:text">Word pronounciation
+                            &nbsp
+                            &nbsp
+                            &nbsp
+                            &nbsp
+                            &nbsp
+                            &nbsp
+                            &nbsp
+                        </span>
+                        <button type="button" id="audio_btn" title="phonetics:audio"><i class="bi bi-volume-down"
+                                style="font-size: 3rem;"></i><audio id="word_audio">
+                                <source src="" id="word_audio_source" type="audio/ogg">
+                                <source src="" id="word_audio_source" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio></button><br>
+
+                        <p class="card-text" id="word_meaning">Word meaning<br></p>
+                        <p class="card-text" id="word_example">word_example</p><br>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <!--section for recent searches-->
+        <section id="word_history_section">
+            <h1 id="recent_search_title">RECENT SEARCHES</h1><br><br>
+            <div id="recently_searched" class="row container-fluid">
+            </div>
+
+        </section>
+
+    </main><br><br><br><br><br><br><br>
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 footer-info">
+                        <h2>About Developer</h2>
+                        <br>
+                        <h3>Yash Barjatya</h3><br>
+                        <p>A tireless seeker of knowledge and a budding web developer who loves experimenting with HTML,
+                            CSS, and JavaScript.</p>
+                    </div>
+                    <div class="col-lg-5"></div>
+                    <div class="col-lg-3 col-md-8 footer-contact">
+                        <h2>My Handles</h2><br>
+                        <div class="social-links">
+                            <tr>
+
+                                <a target="_blank" href="mailto:yashbarjatya11@gmail.com"><i
+                                        class="fa fa-envelope fa-2x" aria-hidden="true"></i></i></a>
+
+                                <a href="https://github.com/Yash-Barjatya" target="_blank"><i class="fa fa-github fa-2x"
+                                        aria-hidden="true"></i></i></a>
+
+
+                                <a href="https://in.linkedin.com/in/yash-barjatya-075a95205" target="_blank"><i
+                                        class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+
+
+                                <a href="https://www.instagram.com/__yash__barjatya/?hl=en" target="_blank"><i
+                                        class="fa fa-instagram fa-2x " aria-hidden="true"></i></a>
+
+
+
+                                <a href="https://twitter.com/YBarJain" target="_blank"><i class="fa fa-twitter fa-2x"
+                                        aria-hidden="true"></i></a>
+
+
+
+
+                                <a href="https://www.facebook.com/YBarJain" target="_blank"><i
+                                        class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+
+
+                            </tr>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; Copyright <strong>Yash-Barjatya</strong>. All Rights Reserved</p>
+            </div>
+    </footer><!-- End Footer -->
+
+    <button type="button" class="btn btn-warning btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<script src="script.js"></script>
+
+</html>
