@@ -115,11 +115,11 @@ body {
   grid-column-gap: 20px;
   overflow: hidden;
 
-  display: flex;
+
   /* 
   justify-content: center;
   align-items: center; */
-  flex-wrap: wrap;
+/*   flex-wrap: wrap; */
 }
 .set > .drum{
   /* flex-basis: 100%; */
