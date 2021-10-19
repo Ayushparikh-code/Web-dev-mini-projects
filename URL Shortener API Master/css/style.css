@@ -19,7 +19,7 @@
 }
 
 body{
-  padding: 0rem;
+  padding: 0;
   max-width: 1440px;
   margin: auto;
 }
@@ -42,7 +42,7 @@ body{
   height: 4px;
   width: 1.5rem;
   background-color: black;
-  margin: 5px 0px;
+  margin: 5px 0;
   transition: 0.2s;
 }
 
@@ -62,14 +62,14 @@ body{
 /* /////////////////////////////////////////// Navlist //////////////////////////////////////////////*/
 
 .navlist{
-  margin: 0rem auto 0rem 0rem; 
+  margin: 0 auto 0 0; 
   display: flex;
   margin-top: 0;
 }
 
 .listItem{
   list-style: none;
-  padding: 0rem 1rem;
+  padding: 0 1rem;
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--nuetralGray);
@@ -166,25 +166,25 @@ body{
 .header{
   display: flex;
   margin: 2rem 4rem;
-  padding: 1rem 0rem;
+  padding: 1rem 0;
 }
 
 .content h1{
   font-size: 4.8rem;
   line-height: 99px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-weight: 700;
   color: var(--veryDarkBlue);
   letter-spacing: -4px;
 }
 
 .content {
-  padding: 0rem 4rem;
+  padding: 0 4rem;
 }
 
 .content p{
   color: var(--grayishViolet);
-  padding: 0rem 3rem 0rem 0rem;
+  padding: 0 3rem 0 0;
   font-size: 1.3rem;
 }
 
@@ -194,7 +194,6 @@ body{
 
 .getStarted{
   cursor: pointer;  
-  padding: 0.2rem 1.4rem;
   margin: 0.3rem;
    background-color: var(--primaryCyan);
    border-radius: 30px;
@@ -218,7 +217,7 @@ body{
    .header{
      flex-wrap: wrap-reverse;
      justify-content: center;
-     margin: 2rem 2rem;
+     margin: 2rem;
    }
    .illustration{
      margin-right: 0;
@@ -233,7 +232,7 @@ body{
     width: 20rem;
   }
   .content{
-    padding: 0rem;
+    padding: 0;
   }
   .content h1{
     font-size: 2.7rem;
@@ -247,7 +246,7 @@ body{
 /* /////////////////////////////////////////// Shortened Link //////////////////////////////////////////////////////*/
 
 .formContainer{
-  background-color:rgb(240,241,246);;
+  background-color:rgb(240,241,246);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,7 +305,6 @@ body{
 .submit{
   position: relative;
   cursor: pointer;  
-  padding: 0.2rem 1.4rem;
   margin: 0.3rem;
    background-color: var(--primaryCyan);
    border-radius: 10px;
@@ -352,7 +350,6 @@ body{
 
 .copyLink{
   cursor: pointer;  
-  padding: 0.2rem 1.4rem;
   margin: 0.3rem;
    background-color: var(--primaryCyan);
    border-radius: 10px;
@@ -385,7 +382,7 @@ body{
 
   .form{
     flex-direction: column;
-    padding: 1.2rem 0rem;
+    padding: 1.2rem 0;
     margin-left: 0.2rem;
     margin-right: 0.2rem;
     width: 90%;
@@ -393,19 +390,17 @@ body{
 
   .wrapper{
     position: relative;
-  }
-
-  .wrapper{
     flex-direction: column;
   }
+
 
   .wrongLinkText{
     bottom: 30%;
   }
 
   .submit{
-     padding: 1rem 0rem;
-     width: 70%;
+     padding: 1rem 0;
+     width: 88%;
   }
 
   .shortenedLink{
@@ -414,12 +409,12 @@ body{
   }
 
   .linkItems{
-    margin: 0.3rem 0rem;
+    margin-top: 0.3rem 0;
   }
 
   .copyLink{
     width: 100%;
-    margin: 0.5rem 0rem;
+    margin: 0.5rem 0;
   }
 
   .default{
@@ -427,9 +422,6 @@ body{
     margin: 1.4rem;
   }
 
-  .submit{
-    width: 88%;
-  }
   .originalLink{
     max-width: 300px;
   }
@@ -444,7 +436,10 @@ body{
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin: 4rem 0rem 2rem 0rem;
+  margin-top: 4rem;
+  margin-right: 0;
+  margin-bottom: 2rem;
+  margin-left: 0;
 }
 
 .infoContainer h2{
@@ -469,7 +464,7 @@ body{
    background-image: url(/images/line.png);
    background-position: center;
    background-size: contain;
-   margin: 0rem 2rem;
+   margin: 0 2rem;
 }  
 
 .icon{
@@ -487,7 +482,6 @@ body{
 .cards{
   background-color: white;
   padding: 2.5rem 2rem;
-  width: 20rem;
   border-radius: 10px;
   margin: 3rem 1rem;
   width: 100%;
@@ -531,7 +525,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 3rem 0rem;
+    margin: 3rem 0;
   }
   
 }
@@ -544,7 +538,7 @@ body{
     background-image: url(/images/verticalLineMobile.png);
     background-size:contain;
     background-repeat: no-repeat;
-    background-position-x: 0px;
+    background-position-x: 0;
   }
 
 }
@@ -567,7 +561,10 @@ body{
 }
 
 .advert .getStarted{
-   margin: 0.6rem 0rem 2.2rem 0rem ;
+  margin-top: 0.6rem;
+  margin-right: 0;
+  margin-bottom: 2.2rem;
+  margin-left: 0;
 }
 
 /* Media Query for handling advert */
@@ -576,7 +573,10 @@ body{
     .advert h2{
       text-align: center;
       font-size: 1.5rem;
-      margin: 5rem 0rem 0rem 0rem;
+      margin-top: 5rem;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     .advert .getStarted{
@@ -653,7 +653,7 @@ body{
    }
 
    .footerList{
-     padding: 0rem 3rem;
+     padding: 0 3rem;
    }
 }
 
@@ -668,7 +668,7 @@ body{
 
 .fListItem:first-child{
   font-weight: 700;
-  margin: 2rem 0rem;
+  margin: 2rem 0;
 }
 
 

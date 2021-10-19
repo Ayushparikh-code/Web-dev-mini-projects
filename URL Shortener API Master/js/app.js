@@ -1,15 +1,11 @@
-//To do - 
-// 1. To make the error message on empty link
-
-
+//Running the generate element function to generate all the shortened links stored in local storage
 generateElement();
 
-//Function to trigger hamburger Icon
-function handler(element){
+document.querySelector('.hamburgerIcon').addEventListener('click',()=>{
    element.classList.toggle('change');
    let navbar = document.querySelector('.navbar');
    navbar.classList.toggle('show');
-}
+});
 
 //Function to handle form submission
 let shortenBtn = document.getElementById('shorten');
@@ -89,7 +85,7 @@ function generateElement(){
       html+=`<div class="shortenedLink">
       <a href="${shortenedLinksArray[i].opLink}" class="originalLink linkItems" target="__blank">${shortenedLinksArray[i].opLink}</a>
       <a href="${shortenedLinksArray[i].shortLink}" class="shortened linkItems" target="__blank">${shortenedLinksArray[i].shortLink}</a>
-      <button class="copyLink linkItems" onclick="copyShortenedLink(this.parentElement,this)">Copy</button>
+      <button class="copyLink linkItems">Copy</button>
     </div>`
    }
    document.querySelector('.linksContainer').innerHTML = html;
@@ -107,6 +103,14 @@ function clipboard(linkToBeCopied){
    document.execCommand('copy');
    document.body.removeChild(textArea);
 }
+
+//Function to add event listener to copy links button
+document.body.addEventListener('click',function(event){
+   let target = event.target;
+   if(target.nodeName === "BUTTON" && /copyLink/.test(target.className)){
+      copyShortenedLink(target.parentElement,target);      
+   }
+})
 
 //Function to handle copy and paste operations
 function copyShortenedLink(parentElement,element){
