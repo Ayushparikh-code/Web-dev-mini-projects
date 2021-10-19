@@ -1,4 +1,4 @@
-# Neumorphism Simple calculator D-vers-1
+# CSS_loading-Animation-D-vers-1
 
 ## 💻Tech Stack
 
@@ -28,7 +28,7 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 # Screenshot
 
-![screenshot](cal-demo.png)
+![screenshot](loading-demo.png)
 
 <br>
 
