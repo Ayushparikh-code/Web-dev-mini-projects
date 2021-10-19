@@ -612,7 +612,7 @@ body{
 }
 
 .fListItem{
-  margin: 0.4rem 0rem;
+  margin: 0.4rem 0;
 }
 
 .fListItem:hover{
