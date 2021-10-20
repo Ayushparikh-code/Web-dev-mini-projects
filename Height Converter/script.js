@@ -60,7 +60,7 @@ function heightConverter() {
     } else if (firOpt == "Kilometers" && secOpt == "Inches") {
         finalOutput.innerHTML = height * 39370;
     }
-    //Validates for Milligram
+    //Validates for Meters
     else if (firOpt == "Meters" && secOpt == "Miles") {
         finalOutput.innerHTML = height / 1609;
     } else if (firOpt == "Meters" && secOpt == "Kilometers") {
