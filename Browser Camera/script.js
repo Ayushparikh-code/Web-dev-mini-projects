@@ -34,7 +34,7 @@ navigator.mediaDevices
         mediaRecorder.addEventListener('dataavailable', function (e) {
             buffer.push(e.data);
         });
-        mediaRecorder.addEventListener('stop', function (e) {
+        mediaRecorder.addEventListener('stop', function () {
             let blob = new Blob(buffer, { type: "video/mp4" });
             const url = window.URL.createObjectURL(blob);
             let a = document.createElement("a");

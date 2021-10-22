@@ -1,7 +1,7 @@
 let request = indexedDB.open("camera", 1);
 let db;
 
-request.onsuccess = function (e) {
+request.onsuccess = function () {
     //  if exist then will get db from here 
     db = request.result;
 }
@@ -15,7 +15,7 @@ request.onupgradeneeded = function () {
     db.createObjectStore("videos", { keyPath: "mid" });
 }
 
-function addMediaToDB(data, table) {
+/* function addMediaToDB(data, table) {
     if (db) {
         // you need to get transaction
         let tx = db.transaction(table, "readwrite");
@@ -27,4 +27,4 @@ function addMediaToDB(data, table) {
     } else {
         alert("db is loading")
     }
-}
+} */

@@ -127,13 +127,13 @@ video {
     border-radius: 50%;
     background-color: #00000000;
     border: white solid 5px;
-    margin: 10px 5px 10px 5px;
+    margin: 10px 5px;
 }
 
 #record-video, #click-image {
     height: 45px;
     width: 45px;
-    margin: 5px 5px 5px 5px;
+    margin: 5px;
     border-radius: 50%;
     border: #00000000 solid 1px;
     font-size: 0.65rem;
