@@ -142,7 +142,7 @@ function createNotes(data) {
 
     let color = node.querySelector(".note-color");
     color.style.backgroundColor = colorsArr[chosenPriority];
-    color.addEventListener('click', function (e) {
+    color.addEventListener('click', function () {
         let colorName = color.getAttribute('color');
         let colorIdx = getColorIdx(colorName);
         color.style.backgroundColor = colorsArr[(colorIdx + 1) % 4];
@@ -152,7 +152,7 @@ function createNotes(data) {
     // filterTasksByColor(false, color.getAttribute('color'));
 
     let colorHead = node.querySelector(".note-uid");
-    colorHead.addEventListener('click', function (e) {
+    colorHead.addEventListener('click', function () {
         if (deleteStatus) {
             node.remove();
         }
