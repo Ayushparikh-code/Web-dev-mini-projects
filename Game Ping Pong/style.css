@@ -25,10 +25,10 @@
 
 #rod1 {
     background-color: blue;
-    top: 0px;    
+    top: 1px;    
 }
 
 #rod2 {
     background-color: blueviolet;
-    bottom: 0px;
+    bottom: 1px;
 }
