@@ -1,0 +1,38 @@
+.heading,.event,.heading{
+    justify-content: center;
+  }
+
+.btn{
+    align-items: "center";
+}
+  .heading,.ContactHeading,.evemt{
+      text-align: center;
+  }
+
+.event{
+    padding: 4vw;
+}  
+.UpEvent{
+    margin: 5vw;
+}
+.row{
+    margin: 1vw;
+}
+.upcomingimg,.card-text{
+    justify-content: center;
+    max-width: 30vw;
+    max-height: 30vw;
+}
+
+.contactform{
+    margin: 10vw;
+}
+
+.form-control{
+    border: 1px solid black;
+}
+
+.card{
+    border: none;
+}
+.select::-ms-expand { display: block; }
