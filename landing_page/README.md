@@ -1,3 +1,9 @@
+PROJECT TITLE: Landing page React
+DESCRIPTION: A basic landing page using React JS
+STACK: React JS
+OUTPUT: Landing page
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

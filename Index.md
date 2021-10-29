@@ -17,6 +17,10 @@
 
 | Project                                                                                                                          | Description                                                                                                                                                                                                                          |
 | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+| [Landing Page Reacr](https://github.com/FaizaAbdullah-code/Web-dev-mini-projects/tree/faizaabdullah/landing_page) | A basic Landing Page using React JS
+
+
 | [Basic Background Generator](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Basic%20Background%20Generator) | A basic gradient Background Generator which allows you to create a background by selecting your required colors                                                                                                                      |
 | [Calculator App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/CALCULATOR)                                 | Simple Calculator App written in HTML, CSS, and JavaScript                                                                                                                                                                           |
 | [Cat Generator App](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/CAT%20GENERATOR%20APP)                   | This web app allows you to generate cats as many you want                                                                                                                                                                            |
