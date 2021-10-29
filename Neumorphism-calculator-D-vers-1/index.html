@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator | D-vers </title>
+</head>
+<body>
+
+<div class="container align-center">
+  <div class="grid calculator">
+    <input type="text" id="output-screen" readonly placeholder="0"/>
+    <button class="text-color" onclick="allClear()">C</button>
+    <button class="text-color" onclick="del()">DEL</button>
+    <button class="text-color" onclick="display('%')">%</button>
+    <button class="text-color" onclick="display('/')">&#247</button>
+    <button onclick="display(7)">7</button>
+    <button onclick="display(8)">8</button>
+    <button onclick="display(9)">9</button>
+    <button class="text-color" onclick="display('*')">x</button>
+    <button onclick="display(4)">4</button>
+    <button onclick="display(5)">5</button>
+    <button onclick="display(6)">6</button>
+    <button class="text-color" onclick="display('-')">-</button>
+    <button onclick="display(1)">1</button>
+    <button onclick="display(2)">2</button>
+    <button onclick="display(3)">3</button>
+    <button class="text-color" onclick="display('+')">+</button>
+    <button onclick="display('.')">.</button>
+    <button onclick="display(0)">0</button>
+    <button class="equal-to" onclick="calculate()">=</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

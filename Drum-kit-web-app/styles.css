@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background: rgb(216, 255, 0);
+  background: linear-gradient(90deg, rgba(216, 255, 0, 1) 0%, rgba(147, 14, 255, 1) 49%, rgba(18, 255, 0, 1) 100%);
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.all {
+  position: relative;
+  width: 100%;
+}
+
+
+.all::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.4;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background-image: url(images/2033.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  padding-top: 50px;
+  font-size: 5rem;
+  color: #17ff00;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+  animation-name: liting;
+  animation-duration: .4s;
+  animation-iteration-count: infinite;
+}
+
+/* @media only screen and (max-width:400px) {
+  #title{
+    font-size: 3rem;
+  }
+} */
+
+@keyframes liting {
+  0% {
+    color: #17ff00;
+    text-shadow: 3px 3px 0 #DA0463;
+  }
+
+  100% {
+    color: #fffb00;
+    text-shadow: 3px 3px 0 #08dbd1;
+  }
+}
+
+
+#title:hover {
+  text-shadow: 3px 0 #08dbd1;
+}
+
+
+.w {
+  background-image: url(images/tom1.png);
+}
+
+.a {
+  background-image: url(images/tom2.png);
+
+}
+
+.s {
+  background-image: url(images/tom3.png);
+}
+
+
+.d {
+  background-image: url(images/tom3.png);
+}
+
+
+.j {
+  background-image: url(images/kick.png);
+
+}
+
+.k {
+  background-image: url(images/crash.png);
+
+}
+
+.l {
+  background-image: url(images/snare.png);
+
+}
+
+.set {
+  margin: 10% 4%;
+  outline: none;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-column-gap: 20px;
+  overflow: hidden;
+
+
+  /* 
+  justify-content: center;
+  align-items: center; */
+/*   flex-wrap: wrap; */
+}
+.set > .drum{
+  /* flex-basis: 100%; */
+  flex:1 1 15%;
+}
+
+
+button .pressed {
+  box-shadow: 0 3px 4px 0 #f80303;
+  opacity: 0.5;
+  outline: none;
+}
+
+
+.drum {
+  outline: none;
+  border: 10px solid rgba(217, 255, 0, 0.61);
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  min-width: 100px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  transition: all .5s ease-in-out;
+  /* animation-name: liting-2; */
+  
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+
+}
+
+@keyframes liting-2 {
+  0% {
+    color: #17ff00;
+    border: 10px solid rgba(0, 255, 0, 0.61);
+  }
+
+  100% {
+    color: #fffb00;
+    border: 10px solid rgba(217, 255, 0, 0.61);
+  }
+}
+
+
+
+.drum:hover {
+  cursor: grab;
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}

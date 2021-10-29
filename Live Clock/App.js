@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     alignItems:"center",
     flex: 1,
     paddingTop: Constants.statusBarHeight,
-    backgroundColor: '#ecf0f1',
+    backgroundColor: '#fdf3f9', //#ecf0f1 old color
     padding: 8,
     color:"red"
   },

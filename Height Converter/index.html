@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Height Convertor</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-6 offset-sm-6 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+                <h1 class="display-4 text-center mb-3" style="color:brown;font-weight:bold;font-family:Cambria">Height Convertor</h1>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <form id='mainForm'>
+                            <div class="form-group">
+                                <input id="heightInput" type="number" class="form-control" class="form-control-lg" placeholder="Enter Height...">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-4">
+                        <select class="form-control" id="firOpt">
+                    <option selected>Select an Option</option>
+                    <option>Centimeters</option>                    
+                    <option>Inches</option>
+                    <option>Meters</option>
+                    <option>Kilometers</option>
+                    <option>Miles</option>
+                  </select>
+                    </div>
+                    <div class="col-sm-1">-</div>
+                    <div class="col-sm-3">
+                        <select class="form-control" id="secOpt">
+                      <option selected>Select</option>
+                      <option>Miles</option>
+                      <option>Centimeters</option>
+                      <option>Meters</option>
+                      <option>Kilometers</option>
+                      <option>Inches</option>
+                  </select>
+                    </div>
+                </div>
+                <div id="output" class="row">
+                    <div class="col-sm-5">
+                        <div class="card">
+                            <div class="card-block card-primary">
+                                <h3 id="heightName" class="card-title"></h3>
+                                <p id="heightOutput" class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="card">
+                            <div class="card-block card-danger">
+                                <h3 id="convertedHeightName" class="card-title"></h3>
+                                <p id="finalOutput" class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button id="resetButton" type="button" class="btn btn-outline-warning">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

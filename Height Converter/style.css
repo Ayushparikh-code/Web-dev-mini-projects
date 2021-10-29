@@ -1,0 +1,17 @@
+body {
+    margin-top: 29px;
+    background: lightgrey;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    margin-top: 11px;
+    background: red;
+}
+
+#resetButton {
+    margin: 21px;
+    background: grey;
+}
