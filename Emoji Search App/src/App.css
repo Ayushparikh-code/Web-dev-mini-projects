@@ -1,0 +1,138 @@
+.emojiCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 170px;
+  height: 170px
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-family: serif;
+}
+.noMatches {
+  width: 100vw;
+}
+.navbar-nav, .nav-item {
+  display: inline-block;
+}
+.nav-link {
+  cursor: pointer;
+}
+.nav-item {
+  margin: 5px;
+}
+.heading {
+  text-align: center;
+  color: white;
+  margin-top: 2.5em;
+}
+p {
+  font-size: initial;
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+  left: 4px;
+  padding: 4px !important;
+  border-radius: 5px 5px 5px 5px;
+  font-weight: bolder;
+  background-color: rgba(0, 119, 255, .2);
+  color: #07f;
+}
+.modal-body {
+  text-align: center;
+}
+.card {
+  cursor: pointer;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+  background-color: rgb(39, 37, 37) !important;
+}
+.emojiCard:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+input {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  box-shadow: none!important;
+  outline: none !important;
+  color: white !important;
+  border-radius: none !important;
+  border-bottom-color: white !important;
+  background-color: rgb(0, 0, 0) !important;
+}
+.emoji {
+  font-size: 1.5em;
+  color: white;
+}
+.input-group-text {
+  background-color: black !important;
+  border: none;
+}
+i {
+  color: white;
+}
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+  background-color: rgb(39, 37, 37);
+}
+.nav-link {
+  color: white!important;
+}
+.aboutLink{
+  color: rgb(163, 163, 163) !important
+}
+.aboutLink:active{
+  color: white!important;
+}
+.fade-in {
+  animation: fadeIn ease 0.6s;
+  -webkit-animation: fadeIn ease 0.6s;
+  -moz-animation: fadeIn ease 0.6s;
+  -o-animation: fadeIn ease 0.6s;
+  -ms-animation: fadeIn ease 0.6s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
