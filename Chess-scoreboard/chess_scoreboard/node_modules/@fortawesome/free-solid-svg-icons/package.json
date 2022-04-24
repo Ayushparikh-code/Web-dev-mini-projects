@@ -1,0 +1,55 @@
+{
+  "description": "The iconic font, CSS, and SVG framework",
+  "keywords": [
+    "font",
+    "awesome",
+    "fontawesome",
+    "icon",
+    "svg",
+    "bootstrap"
+  ],
+  "homepage": "https://fontawesome.com",
+  "bugs": {
+    "url": "https://github.com/FortAwesome/Font-Awesome/issues"
+  },
+  "author": "The Font Awesome Team (https://github.com/orgs/FortAwesome/people)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FortAwesome/Font-Awesome"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-common-types": "6.1.1"
+  },
+  "version": "6.1.1",
+  "name": "@fortawesome/free-solid-svg-icons",
+  "main": "index.js",
+  "module": "index.es.js",
+  "jsnext:main": "index.es.js",
+  "license": "(CC-BY-4.0 AND MIT)",
+  "types": "./index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./index.es.js",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./index": {
+      "import": "./index.es.js",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./index.js": {
+      "import": "./index.es.js",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./*": "./*.js"
+  },
+  "scripts": {
+    "postinstall": "node attribution.js"
+  }
+}

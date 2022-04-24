@@ -1,0 +1,1 @@
+In this project, the objective was to create a single page application which can display score of players as they kill each other's pieces.
