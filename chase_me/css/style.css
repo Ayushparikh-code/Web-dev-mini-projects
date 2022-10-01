@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  background-image: linear-gradient(#79d6e9,#a454e9);
+  font-family: "Nerko One", cursive;
+}
+h1{
+    color: red;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+}
+#container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#annoying-button {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  background: #eebcb4;
+  border-radius: 47% 49% 46% 44%;
+  border: 2px dotted #eebcb4;
+  transition: all 0.25s ease-out;
+}
+
+#annoying-button:hover {
+  cursor: pointer;
+}
+
+.eye {
+  position: relative;
+  display: inline-block;
+  background: white;
+  width: 20px;
+  height: 20px;
+  border: 1px dotted white;
+  border-radius: 50% 42%;
+  top: 25%;
+}
+
+#left-eye {
+  left: 12.5%;
+}
+
+#right-eye {
+  left: 25%;
+}
+
+.pupil {
+  position: relative;
+  height: 7px;
+  width: 7px;
+  left: 33%;
+  top: 33%;
+  background: black;
+  border-radius: 50%;
+  transition: all 0.25s;
+}
+
+.pupil:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  left: 66%;
+  top: 10%;
+}
+
+#mouth {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  right: 120%;
+  top: 90%;
+}
