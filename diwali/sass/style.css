@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+body {
+  background-color: #212121;
+  font-family: "Sacramento", cursive;
+}
+
+.container {
+  height: 400px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.container .title {
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  text-shadow: 0px 2px 1px orange, 0px 0px 6px orangered, 0px 5px 10px black;
+}
+
+.fireworks {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fireworks li {
+  display: inline-block;
+  margin: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 500px;
+  position: relative;
+  background-color: #8d6e63;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fireworks li::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background-color: #212121;
+  width: 100%;
+  border-radius: 500px;
+  top: -40%;
+  left: -30%;
+}
+
+.fireworks li::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background-color: #212121;
+  width: 100%;
+  border-radius: 500px;
+  top: -40%;
+  right: -30%;
+}
+
+.fireworks li span {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation: fire 0.3s ease infinite;
+          animation: fire 0.3s ease infinite;
+}
+
+.fireworks li:nth-child(1) span {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.fireworks li:nth-child(2) span {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.fireworks li:nth-child(3) span {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.fireworks li:nth-child(4) span {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.fireworks li:nth-child(5) span {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.fireworks li:nth-child(6) span {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.fireworks li:nth-child(7) span {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.fireworks li:nth-child(8) span {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+@-webkit-keyframes fire {
+  0%,
+  100% {
+    -webkit-transform: rotate(55deg);
+            transform: rotate(55deg);
+    width: 20px;
+    background: -webkit-gradient(linear, left top, right top, from(orange), to(orangered));
+    background: linear-gradient(90deg, orange, orangered);
+  }
+  50% {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+    width: 18px;
+    background: -webkit-gradient(linear, left top, right top, from(orangered), to(orange));
+    background: linear-gradient(90deg, orangered, orange);
+  }
+}
+
+@keyframes fire {
+  0%,
+  100% {
+    -webkit-transform: rotate(55deg);
+            transform: rotate(55deg);
+    width: 20px;
+    background: -webkit-gradient(linear, left top, right top, from(orange), to(orangered));
+    background: linear-gradient(90deg, orange, orangered);
+  }
+  50% {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+    width: 18px;
+    background: -webkit-gradient(linear, left top, right top, from(orangered), to(orange));
+    background: linear-gradient(90deg, orangered, orange);
+  }
+}
+
+.info {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  width: 200px;
+  font-size: 2rem;
+}
+
+.info a {
+  font-size: 3rem;
+  display: block;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+canvas {
+  display: block;
+}
+
+.wish {
+  right: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 200px;
+  text-align: center;
+  font-size: 2em;
+  text-align: center;
+}
+
+.from {
+  font-family: "Abril Fatface", cursive;
+  color: #ffd45e;
+  text-shadow: 4px 0px 3px #faeb1e;
+  font-size: 3rem;
+}
+/*# sourceMappingURL=style.css.map */
