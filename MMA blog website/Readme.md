@@ -7,3 +7,6 @@ It contains a simple landing page which contains a brief introduction to MMA and
 
 Note- This site can be improved further by adding different categories ..like ranking of the players ,about different weight divisions,Pound for Pound rankings etc.
 
+image.png
+
+image.png
