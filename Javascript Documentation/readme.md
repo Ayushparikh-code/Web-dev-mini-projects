@@ -3,8 +3,8 @@
 A simple Javascript documentation to learn javascript
 
 # Tech Stack Used
--HTML
--CSS
+- HTML
+- CSS
 
 # Instructions
 There's a simple navigation at the left of the website.Click on any link to learn about the topic
