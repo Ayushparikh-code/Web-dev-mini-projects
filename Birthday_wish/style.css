@@ -1,0 +1,61 @@
+body {
+    background-image: linear-gradient(90deg, pink 0%, white 100%);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
+.form {
+    margin: 50px auto;
+    width: auto;
+}
+
+input#name {
+    border: 1px solid rgb(255, 68, 227);
+    border-radius: 5px;
+    height: 40px;
+    width: 50%;
+    font-size: 34px;
+    padding: 3px 6px;
+    color: rgb(255, 0, 200);
+    margin: 20px 0;
+}
+
+button#wishButton {
+    border: 1px solid rgb(255, 68, 227);
+    border-radius: 10px;
+    height: 55px;
+    width: 150px;
+    font-size: 26px;
+    padding: 8px 12px;
+    color: rgb(255, 0, 0);
+    margin: 20px auto;
+    background-color: white;
+    display: block;
+    font-weight: bold;
+    transition: transform .2s, background-color .5s, border-color .3s;
+}
+
+button#wishButton:hover {
+    transform: scale(1.1);
+    border: 1px solid red;
+    background-color: rgb(250, 234, 244);
+}
+
+h1 {
+    border-radius: 5px;
+    height: auto;
+    width: 50%;
+    font-size: 60px;
+    padding: 3px 6px;
+    color: rgb(255, 0, 0);
+    width: 100%;
+    display: block;
+    margin: 30px auto;
+}
+
+img#cake {
+    width: calc(2627 / 3)px;
+    height: calc(2846 / 3)px;
+    margin: 30px auto;
+}
