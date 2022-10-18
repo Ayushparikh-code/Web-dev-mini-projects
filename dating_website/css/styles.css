@@ -1,0 +1,212 @@
+:root{
+    --mainColor :#ff4668;
+}
+*{
+    font-family: 'Ubuntu','sans-serif' ;
+    text-align: center;
+} 
+.main-color{
+    background-color:var(--mainColor); 
+}
+.big-heading{
+    font-family:  'Lora', serif;
+    line-height: 1.3;
+    color:#fff;  
+    text-align: left;
+    margin: 10px 10px 40px 0px;
+}
+/* Navbar */
+
+.container-fluid .nav {
+    color:white;
+}
+.navbar{
+    margin-bottom: 3rem;
+}
+.container-fluid nav a{
+    font-size:1rem;
+}
+
+.container-fluid nav a.navbar-brand{
+    font-family:'Ubuntu', 'Noto Sans';
+    letter-spacing: 1px;
+    font-size:1.7rem;
+}
+.nav-link{
+    margin:0.6rem;
+    font-family:  'Lora', serif;
+}
+div.container-fluid{
+    padding:10vh  10vh;  
+}
+#title div.container-fluid{
+    padding:2vh 20vh 0vh 20vh;  
+}
+
+.container-fluid .row img{
+    height: 65vh;
+    width: 37vh;
+    top:-30px;
+    transform: rotate(15deg); 
+    position: relative; 
+ }
+
+/* Download button */
+
+.download-button{
+    margin:0 2vh;
+}
+
+/* Features */
+#features{
+  
+    position:relative; 
+    background-color: #fff;
+    z-index: 1;
+}
+#features .row .feature h3{
+    padding-top:1.9rem;
+    padding-bottom:0.1rem;
+}
+#features .row .feature p{
+    font-size:0.95rem;
+}
+#features .row .feature{
+    padding:1.8rem ;
+   
+}
+.icon{
+    color:var(--mainColor);
+}
+
+/* testimonials */
+#testimonials{
+    color:white;
+    letter-spacing: 0.6px;
+    position: relative;
+}
+#testimonials .carousel-item{
+    padding:15vh 20vh;
+}
+#testimonials h2{
+    line-height: 1.5;
+    font-size:2.7vmax;
+}
+#testimonials img{
+    margin: 20px;
+    width:15vmax;
+    height:15vmax;
+    border-radius: 100%;
+}
+
+/* press */
+#press{
+   
+    padding:0vh 15vh 10vh ;
+}
+#press .press-image{
+    width:12vmax;
+    margin:1rem;
+}
+/* Pricing */
+#pricing{
+    
+    padding:12vh 8vw;
+}
+#pricing p{
+    margin-bottom: 2vh;
+}
+#pricing .pricing-card {
+    margin:30px 0 0;
+}
+#pricing .pricing-card .pricing-card-body{
+    padding:5vh 2vw;
+}
+/* cta section */
+#cta{
+    padding: 10vh 0vh 10vh;
+}
+#cta h3{
+    text-align: center;
+}
+#cta button{
+    margin-right: 15px;
+    padding:0.5% 2%; 
+}
+
+#cta a{
+    font-size: 5vh;
+    text-decoration: none;
+    margin-right: 3px;
+    color:#0505f4;
+    background-color:#ffffff;
+    border-radius: 4px;
+    
+  }
+  #cta #instaColor{
+    color:rgb(247, 11, 70);
+  }
+  #cta #instaColor :hover{
+    color:rgb(249, 1, 121); 
+    background-color:#fff;
+  }
+ #cta  a:hover{
+    font-size:5.5vh;
+    color :rgb(62, 62, 201);
+    background-color:var(--mainColor);
+  }
+  #cta .fa-brands:hover{
+    font-size:5.5vh;
+  }
+  .button{
+    background-color: #9cdae7a3;
+    font-size: 19px;
+    color:rgb(73, 5, 137);
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 3px 11px;
+    border-radius: 5px;
+    margin-top: 1.2rem;
+    border-color: #6ab9c9a3;
+    background-image:linear-gradient(to right,#deef56a3,rgb(70, 182, 70) 80% ) ;
+    
+  }
+  .button:hover {
+    /* font-size:18px; */
+    color:var(--mainColor);
+    box-shadow: 1px 2px 4px 1px #180b17a3;
+    transform: translateY(-1px);
+    border-color:1px solid black;
+  }
+/* footer  */
+
+footer p{
+    font-family: monospace;
+    font-size: 2.5vmin;
+    background-color: hwb(0 75% 21%);
+    margin:0px;
+}
+  /* MEDIA QUARY */
+  @media(max-width:768px){
+    div.container-fluid{
+        padding:2vh 10vh 0vh 10vh;
+      
+    }
+    .download-button{
+        margin:2vh 2vh;
+    }
+  .container-fluid .row img{
+    margin: 40px 0px 0px 0px;
+    transform: rotate(0deg); 
+    z-index: 8;
+    position:static;
+  }
+   #features{
+    padding:0vh 5vh; 
+    background-color: #fff;
+  }
+   #testimonials img{
+    display: flex;
+    clear:right;
+  }
+}
