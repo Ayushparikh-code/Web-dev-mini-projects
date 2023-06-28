@@ -25,7 +25,7 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 
 - Go to the directory
 - Run the index.html file
-- Start Calculating!!
+- Start Calculating and Experience its working..!!
 --- 
 
 ## Screenshots 
