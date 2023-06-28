@@ -4,7 +4,7 @@
 
 ### Use of the Project:
 
-<p>This basic contact form can be added to any website to make it attractive. </p>
+<p>This basic contact form can be added to any website to make it attractive and other beginner developers can get ideas through it</p>
 
 <h3>Used Technologies</h3>
 <ul>
