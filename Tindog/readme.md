@@ -1,8 +1,8 @@
 ### Tindog
-It is a copy of tinder, customised for dogs to find their mate
+It is just a copy of tinder, customised for dogs to find their mate and doges also to get there master.
 
 ### Use of the Project:
-Used by people to find the love for their dogs
+Used by people to find the love for their dogs. Here everykind of dogs are available in this website
 
 ### Tech Stack
 * HTML5
