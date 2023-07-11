@@ -22,8 +22,9 @@ I coded this game by following the tutorial from [Code with Ania Kubów](https:/
 
 ![screenshot](https://github.com/Gyynnn/Web-dev-mini-projects/blob/2048game/2048%20Game/screenshot.PNG)
 
-#Contriubute
+#Contributors:
 
-Contrubters are always welcome to make this projects more beautify..
+Contributors are always welcome to make this projects more beautify..
+#Happy Coding
 
 
