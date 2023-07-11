@@ -4,7 +4,7 @@
 }
 
 p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Times New Roman', Times, san-serif;
     font-size: 1rem;
     color: #8f8f8f;
     font-weight: normal;
@@ -39,7 +39,8 @@ h3{
 }
 
 .navbar-brand{
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Times New Roman', Times, san-serif;
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -50,7 +51,7 @@ h3{
 
 .nav-link{
     font-size: 1.5rem;
-    font-family: 'Montserrat-Light', sans-serif;
+    font-family: 'Times New Roman', Times, san-serif;
 }
 
 

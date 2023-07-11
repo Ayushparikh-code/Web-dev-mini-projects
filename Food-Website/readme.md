@@ -33,5 +33,5 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Navigate the website in different modes(desktop or mobile)
 
 <br>
-
+Join the landing page of our website
 ## Happy Coding!

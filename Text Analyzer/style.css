@@ -66,7 +66,7 @@
     margin: 1rem auto;
     padding: 1rem 2rem;
     cursor: pointer;
-    border: 2px solid #f72585;
+    border: 2px solid #e6f725;
     border-radius: 25px;
     font-size: 1rem;
     transition: 0.5s ease-in-out;
@@ -75,7 +75,7 @@
   }
   
   #process-btn:hover {
-    background-color: #ef476f;
+    background-color: #cbef47;
   }
   
   .text-info-list {

@@ -2,3 +2,7 @@
     color: #6c757d;
     text-decoration: line-through;
   }
+*{
+
+  background-color: rgba(red, green, blue,0.5);
+}
