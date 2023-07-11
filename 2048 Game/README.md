@@ -24,7 +24,7 @@ I coded this game by following the tutorial from [Code with Ania Kubów](https:/
 
 #Contributors:
 
-Contributors are always welcome to make this projects more beautify..
+Contributors are always welcome to make this projects more beautify..<br>
 #Happy Coding
 
 
