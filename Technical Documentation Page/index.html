@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <header>
+                <h1>C Introduction</h1>
+                <li><a href="#What_is_C?" class="nav-link">What is C?</a></li>
+                <li><a href="#Why_Learn_C?" class="nav-link">Why Learn C?</a></li>
+                <li><a href="#Difference_between_C_and_C++" class="nav-link">Difference between C and C++</a></li>
+                <li><a href="#Get_Started_With_C" class="nav-link">Get Started with C</a></li>
+                <li><a href="#C_Quickstart" class="nav-link">C Quickstart</a></li>
+                <li><a href="#C_Syntax" class="nav-link">C Syntax</a></li>
+                <li><a href="#C_Comments" class="nav-link">C Comments</a></li>
+
+            </header>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="What_is_C?">
+                <header>
+                    <h2>What is C?</h2>
+                </header>
+                <p>C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in
+                    1972.
+                </p>
+                <p>C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in
+                    1972.
+                </p>
+                <p>C is strongly associated with UNIX, as it was developed to write the UNIX operating system.</p>
+            </section>
+            <section class="main-section" id="Why_Learn_C?">
+                <header>
+                    <h2>Why Learn C?</h2>
+                </header>
+                <ul>
+                    <li>It is one of the most popular programming language in the world</li>
+                    <li>If you know C, you will have no problem learning other popular programming languages such as
+                        Java,
+                        Python, C++, C#, etc, as the syntax is similar</li>
+                    <li>C is very fast, compared to other programming languages, like Java and Python</li>
+                    <li>C is very versatile; it can be used in both applications and technologies</li>
+                </ul>
+            </section>
+            <section class="main-section" id="Difference_between_C_and_C++">
+                <header>
+                    <h2>Difference between C and C++</h2>
+                </header>
+                <ul>
+                    <li>C++ was developed as an extension of C, and both languages have almost the same syntax</li>
+                    <li>The main difference between C and C++ is that C++ support classes and objects, while C does not
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section" id="Get_Started_With_C">
+                <header>
+                    <h2>Get Started With C</h2>
+                </header>
+                <p>To start using C, you need two things:</p>
+                <ul>
+                    <li>A text editor, like Notepad, to write C code</li>
+                    <li>A compiler, like GCC, to translate the C code into a language that the computer will understand
+                    </li>
+                </ul>
+                <p>There are many text editors and compilers to choose from. In this tutorial, we will use an IDE (see
+                    below). </p>
+            </section>
+            <section class="main-section" id="C_Quickstart">
+                <header>
+                    <h2>C Quickstart</h2>
+                </header>
+                <p>Let's create our first C file.</p>
+                <p>Open Codeblocks and go to <b>File &gt; New &gt; Empty File.</b></p>
+                <p>Write the following C code and save the file as <code>myfirstprogram.c</code> <b>(File &gt; Save
+                        File
+                        as):</b></p>
+                <div>
+                    <h4>myfirstprogram.c</h4>
+                    <code>
+              <pre>
+              #include &lt;stdio.h&gt;
+      
+              int main() {
+                  printf("Hello World!");
+                  return 0;
+                  }</pre>
+            </code>
+                </div>
+            </section>
+            <section class="main-section" id="C_Syntax">
+                <header>
+                    <h2>C Syntax</h2>
+                </header>
+
+                <p>You have already seen the following code a couple of times in the first chapters. Let's break it down
+                    to
+                    understand it better:</p>
+                <div>
+                    <h4>Example</h4>
+                    <code>
+              <pre>
+              #include &lt;stdio.h&gt;
+      
+              int main() {
+                  printf("Hello World!");
+                  return 0;
+              }</pre>
+            </code>
+                </div>
+                <ol>
+                    <li><code>#include &lt;stdio.h&gt;</code> is a <b>header file library</b> that lets us work with
+                        input
+                        and
+                        output functions, such
+                        as <code>printf()</code> (used in line 4). Header files add functionality to C programs.</li>
+                    <li>
+                        A blank line. C ignores white space. But we use it to make the code more readable.
+                    </li>
+                    <li>
+                        Another thing that always appear in a C program, is <code>main()</code>. This is called a
+                        function.
+                        Any code
+                        inside its curly brackets <code>{}</code> will be executed.
+                    </li>
+                    <li>
+                        <code>printf()</code> is a <b>function</b> used to output/print text to the screen. In our
+                        example
+                        it will output "Hello
+                        World!".
+                    </li>
+                    <li>
+                        <code>return 0</code> ends the <code>main()</code> function.
+                    </li>
+                    <li>
+                        Do not forget to add the closing curly bracket &rcub; to actually end the main function.
+                    </li>
+                </ol>
+            </section>
+            <section class="main-section" id="C_Comments">
+                <header>
+                    <h2>C Comments</h2>
+                </header>
+                <p>Comments can be used to explain code, and to make it more readable. It can also be used to prevent
+                    execution when testing alternative code.</p>
+                <p>Comments can be singled-lined or multi-lined.</p>
+            </section>
+            <footer>
+                <p>You can read the full Documentation on <a href="https://www.w3schools.com"
+                        target="_blank">W3Schools</a></p>
+            </footer>
+        </main>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

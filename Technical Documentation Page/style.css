@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+h2 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+    width: 20%;
+    height: 100vh;
+    background-color: #e7e9eb;
+    position: fixed;
+}
+
+#navbar h1 {
+    text-align: center;
+    padding: 12px 16px;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 8px 12px;
+}
+
+#navbar li:hover {
+    background-color: #ccc;
+}
+
+#navbar li a {
+    color: black;
+    text-decoration: none;
+}
+
+#main-doc {
+    width: 80%;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    left: 20%;
+
+    overflow-x: hidden;
+}
+
+.main-section li {
+    list-style-position: inside;
+}
+
+.main-section {
+    padding: 20px;
+}
+
+.main-section h2 {
+    padding-bottom: 6px;
+}
+
+.main-section div {
+    margin-top: 12px;
+}
+
+.main-section code {
+    color: crimson;
+    background-color: #f1f1f1;
+    font-family: monospace;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 16px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #navbar header {
+        text-align: center;
+    }
+
+    #navbar,
+    #main-doc {
+        width: 100%;
+        position: static;
+        height: fit-content;
+    }
+}
