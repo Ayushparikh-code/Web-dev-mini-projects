@@ -26,6 +26,8 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 - Go to the directory
 - Run the index.html file
 - Start Playing!!!
+  
+Note: In your HTML file, you would initially load one of the themes, and then you can use JavaScript to allow users to switch between the themes as mentioned in a previous response.
 
 
 <h3> Screenshot </h3>
