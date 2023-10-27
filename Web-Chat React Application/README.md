@@ -30,4 +30,5 @@ Start the server by navigating inside the server folder and running `npm run dev
 
 ## Output
 
-![image](htt)
+![image](https://github.com/v-vishal-sharma/Web-dev-mini-projects/blob/v-vishal-sharma/Web-Chat%20React%20Application/images/webchat%201.png)
+![image](https://github.com/v-vishal-sharma/Web-dev-mini-projects/blob/v-vishal-sharma/Web-Chat%20React%20Application/images/webchat2.png)
