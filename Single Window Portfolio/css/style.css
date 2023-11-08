@@ -1,0 +1,80 @@
+/* Animation */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: #003b59;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+}
+
+#animations {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main_body {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.body_class img {
+    width: 10vw;
+    border-radius: 50%;
+}
+
+.body_class a {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.body_class a:hover {
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+/* Responsiveness via screen widths */
+
+@media screen and (max-width: 768px) {
+    .body_class img {
+        width: 30%;
+        border-radius: 50%;
+    }
+    .body_class a {
+        font-size: 1.3rem;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .body_class img {
+        width: 25%;
+        border-radius: 50%;
+    }
+    .body_class a {
+        font-size: 1.3rem;
+        padding: 4px;
+    }
+}
