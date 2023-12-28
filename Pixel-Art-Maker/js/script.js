@@ -15,7 +15,7 @@ document.body.onmouseup = () => (mousedown = false)
 
 
 
-function clearscr(e){                           //Function for clearing the canvas
+function clearscr(){                           //Function for clearing the canvas
     const pixels = document.querySelectorAll('.pixel');
     pixels.forEach((pixel) => {
     pixel.style.backgroundColor='rgb(255,255,255)';});
@@ -25,7 +25,7 @@ function inpcolor(e){               //Function that changes the selected color.
     selectedcolor =  e.target.value;
 }
 
-function submitfun(e){  //function that gets called when you press the submit button to change the canvas size.
+function submitfun(){  //function that gets called when you press the submit button to change the canvas size.
 
     sizeinp=document.getElementById('size');
     textsize =  sizeinp.value;
@@ -59,7 +59,7 @@ function createpng(){ //function that creates a png image of the canvas.
     
     const pixelarray=document.getElementsByClassName("pixel");
     var p = new PNGlib(x, x, 256);
-    var background = p.color(0, 0, 0, 0);
+   
     for (var i = 0; i < x; i++){
         for (var j = 0; j < x; j++){
             var getpix = pixelarray[j*x+i];
@@ -72,7 +72,7 @@ function createpng(){ //function that creates a png image of the canvas.
 }
 
 
-function fillbackground(e){ //function that changes every pixel in the canvas into the selected color.
+function fillbackground(){ //function that changes every pixel in the canvas into the selected color.
     const pixels = document.querySelectorAll('.pixel');
     pixels.forEach((pixel) => {
     pixel.style.backgroundColor=selectedcolor;});
