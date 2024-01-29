@@ -9,7 +9,7 @@ class Cart(models.Model):
         db_table='Cart'
         ordering=['date_added']
     def __str__(self):
-        return  '{}'.format(self.cart_id)
+        return '{}'.format(self.cart_id)
 
 class CartItem(models.Model):
     product=models.ForeignKey(Product,on_delete=models.CASCADE)

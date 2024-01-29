@@ -15,7 +15,7 @@ def allProdCat(request, c_slug=None,):
     paginator=Paginator(products_list,6)
     try:
         page=int(request.GET.get('page','1'))
-    except:
+    except(Paginator):
         page=1
     try:
         products=paginator.page(page)
