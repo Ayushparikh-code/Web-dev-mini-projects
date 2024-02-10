@@ -148,3 +148,5 @@
 |[Interactive Pricing Component](https://github.com/Ahsan-Ehtesham/Web-dev-mini-projects/tree/ahsan/Interactive%20Pricing%20Component)| Interactive Pricing Component using HTML, CSS and JS
 |[Typing champ](https://github.com/FaizaAbdullah-code/Web-dev-mini-projects/tree/faiza/Typing-champ)| One page website for speed checking using HTML, CSS and JS.
 |[Height Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Height%20Converter)|Webpage used to converting one form of height to other.
+
+|[Jumpy](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Jumpy)|Jumpy, a thrilling and entertaining game where you control a kid trying to avoid zombies and score points.
