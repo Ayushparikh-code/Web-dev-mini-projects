@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    justify-content: space-between;
+    background-color: blueviolet;
+    color: white;
+   
+}
+
+.navbar-list{
+    display: flex;
+    gap: 18px;
+}
+
+.navbar-list>  li{
+    display: inline;
+    
+}
+
+.sec{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(183, 217, 13);
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+.mobile-navbar-btn{
+
+    display: none;
+    gap: 12px;
+    cursor: pointer;
+    color: black;
+    cursor: pointer;
+    margin: 0px 45px; 
+     
+
+}
+
+.navbar-list{
+    display: flex;
+    gap: 18px;
+}
+
+.navbar-list>  li{
+    display: inline;
+    font-size: 2rem;
+    
+}
+
+
+
+.mobile-nav-icon{
+       font-size: 2em;
+    line-height: .03125em
+ 
+
+  
+
+}
+
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+
+.mobile-navbar-btn {
+    
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    top: 0;
+    padding: 12px 12px;
+    
+    width: 100%;
+    gap: 12px;
+    background-color: rgb(211, 35, 35); 
+    
+     
+
+}
+
+.mobile-navbar-btn > ion-icon {
+    
+    margin-right: 30px;
+    border: 2px solid black;
+    
+ 
+     
+
+}
+
+.mobile-navbar-btn > i{
+    padding: 5px;
+    
+    margin-right: 30px;
+    border: 2px solid black;
+    
+ 
+     
+
+}
+
+
+.logo{
+    display: none;
+}
+
+
+nav{
+  position: absolute; 
+  width: 100%;
+  /* display: none;  */
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  top: 0;
+   left: 0;
+
+   
+}
+
+.navbar-list{
+   
+   display: none; 
+   
+    flex-direction: column;
+}
+
+.navbar-list>  li{
+    /* display: none; */
+    
+   
+    
+}
+
+
+
+
+    
+}
