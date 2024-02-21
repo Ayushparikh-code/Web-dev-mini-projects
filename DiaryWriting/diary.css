@@ -1,0 +1,49 @@
+.navbar{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    height:45px;
+    background-color: #e28f1f;
+    border:2px solid black;
+    border-radius: 12px;
+}
+.navbar li{
+    margin:3px 12px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form textarea{
+    width: 877px;
+    height: 505px;
+    text-align: start;
+    margin:3px 0px;
+    border:2px solid black;
+}
+.form label{
+    font-size:25px;
+}
+
+#btn{
+    border:2px solid black;
+    width: 100px ;
+    height:45px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e28f1f;
+}
+#read{
+    margin:12px;
+}
+#reading{
+    text-decoration: none;
+    color:black;
+}
+#box{
+    font-size: 18px;
+}
