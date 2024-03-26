@@ -21,6 +21,6 @@ git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
 3. Run the `index.html` file
 
 ## Screenshots:
-<img src="/ScreenShots/Screenshot (81).png">
-<img src="/ScreenShots/Screenshot (82).png">
-<img src="/ScreenShots/Screenshot (83).png">
+<img src="https://github.com/aadityabhoyar/Web-dev-mini-projects/blob/main/Trello%20Board%20Clone/ScreenShots/Screenshot%20(81).png">
+<img src="https://github.com/aadityabhoyar/Web-dev-mini-projects/blob/main/Trello%20Board%20Clone/ScreenShots/Screenshot%20(82).png">
+<img src="https://github.com/aadityabhoyar/Web-dev-mini-projects/blob/main/Trello%20Board%20Clone/ScreenShots/Screenshot%20(83).png">
