@@ -21,3 +21,6 @@ I coded this game by following the tutorial from [Code with Ania Kubów](https:/
 # Screenshot
 
 ![screenshot](https://github.com/Gyynnn/Web-dev-mini-projects/blob/2048game/2048%20Game/screenshot.PNG)
+
+# For Further 
+This game is there in the playstore fdo checkout (https://github.com/Ayushparikh-code/Web-dev-mini-projects)
