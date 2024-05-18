@@ -1,0 +1,156 @@
+<!--By krish Lalwani, don't edit-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title> Binary Piano</title>
+    <link href='css/style.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <<meta name="author" content="krish lalwani">
+    <meta name="description" content="A Piano player, with a binary twist">
+
+  </head>
+  <body>
+
+    <div class="containers">
+      <div class="binary-container">
+        <div class="binary">0000000000</div>
+        <button class="play"></button>
+      </div>
+
+      <div class="editor-container">
+
+        <div class="info">
+            <h1>Customize Notes<span>||</span>Learn About This</h1>
+        </div>
+
+        <div class="editor-container-contents">
+     
+            <div class="notes">
+                <input readonly data-index="0"/>
+                <input readonly data-index="1"/>
+                <input readonly data-index="2"/>
+                <input readonly data-index="3"/>
+                <input readonly data-index="4"/>
+                <input readonly data-index="5"/>
+                <input readonly data-index="6"/>
+                <input readonly data-index="7"/>
+                <input readonly data-index="8"/>
+                <input readonly data-index="9"/>
+            </div>
+
+            <div class="piano">
+              <ul id="piano-keyboard">
+                <li class="piano-key white" data-piano-key="A0"></li>
+                <li class="piano-key black" data-piano-key="A#0"></li>
+                <li class="piano-key white" data-piano-key="B0"></li>
+                <li class="piano-key white" data-piano-key="C1"></li>
+                <li class="piano-key black" data-piano-key="C#1"></li>
+                <li class="piano-key white" data-piano-key="D1"></li>
+                <li class="piano-key black" data-piano-key="D#1"></li>
+                <li class="piano-key white" data-piano-key="E1"></li>
+                <li class="piano-key white" data-piano-key="F1"></li>
+                <li class="piano-key black" data-piano-key="F#1"></li>
+                <li class="piano-key white" data-piano-key="G1"></li>
+                <li class="piano-key black" data-piano-key="G#1"></li>
+
+                <li class="piano-key white" data-piano-key="A1"></li>
+                <li class="piano-key black" data-piano-key="A#1"></li>
+                <li class="piano-key white" data-piano-key="B1"></li>
+                <li class="piano-key white" data-piano-key="C2"></li>
+                <li class="piano-key black" data-piano-key="C#2"></li>
+                <li class="piano-key white" data-piano-key="D2"></li>
+                <li class="piano-key black" data-piano-key="D#2"></li>
+                <li class="piano-key white" data-piano-key="E2"></li>
+                <li class="piano-key white" data-piano-key="F2"></li>
+                <li class="piano-key black" data-piano-key="F#2"></li>
+                <li class="piano-key white" data-piano-key="G2"></li>
+                <li class="piano-key black" data-piano-key="G#2"></li>
+
+                <li class="piano-key white" data-piano-key="A2"></li>
+                <li class="piano-key black" data-piano-key="A#2"></li>
+                <li class="piano-key white" data-piano-key="B2"></li>
+                <li class="piano-key white" data-piano-key="C3"></li>
+                <li class="piano-key black" data-piano-key="C#3"></li>
+                <li class="piano-key white" data-piano-key="D3"></li>
+                <li class="piano-key black" data-piano-key="D#3"></li>
+                <li class="piano-key white" data-piano-key="E3"></li>
+                <li class="piano-key white" data-piano-key="F3"></li>
+                <li class="piano-key black" data-piano-key="F#3"></li>
+                <li class="piano-key white" data-piano-key="G3"></li>
+                <li class="piano-key black" data-piano-key="G#3"></li>
+
+                <li class="piano-key white" data-piano-key="A3"></li>
+                <li class="piano-key black" data-piano-key="A#3"></li>
+                <li class="piano-key white" data-piano-key="B3"></li>
+                <li class="piano-key white" data-piano-key="C4"></li>
+                <li class="piano-key black" data-piano-key="C#4"></li>
+                <li class="piano-key white" data-piano-key="D4"></li>
+                <li class="piano-key black" data-piano-key="D#4"></li>
+                <li class="piano-key white" data-piano-key="E4"></li>
+                <li class="piano-key white" data-piano-key="F4"></li>
+                <li class="piano-key black" data-piano-key="F#4"></li>
+                <li class="piano-key white" data-piano-key="G4"></li>
+                <li class="piano-key black" data-piano-key="G#4"></li>
+
+                <li class="piano-key white" data-piano-key="A4"></li>
+                <li class="piano-key black" data-piano-key="A#4"></li>
+                <li class="piano-key white" data-piano-key="B4"></li>
+                <li class="piano-key white" data-piano-key="C5"></li>
+                <li class="piano-key black" data-piano-key="C#5"></li>
+                <li class="piano-key white" data-piano-key="D5"></li>
+                <li class="piano-key black" data-piano-key="D#5"></li>
+                <li class="piano-key white" data-piano-key="E5"></li>
+                <li class="piano-key white" data-piano-key="F5"></li>
+                <li class="piano-key black" data-piano-key="F#5"></li>
+                <li class="piano-key white" data-piano-key="G5"></li>
+                <li class="piano-key black" data-piano-key="G#5"></li>
+
+                <li class="piano-key white" data-piano-key="A5"></li>
+                <li class="piano-key black" data-piano-key="A#5"></li>
+                <li class="piano-key white" data-piano-key="B5"></li>
+                <li class="piano-key white" data-piano-key="C6"></li>
+                <li class="piano-key black" data-piano-key="C#6"></li>
+                <li class="piano-key white" data-piano-key="D6"></li>
+                <li class="piano-key black" data-piano-key="D#6"></li>
+                <li class="piano-key white" data-piano-key="E6"></li>
+                <li class="piano-key white" data-piano-key="F6"></li>
+                <li class="piano-key black" data-piano-key="F#6"></li>
+                <li class="piano-key white" data-piano-key="G6"></li>
+                <li class="piano-key black" data-piano-key="G#6"></li>
+
+                <li class="piano-key white" data-piano-key="A6"></li>
+                <li class="piano-key black" data-piano-key="A#6"></li>
+                <li class="piano-key white" data-piano-key="B6"></li>
+                <li class="piano-key white" data-piano-key="C7"></li>
+                <li class="piano-key black" data-piano-key="C#7"></li>
+                <li class="piano-key white" data-piano-key="D7"></li>
+                <li class="piano-key black" data-piano-key="D#7"></li>
+                <li class="piano-key white" data-piano-key="E7"></li>
+                <li class="piano-key white" data-piano-key="F7"></li>
+                <li class="piano-key black" data-piano-key="F#7"></li>
+                <li class="piano-key white" data-piano-key="G7"></li>
+                <li class="piano-key black" data-piano-key="G#7"></li>
+
+                <li class="piano-key white" data-piano-key="A7"></li>
+                <li class="piano-key black" data-piano-key="A#7"></li>
+                <li class="piano-key white" data-piano-key="B7"></li>
+                <li class="piano-key white" data-piano-key="C8"></li>
+
+              </ul>
+            </div>
+
+            <div class="details">
+                The Piano player is based around <a href="https://tonejs.github.io/" target="_blank">Tone.JS</a><br><br>
+                Built by <a href="http://krishlalwani.ml" target="_blank">Krish Lalwani</a> - <a href="http://krishlalwani.ml" target="_blank">GitHub</a> - <a href="https://github.com/krishlalwani0" target="_blank">source</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src='https://unpkg.com/tone@13.8.25/build/Tone.js'></script>
+    <script src='js/main.js'></script>
+
+  </body>
+</html>
