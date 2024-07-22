@@ -18,7 +18,7 @@ displayquote();
 let quote = document.getElementById('quote');
 let author = document.getElementById('author');
 async function displayquote() {
-    let quote_num = Math.floor(Math.random() * 1643)
+    let quote_num = Math.floor(Math.random() * 16)
     const response = await fetch("https://type.fit/api/quotes")
     const data = await response.json();
     if (response.ok) {
@@ -89,13 +89,9 @@ search_btn.addEventListener('click', async function () {
 
 
     }/***local storage for recently searched  words  */
-    let recently_searched = localStorage.getItem("recently_searched");
-    if (recently_searched == null) {
-        recentWord = [];
-    } else {
-        recentWord = JSON.parse(recently_searched);
-
-    }
+    //If localstorage is null then it will return an empty array 
+    recentWord = JSON.parse(localStorage.getItem("recently_searched"))||[];
+   
     const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${search_word.value}`)
     const data = await response.json();
 
@@ -160,15 +156,8 @@ audio_btn.addEventListener('click', function (e) {
 })
 //Recently searched
 function displayRecentWord() {
-    // console.log('displayRecentWord() called ');
-    let recently_searched = localStorage.getItem("recently_searched");
-    if (recently_searched == null) {
-        // console.log("recentWord was null")
-        recentWord = [];
-    } else {
-        recentWord = JSON.parse(recently_searched);
-        // console.log("recentWord was not null")
-    }
+    //If localstorage is null then it will return an empty array 
+    recentWord = JSON.parse(localStorage.getItem("recently_searched"))||[];    
     let html = "";
     recentWord.forEach(function (element, index) {
         // console.log("entered recentWord loop  fnc")
@@ -192,13 +181,9 @@ function displayRecentWord() {
 }
 function deleteRecentSearch(index) {
     //console.log(`index ${index} given`)
-    let recently_searched = localStorage.getItem("recently_searched");
-    if (recently_searched == null) {
-
-        recentWord = [];
-    } else {
-        recentWord = JSON.parse(recently_searched);
-    }
+    //If localstorage is null then it will return an empty array 
+    recentWord = JSON.parse(localStorage.getItem("recently_searched"))||[];
+    
     if (index == 4) {
         //console.log(`index ${index} therefore entered splice function part;expected index =4`)
         recentWord.splice(0, 1);
@@ -215,13 +200,9 @@ bookmark_icon.addEventListener('click', function () {
 
     let bookmark_icon_class = bookmark_icon.getElementsByTagName("i")[0].className
     /***local storage for bookmarked words  */
-    let bookmarked_words = localStorage.getItem("bookmarked_words");
-    if (bookmarked_words == null) {
-        bookmarkedObj = [];
-    } else {
-        bookmarkedObj = JSON.parse(bookmarked_words);
-
-    }
+    //If localstorage is null then it will return an empty array
+     bookmarkedObj = JSON.parse(localStorage.getItem("bookmarked_words"))||[];
+   
     if (bookmark_icon_class == "bi bi-bookmark") {
 
         bookmark_icon.getElementsByTagName("i")[0].className = "bi bi-bookmark-check-fill";
@@ -245,13 +226,9 @@ bookmark_icon.addEventListener('click', function () {
 
 })
 function displaybookmarkedWord() {
-    let bookmarked_words = localStorage.getItem("bookmarked_words");
-    if (bookmarked_words == null) {
-        bookmarkedObj = [];
-    } else {
-        bookmarkedObj = JSON.parse(bookmarked_words);
-
-    }
+    //If localstorage is null then it will return an empty array 
+    bookmarkedObj = JSON.parse(localStorage.getItem("bookmarked_words"))||[];
+   
     let html = "";
     bookmarkedObj.forEach(function (element, index) {
         // console.log("entered recentWord loop  fnc")
@@ -270,13 +247,9 @@ function displaybookmarkedWord() {
     }
 }
 function delete_bookmarkWord(index) {
-    let bookmarked_words = localStorage.getItem("bookmarked_words");
-    if (bookmarked_words == null) {
-        bookmarkedObj = [];
-    } else {
-        bookmarkedObj = JSON.parse(bookmarked_words);
-
-    }
+    //If localstorage is null then it will return an empty array
+    bookmarkedObj = JSON.parse(localStorage.getItem("bookmarked_words"))||[];
+    
     console.log(`index :${index} received inside delete function`)
     bookmarkedObj.splice(index, 1);
     console.log(`index :${index} deleted`)
