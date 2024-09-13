@@ -1,6 +1,6 @@
-# Basic Contact Form
+# An attractive Login Page UI.
 
-A Basic Contact Form written in **HTML**, **CSS**, and **JavaScript**.
+A Basic Login Page ui with a beautifull navbar written in **HTML**, **CSS**, and **JavaScript**.
 
 ### Use of the Project:
 
@@ -19,10 +19,6 @@ This basic contact form can be added to any website to make it more interactive 
   ```bash
   git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
   ```
-
-- Go to the directory
-- Run the index.html file
-- Result is here!!!
 
 - Go to the directory
 - Run the index.html file
