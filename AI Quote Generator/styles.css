@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3498db;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Adjusted to align header at the top */
+    height: 100vh;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer; /* Set default cursor to pointer */
+    background-color: #3498db; /* Default background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, filter 0.3s;
+}
+
+button.loading {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Zoom in effect on hover */
+    filter: brightness(0.9); /* Darken the button on hover */
+}
+
+#quoteContainer {
+    margin-top: 20px;
+    font-size: 20px;
+}
