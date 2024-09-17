@@ -148,3 +148,6 @@
 |[Interactive Pricing Component](https://github.com/Ahsan-Ehtesham/Web-dev-mini-projects/tree/ahsan/Interactive%20Pricing%20Component)| Interactive Pricing Component using HTML, CSS and JS
 |[Typing champ](https://github.com/FaizaAbdullah-code/Web-dev-mini-projects/tree/faiza/Typing-champ)| One page website for speed checking using HTML, CSS and JS.
 |[Height Converter](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Height%20Converter)|Webpage used to converting one form of height to other.
+|[Animated-rainbow](https://github.com/VaibhavSuryavanshi93/Web-dev-mini-projects/tree/main/Animated-rainbow) | it is a animated rainbow .
+
+|[To-do](https://github.com/VaibhavSuryavanshi93/Web-dev-mini-projects/tree/main/To-do) it's a to-do web. 
