@@ -122,6 +122,7 @@ html{
 #services{
     margin: 34px;
     display: flex;
+    margin-top: 0px;
 }
 #services .box{ 
     border: 2px solid brown;
