@@ -67,7 +67,9 @@
 }
 .banner-title{
 margin-top:100px;
-    margin-left:500px;
+display:flex;
+flex-direction:column;
+align-items:center;
 color:#fff;
 }
 .banner-title h1{
@@ -78,7 +80,6 @@ color:#fff;
         font-size:60px;
     }
     .banner-title button{
-        margin-left: 65px;
         margin-top: 20px;
     }
   .vertical-bar{
