@@ -1,0 +1,195 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.futuristic-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.futuristic-background::before,
+.futuristic-background::after {
+    content: '';
+    position: absolute;
+    width: 200vmax;
+    height: 200vmax;
+    top: -100vmax;
+    left: -100vmax;
+    z-index: 0;
+    background: rgba(255, 255, 255, 0.1);
+    transform-origin: center;
+    animation: rotate 30s linear infinite;
+}
+
+.futuristic-background::before {
+    border-radius: 40%;
+}
+
+.futuristic-background::after {
+    border-radius: 45%;
+    background: rgba(255, 255, 255, 0.05);
+    animation-duration: 50s;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    background: rgba(32, 30, 67, 0.8);
+    height: 100px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.head {
+    color: #EEEEEE;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #EEEEEE;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #3FA2F6;
+}
+
+.button-27 {
+    appearance: none;
+    background-color: #3FA2F6;
+    border: 2px solid #3FA2F6;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    min-height: 10px;
+    min-width: 0;
+    outline: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.button-27:disabled {
+    pointer-events: none;
+}
+
+.button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px) ;
+    text-align: center;
+    color: #FAFFAF;
+   background-image: url("./hero2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 1000px;
+    border-top-left-radius: 1000px;
+    padding-bottom: 10px;
+    
+}
+
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-family: "Fugaz One", sans-serif;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.hero .button-27 {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+}
+i{
+    padding: 40px;
+    font-size: 60px;
+    margin-top: 70px;
+    
+}
+i:hover{
+    color: #3FA2F6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
