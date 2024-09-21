@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Sum - Kishore S R</title>
+    <meta name="description" content="Combine your favorite emojis to create unique new emoji combinations with Emoji Sum by Kishore S R. Fun and interactive tool to mix emojis and see creative results.">
+    <meta name="keywords" content="Emoji Sum, Emoji Combiner, Emoji Generator, Fun Emoji Project, Kishore S R">
+    <meta name="author" content="Kishore S R">
+
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-512/free-cool-emoji-icon-download-in-svg-png-gif-file-formats--smiley-smile-smileys-and-pack-sign-symbols-icons-2232255.png?f=webp&w=256" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Emoji Sum</h1>
+    <h2>Mix your favorite emojis to create fun combinations! 🎉</h2>
+
+    <div class="emoji-container">
+        <div class="emoji-picker">
+            <h3>Emoji 1</h3>
+            <select id="emoji1">
+                <option value="" disabled selected>Select</option>
+                <option value="smile">😇 Smile</option>
+                <option value="cool">😎 Cool</option>
+                <option value="love">😍 Love</option>
+                <option value="rich">🤑 Rich</option>
+                <option value="laugh">😂 Laugh</option>
+            </select>
+        </div>
+
+        <div class="sign">+</div>
+        <div class="emoji-picker">
+            <h3>Emoji 2</h3>
+            <select id="emoji2">
+                <option value="" disabled selected>Select</option>
+                <option value="sun">🌞 Sun</option>
+                <option value="skull">💀 Skull</option>
+                <option value="pumpkin">🎃 Pumpkin</option>
+                <option value="moon">🌕 Moon</option>
+                <option value="joker">🤡 Joker</option>
+            </select>
+        </div>
+        <div class="sign">=</div>
+
+        <div class="result-container">
+            <img id="result-img" src="assets/question.png" alt="Select Emoji" />
+        </div>
+
+    </div>
+
+
+    <button id="combine-btn" class="styled-btn">Combine Emojis</button>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
