@@ -1,16 +1,16 @@
-# An attractive Quiz Website
+# 🌟 An Attractive Quiz Website
 
-    A quiz website with a beautifull navbar written in **HTML**, **CSS**, and **JavaScript**.
+Welcome to the **Quiz Website**! This project features a beautifully designed quiz interface crafted using **HTML**, **CSS**, and **JavaScript**.
 
-### Use of the Project:
+### 🚀 Project Overview
 
-This basic quiz app with an attractive ui can be added to any website to make it more interactive and attractive.
+This quiz application is not just functional; it's visually appealing and can be seamlessly integrated into any website. Enhance user engagement with this interactive quiz tool!
 
-### Used Technologies:
+### 💻 Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript
+- **HTML5**: For structuring the content
+- **CSS3**: For styling and layout
+- **JavaScript**: For interactivity and dynamic behavior
 
 ### Steps to Use:
 
@@ -26,7 +26,7 @@ This basic quiz app with an attractive ui can be added to any website to make it
 
 ## Screenshot
 
-<img src="" alt="Screenshot" style="max-width:100%;">
+<img src="/assets/Templates.png" alt="Screenshot" style="max-width:100%;">
 
 ## Live Preview
 
