@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Website | Unlok Thmify</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1>Unlok Dev</h1>
+      <div id="nav-part2">
+        <a href="https://github.com/xshshahab" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://twitter.com/xsh_shahab" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <button
+          id="star-btn"
+          onclick="window.location.href='https://github.com/xshshahab/unlokthmify';"
+        >
+          <i class="fas fa-star"></i> Star
+        </button>
+      </div>
+    </nav>
+    <div class="quiz-section">
+      <div id="quiz">
+        <h2 id="question" class="question">Quiz question</h2>
+        <hr />
+        <ul>
+          <li>
+            <label for="quiz-a" class="quiz-option">
+              <input type="radio" name="answer" class="answer" id="quiz-a" />
+              <span id="option_1">Option 1</span>
+            </label>
+          </li>
+          <li>
+            <label for="quiz-b" class="quiz-option">
+              <input type="radio" name="answer" class="answer" id="quiz-b" />
+              <span id="option_2">Option 2</span>
+            </label>
+          </li>
+          <li>
+            <label for="quiz-c" class="quiz-option">
+              <input type="radio" name="answer" class="answer" id="quiz-c" />
+              <span id="option_3">Option 3</span>
+            </label>
+          </li>
+          <li>
+            <label for="quiz-d" class="quiz-option">
+              <input type="radio" name="answer" class="answer" id="quiz-d" />
+              <span id="option_4">Option 4</span>
+            </label>
+          </li>
+        </ul>
+        <hr />
+        <div class="btn">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+        <div id="result" class="result" style="display: none">
+          <h2>Your Result</h2>
+          <div class="trophy">🏆</div>
+          <p id="scoreText"></p>
+          <p class="motivation">
+            Great job! Keep playing to improve your skills and knowledge!
+          </p>
+          <button id="restart" class="btn">Play Again</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Powered by Unlok Dev | &copy; 2024 Quiz App | Made by
+        <a href="https://twitter.com/xsh_shahab" target="_blank">@xsh_shahab</a>
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
