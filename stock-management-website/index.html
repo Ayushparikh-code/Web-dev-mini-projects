@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Flux Stock Market Portfolio Management Website</title>
+    <link rel="shortcut icon" href="https://cryptologos.cc/logos/zel-flux-logo.png?v=025" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+  
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="https://cryptologos.cc/logos/zel-flux-logo.png?v=025"
+            width="32"
+            height="32"
+            alt=" logo"
+          />
+          Financial Flux
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>Homepage</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link id="btncry"
+                >Stocks</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="./userDashboard/dashboard.html" class="navbar-link" data-nav-link id="utdash"
+                >DashBoard</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="./about.html" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle menu"
+          data-nav-toggler
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <a href="#" class="btn btn-outline" id="utlogin">Login</a>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" aria-label="hero" data-section>
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">
+                Buy &amp; Sell Stocks In Financial Flux
+              </h1>
+
+              <p class="hero-text">
+                Financial Flux is the easiest, safest, and fastest way to Manage
+                Portfolio
+              </p>
+
+              <a href="#" class="btn btn-primary">Get started now</a>
+            </div>
+
+            <figure class="hero-banner">
+              <img
+                src="https://talenttechlabs.com/wp-content/uploads/2021/01/advisory-digital-strategy.png"
+                width="570"
+                height="448"
+                alt="hero banner"
+                class="w-100"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #TREND
+      -->
+
+        <section class="section trend" aria-label="stock trend" data-section>
+          <div class="container">
+            <div class="trend-tab">
+              <ul class="tab-nav">
+                <li>
+                  <button class="tab-btn active">Stocks</button>
+                </li>
+              </ul>
+
+              <ul class="tab-content">
+                <li>
+                  <div class="trend-card">
+                    <div class="card-title-wrapper">
+                      <img
+                        src="https://blog.amsoil.com/wp-content/uploads/2016/03/Nifty-50-logo-online-298x217.jpg"
+                        width="24"
+                        height="24"
+                        alt="nifty 50 logo"
+                      />
+
+                      <a href="#" class="card-title">
+                        Nifty 50 <span class="span"></span>
+                      </a>
+                      </div>
+                      
+                      <data class="card-value" value="15,763.05">₹15,763.05</data>
+                      
+                      <div class="card-analytics">
+                        <data class="current-price" value="15,763.05">₹15,763.05</data>
+                      
+                        <div class="badge red">Up</div>
+                      </div>
+                      </div>
+                      </li>
+                      
+
+                <li>
+                  <div class="trend-card">
+                    <div class="card-title-wrapper">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/previews/024/806/527/large_2x/infosys-logo-transparent-free-png.png"
+                        width="24"
+                        height="24"
+                        alt="infosys logo"
+                      />
+                
+                      <a href="#" class="card-title">
+                        Infosys <span class="span">INFY</span>
+                      </a>
+                      </div>
+                      
+                      <data class="card-value" value="1,345.25">₹1,345.25</data>
+                      
+                      <div class="card-analytics">
+                        <data class="current-price" value="1,345.25">₹1,345.25</data>
+                      
+                        <div class="badge green">Up</div>
+                      </div>
+                      </div>
+                      </li>
+                      
+                
+                <li>
+                  <div class="trend-card">
+                    <div class="card-title-wrapper">
+                      <img
+                        src="https://companieslogo.com/img/orig/RELIANCE.NS-bb9f8a1b.png?t=1633628819"
+                        width="24"
+                        height="24"
+                        alt="reliance logo"
+                      />
+                
+                      <a href="#" class="card-title">
+                        Reliance Industries <span class="span">RELIANCE</span>
+                      </a>
+                      </div>
+                      
+                      <data class="card-value" value="2,345.25">₹2,345.25</data>
+                      
+                      <div class="card-analytics">
+                        <data class="current-price" value="2,345.25">₹2,345.25</data>
+                      
+                        <div class="badge green">Up</div>
+                      </div>
+                      </div>
+                      </li>
+                      
+                
+                <li>
+                  <div class="trend-card">
+                    <div class="card-title-wrapper">
+                      <img
+                        src="https://zeevector.com/wp-content/uploads/TCS-Logo-White-Transparent-768x213.png"
+                        width="24"
+                        height="24"
+                        alt="tcs logo"
+                      />
+                
+                      <a href="#" class="card-title">
+                        Tata Consultancy Services <span class="span">TCS</span>
+                      </a>
+                      </div>
+                      
+                      <data class="card-value" value="3,245.25">₹3,245.25</data>
+                      
+                      <div class="card-analytics">
+                        <data class="current-price" value="3,245.25">₹3,245.25</data>
+                      
+                        <div class="badge red">Down</div>
+                      </div>
+                      </div>
+                      </li>
+                      
+                  
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #MARKET
+      -->
+
+        <section class="section market" aria-label="market update" data-section>
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">Market Update</h2>
+
+              <a href="#" class="btn-link" id="btncry2">See All Coins</a>
+            </div>
+
+            <div class="market-tab">
+              <ul class="tab-nav">
+                
+              </ul>
+
+              <table class="market-table">
+                <thead class="table-head">
+                  <tr class="table-row table-title">
+                    <th class="table-heading"></th>
+
+                    <th class="table-heading" scope="col">#</th>
+
+                    <th class="table-heading" scope="col">Name</th>
+
+                    <th class="table-heading" scope="col">Last Price</th>
+
+                    <th class="table-heading" scope="col">24h %</th>
+
+                    <th class="table-heading" scope="col">Market Cap</th>
+
+                    <th class="table-heading" scope="col">Last 7 Days</th>
+
+                    <th class="table-heading"></th>
+                  </tr>
+                </thead>
+
+                <tbody class="table-body">
+                  <tr class="table-row">
+                    <tr class="table-row">
+                      <td class="table-data">
+                        <button
+                          class="add-to-fav"
+                          aria-label="Add to favourite"
+                          data-add-to-fav
+                        >
+                          <ion-icon
+                            name="star-outline"
+                            aria-hidden="true"
+                            class="icon-outline"
+                          ></ion-icon>
+                          <ion-icon
+                            name="star"
+                            aria-hidden="true"
+                            class="icon-fill"
+                          ></ion-icon>
+                        </button>
+                      </td>
+                    
+                      <th class="table-data rank" scope="row">1</th>
+                    
+                      <td class="table-data">
+                        <div class="wrapper">
+                          <img
+                            src="https://blog.amsoil.com/wp-content/uploads/2016/03/Nifty-50-logo-online-298x217.jpg"
+                            width="20"
+                            height="20"
+                            alt="Nifty 50 logo"
+                            class="img"
+                          />
+                    
+                          <h3>
+                            <a href="#" class="coin-name"
+                              >Nifty 50 <span class="span">NIFTY</span></a
+                            >
+                          </h3>
+                        </div>
+                      </td>
+                    
+                      <td class="table-data last-price">₹15,763.05</td>
+                    
+                      <td class="table-data last-update green">+0.80%</td>
+                    
+                      <td class="table-data market-cap">₹1,23,456,789,012</td>
+                    
+                      <td class="table-data">
+                        <img
+                          src="./assets/images/chart-1.svg"
+                          width="100"
+                          height="40"
+                          alt="profit chart"
+                          class="chart"
+                        />
+                      </td>
+                    
+                      <td class="table-data">
+                        <button class="btn btn-outline">Trade</button>
+                      </td>
+                    </tr>
+                    
+                    <tr class="table-row">
+                      <td class="table-data">
+                        <button
+                          class="add-to-fav"
+                          aria-label="Add to favourite"
+                          data-add-to-fav
+                        >
+                          <ion-icon
+                            name="star-outline"
+                            aria-hidden="true"
+                            class="icon-outline"
+                          ></ion-icon>
+                          <ion-icon
+                            name="star"
+                            aria-hidden="true"
+                            class="icon-fill"
+                          ></ion-icon>
+                        </button>
+                      </td>
+                    
+                      <th class="table-data rank" scope="row">2</th>
+                    
+                      <td class="table-data">
+                        <div class="wrapper">
+                          <img
+                            src="https://static.vecteezy.com/system/resources/previews/024/806/527/large_2x/infosys-logo-transparent-free-png.png"
+                            width="20"
+                            height="20"
+                            alt="Infosys logo"
+                            class="img"
+                          />
+                    
+                          <h3>
+                            <a href="#" class="coin-name"
+                              >Infosys <span class="span">INFY</span></a
+                            >
+                          </h3>
+                        </div>
+                      </td>
+                    
+                      <td class="table-data last-price">₹1,345.25</td>
+                    
+                      <td class="table-data last-update red">-1.15%</td>
+                    
+                      <td class="table-data market-cap">₹5,67,890,123,456</td>
+                    
+                      <td class="table-data">
+                        <img
+                          src="./assets/images/chart-2.svg"
+                          width="100"
+                          height="40"
+                          alt="profit chart"
+                          class="chart"
+                        />
+                      </td>
+                    
+                      <td class="table-data">
+                        <button class="btn btn-outline">Trade</button>
+                      </td>
+                    </tr>
+                    
+
+                    <tr class="table-row">
+                      <td class="table-data">
+                        <button
+                          class="add-to-fav"
+                          aria-label="Add to favourite"
+                          data-add-to-fav
+                        >
+                          <ion-icon
+                            name="star-outline"
+                            aria-hidden="true"
+                            class="icon-outline"
+                          ></ion-icon>
+                          <ion-icon
+                            name="star"
+                            aria-hidden="true"
+                            class="icon-fill"
+                          ></ion-icon>
+                        </button>
+                      </td>
+                    
+                      <th class="table-data rank" scope="row">3</th>
+                    
+                      <td class="table-data">
+                        <div class="wrapper">
+                          <img
+                            src="https://companieslogo.com/img/orig/RELIANCE.NS-bb9f8a1b.png?t=1633628819"
+                            width="20"
+                            height="20"
+                            alt="Reliance logo"
+                            class="img"
+                          />
+                    
+                          <h3>
+                            <a href="#" class="coin-name"
+                              >Reliance Industries <span class="span">RELIANCE</span></a
+                            >
+                          </h3>
+                        </div>
+                      </td>
+                    
+                      <td class="table-data last-price">₹2,345.25</td>
+                    
+                      <td class="table-data last-update green">+2.15%</td>
+                    
+                      <td class="table-data market-cap">₹8,90,123,456,789</td>
+                    
+                      <td class="table-data">
+                        <img
+                          src="./assets/images/chart-1.svg"
+                          width="100"
+                          height="40"
+                          alt="profit chart"
+                          class="chart"
+                        />
+                      </td>
+                    
+                      <td class="table-data">
+                        <button class="btn btn-outline">Trade</button>
+                      </td>
+                    </tr>
+                    
+                    <tr class="table-row">
+                      <td class="table-data">
+                        <button
+                          class="add-to-fav"
+                          aria-label="Add to favourite"
+                          data-add-to-fav
+                        >
+                          <ion-icon
+                            name="star-outline"
+                            aria-hidden="true"
+                            class="icon-outline"
+                          ></ion-icon>
+                          <ion-icon
+                            name="star"
+                            aria-hidden="true"
+                            class="icon-fill"
+                          ></ion-icon>
+                        </button>
+                      </td>
+                    
+                      <th class="table-data rank" scope="row">4</th>
+                    
+                      <td class="table-data">
+                        <div class="wrapper">
+                          <img
+                            src="https://zeevector.com/wp-content/uploads/TCS-Logo-White-Transparent-768x213.png"
+                            width="20"
+                            height="20"
+                            alt="TCS logo"
+                            class="img"
+                          />
+                    
+                          <h3>
+                            <a href="#" class="coin-name"
+                              >Tata Consultancy Services <span class="span">TCS</span></a
+                            >
+                          </h3>
+                        </div>
+                      </td>
+                    
+                      <td class="table-data last-price">₹3,245.25</td>
+                    
+                      <td class="table-data last-update red">-1.15%</td>
+                    
+                      <td class="table-data market-cap">₹9,01,234,567,890</td>
+                    
+                      <td class="table-data">
+                        <img
+                          src="./assets/images/chart-2.svg"
+                          width="100"
+                          height="40"
+                          alt="profit chart"
+                          class="chart"
+                        />
+                      </td>
+                    
+                      <td class="table-data">
+                        <button class="btn btn-outline">Trade</button>
+                      </td>
+                    </tr>                    
+
+                    <tr class="table-row">
+                      <td class="table-data">
+                        <button
+                          class="add-to-fav"
+                          aria-label="Add to favourite"
+                          data-add-to-fav
+                        >
+                          <ion-icon
+                            name="star-outline"
+                            aria-hidden="true"
+                            class="icon-outline"
+                          ></ion-icon>
+                          <ion-icon
+                            name="star"
+                            aria-hidden="true"
+                            class="icon-fill"
+                          ></ion-icon>
+                        </button>
+                      </td>
+                    
+                      <th class="table-data rank" scope="row">5</th>
+                    
+                      <td class="table-data">
+                        <div class="wrapper">
+                          <img
+                            src="https://logodix.com/logo/1620137.png"
+                            width="20"
+                            height="20"
+                            alt="HDFC logo"
+                            class="img"
+                          />
+                    
+                          <h3>
+                            <a href="#" class="coin-name"
+                              >HDFC Bank <span class="span">HDFCBANK</span></a
+                            >
+                          </h3>
+                        </div>
+                      </td>
+                    
+                      <td class="table-data last-price">₹1,545.25</td>
+                    
+                      <td class="table-data last-update green">+0.95%</td>
+                    
+                      <td class="table-data market-cap">₹8,67,890,123,456</td>
+                    
+                      <td class="table-data">
+                        <img
+                          src="./assets/images/chart-1.svg"
+                          width="100"
+                          height="40"
+                          alt="profit chart"
+                          class="chart"
+                        />
+                      </td>
+                    
+                      <td class="table-data">
+                        <button class="btn btn-outline">Trade</button>
+                      </td>
+                    </tr>
+                    
+                    <tr class="table-row">
+                      <td class="table-data">
+                        <button
+                          class="add-to-fav"
+                          aria-label="Add to favourite"
+                          data-add-to-fav
+                        >
+                          <ion-icon
+                            name="star-outline"
+                            aria-hidden="true"
+                            class="icon-outline"
+                          ></ion-icon>
+                          <ion-icon
+                            name="star"
+                            aria-hidden="true"
+                            class="icon-fill"
+                          ></ion-icon>
+                        </button>
+                      </td>
+                    
+                      <th class="table-data rank" scope="row">6</th>
+                    
+                      <td class="table-data">
+                        <div class="wrapper">
+                          <img
+                            src="https://companieslogo.com/img/orig/ITC.NS-3f25b36d.png?t=1593960669"
+                            width="20"
+                            height="20"
+                            alt="ITC logo"
+                            class="img"
+                          />
+                    
+                          <h3>
+                            <a href="#" class="coin-name"
+                              >ITC Limited <span class="span">ITC</span></a
+                            >
+                          </h3>
+                        </div>
+                      </td>
+                    
+                      <td class="table-data last-price">₹235.25</td>
+                    
+                      <td class="table-data last-update red">-0.75%</td>
+                    
+                      <td class="table-data market-cap">₹3,01,234,567,890</td>
+                    
+                      <td class="table-data">
+                        <img
+                          src="./assets/images/chart-1.svg"
+                          width="100"
+                          height="40"
+                          alt="profit chart"
+                          class="chart"
+                        />
+                      </td>
+                    
+                      <td class="table-data">
+                        <button class="btn btn-outline">Trade</button>
+                      </td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #INSTRUCTION
+      -->
+
+        <section
+          class="section instruction"
+          aria-label="instruction"
+          data-section
+        >
+        <div class="container">
+          <h2 class="h2 section-title">How It Works</h2>
+        
+          <p class="section-text">
+            Financial Flux is a comprehensive platform for managing your financial assets and investments.
+          </p>
+        
+          <ul class="instruction-list">
+            <li>
+              <div class="instruction-card">
+                <figure class="card-banner">
+                  <img
+                    src="https://www.freeiconspng.com/uploads/sign-up-icon-2.png"
+                    width="96"
+                    height="96"
+                    loading="lazy"
+                    alt="Step 1"
+                    class="img"
+                  />
+                </figure>
+        
+                <p class="card-subtitle">Step 1</p>
+        
+                <h3 class="h3 card-title">Sign Up</h3>
+        
+                <p class="card-text">
+                  Sign up for a free account on Financial Flux. It's quick and easy, and you'll gain access to a wide range of financial tools and resources.
+                </p>
+        
+                </div>
+              </li>
+
+              <li>
+                <div class="instruction-card">
+                  <figure class="card-banner">
+                    <img
+                      src="https://cdn0.iconfinder.com/data/icons/money-icons-rounded/110/Wallet-1024.png"
+                      width="96"
+                      height="96"
+                      loading="lazy"
+                      alt="Step 2"
+                      class="img"
+                    />
+                  </figure>
+
+                  <p class="card-subtitle">Step 2</p>
+
+                  <h3 class="h3 card-title">Connect Wallet</h3>
+
+<p class="card-text">
+  Connect your wallet to Financial Flux. We support a variety of wallets for your convenience.
+</p>
+</div>
+</li>
+
+<li>
+<div class="instruction-card">
+  <figure class="card-banner">
+    <img
+      src="https://www.pngmart.com/files/17/Trade-PNG-Pic.png"
+      width="96"
+      height="96"
+      loading="lazy"
+      alt="Step 3"
+      class="img"
+    />
+  </figure>
+
+  <p class="card-subtitle">Step 3</p>
+
+  <h3 class="h3 card-title">Start Trading</h3>
+
+  <p class="card-text">
+    Start trading Indian stocks on Financial Flux. Our platform provides real-time market data and advanced trading features.
+  </p>
+</div>
+</li>
+
+<li>
+<div class="instruction-card">
+  <figure class="card-banner">
+    <img
+      src="https://www.pngmart.com/files/7/Profit-PNG-Transparent-Image.png"
+      width="96"
+      height="96"
+      loading="lazy"
+      alt="Step 4"
+      class="img"
+    />
+  </figure>
+
+  <p class="card-subtitle">Step 4</p>
+
+  <h3 class="h3 card-title">Earn Money</h3>
+
+  <p class="card-text">
+    Earn money by making smart investment decisions on Financial Flux. Monitor your portfolio and optimize your returns.
+  </p>
+</div>
+</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="section about" aria-label="about" data-section>
+          <div class="container">
+            <figure class="about-banner">
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/c26b65c517bd09c79979ab89ad3d29b5f16a4a40/4e5a6/static/laptop-platform-preview@2x-01b1fc55ebb1d5443ee39cae171d8348.png"
+                width="748"
+                height="436"
+                loading="lazy"
+                alt="about banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="about-content">
+              <h2 class="h2 section-title">What Is Financial Flux</h2>
+
+              <p class="section-text">
+                Go through a variety of Indian Stocks -> Buy Sell Repeat
+              </p>
+
+              <ul class="section-list">
+                <li class="section-item">
+                  <div class="title-wrapper">
+                    <ion-icon
+                      name="checkmark-circle"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <h3 class="h3 list-title">
+                      View real-time Stock prices
+                    </h3>
+                  </div>
+
+                  <p class="item-text">
+                    Experience a variety of trading on IndiaStocks. You can use
+                    various types of stock transactions such as Equity Trading,
+                    Futures and Options, Commodity Trading, and Margin Trading.
+                  </p>
+                  </li>
+                  
+                  <li class="section-item">
+                    <div class="title-wrapper">
+                      <ion-icon
+                        name="checkmark-circle"
+                        aria-hidden="true"
+                      ></ion-icon>
+                  
+                      <h3 class="h3 list-title">
+                        Buy and sell INFY, TCS, RELIANCE, HDFC, etc...
+                      </h3>
+                    </div>
+                  
+                    <p class="item-text">
+                      Experience a variety of trading on IndiaStocks. You can use
+                      various types of stock transactions such as Equity Trading,
+                      Futures and Options, Commodity Trading, and Margin Trading.
+                    </p>
+                  
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn-primary">Explore More</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #APP
+      --></article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top" data-section>
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img
+                src="https://cryptologos.cc/logos/zel-flux-logo.png?v=025"
+                width="50"
+                height="50"
+                alt="   FinancialFlux logo"
+              />
+              FinancialFlux 
+            </a>
+
+            <h2 class="footer-title">Let's talk! 🤙</h2>
+
+            <a href="tel:+919488627508" class="footer-contact-link"
+              >+919488627508</a
+            >
+
+            <a
+              href="mailto:keerthivasansv2006@outlook.com"
+              class="footer-contact-link"
+              >cb.sc.u4aie23037@cb.students.amrita.edu
+              cb.sc.u4aie23037@cb.students.amrita.edu</a
+            >
+
+            <address class="footer-contact-link">
+              Amrita Vishwa Vidyapeetham,
+Amritanagar Campus
+Coimbatore- 641 112,
+Tamil Nadu, India
+            </address>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Products</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Spot</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Exchange</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Launchpad</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Pay</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Services</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Buy Stocks</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Markets</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Tranding Fee</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Affiliate Program</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Referral Program</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">API</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Support</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Learn</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">User Feedback</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Submit a request</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">API Documentation</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Rules</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">About Us</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About Financial Flux</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Authenticity Check</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Careers</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Business Contacts</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+  <script>
+    "use strict";
+
+    /**
+     * add event on element
+     */
+    const btnlogin = document.getElementById("utlogin");
+    const btncry = document.getElementById("btncry");
+    const btncry1 = document.getElementById("btncry1");
+    const btncry2 = document.getElementById("btncry2");
+    const btnsell = document.getElementById("btnsell");
+    const utdash = document.getElementById("utdash");
+
+    btnlogin.addEventListener("click", (e) => {
+      location.href = "loginSignup.html";
+    });
+    btncry.addEventListener("click", (e) => {
+      location.href = "./pricing/pricing.html";
+    });
+
+    btncry2.addEventListener("click", (e) => {
+      location.href = "./pricing/pricing.html";
+    });
+
+    utdash.addEventListener("click", (e) => {
+      if (!localStorage.getItem("name")) {
+        location.href = "./loginSignup.html";
+      } else {
+        location.href = "./userDashboard/dashboard.html";
+      }
+    });
+    if (localStorage.getItem("name")) {
+      // uname.innerText = `Hi ${localStorage.getItem("name")}`;
+      btnlogin.innerText = "";
+      btnlogin.innerText = "Logout";
+      btnlogin.addEventListener("click", (e) => {
+        localStorage.clear();
+        ////////
+      });
+    }
+
+    const addEventOnElem = function (elem, type, callback) {
+      if (elem.length > 1) {
+        for (let i = 0; i < elem.length; i++) {
+          elem[i].addEventListener(type, callback);
+        }
+      } else {
+        elem.addEventListener(type, callback);
+      }
+    };
+
+    /**
+     * navbar toggle
+     */
+
+    const navbar = document.querySelector("[data-navbar]");
+    const navbarLinks = document.querySelectorAll("[data-nav-link]");
+    const navToggler = document.querySelector("[data-nav-toggler]");
+
+    const toggleNavbar = function () {
+      navbar.classList.toggle("active");
+      navToggler.classList.toggle("active");
+      document.body.classList.toggle("active");
+    };
+
+    addEventOnElem(navToggler, "click", toggleNavbar);
+
+    const closeNavbar = function () {
+      navbar.classList.remove("active");
+      navToggler.classList.remove("active");
+      document.body.classList.remove("active");
+    };
+
+    addEventOnElem(navbarLinks, "click", closeNavbar);
+
+    /**
+     * header active
+     */
+
+    const header = document.querySelector("[data-header]");
+
+    const activeHeader = function () {
+      if (window.scrollY > 300) {
+        header.classList.add("active");
+      } else {
+        header.classList.remove("active");
+      }
+    };
+
+    addEventOnElem(window, "scroll", activeHeader);
+
+    /**
+     * toggle active on add to fav
+     */
+
+    const addToFavBtns = document.querySelectorAll("[data-add-to-fav]");
+
+    const toggleActive = function () {
+      this.classList.toggle("active");
+    };
+
+    addEventOnElem(addToFavBtns, "click", toggleActive);
+
+    /**
+     * scroll revreal effect
+     */
+
+    const sections = document.querySelectorAll("[data-section]");
+
+    const scrollReveal = function () {
+      for (let i = 0; i < sections.length; i++) {
+        if (
+          sections[i].getBoundingClientRect().top <
+          window.innerHeight / 1.5
+        ) {
+          sections[i].classList.add("active");
+        } else {
+          sections[i].classList.remove("active");
+        }
+      }
+    };
+
+    scrollReveal();
+
+    addEventOnElem(window, "scroll", scrollReveal);
+  </script>
+</html>

@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  border:none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+}
+.main{
+  display: flex;
+}
+.sidebar{
+  position:sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 115px;
+  height: 100vh;
+  padding: 0 1.7rem;
+  color: #fff;
+  overflow: hidden;
+  background: hsl(240,5%,8%);
+  transition: all 0.5s linear;
+
+  /* rgb(21,22,24) */
+}
+.sidebar:hover{
+  width: 300px;
+  transition: 0.5s;
+}
+.logo{
+  height: 80px;
+  padding: 16px;
+
+}
+.menu{
+  height: 88%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+.menu li{
+  padding: 1rem;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+.menu li:hover,.active{
+  background:#e0e0e058 ;
+}
+
+.menu a{
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu a span{
+  overflow: hidden;
+}
+.menu a i{
+  font-size: 1.2rem;
+}
+
+.logout{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+}
+/* Main body starts */
+.main--content{
+position: relative;
+background: hsl(220, 5%, 20%);
+
+width: 100%;
+padding: 1rem;
+}
+
+.icon-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.header--wrapper img{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.header--wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: hsl(240,5%,8%);                               
+  /* background: #ebe9e9;                                */
+  border-radius: 10px;
+  padding: 10px 2rem;
+  margin-bottom: 1rem;
+}
+/* rgb(56, 116, 255); hsl(220, 5%, 20%); */
+.header--title{
+  color:   #ebe9e9;
+}
+.header--title i{
+  color: #ebe9e9;
+}
+.user--info{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.search--box{
+background: hsl(220, 5%, 20%);
+/* background: hsl(220, 5%, 20%);; */
+border-radius: 15px;
+color:  rgb(56, 116, 255);
+display: flex;
+align-items: center;
+gap: 5px;
+padding: 4px 12px;
+}
+.search--box input{
+  background: transparent;
+  padding: 10px;
+  color: #fff;
+}
+.search--box i{
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.search--box i:hover{
+  transform: scale(1.2);
+}
+
+
+/* Card cointainer */
+.card-container{
+  background: hsl(240, 7%, 30%);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.card--wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.main--title{
+  color:  #ebe9e9;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.payment--card{
+  /* background: rgb(229,223,223); */
+  border-radius: 10px;
+  padding: 1.2rem;
+  width: 290px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+}
+.payment--card:hover{
+  transform: translateY(-6px);
+}
+
+.card--header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.amount{
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  font-size: 16px;
+  font-weight: 200;
+}
+.amount--value{
+  font-size: 24px;
+  font-family:"Courier New", Courier, monospace;
+  font-weight: 600;
+}
+.icon{
+  color: #fff;
+  padding:1rem;
+  height:60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+
+}
+
+.card-details{
+  font-size: 18px;
+  color: #777777;
+  letter-spacing: 2px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* color css */
+
+.light-green{
+  background: rgb(235,254,235);
+}
+.light-blue{
+  background: rgb(236,236,254);
+
+}
+
+.dark-green{
+  background: green;
+}
+.dark-blue{
+  background: blue;
+}
+
+/* tabular section */
+
+.tabular--wrapper{
+  background: hsl(240,5%,8%);
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.table-container{
+  width: 100%;
+}
+table{
+  width:100%;
+  border-collapse:collapse ;
+}
+thead{
+  background:hsl(220, 5%, 20%);
+  color: #fff;
+}
+
+th{
+  padding: 15px;
+  text-align: left;
+
+}
+tbody{
+  color: hsl(240, 7%, 18%);
+}
+td{
+  padding: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+tr:nth-child(even){
+  background: hsl(240, 7%, 30%);
+ 
+}
+table{
+  border-collapse: collapse;
+      /* width: 100%; */
+      border-radius: 10px; /* Set your desired border-radius value */
+      overflow: hidden;
+}
+tfoot{
+ 
+  background:  hsl(220, 5%, 20%);;
+  font-weight: bold;
+  color: #fff;
+}
+tfoot td{
+  
+  padding: 15px;
+  color: #fff;
+}
+#btn-foot{
+ padding-left: 80%;
+  
+}
+#btn-foot button{
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  width: 30px;
+}
+#btn-foot button:hover{
+  color: #ebe9e9;
+  background: #777777;
+}
+
+/* Add these styles after your existing CSS */
+
+/* Profile Modal */
+.modal-content {
+  background: hsl(240, 7%, 30%);
+  color: #ebe9e9;
+  border-radius: 10px;
+}
+
+.modal-header {
+  background: hsl(220, 5%, 20%);
+  color: #fff;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-body {
+  background: hsl(240, 7%, 30%);
+}
+
+.modal-footer {
+  background: hsl(220, 5%, 20%);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Edit Profile Image Modal */
+#edit-profile-image-modal .modal-content {
+  background: hsl(240, 7%, 30%);
+  color: #ebe9e9;
+  border-radius: 10px;
+}
+
+#edit-profile-image-modal .modal-header {
+  background: hsl(220, 5%, 20%);
+  color: #fff;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+#edit-profile-image-modal .modal-body {
+  background: hsl(240, 7%, 30%);
+}
+
+#edit-profile-image-modal .modal-footer {
+  background: hsl(220, 5%, 20%);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Adjust the width of the Profile Modal */
+#profile-model .modal-dialog {
+  max-width: 800px;
+}
+
+/* Hover effect on modal buttons */
+.modal-footer button:hover {
+  color: #ebe9e9;
+  background: #777777;
+}
+
+
+
+

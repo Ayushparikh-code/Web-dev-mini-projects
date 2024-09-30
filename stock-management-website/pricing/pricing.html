@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pricing</title>
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="https://cryptologos.cc/logos/zel-flux-logo.png?v=025" type="image/svg+xml" />
+
+    <!-- 
+  - custom css link
+-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- 
+  - google font link
+-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko&display=swap"
+      rel="stylesheet"
+    />
+    <!-- stock family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Teko&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="https://cryptologos.cc/logos/zel-flux-logo.png?v=025"
+            width="32"
+            height="32"
+            alt=" logo"
+          />
+          Financial Flux
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" id="home">Homepage</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link id="btncry"
+                >Stocks</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link id="utdash1"
+                >DashBoard</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a class="navbar-link" data-nav-link id="uname"></a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle menu"
+          data-nav-toggler
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <a href="#" class="btn btn-outline" id="utlogin">Login</a>
+      </div>
+    </header>
+    <br />
+    <br />
+    <!-- header section ends -->
+    <div class="heading">
+      <h1>Stock Prices</h1>
+    </div>
+
+    <table class="crypto-table">
+      <thead>
+        <tr>
+          <th class="table-heading">Stocks</th>
+          <th class="table-heading">
+            <div class="search--box">
+              <i class="fa-solid fa-search"></i>
+              <input id="stock-input" type="text" placeholder="Search" />
+            </div>
+          </th>
+          <th class="table-heading">PRICES</th>
+          <th class="table-heading">RATE %</th>
+          <th class="table-heading">
+            <div class="sort-button">
+              <h4 id="marketCapSortButton">MARKET CAP</h4>
+              <button class="ascending-market">&#8593;</button>
+              <button class="descending-market">&#8595;</button>
+            </div>
+          </th>
+          <th class="table-heading">Trade</th>
+        </tr>
+      </thead>
+      <tbody id="container"></tbody>
+    </table>
+    <div id="pagination-wrapper"></div>
+  </body>
+  <script src="pricing.js"></script>
+</html>
+<script>
+  const btnlogin = document.getElementById("utlogin");
+  const btncry = document.getElementById("btncry");
+  const home = document.getElementById("home");
+  const btnsell = document.getElementById("btnsell");
+  const utdash1 = document.getElementById("utdash1");
+
+  btnlogin.addEventListener("click", (e) => {
+    console.log("Login button clicked");
+    location.href = "../loginSignup.html";
+  });
+  home.addEventListener("click", (e) => {
+    location.href = "../index.html";
+  });
+
+  btncry.addEventListener("click", (e) => {
+    location.href = "../pricing/pricing.html";
+  });
+
+  utdash1.addEventListener("click", (e) => {
+    console.log("Dashboard button clicked");
+    if (!localStorage.getItem("name")) {
+      console.log("Redirecting to loginSignup.html");
+      location.href = "../loginSignup.html";
+    } else {
+      console.log("Redirecting to userDashboard/dashboard.html");
+      location.href = "../userDashboard/dashboard.html";
+    }
+  });
+
+  if (localStorage.getItem("name")) {
+    uname.innerText = `Hi ${localStorage.getItem("name")}`;
+    btnlogin.innerText = "Logout";
+    btnlogin.addEventListener("click", (e) => {
+      localStorage.clear();
+      // Additional logout logic can be added here
+    });
+  }
+</script>

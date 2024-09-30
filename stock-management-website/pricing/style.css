@@ -1,0 +1,272 @@
+/* Add this CSS for the table heading */
+thead tr td {
+  width: 20%; /* Adjust the width as needed for equal spacing */
+  text-align: center; /* Center-align text in cells */
+}
+
+thead{
+  font-family:'Open Sans', sans-serif;
+  font-size: larger;
+}
+
+
+.heading-coin-image{
+  display: flex;
+  flex-wrap: wrap;
+  width: 10%;
+}
+
+.heading-coin-image img{
+  width: 100px;
+  border-radius: 48%;
+}
+
+/* Basic styling for the container */
+body {
+  padding: 10px;
+  background-color: #1a1a1a; 
+  color: #ffffff;
+}
+
+
+
+td .current-price{
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: #e0e0e0;
+  letter-spacing: 1px;
+}
+
+.price-change{
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: #e0e0e0;
+  letter-spacing: 1px;
+}
+
+.market-price{
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: #e0e0e0;
+  letter-spacing: 1px;
+}
+
+#container {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 0.5%;
+}
+
+.heading {
+  font-family: 'Teko', sans-serif;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-left: 50px;
+  letter-spacing: 4px;
+  font-size: x-large;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+
+/* Styling for the table */
+.coin-list {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2b2b2b;
+  
+}
+
+/* Styling for table rows */
+.coin-div {
+  display: table-row;
+  height: 80px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Styling for alternate row colors */
+.coin-div:nth-child(even) {
+  background-color: #212121; 
+  border: none;
+  outline: none;
+}
+
+
+/* Styling for table cells */
+.coin-div > * {
+  display: table-cell;
+  padding: 10px;
+  /* border: 1px solid #535353; */
+  border-right: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Styling for specific columns */
+.coin-div .coin-image {
+  width: 40px;
+}
+
+.coin-div .coin-name {
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+.coin-div .trade-btn {
+  width: 80px;
+  /* background-color: #4CAF50; */
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Hover effect on buttons */
+.coin-div .trade-btn.positive-change:hover {
+  background-color: #003100;
+}
+
+.coin-div .trade-btn.negative-change:hover{
+  background-color: #500400;
+}
+
+/* Styling for negative market price change */
+.coin-div .trade-btn.negative-change {
+  background-color: #7b0600;
+}
+
+.negative-change{
+  color: #b32116;
+}
+
+.coin-div .trade-btn.positive-change {
+  background-color: #004d00;
+}
+
+
+/* Styling for the search bar and sorting buttons */
+#searchBarContainer {
+  /* background-color: #f8f9fa; */
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Align items with space in between */
+  padding: 10px; /* Add padding for better spacing */
+  margin-left: 10px;
+}
+
+/* Style for the form inline */
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+#searchBar {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+
+
+.sort-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 20%;
+}
+
+.sort-button h4 {
+  margin-right: 10px;
+}
+
+.sort-button button {
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Styling for ascending and descending buttons */
+.ascending-market,
+.descending-market {
+  background-color: #094ba1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.ascending-market:hover,
+.descending-market:hover {
+  background-color: #45a049;
+}
+
+.paginated-buttons {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.btn-outline-success {
+  margin-left: 10px;
+}
+
+/* Style for the search box */
+.search--box {
+  background: rgb(82, 82, 82);
+  /* background-color: white; */
+  border-radius: 15px;
+  color: rgb(202, 203, 206);
+  display: flex;
+  align-items: center;
+  /* gap: 5px; */
+  padding: 1% 2%;
+}
+
+#coin-input{
+  color: #ffffff;
+}
+
+.search--box input {
+  background: transparent;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search--box i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.search--box i:hover {
+  transform: scale(1.2);
+}
+
+.Trade {
+  padding-right: 100px;
+}
+
+.crypto-table{
+  width: 100%;
+}
+
+#pagination-wrapper{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 0.5%;
+}
+
+.paginated-buttons{
+  width: 3%;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+/* header section */
+
+
