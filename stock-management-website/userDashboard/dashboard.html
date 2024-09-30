@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="dashBrd.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <section class="main">
+  <div class="sidebar">
+    <div class="logo"></div>
+    <ul class="menu">
+      <li>
+        <a href="../index.html">
+          <i class="fa fa-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li  class="active">
+        <a href="#">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li >
+        <a href="#" id="prof-btn">
+          <i class="fas fa-user" ></i>
+          <span >Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="../pricing/pricing.html">
+          <i class="fa-brands fa-dollar"></i>
+          <span>Stocks</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" id="noti-btn">
+          <i class="fa-solid fa-bell"></i>
+          <span>Notification</span>
+        </a>
+      </li>
+      <li>
+        <a href="../about.html">
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+          <span>About us</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+      <li class="logout">
+        <a href="#" id="logout-btn">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Logout</span>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+  <div class="main--content">
+    <div class="header--wrapper">
+      <div class="header--title">
+        <span>Hello,</span>
+        <h2 id="dashbrd-name"></h2>
+      </div>
+      <div class="user--info">
+       
+        
+          
+          <div class="search--box">
+            <i class="fa-solid fa-search"   id="search"></i>
+          <input type="search" placeholder="Search" id="search-input"/>
+        </div>
+       
+      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"><i class="fa-regular fa-circle-check"></i>Search Successfull!!!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Your modal content goes here -->
+              <p>Finance history Table has been organised according to your search.</p>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button> -->
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+        <img src="#" alt="img" id="profile-pic">
+      </div>
+      
+    </div>
+    <div class="card-container">
+      <h3 class="main--title">Account Information</h3>
+      <div class="card--wrapper">
+        <div class="payment--card light-blue">
+          <div class="card--header">
+            <div class="amount">
+             <span class="title">Balance</span>
+              <span class="amount--value" id="user-balance"></span>
+            </div>
+            <i class="fas fa-wallet icon dark-blue"></i>
+          </div>
+          
+        </div>
+      
+        <div class="payment--card light-green">
+          <div class="card--header">
+            <div class="amount">
+             <span class="title">Investments</span>
+              <span class="amount--value" id="user-investments">$500</span>
+            </div>
+            <i class="fas fa-hand-holding-usd icon dark-green"></i>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+
+    <div class="tabular--wrapper">
+      <h3 class="main--title">Payment History</h3>
+       <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Icon</th>
+              <th>Stock Name</th>
+              <th>Amount</th>
+              <th>Rate%</th>
+              <th>Market Cap.</th>
+              <th>Transaction Type</th>
+            </tr>
+            
+          </thead>
+          <tbody id="payHistory">
+           
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="7" id="btn-foot"></td>
+            </tr>
+          </tfoot>
+        </table>
+       </div>
+    </div>
+  </div>
+</section>
+<div class="profile">
+  <!-- Profile Modal -->
+  <div class="modal fade" id="profile-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="profile-title">Profile</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                  <div class="row">
+                      <div class="col-sm border-right">
+                          <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                              <img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg" id="test-img">
+                              <span class="font-weight-bold" id="user-name">Edogaru</span>
+                              <span class="text-black-50" id="user-email">edogaru@mail.com.my</span>
+                              <span> </span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row mt-2">
+                      <div class="col-md-12"><label class="labels">Name</label><input type="text" class="form-control" placeholder="first name" value="" id="user-name-2"></div>
+                  </div>
+                  <div class="row mt-3">
+                      <div class="col-md-12"><label class="labels">Age</label><input type="text" class="form-control" placeholder="Enter Age" value="" id="user-age-2"></div>
+
+                      <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" class="form-control" placeholder="enter phone number" value="" id="user-mobile"></div>
+                      <div class="col-md-12"><label class="labels">Email ID</label><input type="text" class="form-control" placeholder="enter email id" value="" id="user-email-2"></div>
+                     </div>
+                 
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#edit-profile-image-modal">Edit Profile Image</button>
+                  <button type="button" class="btn btn-primary" id="prof-chg-submit">Save changes</button>
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Edit Profile Image Modal -->
+  <div class="modal fade" id="edit-profile-image-modal" tabindex="-1" aria-labelledby="editProfileImageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="editProfileImageModalLabel">Edit Profile Image</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <form action="" enctype="multipart/form-data" id="upload-img-form">
+              <div class="modal-body">
+                
+                  <div class="mb-3">
+                      <label for="new-profile-image" class="form-label">Select New Profile Image</label>
+                      <input type="file" class="form-control" id="new-profile-image" name="image">
+                  </div>
+               
+              </div>
+
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" id="save-img">Submit</button>
+              </div>
+            </form>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- toast profile -->
+<div class="toast align-items-center" role="alert" data-bs-autohide="false" aria-live="assertive" aria-atomic="true" id="toast-bdy">
+  <div class="d-flex">
+    <div class="toast-body">
+      Profile is being updated.
+   </div>
+    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
+
+<!-- Notification model -->
+<div class="modal fade" id="notification-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title" id="noti-title">Notifications</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body" id="noti-cards">
+      
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary" id="mark-read">Mark All Read</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- dashboard js -->
+<script src="./dashbrd.js"></script>
+
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+
+

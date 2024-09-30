@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login Registration Form</title>
+    <link rel="stylesheet" href="loginSignup.css" />
+  </head>
+  <body>
+    <img
+      id="loginImage1"
+      src="./images/login"
+      alt="image"
+    />
+    <div class="container">
+      <input type="checkbox" id="check" />
+      <div class="login form">
+        <header>Login</header>
+        <form action="#">
+          <input type="text" placeholder="Enter your email" id="emaill" />
+          <input type="password" placeholder="Enter your password" id="passl" />
+          <a href="forgotPassword.html">Forgot password?</a>
+          <input type="button" class="button" value="Login" id="loginbtn" />
+          <div id="error-message" style="color: red;"></div>
+          <br>
+        </form>
+        <div style="color: hsl(220, 5%, 20%)" id="logged"></div>
+        <div class="signup">
+          <span class="signup"
+            >Don't have an account?
+            <label for="check">Signup</label>
+          </span>
+        </div>
+      </div>
+      <div class="registration form">
+        <header>Signup</header>
+        <form action="#">
+          <input type="text" placeholder="Enter your username" id="username" />
+          <input type="text" placeholder="Enter your email" id="email" />
+          <input
+            type="password"
+            placeholder="Confirm your password"
+            id="pass"
+          />
+          <!-- <input type="button" class="button" id="signbtn" value="Signup" /> -->
+          <input type="button" class="button" id="signbtn" value="Signup" />
+        </form>
+        <div style="color: hsl(220, 5%, 20%)" id="reg"></div>
+
+        <div class="signup">
+          <span class="signup"
+            >Already have an account?
+
+            <label for="check">Login</label>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let signbtn = document.getElementById("signbtn");
+
+  signbtn.addEventListener("click", (e) => {
+    handleRegister();
+  });
+  const handleRegister = () => {
+    fetch("https://financialflux.onrender.com/user/register", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        name: document.getElementById("username").value,
+        password: document.getElementById("pass").value,
+        email: document.getElementById("email").value,
+      }),
+    }) // fetch yhn khtm
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        let reg = document.getElementById("reg");
+        reg.textContent = "successful register";
+      })
+      .catch((err) => console.log(err));
+  };
+  let loginbtn = document.getElementById("loginbtn");
+
+  loginbtn.addEventListener("click", (e) => {
+    handleLogin();
+  });
+
+  const handleLogin = () => {
+    fetch("https://financialflux.onrender.com/user/login", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        password: document.getElementById("passl").value,
+        email: document.getElementById("emaill").value,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.access_token) {
+          let logged = document.getElementById("logged");
+          logged.textContent = "Log in Successful";
+          localStorage.setItem("token", data.access_token);
+          localStorage.setItem("id", data.user._id);
+
+          localStorage.setItem("money", data.user.balance);
+          if (data.user.email) {
+            localStorage.setItem("email", JSON.stringify(data.user.email));
+          } else {
+            console.error("Email not found in the user object:", data.user);
+          }
+          if (data.user.name) {
+            localStorage.setItem("name", JSON.stringify(data.user.name));
+          } else {
+            console.error("Name not found in the user object:", data.user);
+          }
+          setTimeout(() => {
+            window.location.href = "./userDashboard/dashboard.html";
+          }, 0);
+        } else {
+          console.log("user is not reg");
+          let error = document.getElementById("error-message")
+          error.innerText = "Incorrect Credentials"
+        }
+      })
+      .catch((err) => console.log(err));
+  };
+</script>

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); 
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins",sans-serif;
+}
+.about_section-main{
+    position: relative;
+    margin-top: 5%;
+}
+.main-view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top:4%;
+    width: 100%;
+    height: 90vh;
+    background: url('./images/about-img2.jpeg');
+    opacity: 0.7;
+}
+.main-view h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 90px;
+    transition: all 0.5ms ease-in;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+.img-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background:hsl(240,5%,8%);
+    border-radius: 20px;
+    height: 500px;
+    transition: all 0.5s ease-in-out;
+}
+.img-card:hover{
+    transform: translateY(-6px);
+}
+.img-only{
+    width: 50%;
+    margin: 7%;
+}
+.img-card img{
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+}
+.card-content{
+    margin: 3%;
+
+}
+/* cards */
+.card-container{
+    margin-top: 5%;
+    background: hsl(240, 7%, 30%);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+  }
+  .card--wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .main--title{
+    color:  #ebe9e9;
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .data--card{
+    /* background: rgb(229,223,223); */
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 290px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+    background: #ebe9e9;
+  }
+  .data--card:hover{
+    transform: translateY(-6px);
+  }
+  
+  .card--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .amount{
+    display: flex;
+    flex-direction: column;
+  }
+  .title{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(1, 4, 6);
+  }
+  .amount--value{
+    font-size: 24px;
+    font-family:"Courier New", Courier, monospace;
+    font-weight: 600;
+  }
+  .icon{
+    
+    color:#ebe9e9;
+    padding:1rem;
+    height:60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 3rem;
+  }
+  
+  .card-details{
+    font-size: 18px;
+    color: #777777;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .dark-blue{
+    background: rgb(1, 1, 12);
+  }
+/*  footer css */
+
+
+
+.custom-footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 30px 0;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+}
+
+.custom-container {
+    /* display: flex;
+    justify-content: space-between; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.custom-footer-top {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.custom-footer-brand {
+    flex: 1;
+}
+
+.custom-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.custom-footer-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.custom-footer-contact-link {
+    display: block;
+    color: #ccc;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.custom-footer-contact-link:hover {
+    color: #fff;
+}
+
+.custom-footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-footer-list-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.custom-footer-link {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.custom-footer-link:hover {
+    color: #fff;
+}
