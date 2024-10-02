@@ -22,3 +22,7 @@ A fun and interactive guessing game where players try to guess the name of a ran
 
 ## Installation
 Simply open the `index.html` file in your browser.
+
+![Pokémon Game Screenshot](https://github.com/uditbaliyan/Web-dev-mini-projects/blob/pokemon_guessing/Pokemon_Guessing/Images/Screenshot%20from%202024-10-02%2004-31-31.png)
+
+![Pokémon Guessing Game Screenshot](https://github.com/uditbaliyan/Web-dev-mini-projects/blob/pokemon_guessing/Pokemon_Guessing/Images/Screenshot%20from%202024-10-02%2004-36-09.png)
