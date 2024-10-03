@@ -119,7 +119,7 @@ function play() {
     }
 
     function makeRoughBall(mesh, bassFr, treFr) {
-        mesh.geometry.vertices.forEach(function (vertex, i) {
+        mesh.geometry.vertices.forEach(function (vertex) {
             var offset = mesh.geometry.parameters.radius;
             var amp = 7;
             var time = window.performance.now();
@@ -135,7 +135,7 @@ function play() {
     }
 
     function makeRoughGround(mesh, distortionFr) {
-        mesh.geometry.vertices.forEach(function (vertex, i) {
+        mesh.geometry.vertices.forEach(function (vertex) {
             var amp = 2;
             var time = Date.now();
             var distance = (noise.noise2D(vertex.x + time * 0.0003, vertex.y + time * 0.0001) + 0) * distortionFr * amp;
@@ -148,12 +148,12 @@ function play() {
     }
 
     audio.play();
-  };
+  }
 }
 
 window.onload = vizInit();
 
-document.body.addEventListener('touchend', function(ev) { context.resume(); });
+document.body.addEventListener('touchend', function() { context.resume(); });
 
 
 
