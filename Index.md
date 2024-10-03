@@ -152,3 +152,4 @@
 |[Animated-rainbow](https://github.com/VaibhavSuryavanshi93/Web-dev-mini-projects/tree/main/Animated-rainbow) | It is an animated rainbow. |
 |[To-do](https://github.com/VaibhavSuryavanshi93/Web-dev-mini-projects/tree/main/To-do) | It's a to-do web app. |
 
+|[Audio Visualization with three.js](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Audio%20Visualization%20with%20three.js) | audio visualization using the powerful 3D graphics library, three.js |
