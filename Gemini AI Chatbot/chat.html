@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="utils/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Chat AI</title>
+  </head>
+
+  <body>
+    <header>Rail Maddad AI - Chat</header>
+    <div class="container">
+      <div id="chat-history"></div>
+    </div>
+    <div class="form-container">
+      <form id="form">
+        <input id="prompt" />
+        <button type="submit">Send</button>
+      </form>
+      <template id="thumb-template">
+        <img class="thumb" />
+      </template>
+    </div>
+
+    <script type="module">
+      import {
+        getGenerativeModel,
+        scrollToDocumentBottom,
+        updateUI,
+      } from "./utils/shared.js";
+
+      const promptInput = document.querySelector("#prompt");
+      const historyElement = document.querySelector("#chat-history");
+      let chat;
+
+      document
+        .querySelector("#form")
+        .addEventListener("submit", async (event) => {
+          event.preventDefault();
+
+          if (!chat) {
+            const model = await getGenerativeModel({ model: "gemini-1.5-flash" });
+            chat = model.startChat({
+              generationConfig: {
+                maxOutputTokens: 100,
+              },
+            });
+          }
+
+          const userMessage = promptInput.value;
+          promptInput.value = "";
+
+          // Create UI for the new user / assistant messages pair
+          historyElement.innerHTML += `<div class="history-item user-role">
+            <div class="name">User</div>
+            <blockquote>${userMessage}</blockquote>
+          </div>
+          <div class="history-item model-role">
+            <div class="name">Model</div>
+            <blockquote></blockquote>
+          </div>`;
+
+          scrollToDocumentBottom();
+          const resultEls = document.querySelectorAll(
+            ".model-role > blockquote",
+          );
+          await updateUI(
+            resultEls[resultEls.length - 1],
+            () => chat.sendMessageStream(userMessage),
+            true,
+          );
+        });
+    </script>
+  </body>
+</html>
