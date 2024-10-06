@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="utils/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Text and Image AI</title>
+  </head>
+
+  <body>
+    <header>Rail Maddad AI - Text and Image</header>
+    <div class="form-container">
+      <form id="form">
+        <input type="file" id="file'" multiple />
+        <input id="prompt" />
+        <button type="submit">Send</button>
+      </form>
+      <div id="thumbnails"></div>
+    </div>
+    <div class="container">
+      <blockquote id="result"></blockquote>
+    </div>
+
+    <script type="module">
+      import {
+        getGenerativeModel,
+        fileToGenerativePart,
+        updateUI,
+      } from "./utils/shared.js";
+
+      async function run(prompt, files) {
+        const imageParts = await Promise.all(
+          [...files].map(fileToGenerativePart),
+        );
+
+        const model = await getGenerativeModel({
+          model: "gemini-1.5-flash",
+        });
+
+        return model.generateContentStream([...imageParts, prompt]);
+      }
+
+      const fileInputEl = document.querySelector("input[type=file]");
+      const thumbnailsEl = document.querySelector("#thumbnails");
+
+      fileInputEl.addEventListener("input", () => {
+        thumbnailsEl.innerHTML = "";
+        for (const file of fileInputEl.files) {
+          const url = URL.createObjectURL(file);
+          thumbnailsEl.innerHTML += `<img class="thumb" src="${url}" onload="window.URL.revokeObjectURL(this.src)" />`;
+        }
+      });
+
+      document
+        .querySelector("#form")
+        .addEventListener("submit", async (event) => {
+          event.preventDefault();
+
+          const promptEl = document.querySelector("#prompt");
+          const resultEl = document.querySelector("#result");
+
+          updateUI(
+            resultEl,
+            () => run(promptEl.value, fileInputEl.files),
+            true,
+          );
+        });
+    </script>
+  </body>
+</html>
