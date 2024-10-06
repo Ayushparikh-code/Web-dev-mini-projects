@@ -87,15 +87,7 @@
     margin: 0;
   }
   
-  .history-item {
-    padding: 0 8px 0 0;
-  }
-  
   .history-item.model-role {
     background: rgba(127, 127, 127, 0.1);
   }
   
-  .history-item > blockquote {
-    flex-grow: 1;
-    margin: 0;
-  }
