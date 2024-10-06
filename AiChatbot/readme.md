@@ -1,4 +1,4 @@
-# AI Chatbot with Gemini API
+# AI Chatbot with Gemini API by Anoop 2005
 
 Welcome to the AI Chatbot project powered by the Gemini API! This README will guide you through the setup, features, and usage of our chatbot that incorporates both Optical Character Recognition (OCR) and conversational capabilities.
 
