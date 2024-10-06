@@ -5,7 +5,7 @@ import { marked } from "https://esm.run/marked";
 
 export async function getGenerativeModel(params) {
 
-  const API_KEY = "AIzaSyAW6sSGPO3y7nNepJDUj7ncwMKpUK71ioo";
+  const API_KEY = "Your API Key";
 
   const genAI = new GoogleGenerativeAI(API_KEY);
 
