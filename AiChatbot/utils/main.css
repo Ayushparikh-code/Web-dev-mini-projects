@@ -59,13 +59,7 @@
     margin: 10px 0;
   }
   
-  .history-item {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 16px 0;
-  }
-  
+
   #file {
     flex-grow: 0;
   }
