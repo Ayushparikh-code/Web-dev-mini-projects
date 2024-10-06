@@ -8,7 +8,7 @@ const PORT = 9000;
 
 // Get your API key from https://makersuite.google.com/app/apikey
 // Access your API key as an environment variable
-const API_KEY = "AIzaSyAW6sSGPO3y7nNepJDUj7ncwMKpUK71ioo";
+const API_KEY = "//////YOUR API KEY//////";
 
 if (!API_KEY) {
   throw new Error("API_KEY environment variable not set");
