@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.video-container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    transform: scale(-1, 1);
+}
+
+.filter-container {
+    position: fixed;
+    z-index: 2;
+    justify-self: flex-start;
+    align-self: center;
+    left: 5vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.filter {
+    width: 70px;
+    height: 50px;
+    /* Lorem Picsum -> Sample Images */
+    background-image: url("https://picsum.photos/id/1015/70/50");
+    background-blend-mode: luminosity;
+    margin: 1px;
+    border: black 1px solid;
+}
+
+.filter-1 {
+    background-color: #cc3838ad;
+}
+.filter-2 {
+    background-color: #0fbbbbad;
+}
+.filter-3 {
+    background-color: #8ddb18ad;
+}
+.filter-4 {
+    background-color: #ee82eead;
+}
+.filter-5 {
+    background-color: #b8870bad;
+}
+.filter-6 {
+    background-color: #ffffff00;
+}
+
+.ui-filter {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    opacity: 25%;
+}
+
+.timing-container {
+    position: fixed;
+    z-index: 2;
+    justify-self: flex-start;
+    align-self: flex-end;
+    left: 5vw;
+    top: 77vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #00000000;
+}
+
+.timing {
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    display: none;
+}
+
+.timing-active {
+    display: block;
+}
+
+.zoom-container {
+    position: fixed;
+    z-index: 2;
+    justify-self: flex-end;
+    top: 15vh;
+    right: 7vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    background-color: rgba(61, 54, 54, 0.774);
+}
+
+.fas {
+    padding: 7px;
+    color: white;
+}
+
+.button-container {
+    position: fixed;
+    z-index: 2;
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    right: 5vw;
+}
+
+.record, .click {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: #00000000;
+    border: white solid 5px;
+    margin: 10px 5px;
+}
+
+#record-video, #click-image {
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+    border-radius: 50%;
+    border: #00000000 solid 1px;
+    font-size: 0.65rem;
+}
+
+#record-video {
+    background-color: red;
+} 
+
+#click-image {
+    background-color: rgb(216, 216, 216);
+}
+
+.gallery-container {
+    position: fixed;
+    z-index: 2;
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    right: 5vw;
+    bottom: 10vh;
+}
+
+.gallery {
+    height: 55px;
+    width: 55px;
+    background-color: rgba(68, 68, 68, 0.493);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.45rem;
+    color: white;
+}
+
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

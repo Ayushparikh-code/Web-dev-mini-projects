@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary_clr: #343a40;
+  --secondary-clr: rgb(135, 57, 250);
+  --gray-clr: #d0d0d0;
+  --black: #000;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "IM Fell English SC", serif;
+  margin: 0;
+}
+
+.load-container {
+  animation: mover 1s infinite alternate;
+  height: 50px;
+  transform-origin: bottom center;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-30px);
+    opacity: 0.5555556;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  display: inline-block;
+  margin: -10px;
+  height: 50px;
+  width: 50px;
+  transform: scale(0);
+  animation: grow 1.5s linear infinite;
+  background-color: var(--primary_clr);
+}
+
+.circle:nth-of-type(2) {
+  animation-delay: 0.75s;
+  background-color: var(--secondary-clr);
+}
+.circle:nth-of-type(4) {
+  animation-delay: 0.75s;
+  background-color: var(--secondary-clr);
+}
+@keyframes grow {
+  50% {
+    transform: scale(1);
+  }
+}
+
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 14px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer a {
+  color: var(--gray-clr);
+  text-decoration: none;
+}
+
+footer i {
+  color: red;
+}

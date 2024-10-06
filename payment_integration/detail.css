@@ -1,0 +1,47 @@
+body {
+  background-image: url("https://img.freepik.com/free-vector/vibrant-pink-watercolor-painting-background_53876-58930.jpg?size=626&ext=jpg&ga=GA1.2.95654955.1616259721");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+body {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+  border: 1px solid rgba(254, 254, 254, 0.18);
+  width: 50%;
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 370px;
+  align-items: center;
+}
+.heading {
+  text-align: center;
+  font-family: "Brush Script MT", serif;
+  font-size: 22px;
+}
+.mssg {
+  margin-left: 100px;
+  margin-bottom: 30px;
+  font-family: "Brush Script MT", cursive;
+  font-size: 20px;
+}
+input {
+  border: 1px solid black;
+  padding: 5px 100px;
+}
+button {
+  border-radius: 50px;
+}
+.btn {
+  position: relative;
+  left: 28%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: rgb(23, 205, 231);
+}
+#smart-button-container input:hover {
+  background-color: #ebd4e7;
+}
+

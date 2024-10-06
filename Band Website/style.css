@@ -1,0 +1,336 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Verdana, Tahoma, sans-serif;
+}
+/**************************************homepage********************************************************/
+.homepage{
+    background:url("images/background.jpg") no-repeat center center/cover;
+}
+/**navbar**/
+.navbar{
+height:50px;
+background-color:black;
+}
+
+a{
+line-height:30px;
+float:left;
+text-decoration:none;
+padding:10.5px 24px!important;
+color:white;
+cursor:pointer;
+
+}
+a:hover{
+    color:black;
+    background-color:lightgrey;
+}
+
+/***dropdown***/
+.dropdown-content{
+  display:none;
+  position:absolute;
+  top:50px;
+  left:408px;
+  width:150px;
+  height:115px;  
+  background-color:white;
+  color:black;
+
+}
+
+.dropdown-content-item{
+    list-style:none;
+    padding:10px;
+}
+.dropdown-content-item:hover{
+    background-color:lightgrey;
+    color:white;
+}
+/**dropdown effect***/
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/*search bar*/
+.search{
+        color: white;
+        float: right;
+        font-size: 25px;
+        padding: 15px;
+        margin-right: 10px;      
+}
+
+/**homepage description**/
+.homepage-description{
+color:white;
+width:100vw;
+height:10vh;
+position:Absolute;
+bottom:50px;
+text-align:center;
+}
+
+.homepage-desc-heading{
+    font-size:25px;
+    
+}
+.homepage-desc-para{
+    font-size:15px;
+    margin:10px;
+  
+}
+
+/**************Band**********************/
+.band{
+    width:100vw;
+    height:70vh;
+}
+.band-heading-desc{
+color:lightgrey;
+}
+.band-para{
+    text-align:left;
+    font-size:14px;
+    letter-spacing:1px;
+    font-weight:normal;
+    margin-top:10px;
+}
+.band-image-collection{
+display:flex;
+margin:60px 0px;
+justify-content:space-around;
+}
+.band-image{
+    display:flex;
+    flex-direction:column;
+}
+.band-image img{
+    border-radius:10px;
+}
+.member-name{
+    font-size:15px;
+    margin:10px;
+    font-weight:normal;
+}
+
+/************************************Tour******************/
+.tour{
+    background-color:rgb(24, 22, 22);
+}
+
+/*****tour details***/
+.tour-heading{
+    color:white;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+.tour-block-desc{
+    color:grey;
+}
+.tour-block-white-div{
+    width:50vw;
+    height:45px;
+    background-color:white;
+    display:flex;
+}
+.month{
+    color:grey;
+    margin-left:5px;
+}
+.red-button{
+    color:white;
+    background-color:red;
+    width:90px;
+    height:30px;
+    border:none;
+    font-size:15px;
+    margin-top:5px;
+    margin-left:10px;
+}
+
+.hr{
+    width:50vw;
+    color:grey;
+}
+
+/****image cards***/
+.tour-img-container{
+    display:flex;
+    justify-content:space-between;
+}
+.tour-img-card{
+    background-color:white;
+    width:240px;
+    height:400px;
+    margin-top:25px;
+}
+.tour-button{
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.button:hover{
+    background-color:grey;
+}
+.tour-image-card-heading ,.tour-image-card-date, .tour-image-card-desc{
+    text-align:left;
+    margin-left:20px;
+    }
+.tour-image-card-heading{
+        font-weight:bold;
+    }
+.tour-image-card-date{
+        color:grey;
+        margin-top:20px;
+        margin-bottom:20px
+    }
+
+/*****Modal***********/
+#modal{
+    display:none;
+    width:900px;
+    height:500px;
+    position:fixed;
+    top:90px;
+    left:310px;
+    background-color:white;
+    animation-name:slideDown;
+    animation-duration:0.5s;
+}
+@keyframes slideDown{
+    from{
+        top:0px;
+    }
+    to{
+        top:90px;
+    }
+}
+.modal-heading-container{
+    width:900px;
+    height:100px;
+    background-color:rgb(40, 148, 112);
+    color:white;
+    padding-top:20px;
+    text-align:center;
+}
+.modal-input{
+    margin:10px;
+    display:flex;
+    flex-direction:column;
+}
+#modal-input-people,#modal-input-email
+{
+    width:850px;
+    height:30px;
+    padding:10px;
+    margin:10px 0px;
+    font-size:15px;
+}
+.modal-pay-button{
+    width:875px;
+    height:50px;
+    padding:10px;
+    border:none;
+    margin:10px 0px;
+    font-size:15px;
+    background-color:rgb(40, 148, 112);
+    color:white; 
+}
+.modal-footer{
+    width:900px;
+    height:100px;
+    display:flex;
+    margin:10px;
+    justify-content:space-between;
+}
+.modal-close-button{
+    width:80px;
+    height:30px;
+    border:none;
+    font-size:15px;
+    color:white;
+    background-color:red;
+}
+/*************MULTIPLE TIMES USED CLASSES**********************/
+
+.heading{
+    font-size:30px;
+    letter-spacing:5px;
+    margin-bottom:35px;
+}
+.container{
+    width:50vw;
+    height:100vh;
+    margin:auto;
+    margin-top:80px;
+    margin-bottom:50px;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align:center;
+}
+
+.section{
+    width:100vw;
+    height:100vh;
+}
+
+.button{
+    color:white;
+    background-color:black;
+    width:110px;
+    height:40px;
+    font-size:15px;
+    border:none;
+}
+
+/***CONTACT**/
+.contact{
+    width:100vw;
+    height:50vh;
+}
+.contact-desc{
+    color:grey;
+    font-size:15px;
+}
+.contact-flex{
+    display:flex;
+    justify-content:space-between;
+    margin:30px;
+}
+.contact-address{
+    text-align:left;
+    font-size:18px;
+}
+.contact-name-email{
+    display:flex;
+  flex-direction:column;
+}
+input{
+    width:200px;
+    height:30px;
+    font-size:15px;
+    text-align:left;
+    padding-left:10px;
+    margin:5px;
+}
+
+/****map***/
+#map{
+    background:url("images/map.jpg")no-repeat center center/cover;
+}
+/***footer***/
+.footer{
+    width:100vw;
+    height:30vh;
+    text-align:center;
+    color:grey;
+}
+.icon{
+    
+}
+.footer-desc{
+    margin-top:100px;
+}

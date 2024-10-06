@@ -1,0 +1,35 @@
+
+
+.container{
+    margin: 0 auto;
+    width: 75%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.container h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 13px 27px;
+    font-size: 19px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.flex-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex-box img{
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.71);
+}

@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  .fab {
+    cursor: pointer;
+    margin: 20px 70px;
+    border-radius: 40%;
+    padding: 10px 20px;
+    /* border: 2px solid saddlebrown; */
+    font-size: 100px;
+    font-weight: lighter;
+    transition: 0.5s ease-in;
+  }
+  .icons:hover i {
+    opacity: 0.1;
+  }
+  .icons i:hover {
+    opacity: 1;
+    font-size: 150px;
+    font-weight: 200;
+    
+  }
+  
+  .icons i:hover:nth-child(1) {
+    background: rgb(20, 80, 211);
+    box-shadow: 0 3px 30px 0 rgb(20, 80, 211) inset, 
+                0 3px 30px 0 rgb(20, 80, 211),
+                0 3px 30px 0 rgb(20, 80, 211) inset,
+                0 3px 30px 0 rgb(20, 80, 211);
+    text-shadow: 0 0 5px rgb(20, 80, 211),
+                 0 0 5px rgb(20, 80, 211);   
+                        
+  }
+  .icons i:hover:nth-child(2) {
+    background: rgb(52, 159, 25);
+    box-shadow: 0 3px 30px 0 hsl(108, 73%, 36%) inset, 
+                0 3px 30px 0 hsl(108, 73%, 36%),
+                0 3px 30px 0 hsl(108, 73%, 36%) inset,
+                0 3px 30px 0 hsl(108, 73%, 36%);
+  text-shadow: 0 0 5px hsl(108, 73%, 36%),
+                0 0 5px hsl(108, 73%, 36%);
+               
+  
+  }
+  .icons i:hover:nth-child(3) {
+    background: #c13584;
+    box-shadow: 0 3px 30px 0 #c13584 inset, 
+                0 3px 30px 0 #c13584,
+                0 3px 30px 0 #c13584 inset,
+                0 3px 30px 0 #c13584;
+    text-shadow: 0 0 5px #c13584,
+                 0 0 5px #c13584;
+           
+  }
+  .icons i:hover:nth-child(4) {
+    background: rgb(82, 120, 201);
+    box-shadow: 0 3px 30px 0 rgb(82, 120, 201) inset, 
+                0 3px 30px 0 rgb(82, 120, 201),
+                0 3px 30px 0 rgb(82, 120, 201) inset,
+                0 3px 30px 0 rgb(82, 120, 201);
+    text-shadow: 0 0 5px rgb(82, 120, 201),
+                 0 0 5px rgb(82, 120, 201);
+  }
+  

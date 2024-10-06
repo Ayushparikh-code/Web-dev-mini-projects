@@ -1,0 +1,327 @@
+body{
+    background-color: black;
+}
+
+#site_name{
+    margin-top: 10px;
+    margin-left: -4%;
+text-align: center;
+font-size: 50px;
+font-family: "Audiowide", sans-serif;
+
+color: #f5e96b;
+color: #c9b068;
+
+}
+hr:not([size]) {
+    color: #c9b068;
+    color: #9e7333;
+    height: 10px;
+}
+.navbar{
+  background-color: #FFD700;
+}
+#bookmark_btn{
+font-size: larger;
+color: black;
+
+}
+#offcanvasRight{
+  background-color: yellow;
+  height: fit-content;
+}
+#offcanvasRightLabel{
+  font-family: "Audiowide", sans-serif;
+  font-weight: bolder;
+}
+#bookmarked_words_element{
+  font-family: 'Architects Daughter';
+  text-transform: uppercase; 
+}
+#bookmarked_words_element button{
+  float: right;
+}
+.quote_box{
+text-align: center;
+color: goldenrod;
+background-color: black;
+}
+#quote{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 18px;
+}
+#author{
+margin-right: 2%;
+font-size: 15px;
+font-weight: bold;
+    font-style: italic; 
+}
+
+#search_word{
+    background-color:black;
+    color: gold;
+
+    
+}
+#search_word:focus{
+ 
+    border: 1px solid black;
+}
+.toast-header{
+    font-size: larger;
+    background-color: gold;
+    color: black;
+}
+.toast-body{
+    font-size: larger;
+    background-color: #c9b068;
+    background-color: cornsilk;
+    color: black;
+}
+#show_result{
+    background-color: gold;
+    display: none;
+    
+}#recent_search_title{
+  color: gold;
+  display: none;
+}
+#bookmark_icon{
+    float: right;
+    margin-top: -4.5%;
+    background-color: gold;
+    color: black;
+    border: 2px solid gold;
+}
+#card_title{
+font-size: 20px;
+text-transform: capitalize;
+font-weight: bolder;
+}
+#audio_btn{
+    background-color: gold;
+    color: black;
+    border: 2px solid gold;
+    float: right;
+    margin-top: -8%;
+    
+  
+}
+/***********Recent search***/
+.recent_word{
+    width: fit-content;
+   height: fit-content;
+   background-color: black;
+   color: goldenrod;
+   border: 2px solid yellow;
+}
+#recent_popover{
+  background-color: black;
+  color: goldenrod;
+}
+.popover{
+  background: gold;
+  font-weight: 700;
+  font-size: large;
+}
+#recent_search_title{
+  margin-left: 33%;
+  font-family: 'Architects Daughter', sans-serif;
+  font-family: "Audiowide", sans-serif;
+}
+/***loading animation**/
+
+.book {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 18.5rem;
+    height: 12.5rem;
+    perspective: 70rem;
+  }
+  .cover {
+    background-color: goldenrod;
+    transform: rotateY(0deg);
+    width: 9.25rem;
+    height: 12.5rem;
+  }
+  .page {
+    top: 0.25rem;
+    left: 0.25rem;
+    background-color: #f5e96b;
+    transform: rotateY(0deg);
+    width: 9rem;
+    height: 12rem;
+    text-align: right;
+    font-size: 18px;
+    color: black;
+    font-family: monospace;
+  }
+  .page::before, .page::after {
+    display: block;
+    border-top: 1px dashed rgba(0, 0, 0, 0.3);
+    content: "";
+    padding-bottom: 1rem;
+  }
+  .cover, .page {
+    position: absolute;
+    padding: 1rem;
+    transform-origin: 100% 0;
+    border-radius: 5px 0 0 5px;
+    box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.2),
+      0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  .cover.turn {
+    animation: bookCover 3s forwards;
+  }
+  .page.turn {
+    animation: bookOpen 3s forwards;
+  }
+  .page:nth-of-type(1) {
+    animation-delay: 0.05s;
+  }
+  .page:nth-of-type(2) {
+    animation-delay: 0.33s
+  }
+  .page:nth-of-type(3) {
+    animation-delay: 0.66s;
+  }
+  .page:nth-of-type(4) {
+    animation: bookOpen150deg 3s forwards;
+    animation-delay: 0.99s;
+  }
+  .page:nth-of-type(5) {
+    animation: bookOpen30deg 3s forwards;
+    animation-delay: 1.2s;
+  }
+  .page:nth-of-type(6) {
+    animation: bookOpen55deg 3s forwards;
+    animation-delay: 1.25s;
+  }
+  @keyframes bookOpen {
+    30% { z-index: 999 }
+    100% {  transform: rotateY(180deg);
+      z-index: 999;}
+  }
+  @keyframes bookCover {
+    30% { z-index: 999 }
+    100% {  transform: rotateY(180deg);
+      z-index: 1;}
+  }
+  @keyframes bookOpen150deg {
+    30% { z-index: 999 }
+    100% {  transform: rotateY(150deg);
+      z-index: 999;}
+  }
+  @keyframes bookOpen55deg {
+    30% { z-index: 999 }
+    100% {  transform: rotateY(55deg);
+      z-index: 999;}
+  }
+  @keyframes bookOpen30deg {
+    50% { z-index: 999 }
+    100% {  transform: rotateY(30deg);
+      z-index: 999;}
+  }
+  
+  /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+ 
+  background: black;
+  padding: 0 0 30px 0;
+  color: #eee;
+  font-size: 14px;
+
+}
+#footer .footer-top {
+ 
+  background:  #c9b068;
+  background:  goldenrod;
+  padding: 60px 0 30px 0;
+}
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+#footer .footer-top  h2 {
+    
+  font-size: 34px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-family: "Audiowide", sans-serif;
+  color:black;
+  font-weight: 400;
+  
+}
+#footer .footer-top  h3 {
+  font-size: 25px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-family: "Audiowide", sans-serif;
+  color: black;
+  font-weight: 400;
+  
+}
+#footer .footer-top .footer-info p {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: 'Architects Daughter',sans-serif;
+  color: black;
+}
+
+#footer .footer-top .social-links a {
+    
+    display: inline-flex;
+justify-content: space-around;
+  /* align-items: flex-end;*/
+  border-radius: 50%;
+  font-size: 18px;
+  color: black;
+  
+  margin-right: 4px;
+  
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+   
+   background-color:goldenrod;
+  color: black;
+  
+}
+
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 20px;
+  color: #f5e96b;
+}
+/*--------------------------------------------------------------
+# Back to top button
+-------------------------------------------------------------*/
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  
+}
+.btn-warning {
+
+  color: gold;
+  background-color:black ;
+  border-color: black;
+}
+
+

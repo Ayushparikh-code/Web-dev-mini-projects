@@ -1,0 +1,81 @@
+*{
+    font-family: "Raleway", Arial, sans-serif;
+}
+
+#container{
+    display:grid;
+    grid-template-columns:auto auto;
+}
+.header{
+    height:10vh;
+    display:flex;
+    justify-content:space-between;
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left: 40px;
+    padding-right:40px;
+}
+a{
+    text-decoration:none;
+    color:black;
+    font-size:25px;
+}
+
+/**********************************************About****************************************************************************/
+.about-block{
+    width:60vw;
+    margin:auto;
+    padding-top:80px;
+    text-align:center;
+}
+.heading{
+    font-size:35px;
+    font-family:sans-serif;
+    padding-bottom:20px;
+    letter-spacing:5px;
+}
+.description{
+    font-size:15px;
+    color:grey;
+    padding-top:30px;
+    letter-spacing:2px;
+}
+.red{
+    font-size:20px;
+    color:red;
+    padding:10px;
+}
+.input{
+    margin:20px;
+    text-align:center;
+}
+input{
+    width:60vw;
+    height:35px;
+}
+span{
+    display:block;
+    font-size:15px;
+    font-weight:bold;
+}
+.button{
+width:61vw;
+height:40px;
+border:none;
+font-size:15px;
+color:white;
+background:rgb(39, 36, 36);
+}
+.button:hover{
+    color:black;
+    background:lightgrey;
+    } 
+
+    /*******************************************Footer***********************************************/
+    .footer{
+        width:95vw;
+        height:5vw;
+        text-align:center;
+        color:grey;
+        padding:20px;
+    }

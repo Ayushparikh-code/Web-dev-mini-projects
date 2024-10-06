@@ -1,37 +1,142 @@
-# BookManagementApp
-A book management app that helps you keep track of your books, add new books or delete them.
+# Web-dev-mini-projects
+The repository contains the list of awesome✨ &amp; cool web development beginner-friendly✌️ projects!
+<h1 align="center">Web-dev-mini-projects</h1> 
+inthe 
+<div align="center">
+<a href="https://github.com/topics/html"><img alt="HTML" src="https://img.shields.io/badge/HTML%20-%23E34F26.svg?&style=for-the-badge"/></a>
+<a href="https://github.com/topics/css"><img alt="CSS" src="https://img.shields.io/badge/CSS%20-%23E34F26.svg?&style=for-the-badge"/></a>
+  <p>What will I do </p>
+<a href="https://github.com/topics/javascript"><img alt="javascript" src="https://img.shields.io/badge/Javascript%20-%23E34F26.svg?&style=for-the-badge&logo=javascript&logoColor=white"/></a>
+<br>
+<br>
+<a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
+<a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects"><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
+<a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
+<a href="https://github.com/Ayushparikh-code"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
+<a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?v=103"></a>
+<br>
+<br>
+<a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects/graphs/contributors"><img src="https://img.shields.io/github/contributors/Ayushparikh-code/Web-dev-mini-projects?color=brightgreen"></a>
+<a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects/stargazers"><img src="https://img.shields.io/github/stars/Ayushparikh-code/Web-dev-mini-projects?color=0059b3"></a>
+<a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects/network/members"><img src="https://img.shields.io/github/forks/Ayushparikh-code/Web-dev-mini-projects?color=yellow"></a>
+<a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects/issues"><img src="https://img.shields.io/github/issues/Ayushparikh-code/Web-dev-mini-projects?color=0059b3"></a>
+<a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/Ayushparikh-code/Web-dev-mini-projects?color=yellow"></a>
+<a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects/pulls"><img src="https://img.shields.io/github/issues-pr/Ayushparikh-code/Web-dev-mini-projects?color=brightgreen"></a>
+<a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/Ayushparikh-code/Web-dev-mini-projects?color=0059b3"></a> 
 
-This project was generated with [Angular CLI] version 16.1.6. 
+</div>
+<div align="center">
+  
+# ADD ANY WEB DEVELOPMENT MINI PROJECT !
 
-## Getting Started
+</div>
+<br>
 
-npm install
-npm install -g @angular/cli
+## HOW TO CONTRIBUTE ? 👷 
 
-## Development server
+**1.** Fork [this](https://github.com/Ayushparikh-code/Web-dev-mini-projects) repository.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**2.** Clone the forked repository.
 
-## Code scaffolding
+```terminal
+git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects 
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**3.** Navigate to the project directory.
 
-## Build
+```terminal
+cd Web-dev-mini-projects
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**4.**  MAKE A NEW FOLDER WITH YOUR PROJECT NAME INSIDE web-dev-mini-projects & Add your project files (eg: index.html ,style.css, script.js) inside that folder
+<br>
 
-## Running unit tests
+**5.**  Also Add a README file in your project folder which consists of Description/screenshots about your project !
+          
+ 
+<br>
 
-Run `ng test` to execute the unit tests via [Karma].
+**6.** Create a new branch.
 
-## Running end-to-end tests
+```terminal
+git checkout -b <your_branch_name>
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**7.** Add & Commit your changes.
 
-## Further help
+```terminal
+  git add .
+  git commit -m "<your_commit_message>"
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**7.** Push your local branch to the remote repository.
 
-## Screenshots
+```terminal
+git push -u origin <your_branch_name>
+```
+
+**8.** Create a Pull Request!
+
+**Congratulations!** Sit and relax till we review your PR, you've made your contribution to (https://github.com/Ayushparikh-code/Web-dev-mini-projects) project
+
+<br>
+
+ ## Our valuable Contributors👩‍💻👨‍💻 :
+
+<a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Ayushparikh-code/Web-dev-mini-projects" />
+</a>
 
 
+ <br>
+ <br>
+ 
+## Project Maintainers 👷👷:
+
+ 
+<table>
+<tr>
+<td align="center"><a href="https://github.com/Ayushparikh-code"><img src="https://avatars.githubusercontent.com/u/60268067?v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Ayush Parikh</h4>
+<a href="https://www.linkedin.com/in/ayush-parikh332/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a></td>
+
+<td align="center" ><a href="https://github.com/chicken-biryani"><img src="https://avatars.githubusercontent.com/u/41121520?v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Shloka Gupta</h4>
+<a href="https://www.linkedin.com/in/shloka-gupta-45b974157"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a></td>
+
+<td align="center"><a href="https://github.com/harshita2216"><img src="https://avatars.githubusercontent.com/u/65803563?v=4" width=150px height=150px /></a></br> <h4 style="color:red;">S Harshita</h4>
+<a href="https://www.linkedin.com/in/s-harshita/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a></td>
+</tr>
+</table>
+<br>
+
+## 📌 Opensource Programs
+
+
+### This project is a part of following Open Source Program
+
+<table style="width:80%;background-color:white;border-radius:30px;">
+    <tr>
+  <td>
+<center>
+  <a href="https://letsgrowmore.in/projects/"><img src="https://letsgrowmore.in/wp-content/uploads/2021/05/cropped-growmore-removebg-preview.png"></img></a>
+  </center>
+  </td>
+  </tr>
+</table>
+    <hr>
+
+
+<p align="center">
+<a href="https://github.com/Ayushparikh-code/Web-dev-mini-projects" title="Web-dev-mini-projects">
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+    
+</a>
+</p>
+
+<hr>
+<hr>
+
+
+>## Happy Contribution ✨
+
+   
+   

@@ -1,0 +1,237 @@
+
+
+html, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	
+}
+body{
+	background-image: linear-gradient(#fec8d8, #ffdfd3);
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of reset CSS */
+
+
+/* border box */
+html {
+  box-sizing: border-box;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */  
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+b {
+	font-weight: bold;
+}
+
+/* main app styles */
+body {
+	width: 700px;
+	margin: 0 auto;
+	background-color: #FAFAFA;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #111;
+}
+
+.container {
+	margin: 2% auto;
+	padding: 15px;
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	text-align: center;
+	margin: 1% 0 3%;
+}
+
+textarea {
+	width: 100%;
+	height: 250px;
+	padding: 10px;
+	border: 1px solid #d9d9d9;
+	outline: none;
+	font-size: 1rem;
+	resize: none;
+	line-height: 1.5rem;
+}
+
+textarea:hover {
+	border-color: #C0C0C0;
+}
+
+textarea:focus {
+	border-color: #4D90FE;
+}
+
+.output.row {
+	width: 100%;
+	border: 1px solid #DDD;
+	font-size: 1.4rem;
+	margin: 1% 0;
+	background-color: #F9F9F9;
+}
+
+.output.row div {
+	display: inline-block;
+	width: 42%;
+	padding: 10px 15px;
+	margin: 1%;
+}
+
+.output.row span {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+#readability {
+	width: 52%;
+	font-weight: bold;
+}
+
+#readability:hover {
+	background-color: #4D90FE;
+	color: #FFF;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+#readability:active {
+	background-color: #307AF3;
+}
+
+.keywords {
+	display: none;
+	margin: 4% 0 0;
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+.keywords ul {
+	font-weight: 400;
+	border: 1px solid #DDD;
+	font-size: 1.4rem;
+	background-color: #F9F9F9;
+	margin: 2% 0;
+}
+
+.keywords li {
+	display: inline-block;
+	width: 44%;
+	padding: 10px;
+	margin: 1%;
+}
+
+
+/* 
+** Making it responsive
+*/
+
+
+@media (max-width: 750px) {
+	body {
+		width: 600px;
+	}
+	.output.row {
+		font-size: 1.2rem;
+	}
+	.output.row span {
+		font-size: 1.3rem;	
+	}
+	.keywords ul {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 600px) {
+	
+	/* rewriting old styles */
+	body {
+		width: 95%;
+	}
+	.output.row {
+		border: none;
+		background-color: #FFF;
+	}
+	.output.row div {
+		display: block;
+		width: 100%;
+		padding: 10px 15px;
+		margin: 2% auto;
+		border: 1px solid #DDD;
+		font-size: 1.8rem;
+		background-color: #F9F9F9;	
+	}
+	.output.row span {
+		font-size: 2rem;	
+	}
+	#readability {
+		width: 100%;
+		font-size: 1.6rem;
+		font-weight: 400;
+	}
+	
+	.keywords {
+		margin: 10% auto;
+	}
+	
+	.keywords ul {
+		font-weight: 400;
+		border: none;
+		font-size: 1.8rem;
+		background-color: #F9F9F9;
+		margin: 5% 0;
+	}
+
+	.keywords li {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		margin: 2% auto;
+		border: 1px solid #DDD;
+	}
+	
+}

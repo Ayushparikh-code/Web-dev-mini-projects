@@ -1,0 +1,18 @@
+{
+  "name": "survey-form",
+  "version": "1.0.0",
+  "description": "Survey form that takes the feedback of the people.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Survey",
+    "Form"
+  ],
+  "author": "Riya Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

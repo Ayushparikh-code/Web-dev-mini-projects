@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+    <title>Guitar</title>
+</head>
+
+<body>
+    <div class="container">
+        <div align=center>
+            <h1 style="color: white;">THE GUITAR</h1>
+            <div class="guitar">
+                <div id="lutemain1" align="center">
+                    <div id="lutelines" align="center">
+                        <div id="vline1" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute01.mp3')" style="height:490px;"></div>
+
+                        <div id="vline2" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute02.mp3')" style="height:490px;"></div>
+
+                        <div id="vline3" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute03.mp3')" style="height:490px;"></div>
+
+                        <div id="vline4" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute02.mp3')" style="height:490px;"></div>
+
+                        <div id="vline4" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute04.mp3')" style="height:490px;"></div>
+
+                        <div id="vline5" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute05.mp3')" style="height:490px;"></div>
+                    </div>
+                    <div id="lutecircle" align="center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function play(mp3_file) 
+        {
+        var audio = new Audio(mp3_file);
+        audio.play();
+        }
+    </script>
+
+</body>
+
+</html>

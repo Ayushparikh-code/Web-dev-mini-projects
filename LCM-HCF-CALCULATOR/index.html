@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="shortcut icon" href="./public/img/logo.jfif" type="image/png">
+    <title>LCM and HCF</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <button id="lcmBtn"></button>
+            <div class="resultboxLcm box">
+                <form>
+                    <div>
+                        <input type="number" placeholder="Num1..." id="numLcm1">
+                        <input type="number" placeholder="Num2..." id="numLcm2">
+                    </div>
+                    <input type="submit" value="Calculate" id="lcm" class="resultBtn">
+                </form>
+                <div class="property">
+                    <div class="even evenLcm">even</div>
+                    <div class="odd oddLcm">odd</div>
+                </div>
+                <p class="resultLcm result"></p>
+            </div>
+        </div>
+        <div>
+            <button id="hcfBtn"></button>  
+            <div class="resultboxHcf box">
+                <form>
+                    <div>
+                        <input type="number" placeholder="Num1..." id="numHcf1">
+                        <input type="number" placeholder="Num2..." id="numHcf2">
+                    </div>
+                    <input type="submit" value="Calculate" id="hcf" class="resultBtn">
+                </form>
+                <div class="property">
+                    <div class="even evenHcf">even</div>
+                    <div class="odd oddHcf">odd</div>
+                </div>
+                <p class="resultHcf result"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="./public/js/main.js"></script>
+</body>
+</html>
