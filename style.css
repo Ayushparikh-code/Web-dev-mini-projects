@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+       
+      }
+      img {
+        border-radius: 50%;
+      }
+    h1 {
+        text-align: center;
+    }
+    h4 {
+        text-align: center;
+    }
+    .body1{
+              background-color: antiquewhite;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        align-items: center;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      
+      li a:hover {
+        background-color: #111;
+      }
+      body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    tr:hover{
+        background-color: antiquewhite;
+        
+     }
+
+    .container {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse; 
+    }
+
+    th, td {
+        border: 1px solid #000;
+        padding: 8px; 
+        text-align: left; 
+    }
+
+    th {
+        background-color: #f2f2f2; 
+    }
+    input[type=text], select, textarea {
+        width: 100%; 
+        padding: 12px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        resize: vertical 
+      }
+      
+      
+      input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+     
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+     .footer{
+        background-color: antiquewhite;
+       text-align: center;
+     }
+     @media only screen and (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+      }
+
+
+      
+
+
