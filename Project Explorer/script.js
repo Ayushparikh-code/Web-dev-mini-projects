@@ -82,4 +82,5 @@ function displayProjects(projects) {
 
         resultsDiv.appendChild(projectDiv);
     });
+    
 }
