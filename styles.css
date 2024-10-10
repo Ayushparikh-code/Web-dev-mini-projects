@@ -1,0 +1,96 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+header {
+    background-color: #6a502e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    &:hover{
+        font-size: large;
+        transition: font-size 0.3s ease;
+    }
+}
+
+header img{
+    border-radius: 200px;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    }
+}
+
+ul li {
+    display: inline;
+    margin-right: 30px;
+    &:hover{
+        font-size: large;
+        transition: font-size 0.3s ease;
+    }
+}
+
+ul li a {
+    color: white;
+    text-decoration:none;
+}
+
+h1, h2 {
+    margin: 1px 10px 1px;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input, textarea {
+    margin-bottom: 12px;
+    width: 40%;
+    font-size: 16px;
+}
+
+button {
+    background-color: #6a502e;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 30%;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+button:hover {
+    background-color: #ba712c;
+    border: 12px solid #ba712c;
+    transition: background-color 0.3s ease;
+    transition: border 0.3s ease;
+}
+.Red{
+    text-align: center;
+    padding: 20px;
+    text-align: center;
+    &:hover{
+        font-size: large;
+        transition: font-size 0.3s ease;
+    }
+}
