@@ -54,12 +54,50 @@ a:hover{
 }
 
 /*search bar*/
-.search{
-        color: white;
-        float: right;
-        font-size: 25px;
-        padding: 15px;
-        margin-right: 10px;      
+
+.search {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+#search-container {
+    display: none;  
+    width: 100%;
+    text-align: center;  
+    position: absolute;
+    top: 60px;  
+    left: 0;
+}
+
+.search-input {
+    width: 50%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+    transition: transform 0.5s ease, opacity 0.5s ease;  
+    opacity: 0;  
+    transform: translateY(-20px);  
+}
+
+#search-container.active {
+    display: block;
+}
+
+.search-input.active {
+    opacity: 1;  
+    transform: translateY(0);  
+}
+.highlight {
+    background-color: yellow;  
+    font-weight: bold;
+    color: black;  
 }
 
 /**homepage description**/
