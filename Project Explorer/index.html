@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Sorted</title>
+    <!-- Include Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dynamic GitHub Projects</h1>
+            <nav>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="heading">
+            <h2>Search Projects</h2>
+        </section>
+
+        <!-- Loading bar section -->
+        <div id="loading-bar"></div>
+
+        <section id="search-bars">
+            <form id="projectForm">
+                <input type="text" id="topics" name="topics" placeholder="Enter topics...">
+                <button type="submit">Search Projects</button>
+            </form>
+        </section>
+
+        <section id="projects">
+            <h2>Search Results</h2>
+            <div class="projects" id="projects-container">
+                <!-- Project results will be displayed here -->
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Amit Kumar Maurya</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
