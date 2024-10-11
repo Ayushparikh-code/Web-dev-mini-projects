@@ -56,12 +56,11 @@ const Quiz = ({questions, handleQuizCompletion}) => {
             </div>
 
             {/* Progress bar container */}
-        <div className="w-full bg-indigo-50 rounded-full h-4 mt-4">
-            <div
-                className="bg-indigo-500 h-4 rounded-full"
-                style={{ width: `${progressPercentage}%` }}
-            ></div>
-        </div>
+            <div className="w-full bg-indigo-50 rounded-full h-4 mt-4 relative">
+                <div className="bg-indigo-500 h-4 rounded-full text-white flex items-center justify-center" style={{ width: `${progressPercentage}%` }}>
+                    <p className="text-center w-full">{currentQuestionIndex + 1} / {questions.length}</p>
+                </div>
+            </div> 
     </div>
     );
 };
