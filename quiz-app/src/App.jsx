@@ -1,17 +1,14 @@
 import { useState } from 'react'
-import './App.css'
-
+import './index.css'
+import Navbar from './components/Navbar'
 function App() {
  
 
   return (
     <>
-      <div className='text-pretty text-indigo-700'>
-       Hello World
-      </div>
-     
-    </>
-  )
-}
+      <Navbar />
+     </>
+  );
+};
 
-export default App
+export default App;
