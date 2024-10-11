@@ -5,25 +5,28 @@
 This is a simple, interactive quiz application built with React and styled using TailwindCSS. The app allows users to go through a series of questions, provides feedback on their answers, and displays a final score upon completion.
 
 ## Screenshots
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
-  <div>
-    <h3>Welcome Screen</h3>
-    <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/welcome.png" alt="Welcome Screen" width="100%"/>
-  </div>
-  <div>
-    <h3>Instructions Screen</h3>
-    <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/instructions.png" alt="Instructions Screen" width="100%"/>
-  </div>
-  <div>
-    <h3>Quiz Screen</h3>
-    <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/quiz.png" alt="Quiz Screen" width="100%"/>
-  </div>
-  <div>
-    <h3>Score Screen</h3>
-    <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/score.png" alt="Completion Screen" width="100%"/>
-  </div>
-</div>
-
+<table>
+  <tr>
+    <td>
+      <h3>Welcome Screen</h3>
+      <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/welcome.png" alt="Welcome Screen" width="100%"/>
+    </td>
+    <td>
+      <h3>Instructions Screen</h3>
+      <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/instructions.png" alt="Instructions Screen" width="100%"/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>Quiz Screen</h3>
+      <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/quiz.png" alt="Quiz Screen" width="100%"/>
+    </td>
+    <td>
+      <h3>Score Screen</h3>
+      <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/score.png" alt="Completion Screen" width="100%"/>
+    </td>
+  </tr>
+</table>
 
 ## Table of Contents
 
