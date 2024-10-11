@@ -69,10 +69,10 @@ To get a local copy up and running follow these simple example steps.
 
 ## Screenshots
 
-![Welcome Screen](assets/images/welcome.png)
-![Instructions Screen](assets/images/instructions.png)
-![Quiz Screen](assets/images/quiz.png)
-![Completion Screen](assets/images/score.png)
+![Welcome Screen](https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/welcome.png)
+![Instructions Screen](https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/instructions.png)
+![Quiz Screen](https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/quiz.png)
+![Completion Screen](https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/score.png)
 
 ## License
 
