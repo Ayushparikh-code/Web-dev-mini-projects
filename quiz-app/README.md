@@ -5,7 +5,8 @@
 This is a simple, interactive quiz application built with React and styled using TailwindCSS. The app allows users to go through a series of questions, provides feedback on their answers, and displays a final score upon completion.
 
 ## Screenshots
-- [Welcome]
+
+[!Welcome-Screen]
 <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/welcome.png" alt="Welcome Screen" width="400"/>
 <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/instructions.png" alt="Instructions Screen" width="400"/>
 <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/quiz.png" alt="Quiz Screen" width="400"/>
@@ -20,7 +21,7 @@ This is a simple, interactive quiz application built with React and styled using
 
 ## Demo
 
-You can view a live demo of the quiz app here: [Live Demo](#) _(Add the link once deployed)_
+You can view a live demo of the quiz app here: [Live Demo](#) 
 
 ## Features
 
