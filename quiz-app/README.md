@@ -6,11 +6,18 @@ This is a simple, interactive quiz application built with React and styled using
 
 ## Screenshots
 
-[!Welcome-Screen]
+### Welcome Screen
 <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/welcome.png" alt="Welcome Screen" width="400"/>
+
+### Instructions Screen
 <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/instructions.png" alt="Instructions Screen" width="400"/>
+
+### Quiz Screen
 <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/quiz.png" alt="Quiz Screen" width="400"/>
+
+### Score Screen
 <img src="https://github.com/Temmarie/Web-dev-mini-projects/blob/quiz-app/quiz-app/src/assets/images/score.png" alt="Completion Screen" width="400"/>
+
 
 ## Table of Contents
 
