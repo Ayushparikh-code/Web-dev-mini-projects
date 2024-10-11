@@ -30,14 +30,10 @@ This is a simple, interactive quiz application built with React and styled using
 
 ## Table of Contents
 
-- [Demo](#demo)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 
-## Demo
-
-You can view a live demo of the quiz app here: [Live Demo](#) 
 
 ## Features
 
@@ -69,7 +65,7 @@ To get a local copy up and running follow these simple example steps.
 1. Clone the repository:
 
    `
-   git clone https://github.com/your-username/quiz-app.git
+   git clone https://github.com/temmarie/quiz-app.git
    cd quiz-app
    ```
 
@@ -90,14 +86,3 @@ To get a local copy up and running follow these simple example steps.
    ```
    http://localhost:5173
    ```
-
-
-
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to modify and expand the README as your project evolves. Let me know if you'd like to add anything else!
