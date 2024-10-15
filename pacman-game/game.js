@@ -101,8 +101,7 @@ let restartPacmanAndGhosts = () => {
 let onGhostCollision = () => {
     lives--;
     restartPacmanAndGhosts();
-    if (lives == 0) {
-    }
+    if (lives == 0) 
 };
 
 let update = () => {
