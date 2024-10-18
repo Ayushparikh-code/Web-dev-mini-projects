@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify Clone</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Spotify Clone</h1>
+        <div class="music-library">
+            <div class="track" onclick="playTrack('track1')">
+                <p>Track 1 - Artist A</p>
+            </div>
+            <div class="track" onclick="playTrack('track2')">
+                <p>Track 2 - Artist B</p>
+            </div>
+            <div class="track" onclick="playTrack('track3')">
+                <p>Track 3 - Artist C</p>
+            </div>
+        </div>
+        <audio id="audio-player" controls>
+            <source id="audio-source" src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
