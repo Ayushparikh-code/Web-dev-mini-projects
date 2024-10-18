@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="player">
+            <h2 id="songTitle">Select a Song</h2>
+            <audio id="audioPlayer" src=""></audio>
+            <div class="controls">
+                <button id="prev" class="control-btn">⏮️</button>
+                <button id="playPause" class="control-btn">▶️</button>
+                <button id="next" class="control-btn">⏭️</button>
+            </div>
+            <div class="progress-container">
+                <input type="range" id="progressBar" value="0" max="100">
+            </div>
+            <div id="songList">
+                <div class="song" data-src="song1.mp3">Song 1</div>
+                <div class="song" data-src="song2.mp3">Song 2</div>
+                <!-- Add more songs here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
