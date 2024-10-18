@@ -151,4 +151,5 @@
 |[Ecommerce Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Ecommerce%20Website) | This website allows you to purchase dresses and shoes online. |
 |[Animated-rainbow](https://github.com/VaibhavSuryavanshi93/Web-dev-mini-projects/tree/main/Animated-rainbow) | It is an animated rainbow. |
 |[To-do](https://github.com/VaibhavSuryavanshi93/Web-dev-mini-projects/tree/main/To-do) | It's a to-do web app. |
+|[find me a dog](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Ecommerce%20Website) | This website helps you find a perfect breed of your dog |
 
