@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    grid-template-rows: repeat(20, 30px); 
+    gap: 2px; 
+    position: relative;
+}
+
+.symbol {
+    color: white;
+    font-size: 20px;
+    transition: font-size 0.2s;
+}
