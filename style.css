@@ -1,95 +1,37 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Header */
-header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #d23333;
     text-align: center;
-    padding: 1rem;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-#home {
-    padding: 50px;
-    background: url('bookshop-background.jpg') no-repeat center center;
-    background-size: cover;
-    text-align: center;
-    color: white;
-}
-
-#categories {
-    padding: 50px;
-    background-color: #fff;
-}
-
-.book-category {
-    display: flex;
-    justify-content: space-around;
-}
-
-.category {
-    background-color: #eee;
+.container {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    width: 30%;
-    border-radius: 5px;
-    text-align: center;
+    background-color: #cb1c1c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-#contact {
-    padding: 50px;
-    background-color: #f4f4f4;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+h1 {
+    margin-bottom: 20px;
 }
 
 button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: rgb(199, 25, 25);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px;
+button:hover {
+    background-color: #0056b3;
 }
