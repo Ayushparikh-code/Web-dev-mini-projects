@@ -71,6 +71,12 @@
             font-size: 18px;
             color: #2c3e50;
         }
+
+        .score {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #27ae60;
+        }
     </style>
 </head>
 <body>
@@ -90,11 +96,18 @@
     <!-- Result Message -->
     <div class="result" id="result"></div>
 
+    <!-- Score Display -->
+    <div class="score">Score: <span id="score">0</span></div>
+
     <script>
+        // Initialize score variable
+        let score = 0;
+
         // Bottle flip function
         function flipBottle() {
             const bottle = document.getElementById('bottle');
             const result = document.getElementById('result');
+            const scoreDisplay = document.getElementById('score');
 
             // Randomly generate rotation between -720 and 720 degrees
             let rotation = Math.floor(Math.random() * 1440) - 720;
@@ -107,6 +120,8 @@
                 setTimeout(() => {
                     result.textContent = "You landed it! 🎉";
                     result.style.color = "green";
+                    score++;  // Increment score
+                    scoreDisplay.textContent = score;  // Update score display
                 }, 500); // delay to let the flip finish
             } else {
                 setTimeout(() => {
