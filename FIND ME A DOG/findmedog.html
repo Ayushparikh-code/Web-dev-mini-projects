@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Cat Breed Should I Choose?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            margin: 50px auto;
+            width: 50%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 20px 0 10px;
+        }
+        select {
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .result img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            label {
+                font-size: 0.9rem;
+            }
+
+            button {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Which Dot Breed Should I Choose?</h1>
+
+    <div class="container">
+        <form id="catQuizForm">
+            <label for="personality">What's your personality like?</label>
+            <select id="personality">
+                <option value="">Select...</option>
+                <option value="active">Active</option>
+                <option value="laidback">Laid-back</option>
+                <option value="introverted">Introverted</option>
+                <option value="extroverted">Extroverted</option>
+            </select>
+
+            <label for="location">Where do you live?</label>
+            <select id="location">
+                <option value="">Select...</option>
+                <option value="apartment">Apartment</option>
+                <option value="suburb">Suburb</option>
+                <option value="rural">Rural</option>
+            </select>
+
+            <button type="button" onclick="getdogBreed()">Find My Dog Breed!</button>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        const dogBreeds = {
+            "Jack Russell Terrier": "gifs/Jack Russell Terrier.gif",
+            "French Bulldog": "gifs/French Bulldog.gif",
+            "Cavalier King Charles Spaniel": "gifs/French Bulldog.gif",
+            "Shiba Inu": "gifs/Shiba Inu.gif",
+            "Border Collie": "gifs/Border Collie.gif",
+            "Basset Hound": "gifs/Basset Hound.gif",
+            "Golden Retriever": "gifs/Golden Retriever.gif",
+            "Greyhound": "gifs/Greyhound.gif",
+            "Australian Shepherd": "gifs/Australian Shepherd.gif",
+            "Great Pyrenees": "gifs/Great Pyrenees.gif",
+            "Labrador Retriever": "gifs/Labrador Retriever.gif",
+            "Bernese Mountain Dog": "gifs/Bernese Mountain Dog.gif"
+        };
+        function getdogBreed() {
+            const personality = document.getElementById('personality').value;
+            const location = document.getElementById('location').value;
+            let breed = "";
+            let gifUrl = "";
+
+            if (personality === "active" && location === "apartment") {
+                breed = "Jack Russell Terrier";
+            }else if (personality === "laidback" && location === "apartment") {
+                breed = "French Bulldog";
+            }else if (personality === "extroverted" && location === "apartment") {
+                breed = "Cavalier King Charles Spaniel";
+            } else if (personality === "introverted" && location === "apartment") {
+                breed = "Shiba Inu";
+            } else if (personality === "active" && location === "suburb") {
+                breed = "Border Collie";
+            } else if (personality === "laidback" && location === "suburb") {
+                breed = "Basset Hound";
+            }else if (personality === "extroverted" && location === "suburb") {
+                breed = "Golden Retriever";
+            } else if (personality === "introverted" && location === "suburb") {
+                breed = "Greyhound";
+            }else if (personality === "active" && location === "rural") {
+                breed = "Australian Shepherd";
+            }else if (personality === "laidback" && location === "rural") {
+                breed = "Great Pyrenees";
+            }else if (personality === "extroverted" && location === "rural") {
+                breed = "Labrador Retriever";
+            } else if (personality === "introverted" && location === "rural") {
+                breed = "Bernese Mountain Dog";
+            }else {
+                breed = "Any friendly breed!";
+            }
+            gifUrl = dogBreeds[breed] || "";
+
+const resultDiv = document.getElementById('result');
+resultDiv.innerHTML = `You should choose a: <strong>${breed}</strong>`;
+if (gifUrl) {
+    resultDiv.innerHTML += `<img src="${gifUrl}" alt="${breed} GIF">`;
+}
+}
+
+function resetForm() {
+document.getElementById('dogQuizForm').reset();
+document.getElementById('result').innerHTML = "";
+}
+    </script>
+
+</body>
+</html>
