@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.bottle {
+    width: 50px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 10px;
+    margin: 20px auto;
+    transition: transform 0.5s;
+}
+
+.upright {
+    transform: rotate(0deg);
+}
+
+.flipped {
+    transform: rotate(720deg);
+}
