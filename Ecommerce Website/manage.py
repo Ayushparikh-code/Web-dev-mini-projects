@@ -1,22 +1,25 @@
-#!/usr/bin/env python
-"""Django's command-line utility for administrative tasks."""
-import os
-import sys
+from flask import Flask, render_template, request
 
+# Declare the app
+app = Flask(__name__)
 
+# Start an app route
+@app.route("/")
 def main():
-    """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ecommerceproject.settings')
+    return render_template("index.html")
+
+# Route for BMI calculation result
+@app.route("/bmi", methods=["POST"])
+def calculate():
     try:
-        from django.core.management import execute_from_command_line
-    except ImportError as exc:
-        raise ImportError(
-            "Couldn't import Django. Are you sure it's installed and "
-            "available on your PYTHONPATH environment variable? Did you "
-            "forget to activate a virtual environment?"
-        ) from exc
-    execute_from_command_line(sys.argv)
+        # Retrieve weight and height from the form
+        w = float(request.form.get("weight"))
+        h = float(request.form.get("height"))
 
-
-if __name__ == '__main__':
-    main()
+        # Check if weight and height are positive
+        if w > 0 and h > 0:
+            # Calculate BMI
+            bmi = round(w / ((h / 100) ** 2), 3)
+            return render_template("index.html", bmi=bmi)
+        else:
+            error = "Weight and height m
