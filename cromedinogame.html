@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Chrome Dino Game Clone</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    canvas {
+      display: block;
+      margin: auto;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+    
+    .game-over {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <div class="game-over" id="gameOver" style="display:none;">
+    Game Over! Press Space to Restart
+  </div>
+
+  <script>
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Game dimensions
+    canvas.width = 800;
+    canvas.height = 200;
+
+    // Game variables
+    let dino = { x: 50, y: 150, width: 40, height: 40, velocityY: 0, isJumping: false };
+    let gravity = 0.8;
+    let obstacles = [];
+    let obstacleInterval = 0;
+    let score = 0;
+    let isGameOver = false;
+
+    function drawDino() {
+      ctx.fillStyle = 'black';
+      ctx.fillRect(dino.x, dino.y, dino.width, dino.height);
+    }
+
+    function handleObstacles() {
+      if (obstacleInterval++ % 90 === 0) {
+        obstacles.push({ x: canvas.width, y: 160, width: 20, height: 40 });
+      }
+      
+      for (let i = 0; i < obstacles.length; i++) {
+        let obs = obstacles[i];
+        obs.x -= 5;
+
+        ctx.fillStyle = 'red';
+        ctx.fillRect(obs.x, obs.y, obs.width, obs.height);
+
+        if (isColliding(dino, obs)) {
+          gameOver();
+        }
+
+        if (obs.x + obs.width < 0) {
+          obstacles.splice(i, 1);
+          score++;
+        }
+      }
+    }
+
+    function isColliding(rect1, rect2) {
+      return (
+        rect1.x < rect2.x + rect2.width &&
+        rect1.x + rect1.width > rect2.x &&
+        rect1.y < rect2.y + rect2.height &&
+        rect1.y + rect1.height > rect2.y
+      );
+    }
+
+    function update() {
+      if (isGameOver) return;
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Dino movement
+      if (dino.isJumping) {
+        dino.velocityY += gravity;
+        dino.y += dino.velocityY;
+
+        if (dino.y > 150) {
+          dino.y = 150;
+          dino.isJumping = false;
+        }
+      }
+
+      drawDino();
+      handleObstacles();
+
+      ctx.fillStyle = 'black';
+      ctx.fillText(`Score: ${score}`, 10, 20);
+
+      requestAnimationFrame(update);
+    }
+
+    function jump() {
+      if (!dino.isJumping) {
+        dino.isJumping = true;
+        dino.velocityY = -15;
+      }
+    }
+
+    function gameOver() {
+      isGameOver = true;
+      document.getElementById('gameOver').style.display = 'block';
+    }
+
+    function resetGame() {
+      dino.y = 150;
+      dino.isJumping = false;
+      obstacles = [];
+      score = 0;
+      isGameOver = false;
+      document.getElementById('gameOver').style.display = 'none';
+      update();
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.code === 'Space') {
+        if (isGameOver) {
+          resetGame();
+        } else {
+          jump();
+        }
+      }
+    });
+
+    update();
+  </script>
+</body>
+</html>
