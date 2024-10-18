@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottle Flip Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .game-container {
+            text-align: center;
+        }
+
+        .bottle {
+            width: 50px;
+            height: 120px;
+            background-color: #007bff;
+            border-radius: 25px 25px 5px 5px; /* Rounded top and flat bottom */
+            position: relative;
+            transition: transform 0.5s;
+            margin-bottom: 20px;
+        }
+
+        .bottle::before {
+            content: '';
+            width: 30px;
+            height: 15px;
+            background-color: #007bff;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 15px;
+        }
+
+        .bottle::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color: #fff; /* Cork color */
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            border: 2px solid #007bff; /* Cork outline */
+        }
+
+        .message {
+            font-size: 24px;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div id="bottle" class="bottle"></div>
+        <button id="flipButton">Flip the Bottle</button>
+        <div id="message" class="message"></div>
+    </div>
+    <script>
+        const flipButton = document.getElementById('flipButton');
+        const bottle = document.getElementById('bottle');
+        const message = document.getElementById('message');
+
+        flipButton.addEventListener('click', () => {
+            const flipHeight = Math.random() * 360; // Random flip angle
+            bottle.style.transform = `rotate(${flipHeight}deg)`;
+            
+            // Simulate landing
+            setTimeout(() => {
+                const landed = Math.random() < 0.5; // 50% chance to land upright
+                if (landed) {
+                    message.textContent = "Nice flip! You landed it!";
+                    bottle.style.transform = `rotate(0deg)`; // Reset position
+                } else {
+                    message.textContent = "Oops! Try again.";
+                    bottle.style.transform = `rotate(180deg)`; // Bottle flips over
+                }
+            }, 500); // Wait for flip animation
+        });
+    </script>
+</body>
+</html>
