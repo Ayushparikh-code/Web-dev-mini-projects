@@ -3,21 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Which Cat Breed Should I Choose?</title>
+    <title>Online Bookshop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Which Cat Breed Should I Choose?</h1>
-        <p>Find out which cat breed is perfect for you based on your personality and location!</p>
-        <button id="getBreedBtn">Get Cat Breed</button>
 
-        <div id="breedResult" class="hidden">
-            <h2 id="breedName"></h2>
-            <img id="breedImage" src="" alt="Cat Breed Image">
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Online Bookshop</h1>
         </div>
-    </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Our Online Bookshop</h2>
+        <p>Discover a wide variety of books across different genres.</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <h2>Book Categories</h2>
+        <div class="book-category">
+            <div class="category">
+                <h3>Fiction</h3>
+                <p>Explore our captivating collection of fiction books.</p>
+            </div>
+            <div class="category">
+                <h3>Non-Fiction</h3>
+                <p>Dive into our informative and insightful non-fiction titles.</p>
+            </div>
+            <div class="category">
+                <h3>Children's Books</h3>
+                <p>Fun and engaging books for young readers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Online Bookshop. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
