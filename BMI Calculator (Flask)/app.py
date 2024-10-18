@@ -1,27 +1,27 @@
 from flask import Flask, render_template, request
 
-# declare the app
+# Declare the app
 app = Flask(__name__)
 
-# start an app route
-@app.route("/")
+# Start an app route for the main page
+@app.route("/", methods=["GET", "POST"])  # Allow both GET and POST methods
 def main():
-    return render_template("index.html")
+    bmi = None  # Initialize bmi variable
+    error = None  # Initialize error variable
 
+    # Check if the request method is POST
+    if request.method == "POST":
+        try:
+            w = float(request.form.get("weight"))
+            h = float(request.form.get("height"))
+            if w > 0 and h > 0:  # Check if weight and height are positive
+                bmi = round(w / ((h / 100) ** 2), 3)
+            else:
+                error = "Weight and height must be positive values."
+        except ValueError:  # Handle invalid input
+            error = "Please enter valid numeric values."
 
-# route for bmi calculation result
-@app.route("/bmi", methods=["GET", "POST"])
-def calculate():
-    try:
-        w = float(request.form.get("weight"))
-        h = float(request.form.get("height"))
-        if w and h:
-            bmi = round(w / ((h / 100) ** 2), 3)
-            return render_template("index.html", bmi=bmi)
-    except ValueError as error:
-        error = "Please enter all the values"
-        return render_template("index.html", error=error)
-
+    return render_template("index.html", bmi=bmi, error=error)  # Pass bmi and error to the template
 
 if __name__ == "__main__":
     app.run(debug=True)
