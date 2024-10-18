@@ -1,81 +1,18 @@
-const board = document.getElementById('chessboard');
-const initialSetup = [
-    ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'],
-    ['P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'],
-    ['', '', '', '', '', '', '', ''],
-    ['', '', '', '', '', '', '', ''],
-    ['', '', '', '', '', '', '', ''],
-    ['', '', '', '', '', '', '', ''],
-    ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],
-    ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
-];
+function playTrack(track) {
+    const audioPlayer = document.getElementById('audio-player');
+    const audioSource = document.getElementById('audio-source');
 
-const pieces = {
-    'R': '♜', 'N': '♞', 'B': '♝', 'Q': '♛', 'K': '♚', 'P': '♟︎',
-    'r': '♖', 'n': '♘', 'b': '♗', 'q': '♕', 'k': '♔', 'p': '♙'
-};
-
-let selectedPiece = null;
-let currentTurn = 'white'; // White goes first
-let selectedSquare = null;
-
-function createBoard() {
-    board.innerHTML = ''; // Clear the board
-    for (let row = 0; row < 8; row++) {
-        for (let col = 0; col < 8; col++) {
-            const square = document.createElement('div');
-            square.classList.add('square');
-            square.dataset.row = row;
-            square.dataset.col = col;
-
-            if ((row + col) % 2 === 0) {
-                square.classList.add('white');
-            } else {
-                square.classList.add('black');
-            }
-
-            const piece = initialSetup[row][col];
-            if (piece) {
-                const pieceElem = document.createElement('span');
-                pieceElem.classList.add('piece');
-                pieceElem.textContent = pieces[piece];
-                pieceElem.dataset.piece = piece; // Save the piece in dataset
-                square.appendChild(pieceElem);
-            }
-            board.appendChild(square);
-        }
+    switch(track) {
+        case 'track1':
+            audioSource.src = 'https://masstamilan.download/t/2024/Amaran/320/Vennilavu-Saaral-MassTamilan.dev.mp3?h=1729241346-G0OPTI3lXVANhXNTNoqYRI3oxuh5TyHuAZDpexFsMUg%3D'; // Replace with your audio file path
+            break;
+        case 'track2':
+            audioSource.src = 'https://masstamilan.download/t/2024/Amaran/320/Sai-Pallavi%27s-Intro-MassTamilan.dev.mp3?h=1729241328-FCq39MiTjkpSW8o8mfoOeGgko7F5wSYOFN%2FevxEVePU%3D'; // Replace with your audio file path
+            break;
+        case 'track3':
+            audioSource.src = 'https://masstamilan.download/t/2024/Amaran/128/Hey-Minnale-MassTamilan.dev.mp3?h=1729241281-X98n3LYQ5BE6VUg5FSAjeSBPstCbxcHjbBj8w46vy7I%3D'; // Replace with your audio file path
+            break;
     }
-}
-
-createBoard();
-
-board.addEventListener('click', (e) => {
-    const square = e.target.closest('.square');
-    if (!square) return;
-
-    // If no piece is selected yet
-    if (!selectedPiece && square.querySelector('.piece')) {
-        selectedPiece = square.querySelector('.piece');
-        selectedSquare = square;
-        square.classList.add('selected');
-    } 
-    // If piece is already selected, move it to the new square
-    else if (selectedPiece) {
-        // Make sure we don't move to the same square
-        if (square !== selectedSquare) {
-            // Move the piece to the new square
-            square.appendChild(selectedPiece);
-            selectedSquare.classList.remove('selected');
-            selectedPiece = null;
-            selectedSquare = null;
-
-            // After move, toggle turns
-            toggleTurn();
-        }
-    }
-});
-
-function toggleTurn() {
-    currentTurn = currentTurn === 'white' ? 'black' : 'white';
-    console.log('Turn:', currentTurn);
+    audioPlayer.load();
+    audioPlayer.play();
 }

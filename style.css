@@ -1,39 +1,30 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 20px;
 }
 
-h1 {
-    margin-bottom: 20px;
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
 }
 
-.chessboard {
-    display: grid;
-    grid-template-columns: repeat(8, 60px);
-    grid-template-rows: repeat(8, 60px);
-    gap: 0;
-    border: 2px solid #333;
+.music-library {
+    margin: 20px 0;
 }
 
-.square {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-}
-
-.white {
-    background-color: #f0d9b5;
-}
-
-.black {
-    background-color: #b58863;
-}
-
-.piece {
+.track {
+    background-color: #1581e0;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.track:hover {
+    background-color: #b2d914;
 }

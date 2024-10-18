@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-Player Chess Application</title>
     <link rel="stylesheet" href="style.css">
+    <title>Spotify Clone</title>
 </head>
 <body>
-    <h1>Multi-Player Chess</h1>
-    <div class="chessboard" id="chessboard">
-        <!-- Chess board will be generated here dynamically -->
+    <div class="container">
+        <h1>Spotify Clone</h1>
+        <div class="music-library">
+            <div class="track" onclick="playTrack('track1')">
+                <p>Track 1 - Artist A</p>
+            </div>
+            <div class="track" onclick="playTrack('track2')">
+                <p>Track 2 - Artist B</p>
+            </div>
+            <div class="track" onclick="playTrack('track3')">
+                <p>Track 3 - Artist C</p>
+            </div>
+        </div>
+        <audio id="audio-player" controls>
+            <source id="audio-source" src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
     </div>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
