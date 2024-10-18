@@ -1,0 +1,91 @@
+body {
+    background: linear-gradient(to bottom, #e0f7fa, #80d8ff); /* Light blue gradient */
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #210d5b; /* Teal for the heading */
+    margin-bottom: 20px;
+}
+
+.game-area {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: linear-gradient(to top, #42a5f5, #1e88e5); /* Blue gradient */
+    border: 2px solid #1e88e5; /* Darker blue border */
+    border-radius: 15px;
+    margin-bottom: 50px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.bottle {
+    width: 50px;
+    height: 100px;
+    background-color: white; /* Bottle color */
+    border: 2px solid #3498db; /* Border color for visibility */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.5s ease;
+
+  /* Smooth flip transition */
+}
+
+#flipButton {
+    background: linear-gradient(to right, #2196f3, #64b5f6); /* Blue gradient button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#flipButton:hover {
+    background: linear-gradient(to right, #1e88e5, #42a5f5); /* Darker gradient on hover */
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1c1c67; /* Teal for messages */
+}
+#resetButton {
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#resetButton:hover {
+    background-color: #ff4c4c;
+}
+.bottle.flipped {
+    transform: translateX(-50%) rotate(720deg); /* Rotate on flip */
+}
