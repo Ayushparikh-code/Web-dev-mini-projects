@@ -1,21 +1,27 @@
-const btn = document.querySelector('.btn');
-const code = document.querySelector('.code');
-const input = document.querySelector('.input');
-const toast = document.querySelector('#toast');
+function generateQRCode() {
+	// Get the text input value
+	const inputText = document.getElementById("input-text").value;
+	const qrcodeImage = document.getElementById("qrcode");
+	const toastMessage = document.getElementById("toast");
 
-btn.addEventListener('click', generate);
+	if (inputText.trim() === "") {
+		alert("Please enter some text to generate a QR code.");
+		return;
+	}
 
-function generate() {
-	const data = input.value;
-	const URL = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${data}`;
-	code.src = URL;
+	// Generate the QR code using Google's chart API
+	const qrCodeUrl = `https://chart.googleapis.com/chart?cht=qr&chl=${encodeURIComponent(inputText)}&chs=200x200&chld=L|0`;
 
-	toastDiv();
-}
+	// Set the QR code image
+	qrcodeImage.src = qrCodeUrl;
+	qrcodeImage.style.display = "block"; // Make the image visible
 
-function toastDiv() {
-	toast.className = "show";
-	setTimeout(function() {
-		toast.className = toast.className.replace("show", "");
-	}, 2000)
+	// Display the toast message
+	toastMessage.style.display = "block";
+	toastMessage.innerText = "QR Code Successfully Generated!!!";
+
+	// Hide the toast message after 3 seconds
+	setTimeout(() => {
+		toastMessage.style.display = "none";
+	}, 3000);
 }
