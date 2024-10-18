@@ -7,8 +7,14 @@ This project is a simple, interactive webpage that helps users determine the bes
 - Matching dog breeds with relevant GIFs.
 - Responsive design to support both desktop and mobile devices.
 - Reset button to clear the form and restart the quiz.
+---
+
+## **Screenshots**
+![Screenshot 2024-10-18 232828](https://github.com/user-attachments/assets/7e4641cd-e9ce-4972-8c66-d4555aa082da)
+![Screenshot 2024-10-18 233250](https://github.com/user-attachments/assets/e055e8fb-9c84-48cf-8409-c5abc3da64a9)
 
 ---
+
 
 ## **Technologies Used**
 - **HTML**: Structure of the webpage.
