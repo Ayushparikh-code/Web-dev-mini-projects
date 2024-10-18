@@ -1,76 +1,79 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:cursive;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
 }
 
-.container{
-    display:flex;
-    width:600px;
-    margin:auto;
-    margin-top:10%;
-    margin-bottom:10%;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    background-color:darkslateblue;
-    box-shadow:8px 8px black;
-    color:white;
-    padding:5% 0%;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 10% auto;
+    background-color: darkslateblue;
+    color: white;
+    padding: 40px 20px;
+    box-shadow: 8px 8px 0 black;
+    border-radius: 10px;
 }
 
-#currDate{
-    font-size:40px;
-    margin:20px;
-    font-weight:bold;
+#currDate {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
-input{
-    font-size:20px;
-    padding:15px;
-    margin:20px;
-    text-align:center;
-    border-radius:20px;
-    border:1px solid yellow;
-    cursor:pointer;
+input {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 15px 0;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    outline: none;
+    width: 100%;
+    max-width: 400px;
 }
 
-button{
-    font-size:20px;
-    padding:10px 20px;
-    border-radius:10px;
-    border:none;
-    background-color:yellow;
-    color:black;
-    margin:20px;
+button {
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: yellow;
+    color: black;
     text-transform: uppercase;
-    font-weight:bold;
-    cursor:pointer;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-button:hover{
-    background-color:white;
-    color:blue;
+button:hover {
+    background-color: white;
+    color: blue;
 }
 
-#displayAge{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:620px;
-    height:480px;
-    background-color:rgb(228, 91, 91);
-    border-radius:30px;
-    position:absolute;
-    top:19%;
-    left:30%;
+#displayAge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    min-height: 200px;
+    background-color: rgb(228, 91, 91);
+    border-radius: 20px;
+    margin: 20px auto;
     visibility: hidden;
 }
 
-#age{
-    color:white;
-    font-size:50px;
-    margin:20px;
-    font-weight:bold;
+#age {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
 }
