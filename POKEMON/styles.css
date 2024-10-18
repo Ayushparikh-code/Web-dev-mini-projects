@@ -1,0 +1,57 @@
+body {
+    background-color: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.pokemon-image-container {
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#pokemonImage {
+    width: 100%;
+    filter: blur(10px);
+    transition: filter 0.3s ease;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#message {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
