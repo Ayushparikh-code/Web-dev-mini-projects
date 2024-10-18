@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 """
 Created on Fri Mar 26 14:43:36 2021
@@ -5,113 +6,69 @@ Created on Fri Mar 26 14:43:36 2021
 @author: DRASHTI
 """
 
-
 import hashlib
-
 from flask import Flask, render_template
 import requests
 import json
 
-# enter your api key
-# I have used google-news-api
-api_key="18a186f151b642f7900ece5d626029f4"
-api_key="18a186f151b642f7900ece5d626029f4"
+# **Security:** Store your API key in a separate configuration file
+# or environment variable and avoid committing it to version control.
+# Here, we'll use a placeholder for demonstration.
+api_key = "YOUR_API_KEY"  # Replace with your actual API key
 
-url="https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey="+ api_key
-response=response = requests.get(url)
+def fetch_news(category=None, query=None):
+    url = "https://newsapi.org/v2/top-headlines"
+    params = {"apiKey": api_key}
+    if category:
+        params["category"] = category
+    if query:
+        params["q"] = query  # Use "q" parameter for search
 
-data = response.text
-parsed = json.loads(data)
-print(json.dumps(parsed, indent=4))
-
-app=Flask(__name__)
-
-#<img src="{{url_for()}}{{parsed['articles'][0]['urlToImage']}}">
-@app.route('/')
-def home():
-    url="https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey="+ api_key
-    response=response = requests.get(url)
-
+    response = requests.get(url, params=params)
     data = response.text
     parsed = json.loads(data)
-    print(json.dumps(parsed, indent=4))
-    print("##################################################################################")
-    
-    return render_template('headlines.html',parsed=parsed)
+    return parsed
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    parsed = fetch_news()  # Fetch top headlines
+    return render_template('headlines.html', articles=parsed["articles"])
 
 @app.route('/headlines')
 def headlines():
-    url="https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey="+ api_key
-    response=response = requests.get(url)
+    return home()  # Redirect to home for headlines
 
-    data = response.text
-    parsed = json.loads(data)
-    print(json.dumps(parsed, indent=4))
-    
-    return render_template('headlines.html',parsed=parsed)
 @app.route('/sports')
 def sports():
-    url="https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey="+ api_key
-    response=response = requests.get(url)
-
-    data = response.text
-    parsed = json.loads(data)
-    print(json.dumps(parsed, indent=4))
-    
-    return render_template('sports.html',parsed=parsed)
+    parsed = fetch_news(category="sports")
+    return render_template('sports.html', articles=parsed["articles"])
 
 @app.route('/tech')
 def tech():
-    url="https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey="+ api_key
-    response=response = requests.get(url)
-
-    data = response.text
-    parsed = json.loads(data)
-    print(json.dumps(parsed, indent=4))
-    
-    return render_template('tech.html',parsed=parsed)
+    parsed = fetch_news(category="technology")
+    return render_template('tech.html', articles=parsed["articles"])
 
 @app.route('/science')
 def science():
-    url="https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey="+ api_key
-    response=response = requests.get(url)
+    parsed = fetch_news(category="science")
+    return render_template('science.html', articles=parsed["articles"])
 
-    data = response.text
-    parsed = json.loads(data)
-    print(json.dumps(parsed, indent=4))
-    
-    return render_template('science.html',parsed=parsed)
 @app.route('/business')
 def business():
-    url="https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey="+ api_key
-    response=response = requests.get(url)
-
-    data = response.text
-    parsed = json.loads(data)
-    print(json.dumps(parsed, indent=4))
-    
-    return render_template('business.html',parsed=parsed)
+    parsed = fetch_news(category="business")
+    return render_template('business.html', articles=parsed["articles"])
 
 @app.route('/ent')
 def ent():
-    url="https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey="+ api_key
-    response=response = requests.get(url)
-
-    data = response.text
-    parsed = json.loads(data)
-    print(json.dumps(parsed, indent=4))
-    
-    return render_template('ent.html',parsed=parsed)
+    parsed = fetch_news(category="entertainment")
+    return render_template('ent.html', articles=parsed["articles"])
 
 @app.route('/crypto')
 def crypto():
-    url="https://newsapi.org/v2/everything?q=bitcoin&apiKey="+ api_key
-    response=response = requests.get(url)
+    parsed = fetch_news(query="bitcoin")
+    return render_template('crypto.html', articles=parsed["articles"])
 
-    data = response.text
-    parsed = json.loads(data)
-    print(json.dumps(parsed, indent=4))
-    return render_template('crypto.html',parsed=parsed)
-
-if __name__=='__main__':
+if __name__ == '__main__':
     app.run()
