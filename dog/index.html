@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Which Dog Should I Get?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Which Dog Should I Get?</h1>
+    <form id="dogForm">
+      <label for="location">Where do you live?</label>
+      <select id="location">
+        <option value="cold">Cold Climate</option>
+        <option value="hot">Hot Climate</option>
+        <option value="moderate">Moderate Climate</option>
+      </select>
+
+      <label for="space">How much space do you have?</label>
+      <select id="space">
+        <option value="small">Apartment</option>
+        <option value="medium">House with a small yard</option>
+        <option value="large">House with a large yard</option>
+      </select>
+
+      <label for="freeTime">How much time can you dedicate daily?</label>
+      <select id="freeTime">
+        <option value="low">Less than 1 hour</option>
+        <option value="medium">1-3 hours</option>
+        <option value="high">More than 3 hours</option>
+      </select>
+
+      <label for="personality">Describe your personality:</label>
+      <select id="personality">
+        <option value="active">Active and Energetic</option>
+        <option value="calm">Calm and Relaxed</option>
+        <option value="social">Social and Outgoing</option>
+      </select>
+
+      <button type="submit">Find My Dog!</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
