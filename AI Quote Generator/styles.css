@@ -1,56 +1,165 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #3498db;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0f4c3, #b2ebf2); /* Soft gradient background */
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Adjusted to align header at the top */
+    justify-content: flex-start;
     height: 100vh;
+    color: #2c3e50; /* Dark text color */
+    overflow: hidden; /* Prevent scrollbars */
 }
 
+/* Header Styles */
 header {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background: linear-gradient(90deg, #ff6f61, #de9b24); /* Gradient header */
+    color: #ffffff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
 }
 
+header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between nav items */
+    margin-bottom: 10px; /* Space below nav bar */
+}
+
+.nav-bar a {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.nav-bar a:hover {
+    background-color: #e91e63; /* Pink on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Main Container Styles */
 .container {
     text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    padding: 30px;
+    margin: 20px 2%; /* Margin on left and right */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    backdrop-filter: blur(10px); /* Blur effect for the background */
 }
 
-button {
+/* File Upload Button Styles */
+.custom-file-upload {
+    cursor: pointer;
+    display: inline-block;
+    background: #4caf50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.custom-file-upload:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+.file-input {
+    display: none; /* Hide the default file input */
+}
+
+/* Quote History Styles */
+.history-bar {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.history-bar h3 {
+    margin: 0; /* Remove default margin */
+    color: #ff6f61; /* Header color */
+}
+
+/* Keyword Input Styles */
+.keyword-input-container {
+    margin-top: 20px;
+}
+
+.keyword-input {
+    width: 80%; /* Adjust width as needed */
+    padding: 12px; /* Add some padding */
+    font-size: 16px; /* Increase font size */
+    border: 2px solid #4a90e2; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border color and shadow */
+}
+
+.keyword-input:focus {
+    border-color: #e91e63; /* Pink border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.5); /* Glow effect on focus */
+}
+
+/* Button Group Styles */
+.btn-group {
+    margin: 20px 0;
+}
+
+.nav-btn, .action-btn {
     padding: 10px 20px;
     font-size: 18px;
-    cursor: pointer; /* Set default cursor to pointer */
-    background-color: #3498db; /* Default background color */
-    color: #fff;
+    cursor: pointer;
+    background-color: #4a90e2; /* Default button background color */
+    color: #ffffff;
     border: none;
     border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s, filter 0.3s;
+    transition: background-color 0.3s, transform 0.3s; /* Button effects */
+    margin: 0 5px; /* Space between buttons */
 }
 
-button.loading {
-    background-color: #ddd;
-    cursor: not-allowed;
+.nav-btn:hover, .action-btn:hover {
+    background-color: #357ab8; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift effect */
 }
 
-button:hover {
-    background-color: #2980b9;
-    transform: scale(1.05); /* Zoom in effect on hover */
-    filter: brightness(0.9); /* Darken the button on hover */
-}
-
+/* Quote Container Styles */
 #quoteContainer {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 24px; /* Larger font size for quotes */
+    font-weight: bold; /* Bold text for quotes */
+    color: #ff6f61; /* Pink color for quotes */
+    transition: transform 0.3s; /* Quote scaling effect */
+}
+
+#quoteContainer:hover {
+    transform: scale(1.05); /* Zoom in effect on hover */
+}
+
+/* History List Styles */
+#historyList {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+#historyList li {
+    padding: 8px;
+    border-bottom: 1px solid #ecf0f1; /* Light separator */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover */
+}
+
+#historyList li:hover {
+    background-color: #f1c40f; /* Yellow background on hover */
+    color: #34495e; /* Dark text color on hover */
+    transform: scale(1.02); /* Slight zoom effect */
 }
