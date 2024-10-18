@@ -1,60 +1,27 @@
-body {
-	font-family: Arial, sans-serif;
-	text-align: center;
-	padding: 50px;
-	background-color: #f0f0f0;
-}
+function generateQRCode() {
+	// Get the text input value
+	const inputText = document.getElementById("input-text").value;
+	const qrcodeImage = document.getElementById("qrcode");
+	const toastMessage = document.getElementById("toast");
 
-h1 {
-	color: #333;
-}
+	if (inputText.trim() === "") {
+		alert("Please enter some text to generate a QR code.");
+		return;
+	}
 
-.main {
-	background: #fff;
-	padding: 20px;
-	border-radius: 8px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	display: inline-block;
-}
+	// Generate the QR code using Google's chart API
+	const qrCodeUrl = `https://chart.googleapis.com/chart?cht=qr&chl=${encodeURIComponent(inputText)}&chs=200x200&chld=L|0`;
 
-.input {
-	padding: 10px;
-	width: 300px;
-	border-radius: 4px;
-	border: 1px solid #ccc;
-	margin-bottom: 10px;
-}
+	// Set the QR code image
+	qrcodeImage.src = qrCodeUrl;
+	qrcodeImage.style.display = "block"; // Make the image visible
 
-.btn {
-	background-color: #4CAF50;
-	color: white;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}
+	// Display the toast message
+	toastMessage.style.display = "block";
+	toastMessage.innerText = "QR Code Successfully Generated!!!";
 
-.btn:hover {
-	background-color: #45a049;
-}
-
-.code-container {
-	margin-top: 20px;
-}
-
-.code {
-	width: 200px;
-	height: 200px;
-	display: none; /* Initially hidden */
-}
-
-#toast {
-	display: none;
-	color: green;
-	margin-top: 20px;
-}
-
-#note {
-	color: #666;
-	font-size: 14px;
+	// Hide the toast message after 3 seconds
+	setTimeout(() => {
+		toastMessage.style.display = "none";
+	}, 3000);
 }
