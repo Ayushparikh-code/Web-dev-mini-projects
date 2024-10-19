@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottle Flip Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Bottle Flip Game</h1>
+        
+        <!-- Bottle Container -->
+        <div class="bottle-container">
+            <div class="bottle" id="bottle"></div>
+            <img id="broken-bottle" src="broken-bottle.png" alt="Broken Bottle">
+        </div>
+
+        <!-- Horizontal Strength Bar -->
+        <div class="strength-container">
+            <label for="strength-bar">Strength</label>
+            <div class="strength-bar-wrapper">
+                <progress id="strength-bar" value="0" max="100"></progress>
+                <div id="strength-value">0%</div>
+            </div>
+        </div>
+
+        <!-- Score and High Score -->
+        <div id="score">Score: 0</div>
+        <div id="high-score">High Score: 0</div>
+
+        <!-- New Game Button (Initially Hidden) -->
+        <button id="new-game" onclick="startGame()">New Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

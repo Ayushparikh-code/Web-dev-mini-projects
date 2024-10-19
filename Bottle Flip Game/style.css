@@ -1,0 +1,146 @@
+body {
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    color: #4A4A4A;
+}
+
+.bottle-container {
+    position: relative;
+    margin: 20px auto;
+    width: 100px;
+    height: 150px;
+}
+
+.bottle {
+    background-image: url('juice.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.1s linear;
+}
+
+#broken-bottle {
+    display: none;
+    width: 100px;
+    height: auto;
+}
+
+#score, #high-score {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Horizontal Strength Bar */
+.strength-container {
+    margin: 10px 0;
+    position: relative;
+}
+
+.strength-bar-wrapper {
+    width: 300px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#strength-bar {
+    width: 100%;
+    height: 100%;
+    appearance: none;
+}
+
+#strength-bar::-webkit-progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+#strength-bar::-webkit-progress-value {
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+#strength-value {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* New Game Button is initially hidden */
+#new-game {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .game-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #score, #high-score {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Custom styles for the progress bar */
+#strength-bar {
+    width: 100%;
+    height: 100%;
+    appearance: none; /* Remove default styles */
+}
+
+#strength-bar::-webkit-progress-bar {
+    background-color: #e0e0e0; /* Background of the progress bar */
+    border-radius: 5px;
+}
+
