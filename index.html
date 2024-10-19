@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey Memory Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            gap: 10px;
+        }
+
+        .card {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            border: 2px solid #444;
+            border-radius: 8px;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .card.flipped {
+            background-color: #4caf50;
+        }
+
+        .card.matched {
+            background-color: #2196f3;
+            pointer-events: none;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        .game-over {
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+
+        .reset-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .reset-button:hover {
+            background-color: #f57c00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Monkey Memory Game</h1>
+    <p>Score: <span id="score">0</span></p>
+    <div class="grid" id="game-grid"></div>
+    <div id="game-over" class="game-over hidden">Congratulations! You've matched all the fruits!</div>
+    <button id="reset-button" class="reset-button hidden">Play Again</button>
+
+    <script>
+        const fruits = ['🍎', '🍌', '🍇', '🍉', '🍓', '🍊', '🍍', '🍒'];
+        const gameGrid = document.getElementById('game-grid');
+        const scoreDisplay = document.getElementById('score');
+        const gameOverMessage = document.getElementById('game-over');
+        const resetButton = document.getElementById('reset-button');
+
+        let cards = [];
+        let flippedIndices = [];
+        let matchedIndices = [];
+        let score = 0;
+
+        // Initialize game
+        function initGame() {
+            cards = [...fruits, ...fruits].sort(() => Math.random() - 0.5);
+            gameGrid.innerHTML = '';
+            flippedIndices = [];
+            matchedIndices = [];
+            score = 0;
+            scoreDisplay.textContent = score;
+            gameOverMessage.classList.add('hidden');
+            resetButton.classList.add('hidden');
+
+            cards.forEach((fruit, index) => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.dataset.index = index;
+                card.addEventListener('click', () => flipCard(index));
+                gameGrid.appendChild(card);
+            });
+        }
+
+        // Flip card
+        function flipCard(index) {
+            if (flippedIndices.length < 2 && !flippedIndices.includes(index) && !matchedIndices.includes(index)) {
+                const card = document.querySelector(`.card[data-index='${index}']`);
+                card.textContent = cards[index];
+                card.classList.add('flipped');
+                flippedIndices.push(index);
+
+                if (flippedIndices.length === 2) {
+                    checkMatch();
+                }
+            }
+        }
+
+        // Check for a match
+        function checkMatch() {
+            const [firstIndex, secondIndex] = flippedIndices;
+            if (cards[firstIndex] === cards[secondIndex]) {
+                matchedIndices.push(firstIndex, secondIndex);
+                score++;
+                scoreDisplay.textContent = score;
+                if (matchedIndices.length === cards.length) {
+                    endGame();
+                }
+            } else {
+                setTimeout(() => {
+                    const firstCard = document.querySelector(`.card[data-index='${firstIndex}']`);
+                    const secondCard = document.querySelector(`.card[data-index='${secondIndex}']`);
+                    firstCard.textContent = '';
+                    secondCard.textContent = '';
+                    firstCard.classList.remove('flipped');
+                    secondCard.classList.remove('flipped');
+                }, 1000);
+            }
+            flippedIndices = [];
+        }
+
+        // End game
+        function endGame() {
+            gameOverMessage.classList.remove('hidden');
+            resetButton.classList.remove('hidden');
+        }
+
+        // Reset game
+        resetButton.addEventListener('click', initGame);
+
+        // Start the game
+        initGame();
+    </script>
+</body>
+</html>
