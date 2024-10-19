@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .user-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .user-info img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub User Finder</h1>
+        <input type="text" id="username" placeholder="Enter GitHub Username">
+        <button id="search-btn">Search</button>
+        <div id="user-info" class="user-info"></div>
+    </div>
+    <script>
+        document.getElementById('search-btn').addEventListener('click', () => {
+            const username = document.getElementById('username').value;
+            fetchUserData(username);
+        });
+
+        async function fetchUserData(username) {
+            const response = await fetch(`https://api.github.com/users/${username}`);
+
+            if (response.ok) {
+                const user = await response.json();
+                displayUserInfo(user);
+            } else {
+                document.getElementById('user-info').innerHTML = `<p>User not found.</p>`;
+            }
+        }
+
+        function displayUserInfo(user) {
+            document.getElementById('user-info').innerHTML = `
+                <h2>${user.login}</h2>
+                <img src="${user.avatar_url}" alt="${user.login}">
+                <p><strong>Name:</strong> ${user.name || 'N/A'}</p>
+                <p><strong>Bio:</strong> ${user.bio || 'N/A'}</p>
+                <p><strong>Public Repos:</strong> ${user.public_repos}</p>
+                <p><strong>Followers:</strong> ${user.followers}</p>
+                <p><strong>Following:</strong> ${user.following}</p>
+                <a href="${user.html_url}" target="_blank">View Profile</a>
+            `;
+        }
+    </script>
+</body>
+</html>
