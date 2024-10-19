@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .gradient-box {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background: transparent; /* Start with transparent */
+            transition: background 0.5s ease;
+            border: 2px dashed #ccc; /* Optional border */
+        }
+
+        .gradient-box:hover {
+            /* Show gradient on hover */
+            background: linear-gradient(90deg, #ff0000, #0000ff); /* Default gradient */
+        }
+
+        input[type="color"] {
+            margin: 10px;
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #css-code {
+            margin-top: 10px;
+            font-family: monospace;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Gradient Generator</h1>
+    <div class="gradient-box" id="gradientBox"></div>
+    
+    <input type="color" id="color1" value="#ff0000" onchange="updateGradient()">
+    <input type="color" id="color2" value="#0000ff" onchange="updateGradient()">
+    
+    <div id="css-code">background: linear-gradient(90deg, #ff0000, #0000ff);</div>
+
+    <script>
+        function updateGradient() {
+            const color1 = document.getElementById('color1').value;
+            const color2 = document.getElementById('color2').value;
+            const gradientBox = document.getElementById('gradientBox');
+            const cssCode = document.getElementById('css-code');
+            
+            const gradient = `linear-gradient(90deg, ${color1}, ${color2})`;
+            gradientBox.style.background = gradient; // Update background on hover
+            cssCode.textContent = `background: ${gradient};`;
+        }
+
+        // Set the default gradient on load
+        window.onload = updateGradient;
+    </script>
+</body>
+</html>
