@@ -1,15 +1,24 @@
+const buyTickets = document.getElementsByClassName("tour-button");
+const modal = document.getElementById("modal");
+const modalCloseButtons = document.getElementsByClassName("modal-close-button");
 
-var buyTicket = document.getElementsByClassName("tour-button");
-var modal = document.getElementById("modal");
-var modalClose = document.getElementsByClassName("modal-close-button");
-for(i=0;i<=2;i++){
-    buyTicket[i].addEventListener("click",()=>{
-        modal.style.display="block";
-    })
-}
+// Add event listeners to buy ticket buttons
+Array.from(buyTickets).forEach(button => {
+    button.addEventListener("click", () => {
+        modal.style.display = "block";
+    });
+});
 
-for(i=0;i<=0;i++){
-    modalClose[i].addEventListener("click",()=>{
-        modal.style.display="none";
-    })
-}
+// Add event listeners to modal close buttons
+Array.from(modalCloseButtons).forEach(closeButton => {
+    closeButton.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+});
+
+// Optional: Close modal when clicking outside of it
+window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
