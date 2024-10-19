@@ -1,28 +1,33 @@
-const getQuoteBtn = document.getElementById("getQuoteBtn");
-const quoteText = document.getElementById("quoteText");
+#qr-code {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-getQuoteBtn.addEventListener("click", () => {
-    getQuoteBtn.classList.add("loading");
-    getQuoteBtn.textContent = "Loading...";
-    getQuote();
-});
+.qr-code-result {
+    margin-top: 20px;
+}
 
-// Initially, remove loading state
-getQuoteBtn.classList.remove("loading");
-getQuoteBtn.textContent = "Get Quote";
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
 
-function getQuote() {
-    fetch("https://api.quotable.io/random")
-        .then((response) => response.json())
-        .then((data) => {
-            quoteText.innerHTML = `"${data.content}" - ${data.author}`;
-            getQuoteBtn.classList.remove("loading");
-            getQuoteBtn.textContent = "Get Quote";
-        })
-        .catch((error) => {
-            console.error("Error fetching quote:", error);
-            quoteText.innerHTML = "Failed to fetch a quote. Please try again later.";
-            getQuoteBtn.classList.remove("loading");
-            getQuoteBtn.textContent = "Get Quote";
-        });
+button {
+    padding: 10px 20px;
+    background-color: #d50000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b00000;
 }
