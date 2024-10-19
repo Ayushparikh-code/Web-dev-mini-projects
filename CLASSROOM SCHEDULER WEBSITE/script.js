@@ -14,11 +14,6 @@ button.addEventListener("click", function (e) {
         title: title.value,
         textArea: textArea.value
     }
-
-
-
-
-
     notesObj.push(myObj);
     localStorage.setItem("notes", JSON.stringify(notesObj));
     textArea.value = '';
