@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>QR Code Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>QR Code Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    .container {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    #qrcode {
+      margin-top: 20px;
+    }
+  </style>
 </head>
-
 <body>
-	<h1>QR CODE GENERATOR</h1>
-	<div class="main">
-		<input type="text" name="" id="" class="input" placeholder="Enter text here...">
-		<button class="btn">Generate</button> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgdnbx19IIBKvSAwARaGMfbl06_CnXNcV63g&usqp=CAU" alt="qrcode" class="code">
-		<p id="note">Made with ♥ by Khushi</p>
-	</div>
-	<div id="toast">Successfully Generated!!!</div>
-	<script src="script.js"></script>
-</body>
+  <div class="container">
+    <h2>QR Code Generator</h2>
+    <input type="text" id="text" placeholder="Enter text here..." />
+    <button onclick="generateQRCode()">Generate QR Code</button>
+    <div id="qrcode"></div>
+  </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    function generateQRCode() {
+      document.getElementById('qrcode').innerHTML = '';
+      var text = document.getElementById('text').value;
+      if (text.trim() === '') {
+        alert('Please enter some text.');
+        return;
+      }
+      var qrcode = new QRCode(document.getElementById('qrcode'), {
+        text: text,
+        width: 256,
+        height: 256,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+      });
+    }
+  </script>
+</body>
 </html>
