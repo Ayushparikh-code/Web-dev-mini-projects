@@ -1,33 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Dicee</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
-
-  </head>
-  <body>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <div class="container">
-      <h1>Refresh Me</h1>
-
-      <div class="dice">
-        <p>Player 1</p>
-        <img class="img1" src="images/dice1.png">
-      </div>
-
-      <div class="dice">
-        <p>Player 2</p>
-        <img class="img2" src="images/dice2.png">
-      </div>
-
+        <h1>Dice Game</h1>
+        <div class="dice-container">
+            <div class="dice" id="dice1">🎲</div>
+            <div class="dice" id="dice2">🎲</div>
+        </div>
+        <button id="rollButton">Roll Dice</button>
+        <div class="result" id="result"></div>
     </div>
-
-
-  </body>
-
-  <footer>
     <script src="script.js"></script>
-  </footer>
+</body>
 </html>
