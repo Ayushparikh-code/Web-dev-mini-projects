@@ -1,20 +1,26 @@
-var randomNo = Math.floor(Math.random()*6)+1;
-var randomDiceImage = "images/dice"+randomNo+".png";
+document.getElementById('rollButton').addEventListener('click', function() {
+    // Generate random numbers for the dice
+    const dice1 = Math.floor(Math.random() * 6) + 1;
+    const dice2 = Math.floor(Math.random() * 6) + 1;
 
-var img1 = document.querySelector(".img1").setAttribute("src",randomDiceImage);
-// or// var img1 = document.querySelector(".img1").src=`${randomDiceImage}`;
+    // Update the dice display
+    document.getElementById('dice1').textContent = getDiceEmoji(dice1);
+    document.getElementById('dice2').textContent = getDiceEmoji(dice2);
 
-var randomNo2 = Math.floor(Math.random()*6)+1;
-var randomDiceImage2 = "images/dice"+randomNo2+".png";
-var img2 = document.querySelector(".img2").setAttribute("src",randomDiceImage2);
+    // Show the result
+    const resultText = `You rolled a ${dice1} and a ${dice2}. Total: ${dice1 + dice2}`;
+    document.getElementById('result').textContent = resultText;
+});
 
-var winnerDeclaration = document.querySelector("h1");
-if(randomNo>randomNo2){
-winnerDeclaration.innerHTML="🚩Player 1 is the winner!"
-}
-else if(randomNo<randomNo2){
-    winnerDeclaration.innerText="Player 2 is the winner🚩!"
-}
-else{
-winnerDeclaration.innerText="Try again!"
+// Function to get dice emoji based on number
+function getDiceEmoji(num) {
+    switch (num) {
+        case 1: return '⚀';
+        case 2: return '⚁';
+        case 3: return '⚂';
+        case 4: return '⚃';
+        case 5: return '⚄';
+        case 6: return '⚅';
+        default: return '🎲'; // fallback
+    }
 }
