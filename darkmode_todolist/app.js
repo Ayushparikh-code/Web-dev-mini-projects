@@ -1,4 +1,4 @@
-//jshint esversion:6
+// jshint esversion:6
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -6,32 +6,32 @@ const date = require(__dirname + "/date.js");
 
 const app = express();
 
-app.set('view engine', 'ejs');
-
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+app.set("view engine", "ejs");
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+// Arrays to store list items
 const items = [];
 const workItems = [];
 
-app.get("/", function(req, res) {
-
+// Home route handler
+app.get("/", (req, res) => {
   const day = date.getDate();
 
+  // Render the list template with the current day and items
   res.render("list", {
     listTitle: day,
     newListItems: items
   });
-
 });
 
-app.post("/", function(req, res) {
-
+// Handle form submission
+app.post("/", (req, res) => {
   const item = req.body.newItem;
+  const listType = req.body.list;
 
-  if (req.body.list === "Work") {
+  // Add items to the appropriate list and redirect
+  if (listType === "Work") {
     workItems.push(item);
     res.redirect("/work");
   } else {
@@ -40,17 +40,25 @@ app.post("/", function(req, res) {
   }
 });
 
-app.get("/work", function(req, res) {
+// Work list route handler
+app.get("/work", (req, res) => {
   res.render("list", {
     listTitle: "Work List",
     newListItems: workItems
   });
 });
 
-app.get("/about", function(req, res) {
+// About route handler
+app.get("/about", (req, res) => {
   res.render("about");
 });
 
-app.listen(3000, function() {
+// Handle non-existing routes
+app.use((req, res) => {
+  res.status(404).send("404 - Page Not Found");
+});
+
+// Start server
+app.listen(3000, () => {
   console.log("Server started on port 3000");
 });
