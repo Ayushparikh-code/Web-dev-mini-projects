@@ -3,13 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Chess Game </title>
+    <title>Chess Game</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        /* Basic styles for the timer */
+        #timer {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            font-size: 20px;
+        }
 
+        .timer {
+            padding: 10px;
+            border: 2px solid #000;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            width: 150px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- partial:index.partial.html -->
+    <div id="timer">
+        <div id="white-timer" class="timer">White Time: <span id="white-time">60</span> seconds</div>
+        <div id="black-timer" class="timer">Black Time: <span id="black-time">60</span> seconds</div>
+    </div>
+
     <div id="game">
         <div class='cellprefix'>8</div>
         <div class='gamecell' id='1_8'></div>
@@ -92,14 +113,60 @@
         <div class='cellprefix'>f</div>
         <div class='cellprefix'>g</div>
         <div class='cellprefix'>h</div><br>
-        <div id='turn'>It's Whites Turn!</div>
+        <div id='turn'>It's White's Turn!</div>
     </div>
-    <!-- partial -->
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="./script.js"></script>
+    <script>
+        // JavaScript code for timer functionality
+        let whiteTime = 60; // Initial time for white player
+        let blackTime = 60; // Initial time for black player
+        let currentPlayer = 'white'; // Track the current player's turn
+        let timerInterval;
 
+        function startTimer() {
+            timerInterval = setInterval(() => {
+                if (currentPlayer === 'white') {
+                    whiteTime--;
+                    document.getElementById('white-time').innerText = whiteTime;
+                } else {
+                    blackTime--;
+                    document.getElementById('black-time').innerText = blackTime;
+                }
+
+                // Check if time runs out
+                if (whiteTime <= 0 || blackTime <= 0) {
+                    clearInterval(timerInterval);
+                    alert(`${currentPlayer === 'white' ? 'Black' : 'White'} wins! Time's up!`);
+                    resetTimer();
+                }
+            }, 1000);
+        }
+
+        function switchTurn() {
+            currentPlayer = currentPlayer === 'white' ? 'black' : 'white';
+            resetTimer(); // Reset the timer on turn switch
+        }
+
+        function resetTimer() {
+            clearInterval(timerInterval);
+            whiteTime = 60;
+            blackTime = 60;
+            document.getElementById('white-time').innerText = whiteTime;
+            document.getElementById('black-time').innerText = blackTime;
+            currentPlayer = 'white'; // Reset to white player
+            startTimer(); // Restart timer
+        }
+
+        // Start the timer on page load
+        startTimer();
+
+        // Switch turns on clicking the game cells
+        document.querySelectorAll('.gamecell').forEach(cell => {
+            cell.addEventListener('click', switchTurn);
+        });
+    </script>
 </body>
 
 </html>
-
-
