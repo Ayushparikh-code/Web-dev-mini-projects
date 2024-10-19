@@ -1,36 +1,55 @@
-body{
+/* General Styling */
+body {
     background-color: rgb(212, 247, 235);
-}
-h1{
-    font-weight: 900;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 7% 36% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
 }
-#txt{
-    margin: 0% 27%;
-    width: 600px;
+
+/* Heading */
+h1 {
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Textarea Styling */
+#text-input {
+    width: 80%;
+    max-width: 600px;
     height: 350px;
-    border: black;
-    border-width: 6px;
+    border: 2px solid black;
     border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: none;
 }
-p{
+
+/* Note Styling */
+.note {
     color: red;
-    font-size: x-small;
-    margin-left: 40%;
-    margin-top: 1%;
+    font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 20px;
 }
-.btn{
-        background-color: #4CAF50; /* Green */
-        border: none;
-        border-radius: 10px;
-        color: white;
-        padding: 15px 32px;
-        margin-top: 1%;
-        margin-left: 43%;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-      
+
+/* Button Styling */
+.btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: #45a049;
 }
