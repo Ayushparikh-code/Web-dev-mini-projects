@@ -5,21 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Text to speech</title>
+    <title>Text to Speech Converter</title>
+    <script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
 </head>
 <body>
-    <script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
-    <h1>
-        Text to speech converter 
-    </h1>
-    <textarea id="txt" name="text"></textarea>
-    <br>
-    <p>*Takes few second to process. Have patience</p>
-    <input class="btn" type="button" onclick="textSpeak()" value="submit"> 
+    <main>
+        <h1>Text to Speech Converter</h1>
+        <textarea id="text-input" name="text" placeholder="Enter text here..." rows="5" cols="40"></textarea>
+        <p class="note">*It may take a few seconds to process. Please be patient.</p>
+        <button class="btn" onclick="textSpeak()">Submit</button>
+    </main>
+
     <script>
-        function textSpeak(){
-            var text = document.getElementById("txt").value;
-            responsiveVoice.speak(text);
+        function textSpeak() {
+            const text = document.getElementById("text-input").value.trim();
+            if (text) {
+                responsiveVoice.speak(text);
+            } else {
+                alert("Please enter some text to convert to speech.");
+            }
         }
     </script>
 </body>
