@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bottle Flip Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .game-container {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    .bottle-container {
+      position: relative;
+      height: 200px;
+    }
+
+    #bottle {
+      position: absolute;
+      bottom: 0;
+      height: 150px;
+      left: 10%;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      font-size: 1em;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>Bottle Flip Game</h1>
+    <p>Score: <span id="score">0</span></p>
+    <div class="bottle-container">
+      <img id="bottle" src="./vecteezy_transparent-plastic-bottle-on-transparent-background_12628136.png" alt="Bottle">
+    </div>
+    <button id="flip-btn">Flip the Bottle</button>
+  </div>
+
+  <script>
+    let score = 0;
+    const bottle = document.getElementById('bottle');
+    const scoreDisplay = document.getElementById('score');
+    const flipButton = document.getElementById('flip-btn');
+
+    flipButton.addEventListener('click', flipBottle);
+
+    function flipBottle() {
+      let rotation = Math.floor(Math.random() * 360);
+
+      bottle.style.transition = 'transform 1s';
+      bottle.style.transform = `rotate(${rotation}deg)`;
+
+      setTimeout(() => {
+        checkFlip(rotation);
+      }, 1000);
+    }
+
+    function checkFlip(rotation) {
+      const remainder = rotation % 360;
+
+      if (remainder >= 340 || remainder <= 20) {
+        score++;
+        alert('Success! You flipped the bottle!');
+      } else {
+        alert('Oops! Try again.');
+      }
+
+      scoreDisplay.textContent = score;
+    }
+  </script>
+
+</body>
+</html>
