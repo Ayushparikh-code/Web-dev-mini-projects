@@ -34,7 +34,7 @@ inthe
 
 ## HOW TO CONTRIBUTE ? 👷 
 
-**1.** Fork [this](https://github.com/Ayushparikh-code/Web-dev-mini-projects) repository.
+**1.** Fork this reporistory (https://github.com/Ayushparikh-code/Web-dev-mini-projects) repository.
 
 **2.** Clone the forked repository.
 
