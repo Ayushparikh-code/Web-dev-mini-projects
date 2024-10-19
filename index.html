@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DINO Game Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+
+        #game-container {
+            position: relative;
+            width: 600px;
+            height: 150px;
+            overflow: hidden;
+            border: 2px solid #333;
+            background-color: #fff;
+        }
+
+        #dino {
+            position: absolute;
+            bottom: 0;
+            left: 50px;
+            width: 40px;
+            height: 40px;
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .cactus {
+            position: absolute;
+            bottom: 0;
+            width: 20px;
+            height: 40px;
+            background-color: green;
+        }
+
+        #score {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        #start-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none; /* Hide the button initially */
+        }
+
+        #game-over {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #d9534f;
+            display: none; /* Hide game over message initially */
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="dino"></div>
+        <div id="score">Score: 0</div>
+        <div id="start-button">Start Game</div>
+        <div id="game-over">Game Over!</div>
+    </div>
+
+    <script>
+        const dino = document.getElementById('dino');
+        const gameContainer = document.getElementById('game-container');
+        const scoreDisplay = document.getElementById('score');
+        const startButton = document.getElementById('start-button');
+        const gameOverMessage = document.getElementById('game-over');
+
+        let score = 0;
+        let gameInterval;
+        let cactusInterval;
+        let isJumping = false;
+
+        // Start the game
+        startButton.addEventListener('click', startGame);
+
+        function startGame() {
+            score = 0;
+            scoreDisplay.textContent = `Score: ${score}`;
+            startButton.style.display = 'none';
+            gameOverMessage.style.display = 'none';
+
+            gameInterval = setInterval(updateScore, 1000);
+            cactusInterval = setInterval(createCactus, 2000);
+        }
+
+        // Update the score
+        function updateScore() {
+            score++;
+            scoreDisplay.textContent = `Score: ${score}`;
+        }
+
+        // Create cactus
+        function createCactus() {
+            const cactus = document.createElement('div');
+            cactus.classList.add('cactus');
+            cactus.style.left = '600px'; // Start cactus off-screen
+            gameContainer.appendChild(cactus);
+            moveCactus(cactus);
+        }
+
+        // Move cactus
+        function moveCactus(cactus) {
+            let position = 600; // Start position
+            const cactusInterval = setInterval(() => {
+                if (position < -20) {
+                    clearInterval(cactusInterval);
+                    cactus.remove();
+                } else {
+                    position -= 5;
+                    cactus.style.left = `${position}px`;
+
+                    // Check for collision
+                    if (checkCollision(cactus)) {
+                        endGame();
+                    }
+                }
+            }, 20);
+        }
+
+        // Check for collision
+        function checkCollision(cactus) {
+            const dinoRect = dino.getBoundingClientRect();
+            const cactusRect = cactus.getBoundingClientRect();
+
+            return (
+                dinoRect.left < cactusRect.right &&
+                dinoRect.right > cactusRect.left &&
+                dinoRect.bottom > cactusRect.top
+            );
+        }
+
+        // End the game
+        function endGame() {
+            clearInterval(gameInterval);
+            clearInterval(cactusInterval);
+            startButton.style.display = 'block';
+            gameOverMessage.style.display = 'block';
+            gameOverMessage.textContent = `Game Over! Your score: ${score}`;
+        }
+
+        // Handle jump
+        document.addEventListener('keydown', (event) => {
+            if (event.code === 'Space') {
+                jump();
+            }
+        });
+
+        function jump() {
+            if (isJumping) return; // Prevent multiple jumps
+            isJumping = true;
+
+            let jumpHeight = 100;
+            let jumpCount = 0;
+
+            const jumpInterval = setInterval(() => {
+                if (jumpCount < 15) {
+                    dino.style.bottom = `${jumpHeight - jumpCount * 6}px`;
+                    jumpCount++;
+                } else {
+                    clearInterval(jumpInterval);
+                    fall();
+                }
+            }, 20);
+        }
+
+        function fall() {
+            let fallCount = 0;
+
+            const fallInterval = setInterval(() => {
+                if (fallCount < 15) {
+                    dino.style.bottom = `${jumpHeight - (fallCount * 6)}px`;
+                    fallCount++;
+                } else {
+                    clearInterval(fallInterval);
+                    dino.style.bottom = '0px'; // Reset to ground level
+                    isJumping = false; // Allow jumping again
+                }
+            }, 20);
+        }
+
+        // Show the start button
+        startButton.style.display = 'block';
+    </script>
+</body>
+</html>
