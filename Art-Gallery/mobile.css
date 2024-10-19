@@ -1,23 +1,31 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-@media (max-width:595px){
-    #container{
-        display:grid;
-        grid-template-columns:auto;
+
+/* General mobile view styles for screens less than or equal to 595px */
+@media (max-width: 595px) {
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center; /* Center-aligns images */
+        gap: 10px; /* Adds some space between images */
     }
-    .header{
-        padding-top:30px;
-        padding-bottom:30px;
-        padding-right: 10px;
-        padding-left:10px;
+
+    .header {
+        padding: 30px 10px; /* Combines padding-top, bottom, left, and right */
+        text-align: center;
     }
-    img{
-        width:250px;
-        height:300px;
+
+    img {
+        width: 250px;
+        height: 300px;
+        object-fit: cover; /* Ensures images don't get distorted */
     }
-    .footer{
-        padding:10px
+
+    .footer {
+        padding: 10px;
+        text-align: center;
     }
 }
