@@ -2,7 +2,8 @@ import Navbar from "../src/Components/Navbar"
 import Story from "../src/Components/Story"
 import SideBox from "./Components/SideBox"
 import Post from "./Components/Posts"
-const App = ()=>{
+const App = ()=>
+    {
     return(
         <>
         <Navbar/>
@@ -26,5 +27,4 @@ const App = ()=>{
     )
    
 }
-
 export default App;
