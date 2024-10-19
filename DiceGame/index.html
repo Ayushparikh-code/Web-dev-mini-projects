@@ -5,29 +5,26 @@
     <title>Dicee</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
-
   </head>
   <body>
-
     <div class="container">
-      <h1>Refresh Me</h1>
+      <h1>Roll the Dice!</h1>
 
       <div class="dice">
         <p>Player 1</p>
-        <img class="img1" src="images/dice1.png">
+        <img class="img1" src="images/dice1.png" alt="Dice 1">
+        <button id="rollPlayer1">Roll Player 1</button>
       </div>
 
       <div class="dice">
         <p>Player 2</p>
-        <img class="img2" src="images/dice2.png">
+        <img class="img2" src="images/dice2.png" alt="Dice 2">
+        <button id="rollPlayer2">Roll Player 2</button>
       </div>
 
+      <h2 id="winnerDeclaration">Let's see who wins!</h2>
     </div>
 
-
-  </body>
-
-  <footer>
     <script src="script.js"></script>
-  </footer>
+  </body>
 </html>
