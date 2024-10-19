@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center vh-100">
+        <h1 class="text-center">Pixel Art Creator</h1>
+        <div class="canvas-container">
+            <canvas id="pixelCanvas"></canvas>
+        </div>
+        <div class="controls mt-3">
+            <label for="colorPicker">Color:</label>
+            <input type="color" id="colorPicker" value="#000000">
+            <button id="clearCanvas" class="btn btn-danger ml-2">Clear Canvas</button>
+            <button id="saveImage" class="btn btn-success ml-2">Save as PNG</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+    

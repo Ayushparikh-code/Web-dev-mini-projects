@@ -56,9 +56,8 @@ a:hover{
     padding:8px;
     border-radius:10px;
 }
-#right,#right1,#right2{
-    float:right;
-    /*margin-left:970px;*/
+#right{
+    margin-bottom: 20px;
 }
 
 /******home section background image******/
