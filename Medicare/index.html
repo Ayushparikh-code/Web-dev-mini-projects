@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDICARE</title>
+    <!--Favicon link-->
+    <link rel="icon" href="images/favicon-16x16.png">
+    <!--Bootstrap Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Normal css links-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+    <!--Email js Link-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email/min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_pdByzEMSsRVfAeA0uOccz");
+        })();
+    </script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    
+    <!--Chatbot - Amazon Lex -->
+    <script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"37e07cef3ab4087c1e22e0094e4b5c94f","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+
+    <!--Navbar Section-->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img style="height:60px; width:80px;" src="./images/logo.png" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class=""></span> -->
+                    <i class="fa-solid fa-bars-staggered navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#schemes">Schemes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Banner section -->
+    <section id="home" class="home">
+        <div class="banner_wrapper wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-1 order-2">
+                        <h3>Transforming Dreams into Reality: Explore, Learn, and Leverage Government Schemes for a
+                            Better Tomorrow.</h3>
+                        <p>Welcome to our online portal, where dreams take flight and aspirations become reality.Through
+                            our user-friendly platform, learn about the diverse range of initiatives aimed at fostering
+                            personal and community growth. We empower you with knowledge, providing the tools to
+                            leverage government schemes that align with your ambitions.</p>
+                        <a href="#about" class="main-btn mt-4 fill-btn">Learn More</a>
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1 mb-md-0 mb-5">
+                        <div class="top-right-sec">
+                            <img decoding="async" class="img-fluid ms-xl-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+                                src="./images/frontpageimage.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper pb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="icon-box">
+                                <img decoding="async" src="./images/top-banner-img/Appointment-icon.png">
+                            </div>
+                            <div>
+                                <h4>Latest Updates</h4>
+                                <p>Keep users informed about the latest government schemes, policy changes, and updates
+                                    through a regular newsletter. This ensures they stay current on opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="icon-box">
+                                <img decoding="async" src="./images/top-banner-img/Emergency-icon.png">
+                            </div>
+                            <div>
+                                <h4>AI Integrated Chat-bot</a></h4>
+                                <p>
+                                    Meet our AI chatbot – your instant guide to government schemes! Get real-time
+                                    answers, eligibility details, and application support effortlessly.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="icon-box">
+                                <img decoding="async" src="./images/top-banner-img/7-Service-icon.png">
+                            </div>
+                            <div>
+                                <h4>24/7 Service</h4>
+                                <p> Enjoy our 24/7 service, ensuring you have access to government scheme information
+                                    whenever you need it. Our support is available around the clock and guiding you
+                                    through the opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner section exit -->
+
+    <!-- About section -->
+    <section id="about" class="about_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-mb-0 mb-5">
+                    <div class="position-relative">
+                        
+                        <iframe width="550" height="400" src="https://www.youtube.com/embed/U2ypKw8l-Iw">
+                        </iframe>
+
+                        <!-- <video height="400" width="550" controls>
+                            <source src="https://youtu.be/Zuc8y4rt1TI">
+                        </video> -->
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    <h2>About Us</h2>
+                    <p>In our commitment to bridging the gap to better healthcare for all, we go beyond information
+                        dissemination. Our platform acts as a holistic resource, empowering individuals and communities
+                        to navigate the complexities of healthcare accessibility. Beyond detailing government healthcare
+                        schemes, we foster practical connections by linking users with non-governmental organizations
+                        (NGOs) that extend hands-on support. These NGOs play a crucial role in providing practical
+                        assistance, ensuring that individuals not only understand the available healthcare initiatives
+                        but also receive guidance throughout the application process.<br>
+
+                        Our vision is rooted in the belief that everyone, regardless of their financial background,
+                        should have the opportunity to lead a healthy and prosperous life. By seamlessly connecting
+                        users with relevant NGOs, we strive to make healthcare more than just a concept but a tangible
+                        reality. We understand that navigating the healthcare system can be daunting, and our mission is
+                        to make this journey more manageable, ensuring that individuals not only have access to
+                        information but also receive the support they need to take full advantage of available
+                        healthcare opportunities.<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section exit -->
+
+    <!-- Services section -->
+    <section id="schemes" class="services_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3>Schemes: Your Gateway to Opportunity</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <i class="fas fa-tasks" style="font-size: 50px;"></i>
+                        </div>
+                        <div>
+                            <h4>Ayushman Bharat</h4>
+                            <p>Ayushman Bharat is the Government of India’s flagship health insurance scheme launched in
+                                2017 to provide Universal Health Coverage (UHC).The scheme has two components HWC and
+                                PM-JAY. </p>
+                            <a href="https://nha.gov.in/PM-JAY" class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <i class="fas fa-tasks" style="font-size: 50px;"></i>
+                        </div>
+                        <div>
+                            <h4>Rashtriya Swasthya Bima Yojana (RSBY)</h4>
+                            <p>This scheme offered by the Ministry of Labour and Employment provides healthcare
+                                protection and coverage to Below Poverty Line (BPL) families.</p>
+                            <a href="https://www.india.gov.in/spotlight/rashtriya-swasthya-bima-yojana"
+                                class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <i class="fas fa-tasks" style="font-size: 50px;"></i>
+                        </div>
+                        <div>
+                            <h4>Employees State Insurance Scheme (ESIS)</h4>
+                            <p>Under ESIS, workers in India can get complete medical care from the very first day of
+                                their employment.</p>
+                            <a href="https://www.india.gov.in/spotlight/employees-state-insurance-scheme#tab=tab-1"
+                                class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <i class="fas fa-tasks" style="font-size: 50px;"></i>
+                        </div>
+                        <div>
+                            <h4>Central Government Health Scheme (CGHS)</h4>
+                            <p>CGHS provides healthcare services to current and former Central Government employees.</p>
+                            <a href="https://cghs.gov.in/CghsGovIn/faces/ViewPage.xhtml" class="main-btn mt-4">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <i class="fas fa-tasks" style="font-size: 50px;"></i>
+                        </div>
+                        <div>
+                            <h4>Universal Health Insurance Scheme (UHIS)</h4>
+                            <p>This scheme is meant to help the economically weak and deprived citizens of India.</p>
+                            <a href="https://uiic.co.in/en/taxonomy/term/1283" class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <i class="fas fa-tasks" style="font-size: 50px;"></i>
+                        </div>
+                        <div>
+                            <h4>Pradhan Mantri Suraksha Bima Yojana (PMSBY)</h4>
+                            <p>PMSBY is available for all Indian citizens between 18 to 70 years of age who have a bank
+                                account.</p>
+                            <a href="https://nationalinsurance.nic.co.in/en/about-us/pradhan-mantri-suraksha-bima-yojana"
+                                class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section Exit -->
+
+    <!-- Team section -->
+    <section id="team" class="team_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3 class="text-black">Team Members</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card rounded-3">
+                        <div class="team-info pt-3 text-center">
+                            <h6>Kunj Maheshwari<br>21BCE11269</h6>
+                            <p class="mb-0">CSE Core</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card rounded-3">
+                        <div class="team-info pt-3 text-center">
+                            <h6>Shreyas Patil<br>21BCE11682</h6>
+                            <p class="mb-0">CSE Core</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card rounded-3">
+                        <div class="team-info pt-3 text-center">
+                            <h6>Vansh Agrawal<br>21BME10011</h6>
+                            <p class="mb-0">Mechanical</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card rounded-3">
+                        <div class="team-info pt-3 text-center">
+                            <h6>Aditya Kumar<br>21BCY10135</h6>
+                            <p class="mb-0">Cyber Security</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card rounded-3">
+                        <div class="team-info pt-3 text-center">
+                            <h6>Giriraj Baidwai<br>21BCE11449</h6>
+                            <p class="mb-0">CSE Core</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card rounded-3">
+                        <div class="team-info pt-3 text-center">
+                            <h6>Rahul Kumar<br>21BSA10118</h6>
+                            <p class="mb-0">Cloud Computing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card rounded-3">
+                        <div class="team-info pt-3 text-center">
+                            <h6>Satyam Dev Yaduvanshi<br>21BSA10076</h6>
+                            <p class="mb-0">Cloud Computing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section Exit  -->
+
+    <!-- Footer section -->
+    <section id="contact" class="footer_wrapper wrapper">
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5>MediCare</h5>
+                    <p class="ps-0">Health Information Website</p>
+                    <div class="contact-info">
+                        <ul class="list-unstyled p-0">
+                            <li><a href="#"><i class="fa fa-home me-3"></i>VIT Bhopal University</a></li>
+                            <li><a href="#"><i class="fa fa-phone me-3"></i>+91 8799898874</a></li>
+                            <li><a href="#"><i class="fa fa-envelope me-3"></i>kunj1766@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-md-4 mb-4">
+                    <img style="width:350px; height:280px;" src="/images/thankyouimage.jpg" alt="Thankyou Image">
+                </div> -->
+                <div class="col-lg-4 col-md-4 mb-4" style="color: white;">
+                    <li><a href="https://docs.google.com/document/d/1dPYyS1pk_XnbPPBLrxLtxfMLQtnZVKOS4a-9aIH9FVQ/edit?usp=sharing" style="color: white;">Terms and Conditions</a></li>
+                    <li><a href="https://docs.google.com/document/d/1lkfv8yXv_2FyveYPtEnC1b36s_NWHuz70fALgDhGK-Q/edit?usp=sharing" style="color: white;">Privacy Policy</a></li>
+                    <li><a href="https://docs.google.com/document/d/1L3WpZUv5nd94J-bEROpotvHR2l6ss8YsBJ9iXwe8_KM/edit?usp=sharing" style="color: white;">Complaint</a></li>
+                    <li><a href="https://docs.google.com/document/d/1fiw3l8yP4xhiBFHlOnHWhu636hmAB9YBueibmI30cXQ/edit?usp=sharing" style="color: white;">Helpline</a></p></li>
+                </div>
+
+
+                <div id="contact" class="col-lg-4 col-md-4 mb-4">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <h5>Contact Us</h5>
+                        <div class="form-group mb-4">
+                            <input type="hidden" name="access_key" value="a6a6e5fe-f280-440d-9f71-362a64fe6d8d">
+                            <input type="text" name="name" id="fullName" class="form-control bg-transparent mt-2" placeholder="Enter Your Name">
+                            <input type="email" name="email" id="email_id" class="form-control bg-transparent mt-2" placeholder="Enter Your Email id">
+                            <textarea name="message" id="message" class="form-control bg-transparent mt-2" placeholder="Write your Query here"></textarea>
+                            <button type="submit" class="main-btn rounded-2 mt-3 border-white text-white">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright-section">
+            <p class="p-0">Copyright <a href="#">© MEDICARE</a> All Rights Reserved</p>
+        </div>
+    </section>
+
+    <!-- Footer section exit -->
+
+
+    <!--Font awesome kit-->
+    <script src="https://kit.fontawesome.com/e6813ce3f4.js" crossorigin="anonymous"></script>
+    <!--Main link of javascript-->
+    <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
