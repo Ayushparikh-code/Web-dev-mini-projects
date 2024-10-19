@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Drawing Area</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pixel Art Drawing Area</h1>
+
+    <div class="controls">
+        <label for="colorPicker">Pick Color:</label>
+        <input type="color" id="colorPicker" value="#000000">
+        <button id="clearCanvas">Clear Canvas</button>
+    </div>
+
+    <div class="color-palette">
+        <div class="color-swatch" style="background-color: #ff0000;" data-color="#ff0000"></div>
+        <div class="color-swatch" style="background-color: #00ff00;" data-color="#00ff00"></div>
+        <div class="color-swatch" style="background-color: #0000ff;" data-color="#0000ff"></div>
+        <div class="color-swatch" style="background-color: #ffff00;" data-color="#ffff00"></div>
+        <div class="color-swatch" style="background-color: #ff00ff;" data-color="#ff00ff"></div>
+        <div class="color-swatch" style="background-color: #00ffff;" data-color="#00ffff"></div>
+        <div class="color-swatch" style="background-color: #000000;" data-color="#000000"></div>
+        <div class="color-swatch" style="background-color: #ffffff;" data-color="#ffffff"></div>
+    </div>
+
+    <div id="pixelCanvas"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+#pixelCanvas {
+    display: inline-grid;
+    grid-template-columns: repeat(16, 1fr); /* 16x16 grid */
+    grid-template-rows: repeat(16, 1fr);
+    gap: 1px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+.pixel {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+input[type="color"], button {
+    padding: 5px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.color-palette {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.color-swatch {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
