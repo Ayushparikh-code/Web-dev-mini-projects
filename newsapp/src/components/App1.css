@@ -1,5 +1,0 @@
-
-.card-body::after, ::before {
-    box-sizing: border-box;
-    padding-top: 10px;
-}
