@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+        <form id="doo">
+            <div>
+                <h3 style="color:rgb(0, 0, 0);font-family:'Times New Roman', Times, serif; box-shadow: 2px 2px 2px 3px black;"><center><u>Registration Form</u></center></h3>
+            <br> this is a bracket that is used for the things<br>
+            <label for="name">Name<span style="color: red;"  >*</span></label>
+            <input required type="text" id="name" name="name" placeholder="Name of student" >
+            <br><br>
+            <label for="email">Email<span style="color: red;">*</span style="color: red;" ></label>
+            <input required type="email" id="email" name="email" placeholder="example@gmail.com" >
+            <br><br>
+            <label for="password">Password<span style="color: red;">*</span></label>
+            <input  type="password" id="password" name="password" required placeholder="Password">
+            <br><br>
+            <label for="dob">Date of Birth<span style="color: red;">*</span></label>
+            <input type="date" id="dob" name="dob" required placeholder="Name of student">
+            <br>  <br>
+            <input type="checkbox" id="acceptTerms" name="acceptTerms">
+            <label for="acceptTerms">Accept Terms & Conditions</label>
+            <br><br>
+            <button class="button"  type="submit" ><h4>Submit</h4></button>
+            <br><br>
+           <div> 
+            <h2 style="text-align:center; color:darkslateblue ;">Entries</h2>
+            <div id="entries"></div>
+           </div>
+        </div>
+        </form>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  body {
+    background-color:rgba(251, 251, 251, 0.238);
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(255, 255, 255);
+    width: 600px;
+    height: 500px;
+    box-shadow: 2px 4px 10px rgb(113, 113, 113);
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+  }
+ 
