@@ -1,21 +1,21 @@
-const btn = document.querySelector('.btn');
-const code = document.querySelector('.code');
-const input = document.querySelector('.input');
-const toast = document.querySelector('#toast');
+function generateQRCode() {
+    const inputText = document.getElementById('input-text').value;
+    const qrCodeImage = document.getElementById('qrcode');
+    const toast = document.getElementById('toast');
 
-btn.addEventListener('click', generate);
+    if (inputText.trim() === "") {
+        alert("Please enter some text to generate a QR code.");
+        return;
+    }
 
-function generate() {
-	const data = input.value;
-	const URL = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${data}`;
-	code.src = URL;
+   
+    const qrCodeUrl = https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(inputText)}&size=200x200;
+    qrCodeImage.src = qrCodeUrl;
+    qrCodeImage.style.display = 'block'; 
 
-	toastDiv();
-}
-
-function toastDiv() {
-	toast.className = "show";
-	setTimeout(function() {
-		toast.className = toast.className.replace("show", "");
-	}, 2000)
+   
+    toast.style.display = 'block';
+    setTimeout(() => {
+        toast.style.display = 'none';
+    }, 3000); 
 }
