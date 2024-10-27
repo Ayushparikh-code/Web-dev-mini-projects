@@ -11,76 +11,66 @@ const revertBtn = document.getElementById("revert-btn");
 // Filter & Effect Handlers
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("filter-btn")) {
-    if (e.target.classList.contains("brightness-add")) {
-      Caman("#canvas", img, function () {
-        this.brightness(5).render();
-      });
-    } else if (e.target.classList.contains("brightness-remove")) {
-      Caman("#canvas", img, function () {
-        this.brightness(-5).render();
-      });
-    } else if (e.target.classList.contains("contrast-add")) {
-      Caman("#canvas", img, function () {
-        this.contrast(5).render();
-      });
-    } else if (e.target.classList.contains("contrast-remove")) {
-      Caman("#canvas", img, function () {
-        this.contrast(-5).render();
-      });
-    } else if (e.target.classList.contains("saturation-add")) {
-      Caman("#canvas", img, function () {
-        this.saturation(5).render();
-      });
-    } else if (e.target.classList.contains("saturation-remove")) {
-      Caman("#canvas", img, function () {
-        this.saturation(-5).render();
-      });
-    } else if (e.target.classList.contains("vibrance-add")) {
-      Caman("#canvas", img, function () {
-        this.vibrance(5).render();
-      });
-    } else if (e.target.classList.contains("vibrance-remove")) {
-      Caman("#canvas", img, function () {
-        this.vibrance(-5).render();
-      });
-    } else if (e.target.classList.contains("vintage-add")) {
-      Caman("#canvas", img, function () {
-        this.vintage().render();
-      });
-    } else if (e.target.classList.contains("lomo-add")) {
-      Caman("#canvas", img, function () {
-        this.lomo().render();
-      });
-    } else if (e.target.classList.contains("clarity-add")) {
-      Caman("#canvas", img, function () {
-        this.clarity().render();
-      });
-    } else if (e.target.classList.contains("sincity-add")) {
-      Caman("#canvas", img, function () {
-        this.sinCity().render();
-      });
-    } else if (e.target.classList.contains("crossprocess-add")) {
-      Caman("#canvas", img, function () {
-        this.crossProcess().render();
-      });
-    } else if (e.target.classList.contains("pinhole-add")) {
-      Caman("#canvas", img, function () {
-        this.pinhole().render();
-      });
-    } else if (e.target.classList.contains("nostalgia-add")) {
-      Caman("#canvas", img, function () {
-        this.nostalgia().render();
-      });
-    } else if (e.target.classList.contains("hermajesty-add")) {
-      Caman("#canvas", img, function () {
-        this.herMajesty().render();
-      });
-    }
+    const filterAction = e.target.classList.item(1); // Get the second class which indicates the filter
+    Caman("#canvas", img, function () {
+      switch (filterAction) {
+        case "brightness-add":
+          this.brightness(5).render();
+          break;
+        case "brightness-remove":
+          this.brightness(-5).render();
+          break;
+        case "contrast-add":
+          this.contrast(5).render();
+          break;
+        case "contrast-remove":
+          this.contrast(-5).render();
+          break;
+        case "saturation-add":
+          this.saturation(5).render();
+          break;
+        case "saturation-remove":
+          this.saturation(-5).render();
+          break;
+        case "vibrance-add":
+          this.vibrance(5).render();
+          break;
+        case "vibrance-remove":
+          this.vibrance(-5).render();
+          break;
+        case "vintage-add":
+          this.vintage().render();
+          break;
+        case "lomo-add":
+          this.lomo().render();
+          break;
+        case "clarity-add":
+          this.clarity().render();
+          break;
+        case "sincity-add":
+          this.sinCity().render();
+          break;
+        case "crossprocess-add":
+          this.crossProcess().render();
+          break;
+        case "pinhole-add":
+          this.pinhole().render();
+          break;
+        case "nostalgia-add":
+          this.nostalgia().render();
+          break;
+        case "hermajesty-add":
+          this.herMajesty().render();
+          break;
+        default:
+          break;
+      }
+    });
   }
 });
 
 // Revert Filters
-revertBtn.addEventListener("click", (e) => {
+revertBtn.addEventListener("click", () => {
   Caman("#canvas", img, function () {
     this.revert();
   });
@@ -88,69 +78,48 @@ revertBtn.addEventListener("click", (e) => {
 
 // Upload File
 uploadFile.addEventListener("change", () => {
-  // Get File
-  const file = document.getElementById("upload-file").files[0];
-  // Init FileReader API
+  const file = uploadFile.files[0];
   const reader = new FileReader();
 
-  // Check for file
   if (file) {
-    // Set file name
+    if (!file.type.startsWith("image/")) {
+      alert("Please upload a valid image file.");
+      return;
+    }
     fileName = file.name;
-    // Read data as URL
     reader.readAsDataURL(file);
   }
 
-  // Add image to canvas
-  reader.addEventListener(
-    "load",
-    () => {
-      // Create image
-      img = new Image();
-      // Set image src
-      img.src = reader.result;
-      // On image load add to canvas
-      img.onload = function () {
-        canvas.width = img.width;
-        canvas.height = img.height;
-        ctx.drawImage(img, 0, 0, img.width, img.height);
-        canvas.removeAttribute("data-caman-id");
-      };
-    },
-    false
-  );
+  reader.addEventListener("load", () => {
+    img = new Image();
+    img.src = reader.result;
+    img.onload = function () {
+      canvas.width = img.width;
+      canvas.height = img.height;
+      ctx.drawImage(img, 0, 0);
+    };
+  }, false);
 });
 
 // Download Event
 downloadBtn.addEventListener("click", () => {
-  // Get ext
   const fileExtension = fileName.slice(-4);
-
-  // Init new filename
   let newFilename;
 
-  // Check image type
   if (fileExtension === ".jpg" || fileExtension === ".png") {
-    // new filename
     newFilename = fileName.substring(0, fileName.length - 4) + "-edited.jpg";
+  } else {
+    alert("Unsupported file type. Please upload a .jpg or .png file.");
+    return;
   }
 
-  // Call download
   download(canvas, newFilename);
 });
 
-// Download
+// Download Function
 function download(canvas, filename) {
-  // Init event
-  let e;
-  // Create link
   const link = document.createElement("a");
-
-  // Set props
   link.download = filename;
   link.href = canvas.toDataURL("image/jpeg", 0.8);
-  // New mouse event
-  e = new MouseEvent("click");
-  // Dispatch event
-  link.dispatchEvent(e);
+  link.click(); // Simulate a click to download
 }
