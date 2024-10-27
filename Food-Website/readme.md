@@ -2,11 +2,10 @@
 It is a simple and resonsive Food Website Website, you can navigate through them.
 
 ## Desktop View
-![Default View](images/main.png)
+![Default View](images/Screenshot 2024-09-20 231352.png)
 
 ## Mobile view
-![Mobile View](images/mobiles1.png)
-![Mobile View](images/mobiles2.png)
+![Mobile View](images/Screenshot 2024-09-20 231322.png)
 
 
 ## 💻Tech Stack

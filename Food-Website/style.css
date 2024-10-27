@@ -5,8 +5,9 @@
 }
 .hero{
     height:100vh;
-    background-image:linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.8)),
-    url("bg1.jpg");
+    background-image:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),
+    url("vegetables-set-left-black-slate_1220-685.avif");
+    width:100vw;
     background-position:center;
     background-size:cover;
     overflow-x:hidden;
@@ -14,19 +15,21 @@
 }
 .nav-bar{
     display:flex;
-    padding:40px 120px;
+    padding:20px;
     justify-content:center;
     align-items:center;
+    background-color: black;
 }
 .nav-logo img{
     border-radius:30px;
+    margin-left:60px;
 
 }
 .nav-links{
     flex:1;
 }
 .nav-links ul{
-    margin-left:50px;
+    margin-left:40px;
     display:inline;
 }
 .nav-links ul li{
@@ -37,13 +40,13 @@
 .nav-links ul a{
     color:white;
     text-decoration:none;
-    font-size:13px;
+    font-size:20px;
 }
 .nav-links ul li::after{
     content:"";
     width:0;
     height:2px;
-    background:yellow;
+    background:orange;
     display:block;
     margin:auto;
     transition:.5s;
@@ -54,7 +57,7 @@
 .btn{
     padding: 10px 20px;
     border:0;
-    background:yellow;
+    background:orange;
     font-weight:bold;
     cursor:pointer;
    
@@ -63,16 +66,22 @@
     float:right;
 }
 .banner-title{
-margin:120px;
+margin-top:100px;
+display:flex;
+flex-direction:column;
+align-items:center;
 color:#fff;
 }
 .banner-title h1{
-    font-size:64px;
-    margin-bottom:30px;
+    font-size:80px;
+    margin-bottom:10px;
     }
-     .banner-title h1 span{
-        color:yellow;
-        }
+    .banner-title h2{
+        font-size:60px;
+    }
+    .banner-title button{
+        margin-top: 20px;
+    }
   .vertical-bar{
    height:100%;
     background:#000;
@@ -95,7 +104,7 @@ color:#fff;
       .social-icon {
         height:35%;
         width:70px;
-        background:yellow;
+        background:orange;
        
         text-align:center;
         padding-top:27%;
@@ -114,7 +123,7 @@ color:#fff;
         right:0;
         bottom:0;
         position:absolute;
-        background:yellow;
+        background:orange;
         align-items:center;
     }
       .contents{
