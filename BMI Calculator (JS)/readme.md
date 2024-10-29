@@ -1,31 +1,20 @@
-<h1>BMI Calculator using JS</h1>
+# BMI Calculator
 
-<p>Calculates the Body Mass Index of a person, provided with a BMI chart</p>
+## Overview:
+The **BMI Calculator** allows users to easily calculate their Body Mass Index (BMI) based on their height and weight. The result is compared against the standard BMI chart to help users assess their health status.
 
-### Use of the Project:
+## Features:
+- User inputs their **height** in centimeters and **weight** in kilograms.
+- A simple click on the **"Calculate"** button computes the BMI value.
+- The BMI value is compared to a **BMI chart**, indicating whether the user is underweight, normal weight, overweight, or obese.
 
-<p>User enters values - height in cm and weight in kg and clicks on "calculate" button to obtain BMI value and compares the value in the given BMI chart.</p>
+## Technologies Used:
+- **HTML5**: For structuring the webpage.
+- **CSS3**: For styling the page.
+- **JavaScript**: For implementing the BMI calculation logic.
 
-<h3>Used Technologies</h3>
-<ul>
-  <li>HTML5</li>
-  <li>CSS3</li>
-  <li>JavaScript</li>
-</ul>
-
-#### Steps to Use:
-
----
-
-- Download or clone the repository
-
-```
-git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
-```
-
-- Go to the directory
-- Run the index.html file
-- Start Calculatings!
-
-<h3> Demo </h3>
-<img src="https://github.com/ayushseth07/Web-dev-mini-projects/blob/patch/BMI%20Calculator%20(JS)/snap.PNG"/>
+## How to Use:
+1. **Clone the Repository**:  
+   Download or clone the repository using Git:
+   ```bash
+   git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
