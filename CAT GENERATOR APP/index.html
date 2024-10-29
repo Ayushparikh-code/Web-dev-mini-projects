@@ -3,19 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Cat Generator</title>
+    <title>Motivational Quotes Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #quote {
+            margin: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        #generate-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h2>CAT GENERATOR</h2>
-        <p>Click on the button below to start generating cats🐈</p>
-        <button id="cat-generator" onclick="generateCat()">Generate Cat</button>
-        <div class="flex-box" id="flex-cat-gen">
-           
-        </div>
-    </div>
 
-    <script src="script.js"></script>
+    <div id="quote">Click the button to generate a motivational quote!</div>
+    <button id="generate-btn">Generate Quote</button>
+
+    <script>
+        function generateQuote() {
+            const quotes = [
+                "The best time to plant a tree was 20 years ago. The second best time is now.",
+                "Your limitation—it's only your imagination.",
+                "Push yourself, because no one else is going to do it for you.",
+                "Great things never come from comfort zones.",
+                "Dream it. Wish it. Do it.",
+                "Success doesn’t just find you. You have to go out and get it.",
+                "The harder you work for something, the greater you’ll feel when you achieve it.",
+                "Dream bigger. Do bigger.",
+                "Don’t stop when you’re tired. Stop when you’re done.",
+                "Wake up with determination. Go to bed with satisfaction."
+            ];
+
+            // Generate a random index to select a quote
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            const quote = quotes[randomIndex];
+
+            // Display the selected quote
+            document.getElementById('quote').innerText = quote;
+        }
+
+        // Add event listener to the button
+        document.getElementById('generate-btn').addEventListener('click', generateQuote);
+    </script>
+
 </body>
 </html>
