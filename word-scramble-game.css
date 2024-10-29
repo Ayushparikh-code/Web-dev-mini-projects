@@ -1,0 +1,50 @@
+/* style.css */
+body { 
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	background-image: url(word-scramble.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-items: center; 
+	min-height: 50vh; 
+} 
+
+.root { 
+	font-size: x-large; 
+	color: whitesmoke; 
+	background-color: rgb(35, 123, 255); 
+	box-shadow: 0 2px 5px grey; 
+	padding: 0% 5% 1% ; 
+	margin-top: 170px;
+	text-align: center; 
+	border-radius: 5px 0; 
+} 
+
+.title { 
+	border-bottom: 4px dashed; 
+	border-color: white; 
+} 
+
+input { 
+	font-size: 20px; 
+	padding-left: 10px; 
+	outline: 2px grey; 
+} 
+
+
+.foot { 
+	margin-bottom: 0%; 
+	display: flex; 
+	width: 100%; 
+} 
+
+.foot>button { 
+	width: 48%; 
+	padding: 1%; 
+	margin: 1%; 
+	background-color: rgb(41, 117, 41); 
+	border-radius: 5px; 
+	border-color: rgb(29, 90, 29); 
+	font-size: large; 
+}
