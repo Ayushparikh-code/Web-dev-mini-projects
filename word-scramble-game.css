@@ -3,7 +3,7 @@ body {
 	display: flex; 
 	flex-direction: column; 
 	justify-content: center; 
-	background-image: url(bgimage.jpg);
+	background-image: url(word-scramble.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	align-items: center; 
