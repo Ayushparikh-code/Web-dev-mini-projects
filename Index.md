@@ -110,3 +110,4 @@
 | [Restaurant Website](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Restaurant%20Website) | A simple and responsive Restaurant website template.                                            |
 | [Pomodoro Timer](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Pomodoro-Timer)         | A simple Pomodoro Timer using React.js, where you can track the time spent on work and break.  |
 
+|[Audio Visualization with three.js](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Audio%20Visualization%20with%20three.js) | audio visualization using the powerful 3D graphics library, three.js |
