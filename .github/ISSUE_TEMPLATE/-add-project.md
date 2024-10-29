@@ -2,7 +2,7 @@
 name: " Add project"
 about: LGMSOC
 title: Project title
-labels: LGMSOC21
+labels: ["hacktoberfest", "hacktoberfest-accepted"]
 assignees: ''
 
 ---
