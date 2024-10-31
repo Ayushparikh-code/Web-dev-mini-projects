@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url("../public/bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+body::before {
+  content: '';
+  inset: 0;
+  position: fixed;
+  pointer-events: none;
+  box-shadow: 0 0 500px 0 black inset;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.game-block {
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.card {
+  cursor: pointer;
+  width: 150px;
+  height: 170px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: transform .7s;
+}
+
+.card.matched {
+  transform: rotateY(180deg);
+}
+
+.card img,
+.card svg {
+  width: 70%;
+  position: absolute;
+  backface-visibility: hidden;
+  pointer-events: none;
+}
+
+.card svg {
+  width: 100px;
+  height: 100px;
+  opacity: .3;
+}
+
+button {
+  border: none;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+button.start-game {
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 1.5rem 2rem;
+  letter-spacing: 2px;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+button.reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+}
