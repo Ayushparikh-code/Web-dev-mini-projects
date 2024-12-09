@@ -1,35 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-*{box-sizing : border-box;}
-body{
-    background-image: url('./snow.jpg');
-    background-size: cover;
-    background-position: center center;
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-family: 'Orbitron', sans-serif;
-    min-height: 100vh;
+    height: 100vh;
+    background-color: #f4f4f4;
     margin: 0;
 }
-h1{
-    margin-top: 7rem;
-    font-weight: normal;
+
+/* Countdown container */
+div {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Countdown title */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Countdown digits styling */
+span {
     font-size: 3rem;
-}
-.countdown-c{
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-.big{
+    color:blue;
     font-weight: bold;
-    font-size: 3rem;
-    line-height: 1;
-    margin: 0 2rem;
+    display: inline-block;
+    min-width: 80px;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
 }
-.count{
- text-align: center;
+
+/* Styling for countdown labels (Days, Hours, Minutes, Seconds) */
+div div {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
 }
-.count span{
-    font-size: 1.3rem;
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    span {
+        font-size: 2.5rem;
+        min-width: 60px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    span {
+        font-size: 2rem;
+        min-width: 50px;
+        padding: 6px;
+    }
 }
