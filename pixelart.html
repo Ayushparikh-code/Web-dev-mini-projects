@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            height: 100vh;
+        }
+        #controls {
+            margin-bottom: 20px;
+        }
+        #canvas {
+            display: grid;
+            border: 1px solid #000;
+        }
+        .pixel {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ccc;
+        }
+        #exportBtn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #exportBtn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="controls">
+        <label for="gridSize">Grid Size:</label>
+        <input type="number" id="gridSize" value="16" min="1" max="64">
+        <input type="color" id="colorPicker" value="#000000">
+        <button id="createGridBtn">Create Grid</button>
+    </div>
+
+    <div id="canvas"></div>
+
+    <button id="exportBtn">Export to PNG</button>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const createGridBtn = document.getElementById('createGridBtn');
+        const gridSizeInput = document.getElementById('gridSize');
+        const colorPicker = document.getElementById('colorPicker');
+        const exportBtn = document.getElementById('exportBtn');
+
+        function createGrid(size) {
+            canvas.innerHTML = ''; // Clear existing grid
+            canvas.style.gridTemplateColumns = `repeat(${size}, 20px)`;
+            canvas.style.gridTemplateRows = `repeat(${size}, 20px)`;
+
+            for (let i = 0; i < size * size; i++) {
+                const pixel = document.createElement('div');
+                pixel.classList.add('pixel');
+                pixel.addEventListener('click', function () {
+                    pixel.style.backgroundColor = colorPicker.value;
+                });
+                canvas.appendChild(pixel);
+            }
+        }
+
+        createGridBtn.addEventListener('click', () => {
+            const size = gridSizeInput.value;
+            createGrid(size);
+        });
+
+        // Export to PNG
+        exportBtn.addEventListener('click', () => {
+            html2canvas(canvas).then(canvasElement => {
+                const link = document.createElement('a');
+                link.download = 'pixel-art.png';
+                link.href = canvasElement.toDataURL();
+                link.click();
+            });
+        });
+
+        // Initialize the grid
+        createGrid(16);
+
+        // Add html2canvas script
+        const script = document.createElement('script');
+        script.src = "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js";
+        document.body.appendChild(script);
+    </script>
+
+</body>
+</html>
