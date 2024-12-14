@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower GAllery</title>
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+      
+body{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  background-color: #add0f4;
+  margin: 0;
+}
+
+
+
+.header{
+  text-transform: uppercase;
+  padding: 2px;
+  background-color: #0a2323;
+  color: #fff;
+  border-bottom: 4px solid #1ace0e;
+  text-align: center;
+
+}
+
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.gallery::after{
+    content: "";
+    width: 350px;
+}
+
+.gallery img{
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  border-radius: 10px
+  /* object-fit: cover; */
+  
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+         <h1>Rose Gallery</h1>
+    </header>
+
+    <div class="gallery">
+        
+        <img src="Images/1.webp" alt="A beautiful rose image">  
+        <img src="Images/2.webp" alt="A beautiful rose image"> 
+        <img src="Images/3.jpg" alt="A beautiful rose image">    
+        <img src="Images/6.jpg" alt="A beautiful rose image"> 
+        <img src="Images/9.jpg" alt="A beautiful rose image">
+        <img src="Images/7.webp" alt="A beautiful rose image">
+        <img src="Images/8.jpg" alt="A beautiful rose image">
+        <img src="Images/5.avif" alt="A beautiful rose image">  
+        <img src="Images/4.jpg" alt="A beautiful rose image">
+      
+
+        
+
+    </div>
+    
+</body>
+</html>
