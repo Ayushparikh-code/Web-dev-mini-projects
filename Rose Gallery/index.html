@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Gallery</title>
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #9fb7cb;
+}
+
+header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+  border-bottom: 3px solid #21ad1a;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  /* object-fit: cover; */
+  border-radius: 10px;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
+
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Rose Gallery</h1>
+  </header>
+
+    <div class="gallery">
+      <img src="Images/6.jpg" alt="A rose Image"> 
+      <img src="Images/9.webp" alt="A rose Image">           
+      <img src="Images/1.webp" alt="A rose Image">
+      <img src="Images/8.jpg" alt="A rose Image">
+      <img src="Images/2.jpg" alt="A rose Image">
+      <img src="Images/5.webp" alt="A rose Image">                    
+      <img src="Images/3.jpg" alt="A rose Image">
+      <img src="Images/4.avif" alt="A rose Image"> 
+      <img src="Images/7.webp" alt="A rose Image">
+      
+     
+         
+      
+    </div>
+  </body>
+</html>
+    
+</body>
+</html>
