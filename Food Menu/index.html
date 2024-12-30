@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    
+    <style>
+        body{
+    background-image: url(https://t3.ftcdn.net/jpg/02/22/04/76/240_F_222047691_wdlk77i7L8jBnXEBmRiR5QyDuotc5PMs.jpg);
+   
+    font-family: sans-serif;
+    padding: 20px;
+}
+.menu{
+    width: 80%;
+    background-color: #562e2e;
+    color: #f5f6f7;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 700px;
+    
+}
+
+  h1 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  .established {
+    font-style: italic;
+  }
+  
+  h1, h2, p {
+    text-align: center;
+  }
+
+  .i{
+    display: flex;               
+    justify-content: center;     
+    align-items: center;
+    
+  }
+  
+  .i1, .i2{
+    margin: 0 10px;
+    align-items: center;
+    border-radius: 25%;
+    border: 3px solid #a56b0d;
+  }
+
+  .i3, .i4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25;
+    border-radius: 25%;
+    border: 3px solid #a56b0d;
+    
+  }
+  
+  hr {
+    height: 2px;
+    background-color: #a56b0d;
+    border-color: #a56b0d;
+  }
+  
+  .bottom-line {
+    margin-top: 25px;
+  }
+  
+  h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .soups, .tacos, .main-course {
+    text-align: left;
+    width: 75%;
+    padding-left: 5px;
+  }
+  
+  
+  .price{
+    text-align: right;
+    width: 20%;
+    
+  }
+  
+ 
+  /* FOOTER */
+  
+  footer {
+    font-size: 14px;
+  }
+  
+  .address {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: rgb(0, 0, 250);
+  }
+  
+  a:visited {
+    color: rgb(254, 254, 254);
+  }
+  
+  a:hover {
+    color: rgb(250, 0, 0);
+  }
+  
+  a:active {
+    color: rgb(42, 147, 165);
+  }
+    </style>
+</head>
+<body>
+<div class="menu">
+    <main>
+    <h1>RESTAURANTE DE PALOSANO</h1>
+    <p class="established">Est. 2003</p>
+<hr>
+<section>
+    <h2>SOUPS & DIPS</h2>
+
+<div class="i">
+    <img src="Images/Taco Twist Soup.jpg" height="100px" width="100px" alt="Image of Boondi Raita" class="i1">
+    <img src="Images/Chili Con Queso.jpg" height="100px" width="100px" alt="Image of Plain Roti" class="i2">
+</div>
+
+    <article class="item">
+    <p class="soups">Chili con Queso</p><p class="price">60</p>
+</article>
+<article class="item">
+    <p class="soups">Taco Twist Soup</p><p class="price">40</p>
+</article>
+<article class="item">
+    <p class="soups">Sopa de Varduras</p><p class="price">50</p>
+</article>
+
+</section>
+<hr>
+<section>
+    <h2>TACOS</h2>
+    <img src="Images/Lentil Taco.jpg" height="150px" width="150px" alt="Image of Plain Rice" class="i3">
+    
+    <article class="item">
+        <p class="tacos">Mushroom Taco</p><p class="price">180</p>
+    </article>
+    <article class="item">
+        <p class="tacos">Lentil Taco</p><p class="price">150</p>
+    </article>
+    <article class="item">
+        <p class="tacos">Veggie Fajistas</p><p class="price">140</p>
+    </article>
+    <article class="item">
+        <p class="tacos">Corn Tortilla</p><p class="price">150</p>
+    </article>
+</section>
+<hr>
+<section>
+    <h2>MAIN DISHES</h2>
+    <img src="Images/Cheese Enchilidas.jpg" height="150px" width="150px" alt="" class="i4">
+    
+
+    <article class="item">
+        <p class="main-course">Black Bean and Rice Enchiladas</p></p><p class="price">290</p>
+    </article>
+    <article class="item">
+        <p class="main-course">Chiles Rellenos Squares</p><p class="price">290</p>
+    </article>
+    <article class="item">
+        <p class="main-course">Farmers Market Enchiladas</p><p class="price">290</p>
+    </article>
+    <article class="item">
+        <p class="main-course">Black Bean & White Cheddar Frittata</p><p class="price">275</p>
+    </article>
+    <article class="item">
+        <p class="main-course">Cheese Enchiladas</p><p class="price">275</p>
+    </article>
+</section>
+
+</main>
+
+<hr class="bottom-line">
+
+    <footer>
+        <p><a href="www.123.com" target="_blank">Visit our Website</a></p>
+
+        <p class="address">Street No. 23, New Town, JSB</p>
+    </footer>
+</div>
+</body>
+</html>
