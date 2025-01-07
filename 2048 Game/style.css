@@ -1,5 +1,8 @@
 body{
     background-color: rgb(250, 242, 242);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .grid {
@@ -11,6 +14,7 @@ body{
     margin: auto;
     justify-content: center;
     align-content: center;
+    border-radius: 10px;
 }
 
 .grid div{
@@ -23,6 +27,7 @@ body{
     line-height: 100px;
     font-weight: bold;
     font-size: 52px;
+    border-radius: 5px;
 }
 
 .scoreContainer {
@@ -37,6 +42,7 @@ body{
     margin-top: 50px;
     text-align: center;
     font-weight: bold;
+    color: #333;
 }
 
 .instructions{
