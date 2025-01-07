@@ -10,11 +10,11 @@ var img2 = document.querySelector(".img2").setAttribute("src",randomDiceImage2);
 
 var winnerDeclaration = document.querySelector("h1");
 if(randomNo>randomNo2){
-winnerDeclaration.innerHTML="🚩Player 1 is the winner!"
+winnerDeclaration.textContent="🚩Player 1 is the winner!"
 }
 else if(randomNo<randomNo2){
-    winnerDeclaration.innerText="Player 2 is the winner🚩!"
+    winnerDeclaration.textContent="Player 2 is the winner🚩!"
 }
 else{
-winnerDeclaration.innerText="Try again!"
+winnerDeclaration.textContent="Try again!"
 }
