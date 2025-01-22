@@ -17,6 +17,7 @@ body {
     padding: 15px 0;
     color: white;
     font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .header a {
@@ -75,6 +76,7 @@ img {
 
 .button:hover {
     background-color: #ff6347;
+    transform: scale(1.05);
 }
 
 .footer {
