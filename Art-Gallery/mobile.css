@@ -28,6 +28,7 @@ body {
 
 .header a:hover {
     color: #ff6347;
+    border-radius: 5px; 
 }
 
 #container {
