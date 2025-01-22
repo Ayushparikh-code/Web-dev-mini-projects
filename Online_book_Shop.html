@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .book {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        #cart {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .total {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Online Book Shop</h1>
+        <div class="book-list" id="bookList"></div>
+        <h2>Shopping Cart</h2>
+        <div id="cart"></div>
+        <div class="total" id="total"></div>
+    </div>
+
+    <script>
+        const books = [
+            { id: 1, title: "The Great Gatsby", author: "F. Scott Fitzgerald", price: 10 },
+            { id: 2, title: "1984", author: "George Orwell", price: 15 },
+            { id: 3, title: "To Kill a Mockingbird", author: "Harper Lee", price: 12 },
+            { id: 4, title: "Moby Dick", author: "Herman Melville", price: 18 },
+            { id: 5, title: "War and Peace", author: "Leo Tolstoy", price: 20 }
+        ];
+
+        let cart = [];
+
+        function displayBooks() {
+            const bookList = document.getElementById('bookList');
+            books.forEach(book => {
+                const bookDiv = document.createElement('div');
+                bookDiv.classList.add('book');
+                bookDiv.innerHTML = `
+                    <h3>${book.title}</h3>
+                    <p>by ${book.author}</p>
+                    <p>$${book.price}</p>
+                    <button onclick="addToCart(${book.id})">Add to Cart</button>
+                `;
+                bookList.appendChild(bookDiv);
+            });
+        }
+
+        function addToCart(bookId) {
+            const book = books.find(b => b.id === bookId);
+            cart.push(book);
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartDiv = document.getElementById('cart');
+            cartDiv.innerHTML = '';
+
+            let total = 0;
+            cart.forEach((book, index) => {
+                cartDiv.innerHTML += `<p>${book.title} - $${book.price} <button onclick="removeFromCart(${index})">Remove</button></p>`;
+                total += book.price;
+            });
+
+            document.getElementById('total').innerText = `Total: $${total}`;
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+
+        // Initialize the app
+        displayBooks();
+    </script>
+</body>
+</html>
