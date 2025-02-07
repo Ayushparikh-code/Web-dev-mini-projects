@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#score {
+    font-size: 1.5rem;
+    color: #007bff;
+    transition: color 0.2s;
+}
+
+
+
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -30px; }
+    100% { top: 0; }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+#message.hidden {
+    visibility: hidden;
+}
+
+#message.success {
+    color: green;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+#message.failure {
+    color: red;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
