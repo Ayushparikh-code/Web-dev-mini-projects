@@ -1,28 +1,16 @@
-const getQuoteBtn = document.getElementById("getQuoteBtn");
-const quoteText = document.getElementById("quoteText");
+// script.js
 
-getQuoteBtn.addEventListener("click", () => {
-    getQuoteBtn.classList.add("loading");
-    getQuoteBtn.textContent = "Loading...";
-    getQuote();
-});
-
-// Initially, remove loading state
-getQuoteBtn.classList.remove("loading");
-getQuoteBtn.textContent = "Get Quote";
-
-function getQuote() {
-    fetch("https://api.quotable.io/random")
-        .then((response) => response.json())
-        .then((data) => {
-            quoteText.innerHTML = `"${data.content}" - ${data.author}`;
-            getQuoteBtn.classList.remove("loading");
-            getQuoteBtn.textContent = "Get Quote";
-        })
-        .catch((error) => {
-            console.error("Error fetching quote:", error);
-            quoteText.innerHTML = "Failed to fetch a quote. Please try again later.";
-            getQuoteBtn.classList.remove("loading");
-            getQuoteBtn.textContent = "Get Quote";
-        });
+function generateQRCode() {
+    const inputText = document.getElementById('qr-input').value;
+    const qrCodeResult = document.getElementById('qr-code-result');
+    
+    if (inputText) {
+        const qrApiUrl = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(inputText)}&size=200x200`;
+        qrCodeResult.innerHTML = `<h3>Your QR Code:</h3><img src="${qrApiUrl}" alt="QR Code" />`;
+    } else {
+        qrCodeResult.innerHTML = '<p>Please enter text or URL.</p>';
+    }
 }
+
+// Event listener for the button click
+document.getElementById('generate-qr-btn').addEventListener('click', generateQRCode);
