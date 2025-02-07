@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        #chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 60px);
+            grid-template-rows: repeat(8, 60px);
+            border: 2px solid #333;
+        }
+        .square {
+            width: 60px;
+            height: 60px;
+        }
+        .white {
+            background-color: #eee;
+        }
+        .black {
+            background-color: #333;
+        }
+        .piece {
+            font-size: 2em;
+            text-align: center;
+            line-height: 60px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Chess Game</h1>
+    <div id="chessboard"></div>
+
+    <script>
+        const chessboard = document.getElementById('chessboard');
+        const pieces = {
+            r: '♖', n: '♞', b: '♗', q: '♕', k: '♔', p: '♙',
+            R: '♖', N: '♞', B: '♗', Q: '♕', K: '♔', P: '♙'
+        };
+
+        const initialBoard = [
+            ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
+            ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],
+            ['', '', '', '', '', '', '', ''],
+            ['', '', '', '', '', '', '', ''],
+            ['', '', '', '', '', '', '', ''],
+            ['', '', '', '', '', '', '', ''],
+            ['P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'],
+            ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
+        ];
+
+        let selectedPiece = null;
+        let selectedSquare = null;
+
+        function createBoard() {
+            initialBoard.forEach((row, rowIndex) => {
+                row.forEach((piece, colIndex) => {
+                    const square = document.createElement('div');
+                    square.className = 'square ' + ((rowIndex + colIndex) % 2 === 0 ? 'white' : 'black');
+                    square.dataset.row = rowIndex;
+                    square.dataset.col = colIndex;
+
+                    if (piece) {
+                        const pieceElement = document.createElement('div');
+                        pieceElement.className = 'piece';
+                        pieceElement.innerHTML = pieces[piece];
+                        square.appendChild(pieceElement);
+                    }
+
+                    square.addEventListener('click', () => handleSquareClick(square));
+                    chessboard.appendChild(square);
+                });
+            });
+        }
+
+        function handleSquareClick(square) {
+            const row = square.dataset.row;
+            const col = square.dataset.col;
+            const pieceElement = square.querySelector('.piece');
+
+            if (selectedPiece) {
+                if (pieceElement) {
+                    alert('Square occupied! Choose an empty square.');
+                } else {
+                    square.appendChild(selectedPiece);
+                    selectedSquare.appendChild(document.createElement('div'));
+                    selectedPiece = null;
+                }
+            } else if (pieceElement) {
+                selectedPiece = pieceElement;
+                selectedSquare = square;
+            }
+        }
+
+        createBoard();
+    </script>
+
+</body>
+</html>
