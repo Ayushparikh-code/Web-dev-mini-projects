@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Music Application</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins';
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    .coverImg {
+      width: 100vw;
+      height: 100vh;
+      object-position: center;
+      object-fit: cover;
+    }
+
+    .content {
+      position: absolute;
+      margin-left: 8%;
+      background-color: #EBE2E8;
+      z-index: 99;
+      box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+      width: 350px;
+      border-radius: 15px;
+      padding: 25px 30px;
+    }
+
+    .material-symbols-rounded {
+      cursor: pointer;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+
+    .top-bar .material-symbols-rounded {
+      font-size: 24px;
+    }
+
+    .music-image {
+      width: 230px;
+      height: 230px;
+      box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+      border-radius: 50%;
+      margin-top: 25px;
+      padding: 7px;
+    }
+
+    .music-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .music-titles {
+      text-align: center;
+      margin: 30px 0;
+      color: #4d4d4d;
+    }
+
+    .music-titles .name {
+      font-size: 19px;
+    }
+
+    .music-titles .artist {
+      font-size: 17px;
+      margin-top: 3px;
+      opacity: 0.9;
+    }
+
+    .progress-details {
+      width: 100%;
+      height: 6px;
+      background-color: #ccc;
+      border-radius: 15px;
+    }
+
+    .progress-bar {
+      width: 0%;
+      height: inherit;
+      border-radius: inherit;
+      background-color: #0987f6;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .progress-bar span {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background-color: #0987f6;
+      border-radius: inherit;
+      transform: translateY(-25%);
+      right: -5px;
+      opacity: 0;
+      transition: opacity 0.3s ease-out;
+    }
+
+    .progress-details:hover .progress-bar span {
+      opacity: 1;
+    }
+
+    .time {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2px;
+      color: #4d4d4d;
+    }
+
+    .control-btn {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .control-btn span {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4d4d4d;
+    }
+
+    .control-btn span:active {
+      box-shadow: inset 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        inset -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    }
+  </style>
+</head>
+
+<body>
+  <img class="coverImg" src="images/img1.jpg" alt="">
+  <div class="content">
+    <div class="top-bar">
+      <span class="material-symbols-rounded">expand_more</span>
+      <span>Now Playing</span>
+      <span class="material-symbols-rounded">more_horiz</span>
+    </div>
+    <div class="image-wrapper">
+      <div class="music-image">
+        <img src="images/img1.jpg">
+      </div>
+    </div>
+    <div class="music-titles">
+      <p class="name">6 Shots - NEFFEX</p>
+      <p class="artist">NEFFEX</p>
+    </div>
+    <div class="progress-details">
+      <div class="progress-bar">
+        <span></span>
+      </div>
+      <div class="time">
+        <span class="current">0:00</span>
+        <span class="final">5:30</span>
+      </div>
+    </div>
+
+    <div class="control-btn">
+      <span class="material-symbols-rounded" id="repeat">repeat</span>
+      <span class="material-symbols-rounded" id="prev">skip_previous</span>
+      <div class="play-pause">
+        <span class="material-symbols-rounded">play_arrow</span>
+      </div>
+      <span class="material-symbols-rounded" id="next">skip_next</span>
+      <span class="material-symbols-rounded" id="shuffle">shuffle</span>
+    </div>
+  </div>
+
+  <audio src="music/music1.mp3" class="main-song"></audio>
+
+  <script>
+    const content = document.querySelector(".content"),
+      Playimage = content.querySelector(".music-image img"),
+      Coverimage = content.querySelector(".coverImg"),
+      musicName = content.querySelector(".music-titles .name"),
+      musicArtist = content.querySelector(".music-titles .artist"),
+      Audio = document.querySelector(".main-song"),
+      playBtn = content.querySelector(".play-pause"),
+      playBtnIcon = content.querySelector(".play-pause span"),
+      prevBtn = content.querySelector("#prev"),
+      nextBtn = content.querySelector("#next"),
+      progressBar = content.querySelector(".progress-bar"),
+      progressDetails = content.querySelector(".progress-details"),
+      repeatBtn = content.querySelector("#repeat"),
+      Shuffle = content.querySelector("#shuffle");
+
+    let index = 1;
+    let songs = [
+      { name: "6 Shots - NEFFEX", artist: "NEFFEX", img: "img1", audio: "music1" },
+      { name: "Song 2", artist: "Artist 2", img: "img2", audio: "music2" }
+    ];
+
+    window.addEventListener("load", () => {
+      loadData(index);
+    });
+
+    function loadData(indexValue) {
+      musicName.innerHTML = songs[indexValue - 1].name;
+      musicArtist.innerHTML = songs[indexValue - 1].artist;
+      Playimage.src = "images/" + songs[indexValue - 1].img + ".jpg";
+      Audio.src = "music/" + songs[indexValue - 1].audio + ".mp3";
+    }
+
+    playBtn.addEventListener("click", () => {
+      const isMusicPaused = content.classList.contains("paused");
+      if (isMusicPaused) {
+        pauseSong();
+      } else {
+        playSong();
+      }
+    });
+
+    function playSong() {
+      content.classList.add("paused");
+      playBtnIcon.innerHTML = "pause";
+      Audio.play();
+    }
+
+    function pauseSong() {
+      content.classList.remove("paused");
+      playBtnIcon.innerHTML = "play_arrow";
+      Audio.pause();
+    }
+
+    nextBtn.addEventListener("click", () => {
+      nextSong();
+    });
+
+    prevBtn.addEventListener("click", () => {
+      prevSong();
+    });
+
+    function nextSong() {
+      index++;
+      if (index > songs.length) {
+        index = 1;
+      }
+      loadData(index);
+      playSong();
+    }
+
+    function prevSong() {
+      index--;
+      if (index <= 0) {
+        index = songs.length;
+      }
+      loadData(index);
+      playSong();
+    }
+
+    Audio.addEventListener("timeupdate", (e) => {
+      const currentTime = e.target.currentTime;
+      const duration = e.target.duration;
+
+      let progressWidth = (currentTime / duration) * 100;
+      progressBar.style.width = `${progressWidth}%`;
+
+      let currentMin = Math.floor(currentTime / 60);
+      let currentSec = Math.floor(currentTime % 60);
+      if (currentSec < 10) currentSec = `0${currentSec}`;
+      content.querySelector(".current").innerText = `${currentMin}:${currentSec}`;
+
+      let durationMin = Math.floor(duration / 60);
+      let durationSec = Math.floor(duration % 60);
+      if (durationSec < 10) durationSec = `0${durationSec}`;
+      content.querySelector(".final").innerText = `${durationMin}:${durationSec}`;
+    });
+
+    progressDetails.addEventListener("click", (e) => {
+      let progressWidth = progressDetails.clientWidth;
+      let clickedOffsetX = e.offsetX;
+      let songDuration = Audio.duration;
+
+      Audio.currentTime = (clickedOffsetX / progressWidth) * songDuration;
+    });
+
+    repeatBtn.addEventListener("click", () => {
+      let text = repeatBtn.innerText;
+      if (text == "repeat") {
+        repeatBtn.innerText = "repeat_one";
+        Audio.loop = true;
+      } else {
+        repeatBtn.innerText = "repeat";
+        Audio.loop = false;
+      }
+    });
+
+    Shuffle.addEventListener("click", () => {
+      let randomIndex = Math.floor(Math.random() * songs.length + 1);
+      do {
+        randomIndex = Math.floor(Math.random() * songs.length + 1);
+      } while (index == randomIndex);
+      index = randomIndex;
+      loadData(index);
+      playSong();
+    });
+
+    
+  </script>
+</body>
+
+</html>
