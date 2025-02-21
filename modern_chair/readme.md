@@ -2,7 +2,7 @@
 
 This is a fully functional product page for a modern chair, built with **HTML**, **CSS**, and **JavaScript**. The page features a visually appealing design and interactive elements to provide a seamless user experience.
 
-![Preview](path-to-your-image-on-github) <!-- Replace with the actual path after uploading your screenshot -->
+![Preview](./images/ss1) <!-- Replace with the actual path after uploading your screenshot -->
 
 ## Features
 
