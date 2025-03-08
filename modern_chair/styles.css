@@ -51,7 +51,7 @@ p{
     position: relative;
     height: 40px;
     transition: all 200ms linear;
-    border-radius: 4px;
+    
     width: 40px;
     overflow: hidden;
     border: none;
@@ -270,7 +270,7 @@ h5{
     display: inline-block;
     border: none;
     cursor: pointer;
-    color: #ffeba7;
+    
     font-weight: 600;
     font-size: 18px;
     line-height: 1.2;
@@ -374,7 +374,7 @@ h5{
     .section{
         margin: 0 auto;
         text-align: center;
-        text-align: center;
+        
         max-width: calc(100%-40px);
         width: 370px;
     }
@@ -382,7 +382,7 @@ h5{
         margin-left: 0;
     }
     .info-wrap{
-        margin-left: 0;
+        
         width: 370px;
         margin: 0 auto;
         text-align: center;
