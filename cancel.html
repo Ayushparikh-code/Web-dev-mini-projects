@@ -5,88 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* General Styles */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 20px;
         }
 
         .feedback-form {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.2);
+            padding: 25px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             max-width: 400px;
             width: 100%;
+            text-align: center;
+            color: white;
         }
 
         .feedback-form h2 {
+            font-size: 26px;
             margin-bottom: 15px;
-            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
 
         .feedback-form label {
             font-size: 16px;
-            margin-bottom: 5px;
             display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            font-weight: 500;
         }
 
         .feedback-form input, 
         .feedback-form textarea {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .feedback-form input::placeholder, 
+        .feedback-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .feedback-form input:focus, 
+        .feedback-form textarea:focus {
+            background: rgba(255, 255, 255, 0.5);
+            transform: scale(1.02);
         }
 
         .feedback-form textarea {
             resize: vertical;
+            min-height: 80px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
         }
 
         .feedback-form button {
-            padding: 10px 15px;
+            flex: 1;
+            padding: 12px;
             border: none;
-            border-radius: 4px;
+            border-radius: 6px;
+            font-size: 16px;
             cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
         }
 
         .submit-btn {
-            background-color: #4CAF50;
+            background-color: #28a745;
             color: white;
             margin-right: 10px;
         }
 
         .cancel-btn {
-            background-color: #f44336;
+            background-color: #dc3545;
             color: white;
         }
 
         .feedback-form button:hover {
-            opacity: 0.9;
+            opacity: 0.85;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .feedback-form {
+                padding: 20px;
+            }
+            .feedback-form h2 {
+                font-size: 22px;
+            }
         }
     </style>
 </head>
 <body>
 
     <form class="feedback-form" id="feedback-form">
-        <h2>Feedback Form</h2>
-        <label for="name">Name:</label>
+        <h2>💬 Feedback Form</h2>
+        <label for="name">👤 Name:</label>
         <input type="text" id="name" name="name" placeholder="Your name..." required>
         
-        <label for="email">Email:</label>
+        <label for="email">📧 Email:</label>
         <input type="email" id="email" name="email" placeholder="Your email..." required>
         
-        <label for="message">Message:</label>
+        <label for="message">✍️ Message:</label>
         <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
         
-        <button type="submit" class="submit-btn">Submit</button>
-        <button type="button" class="cancel-btn" id="cancel-btn">Cancel</button>
+        <div class="button-container">
+            <button type="submit" class="submit-btn">✅ Submit</button>
+            <button type="button" class="cancel-btn" id="cancel-btn">❌ Cancel</button>
+        </div>
     </form>
 
     <script>
