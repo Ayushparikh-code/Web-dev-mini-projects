@@ -1,81 +1,139 @@
-*{
-    font-family: "Raleway", Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", Arial, sans-serif;
 }
 
-#container{
-    display:grid;
-    grid-template-columns:auto auto;
-}
-.header{
-    height:10vh;
-    display:flex;
-    justify-content:space-between;
-    padding-top:30px;
-    padding-bottom:30px;
-    padding-left: 40px;
-    padding-right:40px;
-}
-a{
-    text-decoration:none;
-    color:black;
-    font-size:25px;
+body {
+  background-color: #fff;
+  color: #333;
 }
 
-/**********************************************About****************************************************************************/
-.about-block{
-    width:60vw;
-    margin:auto;
-    padding-top:80px;
-    text-align:center;
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 20px 0;
+  background: #f5f5f5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-.heading{
-    font-size:35px;
-    font-family:sans-serif;
-    padding-bottom:20px;
-    letter-spacing:5px;
-}
-.description{
-    font-size:15px;
-    color:grey;
-    padding-top:30px;
-    letter-spacing:2px;
-}
-.red{
-    font-size:20px;
-    color:red;
-    padding:10px;
-}
-.input{
-    margin:20px;
-    text-align:center;
-}
-input{
-    width:60vw;
-    height:35px;
-}
-span{
-    display:block;
-    font-size:15px;
-    font-weight:bold;
-}
-.button{
-width:61vw;
-height:40px;
-border:none;
-font-size:15px;
-color:white;
-background:rgb(39, 36, 36);
-}
-.button:hover{
-    color:black;
-    background:lightgrey;
-    } 
 
-    /*******************************************Footer***********************************************/
-    .footer{
-        width:95vw;
-        height:5vw;
-        text-align:center;
-        color:grey;
-        padding:20px;
-    }
+.header a {
+  text-decoration: none;
+  color: #222;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header a:hover {
+  color: #ff6347;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.half img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.half img:hover {
+  transform: scale(1.02);
+}
+
+/* About Section */
+.about-block {
+  width: 80%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: 36px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+
+/* Contact Section */
+.contact-block {
+  width: 80%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.red {
+  font-size: 22px;
+  color: crimson;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.input {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.input label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background: #272424;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #ddd;
+  color: #000;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  background-color: #f9f9f9;
+  margin-top: 60px;
+}
