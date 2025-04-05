@@ -2,66 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
-    <title>ArtGallery</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArtGallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mobile.css" />
 </head>
 
 <body>
-    <div class="header">
-        <a href="#container">MY ART</a>
-        <a href="#about">ABOUT</a>
-        <a href="#contact">CONTACT ME</a> 
-    </div>
-    <div id="container">
-        <div class="half">
-            <img src="images/image1.jpg" style="width:100%" alt="">
-            <img src="images/image3.jpg" style="width:100%" alt="">
-            <img src="images/image4.jpg" style="width:100%" alt="">
-        </div>
-        <div class="half">
-            <img src="images/image2.jpg" style="width:100%" alt="">
-            <img src="images/image5.jpg" style="width:100%" alt="">
-        </div>
-    </div>
-    <div id="about">
-        <div class="about-block">
-            <p class="heading">About</p>
-            <img src="images/about.jpg" alt="" width="300" height="350">
-            <p class="description">Just me, myself and I, exploring the universe of unknownment. I have a heart of love
-                and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent
-                tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
-                gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta
-                lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            </div>
-            <div id="contact"> 
-                <div class="input">
-                    <p class="red">Do not hesitate to contact me!</p>
-                </div>
-                <div class="input">
-                    <span>Name</span>
-                    <input type="text">
-                </div>
-                <div class="input">
-                    <span>Email</span>
-                    <input type="text">
-                </div>
-                <div class="input">
-                    <span>Message</span>
-                    <input type="text">
-                </div>
-                <div class="input">
-                    <input class="button" type="button" value="Send">
-                </div>
-            </div>
-        </div>
+  <header class="header">
+    <a href="#container">MY ART</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT ME</a>
+  </header>
 
-    <div class="footer">
-        Made by ❤Jugesh Raghav
-    </div>
+  <main>
+    <section id="container">
+      <div class="half">
+        <img src="images/image1.jpg" alt="Artwork 1" />
+        <img src="images/image3.jpg" alt="Artwork 3" />
+        <img src="images/image4.jpg" alt="Artwork 4" />
+      </div>
+      <div class="half">
+        <img src="images/image2.jpg" alt="Artwork 2" />
+        <img src="images/image5.jpg" alt="Artwork 5" />
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-block">
+        <h2 class="heading">About</h2>
+        <img src="images/about.jpg" alt="About Me" width="300" height="350" />
+        <p class="description">
+          Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest in lorem
+          ipsum and mauris neque quam blog. I want to share my world with you.
+          Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum,
+          porta lectus vitae, ultricies congue gravida diam non fringilla.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-block">
+        <p class="red">Do not hesitate to contact me!</p>
+        <form>
+          <div class="input">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="input">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="input">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <div class="input">
+            <button type="submit" class="button">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Made with ❤ by Jugesh Raghav
+  </footer>
 </body>
 
 </html>
