@@ -3,18 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Quotes Generator</title>
+    <title>Enhanced AI Quotes Generator</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>AI Quotes Generator</h1>
+        <nav class="nav-bar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <h1>Enhanced AI Quotes Generator</h1>
     </header>
     <div class="container">
-        <div id="quoteContainer">
-            <p id="quoteText"></p>
+        <!-- Custom File Upload -->
+        <label for="fileUpload" class="custom-file-upload">
+            <i class="fas fa-cloud-upload-alt"></i> Upload File
+        </label>
+        <input type="file" id="fileUpload" class="file-input">
+
+        <!-- History Bar -->
+        <div id="historyBar" class="history-bar">
+            <h3>Quote History</h3>
+            <ul id="historyList"></ul>
         </div>
-        <button id="getQuoteBtn" style="background-color: 3498db;">Get Quote</button>
+
+        <!-- Quote Container -->
+        <div id="quoteContainer">
+            <p id="quoteText">Click the button to get a new quote!</p>
+        </div>
+
+        <!-- Buttons for operations -->
+        <div class="btn-group">
+            <button id="prevQuoteBtn" class="nav-btn">Previous</button>
+            <button id="getQuoteBtn" class="action-btn">Get Quote</button>
+            <button id="nextQuoteBtn" class="nav-btn">Next</button>
+        </div>
+
+        <!-- Keyword Input for Quotes -->
+        <div class="keyword-input-container">
+            <input type="text" id="searchInput" class="keyword-input" placeholder="Type a keyword for quotes..." />
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
