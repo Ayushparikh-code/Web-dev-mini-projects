@@ -1,77 +1,60 @@
+/* Styling for the main heading */
 h1 {
   display: flex;
-
   justify-content: center;
-
   font-weight: bolder;
-
   font-size: 60px;
-
-  text-shadow: 2px 2px;
-
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5); /* Added color to the shadow */
   font-family: "Raleway", sans-serif;
 }
 
+/* Flex container for color generation buttons */
 .color_gen {
   display: flex;
-
   justify-content: center;
 }
 
+/* Body styling to center content */
 body {
   width: 100%;
-
-  height: 100%;
-
+  height: 100vh; /* Changed to 100vh for full viewport height */
   display: flex;
-
   justify-content: center;
-
   align-items: center;
+  margin: 0; /* Added margin reset */
 }
 
+/* Ensure HTML takes full height */
 html {
   height: 100%;
 }
 
+/* Styling for buttons */
 #random,
 .brndm,
 #gradc {
   font-size: 20px;
-
   border-radius: 12px;
-
   padding: 16px 32px;
-
   text-align: center;
-
-  font-size: 20px;
-
   margin: 4px 2px;
-
   opacity: 0.6;
-
-  transition: 0.3s;
-
+  transition: opacity 0.3s, transform 0.3s; /* Added transform transition */
   font-weight: bolder;
-
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
+/* Button active state */
 .color_gen:active {
   transform: translateY(4px);
 }
 
-#random:hover {
-  opacity: 1;
-}
-
-#gradc:hover {
-  opacity: 1;
-}
-
+/* Button hover states */
+#random:hover,
+#gradc:hover,
 .brndm:hover {
   opacity: 1;
 }
+
 
 
