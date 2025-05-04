@@ -1714,7 +1714,7 @@ $(document).ready(function () {
             main.variables.highlighted.length = 0;
 
             main.variables.selectedpiece = target.id;
-            main.methods.moveoptions(target.name);
+            main.methods.moveoptions(target.name);      
 
         }
 
@@ -1724,6 +1724,62 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
+
 });
 
+let whiteTime = 30; // Initial time for white player
+let blackTime = 30; // Initial time for black player
+let currentPlayer = 'white'; // Track the current player's turn
+let timerInterval;
 
+function startTimer() {
+    clearInterval(timerInterval); // Clear any existing timer
+    timerInterval = setInterval(() => {
+        if (currentPlayer === 'white') {
+            whiteTime--;
+            document.getElementById('white-time').innerText = whiteTime;
+            if (whiteTime <= 0) {
+                clearInterval(timerInterval);
+                alert('Time is up! Black wins this round!');
+                switchTurn(); // Switch to black player's turn
+            }
+        } else {
+            blackTime--;
+            document.getElementById('black-time').innerText = blackTime;
+            if (blackTime <= 0) {
+                clearInterval(timerInterval);
+                alert('Time is up! White wins this round!');
+                switchTurn(); // Switch to white player's turn
+            }
+        }
+    }, 1000); // Call the function every second
+}
+
+function switchTurn() {
+    clearInterval(timerInterval); // Stop the current player's timer
+    currentPlayer = currentPlayer === 'white' ? 'black' : 'white'; // Switch player
+    resetCurrentPlayerTime(); // Reset the current player's time
+    startTimer(); // Start the timer for the next player
+}
+
+function resetCurrentPlayerTime() {
+    if (currentPlayer === 'white') {
+        whiteTime = 30; // Reset white time
+    } else {
+        blackTime = 30; // Reset black time
+    }
+    document.getElementById(currentPlayer + '-time').innerText = 30; // Update displayed time
+}
+
+// Start the timer on page load
+startTimer();
+
+// Example usage of switching turns when a move is made
+document.querySelectorAll('.gamecell').forEach(cell => {
+    cell.addEventListener('click', () => {
+        // Logic for making a move can go here
+
+        // Switch turns after a move
+        switchTurn();
+    });
+});
