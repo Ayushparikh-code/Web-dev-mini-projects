@@ -1,59 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GithHub profile Finder</title>
+#!/usr/bin/env python
+"""Django's command-line utility for administrative tasks."""
 
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-   href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-   rel="stylesheet"
-  />
-
-  <link rel="stylesheet" href="style.css" />
- </head>
- <body>
-  <div class="container">
-   <div class="search-container">
-    <input
-     type="text"
-     name=""
-     id="input"
-     placeholder="Enter Github UserName"
-     class=""
-    />
-    <div id="search" onclick="getUser()">Search User</div>
-   </div>
-
-   <div class="profile-card">
-    <div class="main-info">
-     <img src="github-logo.png" alt="avatar" id="prof-img" />
-     <span class="name" id="name">Khushi Purwar</span>
-     <a href="" id="username">@khushi-purwar</a>
-    </div>
-    <div class="bio">
-     <p id="bio">A full stack developer</p>
-     <p><span id="repo">23</span> Repositories</p>
-    </div>
-    <div class="follow">
-     <div class="followers">
-      <span class="no" id="followers">1</span>
-      Followers
-     </div>
-     <div class="following">
-      <span class="no" id="following">23</span>
-      Following
-     </div>
-    </div>
-   </div>
-  </div>
-
-  <script src="script.js"></script>
- </body>
-</html>
+import os
+import sys
 
 
+def main():
+    """Run administrative tasks."""
+    # Set the default settings module for the Django project
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ecommerceproject.settings')
+
+    try:
+        # Import and execute Django's command-line management utility
+        from django.core.management import execute_from_command_line
+    except ImportError as exc:
+        raise ImportError(
+            "Couldn't import Django. Are you sure it's installed and "
+            "available on your PYTHONPATH environment variable? Did you "
+            "forget to activate a virtual environment?"
+        ) from exc
+
+    # Execute the command line utility with the provided arguments
+    execute_from_command_line(sys.argv)
+
+
+if __name__ == '__main__':
+    main()
