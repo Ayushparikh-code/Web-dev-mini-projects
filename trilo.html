@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Clone</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f5f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #board {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .list {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            width: 250px;
+            margin: 0 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .list-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background: #e2e4e6;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: move;
+        }
+
+        .add-card {
+            border: 1px dashed #0079bf;
+            border-radius: 3px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .add-list {
+            border: 1px dashed #0079bf;
+            border-radius: 3px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #add-list-input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #0079bf;
+            border-radius: 3px;
+        }
+
+        #add-card-input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #0079bf;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trello Clone</h1>
+    <div id="board"></div>
+    <div class="add-list" onclick="showAddListInput()">+ Add a list</div>
+    <input type="text" id="add-list-input" placeholder="Enter list title" style="display:none;">
+    <button id="add-list-button" style="display:none;" onclick="addList()">Add List</button>
+
+    <script>
+        const board = document.getElementById('board');
+
+        function showAddListInput() {
+            document.getElementById('add-list-input').style.display = 'block';
+            document.getElementById('add-list-button').style.display = 'block';
+        }
+
+        function addList() {
+            const listTitle = document.getElementById('add-list-input').value;
+
+            if (listTitle) {
+                const list = document.createElement('div');
+                list.classList.add('list');
+                list.innerHTML = `
+                    <div class="list-title">${listTitle}</div>
+                    <div class="add-card" onclick="showAddCardInput(this)">+ Add a card</div>
+                    <input type="text" class="add-card-input" placeholder="Enter card title" style="display:none;">
+                    <button class="add-card-button" style="display:none;" onclick="addCard(this)">Add Card</button>
+                    <div class="cards"></div>
+                `;
+                board.appendChild(list);
+                document.getElementById('add-list-input').value = '';
+                document.getElementById('add-list-input').style.display = 'none';
+                document.getElementById('add-list-button').style.display = 'none';
+            }
+        }
+
+        function showAddCardInput(cardDiv) {
+            const input = cardDiv.nextElementSibling;
+            const button = cardDiv.nextElementSibling.nextElementSibling;
+            input.style.display = 'block';
+            button.style.display = 'block';
+        }
+
+        function addCard(button) {
+            const input = button.previousElementSibling;
+            const cardTitle = input.value;
+
+            if (cardTitle) {
+                const card = document.createElement('div');
+                card.classList.add('card');
+                card.textContent = cardTitle;
+
+                const cardsContainer = button.parentNode.querySelector('.cards');
+                cardsContainer.appendChild(card);
+
+                input.value = '';
+                input.style.display = 'none';
+                button.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
