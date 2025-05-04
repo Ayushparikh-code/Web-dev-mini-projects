@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Diary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .entry {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .delete-btn {
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        .delete-btn:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Digital Diary</h1>
+        <textarea id="diaryEntry" placeholder="Write your diary entry here..."></textarea>
+        <button id="saveBtn">Save Entry</button>
+        <h2>Diary Entries</h2>
+        <div id="entries"></div>
+    </div>
+
+    <script>
+        const saveButton = document.getElementById('saveBtn');
+        const diaryEntry = document.getElementById('diaryEntry');
+        const entriesContainer = document.getElementById('entries');
+
+        function loadEntries() {
+            const entries = JSON.parse(localStorage.getItem('diaryEntries')) || [];
+            entries.forEach(entry => {
+                addEntryToDOM(entry);
+            });
+        }
+
+        function saveEntry() {
+            const entryText = diaryEntry.value.trim();
+            if (entryText === '') {
+                alert('Please write an entry before saving.');
+                return;
+            }
+
+            const entry = {
+                id: Date.now(),
+                text: entryText,
+                date: new Date().toLocaleString()
+            };
+
+            const entries = JSON.parse(localStorage.getItem('diaryEntries')) || [];
+            entries.push(entry);
+            localStorage.setItem('diaryEntries', JSON.stringify(entries));
+
+            addEntryToDOM(entry);
+            diaryEntry.value = '';
+        }
+
+        function addEntryToDOM(entry) {
+            const entryDiv = document.createElement('div');
+            entryDiv.classList.add('entry');
+            entryDiv.innerHTML = `
+                <p><strong>${entry.date}</strong></p>
+                <p>${entry.text}</p>
+                <button class="delete-btn" onclick="deleteEntry(${entry.id})">Delete</button>
+            `;
+            entriesContainer.prepend(entryDiv);
+        }
+
+        function deleteEntry(entryId) {
+            const entries = JSON.parse(localStorage.getItem('diaryEntries')) || [];
+            const updatedEntries = entries.filter(entry => entry.id !== entryId);
+            localStorage.setItem('diaryEntries', JSON.stringify(updatedEntries));
+            loadEntries();
+        }
+
+        saveButton.addEventListener('click', saveEntry);
+        loadEntries();
+    </script>
+</body>
+</html>
