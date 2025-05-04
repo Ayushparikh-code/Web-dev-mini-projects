@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottle Flip Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #game-container {
+            margin: auto;
+            padding: 20px;
+            width: 300px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #points {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        #result {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div id="game-container">
+    <h1>Bottle Flip Game</h1>
+    <button onclick="flipBottle()">Flip the Bottle</button>
+    <p id="result">Click the button to flip the bottle!</p>
+    <p id="points">Points: 0</p>
+</div>
+
+<script>
+    let points = 0;
+
+    function flipBottle() {
+        // Simulate a 30% chance of success
+        const flip = Math.random();
+
+        if (flip <= 0.3) {
+            points += 1;
+            document.getElementById("result").textContent = "You flipped the bottle successfully! 🎉";
+        } else {
+            document.getElementById("result").textContent = "You missed! Try again.";
+        }
+
+        document.getElementById("points").textContent = "Points: " + points;
+    }
+</script>
+
+</body>
+</html>
