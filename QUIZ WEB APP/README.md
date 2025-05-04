@@ -1,47 +1,53 @@
-# Welcome to the Quiz App 🤔
+Quiz App 🤔
+A simple quiz application built with HTML, CSS, and JavaScript. Users can answer a series of questions and receive a score at the end.
 
-This is a basic HTML, CSS, JAVASCRIPT quiz app where user can answer the questions that are being given in the quiz. And at the last your total score is displayed.
-
-## 💻 Tech Stack
-
-<br>
-
-![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
-![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-
-<br>
+💻 Tech Stack
+HTML: Structure the content of the quiz app.
+CSS: Style the app for a better user experience.
+JavaScript: Implement quiz logic and interactivity.
 
 
-### How to get the project on your local machine:
+Features
+Multiple choice questions
+Score calculation at the end of the quiz
+Responsive design for mobile and desktop
+Getting Started
+Follow these steps to set up the project on your local machine:
 
----
+Clone the repository:
 
-```
+bash
+Copy code
 git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
-```
+Navigate to the project directory:
 
-- Go to the directory
-- Go to QUIZ WEB APP folder
-- Open the terminal and run 
-```
-node app.js
-```
-- Open *localhost:3000* in your browser.
+bash
+Copy code
+cd Web-dev-mini-projects/QUIZ_WEB_APP
+Open the index.html file in your preferred browser to start the quiz.
 
-*** 
-###Remember: 
-If you are using node then you need to reload your server everytime you make changes in your file. Otherwise if you have nodemon installed, you can use nodemon. 
-***
+Prerequisites
+Make sure you have Node.js installed if you plan to run a local server.
 
-<br>
+Usage
+Open your browser and navigate to localhost:3000 to start the quiz.
+Follow the on-screen instructions to answer the questions.
+View your score at the end of the quiz.
+Note
+If you’re using Node.js, you may need to restart the server every time you make changes to the files. Consider using nodemon to automatically restart the server on changes.
 
-## Screenshots
-
-![Demo1](screenshots/quiz1.png)
-![Demo2](screenshots/quiz2.png)
-![Demo3](screenshots/quiz3.png)
-<br>
+Screenshots
+Here are some screenshots of the app in action:
 
 
-## Happy Coding!
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Contribution
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to submit a pull request.
+
+Contact
+For questions or feedback, please reach out to [your-email@example.com].
+
+Happy Coding!
