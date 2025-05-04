@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        #userInfo {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub User Finder</h1>
+        <input type="text" id="username" placeholder="Enter GitHub username">
+        <button id="searchBtn">Search</button>
+        <div id="userInfo"></div>
+    </div>
+
+    <script>
+        document.getElementById('searchBtn').addEventListener('click', () => {
+            const username = document.getElementById('username').value;
+            if (username) {
+                fetchUserData(username);
+            } else {
+                alert('Please enter a GitHub username');
+            }
+        });
+
+        function fetchUserData(username) {
+            const url = `https://api.github.com/users/${username}`;
+            
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('User not found');
+                    }
+                    return response.json();
+                })
+                .then(data => displayUserInfo(data))
+                .catch(error => {
+                    document.getElementById('userInfo').innerHTML = `<p>${error.message}</p>`;
+                });
+        }
+
+        function displayUserInfo(user) {
+            const userInfoDiv = document.getElementById('userInfo');
+            userInfoDiv.innerHTML = `
+                <h2>${user.login}</h2>
+                <img src="${user.avatar_url}" alt="${user.login}'s avatar" width="100">
+                <p><strong>Name:</strong> ${user.name || 'N/A'}</p>
+                <p><strong>Bio:</strong> ${user.bio || 'N/A'}</p>
+                <p><strong>Followers:</strong> ${user.followers}</p>
+                <p><strong>Following:</strong> ${user.following}</p>
+                <p><strong>Public Repos:</strong> ${user.public_repos}</p>
+                <p><a href="${user.html_url}" target="_blank">View Profile on GitHub</a></p>
+            `;
+        }
+    </script>
+</body>
+</html>
