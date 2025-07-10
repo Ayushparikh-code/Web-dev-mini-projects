@@ -95,6 +95,9 @@ git push -u origin <your_branch_name>
  
 <table>
 <tr>
+  <td align="center"><a href="https://github.com/deepakstar04"><img src="https://unsplash.com/photos/G41oilKcoX8" width=150px height=150px /></a></br> <h4 style="color:red;">Deepak Kumar</h4>
+<a href="https://www.linkedin.com/in/ayush-parikh332/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
+ </td>
 <td align="center"><a href="https://github.com/Ayushparikh-code"><img src="https://avatars.githubusercontent.com/u/60268067?v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Ayush Parikh</h4>
 <a href="https://www.linkedin.com/in/ayush-parikh332/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a></td>
 
