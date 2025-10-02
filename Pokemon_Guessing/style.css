@@ -10,7 +10,9 @@
     height: 100vh;
     background-color: #f0f0f0;
     flex-direction: column;
-    background-image: radial-gradient(circle farthest-corner at center, #3C4B57 0%, #1C262B 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://t3.ftcdn.net/jpg/04/09/52/56/240_F_409525628_pEvii3BpSoDer2vGZ67n1dWkXrZ2tQaY.jpg);
   }
 
   .pokemon-card {
@@ -142,6 +144,9 @@
       transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
     }
   }
+
+
+
 
 
 
