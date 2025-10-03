@@ -1,35 +1,45 @@
-<h1>WeatherApp</h1>
+# Weather App
 
-<p>Simple Weather app written in HTML, CSS, and JavaScript using the APIs for fetching weather and geolocation information.</p>
+## 🌤 Overview
+The **Weather App** is a simple and interactive web application that allows users to check the current weather conditions of any city in the world. It fetches real-time weather data and displays information like temperature, humidity, wind speed, and weather conditions.
 
-<h3>Used Technologies</h3>
-<ul>
-  <li>HTML5</li>
-  <li>CSS3</li>
-  <li>JavaScript</li>
-</ul>
+## 🚀 Features
+- 🌍 Search for weather by city name
+- 🌡️ Display current temperature, humidity, and wind speed
+- ☁️ Show weather conditions with icons
+- 🎨 User-friendly and responsive UI
+- ⚡ Built with React and Material-UI
 
-<h3>Used APIs</h4>
-<ul>
-  <li>Open Weather API</li>
- <li>Unsplash API</li>
-</ul>
-#### Steps to Use:
----
+## 🛠️ Tech Stack
+- **Frontend:** React.js, Material-UI, CSS
+- **API:** OpenWeatherMap API
+- **Build Tool:** Vite
 
-- Download or clone the repository
-```
-git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
-```
-- Go to the directory
-- Run the index.html file
-- Just Type the city name you want to know the weather of, and then click on the search button.
-- After that it will automatically display Weather, Humidity, Wind Speed of the city.
+## 📦 Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd Weather-App
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Get your **OpenWeatherMap API key** from [OpenWeather](https://openweathermap.org/api) and create a `.env` file in the root directory with:
+   ```
+   VITE_WEATHER_API_KEY=your_api_key_here
+   ```
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
+6. Open your browser and navigate to `http://localhost:5173`
+
+## 📸 Screenshots
+![Weather App UI](Weather%20App%20UI.png)
 
 
-<h3> ScreenShots </h3>  
-<img src = "Weather-App.jpg" alt="Sample Image">
-<br>
-<video controls autoplay>
-  <source src="sample.mp4" type="video/mp4">
-</video>
+
