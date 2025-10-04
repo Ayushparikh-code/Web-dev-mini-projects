@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+        }
+
+        .simple-btn {
+            background-color: #4caf50;
+        }
+
+        .compound-btn {
+            background-color: #2196f3;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        #result {
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Loan Calculator</h1>
+        <input type="number" id="amount" placeholder="Loan Amount (₹)">
+        <input type="number" id="interest" placeholder="Interest Rate (%)">
+        <input type="number" id="years" placeholder="Loan Term (Years)">
+        <div>
+            <button class="simple-btn" onclick="calculateLoanForSimpleInterest()">Simple Interest</button>
+            <button class="compound-btn" onclick="calculateLoanForCompoundInterest()">Compound Interest</button>
+        </div>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function formatNumber(num) {
+            return num.toLocaleString('en-IN', {maximumFractionDigits: 2});
+        }
+
+        function calculateLoanForSimpleInterest() {
+            let amount = parseFloat(document.getElementById("amount").value);
+            let interest = parseFloat(document.getElementById("interest").value);
+            let years = parseFloat(document.getElementById("years").value);
+
+            if (!amount || !interest || !years) {
+                document.getElementById("result").innerText = "Please enter all fields!";
+                return;
+            }
+
+            let totalAmount = amount + (amount * (interest / 100) * years);
+            let interestPaid = totalAmount - amount;
+
+            document.getElementById("result").innerHTML = 
+                `Type: Simple Interest<br>` +
+                `Total Amount: ₹ ${formatNumber(totalAmount)}<br>` +
+                `Interest Paid: ₹ ${formatNumber(interestPaid)}`;
+        }
+
+        function calculateLoanForCompoundInterest() {
+            let amount = parseFloat(document.getElementById("amount").value);
+            let interest = parseFloat(document.getElementById("interest").value);
+            let years = parseFloat(document.getElementById("years").value);
+
+            if (!amount || !interest || !years) {
+                document.getElementById("result").innerText = "Please enter all fields!";
+                return;
+            }
+
+            let totalAmount = amount * Math.pow((1 + interest / 100), years);
+            let interestPaid = totalAmount - amount;
+
+            document.getElementById("result").innerHTML = 
+                `Type: Compound Interest<br>` +
+                `Total Amount: ₹ ${formatNumber(totalAmount)}<br>` +
+                `Interest Paid: ₹ ${formatNumber(interestPaid)}`;
+        }
+    </script>
+</body>
+</html>
