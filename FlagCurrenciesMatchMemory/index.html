@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag & Currency Match - Memory Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🎮 Flag & Currency Match</h1>
+            <p class="subtitle">Test your memory with flags and currencies from around the world</p>
+        </header>
+
+        <!-- Game Controls -->
+        <div class="controls">
+            <div class="control-group">
+                <label>Game Mode</label>
+                <div class="button-group">
+                    <button id="flagModeBtn" class="mode-btn active" data-mode="flags">
+                        🚩 Flags
+                    </button>
+                    <button id="currencyModeBtn" class="mode-btn" data-mode="currency">
+                        💰 Currency
+                    </button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label>Difficulty</label>
+                <select id="difficultySelect">
+                    <option value="easy">Easy (4×4)</option>
+                    <option value="medium">Medium (5×6)</option>
+                    <option value="hard">Hard (6×6)</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label class="toggle-label">
+                    <input type="checkbox" id="botToggle">
+                    <span>VS Bot</span>
+                </label>
+                <select id="botDifficulty" disabled>
+                    <option value="random">Bot: Random</option>
+                    <option value="memory">Bot: Memory</option>
+                    <option value="perfect">Bot: Perfect</option>
+                </select>
+            </div>
+
+            <button id="startBtn" class="start-btn">▶ Start Game</button>
+        </div>
+
+        <!-- Scoreboard -->
+        <div id="scoreboard" class="scoreboard hidden">
+            <div class="score-item">
+                <span class="score-label">Moves</span>
+                <span id="moveCount" class="score-value">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">Time</span>
+                <span id="timerDisplay" class="score-value">0:00</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">Stars</span>
+                <div id="starsDisplay" class="stars">
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                </div>
+            </div>
+            <button id="restartBtn" class="restart-btn">🔄 Restart</button>
+        </div>
+
+        <!-- Current Turn Display (for Bot Mode) -->
+        <div id="turnDisplay" class="turn-display hidden">
+            <span id="currentTurn"></span>
+        </div>
+
+        <!-- Game Board -->
+        <div id="gameBoard" class="game-board hidden"></div>
+
+        <!-- Win Modal -->
+        <div id="winModal" class="modal hidden">
+            <div class="modal-content">
+                <h2>🎉 Congratulations!</h2>
+                <div class="modal-stats">
+                    <div class="stat">
+                        <span class="stat-label">Moves:</span>
+                        <span id="finalMoves" class="stat-value">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Time:</span>
+                        <span id="finalTime" class="stat-value">0:00</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Stars:</span>
+                        <span id="finalStars" class="stat-value">⭐⭐⭐</span>
+                    </div>
+                </div>
+                <div class="modal-buttons">
+                    <button id="playAgainBtn" class="modal-btn primary">Play Again</button>
+                    <button id="changeDifficultyBtn" class="modal-btn secondary">Change Settings</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/api.js"></script>
+    <script src="src/deck.js"></script>
+    <script src="src/bot.js"></script>
+    <script src="src/ui.js"></script>
+    <script src="src/game.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
