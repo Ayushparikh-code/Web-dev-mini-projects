@@ -1,118 +1,224 @@
+// Tic-Tac-Toe game logic (clean names, replay + main menu to change player)
 
-//selecting all required elements
-const selectBox = document.querySelector(".select-box"),
-    selectBtnX = selectBox.querySelector(".options .playerX"),
-    selectBtnO = selectBox.querySelector(".options .playerO"),
-    playBoard = document.querySelector(".play-board"),
-    players = document.querySelector(".players"),
-    allBox = document.querySelectorAll("section span"),
-    resultBox = document.querySelector(".result-box"),
-    wonText = resultBox.querySelector(".won-text"),
-    replayBtn = resultBox.querySelector("button");
+const selectBox = document.querySelector(".select-box");
+const chooseXButton = selectBox.querySelector(".options .playerX");
+const chooseOButton = selectBox.querySelector(".options .playerO");
 
-window.onload = () => { //once window loaded
-    for (let i = 0; i < allBox.length; i++) { //add onclick attribute in all available span
-        allBox[i].setAttribute("onclick", "clickedBox(this)");
-    }
+const playBoard = document.querySelector(".play-board");
+const playersBar = document.querySelector(".players");
+const cellElements = Array.from(document.querySelectorAll(".play-area section span"));
+
+const resultBox = document.querySelector(".result-box");
+const resultText = resultBox.querySelector(".won-text");
+const replayButton = resultBox.querySelector(".replay-btn");
+const mainMenuButton = resultBox.querySelector(".mainmenu-btn");
+
+// Game state
+let humanSymbol = "X";
+let botSymbol = "O";
+let currentTurn = "X";
+let botEnabled = true;
+let gameActive = false;
+
+const winningLines = [
+  [0,1,2],[3,4,5],[6,7,8],
+  [0,3,6],[1,4,7],[2,5,8],
+  [0,4,8],[2,4,6]
+];
+
+// Start game when player chooses X or O
+chooseXButton.addEventListener("click", () => startNewGame("X"));
+chooseOButton.addEventListener("click", () => startNewGame("O"));
+
+function startNewGame(chosenSymbol) {
+  humanSymbol = chosenSymbol;
+  botSymbol = (chosenSymbol === "X") ? "O" : "X";
+  currentTurn = "X";
+  gameActive = true;
+
+  // Update slider UI to reflect selection (keeps existing CSS behavior)
+  if (humanSymbol === "O") {
+    playersBar.classList.add("active", "player");
+  } else {
+    playersBar.classList.remove("player");
+    playersBar.classList.remove("active");
+  }
+
+  clearBoardVisuals();
+  attachCellListeners();
+
+  selectBox.classList.add("hide");
+  playBoard.classList.add("show");
+  resultBox.classList.remove("show");
+
+  // If bot starts as X, let it move first
+  if (botEnabled && botSymbol === "X") {
+    boardDisablePointer(true);
+    setTimeout(botMakeMove, randomDelayMs());
+  } else {
+    boardDisablePointer(false);
+  }
 }
 
-selectBtnX.onclick = () => {
-    selectBox.classList.add("hide"); //hide select box
-    playBoard.classList.add("show"); //show the playboard section
+function attachCellListeners() {
+  cellElements.forEach(cell => {
+    cell.removeEventListener("click", onCellClicked);
+    cell.addEventListener("click", onCellClicked);
+  });
 }
 
-selectBtnO.onclick = () => {
-    selectBox.classList.add("hide"); //hide select box
-    playBoard.classList.add("show"); //show the playboard section
-    players.setAttribute("class", "players active player"); //set class attribute in players with players active player values
+function removeCellListeners() {
+  cellElements.forEach(cell => {
+    cell.removeEventListener("click", onCellClicked);
+  });
 }
 
-let playerXIcon = "fas fa-times"; //class name of fontawesome cross icon
-let playerOIcon = "far fa-circle"; //class name of fontawesome circle icon
-let playerSign = "X"; //this is a global variable beacuse we've used this variable inside multiple functions
-let runBot = true; //this also a global variable with boolen value..we used this variable to stop the bot once match won by someone or drawn
+function onCellClicked(e) {
+  const cell = e.currentTarget;
+  if (!gameActive) return;
+  if (cell.dataset.mark) return; // already marked
+  if (currentTurn !== humanSymbol) return; // not human's turn
 
-// user click function
-function clickedBox(element) {
-    if (players.classList.contains("player")) {
-        playerSign = "O"; //if player choose (O) then change playerSign to O
-        element.innerHTML = `<i class="${playerOIcon}"></i>`; //adding circle icon tag inside user clicked element/box
-        players.classList.add("active"); ///add active class in players
-        element.setAttribute("id", playerSign); //set id attribute in span/box with player choosen sign
-    } else {
-        element.innerHTML = `<i class="${playerXIcon}"></i>`; //adding cross icon tag inside user clicked element/box
-        players.classList.add("active"); //add active class in players
-        element.setAttribute("id", playerSign); //set id attribute in span/box with player choosen sign
-    }
-    selectWinner(); //caliing selectWinner function
-    element.style.pointerEvents = "none"; //once user select any box then that box can'be clicked again
-    playBoard.style.pointerEvents = "none"; //add pointerEvents none to playboard so user can't immediately click on any other box until bot select
-    let randomTimeDelay = ((Math.random() * 1000) + 200).toFixed(); //generating random number so bot will randomly delay to select unselected box
-    setTimeout(() => {
-        bot(); //calling bot function
-    }, randomTimeDelay); //passing random delay value
+  markCell(cell, humanSymbol);
+  evaluateGameState(humanSymbol);
+
+  if (gameActive && botEnabled) {
+    boardDisablePointer(true);
+    setTimeout(botMakeMove, randomDelayMs());
+  }
 }
 
-// bot auto select function
-function bot() {
-    let array = []; //creating empty array...we'll store unclicked boxes index
-    if (runBot) { //if runBot is true
-        playerSign = "O"; //change the playerSign to O so if player has chosen X then bot will O
-        for (let i = 0; i < allBox.length; i++) {
-            if (allBox[i].childElementCount == 0) { //if the box/span has no children means <i> tag
-                array.push(i); //inserting unclicked boxes number/index inside array
-            }
-        }
-        let randomBox = array[Math.floor(Math.random() * array.length)]; //getting random index from array so bot will select random unselected box
-        if (array.length > 0) { //if array length is greater than 0
-            if (players.classList.contains("player")) {
-                playerSign = "X"; //if player has chosen O then bot will X
-                allBox[randomBox].innerHTML = `<i class="${playerXIcon}"></i>`; //adding cross icon tag inside bot selected element
-                players.classList.remove("active"); //remove active class in players
-                allBox[randomBox].setAttribute("id", playerSign); //set id attribute in span/box with player choosen sign
-            } else {
-                allBox[randomBox].innerHTML = `<i class="${playerOIcon}"></i>`; //adding circle icon tag inside bot selected element
-                players.classList.remove("active"); //remove active class in players
-                allBox[randomBox].setAttribute("id", playerSign); //set id attribute in span/box with player choosen sign
-            }
-            selectWinner(); //calling selectWinner function
-        }
-        allBox[randomBox].style.pointerEvents = "none"; //once bot select any box then user can't click on that box
-        playBoard.style.pointerEvents = "auto"; //add pointerEvents auto in playboard so user can again click on box
-        playerSign = "X"; //if player has chosen X then bot will be O right then we change the playerSign again to X so user will X because above we have changed the playerSign to O for bot
-    }
+function markCell(cell, symbol) {
+  cell.textContent = symbol;
+  cell.dataset.mark = symbol;
+  cell.classList.add("marked");
+  cell.style.pointerEvents = "none";
+
+  // Toggle slider to reflect turn visually
+  playersBar.classList.toggle("active");
+
+  currentTurn = (symbol === "X") ? "O" : "X";
 }
 
-function getIdVal(classname) {
-    return document.querySelector(".box" + classname).id; //return id value
-}
-function checkIdSign(val1, val2, val3, sign) { //checking all id value is equal to sign (X or O) or not if yes then return true
-    if (getIdVal(val1) == sign && getIdVal(val2) == sign && getIdVal(val3) == sign) {
-        return true;
-    }
-}
-function selectWinner() { //if the one of following winning combination match then select the winner
-    if (checkIdSign(1, 2, 3, playerSign) || checkIdSign(4, 5, 6, playerSign) || checkIdSign(7, 8, 9, playerSign) || checkIdSign(1, 4, 7, playerSign) || checkIdSign(2, 5, 8, playerSign) || checkIdSign(3, 6, 9, playerSign) || checkIdSign(1, 5, 9, playerSign) || checkIdSign(3, 5, 7, playerSign)) {
-        runBot = false; //passing the false boolen value to runBot so bot won't run again
-        bot(); //calling bot function
-        setTimeout(() => { //after match won by someone then hide the playboard and show the result box after 700ms
-            resultBox.classList.add("show");
-            playBoard.classList.remove("show");
-        }, 1000); //1s = 1000ms
-        wonText.innerHTML = `Player <p>${playerSign}</p> won the game!`; //displaying winning text with passing playerSign (X or O)
-    } else { //if all boxes/element have id value and still no one win then draw the match
-        if (getIdVal(1) != "" && getIdVal(2) != "" && getIdVal(3) != "" && getIdVal(4) != "" && getIdVal(5) != "" && getIdVal(6) != "" && getIdVal(7) != "" && getIdVal(8) != "" && getIdVal(9) != "") {
-            runBot = false; //passing the false boolen value to runBot so bot won't run again
-            bot(); //calling bot function
-            setTimeout(() => { //after match drawn then hide the playboard and show the result box after 700ms
-                resultBox.classList.add("show");
-                playBoard.classList.remove("show");
-            },1000); //1s = 1000ms
-            wonText.textContent = "Match has been drawn!"; //displaying draw match text
-        }
-    }
+function botMakeMove() {
+  if (!gameActive) return;
+
+  const emptyCells = cellElements.filter(c => !c.dataset.mark);
+  if (emptyCells.length === 0) {
+    boardDisablePointer(false);
+    return;
+  }
+
+  // simple random bot (replace with smarter bot later if desired)
+  const chosen = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+  markCell(chosen, botSymbol);
+  evaluateGameState(botSymbol);
+
+  boardDisablePointer(false);
 }
 
-replayBtn.onclick = () => {
-    window.location.reload(); //reload the current page on replay button click
+function evaluateGameState(lastMoverSymbol) {
+  const isWinner = winningLines.some(line =>
+    line.every(idx => cellElements[idx].dataset.mark === lastMoverSymbol)
+  );
+
+  if (isWinner) {
+    gameActive = false;
+    showResult(`${lastMoverSymbol} wins!`);
+    return;
+  }
+
+  const isDraw = cellElements.every(c => c.dataset.mark);
+  if (isDraw) {
+    gameActive = false;
+    showResult("Match has been drawn!");
+  }
+}
+
+function showResult(message) {
+  boardDisablePointer(true);
+
+  if (message === "Match has been drawn!") {
+    resultText.textContent = message;
+  } else {
+    const winner = message[0]; // X or O
+    resultText.innerHTML = `Player <p>${winner}</p> won the game!`;
+  }
+
+  setTimeout(() => {
+    resultBox.classList.add("show");
+    playBoard.classList.remove("show");
+  }, 700);
+}
+
+function clearBoardVisuals() {
+  cellElements.forEach(cell => {
+    cell.textContent = "";
+    delete cell.dataset.mark;
+    cell.style.pointerEvents = "auto";
+    cell.classList.remove("marked");
+  });
+}
+
+function boardDisablePointer(disable) {
+  playBoard.style.pointerEvents = disable ? "none" : "auto";
+}
+
+function randomDelayMs() {
+  return Math.floor(Math.random() * 1000) + 200;
+}
+
+/* Replay: rematch keeping the chosen player */
+replayButton.addEventListener("click", () => {
+  // Reset visuals and state for rematch
+  resultBox.classList.remove("show");
+  clearBoardVisuals();
+  attachCellListeners();
+
+  gameActive = true;
+  currentTurn = "X";
+
+  // Restore slider UI consistent with the chosen symbol
+  if (humanSymbol === "O") {
+    playersBar.classList.add("player", "active");
+  } else {
+    playersBar.classList.remove("player");
+    playersBar.classList.remove("active");
+  }
+
+  playBoard.classList.add("show");
+  selectBox.classList.add("hide");
+
+  if (botEnabled && botSymbol === "X") {
+    boardDisablePointer(true);
+    setTimeout(botMakeMove, randomDelayMs());
+  } else {
+    boardDisablePointer(false);
+  }
+});
+
+/* Main Menu: go back to player selection screen so user can change X/O */
+mainMenuButton.addEventListener("click", () => {
+  mainMenu();
+});
+
+function mainMenu() {
+  // Hide playboard/result and show selection UI
+  resultBox.classList.remove("show");
+  playBoard.classList.remove("show");
+  selectBox.classList.remove("hide");
+
+  // Fully reset board and internal listeners
+  clearBoardVisuals();
+  removeCellListeners();
+
+  // Reset slider UI to neutral state
+  playersBar.classList.remove("player");
+  playersBar.classList.remove("active");
+
+  // Reset game state - user will choose again
+  gameActive = false;
+  currentTurn = "X";
+  humanSymbol = "X";
+  botSymbol = "O";
 }
