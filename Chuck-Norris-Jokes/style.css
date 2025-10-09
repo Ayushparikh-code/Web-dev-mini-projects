@@ -1,53 +1,319 @@
-*{
-    margin-bottom:1rem;;
-    padding:0;
-    text-align:center;
+/* Enhanced Chuck Norris Jokes - Modern Styling with Poppins Font */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-div{
-    width:22rem;
-    height:15rem;
-    text-align:center;
-    margin:auto;
-    margin-bottom:1.5rem;
-    padding:10px;
-}
-#box1{
-    background-color:lightslategrey;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-evenly;
-}
-#box2{
-    background-color:blue;
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    line-height: 1.6;
 }
 
-h3{
-    font-size:30px
-}
-button{
-    width:5rem;
-    height:2rem;
-    margin:0.2rem;
-    border:none;
-    border-radius:5px;
-    box-shadow:1px 1px rgb(95, 92, 92);
-    font-size:1rem;
+.container {
+    max-width: 1100px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    animation: fadeIn 0.6s ease-in;
 }
 
-p{
-    display:inline-block;
-    font-size:20px;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-p#joke{
-    color:white;
-    font-size:1.5rem;
-    margin:30px;
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #e0e0e0;
 }
-#footer{
-    color:blue;
-    font-size:1rem;
+
+.header-icon {
+    font-size: 3rem;
+    color: #667eea;
+    margin-bottom: 15px;
+    animation: punch 2s ease-in-out infinite;
 }
-hr{
-    width:10rem;
+
+@keyframes punch {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 300;
+}
+
+/* Category Section */
+.category-section {
+    margin-bottom: 35px;
+}
+
+.category-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.category-section h2 i {
+    color: #667eea;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+}
+
+.category-btn {
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.category-btn i {
+    font-size: 1.5rem;
+    color: #667eea;
+    transition: transform 0.3s ease;
+}
+
+.category-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4);
+    border-color: #667eea;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.category-btn:hover i {
+    color: white;
+    transform: scale(1.2);
+}
+
+.category-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Joke Section */
+.joke-section {
+    margin-top: 30px;
+}
+
+.category-display {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.category-display i {
+    color: #667eea;
+}
+
+.category-display strong {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.joke-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.quote-icon {
+    font-size: 2rem;
+    opacity: 0.3;
+    position: absolute;
+}
+
+.quote-icon.fa-quote-left {
+    top: 15px;
+    left: 20px;
+}
+
+.quote-icon.fa-quote-right {
+    bottom: 15px;
+    right: 20px;
+}
+
+.joke-text {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: center;
+    z-index: 1;
+    padding: 0 30px;
+}
+
+.new-joke-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+}
+
+.new-joke-btn i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.new-joke-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.5);
+}
+
+.new-joke-btn:hover i {
+    transform: rotate(360deg);
+}
+
+.new-joke-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Footer */
+.page-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #e0e0e0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.page-footer i {
+    color: #667eea;
+    margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .category-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .category-btn {
+        padding: 12px 8px;
+        font-size: 0.85rem;
+    }
+    
+    .joke-text {
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+    
+    .new-joke-btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .category-grid {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    }
+    
+    .joke-container {
+        padding: 30px 20px;
+        min-height: 160px;
+    }
+    
+    .joke-text {
+        font-size: 1rem;
+    }
 }

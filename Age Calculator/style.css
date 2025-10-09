@@ -1,75 +1,369 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:cursive;
+/* Enhanced Age Calculator - Modern Styling with Inter Font */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container{
-    display:flex;
-    width:600px;
-    margin:auto;
-    margin-top:10%;
-    margin-bottom:10%;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    background-color:darkslateblue;
-    box-shadow:8px 8px black;
-    color:white;
-    padding:5% 0%;
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    line-height: 1.6;
 }
 
-#currDate{
-    font-size:40px;
-    font-weight:bold;
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    animation: fadeInUp 0.6s ease-out;
 }
 
-input{
-    font-size:20px;
-    padding:15px;
-    margin:20px;
-    text-align:center;
-    border-radius:20px;
-    border:1px solid yellow;
-    cursor:pointer;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-button{
-    font-size:20px;
-    padding:10px 20px;
-    border-radius:10px;
-    border:none;
-    background-color:yellow;
-    color:black;
-    margin:20px;
-    text-transform: uppercase;
-    font-weight:bold;
-    cursor:pointer;
+/* Header Styles */
+.app-header {
+    text-align: center;
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #e0e0e0;
 }
 
-button:hover{
-    background-color:white;
-    color:blue;
+.header-icon {
+    font-size: 3.5rem;
+    color: #667eea;
+    margin-bottom: 15px;
+    animation: bounce 2s ease-in-out infinite;
 }
 
-#displayAge{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:620px;
-    height:480px;
-    background-color:rgb(228, 91, 91);
-    border-radius:30px;
-    position:absolute;
-    top:19%;
-    left:30%;
-    visibility: hidden;
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
-#age{
-    color:white;
-    font-size:50px;
-    margin:20px;
-    font-weight:bold;
+.app-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Current Date Section */
+.current-date-section {
+    margin-bottom: 30px;
+}
+
+.date-display {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.date-display i {
+    font-size: 2rem;
+    color: #667eea;
+}
+
+.current-date {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+/* Input Section */
+.input-section {
+    margin-bottom: 25px;
+}
+
+.input-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.input-label i {
+    color: #667eea;
+    font-size: 1.3rem;
+}
+
+.input-wrapper {
+    margin-bottom: 12px;
+}
+
+.date-input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 15px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+    background: white;
+    color: #333;
+    cursor: pointer;
+}
+
+.date-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.date-input:hover {
+    border-color: #667eea;
+}
+
+.input-hint {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 8px;
+}
+
+.input-hint i {
+    color: #667eea;
+}
+
+/* Action Section */
+.action-section {
+    margin-bottom: 30px;
+}
+
+.calculate-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    font-family: 'Inter', sans-serif;
+}
+
+.calculate-btn i {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+.calculate-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.5);
+}
+
+.calculate-btn:hover i {
+    transform: scale(1.2);
+}
+
+.calculate-btn:active {
+    transform: translateY(-1px);
+}
+
+.calculate-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Result Section */
+.result-section {
+    margin-top: 30px;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.result-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(0%, 0%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.result-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #4ade80;
+    position: relative;
+    z-index: 1;
+}
+
+.result-container h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.age-result {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.8;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+/* Footer */
+.app-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 2px solid #e0e0e0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.app-footer i {
+    color: #e74c3c;
+    margin-right: 5px;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 25px;
+    }
+    
+    .app-header h1 {
+        font-size: 2rem;
+    }
+    
+    .header-icon {
+        font-size: 2.5rem;
+    }
+    
+    .current-date {
+        font-size: 1.1rem;
+    }
+    
+    .calculate-btn {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+    
+    .result-container h2 {
+        font-size: 1.5rem;
+    }
+    
+    .age-result {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 20px;
+    }
+    
+    .app-header h1 {
+        font-size: 1.7rem;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .date-display {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .current-date {
+        font-size: 1rem;
+    }
 }

@@ -1,48 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chuck Norris</title>
+    <title>Chuck Norris Jokes Generator</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <body>
-        <h3>Chuck Norries</h3>
-        <div id="box1">
-            <button id="btn1"></button>
-            <button id="btn2"></button>
-            <button id="btn3"></button>
-            <button id="btn4"></button><br>
-            <button id="btn5"></button>
-            <button id="btn6"></button>
-            <button id="btn7"></button>
-            <button id="btn8"></button><br>
-            <button id="btn9"></button>
-            <button id="btn10"></button>
-            <button id="btn11"></button>
-            <button id="btn12"></button><br>
-            <button id="btn13"></button>
-            <button id="btn14"></button>
-            <button id="btn15"></button>
-            <button id="btn16"></button>
-        </div>
-
-
+    <div class="container">
+        <header>
+            <i class="fas fa-fist-raised header-icon"></i>
+            <h1>Chuck Norris Jokes</h1>
+            <p class="subtitle">Get ready to laugh with legendary Chuck Norris jokes!</p>
+        </header>
         
-        <p>Selected Category:</p>
-        <p id="text"></p>
-        <div id="box2">
-            <p id="joke"></p>
-            <script src="index.js"></script>
-        </div>
-        <p id="footer">New Joke</p>
-        <hr>
+        <main>
+            <section class="category-section">
+                <h2><i class="fas fa-list"></i> Select Category:</h2>
+                <div id="box1" class="category-grid">
+                    <button id="btn1" class="category-btn" aria-label="Animal jokes">
+                        <i class="fas fa-paw"></i>
+                        <span>Animal</span>
+                    </button>
+                    <button id="btn2" class="category-btn" aria-label="Career jokes">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Career</span>
+                    </button>
+                    <button id="btn3" class="category-btn" aria-label="Celebrity jokes">
+                        <i class="fas fa-star"></i>
+                        <span>Celebrity</span>
+                    </button>
+                    <button id="btn4" class="category-btn" aria-label="Dev jokes">
+                        <i class="fas fa-code"></i>
+                        <span>Dev</span>
+                    </button>
+                    
+                    <button id="btn5" class="category-btn" aria-label="Explicit jokes">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>Explicit</span>
+                    </button>
+                    <button id="btn6" class="category-btn" aria-label="Fashion jokes">
+                        <i class="fas fa-tshirt"></i>
+                        <span>Fashion</span>
+                    </button>
+                    <button id="btn7" class="category-btn" aria-label="Food jokes">
+                        <i class="fas fa-utensils"></i>
+                        <span>Food</span>
+                    </button>
+                    <button id="btn8" class="category-btn" aria-label="History jokes">
+                        <i class="fas fa-landmark"></i>
+                        <span>History</span>
+                    </button>
+                    
+                    <button id="btn9" class="category-btn" aria-label="Money jokes">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Money</span>
+                    </button>
+                    <button id="btn10" class="category-btn" aria-label="Movie jokes">
+                        <i class="fas fa-film"></i>
+                        <span>Movie</span>
+                    </button>
+                    <button id="btn11" class="category-btn" aria-label="Music jokes">
+                        <i class="fas fa-music"></i>
+                        <span>Music</span>
+                    </button>
+                    <button id="btn12" class="category-btn" aria-label="Political jokes">
+                        <i class="fas fa-flag-usa"></i>
+                        <span>Political</span>
+                    </button>
+                    
+                    <button id="btn13" class="category-btn" aria-label="Religion jokes">
+                        <i class="fas fa-praying-hands"></i>
+                        <span>Religion</span>
+                    </button>
+                    <button id="btn14" class="category-btn" aria-label="Science jokes">
+                        <i class="fas fa-flask"></i>
+                        <span>Science</span>
+                    </button>
+                    <button id="btn15" class="category-btn" aria-label="Sport jokes">
+                        <i class="fas fa-football-ball"></i>
+                        <span>Sport</span>
+                    </button>
+                    <button id="btn16" class="category-btn" aria-label="Travel jokes">
+                        <i class="fas fa-plane"></i>
+                        <span>Travel</span>
+                    </button>
+                </div>
+            </section>
+            
+            <section class="joke-section">
+                <div class="category-display">
+                    <i class="fas fa-tag"></i>
+                    <span>Selected Category: </span>
+                    <strong id="text">None</strong>
+                </div>
+                
+                <div id="box2" class="joke-container">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p id="joke" class="joke-text">Click a category button to get started!</p>
+                    <i class="fas fa-quote-right quote-icon"></i>
+                </div>
+                
+                <button id="footer" class="new-joke-btn" aria-label="Get new joke">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Get New Joke</span>
+                </button>
+            </section>
+        </main>
+        
+        <footer class="page-footer">
+            <p><i class="fas fa-info-circle"></i> Powered by Chuck Norris API</p>
+        </footer>
+    </div>
     
-    </body>
-
+    <script src="index.js"></script>
+</body>
 </html>

@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Quotes Generator</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Quotes Generator</title>
+
+  <!-- Google Fonts: Dancing Script (cursive) -->
+  <!-- Recommended link usage; preconnect hints improve performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome v6 (Free) via cdnjs -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>AI Quotes Generator</h1>
-    </header>
-    <div class="container">
-        <div id="quoteContainer">
-            <p id="quoteText"></p>
-        </div>
-        <button id="getQuoteBtn" style="background-color: 3498db;">Get Quote</button>
+  <header>
+    <h1>
+      <i class="fa-solid fa-robot" aria-hidden="true"></i>
+      AI Quotes Generator
+    </h1>
+  </header>
+
+  <main class="container">
+    <div id="quoteContainer" aria-live="polite" aria-busy="false">
+      <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+      <p id="quoteText">Press the button to get an inspirational quote.</p>
+      <i class="fa-solid fa-quote-right" aria-hidden="true"></i>
     </div>
-    <script src="script.js"></script>
+
+    <button id="getQuoteBtn" type="button" aria-label="Get a new quote">
+      <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+      Get Quote
+    </button>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

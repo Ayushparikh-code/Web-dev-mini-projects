@@ -1,58 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator - Create Secure Passwords</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Vanilla Tilt -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-    <title>Password Generator</title>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="card">
-        <div class="container">
-            <h2>Password Generator</h2>
-            <div class="result-container">
-                <span id="result"></span>
-                <button class="btn" id="clipboard">
-                    <i class="far fa-clipboard"></i>
+    <div class="card" data-tilt data-tilt-max="10" data-tilt-speed="400">
+        <header class="app-header">
+            <i class="fas fa-shield-alt header-icon"></i>
+            <h1>Password Generator</h1>
+            <p class="subtitle">Create strong and secure passwords instantly</p>
+        </header>
+        
+        <main class="container">
+            <section class="result-section">
+                <h2 class="section-title">
+                    <i class="fas fa-key"></i>
+                    Generated Password
+                </h2>
+                <div class="result-container">
+                    <span id="result" class="password-display" aria-label="Generated password">Click generate to create password</span>
+                    <button class="btn btn-copy" id="clipboard" aria-label="Copy password to clipboard" title="Copy to clipboard">
+                        <i class="far fa-copy"></i>
+                    </button>
+                </div>
+            </section>
+            
+            <section class="settings-section">
+                <h2 class="section-title">
+                    <i class="fas fa-sliders-h"></i>
+                    Settings
+                </h2>
+                <div class="settings">
+                    <div class="setting">
+                        <label for="length">
+                            <i class="fas fa-ruler"></i>
+                            Password Length
+                        </label>
+                        <input 
+                            type="number" 
+                            id="length" 
+                            min="4" 
+                            max="32" 
+                            value="16"
+                            aria-label="Password length"
+                        />
+                    </div>
+                    
+                    <div class="setting">
+                        <label for="uppercase">
+                            <i class="fas fa-font"></i>
+                            Include Uppercase Letters (A-Z)
+                        </label>
+                        <input 
+                            type="checkbox" 
+                            id="uppercase" 
+                            checked
+                            aria-label="Include uppercase letters"
+                        />
+                    </div>
+                    
+                    <div class="setting">
+                        <label for="lowercase">
+                            <i class="fas fa-font"></i>
+                            Include Lowercase Letters (a-z)
+                        </label>
+                        <input 
+                            type="checkbox" 
+                            id="lowercase" 
+                            checked
+                            aria-label="Include lowercase letters"
+                        />
+                    </div>
+                    
+                    <div class="setting">
+                        <label for="numbers">
+                            <i class="fas fa-hashtag"></i>
+                            Include Numbers (0-9)
+                        </label>
+                        <input 
+                            type="checkbox" 
+                            id="numbers" 
+                            checked
+                            aria-label="Include numbers"
+                        />
+                    </div>
+                    
+                    <div class="setting">
+                        <label for="symbols">
+                            <i class="fas fa-at"></i>
+                            Include Symbols (!@#$%^&*)
+                        </label>
+                        <input 
+                            type="checkbox" 
+                            id="symbols" 
+                            checked
+                            aria-label="Include symbols"
+                        />
+                    </div>
+                </div>
+            </section>
+            
+            <section class="action-section">
+                <button class="btn btn-generate" id="generate" aria-label="Generate new password">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Generate Password</span>
                 </button>
-            </div>
-            <div class="settings">
-                <div class="setting">
-                    <label>Password Length</label>
-                    <input type="number" id="length" min="4" max="20" value="20">
-                </div>
-                <div class="setting">
-                    <label>Include uppercase letters</label>
-                    <input type="checkbox" id="uppercase" checked>
-                </div>
-                <div class="setting">
-                    <label>Include lowercase letters</label>
-                    <input type="checkbox" id="lowercase" checked>
-                </div>
-                <div class="setting">
-                    <label>Include numbers</label>
-                    <input type="checkbox" id="numbers" checked>
-                </div>
-                <div class="setting">
-                    <label>Include symbols</label>
-                    <input type="checkbox" id="symbols" checked>
-                </div>
-            </div>
-        </div>
-        <button class="btn btn-large" id="generate">
-            Generate Password
-        </button>
-
+            </section>
+        </main>
+        
+        <footer class="app-footer">
+            <p>
+                <i class="fas fa-lock"></i>
+                Your passwords are generated locally and never stored
+            </p>
+        </footer>
     </div>
+    
     <script src="script.js"></script>
-
 </body>
-
 </html>
-

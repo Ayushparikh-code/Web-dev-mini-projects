@@ -1,84 +1,349 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+/* Enhanced Password Generator - Modern Styling with Roboto Font */
 
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #3b4498;
-  color: rgb(255, 255, 255);
-  font-family:  'Muli';
-  font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  padding: 10px;
-  margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
 }
 
-h2 {
-  margin: 10px 0 20px;
-  text-align: center;
-  font-weight: 1000;
+/* Card Container with 3D Tilt Effect */
+.card {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 100%;
+    max-width: 550px;
+    animation: fadeIn 0.6s ease-out;
+    transform-style: preserve-3d;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header Styles */
+.app-header {
+    text-align: center;
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.header-icon {
+    font-size: 3.5rem;
+    color: #667eea;
+    margin-bottom: 15px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.app-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Container */
 .container {
-  background-color: #7a4fac;
-  box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
-  padding: 20px;
-  width: 350px;
-  max-width: 100%;
+    width: 100%;
+}
+
+/* Section Titles */
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section-title i {
+    color: #667eea;
+    font-size: 1.4rem;
+}
+
+/* Result Section */
+.result-section {
+    margin-bottom: 30px;
 }
 
 .result-container {
-  background-color: rgba(0, 0, 0, 0.247);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 12px 10px;
-  height: 50px;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
 }
 
-.result-container #result {
-  word-wrap: break-word;
-  max-width: calc(100% - 40px);
+.result-container:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
 }
 
-.result-container .btn {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
+.password-display {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #333;
+    word-break: break-all;
+    flex: 1;
+    font-family: 'Courier New', monospace;
 }
 
+/* Buttons */
 .btn {
-  border: none;
-  background-color: #2c085c;
-  color: #fff;
-  font-size: 16px;
-  padding: 8px 12px;
-  cursor: pointer;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.btn-large {
-  display: block;
-  width: 100%;
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-copy {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-copy:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+.btn-generate {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-generate i {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-generate:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.5);
+}
+
+.btn-generate:hover i {
+    transform: rotate(360deg);
+}
+
+/* Settings Section */
+.settings-section {
+    margin-bottom: 25px;
+}
+
+.settings {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
 }
 
 .setting {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
+.setting:last-child {
+    border-bottom: none;
+}
+
+.setting label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    flex: 1;
+    cursor: pointer;
+}
+
+.setting label i {
+    color: #667eea;
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.setting input[type="number"] {
+    width: 70px;
+    padding: 8px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.setting input[type="number"]:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.setting input[type="checkbox"] {
+    width: 50px;
+    height: 25px;
+    position: relative;
+    appearance: none;
+    background: #ccc;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.setting input[type="checkbox"]:checked {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.setting input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.setting input[type="checkbox"]:checked::before {
+    left: 27px;
+}
+
+/* Action Section */
+.action-section {
+    margin-top: 25px;
+}
+
+/* Footer */
+.app-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 2px solid #e0e0e0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.app-footer i {
+    color: #667eea;
+    margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        padding: 30px 25px;
+    }
+    
+    .app-header h1 {
+        font-size: 2rem;
+    }
+    
+    .header-icon {
+        font-size: 2.5rem;
+    }
+    
+    .password-display {
+        font-size: 1.1rem;
+    }
+    
+    .btn-generate {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 25px 20px;
+    }
+    
+    .app-header h1 {
+        font-size: 1.7rem;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.1rem;
+    }
+    
+    .setting label {
+        font-size: 0.9rem;
+    }
+    
+    .password-display {
+        font-size: 1rem;
+    }
+}

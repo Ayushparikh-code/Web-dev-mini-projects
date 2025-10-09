@@ -4,20 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator - Calculate Your Age</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="style.css">
-    <title>Age Calculator</title>
 </head>
 <body>
     <div class="container">
-        <p id="currDate"> </p>
-        <p>Enter the DOB badri in format : (MM/DD/YYYY)</p>
-        <input type="text" placeholder="Enter your D.O.B" id="DOB">
-        <button id="CalcAge">Age</button>
+        <header class="app-header">
+            <i class="fas fa-birthday-cake header-icon"></i>
+            <h1>Age Calculator</h1>
+            <p class="subtitle">Calculate your exact age in years, months, and days</p>
+        </header>
+        
+        <main>
+            <section class="current-date-section">
+                <div class="date-display">
+                    <i class="fas fa-calendar-day"></i>
+                    <p id="currDate" class="current-date">Loading current date...</p>
+                </div>
+            </section>
+            
+            <section class="input-section">
+                <label for="DOB" class="input-label">
+                    <i class="fas fa-calendar-alt"></i>
+                    Enter Your Date of Birth
+                </label>
+                <div class="input-wrapper">
+                    <input 
+                        type="date" 
+                        id="DOB" 
+                        placeholder="Select your date of birth"
+                        aria-label="Date of birth input"
+                        class="date-input"
+                    />
+                </div>
+                <p class="input-hint">
+                    <i class="fas fa-info-circle"></i>
+                    Select your date of birth from the calendar
+                </p>
+            </section>
+            
+            <section class="action-section">
+                <button id="CalcAge" class="calculate-btn" aria-label="Calculate age">
+                    <i class="fas fa-calculator"></i>
+                    <span>Calculate Age</span>
+                </button>
+            </section>
+            
+            <section id="displayAge" class="result-section" style="display: none;">
+                <div class="result-container">
+                    <i class="fas fa-check-circle result-icon"></i>
+                    <h2>Your Age</h2>
+                    <p id="age" class="age-result"></p>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="app-footer">
+            <p>
+                <i class="fas fa-heart"></i>
+                Made with love to help you calculate your age
+            </p>
+        </footer>
     </div>
-  <div id="displayAge">
-      <p id="age"></p>
-  </div>
-    <script src="script.js">
-    </script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
