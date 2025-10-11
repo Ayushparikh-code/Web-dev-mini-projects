@@ -1,0 +1,96 @@
+body{
+    background-image: url("ribbonback.jpg");
+    background-size: 1800px;
+    background-color: rgb(248, 203, 229);
+    text-align: center;
+    background-blend-mode: lighten;
+    font-family: "Dreams Liem";
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 1;
+}
+.maintitle{
+    line-height: 10px;
+    margin-top: 100px;
+}
+#title{
+
+
+}
+#titletwo{
+    margin-top: 35px;
+
+}
+#subtitle{
+    opacity: 0.7;
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+
+}
+#calendercontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: 1000;
+
+}
+#calenderdiv{
+    background-color: aliceblue;
+    border-radius: 10px 10px 20px 20px;
+    margin: auto;
+    align-content: center;
+    margin-bottom: -1px;
+}
+#calenderHeading{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px 10px 0px 0px;
+    border: 2px solid black;
+    padding: 7px 50px;
+    font-size: 20px;
+    background-color: pink;
+    font-family: "Kulminoituva";
+}
+#habitTitle{
+    text-align: left;
+    padding-right: 90px;
+    font-size: larger;
+
+}
+#totaldays{
+    text-align: right;
+    margin-top: 45px;
+
+}
+#calenderContent{
+
+
+}
+#tracker{
+    padding: 20px;
+    border-width: 1px solid black;
+    font-family: "Uchiyama";
+}
+.days{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px;
+    border-width: 1;
+    opacity: 0.7;
+}
+.day{
+    width: 45px;
+     margin: 10px;
+     padding: 3px;
+     font-size: 15px;
+     font-weight: 100;
+     text-align: center;
+     border-radius: 10px;
+     /*border: 2px solid rgb(247, 247, 247);
+     background-color: pink;*/
+}
+#resetbutton{
+    margin: 50px;
+}
