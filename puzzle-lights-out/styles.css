@@ -1,0 +1,143 @@
+:root {
+    --background-color: #2c3e50;
+    --light-off-color: #34495e;
+    --light-on-color: #f1c40f;
+    --text-color: #ecf0f1;
+    --button-color: #3498db;
+    --button-hover-color: #2980b9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: rgba(44, 62, 80, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    background-color: var(--light-off-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.light.on {
+    background-color: var(--light-on-color);
+    box-shadow: 0 0 20px var(--light-on-color);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+#moves-counter {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: var(--background-color);
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    position: relative;
+}
+
+.close-btn {
+    color: var(--text-color);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.instructions-section {
+    margin-bottom: 20px;
+}
+
+.instructions-section h3 {
+    color: var(--light-on-color);
+    margin-bottom: 10px;
+}
+
+.instructions-section ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}

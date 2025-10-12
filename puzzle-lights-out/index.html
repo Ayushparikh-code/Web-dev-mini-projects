@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lights Out Puzzle</h1>
+        
+        <!-- Instructions Modal -->
+        <div id="instructions-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>How to Play Lights Out</h2>
+                <div class="instructions-section">
+                    <h3>Objective</h3>
+                    <p>Turn off all the lights on the grid!</p>
+                </div>
+                <div class="instructions-section">
+                    <h3>Game Rules</h3>
+                    <ul>
+                        <li>Clicking a light toggles that light and its adjacent lights (up, down, left, right).</li>
+                        <li>Your goal is to turn off all lights on the board.</li>
+                        <li>The fewer moves you use, the better!</li>
+                    </ul>
+                </div>
+                <div class="instructions-section">
+                    <h3>Tips</h3>
+                    <ul>
+                        <li>Each click changes multiple lights at once.</li>
+                        <li>Think strategically about which lights to click.</li>
+                        <li>There's always a solution - keep trying!</li>
+                    </ul>
+                </div>
+                <div class="instructions-section">
+                    <h3>Winning</h3>
+                    <p>When all lights are off, you win the game! A congratulations message will appear.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-header">
+            <button id="instructions-btn">How to Play</button>
+            <div id="moves-counter">Moves: 0</div>
+        </div>
+
+        <div id="game-board"></div>
+        <div class="controls">
+            <button id="reset-btn">Reset Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
