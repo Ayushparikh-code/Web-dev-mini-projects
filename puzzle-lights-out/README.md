@@ -9,8 +9,8 @@ Lights Out is an engaging puzzle game that challenges your strategic thinking. Y
 Turn off ALL lights on the game board in the fewest moves possible!
 
 ## 📷Screenshots
- ![Image 1](/assets/Lights-Out-Puzzle1.png "screenshot-1")
- ![Image 2](/assets/Lights-Out-Puzzle2.png "screenshot-2")
+ ![Image 1](/puzzle-lights-out/assets/Lights-Out-Puzzle1.png "screenshot-1")
+ ![Image 2](/puzzle-lights-out/assets/Lights-Out-Puzzle2.png "screenshot-2")
 
 ## 💻Tech Stack
 <br>
