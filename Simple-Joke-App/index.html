@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Joke App - Random Joke Generator</title>
+    <meta name="description" content="A beautiful random joke generator with glassmorphism UI design">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">😄 Simple Joke App</h1>
+            <p class="subtitle">Get ready to laugh with random jokes!</p>
+        </header>
+
+        <main class="joke-container">
+            <div class="joke-card" id="jokeCard">
+                <div class="joke-content" id="jokeContent">
+                    <div class="setup" id="setup">
+                        Click the button below to get a random joke!
+                    </div>
+                    <div class="punchline" id="punchline" style="display: none;">
+                        <!-- Punchline will appear here -->
+                    </div>
+                </div>
+                
+                <div class="loading" id="loading" style="display: none;">
+                    <div class="loading-spinner"></div>
+                    <p>Loading a joke for you...</p>
+                </div>
+            </div>
+
+            <button class="joke-btn" id="jokeBtn" aria-label="Get a new random joke">
+                <span class="btn-text">Get New Joke</span>
+                <span class="btn-icon">🎭</span>
+            </button>
+        </main>
+
+        <footer class="footer">
+            <p>Made with ❤️ using HTML, CSS & JavaScript</p>
+            <p class="offline-credit">✨ Works completely offline with 20 handpicked jokes!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
