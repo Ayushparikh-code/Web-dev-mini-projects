@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-palette"></i> Color Palette Generator</h1>
+            <p>Generate beautiful color palettes with one click!</p>
+        </header>
+
+        <div class="controls">
+            <button id="generateBtn" class="btn-generate">
+                <i class="fas fa-dice"></i> Generate New Palette
+            </button>
+            <button id="saveBtn" class="btn-save">
+                <i class="fas fa-heart"></i> Save Palette
+            </button>
+            <button id="clearBtn" class="btn-clear">
+                <i class="fas fa-trash"></i> Clear Saved
+            </button>
+        </div>
+
+        <div class="palette-container" id="paletteContainer">
+            <!-- Colors will be dynamically generated here -->
+        </div>
+
+        <div class="palette-info">
+            <h3>How to use:</h3>
+            <ul>
+                <li>Click "Generate New Palette" to create random colors</li>
+                <li>Click on any color to copy its hex code</li>
+                <li>Lock colors by clicking the lock icon to keep them in next generation</li>
+                <li>Save your favorite palettes for later use</li>
+            </ul>
+        </div>
+
+        <div class="saved-palettes" id="savedPalettes">
+            <h3>Saved Palettes</h3>
+            <div id="savedPalettesList" class="saved-list">
+                <!-- Saved palettes will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with <i class="fas fa-heart"></i> by Web Dev Mini Projects</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
