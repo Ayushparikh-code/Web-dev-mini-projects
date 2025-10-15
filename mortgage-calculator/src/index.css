@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    appearance: none;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.radio-label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.radio-label::before{
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border: 2px solid #4E6E7E;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: white;
+}
+
+input[type="radio"]:checked + .radio-label::before{
+    background-color: white;
+    border: 2px solid #D8DB2F;
+}
+
+input[type="radio"]:checked + .radio-label::after{
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #D8DB2F;
+    transform: translateY(-50%);
+}
