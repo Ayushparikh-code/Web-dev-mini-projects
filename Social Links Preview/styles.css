@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+p {
+    font-size: 1rem;
+}
+
+body {
+    background: hsl(0, 0%, 21%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+   background-color: hsl(0, 0%, 8%);
+   max-width: 90rem; /* 1440px */
+  height: auto;
+   align-items: center;
+   justify-content: center;
+    padding: 2.5rem; /* 40px */
+    border-radius: 0.9375rem;
+}
+
+
+
+.employer-image {
+ width: 6.25rem; /* 100px */
+  height: 6.25rem; /* 100px */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.employer-name {
+    font-size: 1.75rem;
+    color: white;
+    font-family: 'Inter', 'Arial', sans-serif;
+    margin-bottom: 0.4375rem;
+}
+
+.employer-location {
+    color: hsl(75, 94%, 57%);
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.875rem; /* 30px */
+}
+
+
+.employer-occupation {
+    color: white;
+    font-family: 'Inter', 'Arial', sans-serif;
+    margin-bottom: 1.6875rem; /* 27px */
+}
+
+.container a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Inter', 'Arial', sans-serif;
+    margin-bottom: 1.125rem; /* 18px */
+    background-color: hsl(0, 1%, 21%);
+    color: white;
+     padding: 0.875rem 1.25rem; /* 14px 20px */
+     font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+   border-radius: 0.3125rem; /* 5px */
+   transition: all 0.3s ease-in;
+}
+
+.container a:hover {
+    background-color: hsl(75, 94%, 57%);
+    color:  hsl(0, 1%, 21%);
+}
