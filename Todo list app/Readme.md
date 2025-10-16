@@ -2,7 +2,7 @@
 
 A modern, feature-rich Todo List application with a sleek black theme, built with HTML, CSS, and JavaScript. This app uses localStorage to persist tasks between sessions and is perfect for Hacktoberfest contributions.
 
-![Todo App Preview](img/screenshot.png)
+![Todo App Preview](img/improveUIandUx.png)
 
 ## Features
 
@@ -66,7 +66,7 @@ A modern, feature-rich Todo List application with a sleek black theme, built wit
 
 ## Screenshots
 
-![Todo App Screenshot](img/screenshot.png)
+![Todo App Screenshot](img/improveUIandUx.png)
 
 ## Contributing to Hacktoberfest
 
@@ -151,7 +151,7 @@ todo-list-app/
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available .
 
 ## Author
 
