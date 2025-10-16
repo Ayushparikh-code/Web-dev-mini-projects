@@ -3,30 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Professional Black Todo App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header><h1>Todo App</h1></header>
-        <div class="inputField">
-            <input type="text" name="" placeholder="Add your new todo" id="">
-            <button>Add</button>
-        </div>
-        <ul class="todoList">
-            
-            
-            
-        </ul>
-        <div class="footer">
-            <span>You have <span class="pendingNumber"></span> tasks </span>
-            <button>Clear All</button>
+    <div class="container">
+        <div class="wrapper">
+            <header>
+                <h1><i class="fas fa-tasks"></i> Todo App</h1>
+                <p>Organize your tasks efficiently</p>
+            </header>
+            <div class="inputField">
+                <input type="text" placeholder="Add a new task..." id="taskInput">
+                <button id="addTaskBtn"><i class="fas fa-plus"></i> Add</button>
+            </div>
+            <div class="task-options">
+                <div class="priority-selector">
+                    <label>Priority:</label>
+                    <select id="prioritySelect">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div class="due-date-selector">
+                    <label>Due Date:</label>
+                    <input type="date" id="dueDateInput">
+                </div>
+            </div>
+            <div class="controls">
+                <div class="filters">
+                    <span class="filter active" data-filter="all">All</span>
+                    <span class="filter" data-filter="active">Active</span>
+                    <span class="filter" data-filter="completed">Completed</span>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search tasks..." id="searchInput">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <ul class="todoList" id="todoList">
+                <!-- Tasks will be added here dynamically -->
+            </ul>
+            <div class="footer">
+                <div class="stats">
+                    <span>Total: <span class="totalTasks">0</span></span>
+                    <span>Completed: <span class="completedTasks">0</span></span>
+                    <span>Pending: <span class="pendingNumber">0</span></span>
+                </div>
+                <div class="actions">
+                    <button id="exportBtn" title="Export tasks"><i class="fas fa-file-export"></i> Export</button>
+                    <button id="clearAllBtn" title="Clear all tasks"><i class="fas fa-trash-alt"></i> Clear All</button>
+                </div>
+            </div>
+            <div class="import-section">
+                <input type="file" id="importInput" accept=".json" style="display: none;">
+                <button id="importBtn"><i class="fas fa-file-import"></i> Import Tasks</button>
+            </div>
         </div>
     </div>
 
-
+    <!-- Task Edit Modal -->
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Task</h2>
+            <form id="editTaskForm">
+                <div class="form-group">
+                    <label for="editTaskInput">Task:</label>
+                    <input type="text" id="editTaskInput" required>
+                </div>
+                <div class="form-group">
+                    <label for="editPrioritySelect">Priority:</label>
+                    <select id="editPrioritySelect">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="editDueDateInput">Due Date:</label>
+                    <input type="date" id="editDueDateInput">
+                </div>
+                <button type="submit">Update Task</button>
+            </form>
+        </div>
+    </div>
 
     <script src="app.js"></script>
+    <script>
+        // Additional event listeners for new functionality
+        document.getElementById('exportBtn').addEventListener('click', exportTasks);
+        document.getElementById('importBtn').addEventListener('click', () => {
+            document.getElementById('importInput').click();
+        });
+        document.getElementById('importInput').addEventListener('change', importTasks);
+    </script>
 </body>
 </html>
