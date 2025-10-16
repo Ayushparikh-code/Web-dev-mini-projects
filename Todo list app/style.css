@@ -93,7 +93,7 @@ body{
     font-weight: bold;
     transition: background 0.3s;
     opacity: 0.6;
-    pointer-events: none;
+    /* pointer-events: none; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,7 +101,7 @@ body{
 
 .inputField button.active{
     opacity: 1;
-    pointer-events: auto;
+    /* pointer-events: auto; */
 }
 
 .inputField button:hover.active{
@@ -205,6 +205,7 @@ body{
     padding-right: 5px;
 }
 
+/* Webkit scrollbar styles */
 .todoList::-webkit-scrollbar {
     width: 6px;
 }
@@ -216,6 +217,12 @@ body{
 .todoList::-webkit-scrollbar-thumb {
     background: #444;
     border-radius: 3px;
+}
+
+/* Firefox scrollbar styles */
+.todoList {
+    scrollbar-width: thin;
+    scrollbar-color: #444 #2a2a2a;
 }
 
 .todoList li{
@@ -233,6 +240,7 @@ body{
     transition: all 0.3s;
     border: 1px solid #333;
     color: #fff;
+    animation: fadeIn 0.3s ease-out;
 }
 
 .todoList li:hover {
@@ -257,6 +265,7 @@ body{
     padding-right: 10px;
     word-break: break-word;
     margin-bottom: 5px;
+    overflow-wrap: break-word;
 }
 
 .task-meta {
@@ -561,8 +570,4 @@ body{
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
-}
-
-.todoList li {
-    animation: fadeIn 0.3s ease-out;
 }
