@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIPHER//DECODE - Interactive Puzzle Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            color: #00ff41;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated background grid */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridScroll 20s linear infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes gridScroll {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid #00ff41;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 255, 65, 0.3);
+            animation: headerGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes headerGlow {
+            from { box-shadow: 0 0 30px rgba(0, 255, 65, 0.3); }
+            to { box-shadow: 0 0 50px rgba(0, 255, 65, 0.6); }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+        }
+
+        .subtitle {
+            color: #0dcdff;
+            font-size: 1em;
+            letter-spacing: 2px;
+        }
+
+        .game-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            gap: 15px;
+        }
+
+        .info-box {
+            flex: 1;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border: 1px solid #00ff41;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .info-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 255, 65, 0.4);
+        }
+
+        .info-label {
+            font-size: 0.9em;
+            color: #0dcdff;
+            margin-bottom: 5px;
+        }
+
+        .info-value {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .encrypted-message {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border: 2px solid #ff0080;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 30px rgba(255, 0, 128, 0.3);
+        }
+
+        .message-label {
+            color: #ff0080;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .encrypted-text {
+            font-size: 1.3em;
+            line-height: 1.8;
+            letter-spacing: 3px;
+            color: #fff;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+
+        .cipher-workspace {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border: 2px solid #00ff41;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .alphabet-grid {
+            display: grid;
+            grid-template-columns: repeat(13, 1fr);
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .letter-pair {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .cipher-letter, .plain-letter {
+            width: 100%;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .cipher-letter {
+            background: rgba(255, 0, 128, 0.3);
+            border: 2px solid #ff0080;
+            color: #ff0080;
+        }
+
+        .plain-letter {
+            background: rgba(0, 255, 65, 0.2);
+            border: 2px solid #00ff41;
+            color: #00ff41;
+            cursor: pointer;
+        }
+
+        .plain-letter:hover {
+            background: rgba(0, 255, 65, 0.4);
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.6);
+        }
+
+        .plain-letter.selected {
+            background: rgba(0, 255, 65, 0.6);
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.8);
+        }
+
+        .decrypted-preview {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border: 2px solid #0dcdff;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .preview-label {
+            color: #0dcdff;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .preview-text {
+            font-size: 1.2em;
+            line-height: 1.8;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        .preview-text .decoded {
+            color: #00ff41;
+            text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+        }
+
+        .preview-text .encoded {
+            color: #666;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            border: 2px solid;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .btn-check {
+            background: rgba(0, 255, 65, 0.2);
+            color: #00ff41;
+            border-color: #00ff41;
+        }
+
+        .btn-check:hover {
+            background: #00ff41;
+            color: #000;
+            box-shadow: 0 0 30px rgba(0, 255, 65, 0.8);
+            transform: translateY(-2px);
+        }
+
+        .btn-hint {
+            background: rgba(13, 205, 255, 0.2);
+            color: #0dcdff;
+            border-color: #0dcdff;
+        }
+
+        .btn-hint:hover {
+            background: #0dcdff;
+            color: #000;
+            box-shadow: 0 0 30px rgba(13, 205, 255, 0.8);
+            transform: translateY(-2px);
+        }
+
+        .btn-new {
+            background: rgba(255, 0, 128, 0.2);
+            color: #ff0080;
+            border-color: #ff0080;
+        }
+
+        .btn-new:hover {
+            background: #ff0080;
+            color: #fff;
+            box-shadow: 0 0 30px rgba(255, 0, 128, 0.8);
+            transform: translateY(-2px);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 40px;
+            border: 3px solid #00ff41;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 500px;
+            animation: modalAppear 0.5s ease;
+            box-shadow: 0 0 50px rgba(0, 255, 65, 0.6);
+        }
+
+        @keyframes modalAppear {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .modal h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #00ff41;
+        }
+
+        .modal p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #0dcdff;
+        }
+
+        .hint-box {
+            background: rgba(255, 0, 128, 0.2);
+            border: 2px solid #ff0080;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .hint-title {
+            color: #ff0080;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .hint-text {
+            color: #fff;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            .alphabet-grid { grid-template-columns: repeat(7, 1fr); gap: 5px; }
+            .controls { flex-direction: column; }
+            button { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CIPHER//DECODE</h1>
+            <p class="subtitle">[ SUBSTITUTION CIPHER CHALLENGE ]</p>
+        </header>
+
+        <div class="game-info">
+            <div class="info-box">
+                <div class="info-label">LEVEL</div>
+                <div class="info-value" id="level">1</div>
+            </div>
+            <div class="info-box">
+                <div class="info-label">SCORE</div>
+                <div class="info-value" id="score">0</div>
+            </div>
+            <div class="info-box">
+                <div class="info-label">HINTS LEFT</div>
+                <div class="info-value" id="hints">3</div>
+            </div>
+        </div>
+
+        <div class="encrypted-message">
+            <div class="message-label">/// ENCRYPTED MESSAGE ///</div>
+            <div class="encrypted-text" id="encryptedMessage"></div>
+        </div>
+
+        <div class="cipher-workspace">
+            <div class="alphabet-grid" id="alphabetGrid"></div>
+            
+            <div class="decrypted-preview">
+                <div class="preview-label">/// YOUR DECRYPTION ///</div>
+                <div class="preview-text" id="decryptedPreview"></div>
+            </div>
+        </div>
+
+        <div class="hint-box" id="hintBox" style="display: none;">
+            <div class="hint-title">[ HINT REVEALED ]</div>
+            <div class="hint-text" id="hintText"></div>
+        </div>
+
+        <div class="controls">
+            <button class="btn-check" onclick="checkSolution()">Check Solution</button>
+            <button class="btn-hint" onclick="getHint()">Get Hint</button>
+            <button class="btn-new" onclick="newPuzzle()">New Puzzle</button>
+        </div>
+    </div>
+
+    <div class="modal" id="resultModal">
+        <div class="modal-content">
+            <h2 id="modalTitle"></h2>
+            <p id="modalMessage"></p>
+            <button class="btn-new" onclick="closeModal()">Continue</button>
+        </div>
+    </div>
+
+    <script>
+        // Game state
+        let gameState = {
+            level: 1,
+            score: 0,
+            hintsLeft: 3,
+            currentMessage: '',
+            correctMapping: {},
+            userMapping: {},
+            encryptedMessage: '',
+            selectedCipherLetter: null
+        };
+
+        // Messages by difficulty
+        const messages = [
+            "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG",
+            "CRYPTOGRAPHY IS THE ART OF SECRET WRITING",
+            "BREAKING CODES REQUIRES PATTERN RECOGNITION",
+            "FREQUENCY ANALYSIS CAN REVEAL HIDDEN MESSAGES",
+            "EVERY CIPHER HAS A WEAKNESS WAITING TO BE FOUND",
+            "SUBSTITUTION CIPHERS REPLACE LETTERS WITH OTHER LETTERS",
+            "THE BEST CRYPTOGRAPHERS THINK LIKE THEIR ADVERSARIES"
+        ];
+
+        // Initialize game
+        function initGame() {
+            createAlphabetGrid();
+            newPuzzle();
+        }
+
+        function createAlphabetGrid() {
+            const grid = document.getElementById('alphabetGrid');
+            const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            
+            alphabet.split('').forEach(letter => {
+                const pair = document.createElement('div');
+                pair.className = 'letter-pair';
+                
+                const cipherLetter = document.createElement('div');
+                cipherLetter.className = 'cipher-letter';
+                cipherLetter.textContent = letter;
+                cipherLetter.dataset.letter = letter;
+                cipherLetter.onclick = () => selectCipherLetter(letter);
+                
+                const plainLetter = document.createElement('div');
+                plainLetter.className = 'plain-letter';
+                plainLetter.textContent = '?';
+                plainLetter.dataset.cipher = letter;
+                plainLetter.onclick = () => assignPlainLetter(letter);
+                
+                pair.appendChild(cipherLetter);
+                pair.appendChild(plainLetter);
+                grid.appendChild(pair);
+            });
+        }
+
+        function newPuzzle() {
+            // Select random message
+            const messageIndex = Math.min(gameState.level - 1, messages.length - 1);
+            gameState.currentMessage = messages[messageIndex];
+            
+            // Generate substitution cipher
+            const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            const shuffled = shuffle(alphabet.split('')).join('');
+            
+            gameState.correctMapping = {};
+            for (let i = 0; i < alphabet.length; i++) {
+                gameState.correctMapping[shuffled[i]] = alphabet[i];
+            }
+            
+            // Encrypt message
+            gameState.encryptedMessage = gameState.currentMessage
+                .split('')
+                .map(char => {
+                    if (char.match(/[A-Z]/)) {
+                        return Object.keys(gameState.correctMapping).find(
+                            key => gameState.correctMapping[key] === char
+                        );
+                    }
+                    return char;
+                })
+                .join('');
+            
+            // Reset user mapping
+            gameState.userMapping = {};
+            gameState.selectedCipherLetter = null;
+            
+            // Update UI
+            document.getElementById('encryptedMessage').textContent = gameState.encryptedMessage;
+            updateDecryptedPreview();
+            resetGrid();
+            document.getElementById('hintBox').style.display = 'none';
+        }
+
+        function shuffle(array) {
+            const arr = [...array];
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        function selectCipherLetter(letter) {
+            // Deselect previous
+            document.querySelectorAll('.cipher-letter').forEach(el => {
+                el.style.background = 'rgba(255, 0, 128, 0.3)';
+            });
+            
+            // Select new
+            gameState.selectedCipherLetter = letter;
+            const selected = document.querySelector(`[data-letter="${letter}"]`);
+            selected.style.background = 'rgba(255, 0, 128, 0.6)';
+        }
+
+        function assignPlainLetter(cipherLetter) {
+            if (!gameState.selectedCipherLetter) {
+                return;
+            }
+            
+            const plainLetter = gameState.selectedCipherLetter;
+            
+            // Remove previous mapping if exists
+            Object.keys(gameState.userMapping).forEach(key => {
+                if (gameState.userMapping[key] === plainLetter) {
+                    delete gameState.userMapping[key];
+                }
+            });
+            
+            gameState.userMapping[cipherLetter] = plainLetter;
+            
+            // Update grid
+            const cell = document.querySelector(`[data-cipher="${cipherLetter}"]`);
+            cell.textContent = plainLetter;
+            
+            updateDecryptedPreview();
+            
+            // Deselect
+            gameState.selectedCipherLetter = null;
+            document.querySelectorAll('.cipher-letter').forEach(el => {
+                el.style.background = 'rgba(255, 0, 128, 0.3)';
+            });
+        }
+
+        function updateDecryptedPreview() {
+            const preview = document.getElementById('decryptedPreview');
+            let html = '';
+            
+            gameState.encryptedMessage.split('').forEach(char => {
+                if (char.match(/[A-Z]/)) {
+                    const decoded = gameState.userMapping[char];
+                    if (decoded) {
+                        html += `<span class="decoded">${decoded}</span>`;
+                    } else {
+                        html += `<span class="encoded">${char}</span>`;
+                    }
+                } else {
+                    html += char;
+                }
+            });
+            
+            preview.innerHTML = html;
+        }
+
+        function resetGrid() {
+            document.querySelectorAll('.plain-letter').forEach(cell => {
+                cell.textContent = '?';
+            });
+        }
+
+        function checkSolution() {
+            let correct = true;
+            
+            for (let cipher in gameState.correctMapping) {
+                if (gameState.userMapping[cipher] !== gameState.correctMapping[cipher]) {
+                    correct = false;
+                    break;
+                }
+            }
+            
+            if (correct) {
+                gameState.score += gameState.level * 100;
+                gameState.level++;
+                gameState.hintsLeft = 3;
+                
+                document.getElementById('score').textContent = gameState.score;
+                document.getElementById('level').textContent = gameState.level;
+                document.getElementById('hints').textContent = gameState.hintsLeft;
+                
+                showModal('DECRYPTED!', `Level ${gameState.level - 1} complete! +${(gameState.level - 1) * 100} points`);
+                
+                setTimeout(() => {
+                    closeModal();
+                    newPuzzle();
+                }, 2000);
+            } else {
+                showModal('ACCESS DENIED', 'Some letters are incorrect. Keep trying!');
+            }
+        }
+
+        function getHint() {
+            if (gameState.hintsLeft <= 0) {
+                showModal('NO HINTS LEFT', 'Solve the puzzle without hints for bonus points!');
+                return;
+            }
+            
+            // Find an unmapped or incorrectly mapped letter
+            const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            let hintLetter = null;
+            
+            for (let cipher of alphabet) {
+                if (!gameState.userMapping[cipher] || 
+                    gameState.userMapping[cipher] !== gameState.correctMapping[cipher]) {
+                    hintLetter = cipher;
+                    break;
+                }
+            }
+            
+            if (hintLetter) {
+                gameState.userMapping[hintLetter] = gameState.correctMapping[hintLetter];
+                const cell = document.querySelector(`[data-cipher="${hintLetter}"]`);
+                cell.textContent = gameState.correctMapping[hintLetter];
+                cell.style.background = 'rgba(13, 205, 255, 0.4)';
+                
+                gameState.hintsLeft--;
+                document.getElementById('hints').textContent = gameState.hintsLeft;
+                
+                updateDecryptedPreview();
+                
+                // Show hint message
+                const hintBox = document.getElementById('hintBox');
+                const hintText = document.getElementById('hintText');
+                hintText.textContent = `${hintLetter} = ${gameState.correctMapping[hintLetter]}`;
+                hintBox.style.display = 'block';
+            }
+        }
+
+        function showModal(title, message) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalMessage').textContent = message;
+            document.getElementById('resultModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('resultModal').classList.remove('active');
+        }
+
+        // Initialize on load
+        initGame();
+    </script>
+</body>
+</html>
