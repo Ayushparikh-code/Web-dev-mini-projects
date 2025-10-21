@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Palette - AI Color Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%);
+            min-height: 100vh;
+            padding: 30px 20px;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeInDown 0.6s ease;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3.5em;
+            font-weight: 800;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #fff, #a78bfa, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -2px;
+        }
+
+        .tagline {
+            font-size: 1.3em;
+            opacity: 0.9;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .control-panel {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            animation: slideInLeft 0.6s ease;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .mood-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .mood-btn {
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            color: #fff;
+            font-size: 1.05em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mood-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.1));
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .mood-btn:hover::before {
+            transform: translateX(0);
+        }
+
+        .mood-btn:hover {
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .mood-btn.active {
+            background: linear-gradient(135deg, #a78bfa, #ec4899);
+            border-color: #fff;
+            box-shadow: 0 8px 30px rgba(236, 72, 153, 0.5);
+        }
+
+        .harmony-selector {
+            margin-bottom: 30px;
+        }
+
+        .harmony-options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .harmony-option {
+            padding: 14px 18px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 2px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .harmony-option:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .harmony-option.active {
+            background: rgba(167, 139, 250, 0.3);
+            border-color: #a78bfa;
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        button {
+            padding: 16px 24px;
+            font-size: 1.05em;
+            font-weight: 700;
+            border: none;
+            border-radius: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        button:active::after {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-generate {
+            background: linear-gradient(135deg, #ec4899, #f43f5e);
+            color: #fff;
+            box-shadow: 0 6px 25px rgba(236, 72, 153, 0.4);
+        }
+
+        .btn-generate:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 35px rgba(236, 72, 153, 0.6);
+        }
+
+        .btn-export {
+            background: linear-gradient(135deg, #8b5cf6, #6366f1);
+            color: #fff;
+            box-shadow: 0 6px 25px rgba(139, 92, 246, 0.4);
+        }
+
+        .btn-export:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 35px rgba(139, 92, 246, 0.6);
+        }
+
+        .btn-copy {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #fff;
+            box-shadow: 0 6px 25px rgba(16, 185, 129, 0.4);
+        }
+
+        .btn-copy:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 35px rgba(16, 185, 129, 0.6);
+        }
+
+        .preview-area {
+            animation: slideInRight 0.6s ease;
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .palette-display {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 24px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .color-swatches {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .color-swatch {
+            flex: 1;
+            height: 180px;
+            border-radius: 18px;
+            cursor: move;
+            position: relative;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .color-swatch:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .color-swatch.dragging {
+            opacity: 0.5;
+            transform: scale(0.95);
+        }
+
+        .color-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            color: #fff;
+            font-size: 0.9em;
+            font-weight: 600;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .color-swatch:hover .color-info {
+            opacity: 1;
+        }
+
+        .color-details {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .color-detail-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .color-detail-card:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-4px);
+        }
+
+        .color-code {
+            font-size: 1em;
+            font-weight: 700;
+            font-family: 'Courier New', monospace;
+            margin-bottom: 8px;
+            cursor: pointer;
+            padding: 8px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .color-code:hover {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .color-label {
+            font-size: 0.85em;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .preview-mockups {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .mockup {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s ease;
+        }
+
+        .mockup:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .mockup-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .website-mockup {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s ease;
+        }
+
+        .mockup-header {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+            gap: 15px;
+        }
+
+        .mockup-nav {
+            display: flex;
+            gap: 20px;
+            margin-left: auto;
+        }
+
+        .nav-item {
+            height: 8px;
+            width: 50px;
+            border-radius: 4px;
+            opacity: 0.6;
+        }
+
+        .mockup-hero {
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 30px;
+        }
+
+        .hero-title {
+            width: 70%;
+            height: 20px;
+            border-radius: 10px;
+        }
+
+        .hero-subtitle {
+            width: 50%;
+            height: 12px;
+            border-radius: 6px;
+            opacity: 0.7;
+        }
+
+        .hero-button {
+            width: 120px;
+            height: 40px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        .mockup-content {
+            padding: 25px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .content-card {
+            height: 100px;
+            border-radius: 12px;
+            opacity: 0.3;
+        }
+
+        .phone-mockup {
+            width: 200px;
+            height: 400px;
+            background: #1f2937;
+            border-radius: 30px;
+            padding: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .phone-statusbar {
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            font-size: 0.7em;
+        }
+
+        .phone-header {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        .phone-content {
+            flex: 1;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .phone-item {
+            height: 60px;
+            border-radius: 12px;
+            opacity: 0.8;
+        }
+
+        .history-panel {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.8s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .history-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .history-item {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            padding: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .history-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .history-colors {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+            height: 60px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .history-color {
+            flex: 1;
+        }
+
+        .history-label {
+            font-size: 0.9em;
+            opacity: 0.8;
+            text-align: center;
+        }
+
+        .notification {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            padding: 20px 30px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(16, 185, 129, 0.5);
+            font-weight: 600;
+            transform: translateX(400px);
+            transition: transform 0.4s ease;
+            z-index: 1000;
+        }
+
+        .notification.show {
+            transform: translateX(0);
+        }
+
+        @media (max-width: 1200px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+            
+            .preview-mockups {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            .mood-grid { grid-template-columns: 1fr; }
+            .color-swatches { flex-direction: column; }
+            .color-swatch { height: 100px; }
+            .color-details { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Mood Palette</h1>
+            <p class="tagline">Generate stunning color palettes based on emotions & design theory</p>
+        </header>
+
+        <div class="main-layout">
+            <!-- Control Panel -->
+            <div class="control-panel">
+                <div class="section-title">
+                    <span>😊</span> Select Mood
+                </div>
+                <div class="mood-grid" id="moodGrid">
+                    <button class="mood-btn active" data-mood="calm">🌊 Calm</button>
+                    <button class="mood-btn" data-mood="energetic">⚡ Energetic</button>
+                    <button class="mood-btn" data-mood="romantic">💕 Romantic</button>
+                    <button class="mood-btn" data-mood="professional">💼 Professional</button>
+                    <button class="mood-btn" data-mood="playful">🎈 Playful</button>
+                    <button class="mood-btn" data-mood="elegant">✨ Elegant</button>
+                    <button class="mood-btn" data-mood="earthy">🌿 Earthy</button>
+                    <button class="mood-btn" data-mood="mysterious">🌙 Mysterious</button>
+                </div>
+
+                <div class="harmony-selector">
+                    <div class="section-title">
+                        <span>🎭</span> Color Harmony
+                    </div>
+                    <div class="harmony-options">
+                        <div class="harmony-option active" data-harmony="analogous">
+                            <span>Analogous</span>
+                            <span style="opacity: 0.6;">Adjacent colors</span>
+                        </div>
+                        <div class="harmony-option" data-harmony="complementary">
+                            <span>Complementary</span>
+                            <span style="opacity: 0.6;">Opposite colors</span>
+                        </div>
+                        <div class="harmony-option" data-harmony="triadic">
+                            <span>Triadic</span>
+                            <span style="opacity: 0.6;">120° apart</span>
+                        </div>
+                        <div class="harmony-option" data-harmony="monochromatic">
+                            <span>Monochromatic</span>
+                            <span style="opacity: 0.6;">Single hue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn-generate" onclick="generatePalette()">
+                        ✨ Generate Palette
+                    </button>
+                    <button class="btn-copy" onclick="copyToClipboard()">
+                        📋 Copy CSS Variables
+                    </button>
+                    <button class="btn-export" onclick="exportPalette()">
+                        💾 Export JSON
+                    </button>
+                </div>
+            </div>
+
+            <!-- Preview Area -->
+            <div class="preview-area">
+                <div class="palette-display">
+                    <div class="section-title">
+                        <span>🎨</span> Your Palette
+                    </div>
+                    <div class="color-swatches" id="colorSwatches">
+                        <!-- Dynamically generated -->
+                    </div>
+                    <div class="color-details" id="colorDetails">
+                        <!-- Dynamically generated -->
+                    </div>
+                </div>
+
+                <div class="preview-mockups">
+                    <div class="mockup">
+                        <div class="mockup-title">🌐 Website Preview</div>
+                        <div class="website-mockup" id="websiteMockup">
+                            <div class="mockup-header" id="mockupHeader">
+                                <div style="width: 30px; height: 30px; border-radius: 50%;"></div>
+                                <div class="mockup-nav">
+                                    <div class="nav-item"></div>
+                                    <div class="nav-item"></div>
+                                    <div class="nav-item"></div>
+                                </div>
+                            </div>
+                            <div class="mockup-hero" id="mockupHero">
+                                <div class="hero-title"></div>
+                                <div class="hero-subtitle"></div>
+                                <div class="hero-button"></div>
+                            </div>
+                            <div class="mockup-content" id="mockupContent">
+                                <div class="content-card"></div>
+                                <div class="content-card"></div>
+                                <div class="content-card"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mockup">
+                        <div class="mockup-title">📱 Mobile App Preview</div>
+                        <div class="phone-mockup">
+                            <div class="phone-screen" id="phoneScreen">
+                                <div class="phone-statusbar" id="phoneStatusbar">
+                                    <span>9:41</span>
+                                    <span>●●●●</span>
+                                </div>
+                                <div class="phone-header" id="phoneHeader">
+                                    App Name
+                                </div>
+                                <div class="phone-content" id="phoneContent">
+                                    <div class="phone-item"></div>
+                                    <div class="phone-item"></div>
+                                    <div class="phone-item"></div>
+                                    <div class="phone-item"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="history-panel">
+            <div class="section-title">
+                <span>📚</span> Recent Palettes
+            </div>
+            <div class="history-grid" id="historyGrid">
+                <!-- Dynamically generated -->
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    <script>
+        // Game State
+        const state = {
+            selectedMood: 'calm',
+            selectedHarmony: 'analogous',
+            currentPalette: [],
+            history: [],
+            draggedIndex: null
+        };
+
+        // Mood to base hue mapping
+        const moodHues = {
+            calm: 200,        // Blue
+            energetic: 15,    // Orange-Red
+            romantic: 330,    // Pink
+            professional: 220, // Deep Blue
+            playful: 290,     // Purple
+            elegant: 270,     // Violet
+            earthy: 25,       // Brown/Orange
+            mysterious: 260   // Deep Purple
+        };
+
+        // Initialize
+        function init() {
+            setupEventListeners();
+            generatePalette();
+        }
+
+        function setupEventListeners() {
+            // Mood selection
+            document.querySelectorAll('.mood-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.mood-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    state.selectedMood = btn.dataset.mood;
+                    generatePalette();
+                });
+            });
+
+            // Harmony selection
+            document.querySelectorAll('.harmony-option').forEach(option => {
+                option.addEventListener('click', () => {
+                    document.querySelectorAll('.harmony-option').forEach(o => o.classList.remove('active'));
+                    option.classList.add('active');
+                    state.selectedHarmony = option.dataset.harmony;
+                    generatePalette();
+                });
+            });
+        }
+
+        function generatePalette() {
+            const baseHue = moodHues[state.selectedMood];
+            const harmony = state.selectedHarmony;
+            
+            let palette = [];
+            
+            switch(harmony) {
+                case 'analogous':
+                    palette = generateAnalogous(baseHue);
+                    break;
+                case 'complementary':
+                    palette = generateComplementary(baseHue);
+                    break;
+                case 'triadic':
+                    palette = generateTriadic(baseHue);
+                    break;
+                case 'monochromatic':
+                    palette = generateMonochromatic(baseHue);
+                    break;
+            }
+            
+            state.currentPalette = palette;
+            renderPalette();
+            updateMockups();
+            addToHistory();
+        }
+
+        function generateAnalogous(baseHue) {
+            const saturation = state.selectedMood === 'calm' ? 60 : 
+                              state.selectedMood === 'professional' ? 40 : 75;
+            
+            return [
+                hslToHex(baseHue - 30, saturation, 65),
+                hslToHex(baseHue, saturation + 10, 55),
+                hslToHex(baseHue, saturation + 15, 45),
+                hslToHex(baseHue + 30, saturation, 60),
+                hslToHex(baseHue + 15, saturation - 10, 75)
+            ];
+        }
+
+        function generateComplementary(baseHue) {
+            const complementHue = (baseHue + 180) % 360;
+            const saturation = 70;
+            
+            return [
+                hslToHex(baseHue, saturation, 55),
+                hslToHex(baseHue, saturation + 10, 45),
+                hslToHex(complementHue, saturation - 20, 85),
+                hslToHex(complementHue, saturation, 55),
+                hslToHex(complementHue, saturation + 10, 40)
+            ];
+        }
+
+        function generateTriadic(baseHue) {
+            const hue2 = (baseHue + 120) % 360;
+            const hue3 = (baseHue + 240) % 360;
+            const saturation = 65;
+            
+            return [
+                hslToHex(baseHue, saturation, 55),
+                hslToHex(baseHue, saturation + 15, 40),
+                hslToHex(hue2, saturation, 55),
+                hslToHex(hue3, saturation, 55),
+                hslToHex(baseHue, saturation - 20, 75)
+            ];
+        }
+
+        function generateMonochromatic(baseHue) {
+            const saturation = 60;
+            
+            return [
+                hslToHex(baseHue, saturation - 10, 85),
+                hslToHex(baseHue, saturation, 65),
+                hslToHex(baseHue, saturation + 10, 50),
+                hslToHex(baseHue, saturation + 15, 35),
+                hslToHex(baseHue, saturation + 5, 20)
+            ];
+        }
+
+        function hslToHex(h, s, l) {
+            s /= 100;
+            l /= 100;
+            
+            const c = (1 - Math.abs(2 * l - 1)) * s;
+            const x = c * (1 - Math.abs((h / 60) % 2 - 1));
+            const m = l - c / 2;
+            
+            let r = 0, g = 0, b = 0;
+            
+            if (h >= 0 && h < 60) {
+                r = c; g = x; b = 0;
+            } else if (h >= 60 && h < 120) {
+                r = x; g = c; b = 0;
+            } else if (h >= 120 && h < 180) {
+                r = 0; g = c; b = x;
+            } else if (h >= 180 && h < 240) {
+                r = 0; g = x; b = c;
+            } else if (h >= 240 && h < 300) {
+                r = x; g = 0; b = c;
+            } else {
+                r = c; g = 0; b = x;
+            }
+            
+            r = Math.round((r + m) * 255);
+            g = Math.round((g + m) * 255);
+            b = Math.round((b + m) * 255);
+            
+            return '#' + [r, g, b].map(x => {
+                const hex = x.toString(16);
+                return hex.length === 1 ? '0' + hex : hex;
+            }).join('');
+        }
+
+        function hexToRgb(hex) {
+            const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            return result ? {
+                r: parseInt(result[1], 16),
+                g: parseInt(result[2], 16),
+                b: parseInt(result[3], 16)
+            } : null;
+        }
+
+        function renderPalette() {
+            const swatchesContainer = document.getElementById('colorSwatches');
+            const detailsContainer = document.getElementById('colorDetails');
+            
+            // Render swatches with drag functionality
+            swatchesContainer.innerHTML = state.currentPalette.map((color, index) => `
+                <div class="color-swatch" 
+                     style="background: ${color};"
+                     draggable="true"
+                     data-index="${index}"
+                     ondragstart="handleDragStart(event, ${index})"
+                     ondragover="handleDragOver(event)"
+                     ondrop="handleDrop(event, ${index})"
+                     ondragend="handleDragEnd()">
+                    <div class="color-info">${color.toUpperCase()}</div>
+                </div>
+            `).join('');
+            
+            // Render detailed color info
+            detailsContainer.innerHTML = state.currentPalette.map((color, index) => {
+                const rgb = hexToRgb(color);
+                return `
+                    <div class="color-detail-card" style="border-top: 4px solid ${color};">
+                        <div class="color-code" onclick="copyColor('${color}')" title="Click to copy">
+                            ${color.toUpperCase()}
+                        </div>
+                        <div class="color-label">
+                            RGB(${rgb.r}, ${rgb.g}, ${rgb.b})
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Drag and Drop Handlers
+        function handleDragStart(e, index) {
+            state.draggedIndex = index;
+            e.currentTarget.classList.add('dragging');
+            e.dataTransfer.effectAllowed = 'move';
+        }
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+        }
+
+        function handleDrop(e, dropIndex) {
+            e.preventDefault();
+            
+            if (state.draggedIndex !== null && state.draggedIndex !== dropIndex) {
+                // Swap colors
+                const temp = state.currentPalette[state.draggedIndex];
+                state.currentPalette[state.draggedIndex] = state.currentPalette[dropIndex];
+                state.currentPalette[dropIndex] = temp;
+                
+                renderPalette();
+                updateMockups();
+            }
+        }
+
+        function handleDragEnd() {
+            document.querySelectorAll('.color-swatch').forEach(swatch => {
+                swatch.classList.remove('dragging');
+            });
+            state.draggedIndex = null;
+        }
+
+        function updateMockups() {
+            const colors = state.currentPalette;
+            
+            // Website mockup
+            const header = document.getElementById('mockupHeader');
+            header.style.background = colors[0];
+            header.querySelector('div').style.background = colors[1];
+            header.querySelectorAll('.nav-item').forEach((item, i) => {
+                item.style.background = colors[4];
+            });
+            
+            const hero = document.getElementById('mockupHero');
+            hero.style.background = colors[1];
+            hero.querySelector('.hero-title').style.background = colors[4];
+            hero.querySelector('.hero-subtitle').style.background = colors[4];
+            hero.querySelector('.hero-button').style.background = colors[2];
+            
+            const content = document.getElementById('mockupContent');
+            content.querySelectorAll('.content-card').forEach((card, i) => {
+                card.style.background = colors[0];
+            });
+            
+            // Phone mockup
+            const phoneScreen = document.getElementById('phoneScreen');
+            phoneScreen.style.background = colors[4];
+            
+            const phoneStatusbar = document.getElementById('phoneStatusbar');
+            phoneStatusbar.style.background = colors[0];
+            phoneStatusbar.style.color = colors[4];
+            
+            const phoneHeader = document.getElementById('phoneHeader');
+            phoneHeader.style.background = colors[1];
+            phoneHeader.style.color = colors[4];
+            
+            document.querySelectorAll('.phone-item').forEach((item, i) => {
+                item.style.background = colors[i % 2 === 0 ? 2 : 3];
+            });
+        }
+
+        function addToHistory() {
+            const palette = {
+                colors: [...state.currentPalette],
+                mood: state.selectedMood,
+                harmony: state.selectedHarmony,
+                timestamp: Date.now()
+            };
+            
+            // Keep only last 6 palettes
+            state.history.unshift(palette);
+            if (state.history.length > 6) {
+                state.history.pop();
+            }
+            
+            renderHistory();
+        }
+
+        function renderHistory() {
+            const historyGrid = document.getElementById('historyGrid');
+            
+            historyGrid.innerHTML = state.history.map((palette, index) => `
+                <div class="history-item" onclick="loadPalette(${index})">
+                    <div class="history-colors">
+                        ${palette.colors.map(color => 
+                            `<div class="history-color" style="background: ${color};"></div>`
+                        ).join('')}
+                    </div>
+                    <div class="history-label">
+                        ${palette.mood} • ${palette.harmony}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function loadPalette(index) {
+            const palette = state.history[index];
+            state.currentPalette = [...palette.colors];
+            state.selectedMood = palette.mood;
+            state.selectedHarmony = palette.harmony;
+            
+            // Update UI selections
+            document.querySelectorAll('.mood-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.mood === palette.mood);
+            });
+            
+            document.querySelectorAll('.harmony-option').forEach(option => {
+                option.classList.toggle('active', option.dataset.harmony === palette.harmony);
+            });
+            
+            renderPalette();
+            updateMockups();
+            showNotification('Palette loaded! 🎨');
+        }
+
+        function copyColor(color) {
+            navigator.clipboard.writeText(color).then(() => {
+                showNotification(`Copied ${color} to clipboard! 📋`);
+            });
+        }
+
+        function copyToClipboard() {
+            const cssVars = state.currentPalette.map((color, index) => 
+                `  --color-${index + 1}: ${color};`
+            ).join('\n');
+            
+            const cssCode = `:root {\n${cssVars}\n}`;
+            
+            navigator.clipboard.writeText(cssCode).then(() => {
+                showNotification('CSS Variables copied! 🎉');
+            });
+        }
+
+        function exportPalette() {
+            const paletteData = {
+                mood: state.selectedMood,
+                harmony: state.selectedHarmony,
+                colors: state.currentPalette.map((hex, index) => {
+                    const rgb = hexToRgb(hex);
+                    return {
+                        name: `color-${index + 1}`,
+                        hex: hex,
+                        rgb: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`
+                    };
+                }),
+                generated: new Date().toISOString()
+            };
+            
+            const dataStr = JSON.stringify(paletteData, null, 2);
+            const dataBlob = new Blob([dataStr], {type: 'application/json'});
+            const url = URL.createObjectURL(dataBlob);
+            
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `palette-${state.selectedMood}-${Date.now()}.json`;
+            link.click();
+            
+            URL.revokeObjectURL(url);
+            showNotification('Palette exported as JSON! 💾');
+        }
+
+        function showNotification(message) {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.classList.add('show');
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+
+        // Initialize app
+        init();
+    </script>
+</body>
+</html>
