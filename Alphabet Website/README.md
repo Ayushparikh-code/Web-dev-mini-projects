@@ -172,7 +172,7 @@ This project is open-source and available under the MIT License. Feel free to us
 
 ## Contact
 
-For questions or support, contact the project maintainer or open an issue in the repository.
+For questions or support, contact the project maintainer or open an issue in the repository.also you can contact me.
 
 ---
 
@@ -182,4 +182,5 @@ For questions or support, contact the project maintainer or open an issue in the
 - **Repository**: If you're hosting this on GitHub or another platform, replace `<repository-url>` with the actual URL.
 - **License**: I referenced an MIT License; create a LICENSE file in your project if you want to include one, or update the README to reflect your licensing choice.
 - **Local Testing**: The `live-server` suggestion ensures images load correctly. If you prefer another method (e.g., Python's `http.server`), I can update the instructions.
+
 - **Customization**: If you want specific additions to the README (e.g., screenshots, a demo link, or more detailed customization), let me know!
