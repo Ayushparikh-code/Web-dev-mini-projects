@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at top right, #2b1055, #7597de);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+}
+
+.login-box h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.input-box {
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  outline: none;
+  font-size: 1rem;
+}
+
+.input-box label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #ccc;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -10px;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.btn {
+  width: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #764ba2, #667eea);
+  transform: scale(1.03);
+}
+
+.signup {
+  text-align: center;
+  color: #eee;
+  margin-top: 15px;
+}
+
+.signup a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
