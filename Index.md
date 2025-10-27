@@ -111,3 +111,4 @@
 | [Pomodoro Timer](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Pomodoro-Timer)         | A simple Pomodoro Timer using React.js, where you can track the time spent on work and break.  |
 | [TravelPro](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/TravelPro)         | A simple static website to enhance HTML & CSS skills  |
 |[Audio Visualization with three.js](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/Audio%20Visualization%20with%20three.js) | audio visualization using the powerful 3D graphics library, three.js |
+|[Simple Color converter tool](https://github.com/Ayushparikh-code/Web-dev-mini-projects/tree/main/simple-color-converter) | Simple RGB <> HEX color converter tool |
