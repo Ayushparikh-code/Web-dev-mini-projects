@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature’s Architects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+  <style>
+    .card {
+      position: relative;
+      transition: transform 0.7s;
+      transform-style: preserve-3d;
+    }
+    .card-container:hover .card {
+      transform: rotateY(180deg);
+    }
+    .card-front,
+    .card-back {
+      position: absolute;
+      backface-visibility: hidden;
+      overflow: hidden;
+    }
+    .card-back {
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body class="bg-neutral-100 text-black dark:bg-gray-900 dark:text-white w-100vw">
+  <canvas id="canvas" class="fixed top-0 left-0 w-full h-full z-0"></canvas>
+
+  <div class="relative z-10">
+
+    <!-- Toggle Button -->
+    <div class="flex justify-end p-4 z-100">
+      <button id="theme-toggle" class="w-8 h-8 cursor-pointer">
+        <!-- Sun Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="md:w-8 md:h-8 w-6 h-6 fill-yellow-400 dark:hidden" viewBox="0 0 512 512">
+          <path d="M256 144c-61.75 0-112 50.25-112 112s50.25 112 112 112 112-50.25 112-112S317.75 144 256 144zm0 192c-44.19 0-80-35.81-80-80s35.81-80 80-80 80 35.81 80 80-35.81 80-80 80zm0-224c8.83 0 16-7.17 16-16V64c0-8.83-7.17-16-16-16s-16 7.17-16 16v32c0 8.83 7.17 16 16 16zm0 288c-8.83 0-16 7.17-16 16v32c0 8.83 7.17 16 16 16s16-7.17 16-16v-32c0-8.83-7.17-16-16-16zM380.44 154.17l22.63-22.63c6.25-6.25 6.25-16.37 0-22.63s-16.37-6.25-22.63 0l-22.63 22.63c-6.25 6.25-6.25 16.37 0 22.63s16.38 6.25 22.63 0zM131.56 357.83l-22.63 22.63c-6.25 6.25-6.25 16.37 0 22.63s16.38 6.25 22.63 0l22.63-22.63c6.25-6.27 6.25-16.38 0-22.63-6.27-6.27-16.38-6.25-22.63 0zM112 256c0-8.83-7.17-16-16-16H64c-8.83 0-16 7.17-16 16s7.17 16 16 16h32c8.83 0 16-7.17 16-16zm336-16h-32c-8.83 0-16 7.17-16 16s7.17 16 16 16h32c8.83 0 16-7.17 16-16s-7.17-16-16-16zM131.54 154.17c6.25 6.25 16.38 6.25 22.63 0 6.25-6.25 6.25-16.38 0-22.63l-22.63-22.63c-6.25-6.25-16.38-6.25-22.63 0-6.25 6.25-6.25 16.38 0 22.63l22.63 22.63zM380.46 357.81c-6.27-6.25-16.38-6.25-22.63 0-6.25 6.25-6.27 16.38 0 22.63l22.63 22.63c6.25 6.25 16.38 6.25 22.63 0s6.25-16.38 0-22.63l-22.63-22.63z"/>
+        </svg>
+        <!-- Moon Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="md:w-8 md:h-8 w-6 h-6 fill-white hidden dark:block" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Main Heading -->
+    <div>
+      <h1 class="text-center font-sans md:text-6xl font-bold text-black dark:text-white text-3xl" style="font-family: 'Playfair display';">Nature’s Architects</h1>
+      <p class="text-center md:text-3xl text-xl text-black dark:text-gray-200 text-gray-600"  style="font-family: 'Dancing Script';">Creatures that build the wild</p>
+    </div>
+
+    <!-- Cards container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+
+      <!-- Bowerbird card -->
+      <div class="card-container h-[24rem] sm:h-[28rem] lg:h-[28rem] perspective-[1000px]">
+      <div class="card w-full h-full border-2 border-emerald-400 rounded-lg transition-transform duration-700 transform-style-preserve-3d ease-in-out hover:rotate-y-180 relative shadow-lg shadow-gray-400 dark:shadow-gray-800 bg-gray-100 dark:bg-gray-900">
+
+          <div class="card-front p-4 rounded-lg">
+            <img src="bowerbird.jpg" class="h-72 w-auto rounded-lg">
+            <h1 class="md:text-4xl text-2xl text-center mt-4 text-emerald-500" style="font-family: 'Playfair display';">Satin Bowerbird</h1>
+            <h2 class="md:text-3xl text-xl text-center dark:text-gray-200 text-gray-600" style="font-family: 'Dancing Script';">Colour Collector</h2>
+          </div>
+          <div class="card-back p-6 rounded-lg">
+            <p style="font-family: 'Merriweather';" class="md:text-lg text-sm mt-4">
+              The satin bowerbird is a decorator like no other. Males build intricate bowers from twigs and adorn them with blue objects. These structures aren’t nests, but stages to attract mates. The more symmetrical and colorful, the better the chance of winning a partner. Their artistic flair is a marvel of avian architecture.</p>
+            <p style="font-family: 'Dancing Script';" class="md:text-2xl text-xl mt-4 text-center text-emerald-500 leading-relaxed mt-4">He paints with petals, bits of blue,<br> A silent song the forest knew.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Otter card -->
+      <div class="card-container h-[24rem] sm:h-[28rem] lg:h-[28rem] perspective-[1000px]">
+      <div class="card w-full h-full border-2 border-emerald-400 rounded-lg transition-transform duration-700 transform-style-preserve-3d ease-in-out hover:rotate-y-180 relative shadow-lg shadow-gray-400 dark:shadow-gray-800 bg-gray-100 dark:bg-gray-900">
+
+          <div class="card-front p-4 rounded-lg">
+            <img src="otter.jpg" class="h-72 w-auto rounded-lg">
+            <h1 class="md:text-4xl text-2xl text-center mt-4 text-emerald-500" style="font-family: 'Playfair display';">Otter</h1>
+            <h2 class="md:text-3xl text-xl text-center dark:text-gray-200 text-gray-600" style="font-family: 'Dancing Script';">Kelp Nestler</h2>
+          </div>
+          <div class="card-back p-6 rounded-lg">
+            <p style="font-family: 'Merriweather';" class="md:text-lg text-sm mt-4">
+              Otters are clever builders in aquatic habitats. They create dens, or "holts", using reeds and mud, they craft cozy, hidden homes. Sea otters even use kelp to anchor themselves while resting. Their constructions show intelligence and adaptability in watery worlds.</p>
+            <p style="font-family: 'Dancing Script';" class="md:text-2xl text-xl mt-4 text-center text-emerald-500 leading-relaxed mt-4">Through reeds they glide with joyful speed,<br> Where love and shelter flow and feed.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ant card -->
+      <div class="card-container h-[24rem] sm:h-[28rem] lg:h-[28rem] perspective-[1000px]">
+      <div class="card w-full h-full border-2 border-emerald-400 rounded-lg transition-transform duration-700 transform-style-preserve-3d ease-in-out hover:rotate-y-180 relative shadow-lg shadow-gray-400 dark:shadow-gray-800 bg-gray-100 dark:bg-gray-900">
+
+          <div class="card-front p-4 rounded-lg">
+            <img src="ant.jpg" class="h-72 w-auto rounded-lg">
+            <h1 class="md:text-4xl text-2xl text-center mt-4 text-emerald-500" style="font-family: 'Playfair display';">Leafcutter Ant</h1>
+            <h2 class="md:text-3xl text-xl text-center dark:text-gray-200 text-gray-600" style="font-family: 'Dancing Script';">Underground farmer</h2>
+          </div>
+          <div class="card-back p-6 rounded-lg">
+            <p style="font-family: 'Merriweather';" class="md:text-lg text-sm mt-4">
+              Leafcutter ants are farmers and builders underground. They cut leaves not to eat but to feed a special fungus they cultivate. Their nests are complex, with chambers and tunnels for air circulation and waste. Millions of ants work in coordinated harmony. It’s a living city below the soil.</p>
+            <p style="font-family: 'Dancing Script';" class="md:text-2xl text-xl mt-4 text-center text-emerald-500 leading-relaxed mt-4">Beneath the soil they shape a world,<br> With leaf and root and plans unfurled.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Woodpecker card -->
+      <div class="card-container h-[24rem] sm:h-[28rem] lg:h-[28rem] perspective-[1000px]">
+      <div class="card w-full h-full border-2 border-emerald-400 rounded-lg transition-transform duration-700 transform-style-preserve-3d ease-in-out hover:rotate-y-180 relative shadow-lg shadow-gray-400 dark:shadow-gray-800 bg-gray-100 dark:bg-gray-900">
+
+          <div class="card-front p-4 rounded-lg">
+            <img src="woodpecker.jpg" class="h-72 w-full object-cover rounded-lg">
+            <h1 class="md:text-4xl text-2xl text-center mt-4 text-emerald-500" style="font-family: 'Playfair display';">Woodpecker</h1>
+            <h2 class="md:text-3xl text-xl text-center dark:text-gray-200 text-gray-600" style="font-family: 'Dancing Script';">Tree Carver</h2>
+          </div>
+          <div class="card-back p-6 rounded-lg">
+            <p style="font-family: 'Merriweather';" class="md:text-lg text-sm mt-4">
+              Woodpeckers are expert carpenters of the forest. They drill holes in tree trunks to create nests and find insects. Their strong beaks and shock-absorbing skulls make this possible. Each cavity they create can later house other species. Their work supports biodiversity in woodland areas.</p>
+            <p style="font-family: 'Dancing Script';" class="md:text-2xl text-xl mt-4 text-center text-emerald-500 leading-relaxed mt-4">It drums a beat in wood and air,<br> A builder bold with tools laid bare.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beaver card -->
+      <div class="card-container h-[24rem] sm:h-[28rem] lg:h-[28rem] perspective-[1000px]">
+      <div class="card w-full h-full border-2 border-emerald-400 rounded-lg transition-transform duration-700 transform-style-preserve-3d ease-in-out hover:rotate-y-180 relative shadow-lg shadow-gray-400 dark:shadow-gray-800 bg-gray-100 dark:bg-gray-900">
+
+          <div class="card-front p-4 rounded-lg">
+            <img src="beaver.jpg" class="h-72 w-auto rounded-lg">
+            <h1 class="md:text-4xl text-2xl text-center mt-4 text-emerald-500" style="font-family: 'Playfair display';">Beaver</h1>
+            <h2 class="md:text-3xl text-xl text-center dark:text-gray-200 text-gray-600" style="font-family: 'Dancing Script';">Wetland Sculptor</h2>
+          </div>
+          <div class="card-back p-6 rounded-lg">
+            <p style="font-family: 'Merriweather';" class="md:text-lg text-sm dark:text-gray-200 text-gray-600 mt-4">
+              Beavers are master engineers of the animal world. They build dams using branches, mud, and stones to create still ponds. These ponds provide safe homes called lodges. Their construction helps prevent flooding and supports wetland ecosystems.</p>
+            <p style="font-family: 'Dancing Script';" class="md:text-2xl text-xl mt-4 text-center text-emerald-500 leading-relaxed mt-4">With sticks and time they draw the line,<br> Where water waits and trees align.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swallow card -->
+      <div class="card-container h-[24rem] sm:h-[28rem] lg:h-[28rem] perspective-[1000px]">
+      <div class="card w-full h-full border-2 border-emerald-400 rounded-lg transition-transform duration-700 transform-style-preserve-3d ease-in-out hover:rotate-y-180 relative shadow-lg shadow-gray-400 dark:shadow-gray-800 bg-gray-100 dark:bg-gray-900">
+
+          <div class="card-front p-4 rounded-lg">
+            <img src="swallow.jpg" class="h-72 w-auto rounded-lg">
+            <h1 class="md:text-4xl text-2xl text-center mt-4 text-emerald-500" style="font-family: 'Playfair display';">Swallow</h1>
+            <h2 class="md:text-3xl text-xl text-center dark:text-gray-200 text-gray-600" style="font-family: 'Dancing Script';">Cliff Builder</h2>
+          </div>
+          <div class="card-back p-6 rounded-lg">
+            <p style="font-family: 'Merriweather';" class="md:text-lg text-sm mt-4">
+              Swallows are agile fliers and skilled masons. They collect mud and mix it with saliva to build cup-shaped nests. These are often found under eaves, bridges, or cliffs. Their nests are sturdy, reusable, and placed with precision.</p>
+            <p style="font-family: 'Dancing Script';" class="md:text-2xl text-xl mt-4 text-center text-emerald-500 leading-relaxed mt-4">From cloud to clay their homes arise,<br> A bond that builds beneath the skies.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coral card -->
+      <div class="card-container h-[24rem] sm:h-[28rem] lg:h-[28rem] perspective-[1000px]">
+      <div class="card w-full h-full border-2 border-emerald-400 rounded-lg transition-transform duration-700 transform-style-preserve-3d ease-in-out hover:rotate-y-180 relative shadow-lg shadow-gray-400 dark:shadow-gray-800 bg-gray-100 dark:bg-gray-900">
+
+          <div class="card-front p-4 rounded-lg">
+            <img src="coral.jpg" class="h-72 w-auto rounded-lg">
+            <h1 class="md:text-4xl text-2xl text-center mt-4 text-emerald-500" style="font-family: 'Playfair display';">Coral</h1>
+            <h2 class="md:text-3xl text-xl text-center dark:text-gray-200 text-gray-600" style="font-family: 'Dancing Script';">Reef Sculptor</h2>
+          </div>
+          <div class="card-back p-6 rounded-lg">
+            <p style="font-family: 'Merriweather';" class="md:text-lg text-sm mt-4">
+              Coral polyps are tiny but mighty builders of the sea. They secrete calcium carbonate to form vast reef structures over time. These reefs become homes to thousands of marine species. Despite their slow growth, their impact is monumental. Coral reefs are among the most diverse ecosystems on Earth.</p>
+            <p style="font-family: 'Dancing Script';" class="md:text-2xl text-xl mt-4 text-center text-emerald-500 leading-relaxed mt-4">With no hands they craft the sea,<br> In towers of stone and mystery.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weaver bird card -->
+      <div class="card-container h-[24rem] sm:h-[28rem] lg:h-[28rem] perspective-[1000px]">
+      <div class="card w-full h-full border-2 border-emerald-400 rounded-lg transition-transform duration-700 transform-style-preserve-3d ease-in-out hover:rotate-y-180 relative shadow-lg shadow-gray-400 dark:shadow-gray-800 bg-gray-100 dark:bg-gray-900">
+
+          <div class="card-front p-4 rounded-lg">
+            <img src="weaverbird.jpg" class="h-72 w-auto rounded-lg">
+            <h1 class="md:text-4xl text-2xl text-center mt-4 text-emerald-500" style="font-family: 'Playfair display';">Weaver bird</h1>
+            <h2 class="md:text-3xl text-xl text-center dark:text-gray-200 text-gray-600" style="font-family: 'Dancing Script';">Nature's Tailor</h2>
+          </div>
+          <div class="card-back p-6 rounded-lg">
+            <p style="font-family: 'Merriweather';" class="md:text-lg text-sm mt-4">
+              Weaver birds are nature’s textile artists. Using grasses and twigs, males weave elaborate hanging nests. Each nest is tightly knit, weatherproof, and built to impress a mate. Their weaving skills rival human craftsmanship. These nests sway from trees like ornaments of survival and courtship.</p>
+            <p style="font-family: 'Dancing Script';" class="md:text-2xl text-xl mt-4 text-center text-emerald-500 leading-relaxed mt-4">With blades of grass and careful weave,<br> It stitches love before it leaves.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const htmlEl = document.documentElement;
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'dark') {
+      htmlEl.classList.add('dark');
+    }
+
+    toggleButton.addEventListener('click', () => {
+      const isDark = htmlEl.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+    const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resizeCanvas);
+  resizeCanvas();
+
+  // LEAF FUNCTION
+  function drawLeaf(x, y, scale = 1, rotation = 0) {
+    ctx.save();
+    ctx.translate(x, y);
+    ctx.rotate(rotation);
+    ctx.scale(scale, scale);
+    ctx.strokeStyle = '#10B981';
+    ctx.lineWidth = 1.2;
+
+    ctx.beginPath();
+    ctx.arc(50, 50, 40, 300 * Math.PI / 180, 0);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(90, 50, 40, Math.PI, 240 * Math.PI / 180);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(60, 50, 10, 20 * Math.PI / 180, Math.PI);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(80, 50, 10, 0, 160 * Math.PI / 180);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(139, 40, 70, 150 * Math.PI / 180, 190 * Math.PI / 180);
+    ctx.stroke();
+
+    ctx.restore();
+  }
+
+  const leafCountX = 8; // number of leaves horizontally
+const leafCountY = 6; // number of leaves vertically
+const xSpacing = canvas.width / (leafCountX + 1);
+const ySpacing = canvas.height / (leafCountY + 1);
+
+for (let i = 1; i <= leafCountX; i++) {
+  for (let j = 1; j <= leafCountY; j++) {
+    const baseX = i * xSpacing;
+    const baseY = j * ySpacing;
+
+    // Add slight random offset so it's not too uniform
+    const offsetX = (Math.random() - 0.5) * 50;
+    const offsetY = (Math.random() - 0.5) * 50;
+
+    const x = baseX + offsetX;
+    const y = baseY + offsetY;
+
+    const scale = 0.4 + Math.random() * 0.5;
+    const rotation = Math.random() * 2 * Math.PI;
+
+    drawLeaf(x, y, scale, rotation);
+  }
+}
+
+  </script>
+</body>
+</html>
