@@ -1,6 +1,6 @@
 ### Description
 
-(Describe your project over here.)
+(Added and finalized project README and documentation for "Mathew's Memory Game". This PR documents the project features, gameplay, levels, leaderboard behavior (per-level leaderboards with online storage via Google Sheets), responsive UI, scoring rules, and developer credits. It also summarizes recent gameplay improvements (preview timer, SweetAlert prompts, admin reset flow, and level-specific scoring)..)
 
 ### Checklist
 
@@ -12,4 +12,4 @@
 
 ## Related Issues or Pull Requests number
 
-(Write your answer here.)
+(N/A (add issue/PR number here if available))

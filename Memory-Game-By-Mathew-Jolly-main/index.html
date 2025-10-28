@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Quest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <meta name="description" content="Mathew Jolly's Memory Game - Sharpen your mind and test your memory skills!" />
+  <meta name="author" content="Mathew Jolly" />
+  <meta property="og:title" content="Mathew Jolly's Memory Game" />
+  <meta property="og:description"
+    content="Sharpen your mind and test your memory skills with Mathew Jolly's Memory Game." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mathewjolly.vercel.app" />
+  <meta property="og:image" content="/memory.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="/memory.jpeg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+    data-cf-beacon='{"token": "168f04813fd647c6987d086153f22092"}'></script><!-- End Cloudflare Web Analytics -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at center, #141e30, #243b55);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    section {
+      display: none;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    section.active {
+      display: flex;
+    }
+
+    h1.title {
+      font-size: 3em;
+      color: #00e0ff;
+      text-shadow: 0 0 10px #00e0ff;
+    }
+
+    h1.main-title {
+      margin-top: 24px;
+      font-size: 2.5em;
+      color: #00e0ff;
+      text-shadow: 0 0 10px #00e0ff;
+    }
+
+    button {
+      background: linear-gradient(45deg, #00e0ff, #00ff85);
+      border: none;
+      padding: 12px 24px;
+      color: #111;
+      border-radius: 30px;
+      font-size: 1.1em;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00e0ff;
+    }
+
+    #playerName {
+      padding: 10px;
+      border: 2px solid #00e0ff;
+      border-radius: 25px;
+      width: 250px;
+      text-align: center;
+      outline: none;
+    }
+
+    #gameBoard {
+      display: grid;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .card {
+      width: 80px;
+      height: 80px;
+      background: #1e2a47;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .card.flipped {
+      background: #00e0ff;
+      color: #000;
+      transform: rotateY(180deg);
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 20px auto;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .top-bar-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 5px 0;
+    }
+
+    #leaderboardList li {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 5px 0;
+      padding: 8px 12px;
+      border-radius: 12px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    #leaderboardList li:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.03);
+    }
+
+    .reset-btn {
+      margin-top: 15px;
+      background: #ff4b5c;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1em;
+      font-weight: 600;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .reset-btn:hover {
+      background: #ff1e3c;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #fff;
+      font-size: 1em;
+      width: 100%;
+      background: #141e30;
+      padding: 18px 0;
+      position: relative;
+      bottom: 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #00e0ff;
+      text-decoration: none;
+    }
+
+    .leaderboard-tabs {
+      margin: 20px 0;
+    }
+
+    .tab-btn {
+      background: #1e2a47;
+      border: 2px solid #00e0ff;
+      color: #00e0ff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 1em;
+      cursor: pointer;
+      margin: 0 5px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .tab-btn:hover {
+      background: #00e0ff;
+      color: #111;
+      transform: scale(1.05);
+    }
+
+    .tab-btn.active {
+      background: #00e0ff;
+      color: #111;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Landing Page -->
+  <section id="landing" class="active">
+    <h1 class="title">🧠 Memory Quest</h1>
+    <h1 class="main-title">Mathew's Memory Game</h1>
+    <input type="text" id="playerName" placeholder="Enter your name" />
+    <button id="startBtn">Start Game</button>
+    <button id="showLeaderboardBtn">Show Leaderboard</button>
+  </section>
+
+  <!-- Game Section -->
+  <section id="game">
+    <div class="top-bar">
+      <div class="top-bar-row">
+        <span style="font-size:1.3em;">🎮</span>
+        <label for="levelSelect" style="font-size:1.1em;">Level:</label>
+        <select id="levelSelect">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+          <option value="expert">Expert</option>
+          <option value="legend">Legend</option>
+        </select>
+      </div>
+      <div class="top-bar-row">
+        <span>Score: <span id="score">0</span></span>
+        <span>Time: <span id="time">00:00</span></span>
+      </div>
+      <div class="top-bar-row">
+        <button id="backBtn">🏠 Home</button>
+      </div>
+    </div>
+    <div id="gameBoard"></div>
+  </section>
+
+  <!-- Leaderboard Section -->
+  <section id="leaderboard">
+    <h2>🏆 Leaderboard</h2>
+    <div class="leaderboard-tabs">
+      <button class="tab-btn" data-level="easy">Easy</button>
+      <button class="tab-btn" data-level="medium">Medium</button>
+      <button class="tab-btn" data-level="hard">Hard</button>
+      <button class="tab-btn" data-level="expert">Expert</button>
+      <button class="tab-btn" data-level="legend">Legend</button>
+    </div>
+    <ol id="leaderboardList"></ol>
+    <button class="reset-btn" id="resetBtn">🔒 Reset Leaderboard</button>
+    <button id="leaderboardBackBtn">🏠 Back to Home</button>
+  </section>
+
+  <script type="module" src="script.js"></script>
+
+  <footer style="width:100%;background:#141e30;padding:18px 0;position:relative;bottom:0;text-align:center;">
+    <span style="color:#00e0ff;font-weight:500;font-size:1.1em;letter-spacing:1px;">Made with ❤️ by <a
+        href="https://mathewjolly.vercel.app" target="_blank"
+        style="color:#00ff85;text-decoration:none;font-weight:600;">Mathew Jolly</a></span>
+    <br>
+    <span style="color:#b9e8ff;font-size:0.95em;">Memory Quest &copy; 2025 &mdash; All rights reserved.</span>
+    <br>
+    <a href="https://mathewjolly.vercel.app" target="_blank"
+      style="color:#00e0ff;text-decoration:underline;font-weight:600;">Mathew Jolly</a>
+  </footer>
+</body>
+
+</html>
