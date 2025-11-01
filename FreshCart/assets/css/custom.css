@@ -1,0 +1,182 @@
+#price {
+  font-weight: 600;
+  color: black;
+  font-size: 1.2rem;
+}
+
+#saver {
+  font-weight: 600;
+}
+
+#tax {
+  font-size: small;
+  font-family: 'Times New Roman';
+  padding-bottom: 20px;
+}
+
+.origprice {
+  font-size: 12px;
+}
+
+.noo-sh-title-top {
+  font-size: 3rem;
+}
+
+.veges {
+  z-index: 1;
+}
+
+.shop-cat-box .veges {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: rgba(0, 0, 0, 0.19);
+  font-family: "Raleway", sans-serif;
+  padding: 10px 20px;
+  font-size: 3rem;
+  font-weight: bold;
+  border-radius: 5px;
+
+  animation: title 1.5s infinite;
+
+
+  background: linear-gradient(0deg,
+      rgb(76, 239, 58) 0%,
+      rgb(255, 255, 255) 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+.shop-cat-box img {
+  filter: brightness(80%);
+  
+}
+
+.contain {
+  width: 500px;
+  border-radius: 8px;
+  padding: 30px;
+  font-size: large;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  /* text-align: center; */
+  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+
+
+}
+.contain h2{
+  font-weight: 600;
+  font-size: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* Text and fields remain left-aligned */
+}
+
+
+
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+
+.change-password-button {
+  background: #dd6767;
+  color: #d6d6d6;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+  width: 80%;
+  /* Keep the button left-aligned but fill the width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.change-password-button:hover {
+  color: #262525;
+  border-color: #5fd0ec;
+  background: rgba(51, 136, 248, 0.15);
+}
+
+.back {
+  background: #dd6767;
+  color: #d6d6d6;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 20px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+  width: 100px;
+  /* Keep the button left-aligned but fill the width */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.pass-success {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.order-success {
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.order-success h1 {
+  font-size: 2.4rem;
+  color: #88B04B;
+  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.spin {
+  color: rgb(1, 1, 1);
+}
+
+.item-set:hover {
+  cursor: pointer;
+}
+
+.order-success p {
+  color: #404F5E;
+  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+.checkmark {
+  font-size: 150px;
+}
+.category{
+  color: rgb(220, 217, 45);
+}
+.footer-copyright{
+  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+.message-text{
+  color: rgb(24, 24, 24);
+  font-weight: 600;
+  padding: 9px;
+  margin: 5px;
+}

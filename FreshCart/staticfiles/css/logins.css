@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: url(https://static.vecteezy.com/system/resources/previews/034/494/532/non_2x/flat-lay-vegetables-on-white-background-food-and-diet-concept-ai-generated-free-photo.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  color: #000000;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px; /* Restrict the max width to 500px */
+  border-radius: 8px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  max-width: 100%; /* Adjusts based on the container width */
+  height: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #252525;
+}
+
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+
+button {
+  background: #dd6767;
+  color: #d6d6d6;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  width: 80%;
+  margin: 20px auto; /* Center the button */
+  transition: 0.3s ease;
+}
+
+button:hover {
+  color: #262525;
+  border-color: #5fd0ec;
+  background: rgba(51, 136, 248, 0.15);
+}
+
+.create {
+  padding-top: 5px;
+  color: #737373;
+}
+
+.create a {
+  font-weight: bold;
+  color: #8494fb;
+  text-decoration: none;
+}
+
+.create a:hover {
+  text-decoration: none;
+  color: #4de73f;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Adjust width for tablets */
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Adjust heading size */
+  }
+
+  button {
+    width: 100%; /* Full width button on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%; /* Full width for mobile */
+    padding: 15px;
+   
+  }
+
+  h2 {
+    font-size: 1.6rem; /* Smaller heading for mobile */
+  }
+
+  .logo-img {
+    max-width: 150px; /* Smaller logo for mobile */
+  }
+}

@@ -1,0 +1,6 @@
+<h2>Cart Items:</h2>
+<ul>
+    {% for item_name, details in cart.items %}
+        <li>{{ item_name }}: {{ details.quantity }} @ {{ details.price }} each</li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .flexbox-container {
+    display: flex;
+    align-items: center;
+}
+.flexbox-container form {
+    margin-right: 10px;
+    display: inline;
+    
+}
+</style>
+
+<!-- Start All Title Box -->
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>{{ product.name }}</h2>
+                <ul class="breadcrumb">
+                    {% if product_type == 'fruit' %}
+                    <li class="breadcrumb-item"><a href="{%url 'fruits'%}">Fruits</a></li>
+                    {% elif product_type == 'vegetable' %}
+                    <li class="breadcrumb-item"><a href="{%url 'vegetables'%}">Vegetables</a></li>
+                    {% elif product_type == 'dairy' %}
+                    <li class="breadcrumb-item"><a href="{%url 'dairy'%}">Dairy</a></li>
+                    {% endif %}
+                    <li class="breadcrumb-item active">{{ product.name }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Title Box -->
+
+<!-- Start Product Page  -->
+<div class="about-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame">
+                    <img class="img-fluid" src="{% static product.img %}" alt="{{ product.name }}" />
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h1 class="noo-sh-title-top">{{ product.name }}</h1>
+                <p id="price" class="text-decoration-underline">Price: ₹{{ product.price }}
+                    {% if product.origprice %}
+                    <small class="text-muted"> (₹{{ product.origprice }} / kg)</small>
+                    {% endif %}
+                </p>
+
+                <p id="saver" class="text-success fw-bold">You saved: 32%</p>
+                <p id="tax">(inclusive of all taxes)</p>
+                <div class="flexbox-container">
+                    <form method="POST" action="{% url 'add_to_cart' product.name %}">
+                        {% csrf_token %}
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" class="c-input-text qty text" 
+                        placeholder="Quantity" style="width: 49px; border-radius: 5px; border: 1px solid #ccc; 
+                        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); font-size: 16px; padding-bottom:5px; font-weight:bold; text-align:center">
+                        
+                        <button type="submit" class="btn btn-danger btn-md pl-3 pr-3 fw-bolder">Add to Basket</button>
+                    </form>
+                    <form method="POST" action="{% url 'add_to_wishlist' product.name %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-success btn-md pl-3 pr-3">Wishlist</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-sm-6 col-lg-12">
+                <div class="service-block-inner">
+                    <h3>About the Product</h3>
+                    <p>{{ product.description }}</p>
+                    <!-- If you want to differentiate between fruits, vegetables, and dairy -->
+                    {% if product_type == 'fruit' %}
+                        <p>Category: Fruit</p>
+                    {% elif product_type == 'vegetable' %}
+                        <p>Category: Vegetable</p>
+                    {% elif product_type == 'dairy' %}
+                        <p>Category: Dairy</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Product Page -->
+ 
+ <!-- Start Instagram Feed  -->
+<div class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-01.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-02.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-03.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-04.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-05.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-06.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-07.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-08.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-09.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-05.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Instagram Feed  -->
+
+{% endblock %}
