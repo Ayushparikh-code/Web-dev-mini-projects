@@ -1,0 +1,37 @@
+<title>Login - FreshCart</title> 
+{%load static%}
+{%load crispy_forms_tags%}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+   <link rel="shortcut icon" href="{% static 'images/cart5.png'%}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png'}">
+  <title>Login</title>
+  <link rel="stylesheet" href="{% static 'css/logins.css' %}">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container form-layout p-5">
+      <!-- Move the logo inside the container -->
+      <div class="logo-container">
+        <img class='logo-img' src="{%static 'images/logo2.png'%}" alt="FreshCart Logo">
+      </div>
+      <form method="POST">
+        <h2>Login</h2>
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit">Login</button>
+      </form>
+      <div class="create">
+        <span> Don't have an account? <a href="{% url 'register' %}">Create Account</a></span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

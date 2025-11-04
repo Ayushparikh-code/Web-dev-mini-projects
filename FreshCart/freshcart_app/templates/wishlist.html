@@ -1,0 +1,189 @@
+<title>Wishlist - FreshCart</title>  
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Start All Title Box -->
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Wishlist</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{%url 'home' %}">Home</a></li>
+                    <li class="breadcrumb-item active">Wishlist</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Title Box -->
+
+<!-- Start Wishlist  -->
+<div class="wishlist-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="table-main table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Images</th>
+                                <th>Product Name</th>
+                                <th>Unit Price</th>
+                                <th>Stock</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in wishlist_items %}
+                            <tr>
+                                <td class="thumbnail-img">
+                                    <a href="#">
+                                        {% if item.product %}
+                                            <img class="img-fluid" src="{% static item.product.img %}" alt="{{ item.product.name }}" />
+                                        {% elif item.fruit %}
+                                            <img class="img-fluid" src="{% static item.fruit.img %}" alt="{{ item.fruit.name }}" />
+                                            {% elif item.dairy %}
+                                            <img class="img-fluid" src="{% static item.dairy.img %}" alt="{{ item.fruit.name }}" />
+                                        {% else %}
+                                            <img class="img-fluid" src="{% static 'path/to/default/image.jpg' %}" alt="No Image Available" />
+                                        {% endif %}
+                                    </a>
+                                </td>
+
+                                <td class="name-pr">
+                                    <!-- Use the correct URL based on whether the item is a product or fruit -->
+                                    {% if item.product %}
+                                        <a href="{% url 'product' item.product.name %}">{{ item.product.name }}</a>
+                                    {% elif item.fruit %}
+                                        <a href="{% url 'product' item.fruit.name %}">{{ item.fruit.name }}</a> 
+                                        {% elif item.dairy %}
+                                        <a href="{% url 'product' item.dairy.name %}">{{ item.dairy.name }}</a>
+                                    {% endif %}
+                                </td>
+
+                                <td class="price-pr">
+                                    <!-- Display the correct price -->
+                                    {% if item.product %}
+                                        <p>₹{{ item.product.price }}</p>
+                                    {% elif item.fruit %}
+                                        <p>₹{{ item.fruit.price }}</p>
+                                        {% elif item.dairy %}
+                                        <p>₹{{ item.dairy.price }}</p>
+                                    {% endif %}
+                                </td>
+
+                                <td class="quantity-box">
+                                    In Stock
+                                </td>
+
+                                <td class="remove-pr">
+                                    <a href="{% url 'remove_from_wishlist' item.id %}">
+                                        <i class="fas fa-times"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="5" class="text-center">
+                                    <p>Your wishlist is empty!</p>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Wishlist -->
+
+<!-- Start Instagram Feed  -->
+<div class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-01.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-02.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-03.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-04.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-05.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-06.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-07.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-08.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-09.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-05.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Instagram Feed  -->
+
+{% endblock %}

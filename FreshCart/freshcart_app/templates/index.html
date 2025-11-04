@@ -1,0 +1,209 @@
+{% extends 'base.html' %}
+{%load static%}
+{%static "images" as baseUrl%}
+
+{%block content%}
+
+
+<!-- Start Slider -->
+<div id="slides-shop" class="cover-slides">
+    <ul class="slides-container">
+       
+        <li class="text-center">
+            <img src="{% static 'images/banner-01.jpg'%}" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Welcome To <br> FreshCart</strong></h1>
+                        <p class="m-b-40">Welcome to FreshCart! Your one-stop shop for farm-fresh  vegetables, <br>fruits, and dairy, delivered right to your doorstep. </p>
+                       
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="{% static 'images/3.jpg'%}" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Welcome To <br> FreshCart</strong></h1>
+                        <p class="m-b-40">Welcome to FreshCart! Your one-stop shop for farm-fresh  vegetables, <br>fruits, and dairy, delivered right to your doorstep. </p>
+                       
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="{% static 'images/banner-02.jpg'%}" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Welcome To <br> FreshCart</strong></h1>
+                        <p class="m-b-40">Welcome to FreshCart! Your one-stop shop for farm-fresh  vegetables, <br>fruits, and dairy, delivered right to your doorstep. </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="{% static 'images/banner-03.jpg'%}" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Welcome To <br> FreshCart</strong></h1>
+                        <p class="m-b-40">Welcome to FreshCart! Your one-stop shop for farm-fresh  vegetables, <br>fruits, and dairy, delivered right to your doorstep. </p>
+                       
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="{% static 'images/1.jpg'%}" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Welcome To <br> FreshCart</strong></h1>
+                        <p class="m-b-40">Welcome to FreshCart! Your one-stop shop for farm-fresh  vegetables, <br>fruits, and dairy, delivered right to your doorstep. </p>
+                       
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+    </ul>
+    <div class="slides-navigation">
+        <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    </div>
+</div>
+<!-- End Slider -->
+
+<!-- Start Categories  -->
+<div class="categories-shop">
+    
+    <div class="container">
+        <div class="choose">
+            <h2>Choose the <span class="category">Category </span> </h2>
+            <p>Discover the freshest produce at Freshcart! Choose from our carefully curated categories: Fruits, Vegetables, or Dairy. Our handpicked selection guarantees quality and variety, ensuring you find the perfect ingredients for your culinary adventures.</p>
+        </div>
+        <div class="row">
+            {%for product in products%}
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <a href="{% url product.url %}">
+                    <div class="shop-cat-box one">
+                        <img class="img-fluid" src="{{baseUrl}}/{{product.img}}" alt="" />
+                        <h2 class="veges">{{product.name}}</h2>
+                    </div>
+                </a>
+            </div>
+           {%endfor%}
+        </div>
+    </div>
+</div>
+<!-- End Categories -->
+
+<div class="box-add-products">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="offer-box-products">
+                    <img class="img-fluid" src="{% static 'images/add-img-01.jpg'%}" alt="" />
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="offer-box-products">
+                    <img class="img-fluid" src="{% static 'images/add-img-02.jpg'%}" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Start Instagram Feed  -->
+<div class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-01.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-02.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-03.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-04.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-05.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-06.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-07.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-08.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-09.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-05.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Instagram Feed  -->
+
+{%endblock%}

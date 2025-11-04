@@ -1,0 +1,12 @@
+asgiref==3.8.1
+dj-database-url==2.2.0
+Django==5.1
+django-crispy-forms==1.14.0
+gunicorn==23.0.0
+packaging==24.1
+pillow==10.4.0
+# psycopg2==2.9.9
+python-decouple==3.8
+sqlparse==0.5.1
+typing_extensions==4.12.2
+whitenoise==6.7.0

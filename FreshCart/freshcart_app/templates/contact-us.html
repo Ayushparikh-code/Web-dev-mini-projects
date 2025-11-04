@@ -1,0 +1,175 @@
+<title>Contact - FreshCart</title> 
+{% extends 'base.html' %}
+{%load static%}
+{%block content%}
+
+    <!-- Start All Title Box -->
+    <div class="all-title-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Contact</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{%url 'home'%}">Home</a></li>
+                        <li class="breadcrumb-item active"> Contact </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End All Title Box -->
+
+    <!-- Start Contact Us  -->
+    <div class="contact-box-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                    <div class="contact-form-right">
+                        <h2>Get in Touch</h2>
+                        <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or
+                            opportunities. Email me with any questions or inquiries. I'll be happy to answer your questions.</p>
+                        <form action="{% url 'contact' %}" method="POST" id="contactForm">
+                            {%csrf_token%}
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required data-error="Please enter your Subject">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" id="message" placeholder="Your Message" rows="4" data-error="Write your message" required></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="submit-button text-center">
+                                        <button class="btn hvr-hover" id="submit" type="submit">Send Message</button>
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-sm-12">
+                    <div class="contact-info-left">
+                        <h2>Contact Info</h2>
+                        <p>I am a motivated Junior Full Stack Engineer with a strong focus on developing dynamic web applications using Django and related technologies. I possess a solid understanding of both front-end and back-end development, enabling me to create seamless user experiences. Feel free to get in touch with me.</p>
+                        <ul>
+                            
+                            <li>
+                                <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+9188******44">+9188******44</a></p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-envelope"></i>Email: <a href="mailto:zaidkhuroo@gmail.com">zaidkhuroo@gmail.com</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Cart -->
+
+   <!-- Start Instagram Feed  -->
+<div class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-01.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-02.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-03.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-04.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-05.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-06.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-07.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-08.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-09.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-05.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Instagram Feed  -->
+
+
+{%endblock%}

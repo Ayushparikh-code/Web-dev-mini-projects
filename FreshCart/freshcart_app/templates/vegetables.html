@@ -1,0 +1,150 @@
+<title>Vegetables - FreshCart</title>  
+{% extends 'base.html' %}
+{%load static%}
+{%block content%}
+
+<div class="products-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-all text-center">
+                    <h1>Vegetables</h1>
+                    <p>Vegetables are essential components of a healthy diet, offering a wide array of vitamins, minerals, and fiber. From leafy greens like spinach and kale to colorful vegetables like carrots and bell peppers, each type provides unique nutritional benefits. They are low in calories and high in nutrients, making them a great way to support overall health and well-being. Incorporating a variety of vegetables into your daily meals can help boost your immune system, improve digestion, and maintain a healthy weight.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="special-menu text-center">
+                    <div class="button-group filter-button-group">
+                        <button class="active" data-filter="*">All</button>
+                        <button data-filter=".top-featured">Top featured</button>
+                        <button data-filter=".best-seller">Best seller</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row special-list">
+
+            {%for product in products%}
+            <a href="{%url 'product' product.name %}">
+            <div class="col-lg-3 col-md-6 special-grid best-seller">
+                <div class="products-single fix">
+                    <div class="box-img-hover">
+                        {%if product.sale%}
+                        <div class="type-lb">
+                            <p class="sale">Sale</p>
+                        </div>
+                        {%endif%}
+                        {%if product.new%}
+                        <div class="type-lb">
+                            <p class="new">New</p>
+                        </div>
+                        {%endif%}
+                        <img src="{% static product.img %}" class="img-fluid" alt="Image">
+                        
+                    </div>
+                    <div class="why-text">
+                        <h3>{{product.name}}</h3>
+                        <p id="price" class="text-decoration-underline">Price: ₹{{product.price}}
+                            <small class="text-muted"> (₹{{product.origprice}} / kg)</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+            {%endfor%}
+            
+        </div>
+    </div>
+</div>
+<!-- Start Instagram Feed  -->
+<div class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-01.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-02.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-03.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-04.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-05.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-06.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-07.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-08.jpg'%}" alt="" />
+                <div class="hov-in">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-09.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-05.jpg'%}" alt="" />
+                <div class="hov-in">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Instagram Feed  -->
+{%endblock%}

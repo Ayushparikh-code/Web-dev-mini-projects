@@ -1,0 +1,223 @@
+<title>About - Freshshop</title>   
+{% extends 'base.html' %}\
+{%load static%}
+{%block content%}
+
+<!-- Start All Title Box -->
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>ABOUT US</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{%url 'home'%}">Home</a></li>
+                    <li class="breadcrumb-item active">ABOUT US</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Title Box -->
+
+<!-- Start About Page  -->
+<div class="about-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"> <img class="img-fluid" src="{% static 'images/about-img.jpg'%}" alt="" />
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">We are <span>FreshCart</span></h2>
+                <p class="freshcart-about">"FreshCart is your one-stop shop for fresh, high-quality groceries delivered right to your doorstep.
+                    We are committed to providing you with a convenient and hassle-free online shopping experience.Our
+                    wide range of products includes fresh vegetables, juicy fruits, and dairy essentials. Enjoy the
+                    convenience of shopping from the comfort of your home. With just a few clicks, you can browse our
+                    extensive catalog, add items to your cart, and schedule a delivery that suits your needs. Our
+                    user-friendly website and mobile app make it easy to find what you're looking for and track your
+                    order.Experience the freshness and convenience of FreshCart today. Shop online and let us bring the
+                    grocery store to you!</p>
+                <a class="btn hvr-hover" href="{%url 'home'%}">Shop ></a>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-block-inner">
+                    <h3>We are Trusted</h3>
+                    <p>Trust FreshCart for fresh, local groceries delivered to your door. Enjoy quality, convenience,
+                        and a safe shopping experience. </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-block-inner">
+                    <h3>We are Professional</h3>
+                    <p>FreshCart is professional due to our commitment to quality, reliability, and customer
+                        satisfaction. We prioritize safety and efficiency in all our operations. </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-block-inner">
+                    <h3>We are Expert</h3>
+                    <p>FreshCart is an expert in online grocery shopping. Our team has years of experience in sourcing,
+                        quality control, and delivering fresh produce. We stay up-to-date with industry trends and best
+                        practices. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-12">
+                <h2 class="noo-sh-title">About me</h2>
+            </div>
+            <div class="col-sm-6 col-lg-6">
+                <div class="hover-team">
+                    <div class="our-team"> <img src="{% static 'images/zaid.jpg'%}" alt="" />
+                        <div class="team-content">
+                            <h3 class="title">Zaid Bin Farooq</h3>
+                        </div>
+                        <ul class="social">
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/zaidkhuroo/" class="fab fa-linkedin"></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/zaidkhuroo/" class="fab fa-github"></a>
+                                </li>
+
+                            </ul>
+                        </ul>
+                        <div class="icon"> <i class="fa fa-plus" aria-hidden="true"></i> </div>
+                    </div>
+
+                    <hr class="my-0">
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-6">
+                <h2 class="hello">Hello! I'm Zaid</h2>
+                <div class="hover-team">
+                    <div class="our-team">
+
+
+                        <ul class="social">
+                            <a href="#" class="fab fa-linkedin"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fab fa-github"></a>
+                            </li>
+
+                        </ul>
+                        <div class="icon"> <i class="fa fa-plus" aria-hidden="true"></i> </div>
+                    </div>
+                    <div class="team-description">
+                        <p>"As a dedicated Fullstack Developer with a passion for crafting innovative digital solutions,
+                            I'm excited to contribute my skills and enthusiasm to a dynamic team. With a strong
+                            foundation in Django, I'm adept at building robust and user-friendly web applications from
+                            the ground up.</p>
+
+                        <p>
+                            I'm driven by a thirst for knowledge and a commitment to staying at the forefront of
+                            technological advancements. I thrive in collaborative environments, where I can learn from
+                            experienced professionals and contribute my unique perspective. I'm eager to join an organization that values innovation, teamwork, and personal growth. I'm
+                            confident in my ability to deliver high-quality results and make a positive impact on your
+                            team's projects." </p>
+                    </div>
+                    <hr class="my-0">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- End About Page -->
+
+<!-- Start Instagram Feed  -->
+<div class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-01.jpg'%}" alt="" />
+                <div class="hov-in">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-02.jpg'%}" alt="" />
+                <div class="hov-in">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-03.jpg'%}" alt="" />
+                <div class="hov-in">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-04.jpg'%}" alt="" />
+                <div class="hov-in">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-05.jpg'%}" alt="" />
+                <div class="hov-in">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-06.jpg'%}" alt="" />
+                <div class="hov-in">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-07.jpg'%}" alt="" />
+                <div class="hov-in">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-08.jpg'%}" alt="" />
+                <div class="hov-in">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-09.jpg'%}" alt="" />
+                <div class="hov-in">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-05.jpg'%}" alt="" />
+                <div class="hov-in">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Instagram Feed  -->
+
+
+
+{%endblock%}

@@ -1,0 +1,33 @@
+<title>Register - FreshCart</title>  
+{%load static%}
+{%load crispy_forms_tags%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+   <link rel="shortcut icon" href="{% static 'images/cart5.png'%}" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container form-layout p-5">
+            <form method="POST">
+                <h2>Create Account</h2>
+                {%csrf_token%}
+                {{form | crispy}}
+
+                <button type="submit">Register</button>
+
+            </form>
+            <span class="create"> Already have an account? <a href="{%url 'login'%}">Login</a></span>
+        </div>
+    </div>
+</body>
+
+</html>

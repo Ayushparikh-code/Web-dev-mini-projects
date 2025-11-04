@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: url(https://static.vecteezy.com/system/resources/previews/034/494/532/non_2x/flat-lay-vegetables-on-white-background-food-and-diet-concept-ai-generated-free-photo.jpg)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 10px;
+  color: #000000;
+}
+
+.container {
+  width: 500px;
+  border-radius: 8px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  text-align: center; /* Ensure logo and form content are centered */
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px; /* Add some space between logo and form */
+}
+
+.logo-img {
+  max-width: 200px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* Text and fields remain left-aligned */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #252525;
+}
+
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+
+button {
+  background: #dd6767;
+  color: #d6d6d6;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+  width: 80%; /* Keep the button left-aligned but fill the width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  color: #262525;
+  border-color: #5fd0ec;
+  background: rgba(51, 136, 248, 0.15);
+}
+
+.create {
+  padding-top: 5px;
+  color: #737373;
+}
+
+.create a {
+  font-weight: bold;
+  color: #8494fb;
+  text-decoration: none;
+}
+
+.create a:hover {
+  text-decoration: none;
+  color: #4de73f;
+}

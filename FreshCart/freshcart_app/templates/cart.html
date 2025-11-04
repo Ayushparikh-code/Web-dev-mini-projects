@@ -1,0 +1,234 @@
+<title>Basket - FreshCart</title> 
+{% extends 'base.html' %}
+{% load custom_filters %}
+{% load static %}
+{% block content %}
+
+
+<style>
+
+</style>
+<!-- Start All Title Box -->
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>My Basket</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{%url 'home'%}">Home</a></li>
+                    <li class="breadcrumb-item active">My Basket</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Title Box -->
+
+<!-- Start Cart  -->
+<div class="cart-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <form action="{% url 'update_cart' %}" method="post">
+                    {% csrf_token %}
+                    <div class="table-main table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Images</th>
+                                    <th>Product Name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th>Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in cart_items %}
+                                <tr>
+                                    <td class="thumbnail-img">
+                                        <a href="#">
+                                            {% if item.product %}
+                                            <img class="img-fluid" src="{% static item.product.img %}"
+                                                alt="{{ item.product.name }}" />
+                                            {% elif item.fruit %}
+                                            <img class="img-fluid" src="{% static item.fruit.img %}"
+                                                alt="{{ item.fruit.name }}" />
+                                            {% elif item.dairy %}
+                                            <img class="img-fluid" src="{% static item.dairy.img %}"
+                                                alt="{{ item.dairy.name }}" />
+                                            {% else %}
+                                            <img class="img-fluid" src="{% static 'path/to/default/image.jpg' %}"
+                                                alt="No Image Available" />
+                                            {% endif %}
+                                        </a>
+                                    </td>
+
+                                    <td class="name-pr">
+                                        <a href="#">
+                                            <!-- Conditional display for product or fruit names -->
+                                            {% if item.product %}
+                                            {{ item.product.name }}
+                                            {% elif item.fruit %}
+                                            {{ item.fruit.name }}
+                                            {% elif item.dairy %}
+                                            {{ item.dairy.name }}
+                                            {% endif %}
+                                        </a>
+                                    </td>
+                                    <td class="price-pr">
+                                        <p>₹{% if item.product %}{{ item.product.price }}
+                                            {% elif item.fruit %}{{ item.fruit.price }}
+                                            {% elif item.dairy %}{{ item.dairy.price }}
+                                            {% endif %}
+                                    </td>
+                                    <td class="quantity-box">
+                                        <input type="number" name="{{ item.id }}" value="{{ item.quantity }}" min="1"
+                                            step="1" class="c-input-text qty text" style="width: 80px; border-radius: 5px; border: 1px solid #ccc; 
+                                            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); font-size: 16px; padding:2px; font-weight:bold; text-align:center">
+                                    </td>
+                                    <td class="total-pr">
+                                        <p>₹{{ item.total_price }}</p>
+                                    </td>
+                                    <td class="remove-pr">
+                                        <a href="{% url 'remove_from_cart' item.id %}">
+                                            <i class="fas fa-times"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="6" class="text-center">
+                                        <p>Your Basket is empty!</p>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row my-5">
+                        <div class="col-lg-6 col-sm-6">
+
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="update-box">
+                                <input value="Update Basket" type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row my-5">
+                    <div class="col-lg-8 col-sm-12"></div>
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="order-box">
+                            <h3>Order summary</h3>
+                            <div class="d-flex">
+                                <h4>Sub Total</h4>
+                                <div class="ml-auto font-weight-bold">₹ {{ cart_total }}</div>
+                            </div>
+                            <hr>
+                            <div class="d-flex gr-total">
+                                <h5>Grand Total</h5>
+                                <div class="ml-auto h5">₹ {{ cart_total }}</div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex shopping-box">
+                        <a href="{% url 'checkout' %}" class="ml-auto btn hvr-hover">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Cart -->
+
+<!-- Start Instagram Feed  -->
+<div class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-01.jpg'%}" alt="" />
+                <div class="hov-in">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-02.jpg'%}" alt="" />
+                <div class="hov-in">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-03.jpg'%}" alt="" />
+                <div class="hov-in">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-04.jpg'%}" alt="" />
+                <div class="hov-in">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-05.jpg'%}" alt="" />
+                <div class="hov-in">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-06.jpg'%}" alt="" />
+                <div class="hov-in">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-07.jpg'%}" alt="" />
+                <div class="hov-in">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-08.jpg'%}" alt="" />
+                <div class="hov-in">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-09.jpg'%}" alt="" />
+                <div class="hov-in">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'images/instagram-img-05.jpg'%}" alt="" />
+                <div class="hov-in">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Instagram Feed  -->
+
+{% endblock %}

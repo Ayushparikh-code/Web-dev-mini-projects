@@ -1,0 +1,10 @@
+<title>Order Placed - FreshCart</title>   
+{% extends 'base.html' %}
+{% block content %}
+<div class="order-success">
+  <i class="checkmark">✓</i>
+  <h1><span class="spin">Order Placed </span>Successfully</h1>
+  <p>We received your order request, Thankyou!</p>
+  <a href="{% url 'home' %}"> <button class="back">Home</button></a>
+</div>
+{% endblock %}
