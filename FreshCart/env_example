@@ -1,0 +1,6 @@
+EMAIL_HOST_USER = abc@mail.com
+EMAIL_HOST_PASSWORD = rste hshc drnh ktll
+EMAIL_HOST = smtp.gmail.com
+EMAIL_BACKEND = django.core.mail.backends.smtp.EmailBackend
+EMAIL_PORT=613
+EMAIL_USE_TLS = True

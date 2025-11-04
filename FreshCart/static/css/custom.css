@@ -10,7 +10,7 @@
 
 #tax {
   font-size: small;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   padding-bottom: 20px;
 }
 
@@ -41,19 +41,18 @@
 
   animation: title 1.5s infinite;
 
-
-  background: linear-gradient(0deg,
-      rgb(76, 239, 58) 0%,
-      rgb(255, 255, 255) 80%);
+  background: linear-gradient(
+    0deg,
+    rgb(76, 239, 58) 0%,
+    rgb(255, 255, 255) 80%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
-
 .shop-cat-box img {
   filter: brightness(80%);
-  
 }
 
 .contain {
@@ -65,10 +64,8 @@
   -webkit-backdrop-filter: blur(5px);
   /* text-align: center; */
   font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-
-
 }
-.contain h2{
+.contain h2 {
   font-weight: 600;
   font-size: 30px;
 }
@@ -79,8 +76,6 @@ form {
   text-align: left;
   /* Text and fields remain left-aligned */
 }
-
-
 
 .input-field {
   position: relative;
@@ -143,7 +138,7 @@ form {
 
 .order-success h1 {
   font-size: 2.4rem;
-  color: #88B04B;
+  color: #88b04b;
   font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
   font-weight: 900;
   font-size: 40px;
@@ -158,7 +153,7 @@ form {
 }
 
 .order-success p {
-  color: #404F5E;
+  color: #404f5e;
   font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
   margin: 0;
@@ -167,14 +162,14 @@ form {
 .checkmark {
   font-size: 151px;
 }
-.category{
+.category {
   color: rgb(220, 217, 45);
 }
-.footer-copyright{
+.footer-copyright {
   font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
 }
-.message-text{
+.message-text {
   color: rgb(24, 24, 24);
   font-weight: 600;
   padding: 9px;

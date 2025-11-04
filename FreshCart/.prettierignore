@@ -1,0 +1,10 @@
+# ignore vendor/bundled/minified files
+node_modules
+dist
+build
+assets/admin/css/vendor/**
+assets/admin/js/vendor/**
+staticfiles/admin/css/vendor/**
+staticfiles/admin/js/vendor/**
+**/*.min.css
+**/*.min.js

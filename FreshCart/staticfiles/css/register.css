@@ -8,7 +8,8 @@
 }
 
 body {
-  background: url(https://static.vecteezy.com/system/resources/previews/034/494/532/non_2x/flat-lay-vegetables-on-white-background-food-and-diet-concept-ai-generated-free-photo.jpg) no-repeat center center fixed;
+  background: url(https://static.vecteezy.com/system/resources/previews/034/494/532/non_2x/flat-lay-vegetables-on-white-background-food-and-diet-concept-ai-generated-free-photo.jpg)
+    no-repeat center center fixed;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -66,8 +67,8 @@ h2 {
   color: #fff;
 }
 
-.input-field input:focus~label,
-.input-field input:valid~label {
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
   font-size: 0.8rem;
   top: 10px;
   transform: translateY(-120%);
@@ -161,7 +162,6 @@ button:hover {
 @media (max-width: 480px) {
   .container {
     width: 100%; /* Full width for mobile */
-   
   }
 
   h2 {

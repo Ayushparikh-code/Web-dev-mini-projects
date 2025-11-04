@@ -1,4 +1,3 @@
-
 .carouselTicker {
   overflow: hidden;
   float: none;
@@ -20,11 +19,11 @@
   margin: 0;
   float: left;
   border: 4px solid #fbb714;
-  background-color:#fbb714;
+  background-color: #fbb714;
   margin-left: 5px;
   width: 101px;
   height: 40px;
-  color:#fff;
+  color: #fff;
   line-height: 34px;
   text-align: center;
 }
