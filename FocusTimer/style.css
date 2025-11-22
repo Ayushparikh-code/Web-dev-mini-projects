@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.timer-circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+svg {
+    width: 200px;
+    height: 200px;
+}
+
+circle {
+    fill: none;
+    stroke-width: 10;
+    stroke: #333;
+}
+
+#progress {
+    stroke: #00ff99;
+    stroke-linecap: round;
+    stroke-dasharray: 565;
+    stroke-dashoffset: 565;
+    transition: stroke-dashoffset 1s linear;
+}
+
+.time {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 34px;
+    font-weight: bold;
+}
+
+input {
+    margin-top: 15px;
+    padding: 10px;
+    width: 160px;
+    border: none;
+    border-radius: 8px;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #00ff99;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttons button:hover {
+    background: #00cc77;
+}

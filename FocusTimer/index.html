@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Focus Timer</h1>
+
+        <div class="timer-circle">
+            <svg>
+                <circle cx="100" cy="100" r="90"></circle>
+                <circle cx="100" cy="100" r="90" id="progress"></circle>
+            </svg>
+            <div class="time" id="time-display">00:00</div>
+        </div>
+
+        <input type="number" id="minutes-input" placeholder="Enter minutes">
+
+        <div class="buttons">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>
