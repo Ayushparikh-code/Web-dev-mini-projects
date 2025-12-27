@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="">
+   <nav class="fixed top-0 left-0 w-full h-16 z-50 bg-black shadow-md">
+    <div class="flex justify-between items-center h-full px-4">
+
+        <!-- Logo -->
+        <div class="text-white font-semibold text-lg"><a href="/">
+        My App
+        </a></div>
+
+        <!-- Center links -->
+        <ul class="flex gap-6 items-center text-white">
+        <!-- <li class="hover:text-gray-200 cursor-pointer">Home</li>
+        <li class="hover:text-gray-200 cursor-pointer">Contact</li> -->
+            <li>
+                <a
+                href="/"
+                class="hover:text-gray-200 cursor-pointer"
+                >
+                Home
+                </a>
+            </li>
+            <li>
+                <a
+                href="/"
+                class="hover:text-gray-200 cursor-pointer"
+                >
+                Contact
+                </a>
+            </li>
+        </ul>
+
+        <!-- Auth buttons -->
+        <ul class="flex gap-4 items-center">
+        <li>
+            <a
+            href="/signup"
+            class="bg-green-500 px-4 py-1 rounded-md text-black hover:bg-green-600 transition"
+            >
+            Sign up
+            </a>
+        </li>
+        <li>
+            <a
+            href="/login"
+            class="bg-green-500 px-4 py-1 rounded-md text-black hover:bg-green-600 transition"
+            >
+            Login
+            </a>
+        </li>
+        </ul>
+
+    </div>
+    </nav>
+    <!-- bg-[#FFDEB9] -->
+    <div class="w-full h-dvh bg-white flex flex-col items-center justify-center" >
+        <h1 class="font-bold text-5xl">Welcome To GossipWorld!!</h1>
+        <h3 class="text-2xl pt-2">Login to your Account.If new User</h3>
+        <h3 class="text-2xl">Be part of us by signup..</h3>
+    </div>
+<!-- main posts -->
+    <h2 class="text-center text-3xl text-red-500 pt-4">Top posts for you:</h2>
+    <div class="grid grid-cols-4 gap-4 max-h-screen overflow-y-auto p-4">
+        <%for (let chat of chats){%>
+            <div class="chat">
+                <div class="msg">
+                    <p><%=chat.msg%></p>
+                </div>
+                <p class="rec">To <%=chat.to%></p>
+
+                <p>At <%=chat.created_at.toString().split(" ")[4]%></p>
+                <p><%=chat.created_at.toString().split(" ").slice(0,4).join(" ")%></p>
+                <!-- <div class="frm">
+                    <form method="get" action=" /chats/<%=chat._id%>/edit">
+                        <button>Edit</button>
+                    </form>
+                    <form method="post" action="/chats/<%=chat._id%>?_method=Delete">
+                        <button class="del">Delete</button>
+                    </form>
+                </div> -->
+                
+            </div>
+        <%}%>
+    </div>
+
+    <footer class="text-center bg-black text-white">Do follow us on instagram for more details.</footer>
+</body>
+</html>

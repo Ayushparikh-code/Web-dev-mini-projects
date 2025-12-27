@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Account</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#FFE4EF]">
+    <nav class="fixed top-0 left-0 w-full h-16 z-50 bg-[#D7BBF5] shadow-sm">
+    <div class="flex justify-between items-center h-full px-4">
+
+        <!-- Logo -->
+        <div class="text-black font-semibold text-lg"><a
+            href="/">
+            GossipsWorld
+            </a>
+        </div>
+
+        <!-- Center links -->
+        <ul class="flex gap-6 items-center text-black">
+        <li class="hover:text-gray-200 cursor-pointer">Home</li>
+        <li class="hover:text-gray-200 cursor-pointer">Contact</li>
+        </ul>
+
+        <!-- Auth buttons -->
+        <ul class="flex gap-4 items-center">
+        <li>
+            <a
+            href="/chats/new"
+            class="bg-green-500 px-4 py-1 rounded-md text-black hover:bg-green-600 transition"
+            >
+            create New
+            </a>
+        </li>
+        <li>
+            <a
+            href="/logout"
+            class="bg-white px-4 py-1 rounded-md text-black hover:bg-red-600 transition"
+            >
+            Logout
+            </a>
+        </li>
+        </ul>
+
+    </div>
+    </nav>
+
+
+    <!-- main content -->
+    <div class="pt-20 pb-20">
+        <h2 class="text-center text-2xl pt-5">your posts are:</h2>
+        <div class="grid grid-cols-3 gap-4 max-h-screen overflow-y-auto p-4">
+            <%if (chats.length===0) {%>
+                <p class="text-center text-red-500">No Posts yet</p>
+            <%}%>
+            <%for (let chat of chats){%>
+                <div class="chat border-2 border-black rounded-md">
+                    <div class="msg pb-3 rounded-xl bg-[#E9B3FB]">
+                        <p class="text-center"><%=chat.msg%></p>
+                    </div>
+                    <p class="rec">@<%=chat.to%></p>
+
+                    <p>At <%=chat.created_at.toString().split(" ")[4]%></p>
+                    <p><%=chat.created_at.toString().split(" ").slice(0,4).join(" ")%></p>
+                    <div class="frm">
+                        <form method="get" action="/chats/<%=chat._id%>/edit">
+                            <button class="bg-yellow-500 ps-2">Edit</button>
+                        </form>
+                        <form method="post" action="/chats/<%=chat._id%>?_method=Delete">
+                            <button class="del">Delete</button>
+                        </form>
+                    </div>
+                    
+                </div>
+            <%}%>
+        </div>
+    </div>
+    <footer class="text-center fixed bottom-0 w-full left-0 bg-gray-500">Do follow us on instagram for more details.</footer>
+</body>
+</html>
