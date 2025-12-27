@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:16px;
+}
+.chat {
+    background-color: antiquewhite;
+    font-style: italic;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+h1 {
+    color: red;
+}
+.msg {
+    font-size: medium;
+}
+.navi {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+button {
+    padding-top: 8px;
+    border-radius: 10%;
+    text-align: center;
+    padding-bottom: 10px;
+    border-color: black;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.rec{
+    border-bottom: 2px solid cadetblue;
+}
+.frm {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+}
+.del {
+    background-color: red;
+}

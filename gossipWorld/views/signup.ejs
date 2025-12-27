@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-200 min-h-screen">
+  <div class="min-h-screen flex flex-col justify-center items-center">
+    <div>
+        <a class="text-black pb-4" href="/">✖️</a>
+    </div>
+    <form class="w-full max-w-sm pt-4" method="post" action="/create">
+      <div class="bg-black border-2 border-black flex flex-col p-6 gap-4 rounded-lg">
+
+        <div>
+          <label class="text-white font-medium">Username</label>
+          <input
+            class="w-full mt-1 text-white bg-black border-2 border-white rounded-md italic px-2 py-1
+                   focus:outline-none focus:ring-2 focus:ring-green-500"
+            type="text"
+            placeholder="enter username"
+            name="username"
+            required
+          >
+        </div>
+
+        <div>
+          <label class="text-white font-medium">Email</label>
+          <input
+            class="w-full mt-1 text-white bg-black border-2 border-white rounded-md italic px-2 py-1
+                   focus:outline-none focus:ring-2 focus:ring-green-500"
+            type="email"
+            placeholder="enter your email id"
+            name="email"
+            required
+          >
+        </div>
+
+        <div>
+          <label class="text-white font-medium">Password</label>
+          <input
+            class="w-full mt-1 text-white bg-black border-2 border-white rounded-md italic px-2 py-1
+                   focus:outline-none focus:ring-2 focus:ring-green-500"
+            type="password"
+            placeholder="enter password"
+            name="password"
+            required
+          >
+        </div>
+
+        <button
+          class="mt-2 rounded-md bg-white text-black border-2 py-1 cursor-pointer
+                 hover:bg-gray-200 transition"
+          type="submit"
+        >
+          Sign Up
+        </button>
+
+      </div>
+    </form>
+
+  </div>
+</body>
+</html>
