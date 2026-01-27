@@ -68,7 +68,7 @@ git checkout -b <your_branch_name>
   git commit -m "<your_commit_message>"
 ```
 
-**7.** Push your local branch to the remote repository.
+**8.** Push your local branch to the remote repository.
 
 ```terminal
 git push -u origin <your_branch_name>
@@ -107,7 +107,7 @@ git push -u origin <your_branch_name>
 </table>
 <br>
 
-## 📌 Opensource Programs
+## 📌 Open Source Programs
 
 
 ### This project is a part of following Open Source Program
