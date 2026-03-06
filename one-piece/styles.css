@@ -1,0 +1,238 @@
+ body {
+      background: #0d0d0d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .logo {
+      position: relative;
+      width: 500px;
+      height: 500px;
+    }
+
+    /* Crossbones */
+    .crossbone {
+      position: absolute;
+      width: 300px;
+      height: 25px;
+      background: #fff;
+      border: 5px solid #000;
+      top: 50%;
+      left: 50%;
+      border-right: none;
+      border-left: none;
+      transform: translate(-50%, -50%) rotate(45deg);
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    
+    .crossbone.second {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    /* Skull */
+    .skull {
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      background: #fff;
+      border: 5px solid #000;
+      border-radius: 50%;
+      top: 136px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
+    /* Eyes */
+    .eye {
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      background: #000;
+      border-radius: 50%;
+      top: 83px;
+    }
+
+    .eye.left {
+      left: 29px;
+    }
+
+    .eye.right {
+      right: 29px;
+    }
+
+    /* Nose */
+    .nose {
+      position: absolute;
+      width: 18px;
+      height: 12px;
+      background: #000;
+      border-radius: 50%;
+      top: 118px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    /* Teeth */
+    .teeth {
+      position: absolute;
+      width: 90px;
+      height: 80px;
+      border: 5px solid #000;
+      border-radius: 30px 30px 60px 60px;
+      border-top: none;
+      top: 260px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      z-index: 1;
+    }
+
+    
+
+    /* Hat */
+    .hat {
+      position: absolute;
+      top: 132px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 140px;
+      height: 80px;
+      background: #ffda3c;
+      border: 5px solid #000;
+      border-bottom: none;
+      border-radius: 80px 80px 0 0;
+      z-index: 3;
+    }
+
+    .hat-band {
+      position: absolute;
+      top: 184px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 139px;
+      height: 16px;
+      border:4px solid #000;
+      border-top: none;
+      background: red;
+      border-radius: 10px 10px 0px 0px;
+      z-index: 4;
+    }
+
+    .hat-brim {
+      position: absolute;
+      top: 199px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 10px;
+      background: #ffda3c;
+      border: 4px solid #000;
+      border-radius: 10px;
+      z-index: 20;
+    }
+    .circle1,.circle11,.circle2 ,.circle22, .circle3, .circle33, .circle4, .circle44{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border: 5px solid #000;
+        border-radius: 50%;
+        
+    }
+    .circle1{
+        top: 110px;
+        left: 127px;
+        z-index: -1;
+    }
+    .circle11{
+        top: 118px;
+        left: 108px;
+        border-right: none;
+        z-index: -1;
+        
+    }
+    .circle2{
+        top: 110px;
+        left: 335px;
+    }
+    .circle22{
+        top: 128px;
+        left: 355px;
+        border-left: none;
+        transform: rotate(45deg);
+    }
+    .circle3{
+        left: 127px;
+        bottom: 115px;
+    }
+    .circle33{
+        left: 108px;
+        bottom: 123px;
+        border-right: none;
+    }
+    .circle4{
+        bottom: 123px;
+        right: 110px;
+    }
+    .circle44{
+        bottom: 110px;
+        right: 125px;
+        border-top: none;
+    }
+    .teethtable{
+        position: absolute;
+        bottom: 23px;
+        height: 80px;
+        width: 100px;
+        left: -3px;
+        border-radius: 50%;
+        border: 6px solid black;
+        border-top:none;
+        border-left: none;
+        border-right: none;
+    }
+    .teethbottom{
+        position: absolute;
+        bottom: 38px;
+        height: 80px;
+        width: 100px;
+        border-radius: 50%;
+        left: -4px;
+        border: 4px solid black;
+        border-top:none;
+        border-left: none;
+        border-right: none;
+    }
+    .line1 {
+        height: 24px;
+        width: 0px;
+        border: 2px solid black;
+        position: absolute;
+        bottom: 6px;
+        left: 19px;
+    }
+    .line2{
+        height: 35px;
+        width: 0px;
+        border: 2px solid black;
+        position: absolute;
+        bottom: 0px;
+left: 43px;
+    }
+    .line3{
+        height: 25px;
+        width: 0px;
+        border: 2px solid black;
+        position: absolute;
+        bottom: 2px;
+        left: 68px;
+    }
+    .onepiece{
+        color: #fff;
+    }
