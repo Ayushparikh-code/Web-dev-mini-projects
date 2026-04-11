@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+ 
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+ 
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+ 
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+ 
+        .coin-display {
+            width: 120px;
+            height: 120px;
+            margin: 30px auto;
+            perspective: 1000px;
+        }
+ 
+        .coin {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(145deg, #FFD700, #FFA500);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+            transition: transform 0.6s ease-out;
+            transform-style: preserve-3d;
+            border: 3px solid #DAA520;
+        }
+ 
+        .coin.flipping {
+            animation: flip 0.6s ease-out;
+        }
+ 
+        @keyframes flip {
+            0% {
+                transform: rotateY(0deg) rotateX(0deg);
+            }
+            50% {
+                transform: rotateY(1800deg) rotateX(360deg);
+            }
+            100% {
+                transform: rotateY(1800deg) rotateX(360deg);
+            }
+        }
+ 
+        .choices {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 30px 0;
+        }
+ 
+        .choice-btn {
+            padding: 15px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            border: 2px solid #ddd;
+            background: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #333;
+        }
+ 
+        .choice-btn:hover {
+            border-color: #667eea;
+            background: #f8f9ff;
+            transform: translateY(-2px);
+        }
+ 
+        .choice-btn.selected {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+ 
+        .flip-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 20px 0;
+            width: 100%;
+        }
+ 
+        .flip-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+ 
+        .flip-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+ 
+        .result {
+            margin-top: 30px;
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+ 
+        .result.hidden {
+            display: none;
+        }
+ 
+        .result-text {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+ 
+        .result-emoji {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+ 
+        .win {
+            color: #4CAF50;
+        }
+ 
+        .lose {
+            color: #f44336;
+        }
+ 
+        .stats {
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 2px solid #eee;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+ 
+        .stat-box {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 10px;
+        }
+ 
+        .stat-label {
+            color: #666;
+            font-size: 12px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+ 
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+        }
+ 
+        .reset-btn {
+            background: #f5f5f5;
+            color: #333;
+            border: none;
+            padding: 12px 24px;
+            font-size: 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+ 
+        .reset-btn:hover {
+            background: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Coin Flip</h1>
+        <p class="subtitle">Guess heads or tails and flip!</p>
+ 
+        <div class="coin-display">
+            <div class="coin" id="coin">H</div>
+        </div>
+ 
+        <div class="choices">
+            <button class="choice-btn" onclick="selectChoice('heads')">Heads 🪙</button>
+            <button class="choice-btn" onclick="selectChoice('tails')">Tails 🪙</button>
+        </div>
+ 
+        <button class="flip-btn" id="flipBtn" onclick="flipCoin()" disabled>Flip the Coin!</button>
+ 
+        <div class="result hidden" id="result">
+            <div class="result-emoji" id="resultEmoji"></div>
+            <div class="result-text" id="resultText"></div>
+        </div>
+ 
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-label">Wins</div>
+                <div class="stat-value" id="wins">0</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Losses</div>
+                <div class="stat-value" id="losses">0</div>
+            </div>
+        </div>
+ 
+        <button class="reset-btn" onclick="resetGame()">Reset Stats</button>
+    </div>
+ 
+    <script>
+        let selectedChoice = null;
+        let wins = 0;
+        let losses = 0;
+        let isFlipping = false;
+ 
+        function selectChoice(choice) {
+            selectedChoice = choice;
+            const buttons = document.querySelectorAll('.choice-btn');
+            buttons.forEach(btn => btn.classList.remove('selected'));
+            event.target.classList.add('selected');
+            
+            document.getElementById('flipBtn').disabled = false;
+            document.getElementById('result').classList.add('hidden');
+        }
+ 
+        function flipCoin() {
+            if (isFlipping || !selectedChoice) return;
+            
+            isFlipping = true;
+            document.getElementById('flipBtn').disabled = true;
+            
+            const coin = document.getElementById('coin');
+            coin.classList.add('flipping');
+            
+            const result = Math.random() < 0.5 ? 'heads' : 'tails';
+            
+            setTimeout(() => {
+                coin.classList.remove('flipping');
+                coin.textContent = result === 'heads' ? 'H' : 'T';
+                
+                const isWin = result === selectedChoice;
+                showResult(isWin, result);
+                
+                isFlipping = false;
+                document.getElementById('flipBtn').disabled = false;
+            }, 600);
+        }
+ 
+        function showResult(isWin, result) {
+            const resultDiv = document.getElementById('result');
+            const resultEmoji = document.getElementById('resultEmoji');
+            const resultText = document.getElementById('resultText');
+            
+            if (isWin) {
+                wins++;
+                resultEmoji.textContent = '🎉';
+                resultText.textContent = `You Won! It was ${result}!`;
+                resultText.className = 'result-text win';
+            } else {
+                losses++;
+                resultEmoji.textContent = '😢';
+                resultText.textContent = `You Lost! It was ${result}!`;
+                resultText.className = 'result-text lose';
+            }
+            
+            document.getElementById('wins').textContent = wins;
+            document.getElementById('losses').textContent = losses;
+            
+            resultDiv.classList.remove('hidden');
+        }
+ 
+        function resetGame() {
+            wins = 0;
+            losses = 0;
+            selectedChoice = null;
+            document.getElementById('wins').textContent = '0';
+            document.getElementById('losses').textContent = '0';
+            document.getElementById('result').classList.add('hidden');
+            document.getElementById('coin').textContent = 'H';
+            document.getElementById('flipBtn').disabled = true;
+            
+            const buttons = document.querySelectorAll('.choice-btn');
+            buttons.forEach(btn => btn.classList.remove('selected'));
+        }
+    </script>
+</body>
+</html>
