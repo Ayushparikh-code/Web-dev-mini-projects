@@ -2,40 +2,30 @@
 
 <a href = "https://qr-generator-webcode.netlify.app/" >For live link Click here</a>
 
-This project is a QR Code Generator built using React. It allows users to input text, select the background colour, and adjust the dimensions to generate a QR code. The generated QR code can be downloaded as well.
+A fast, lightweight web application that allows users to instantly generate downloadable QR codes from any text or URL input.
 
-## Features
+This project is part of the `Web-dev-mini-projects` collection.
 
-- Input text to generate a QR code
-- Select background colour for the QR code
-- Adjust dimensions of the QR code
-- Download the generated QR code
+## ✨ Key Features
+* **Instant Generation:** Converts text or links into QR codes in real-time.
+* **Clean UI:** A minimal, distraction-free interface.
+* **No Dependencies:** Built with pure, vanilla web technologies.
 
-## Technologies Used
+## 🛠️ Tech Stack
+* **HTML5:** Semantic structure and input fields.
+* **CSS3:** Responsive layout and styling.
+* **Vanilla JavaScript:** DOM manipulation and QR generation logic.
 
-- React
-- Tailwind CSS
+## 🏃‍♂️ How to Run Locally
 
-## Installation
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Ayushparikh-code/Web-dev-mini-projects.git](https://github.com/Ayushparikh-code/Web-dev-mini-projects.git)
+Navigate to the directory:
+Open the folder and go to 01-qrcode-gen.
 
-1. Clone the repository:
-
-```bash
-- git clone https://github.com/arun-webcode/Reactjs-mini-projects/edit/main/01-qrcode-gen
-- cd qr-code-generator
-- npm install
-- npm run dev
-Note - Remember to add this code on tailwind.config.js file.
-/** @type {import('tailwindcss').Config} */
-export default {
-content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-darkMode: "class",
-theme: {
-  extend: {},
-},
-plugins: [],
-};
-```
+Run the app:
+Double-click the index.html file to open it in your browser.
 
 ## Usage
 
