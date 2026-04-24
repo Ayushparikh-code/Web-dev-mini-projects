@@ -26,8 +26,8 @@ input.addEventListener('keyup', function() {
   // this is a masterstroke - to count words with any number of hyphens as one word
   // [-?(\w+)?]+ looks for hyphen and a word (we make both optional with ?). + at the end makes it a repeated pattern
   // \b is word boundary metacharacter
-  var words = input.value.match(/\b[-?(\w+)?]+\b/gi);
-  // console.log(words);
+  var words = input.value.match(/\b\w+(?:-\w+)*\b/gi);
+  
   if (words) {
     wordCount.innerHTML = words.length;
   } else {
