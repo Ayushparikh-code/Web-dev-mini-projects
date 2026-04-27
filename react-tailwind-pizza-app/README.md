@@ -1,41 +1,33 @@
-# Welcome to the React Pizza App 🍕
+# React Pizza App 🍕
 
-It is a pizza website which is built using React and TailwindCSS.
+## 📖 About the Project
+A sleek, responsive pizza website interface designed to showcase modern front-end development. This application focuses on clean UI design, rapid styling, and a smooth user experience.
 
+## 💻 Tech Stack
+* **Frontend Framework:** React (Components, Hooks)
+* **Styling:** Tailwind CSS (Utility-first styling for responsive layouts)
 
-## 💻Tech Stack
-<br>
+## 🚀 Getting Started (Local Setup)
+Follow these steps to get the project up and running on your local machine:
 
-![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
-![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![REACT](https://img.shields.io/badge/react%20-%23323330.svg?&style=for-the-badge&logo=react&logoColor=%23F7DF1E)
-![TAILWIND CSS](https://img.shields.io/badge/tailwindcss%20-%23323330.svg?&style=for-the-badge&logo=tailwindcss&logoColor=%23F7DF1E)
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Ayushparikh-code/Web-dev-mini-projects.git](https://github.com/Ayushparikh-code/Web-dev-mini-projects.git)
+Navigate to the project directory:
 
-<br>
+Bash
+cd Web-dev-mini-projects/react-tailwind-pizza-app
+Install dependencies:
 
+Bash
+npm install  
+# or 'yarn install'
+Run the development server:
 
-### How to get the form on your local machine:
-
----
-
-- Download or clone the repository
-
-```
-git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
-```
-
-- Go to the directory
-- Open react-tailwind-pizza-app folder
-- Open the terminal and run 
-```
-npm / yarn start
-```
-- The website will be opened in your browser.
-
-
-
-<br>
+Bash
+npm start    
+# or 'yarn start'
+The website will automatically open in your default browser (typically at http://localhost:3000).
 
 ## Screenshots
 
