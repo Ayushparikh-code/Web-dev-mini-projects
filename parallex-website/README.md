@@ -1,42 +1,44 @@
-# Welcome 🖐 to the Parallex Website
-This is a basic HTML, CSS, JAVASCRIPT website where images of this website has their position fixed that results in giving the parallex look and that is why it is called Parallex Website. This gives the look of modern website.
+# 🌌 Parallax Website
 
+**Welcome 🖐 to the Parallax Website!** This is a beautiful and basic web project that demonstrates how to create a stunning "parallax" scrolling effect. By fixing the position of the background images, the foreground content scrolls past them, giving the webpage a sleek, 3D, and highly modern look!
 
-## 💻Tech Stack
-<br>
+## ✨ Features
 
-![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
-![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+* **Parallax Scrolling:** Creates a dynamic and interactive illusion of depth as you scroll down the page.
+* **Modern Design:** Gives a professional and highly engaging look to a standard webpage.
+* **Beginner Friendly:** A great way to learn how background-attachment and basic positioning work in CSS.
 
-<br>
+## 💻 Tech Stack
 
+This project uses standard front-end technologies along with a simple backend server to run:
 
-### How to get the project on your local machine:
+* **HTML5:** To build the structure of the website.
+* **CSS3:** To style the pages and create the fixed-image parallax effect.
+* **JavaScript:** For any interactive front-end elements.
+* **Node.js:** To run the local server and serve the files.
 
----
+## 🚀 How to Run It on Your Computer
 
-- Download or clone the repository
+Follow these steps to get the project running on your local machine:
 
-```
-git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
-```
+**1. Download the code:** Open your terminal and clone the repository:
+```bash
+git clone [https://github.com/Ayushparikh-code/Web-dev-mini-projects.git](https://github.com/Ayushparikh-code/Web-dev-mini-projects.git)
+2. Open the project folder: Navigate into the main repository folder and find the parallax website directory:
 
-- Go to the directory
-- Open parallex-website folder
-- Open the terminal and run 
-```
+Bash
+cd Web-dev-mini-projects
+cd parallex-website
+3. Start the server: Run the following command in your terminal to start the Node application:
+
+Bash
 node app.js
-```
-- Open *localhost:3000* in your browser.
+4. View in Browser: Open your favorite web browser and go to:
 
-*** 
-###Remember: 
-If you are using node then you need to reload your server everytime you make changes in your file. Otherwise if you have nodemon installed, you can use nodemon. 
-***
-
-
-<br>
+Plaintext
+http://localhost:3000
+💡 Pro Tip for Developers:
+If you are using standard node, you will need to restart your server in the terminal every time you make changes to your files. If you want the server to restart automatically, install and use nodemon instead! (nodemon app.js)
 
 ##Screenshot
 
