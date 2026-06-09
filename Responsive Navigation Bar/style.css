@@ -1,29 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     height: 7vh;
     justify-content: space-between;
     background-color: blueviolet;
     color: white;
-   
 }
 
-.navbar-list{
+/* Combined the duplicate .navbar-list blocks here */
+.navbar-list {
     display: flex;
     gap: 18px;
 }
 
-.navbar-list>  li{
+/* Combined the duplicate .navbar-list > li blocks here */
+.navbar-list > li {
     display: inline;
-    
+    font-size: 2rem;
 }
 
-.sec{
+.sec {
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -31,121 +32,64 @@ nav{
     align-items: center;
     justify-content: center;
     color: white;
-
 }
 
-.mobile-navbar-btn{
-
+.mobile-navbar-btn {
     display: none;
     gap: 12px;
-    cursor: pointer;
     color: black;
-    cursor: pointer;
+    cursor: pointer; /* Removed the duplicate cursor line here */
     margin: 0px 45px; 
-     
-
 }
 
-.navbar-list{
-    display: flex;
-    gap: 18px;
+.mobile-nav-icon {
+    font-size: 2em;
+    line-height: .03125em;
 }
 
-.navbar-list>  li{
-    display: inline;
-    font-size: 2rem;
-    
-}
-
-
-
-.mobile-nav-icon{
-       font-size: 2em;
-    line-height: .03125em
- 
-
-  
-
-}
-
-.mobile-nav-icon[name="close-outline"]{
+.mobile-nav-icon[name="close-outline"] {
     display: none;
 }
 
 @media screen and (max-width:600px) {
+    .mobile-navbar-btn {
+        display: flex;
+        justify-content: right;
+        position: absolute;
+        top: 0;
+        padding: 12px; /* Fixed: Changed '12px 12px' to just '12px' */
+        width: 100%;
+        gap: 12px;
+        background-color: rgb(211, 35, 35); 
+    }
 
-.mobile-navbar-btn {
-    
-    display: flex;
-    justify-content: right;
-    position: absolute;
-    top: 0;
-    padding: 12px 12px;
-    
-    width: 100%;
-    gap: 12px;
-    background-color: rgb(211, 35, 35); 
-    
-     
+    .mobile-navbar-btn > ion-icon {
+        margin-right: 30px;
+        border: 2px solid black;
+    }
 
-}
+    .mobile-navbar-btn > i {
+        padding: 5px;
+        margin-right: 30px;
+        border: 2px solid black;
+    }
 
-.mobile-navbar-btn > ion-icon {
-    
-    margin-right: 30px;
-    border: 2px solid black;
-    
- 
-     
+    .logo {
+        display: none;
+    }
 
-}
+    nav {
+        position: absolute; 
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
 
-.mobile-navbar-btn > i{
-    padding: 5px;
-    
-    margin-right: 30px;
-    border: 2px solid black;
-    
- 
-     
-
-}
-
-
-.logo{
-    display: none;
-}
-
-
-nav{
-  position: absolute; 
-  width: 100%;
-  /* display: none;  */
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  top: 0;
-   left: 0;
-
-   
-}
-
-.navbar-list{
-   
-   display: none; 
-   
-    flex-direction: column;
-}
-
-.navbar-list>  li{
-    /* display: none; */
-    
-   
-    
-}
-
-
-
-
-    
+    .navbar-list {
+        display: none; 
+        flex-direction: column;
+    }
 }
