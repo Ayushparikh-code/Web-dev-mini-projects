@@ -1,0 +1,118 @@
+:root {
+  --bg: #eef3f8;
+  --card: #ffffff;
+  --text: #1e293b;
+  --muted: #64748b;
+  --accent: #0f766e;
+  --accent-dark: #0b5a54;
+  --border: #d6e0eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top, #f8fbff, var(--bg));
+  color: var(--text);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.container {
+  width: min(720px, 100%);
+}
+
+h1 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.8rem, 2.8vw, 2.2rem);
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+select,
+input,
+button {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+
+input[readonly] {
+  background-color: #f8fafc;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 2px solid #99f6e4;
+  outline-offset: 2px;
+}
+
+.converter-grid {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: 1fr 1fr auto 1fr 1fr;
+  align-items: end;
+}
+
+.field {
+  min-width: 0;
+}
+
+#swapBtn {
+  width: auto;
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 0.65rem 1rem;
+  transition: background-color 0.2s ease;
+}
+
+#swapBtn:hover {
+  background-color: var(--accent-dark);
+}
+
+.message {
+  margin: 0.95rem 0 0;
+  min-height: 1.4rem;
+  color: #b42318;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+  .converter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #swapBtn {
+    width: 100%;
+  }
+}

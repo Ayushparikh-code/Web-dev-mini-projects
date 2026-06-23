@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Unit Converter</h1>
+    <p class="subtitle">Convert length and weight values instantly.</p>
+
+    <section class="card">
+      <label for="category">Category</label>
+      <select id="category">
+        <option value="length">Length</option>
+        <option value="weight">Weight</option>
+      </select>
+
+      <div class="converter-grid">
+        <div class="field">
+          <label for="fromValue">From</label>
+          <input id="fromValue" type="number" step="any" placeholder="Enter value">
+        </div>
+
+        <div class="field">
+          <label for="fromUnit">Unit</label>
+          <select id="fromUnit"></select>
+        </div>
+
+        <button id="swapBtn" type="button" aria-label="Swap units">Swap</button>
+
+        <div class="field">
+          <label for="toValue">To</label>
+          <input id="toValue" type="number" step="any" placeholder="Result" readonly>
+        </div>
+
+        <div class="field">
+          <label for="toUnit">Unit</label>
+          <select id="toUnit"></select>
+        </div>
+      </div>
+
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
