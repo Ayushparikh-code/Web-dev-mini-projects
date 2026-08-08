@@ -1,0 +1,30 @@
+/* Custom Scrollbar CSS */
+.custom-scrollbar {
+    /* Hide default scrollbar */
+    overflow-y: scroll ;
+    scrollbar-width: 10px; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  
+  /* Webkit (Chrome, Safari, newer versions of Opera) */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px; /* Thin scrollbar */
+    background-color: transparent; /* Transparent background */
+  }
+  
+  /* Scrollbar track */
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Light background */
+    border-radius: 10px;
+  }
+  
+  /* Scrollbar handle */
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 255, 0.3); /* Blue with opacity */
+    border-radius: 10px;
+  }
+  
+  /* Scrollbar handle on hover */
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 255, 0.5); /* Slightly darker on hover */
+  }

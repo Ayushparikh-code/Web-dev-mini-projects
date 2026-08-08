@@ -1,0 +1,32 @@
+.gradient-text {
+  background: linear-gradient(90deg, #FF5733, #FFBD33, #18ff07, #3392ff, #335BFF, #8D33FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.backimage {
+  width: screen;
+  height: screen;
+  background: radial-gradient(circle at 0% 50%, transparent 20%, rgb(0, 100, 53) 21% 28%, transparent 29%),
+    radial-gradient(circle at 50% 50%, transparent 20%, darkgreen 21% 28%, transparent 29%),
+    radial-gradient(circle at 100% 50%, transparent 20%, darkgreen 21% 28%, transparent 29%);
+  background-color: rgb(163, 212, 163);
+  background-size: 60px 70px;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar {
+  width: 1px;
+  background: transparent;
+}
+
+* {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  /* scrollbar-width: none;  /* Firefox */
+}
